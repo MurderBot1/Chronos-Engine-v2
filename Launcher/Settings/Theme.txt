@@ -1,0 +1,5 @@
+Light
+Windowed
+1000
+1000
+Arial
