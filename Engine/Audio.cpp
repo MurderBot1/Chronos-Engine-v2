@@ -10,10 +10,6 @@
 
 
 // Start of program
-
-
-#endif
-
 AudioParabola::AudioParabola(float A, float B, float C) {
     // Assing variables to class object
     this->ParabolaA = A;
@@ -94,3 +90,5 @@ AudioEffect::AudioEffect(std::string FilePath) {
         EffectFileData.push_back(TempString);
     }
 }
+
+#endif
