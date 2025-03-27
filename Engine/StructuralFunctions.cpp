@@ -11,11 +11,11 @@
 
 // Start of program
 void StartFunction() {
-    
+    Time::FillValuesForLoading();
 }
 
 void LoopFunction() {
-    
+    Time::ComupteDeltaTime();
 }
 
 #endif

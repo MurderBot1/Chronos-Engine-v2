@@ -5,6 +5,7 @@
 
 // Program imported files
 #include "Exit.h"
+#include "Time.h"
 
 // Function definitions
 void StartFunction();
