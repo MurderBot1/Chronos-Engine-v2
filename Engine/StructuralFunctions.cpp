@@ -5,7 +5,6 @@
 
 // CPP files .h file
 #include "StructuralFunctions.h"
-#include <iostream>
 
 // Redefine vars if needed
 
@@ -18,4 +17,5 @@ void StartFunction() {
 void LoopFunction() {
     
 }
+
 #endif
