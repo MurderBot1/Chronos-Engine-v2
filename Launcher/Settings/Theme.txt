@@ -1,4 +1,4 @@
-Light
+Dark
 Windowed
 1000
 1000

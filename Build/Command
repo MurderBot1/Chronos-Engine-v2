@@ -1,0 +1,2 @@
+g++ Engine/Main.cpp Engine/StructuralFunctions.cpp Engine/Exit.cpp -o ChronosEngine
+./ChronosEngine
