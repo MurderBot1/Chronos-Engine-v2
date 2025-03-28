@@ -89,6 +89,10 @@ AudioEffect::AudioEffect(std::string FilePath) {
     while (getline(EffectFile, TempString)) {
         EffectFileData.push_back(TempString);
     }
+    
+    this->StartTimeOfEffectInMS = EffectFileData[0];
+    this->EndTimeOfEffectInMS = EffectFileData[1];
+    this->IsVolumeShift = EffectFileData[2];
 }
 
 #endif
