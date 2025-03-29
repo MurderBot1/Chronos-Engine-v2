@@ -93,6 +93,15 @@ AudioEffect::AudioEffect(std::string FilePath) {
     this->StartTimeOfEffectInMS = EffectFileData[0];
     this->EndTimeOfEffectInMS = EffectFileData[1];
     this->IsVolumeShift = EffectFileData[2];
+    this->VolumeShiftInDeciliter = EffectFileData[3];
+    this->VolumeShiftCurve = AudioCurve(EffectFileData[4]);
+    this->IsPitchShift = EffectFileData[5];
+    this->PitchShiftInHertz = EffectFileData[6];
+    this->PitchShiftCurve = AudioCurve(EffectFileData[7]);
+    this->IsReverb = EffectFileData[8];
+    this->ReverbRate = EffectFileData[9];
+    this->NumberOfReverbRepeats = EffectFileData[10];
+    this->ReverbVolumeDropoff = AudioCurve(EffectFileData[11]);
 }
 
 #endif
