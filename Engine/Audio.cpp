@@ -50,32 +50,56 @@ float AudioLinear::FindOutput(int64_t CurrentTimeInMS) {
 AudioCurve::AudioCurve(std::string KindOfCurve, float A, float B, float C) {
     // Depending on the type of function activate that function
     if(KindOfCurve == "Parabola") {
+        this->IsParabola = true;
+        this->IsCurve = false;
+        this->IsLinear = false;
         this->StoreParabola = &AudioParabola(A, B, C);
     }
     else if(KindOfCurve == "Curve") {
+        this->IsParabola = false;
+        this->IsCurve = true;
+        this->IsLinear = false;
         this->StoreCurve = &AudioExponential(A, B);
     }
     else if(KindOfCurve == "Linear") {
         this->StoreLinear = &AudioLinear(A, B);
+        this->IsParabola = false;
+        this->IsCurve = false;
+        this->IsLinear = true;
     }    
     else {
-        delete(this);
+        this->StoreLinear = &AudioLinear(0, 0);
+        this->IsParabola = false;
+        this->IsCurve = false;
+        this->IsLinear = true;
     }
 }
 
 AudioCurve::AudioCurve(std::string KindOfCurve, float A, float B) {
     // Depending on the type of function activate that function
     if(KindOfCurve == "Parabola") {
+        this->IsParabola = true;
+        this->IsCurve = false;
+        this->IsLinear = false;
         this->StoreParabola = &AudioParabola(A, B, 0);
     }
     else if(KindOfCurve == "Curve") {
+        this->IsParabola = false;
+        this->IsCurve = true;
+        this->IsLinear = false;
         this->StoreCurve = &AudioExponential(A, B);
     }
     else if(KindOfCurve == "Linear") {
         this->StoreLinear = &AudioLinear(A, B);
+        this->IsParabola = false;
+        this->IsCurve = false;
+        this->IsLinear = true;
     }   
     else {
-        delete(this);
+        this->StoreLinear = &AudioLinear(0, 0);
+        this->IsParabola = false;
+        this->IsCurve = false;
+        this->IsLinear = true;
     }  
 }
 
@@ -91,28 +115,28 @@ AudioCurve::AudioCurve(std::string FilePath) {
     }
     
     if(CurveFileData[0] == "L") {
-      this->IsParabola = false;
-      this->IsCurve = false;
-      this->IsLinear = true;
-      this->StoreLinear = &AudioLinear(CurveFileData[1], CurveFileData[2]);
+        this->IsParabola = false;
+        this->IsCurve = false;
+        this->IsLinear = true;
+        this->StoreLinear = &AudioLinear(CurveFileData[1], CurveFileData[2]);
     }
     else if(CurveFileData[0] == "C") {
-      this->IsParabola = false;
-      this->IsCurve = true;
-      this->IsLinear = false;
-      this->StoreCurve = &AudioExponential(CurveFileData[1], CurveFileData[2]);
+        this->IsParabola = false;
+        this->IsCurve = true;
+        this->IsLinear = false;
+        this->StoreCurve = &AudioExponential(CurveFileData[1], CurveFileData[2]);
     }
     else if(CurveFileData[0] == "P") {
-      this->IsParabola = true;
-      this->IsCurve = false;
-      this->IsLinear = false;
-      this->StoreParabola = &AudioParabola(CurveFileData[1], CurveFileData[2], CurveFileData[3]);
+        this->IsParabola = true;
+        this->IsCurve = false;
+        this->IsLinear = false;
+        this->StoreParabola = &AudioParabola(CurveFileData[1], CurveFileData[2], CurveFileData[3]);
     }
     else {
-      this->IsParabola = false;
-      this->IsCurve = false;
-      this->IsLinear = true;
-      this->AudioLinear = &AudioLinear(0, 0);
+        this->IsParabola = false;
+        this->IsCurve = false;
+        this->IsLinear = true;
+        this->AudioLinear = &AudioLinear(0, 0);
     }
 }
 
