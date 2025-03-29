@@ -48,12 +48,11 @@ class AudioCurve {
         AudioCurve() : IsParabola(false), StoreParabola(nullptr), IsCurve(false), StoreCurve(nullptr), IsLinear(false), StoreLinear(nullptr) {}
 
         AudioCurve(std::string KindOfCurve, float A, float B, float C);
-        AudioCurve(std::string KindOfCurve, float A, float B);
+        AudioCurve(std::string KindOfCurve, float A, float B
+        AudioCurve(std::string FilePath);
 
         /* Example curve document
-            Is it a parabola (true / false)
-            Is it a curve (true / false)
-            Is it a linear function (true / false)
+            Is it a linear function, curve, or parabola (L, C, P)
             Value of A
             Value of B
             Value of C (nothing here if there is no value)

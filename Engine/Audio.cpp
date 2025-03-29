@@ -79,6 +79,43 @@ AudioCurve::AudioCurve(std::string KindOfCurve, float A, float B) {
     }  
 }
 
+AudioCurve::AudioCurve(std::string FilePath) {
+    // Open the file and create variables
+    std::ifstream CurveFile(FilePath);
+    std::vector<std::string> CurveFileData;
+    std::string TempString;
+
+    // Get the files data in to a vector string
+    while (getline(EffectFile, TempString)) {
+        CurveFileData.push_back(TempString);
+    }
+    
+    if(CurveFileData[0] == "L") {
+      this->IsParabola = false;
+      this->IsCurve = false;
+      this->IsLinear = true;
+      this->StoreLinear = &AudioLinear(CurveFileData[1], CurveFileData[2]);
+    }
+    else if(CurveFileData[0] == "C") {
+      this->IsParabola = false;
+      this->IsCurve = true;
+      this->IsLinear = false;
+      this->StoreCurve = &AudioExponential(CurveFileData[1], CurveFileData[2]);
+    }
+    else if(CurveFileData[0] == "P") {
+      this->IsParabola = true;
+      this->IsCurve = false;
+      this->IsLinear = false;
+      this->StoreParabola = &AudioParabola(CurveFileData[1], CurveFileData[2], CurveFileData[3]);
+    }
+    else {
+      this->IsParabola = false;
+      this->IsCurve = false;
+      this->IsLinear = true;
+      this->AudioLinear = &AudioLinear(0, 0);
+    }
+}
+
 AudioEffect::AudioEffect(std::string FilePath) {
     // Open the file and create variables
     std::ifstream EffectFile(FilePath);
