@@ -7,6 +7,7 @@
 #include <stdint.h>
 #include <vector>
 #include <stdfloat>
+#include <filesystem>
 
 // Program imported files
 
@@ -106,7 +107,7 @@ class AudioEffect {
 
 class AudioChannel {
     public:
-        AudioChannel();
+        AudioChannel(std::string FilePath);
         std::string FilePathOfChannel;
         /* Example audio channel document
             Path to the effects folder
@@ -121,8 +122,8 @@ class AudioChannel {
             Data point
             Ect...
         */
-        std::vector<AudioEffect> Effects;
-        std::vector<int8_t> Data;
+        std::vector<AudioEffect*> Effects;
+        std::vector<int16_t> Data;
         int64_t LengthOfChannel;
         int NumberOfDataPointsASecond;
 };

@@ -165,4 +165,30 @@ AudioEffect::AudioEffect(std::string FilePath) {
     this->ReverbVolumeDropoff = AudioCurve(EffectFileData[11]);
 }
 
+AudioChannel::AudioChannel(std::string FilePath) {
+    // Open the file and create variables
+    std::ifstream ChannelFile(FilePath);
+    std::vector<std::string> ChannelFileData;
+    std::string TempString;
+
+    // Get the files data in to a vector string
+    while (getline(EffectFile, TempString)) {
+        ChannelFileData.push_back(TempString);
+    }
+    
+    for (const auto& entry : std::filesystem::directory_iterator(ChannelFileData[0])) {
+        this->Effects.push_back(&AudioEffect(entry.path()));
+    }
+    
+    this->LengthOfChannel = ChannelFileData[1];
+    this->NumberOfDataPointsASecond = ChannelFileData[2];
+    int Counter = 0;
+    for(int16_t DataPoints : EffectFileData) {
+        if(Counter > 2) {
+            this->Data.push_back(DataPoints);
+        }
+        Counter++;
+    }
+}
+
 #endif

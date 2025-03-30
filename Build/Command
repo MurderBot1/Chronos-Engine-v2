@@ -1,2 +1,2 @@
-g++ Engine/Main.cpp Engine\Time.cpp Engine/StructuralFunctions.cpp Engine/Exit.cpp -o ChronosEngine
+g++ -o ChronosEngine Engine/Main.cpp Engine\Time.cpp Engine/StructuralFunctions.cpp Engine/Exit.cpp Engine/Gui.cpp `wx-config --cxxflags --libs`
 ./ChronosEngine
