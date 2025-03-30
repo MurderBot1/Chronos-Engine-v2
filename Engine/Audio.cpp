@@ -110,7 +110,7 @@ AudioCurve::AudioCurve(std::string FilePath) {
     std::string TempString;
 
     // Get the files data in to a vector string
-    while (getline(EffectFile, TempString)) {
+    while (getline(CurveFile, TempString)) {
         CurveFileData.push_back(TempString);
     }
     
@@ -118,25 +118,25 @@ AudioCurve::AudioCurve(std::string FilePath) {
         this->IsParabola = false;
         this->IsCurve = false;
         this->IsLinear = true;
-        this->StoreLinear = &AudioLinear(CurveFileData[1], CurveFileData[2]);
+        this->StoreLinear = &AudioLinear(FromBinary::BinaryToFloat(CurveFileData[1]), FromBinary::BinaryToFloat(CurveFileData[2]));
     }
     else if(CurveFileData[0] == "C") {
         this->IsParabola = false;
         this->IsCurve = true;
         this->IsLinear = false;
-        this->StoreCurve = &AudioExponential(CurveFileData[1], CurveFileData[2]);
+        this->StoreCurve = &AudioExponential(FromBinary::BinaryToFloat(CurveFileData[1]), FromBinary::BinaryToFloat(CurveFileData[2]));
     }
     else if(CurveFileData[0] == "P") {
         this->IsParabola = true;
         this->IsCurve = false;
         this->IsLinear = false;
-        this->StoreParabola = &AudioParabola(CurveFileData[1], CurveFileData[2], CurveFileData[3]);
+        this->StoreParabola = &AudioParabola(FromBinary::BinaryToFloat(CurveFileData[1]), FromBinary::BinaryToFloat(CurveFileData[2]), FromBinary::BinaryToFloat(CurveFileData[3]));
     }
     else {
         this->IsParabola = false;
         this->IsCurve = false;
         this->IsLinear = true;
-        this->AudioLinear = &AudioLinear(0, 0);
+        this->StoreLinear = &AudioLinear(0, 0);
     }
 }
 
@@ -151,17 +151,17 @@ AudioEffect::AudioEffect(std::string FilePath) {
         EffectFileData.push_back(TempString);
     }
     
-    this->StartTimeOfEffectInMS = EffectFileData[0];
-    this->EndTimeOfEffectInMS = EffectFileData[1];
-    this->IsVolumeShift = EffectFileData[2];
-    this->VolumeShiftInDeciliter = EffectFileData[3];
+    this->StartTimeOfEffectInMS = FromBinary::BinaryToInt(EffectFileData[0]);
+    this->EndTimeOfEffectInMS = FromBinary::BinaryToInt(EffectFileData[1]);
+    this->IsVolumeShift = FromBinary::BinaryStringToBool(EffectFileData[2]);
+    this->VolumeShiftInDeciliter = FromBinary::BinaryToInt(EffectFileData[3]);
     this->VolumeShiftCurve = AudioCurve(EffectFileData[4]);
-    this->IsPitchShift = EffectFileData[5];
-    this->PitchShiftInHertz = EffectFileData[6];
+    this->IsPitchShift = FromBinary::BinaryStringToBool(EffectFileData[5]);
+    this->PitchShiftInHertz = FromBinary::BinaryToInt(EffectFileData[6]);
     this->PitchShiftCurve = AudioCurve(EffectFileData[7]);
-    this->IsReverb = EffectFileData[8];
-    this->ReverbRate = EffectFileData[9];
-    this->NumberOfReverbRepeats = EffectFileData[10];
+    this->IsReverb = FromBinary::BinaryStringToBool(EffectFileData[8]);
+    this->ReverbRate = FromBinary::BinaryToInt(EffectFileData[9]);
+    this->NumberOfReverbRepeats = FromBinary::BinaryToInt(EffectFileData[10]);
     this->ReverbVolumeDropoff = AudioCurve(EffectFileData[11]);
 }
 
@@ -172,20 +172,60 @@ AudioChannel::AudioChannel(std::string FilePath) {
     std::string TempString;
 
     // Get the files data in to a vector string
-    while (getline(EffectFile, TempString)) {
+    while (getline(ChannelFile, TempString)) {
         ChannelFileData.push_back(TempString);
     }
     
     for (const auto& entry : std::filesystem::directory_iterator(ChannelFileData[0])) {
-        this->Effects.push_back(&AudioEffect(entry.path()));
+        this->Effects.push_back(&AudioEffect(entry.path().generic_string()));
     }
     
-    this->LengthOfChannel = ChannelFileData[1];
-    this->NumberOfDataPointsASecond = ChannelFileData[2];
+    this->LengthOfChannel = FromBinary::BinaryToInt(ChannelFileData[1]);
+    this->NumberOfDataPointsASecond = FromBinary::BinaryToInt(ChannelFileData[2]);
     int Counter = 0;
-    for(int16_t DataPoints : EffectFileData) {
+    for(std::string DataPoints : ChannelFileData) {
         if(Counter > 2) {
-            this->Data.push_back(DataPoints);
+            int16_t PitchData = FromBinary::BinaryToInt(DataPoints.substr(0, 2));
+            this->PitchData.push_back(PitchData);
+            int16_t VolumeData = FromBinary::BinaryToInt(DataPoints.substr(2, 2));
+            this->VolumeData.push_back(VolumeData);
+        }
+        Counter++;
+    }
+}
+
+EmbededChannel::EmbededChannel(std::string FilePath) {
+    // Open the file and create variables
+    std::ifstream EmbededChannelFile(FilePath);
+    std::vector<std::string> EmbededChannelFileData;
+    std::string TempString;
+
+    // Get the files data in to a vector string
+    while (getline(EmbededChannelFile, TempString)) {
+        EmbededChannelFileData.push_back(TempString);
+    }
+
+    this->Channel = &AudioChannel(EmbededChannelFileData[0]);
+    this->StartTimeInMS = FromBinary::BinaryToInt(EmbededChannelFileData[1]);
+}
+
+AudioFile::AudioFile(std::string FilePath) {
+    // Open the file and create variables
+    std::ifstream AudioFileFile(FilePath);
+    std::vector<std::string> AudioFileFileData;
+    std::string TempString;
+
+    // Get the files data in to a vector string
+    while (getline(AudioFileFile, TempString)) {
+        AudioFileFileData.push_back(TempString);
+    }
+
+    this->TotalTimeInMS = FromBinary::BinaryToInt(AudioFileFileData[0]);
+
+    int Counter = 0;
+    for(std::string Channels : AudioFileFileData) {
+        if(Counter > 0) {
+            this->Channels.push_back(&EmbededChannel::EmbededChannel(Channels));
         }
         Counter++;
     }

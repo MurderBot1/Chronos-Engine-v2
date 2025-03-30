@@ -1,16 +1,14 @@
 // © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
 
 // C++ imported files
-#include <iostream>
 #include <fstream>
 #include <string>
 #include <stdint.h>
 #include <vector>
-#include <stdfloat>
 #include <filesystem>
 
 // Program imported files
-
+#include "Binary.h"
 
 // Function definitions
 class AudioParabola {
@@ -49,7 +47,7 @@ class AudioCurve {
         AudioCurve() : IsParabola(false), StoreParabola(nullptr), IsCurve(false), StoreCurve(nullptr), IsLinear(false), StoreLinear(nullptr) {}
 
         AudioCurve(std::string KindOfCurve, float A, float B, float C);
-        AudioCurve(std::string KindOfCurve, float A, float B
+        AudioCurve(std::string KindOfCurve, float A, float B);
         AudioCurve(std::string FilePath);
 
         /* Example curve document
@@ -113,55 +111,51 @@ class AudioChannel {
             Path to the effects folder
             Length of the channel in miliseconds
             Number of data points a second
-            Data point
-            Data point
-            Data point
-            Data point
-            Data point
-            Data point
-            Data point
+            Data point (contains the sound pitch in to bytes then the volume in 2 bytes. Ex "AABB" the first 2 bytes AA control the pitch then BB controls the volume)
+            Data point (contains the sound pitch in to bytes then the volume in 2 bytes. Ex "AABB" the first 2 bytes AA control the pitch then BB controls the volume)
+            Data point (contains the sound pitch in to bytes then the volume in 2 bytes. Ex "AABB" the first 2 bytes AA control the pitch then BB controls the volume)
+            Data point (contains the sound pitch in to bytes then the volume in 2 bytes. Ex "AABB" the first 2 bytes AA control the pitch then BB controls the volume)
+            Data point (contains the sound pitch in to bytes then the volume in 2 bytes. Ex "AABB" the first 2 bytes AA control the pitch then BB controls the volume)
+            Data point (contains the sound pitch in to bytes then the volume in 2 bytes. Ex "AABB" the first 2 bytes AA control the pitch then BB controls the volume)
+            Data point (contains the sound pitch in to bytes then the volume in 2 bytes. Ex "AABB" the first 2 bytes AA control the pitch then BB controls the volume)
             Ect...
         */
         std::vector<AudioEffect*> Effects;
-        std::vector<int16_t> Data;
-        int64_t LengthOfChannel;
+        std::vector<int16_t> PitchData;
+        std::vector<int16_t> VolumeData;
+        int LengthOfChannel;
         int NumberOfDataPointsASecond;
 };
 
 class EmbededChannel {
     public:
-        EmbededChannel();
-        std::string FilePathOfEmbededChannelDoc; 
+        EmbededChannel(std::string FilePath);
         /* Example embeded channel
-            Path to the AudioChannel's data
+            Path to the AudioChannel's data (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\AudioChannels")
             Time when the channel starts in miliseconds
-            Volume of channel in deciliters
         */
-        AudioChannel Channel;
+        AudioChannel* Channel;
         int StartTimeInMS;
-        int16_t VolumeInDeciliter;
 };
 
 class AudioFile {
     public:
-        AudioFile();
+        AudioFile(std::string FilePath);
         std::string FileName;
         std::string FilePath;
         /* Example audio file
             Total time of audio file
-            Number of channels
-            Path to channel 1
-            Path to channel 2
-            Path to channel 3
-            Path to channel 4
-            Path to channel 5
-            Path to channel 6
-            Path to channel 7
+            Path to channel 1 (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\EmbeddedChannels")
+            Path to channel 2 (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\EmbeddedChannels")
+            Path to channel 3 (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\EmbeddedChannels")
+            Path to channel 4 (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\EmbeddedChannels")
+            Path to channel 5 (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\EmbeddedChannels")
+            Path to channel 6 (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\EmbeddedChannels")
+            Path to channel 7 (Ex "C:\Users\(WindowsAccount)\Documents\(ExampleGameName)\(ExampleAudioFileName)\EmbeddedChannels")
             Ect...
         */
         int TotalTimeInMS;
-        int Channels;
-        std::vector<EmbededChannel> Channels;
+        std::vector<EmbededChannel*> Channels;
 };
 
 
