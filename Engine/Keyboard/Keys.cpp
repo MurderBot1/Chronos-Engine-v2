@@ -1,15 +1,18 @@
 // © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
 
-#ifndef Keyboard_CPP
-#define Keyboard_CPP
+#ifndef Keys_CPP
+#define Keys_CPP
 
 // CPP files .h file
-#include "Keyboard.h"
+#include "Keys.h"
 
 // Redefine vars if needed
 
 
 // Start of program
+void Keys::AssignAllKeys() {
+    
+}
 
 
 #endif

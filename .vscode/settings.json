@@ -65,7 +65,23 @@
         "xutility": "cpp",
         "bitset": "cpp",
         "filesystem": "cpp",
-        "stdfloat": "cpp"
+        "stdfloat": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "codecvt": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "map": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "string_view": "cpp",
+        "numbers": "cpp",
+        "span": "cpp",
+        "text_encoding": "cpp",
+        "cfenv": "cpp",
+        "cinttypes": "cpp",
+        "variant": "cpp"
     },
     "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe"
 }
