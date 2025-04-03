@@ -1,3 +1,6 @@
+Alt
+Ctrl
+Shift
 A
 B
 C
