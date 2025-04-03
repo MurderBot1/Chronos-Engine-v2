@@ -1,10 +1,10 @@
 // © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
 
-#ifndef Gui_CPP
-#define Gui_CPP
+#ifndef Keyboard_CPP
+#define Keyboard_CPP
 
 // CPP files .h file
-#include "Gui.h"
+#include "Keyboard.h"
 
 // Redefine vars if needed
 
