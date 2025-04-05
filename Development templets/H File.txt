@@ -1,5 +1,8 @@
 // © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
 
+#ifndef _H
+#define _H
+
 // C++ imported files
 
 
@@ -7,3 +10,5 @@
 
 
 // Function definitions
+
+#endif

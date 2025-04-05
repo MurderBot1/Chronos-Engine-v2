@@ -15,6 +15,7 @@ void StartFunction() {
 }
 
 void LoopFunction() {
+    LimitedFunction::ResetAllLimitedFunctions();
     Time::ComupteDeltaTime();
 }
 

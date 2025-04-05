@@ -1,5 +1,8 @@
 // © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
 
+#ifndef Binary_H
+#define Binary_H
+
 // C++ imported files
 #include <string>
 #include <bitset>
@@ -23,3 +26,5 @@ class ToBinary {
         static std::string FloatToBinaryString(float Value);
         static std::string BoolToBinaryString(bool Value);
 };
+
+#endif

@@ -1,5 +1,8 @@
 // © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
 
+#ifndef Time_H
+#define Time_H
+
 // C++ imported files
 #include <stdint.h>
 #include <chrono>
@@ -20,3 +23,5 @@ class Time {
         static void ComupteDeltaTime();
         static void FillValuesForLoading();
 };
+
+#endif

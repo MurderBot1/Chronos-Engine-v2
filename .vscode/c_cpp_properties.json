@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:\\Users\\trent\\SDL3-3.2.10\\x86_64-w64-mingw32\\include"
             ],
             "defines": [
                 "_DEBUG",
