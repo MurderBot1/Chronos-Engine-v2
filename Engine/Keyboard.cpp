@@ -7,395 +7,12 @@
 #include "Keyboard.h"
 
 // Redefine vars if needed
-
+bool Keyboard::IsDisabled;
 
 // Start of program
-bool Keyboard::IsKeyPressed(KeyboardKeys Key) {
-    switch (Key){
-        case A:
-            return KeyboardKeyIsPressed::IsAPressed();
-        break;
-    case B:
-            return KeyboardKeyIsPressed::IsBPressed();
-        break;
-    case C:
-            return KeyboardKeyIsPressed::IsCPressed();
-        break;
-    case D:
-            return KeyboardKeyIsPressed::IsDPressed();
-        break;
-    case E:
-            return KeyboardKeyIsPressed::IsEPressed();
-        break;
-    case F:
-            return KeyboardKeyIsPressed::IsFPressed();
-        break;
-    case G:
-            return KeyboardKeyIsPressed::IsGPressed();
-        break;
-    case H:
-            return KeyboardKeyIsPressed::IsHPressed();
-        break;
-    case I:
-            return KeyboardKeyIsPressed::IsIPressed();
-        break;
-    case J:
-            return KeyboardKeyIsPressed::IsJPressed();
-        break;
-    case K:
-            return KeyboardKeyIsPressed::IsKPressed();
-        break;
-    case L:
-            return KeyboardKeyIsPressed::IsLPressed();
-        break;
-    case M:
-            return KeyboardKeyIsPressed::IsMPressed();
-        break;
-    case N:
-            return KeyboardKeyIsPressed::IsNPressed();
-        break;
-    case O:
-            return KeyboardKeyIsPressed::IsOPressed();
-        break;
-    case P:
-            return KeyboardKeyIsPressed::IsPPressed();
-        break;
-    case Q:
-            return KeyboardKeyIsPressed::IsQPressed();
-        break;
-    case R:
-            return KeyboardKeyIsPressed::IsRPressed();
-        break;
-    case S:
-            return KeyboardKeyIsPressed::IsSPressed();
-        break;
-    case T:
-            return KeyboardKeyIsPressed::IsTPressed();
-        break;
-    case U:
-            return KeyboardKeyIsPressed::IsUPressed();
-        break;
-    case V:
-            return KeyboardKeyIsPressed::IsVPressed();
-        break;
-    case W:
-            return KeyboardKeyIsPressed::IsWPressed();
-        break;
-    case X:
-            return KeyboardKeyIsPressed::IsXPressed();
-        break;
-    case Y:
-            return KeyboardKeyIsPressed::IsYPressed();
-        break;
-    case Z:
-            return KeyboardKeyIsPressed::IsZPressed();
-        break;
-    case One:
-            return KeyboardKeyIsPressed::Is1Pressed();
-        break;
-    case Two:
-            return KeyboardKeyIsPressed::Is2Pressed();
-        break;
-    case Three:
-            return KeyboardKeyIsPressed::Is3Pressed();
-        break;
-    case Four:
-            return KeyboardKeyIsPressed::Is4Pressed();
-        break;
-    case Five:
-            return KeyboardKeyIsPressed::Is5Pressed();
-        break;
-    case Six:
-            return KeyboardKeyIsPressed::Is6Pressed();
-        break;
-    case Seven:
-            return KeyboardKeyIsPressed::Is7Pressed();
-        break;
-    case Eight:
-            return KeyboardKeyIsPressed::Is8Pressed();
-        break;
-    case Nine:
-            return KeyboardKeyIsPressed::Is9Pressed();
-        break;
-    case Ten:
-            return KeyboardKeyIsPressed::Is0Pressed();
-        break;
-    case F1:
-            return KeyboardKeyIsPressed::IsF1Pressed();
-        break;
-    case F2:
-            return KeyboardKeyIsPressed::IsF2Pressed();
-        break;
-    case F3:
-            return KeyboardKeyIsPressed::IsF3Pressed();
-        break;
-    case F4:
-            return KeyboardKeyIsPressed::IsF4Pressed();
-        break;
-    case F5:
-            return KeyboardKeyIsPressed::IsF5Pressed();
-        break;
-    case F6:
-            return KeyboardKeyIsPressed::IsF6Pressed();
-        break;
-    case F7:
-            return KeyboardKeyIsPressed::IsF7Pressed();
-        break;
-    case F8:
-            return KeyboardKeyIsPressed::IsF8Pressed();
-        break;
-    case F9:
-            return KeyboardKeyIsPressed::IsF9Pressed();
-        break;
-    case F10:
-            return KeyboardKeyIsPressed::IsF10Pressed();
-        break;
-    case F11:
-            return KeyboardKeyIsPressed::IsF11Pressed();
-        break;
-    case F12:
-            return KeyboardKeyIsPressed::IsF12Pressed();
-        break;
-    case F13:
-            return KeyboardKeyIsPressed::IsF13Pressed();
-        break;
-    case F14:
-            return KeyboardKeyIsPressed::IsF14Pressed();
-        break;
-    case F15:
-            return KeyboardKeyIsPressed::IsF15Pressed();
-        break;
-    case F16:
-            return KeyboardKeyIsPressed::IsF16Pressed();
-        break;
-    case F17:
-            return KeyboardKeyIsPressed::IsF17Pressed();
-        break;
-    case F18:
-            return KeyboardKeyIsPressed::IsF18Pressed();
-        break;
-    case F19:
-            return KeyboardKeyIsPressed::IsF19Pressed();
-        break;
-    case F20:
-            return KeyboardKeyIsPressed::IsF20Pressed();
-        break;
-    case F21:
-            return KeyboardKeyIsPressed::IsF21Pressed();
-        break;
-    case F22:
-            return KeyboardKeyIsPressed::IsF22Pressed();
-        break;
-    case F23:
-            return KeyboardKeyIsPressed::IsF23Pressed();
-        break;
-    case F24:
-            return KeyboardKeyIsPressed::IsF24Pressed();
-        break;
-    case Backspace:
-            return KeyboardKeyIsPressed::IsBackspacePressed();
-        break;
-    case Tab:
-            return KeyboardKeyIsPressed::IsTabPressed();
-        break;
-    case Clear:
-            return KeyboardKeyIsPressed::IsClearPressed();
-        break;
-    case Enter:
-            return KeyboardKeyIsPressed::IsEnterPressed();
-        break;
-    case LeftShift:
-            return KeyboardKeyIsPressed::IsLeftShiftPressed();
-        break;
-    case LeftControl:
-            return KeyboardKeyIsPressed::IsLeftControlPressed();
-        break;
-    case LeftAlt:
-            return KeyboardKeyIsPressed::IsLeftAltPressed();
-        break;
-    case RightShift:
-            return KeyboardKeyIsPressed::IsRightShiftPressed();
-        break;
-    case RightControl:
-            return KeyboardKeyIsPressed::IsRightControlPressed();
-        break;
-    case RightAlt:
-            return KeyboardKeyIsPressed::IsRightAltPressed();
-        break;
-    case Pause:
-            return KeyboardKeyIsPressed::IsPausePressed();
-        break;
-    case CapsLock:
-            return KeyboardKeyIsPressed::IsCapsLockPressed();
-        break;
-    case Esc:
-            return KeyboardKeyIsPressed::IsEscapePressed();
-        break;
-    case Space:
-            return KeyboardKeyIsPressed::IsSpacePressed();
-        break;
-    case PageUp:
-            return KeyboardKeyIsPressed::IsPageUpPressed();
-        break;
-    case PageDown:
-            return KeyboardKeyIsPressed::IsPageDownPressed();
-        break;
-    case End:
-            return KeyboardKeyIsPressed::IsEndPressed();
-        break;
-    case Home:
-            return KeyboardKeyIsPressed::IsHomePressed();
-        break;
-    case LeftArrow:
-            return KeyboardKeyIsPressed::IsLeftArrowPressed();
-        break;
-    case RightArrow:
-            return KeyboardKeyIsPressed::IsRightArrowPressed();
-        break;
-    case UpArrow:
-            return KeyboardKeyIsPressed::IsUpArrowPressed();
-        break;
-    case DownArrow:
-            return KeyboardKeyIsPressed::IsDownArrowPressed();
-        break;
-    case Select:
-            return KeyboardKeyIsPressed::IsSelectPressed();
-        break;
-    case Print:
-            return KeyboardKeyIsPressed::IsPrintPressed();
-        break;
-    case Execute:
-            return KeyboardKeyIsPressed::IsExecutePressed();
-        break;
-    case PrintScreen:
-            return KeyboardKeyIsPressed::IsPrintScreenPressed();
-        break;
-    case Insert:
-            return KeyboardKeyIsPressed::IsInsertPressed();
-        break;
-    case Delete:
-            return KeyboardKeyIsPressed::IsDeletePressed();
-        break;
-    case Help:
-            return KeyboardKeyIsPressed::IsHelpPressed();
-        break;
-    case LeftWindows:
-            return KeyboardKeyIsPressed::IsLeftWindowsPressed();
-        break;
-    case RightWindows:
-            return KeyboardKeyIsPressed::IsRightWindowsPressed();
-        break;
-    case Apps:
-            return KeyboardKeyIsPressed::IsAppsPressed();
-        break;
-    case Numpad1:
-            return KeyboardKeyIsPressed::IsNumpad1Pressed();
-        break;
-    case Numpad2:
-            return KeyboardKeyIsPressed::IsNumpad2Pressed();
-        break;
-    case Numpad3:
-            return KeyboardKeyIsPressed::IsNumpad3Pressed();
-        break;
-    case Numpad4:
-            return KeyboardKeyIsPressed::IsNumpad4Pressed();
-        break;
-    case Numpad5:
-            return KeyboardKeyIsPressed::IsNumpad5Pressed();
-        break;
-    case Numpad6:
-            return KeyboardKeyIsPressed::IsNumpad6Pressed();
-        break;
-    case Numpad7:
-            return KeyboardKeyIsPressed::IsNumpad7Pressed();
-        break;
-    case Numpad8:
-            return KeyboardKeyIsPressed::IsNumpad8Pressed();
-        break;
-    case Numpad9:
-            return KeyboardKeyIsPressed::IsNumpad9Pressed();
-        break;
-    case Numpad0:
-            return KeyboardKeyIsPressed::IsNumpad0Pressed();
-        break;
-    case Subtract:
-            return KeyboardKeyIsPressed::IsSubtractPressed();
-        break;
-    case Period:
-            return KeyboardKeyIsPressed::IsPeriodPressed();
-        break;
-    case ForwardSlash:
-            return KeyboardKeyIsPressed::IsForwardSlashPressed();
-        break;
-    case NumLock:
-            return KeyboardKeyIsPressed::IsNumLockPressed();
-        break;
-    case ScrollLock:
-            return KeyboardKeyIsPressed::IsScrollLockPressed();
-        break;
-    case BrowserBack:
-            return KeyboardKeyIsPressed::IsBrowserBackPressed();
-        break;
-    case BrowserForward:
-            return KeyboardKeyIsPressed::IsBrowserForwardPressed();
-        break;
-    case BrowserRefresh:
-            return KeyboardKeyIsPressed::IsBrowserRefreshPressed();
-        break;
-    case BrowserStop:
-            return KeyboardKeyIsPressed::IsBrowserStopPressed();
-        break;
-    case BrowserSearch:
-            return KeyboardKeyIsPressed::IsBrowserSearchPressed();
-        break;
-    case BrowserFavorites:
-            return KeyboardKeyIsPressed::IsBrowserFavoritesPressed();
-        break;
-    case BrowserStart:
-            return KeyboardKeyIsPressed::IsBrowserStartPressed();
-        break;
-    case VolumeMute:
-            return KeyboardKeyIsPressed::IsVolumeMutePressed();
-        break;
-    case VolumeDown:
-            return KeyboardKeyIsPressed::IsVolumeDownPressed();
-        break;
-    case VolumeUp:
-            return KeyboardKeyIsPressed::IsVolumeUpPressed();
-        break;
-    case NextTrack:
-            return KeyboardKeyIsPressed::IsNextTrackPressed();
-        break;
-    case PreviousTrack:
-            return KeyboardKeyIsPressed::IsPreviousTrackPressed();
-        break;
-    case StopTrack:
-            return KeyboardKeyIsPressed::IsStopTrackPressed();
-        break;
-    case PlayPauseTrack:
-            return KeyboardKeyIsPressed::IsPlayPauseTrackPressed();
-        break;
-    case StartMail:
-            return KeyboardKeyIsPressed::IsStartMailPressed();
-        break;
-    case SelectMedia:
-            return KeyboardKeyIsPressed::IsSelectMediaPressed();
-        break;
-    case StartApplication1:
-            return KeyboardKeyIsPressed::IsStartApplication1Pressed();
-        break;
-    case StartApplication2:
-            return KeyboardKeyIsPressed::IsStartApplication2Pressed();
-        break;
-        
-    default:
-        break;
-    }
-    return false;
-}
-
-std::map<std::string, bool> KeyboardKeyIsPressed::KeysPressed() {
+std::map<std::string, bool> Keyboard::KeysPressed() {
     std::map<std::string, bool> ReturnedKeys;
+
     ReturnedKeys["A"] = KeyboardKeyIsPressed::IsAPressed();
     ReturnedKeys["B"] = KeyboardKeyIsPressed::IsBPressed();
     ReturnedKeys["C"] = KeyboardKeyIsPressed::IsCPressed();
@@ -521,2133 +138,2196 @@ std::map<std::string, bool> KeyboardKeyIsPressed::KeysPressed() {
     ReturnedKeys["SelectMedia"] = KeyboardKeyIsPressed::IsSelectMediaPressed();
     ReturnedKeys["StartApplication1"] = KeyboardKeyIsPressed::IsStartApplication1Pressed();
     ReturnedKeys["StartApplication2"] = KeyboardKeyIsPressed::IsStartApplication2Pressed();
+    
     return ReturnedKeys;
 }
 
-bool KeyboardKeyIsPressed::IsAPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('A') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
+bool Keyboard::IsKeyPressed(KeyboardKeys Key) {
+    switch (Key){
+        case A: return KeyboardKeyIsPressed::IsAPressed();
+        case B: return KeyboardKeyIsPressed::IsBPressed();
+        case C: return KeyboardKeyIsPressed::IsCPressed();
+        case D: return KeyboardKeyIsPressed::IsDPressed();
+        case E: return KeyboardKeyIsPressed::IsEPressed();
+        case F: return KeyboardKeyIsPressed::IsFPressed();
+        case G: return KeyboardKeyIsPressed::IsGPressed();
+        case H: return KeyboardKeyIsPressed::IsHPressed();
+        case I: return KeyboardKeyIsPressed::IsIPressed();
+        case J: return KeyboardKeyIsPressed::IsJPressed();
+        case K: return KeyboardKeyIsPressed::IsKPressed();
+        case L: return KeyboardKeyIsPressed::IsLPressed();
+        case M: return KeyboardKeyIsPressed::IsMPressed();
+        case N: return KeyboardKeyIsPressed::IsNPressed();
+        case O: return KeyboardKeyIsPressed::IsOPressed();
+        case P: return KeyboardKeyIsPressed::IsPPressed();
+        case Q: return KeyboardKeyIsPressed::IsQPressed();
+        case R: return KeyboardKeyIsPressed::IsRPressed();
+        case S: return KeyboardKeyIsPressed::IsSPressed();
+        case T: return KeyboardKeyIsPressed::IsTPressed();
+        case U: return KeyboardKeyIsPressed::IsUPressed();
+        case V: return KeyboardKeyIsPressed::IsVPressed();
+        case W: return KeyboardKeyIsPressed::IsWPressed();
+        case X: return KeyboardKeyIsPressed::IsXPressed();
+        case Y: return KeyboardKeyIsPressed::IsYPressed();
+        case Z: return KeyboardKeyIsPressed::IsZPressed();
+        case One: return KeyboardKeyIsPressed::Is1Pressed();
+        case Two: return KeyboardKeyIsPressed::Is2Pressed();
+        case Three: return KeyboardKeyIsPressed::Is3Pressed();
+        case Four: return KeyboardKeyIsPressed::Is4Pressed();
+        case Five: return KeyboardKeyIsPressed::Is5Pressed();
+        case Six: return KeyboardKeyIsPressed::Is6Pressed();
+        case Seven: return KeyboardKeyIsPressed::Is7Pressed();
+        case Eight: return KeyboardKeyIsPressed::Is8Pressed();
+        case Nine: return KeyboardKeyIsPressed::Is9Pressed();
+        case Ten: return KeyboardKeyIsPressed::Is0Pressed();
+        case F1: return KeyboardKeyIsPressed::IsF1Pressed();
+        case F2: return KeyboardKeyIsPressed::IsF2Pressed();
+        case F3: return KeyboardKeyIsPressed::IsF3Pressed();
+        case F4: return KeyboardKeyIsPressed::IsF4Pressed();
+        case F5: return KeyboardKeyIsPressed::IsF5Pressed();
+        case F6: return KeyboardKeyIsPressed::IsF6Pressed();
+        case F7: return KeyboardKeyIsPressed::IsF7Pressed();
+        case F8: return KeyboardKeyIsPressed::IsF8Pressed();
+        case F9: return KeyboardKeyIsPressed::IsF9Pressed();
+        case F10: return KeyboardKeyIsPressed::IsF10Pressed();
+        case F11: return KeyboardKeyIsPressed::IsF11Pressed();
+        case F12: return KeyboardKeyIsPressed::IsF12Pressed();
+        case F13: return KeyboardKeyIsPressed::IsF13Pressed();
+        case F14: return KeyboardKeyIsPressed::IsF14Pressed();
+        case F15: return KeyboardKeyIsPressed::IsF15Pressed();
+        case F16: return KeyboardKeyIsPressed::IsF16Pressed();
+        case F17: return KeyboardKeyIsPressed::IsF17Pressed();
+        case F18: return KeyboardKeyIsPressed::IsF18Pressed();
+        case F19: return KeyboardKeyIsPressed::IsF19Pressed();
+        case F20: return KeyboardKeyIsPressed::IsF20Pressed();
+        case F21: return KeyboardKeyIsPressed::IsF21Pressed();
+        case F22: return KeyboardKeyIsPressed::IsF22Pressed();
+        case F23: return KeyboardKeyIsPressed::IsF23Pressed();
+        case F24: return KeyboardKeyIsPressed::IsF24Pressed();
+        case Backspace: return KeyboardKeyIsPressed::IsBackspacePressed();
+        case Tab: return KeyboardKeyIsPressed::IsTabPressed();
+        case Clear: return KeyboardKeyIsPressed::IsClearPressed();
+        case Enter: return KeyboardKeyIsPressed::IsEnterPressed();
+        case LeftShift: return KeyboardKeyIsPressed::IsLeftShiftPressed();
+        case LeftControl: return KeyboardKeyIsPressed::IsLeftControlPressed();
+        case LeftAlt: return KeyboardKeyIsPressed::IsLeftAltPressed();
+        case RightShift: return KeyboardKeyIsPressed::IsRightShiftPressed();
+        case RightControl: return KeyboardKeyIsPressed::IsRightControlPressed();
+        case RightAlt: return KeyboardKeyIsPressed::IsRightAltPressed();
+        case Pause: return KeyboardKeyIsPressed::IsPausePressed();
+        case CapsLock: return KeyboardKeyIsPressed::IsCapsLockPressed();
+        case Esc: return KeyboardKeyIsPressed::IsEscapePressed();
+        case Space: return KeyboardKeyIsPressed::IsSpacePressed();
+        case PageUp: return KeyboardKeyIsPressed::IsPageUpPressed();
+        case PageDown: return KeyboardKeyIsPressed::IsPageDownPressed();
+        case End: return KeyboardKeyIsPressed::IsEndPressed();
+        case Home: return KeyboardKeyIsPressed::IsHomePressed();
+        case LeftArrow: return KeyboardKeyIsPressed::IsLeftArrowPressed();
+        case RightArrow: return KeyboardKeyIsPressed::IsRightArrowPressed();
+        case UpArrow: return KeyboardKeyIsPressed::IsUpArrowPressed();
+        case DownArrow: return KeyboardKeyIsPressed::IsDownArrowPressed();
+        case Select: return KeyboardKeyIsPressed::IsSelectPressed();
+        case Print: return KeyboardKeyIsPressed::IsPrintPressed();
+        case Execute: return KeyboardKeyIsPressed::IsExecutePressed();
+        case PrintScreen: return KeyboardKeyIsPressed::IsPrintScreenPressed();
+        case Insert: return KeyboardKeyIsPressed::IsInsertPressed();
+        case Delete: return KeyboardKeyIsPressed::IsDeletePressed();
+        case Help: return KeyboardKeyIsPressed::IsHelpPressed();
+        case LeftWindows: return KeyboardKeyIsPressed::IsLeftWindowsPressed();
+        case RightWindows: return KeyboardKeyIsPressed::IsRightWindowsPressed();
+        case Apps: return KeyboardKeyIsPressed::IsAppsPressed();
+        case Numpad1: return KeyboardKeyIsPressed::IsNumpad1Pressed();
+        case Numpad2: return KeyboardKeyIsPressed::IsNumpad2Pressed();
+        case Numpad3: return KeyboardKeyIsPressed::IsNumpad3Pressed();
+        case Numpad4: return KeyboardKeyIsPressed::IsNumpad4Pressed();
+        case Numpad5: return KeyboardKeyIsPressed::IsNumpad5Pressed();
+        case Numpad6: return KeyboardKeyIsPressed::IsNumpad6Pressed();
+        case Numpad7: return KeyboardKeyIsPressed::IsNumpad7Pressed();
+        case Numpad8: return KeyboardKeyIsPressed::IsNumpad8Pressed();
+        case Numpad9: return KeyboardKeyIsPressed::IsNumpad9Pressed();
+        case Numpad0: return KeyboardKeyIsPressed::IsNumpad0Pressed();
+        case Subtract: return KeyboardKeyIsPressed::IsSubtractPressed();
+        case Period: return KeyboardKeyIsPressed::IsPeriodPressed();
+        case ForwardSlash: return KeyboardKeyIsPressed::IsForwardSlashPressed();
+        case NumLock: return KeyboardKeyIsPressed::IsNumLockPressed();
+        case ScrollLock: return KeyboardKeyIsPressed::IsScrollLockPressed();
+        case BrowserBack: return KeyboardKeyIsPressed::IsBrowserBackPressed();
+        case BrowserForward: return KeyboardKeyIsPressed::IsBrowserForwardPressed();
+        case BrowserRefresh: return KeyboardKeyIsPressed::IsBrowserRefreshPressed();
+        case BrowserStop: return KeyboardKeyIsPressed::IsBrowserStopPressed();
+        case BrowserSearch: return KeyboardKeyIsPressed::IsBrowserSearchPressed();
+        case BrowserFavorites: return KeyboardKeyIsPressed::IsBrowserFavoritesPressed();
+        case BrowserStart: return KeyboardKeyIsPressed::IsBrowserStartPressed();
+        case VolumeMute: return KeyboardKeyIsPressed::IsVolumeMutePressed();
+        case VolumeDown: return KeyboardKeyIsPressed::IsVolumeDownPressed();
+        case VolumeUp: return KeyboardKeyIsPressed::IsVolumeUpPressed();
+        case NextTrack: return KeyboardKeyIsPressed::IsNextTrackPressed();
+        case PreviousTrack: return KeyboardKeyIsPressed::IsPreviousTrackPressed();
+        case StopTrack: return KeyboardKeyIsPressed::IsStopTrackPressed();
+        case PlayPauseTrack: return KeyboardKeyIsPressed::IsPlayPauseTrackPressed();
+        case StartMail: return KeyboardKeyIsPressed::IsStartMailPressed();
+        case SelectMedia: return KeyboardKeyIsPressed::IsSelectMediaPressed();
+        case StartApplication1: return KeyboardKeyIsPressed::IsStartApplication1Pressed();
+        case StartApplication2: return KeyboardKeyIsPressed::IsStartApplication2Pressed();
+        default: return false;
+    }
+}
+
+void Keyboard::CallAllKeyboardFunctionsIfKeyIsPressed(){
+    if(!Keyboard::IsDisabled) {
+        std::map<std::string, bool> KeysPressed = Keyboard::KeysPressed();
+
+        const bool CTRL = KeysPressed["RightControl"] || KeysPressed["LefttControl"];
+        const bool SHIFT = KeysPressed["RightShift"] || KeysPressed["LeftShift"];
+        const bool ALT = KeysPressed["RightAlt"] || KeysPressed["LeftAlt"];
+        const bool OSKey = KeysPressed["RightWindows"] || KeysPressed["LeftWindows"];
+        
+        if(CTRL) {
+            if(SHIFT) {
+                if(ALT) {
+                    if(OSKey) { // Ctrl Shift Alt OSKey
+                        AKey::KeyAOsKeySHIFTALTCTRL();
+                        BKey::KeyBOsKeySHIFTALTCTRL();
+                        CKey::KeyCOsKeySHIFTALTCTRL();
+                        DKey::KeyDOsKeySHIFTALTCTRL();
+                        EKey::KeyEOsKeySHIFTALTCTRL();
+                        FKey::KeyFOsKeySHIFTALTCTRL();
+                        GKey::KeyGOsKeySHIFTALTCTRL();
+                        HKey::KeyHOsKeySHIFTALTCTRL();
+                        IKey::KeyIOsKeySHIFTALTCTRL();
+                        JKey::KeyJOsKeySHIFTALTCTRL();
+                        KKey::KeyKOsKeySHIFTALTCTRL();
+                        LKey::KeyLOsKeySHIFTALTCTRL();
+                        MKey::KeyMOsKeySHIFTALTCTRL();
+                        NKey::KeyNOsKeySHIFTALTCTRL();
+                        OKey::KeyOOsKeySHIFTALTCTRL();
+                        PKey::KeyPOsKeySHIFTALTCTRL();
+                        QKey::KeyQOsKeySHIFTALTCTRL();
+                        RKey::KeyROsKeySHIFTALTCTRL();
+                        SKey::KeySOsKeySHIFTALTCTRL();
+                        TKey::KeyTOsKeySHIFTALTCTRL();
+                        UKey::KeyUOsKeySHIFTALTCTRL();
+                        VKey::KeyVOsKeySHIFTALTCTRL();
+                        WKey::KeyWOsKeySHIFTALTCTRL();
+                        XKey::KeyXOsKeySHIFTALTCTRL();
+                        YKey::KeyYOsKeySHIFTALTCTRL();
+                        ZKey::KeyZOsKeySHIFTALTCTRL();
+                        OneKey::KeyOneOsKeySHIFTALTCTRL();
+                        TwoKey::KeyTwoOsKeySHIFTALTCTRL();
+                        ThreeKey::KeyThreeOsKeySHIFTALTCTRL();
+                        FourKey::KeyFourOsKeySHIFTALTCTRL();
+                        FiveKey::KeyFiveOsKeySHIFTALTCTRL();
+                        SixKey::KeySixOsKeySHIFTALTCTRL();
+                        SevenKey::KeySevenOsKeySHIFTALTCTRL();
+                        EightKey::KeyEightOsKeySHIFTALTCTRL();
+                        NineKey::KeyNineOsKeySHIFTALTCTRL();
+                        ZeroKey::KeyZeroOsKeySHIFTALTCTRL();
+                        F1Key::KeyF1OsKeySHIFTALTCTRL();
+                        F2Key::KeyF2OsKeySHIFTALTCTRL();
+                        F3Key::KeyF3OsKeySHIFTALTCTRL();
+                        F4Key::KeyF4OsKeySHIFTALTCTRL();
+                        F5Key::KeyF5OsKeySHIFTALTCTRL();
+                        F6Key::KeyF6OsKeySHIFTALTCTRL();
+                        F7Key::KeyF7OsKeySHIFTALTCTRL();
+                        F8Key::KeyF8OsKeySHIFTALTCTRL();
+                        F9Key::KeyF9OsKeySHIFTALTCTRL();
+                        F10Key::KeyF10OsKeySHIFTALTCTRL();
+                        F11Key::KeyF11OsKeySHIFTALTCTRL();
+                        F12Key::KeyF12OsKeySHIFTALTCTRL();
+                        F13Key::KeyF13OsKeySHIFTALTCTRL();
+                        F14Key::KeyF14OsKeySHIFTALTCTRL();
+                        F15Key::KeyF15OsKeySHIFTALTCTRL();
+                        F16Key::KeyF16OsKeySHIFTALTCTRL();
+                        F17Key::KeyF17OsKeySHIFTALTCTRL();
+                        F18Key::KeyF18OsKeySHIFTALTCTRL();
+                        F19Key::KeyF19OsKeySHIFTALTCTRL();
+                        F20Key::KeyF20OsKeySHIFTALTCTRL();
+                        F21Key::KeyF21OsKeySHIFTALTCTRL();
+                        F22Key::KeyF22OsKeySHIFTALTCTRL();
+                        F23Key::KeyF23OsKeySHIFTALTCTRL();
+                        F24Key::KeyF24OsKeySHIFTALTCTRL();
+                        BackspaceKey::KeyBackspaceOsKeySHIFTALTCTRL();
+                        TabKey::KeyTabOsKeySHIFTALTCTRL();
+                        ClearKey::KeyClearOsKeySHIFTALTCTRL();
+                        EnterKey::KeyEnterOsKeySHIFTALTCTRL();
+                        LeftShiftKey::KeyLeftShiftOsKeySHIFTALTCTRL();
+                        LeftControlKey::KeyLeftControlOsKeySHIFTALTCTRL();
+                        LeftAltKey::KeyLeftAltOsKeySHIFTALTCTRL();
+                        RightShiftKey::KeyRightShiftOsKeySHIFTALTCTRL();
+                        RightControlKey::KeyRightControlOsKeySHIFTALTCTRL();
+                        RightAltKey::KeyRightAltOsKeySHIFTALTCTRL();
+                        PauseKey::KeyPauseOsKeySHIFTALTCTRL();
+                        CapsLockKey::KeyCapsLockOsKeySHIFTALTCTRL();
+                        EscapeKey::KeyEscapeOsKeySHIFTALTCTRL();
+                        SpaceKey::KeySpaceOsKeySHIFTALTCTRL();
+                        PageUpKey::KeyPageUpOsKeySHIFTALTCTRL();
+                        PageDownKey::KeyPageDownOsKeySHIFTALTCTRL();
+                        EndKey::KeyEndOsKeySHIFTALTCTRL();
+                        HomeKey::KeyHomeOsKeySHIFTALTCTRL();
+                        LeftArrowKey::KeyLeftArrowOsKeySHIFTALTCTRL();
+                        RightArrowKey::KeyRightArrowOsKeySHIFTALTCTRL();
+                        UpArrowKey::KeyUpArrowOsKeySHIFTALTCTRL();
+                        DownArrowKey::KeyDownArrowOsKeySHIFTALTCTRL();
+                        SelectKey::KeySelectOsKeySHIFTALTCTRL();
+                        PrintKey::KeyPrintOsKeySHIFTALTCTRL();
+                        ExecuteKey::KeyExecuteOsKeySHIFTALTCTRL();
+                        PrintScreenKey::KeyPrintScreenOsKeySHIFTALTCTRL();
+                        InsertKey::KeyInsertOsKeySHIFTALTCTRL();
+                        DeleteKey::KeyDeleteOsKeySHIFTALTCTRL();
+                        HelpKey::KeyHelpOsKeySHIFTALTCTRL();
+                        LeftWindowsKey::KeyLeftWindowsOsKeySHIFTALTCTRL();
+                        RightWindowsKey::KeyRightWindowsOsKeySHIFTALTCTRL();
+                        AppsKey::KeyAppsOsKeySHIFTALTCTRL();
+                        Numpad1Key::KeyNumpad1OsKeySHIFTALTCTRL();
+                        Numpad2Key::KeyNumpad2OsKeySHIFTALTCTRL();
+                        Numpad3Key::KeyNumpad3OsKeySHIFTALTCTRL();
+                        Numpad4Key::KeyNumpad4OsKeySHIFTALTCTRL();
+                        Numpad5Key::KeyNumpad5OsKeySHIFTALTCTRL();
+                        Numpad6Key::KeyNumpad6OsKeySHIFTALTCTRL();
+                        Numpad7Key::KeyNumpad7OsKeySHIFTALTCTRL();
+                        Numpad8Key::KeyNumpad8OsKeySHIFTALTCTRL();
+                        Numpad9Key::KeyNumpad9OsKeySHIFTALTCTRL();
+                        Numpad0Key::KeyNumpad0OsKeySHIFTALTCTRL();
+                        SubtractKey::KeySubtractOsKeySHIFTALTCTRL();
+                        PeriodKey::KeyPeriodOsKeySHIFTALTCTRL();
+                        ForwardSlashKey::KeyForwardSlashOsKeySHIFTALTCTRL();
+                        NumLockKey::KeyNumLockOsKeySHIFTALTCTRL();
+                        ScrollLockKey::KeyScrollLockOsKeySHIFTALTCTRL();
+                        BrowserBackKey::KeyBrowserBackOsKeySHIFTALTCTRL();
+                        BrowserForwardKey::KeyBrowserForwardOsKeySHIFTALTCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTALTCTRL();
+                        BrowserStopKey::KeyBrowserStopOsKeySHIFTALTCTRL();
+                        BrowserSearchKey::KeyBrowserSearchOsKeySHIFTALTCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTALTCTRL();
+                        BrowserStartKey::KeyBrowserStartOsKeySHIFTALTCTRL();
+                        VolumeMuteKey::KeyVolumeMuteOsKeySHIFTALTCTRL();
+                        VolumeDownKey::KeyVolumeDownOsKeySHIFTALTCTRL();
+                        VolumeUpKey::KeyVolumeUpOsKeySHIFTALTCTRL();
+                        NextTrackKey::KeyNextTrackOsKeySHIFTALTCTRL();
+                        PreviousTrackKey::KeyPreviousTrackOsKeySHIFTALTCTRL();
+                        StopTrackKey::KeyStopTrackOsKeySHIFTALTCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTALTCTRL();
+                        StartMailKey::KeyStartMailOsKeySHIFTALTCTRL();
+                        SelectMediaKey::KeySelectMediaOsKeySHIFTALTCTRL();
+                        StartApplication1Key::KeyStartApplication1OsKeySHIFTALTCTRL();
+                        StartApplication2Key::KeyStartApplication2OsKeySHIFTALTCTRL();
+                    } else { // Ctrl Shift Alt
+                        AKey::KeyASHIFTALTCTRL();
+                        BKey::KeyBSHIFTALTCTRL();
+                        CKey::KeyCSHIFTALTCTRL();
+                        DKey::KeyDSHIFTALTCTRL();
+                        EKey::KeyESHIFTALTCTRL();
+                        FKey::KeyFSHIFTALTCTRL();
+                        GKey::KeyGSHIFTALTCTRL();
+                        HKey::KeyHSHIFTALTCTRL();
+                        IKey::KeyISHIFTALTCTRL();
+                        JKey::KeyJSHIFTALTCTRL();
+                        KKey::KeyKSHIFTALTCTRL();
+                        LKey::KeyLSHIFTALTCTRL();
+                        MKey::KeyMSHIFTALTCTRL();
+                        NKey::KeyNSHIFTALTCTRL();
+                        OKey::KeyOSHIFTALTCTRL();
+                        PKey::KeyPSHIFTALTCTRL();
+                        QKey::KeyQSHIFTALTCTRL();
+                        RKey::KeyRSHIFTALTCTRL();
+                        SKey::KeySSHIFTALTCTRL();
+                        TKey::KeyTSHIFTALTCTRL();
+                        UKey::KeyUSHIFTALTCTRL();
+                        VKey::KeyVSHIFTALTCTRL();
+                        WKey::KeyWSHIFTALTCTRL();
+                        XKey::KeyXSHIFTALTCTRL();
+                        YKey::KeyYSHIFTALTCTRL();
+                        ZKey::KeyZSHIFTALTCTRL();
+                        OneKey::KeyOneSHIFTALTCTRL();
+                        TwoKey::KeyTwoSHIFTALTCTRL();
+                        ThreeKey::KeyThreeSHIFTALTCTRL();
+                        FourKey::KeyFourSHIFTALTCTRL();
+                        FiveKey::KeyFiveSHIFTALTCTRL();
+                        SixKey::KeySixSHIFTALTCTRL();
+                        SevenKey::KeySevenSHIFTALTCTRL();
+                        EightKey::KeyEightSHIFTALTCTRL();
+                        NineKey::KeyNineSHIFTALTCTRL();
+                        ZeroKey::KeyZeroSHIFTALTCTRL();
+                        F1Key::KeyF1SHIFTALTCTRL();
+                        F2Key::KeyF2SHIFTALTCTRL();
+                        F3Key::KeyF3SHIFTALTCTRL();
+                        F4Key::KeyF4SHIFTALTCTRL();
+                        F5Key::KeyF5SHIFTALTCTRL();
+                        F6Key::KeyF6SHIFTALTCTRL();
+                        F7Key::KeyF7SHIFTALTCTRL();
+                        F8Key::KeyF8SHIFTALTCTRL();
+                        F9Key::KeyF9SHIFTALTCTRL();
+                        F10Key::KeyF10SHIFTALTCTRL();
+                        F11Key::KeyF11SHIFTALTCTRL();
+                        F12Key::KeyF12SHIFTALTCTRL();
+                        F13Key::KeyF13SHIFTALTCTRL();
+                        F14Key::KeyF14SHIFTALTCTRL();
+                        F15Key::KeyF15SHIFTALTCTRL();
+                        F16Key::KeyF16SHIFTALTCTRL();
+                        F17Key::KeyF17SHIFTALTCTRL();
+                        F18Key::KeyF18SHIFTALTCTRL();
+                        F19Key::KeyF19SHIFTALTCTRL();
+                        F20Key::KeyF20SHIFTALTCTRL();
+                        F21Key::KeyF21SHIFTALTCTRL();
+                        F22Key::KeyF22SHIFTALTCTRL();
+                        F23Key::KeyF23SHIFTALTCTRL();
+                        F24Key::KeyF24SHIFTALTCTRL();
+                        BackspaceKey::KeyBackspaceSHIFTALTCTRL();
+                        TabKey::KeyTabSHIFTALTCTRL();
+                        ClearKey::KeyClearSHIFTALTCTRL();
+                        EnterKey::KeyEnterSHIFTALTCTRL();
+                        LeftShiftKey::KeyLeftShiftSHIFTALTCTRL();
+                        LeftControlKey::KeyLeftControlSHIFTALTCTRL();
+                        LeftAltKey::KeyLeftAltSHIFTALTCTRL();
+                        RightShiftKey::KeyRightShiftSHIFTALTCTRL();
+                        RightControlKey::KeyRightControlSHIFTALTCTRL();
+                        RightAltKey::KeyRightAltSHIFTALTCTRL();
+                        PauseKey::KeyPauseSHIFTALTCTRL();
+                        CapsLockKey::KeyCapsLockSHIFTALTCTRL();
+                        EscapeKey::KeyEscapeSHIFTALTCTRL();
+                        SpaceKey::KeySpaceSHIFTALTCTRL();
+                        PageUpKey::KeyPageUpSHIFTALTCTRL();
+                        PageDownKey::KeyPageDownSHIFTALTCTRL();
+                        EndKey::KeyEndSHIFTALTCTRL();
+                        HomeKey::KeyHomeSHIFTALTCTRL();
+                        LeftArrowKey::KeyLeftArrowSHIFTALTCTRL();
+                        RightArrowKey::KeyRightArrowSHIFTALTCTRL();
+                        UpArrowKey::KeyUpArrowSHIFTALTCTRL();
+                        DownArrowKey::KeyDownArrowSHIFTALTCTRL();
+                        SelectKey::KeySelectSHIFTALTCTRL();
+                        PrintKey::KeyPrintSHIFTALTCTRL();
+                        ExecuteKey::KeyExecuteSHIFTALTCTRL();
+                        PrintScreenKey::KeyPrintScreenSHIFTALTCTRL();
+                        InsertKey::KeyInsertSHIFTALTCTRL();
+                        DeleteKey::KeyDeleteSHIFTALTCTRL();
+                        HelpKey::KeyHelpSHIFTALTCTRL();
+                        LeftWindowsKey::KeyLeftWindowsSHIFTALTCTRL();
+                        RightWindowsKey::KeyRightWindowsSHIFTALTCTRL();
+                        AppsKey::KeyAppsSHIFTALTCTRL();
+                        Numpad1Key::KeyNumpad1SHIFTALTCTRL();
+                        Numpad2Key::KeyNumpad2SHIFTALTCTRL();
+                        Numpad3Key::KeyNumpad3SHIFTALTCTRL();
+                        Numpad4Key::KeyNumpad4SHIFTALTCTRL();
+                        Numpad5Key::KeyNumpad5SHIFTALTCTRL();
+                        Numpad6Key::KeyNumpad6SHIFTALTCTRL();
+                        Numpad7Key::KeyNumpad7SHIFTALTCTRL();
+                        Numpad8Key::KeyNumpad8SHIFTALTCTRL();
+                        Numpad9Key::KeyNumpad9SHIFTALTCTRL();
+                        Numpad0Key::KeyNumpad0SHIFTALTCTRL();
+                        SubtractKey::KeySubtractSHIFTALTCTRL();
+                        PeriodKey::KeyPeriodSHIFTALTCTRL();
+                        ForwardSlashKey::KeyForwardSlashSHIFTALTCTRL();
+                        NumLockKey::KeyNumLockSHIFTALTCTRL();
+                        ScrollLockKey::KeyScrollLockSHIFTALTCTRL();
+                        BrowserBackKey::KeyBrowserBackSHIFTALTCTRL();
+                        BrowserForwardKey::KeyBrowserForwardSHIFTALTCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshSHIFTALTCTRL();
+                        BrowserStopKey::KeyBrowserStopSHIFTALTCTRL();
+                        BrowserSearchKey::KeyBrowserSearchSHIFTALTCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesSHIFTALTCTRL();
+                        BrowserStartKey::KeyBrowserStartSHIFTALTCTRL();
+                        VolumeMuteKey::KeyVolumeMuteSHIFTALTCTRL();
+                        VolumeDownKey::KeyVolumeDownSHIFTALTCTRL();
+                        VolumeUpKey::KeyVolumeUpSHIFTALTCTRL();
+                        NextTrackKey::KeyNextTrackSHIFTALTCTRL();
+                        PreviousTrackKey::KeyPreviousTrackSHIFTALTCTRL();
+                        StopTrackKey::KeyStopTrackSHIFTALTCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackSHIFTALTCTRL();
+                        StartMailKey::KeyStartMailSHIFTALTCTRL();
+                        SelectMediaKey::KeySelectMediaSHIFTALTCTRL();
+                        StartApplication1Key::KeyStartApplication1SHIFTALTCTRL();
+                        StartApplication2Key::KeyStartApplication2SHIFTALTCTRL();
+                    }
+                } else {
+                    if(OSKey) { // Ctrl Shift OSKey
+                        AKey::KeyAOsKeySHIFTCTRL();
+                        BKey::KeyBOsKeySHIFTCTRL();
+                        CKey::KeyCOsKeySHIFTCTRL();
+                        DKey::KeyDOsKeySHIFTCTRL();
+                        EKey::KeyEOsKeySHIFTCTRL();
+                        FKey::KeyFOsKeySHIFTCTRL();
+                        GKey::KeyGOsKeySHIFTCTRL();
+                        HKey::KeyHOsKeySHIFTCTRL();
+                        IKey::KeyIOsKeySHIFTCTRL();
+                        JKey::KeyJOsKeySHIFTCTRL();
+                        KKey::KeyKOsKeySHIFTCTRL();
+                        LKey::KeyLOsKeySHIFTCTRL();
+                        MKey::KeyMOsKeySHIFTCTRL();
+                        NKey::KeyNOsKeySHIFTCTRL();
+                        OKey::KeyOOsKeySHIFTCTRL();
+                        PKey::KeyPOsKeySHIFTCTRL();
+                        QKey::KeyQOsKeySHIFTCTRL();
+                        RKey::KeyROsKeySHIFTCTRL();
+                        SKey::KeySOsKeySHIFTCTRL();
+                        TKey::KeyTOsKeySHIFTCTRL();
+                        UKey::KeyUOsKeySHIFTCTRL();
+                        VKey::KeyVOsKeySHIFTCTRL();
+                        WKey::KeyWOsKeySHIFTCTRL();
+                        XKey::KeyXOsKeySHIFTCTRL();
+                        YKey::KeyYOsKeySHIFTCTRL();
+                        ZKey::KeyZOsKeySHIFTCTRL();
+                        OneKey::KeyOneOsKeySHIFTCTRL();
+                        TwoKey::KeyTwoOsKeySHIFTCTRL();
+                        ThreeKey::KeyThreeOsKeySHIFTCTRL();
+                        FourKey::KeyFourOsKeySHIFTCTRL();
+                        FiveKey::KeyFiveOsKeySHIFTCTRL();
+                        SixKey::KeySixOsKeySHIFTCTRL();
+                        SevenKey::KeySevenOsKeySHIFTCTRL();
+                        EightKey::KeyEightOsKeySHIFTCTRL();
+                        NineKey::KeyNineOsKeySHIFTCTRL();
+                        ZeroKey::KeyZeroOsKeySHIFTCTRL();
+                        F1Key::KeyF1OsKeySHIFTCTRL();
+                        F2Key::KeyF2OsKeySHIFTCTRL();
+                        F3Key::KeyF3OsKeySHIFTCTRL();
+                        F4Key::KeyF4OsKeySHIFTCTRL();
+                        F5Key::KeyF5OsKeySHIFTCTRL();
+                        F6Key::KeyF6OsKeySHIFTCTRL();
+                        F7Key::KeyF7OsKeySHIFTCTRL();
+                        F8Key::KeyF8OsKeySHIFTCTRL();
+                        F9Key::KeyF9OsKeySHIFTCTRL();
+                        F10Key::KeyF10OsKeySHIFTCTRL();
+                        F11Key::KeyF11OsKeySHIFTCTRL();
+                        F12Key::KeyF12OsKeySHIFTCTRL();
+                        F13Key::KeyF13OsKeySHIFTCTRL();
+                        F14Key::KeyF14OsKeySHIFTCTRL();
+                        F15Key::KeyF15OsKeySHIFTCTRL();
+                        F16Key::KeyF16OsKeySHIFTCTRL();
+                        F17Key::KeyF17OsKeySHIFTCTRL();
+                        F18Key::KeyF18OsKeySHIFTCTRL();
+                        F19Key::KeyF19OsKeySHIFTCTRL();
+                        F20Key::KeyF20OsKeySHIFTCTRL();
+                        F21Key::KeyF21OsKeySHIFTCTRL();
+                        F22Key::KeyF22OsKeySHIFTCTRL();
+                        F23Key::KeyF23OsKeySHIFTCTRL();
+                        F24Key::KeyF24OsKeySHIFTCTRL();
+                        BackspaceKey::KeyBackspaceOsKeySHIFTCTRL();
+                        TabKey::KeyTabOsKeySHIFTCTRL();
+                        ClearKey::KeyClearOsKeySHIFTCTRL();
+                        EnterKey::KeyEnterOsKeySHIFTCTRL();
+                        LeftShiftKey::KeyLeftShiftOsKeySHIFTCTRL();
+                        LeftControlKey::KeyLeftControlOsKeySHIFTCTRL();
+                        LeftAltKey::KeyLeftAltOsKeySHIFTCTRL();
+                        RightShiftKey::KeyRightShiftOsKeySHIFTCTRL();
+                        RightControlKey::KeyRightControlOsKeySHIFTCTRL();
+                        RightAltKey::KeyRightAltOsKeySHIFTCTRL();
+                        PauseKey::KeyPauseOsKeySHIFTCTRL();
+                        CapsLockKey::KeyCapsLockOsKeySHIFTCTRL();
+                        EscapeKey::KeyEscapeOsKeySHIFTCTRL();
+                        SpaceKey::KeySpaceOsKeySHIFTCTRL();
+                        PageUpKey::KeyPageUpOsKeySHIFTCTRL();
+                        PageDownKey::KeyPageDownOsKeySHIFTCTRL();
+                        EndKey::KeyEndOsKeySHIFTCTRL();
+                        HomeKey::KeyHomeOsKeySHIFTCTRL();
+                        LeftArrowKey::KeyLeftArrowOsKeySHIFTCTRL();
+                        RightArrowKey::KeyRightArrowOsKeySHIFTCTRL();
+                        UpArrowKey::KeyUpArrowOsKeySHIFTCTRL();
+                        DownArrowKey::KeyDownArrowOsKeySHIFTCTRL();
+                        SelectKey::KeySelectOsKeySHIFTCTRL();
+                        PrintKey::KeyPrintOsKeySHIFTCTRL();
+                        ExecuteKey::KeyExecuteOsKeySHIFTCTRL();
+                        PrintScreenKey::KeyPrintScreenOsKeySHIFTCTRL();
+                        InsertKey::KeyInsertOsKeySHIFTCTRL();
+                        DeleteKey::KeyDeleteOsKeySHIFTCTRL();
+                        HelpKey::KeyHelpOsKeySHIFTCTRL();
+                        LeftWindowsKey::KeyLeftWindowsOsKeySHIFTCTRL();
+                        RightWindowsKey::KeyRightWindowsOsKeySHIFTCTRL();
+                        AppsKey::KeyAppsOsKeySHIFTCTRL();
+                        Numpad1Key::KeyNumpad1OsKeySHIFTCTRL();
+                        Numpad2Key::KeyNumpad2OsKeySHIFTCTRL();
+                        Numpad3Key::KeyNumpad3OsKeySHIFTCTRL();
+                        Numpad4Key::KeyNumpad4OsKeySHIFTCTRL();
+                        Numpad5Key::KeyNumpad5OsKeySHIFTCTRL();
+                        Numpad6Key::KeyNumpad6OsKeySHIFTCTRL();
+                        Numpad7Key::KeyNumpad7OsKeySHIFTCTRL();
+                        Numpad8Key::KeyNumpad8OsKeySHIFTCTRL();
+                        Numpad9Key::KeyNumpad9OsKeySHIFTCTRL();
+                        Numpad0Key::KeyNumpad0OsKeySHIFTCTRL();
+                        SubtractKey::KeySubtractOsKeySHIFTCTRL();
+                        PeriodKey::KeyPeriodOsKeySHIFTCTRL();
+                        ForwardSlashKey::KeyForwardSlashOsKeySHIFTCTRL();
+                        NumLockKey::KeyNumLockOsKeySHIFTCTRL();
+                        ScrollLockKey::KeyScrollLockOsKeySHIFTCTRL();
+                        BrowserBackKey::KeyBrowserBackOsKeySHIFTCTRL();
+                        BrowserForwardKey::KeyBrowserForwardOsKeySHIFTCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTCTRL();
+                        BrowserStopKey::KeyBrowserStopOsKeySHIFTCTRL();
+                        BrowserSearchKey::KeyBrowserSearchOsKeySHIFTCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTCTRL();
+                        BrowserStartKey::KeyBrowserStartOsKeySHIFTCTRL();
+                        VolumeMuteKey::KeyVolumeMuteOsKeySHIFTCTRL();
+                        VolumeDownKey::KeyVolumeDownOsKeySHIFTCTRL();
+                        VolumeUpKey::KeyVolumeUpOsKeySHIFTCTRL();
+                        NextTrackKey::KeyNextTrackOsKeySHIFTCTRL();
+                        PreviousTrackKey::KeyPreviousTrackOsKeySHIFTCTRL();
+                        StopTrackKey::KeyStopTrackOsKeySHIFTCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTCTRL();
+                        StartMailKey::KeyStartMailOsKeySHIFTCTRL();
+                        SelectMediaKey::KeySelectMediaOsKeySHIFTCTRL();
+                        StartApplication1Key::KeyStartApplication1OsKeySHIFTCTRL();
+                        StartApplication2Key::KeyStartApplication2OsKeySHIFTCTRL();
+                    } else { // Ctrl Shift
+                        AKey::KeyASHIFTCTRL();
+                        BKey::KeyBSHIFTCTRL();
+                        CKey::KeyCSHIFTCTRL();
+                        DKey::KeyDSHIFTCTRL();
+                        EKey::KeyESHIFTCTRL();
+                        FKey::KeyFSHIFTCTRL();
+                        GKey::KeyGSHIFTCTRL();
+                        HKey::KeyHSHIFTCTRL();
+                        IKey::KeyISHIFTCTRL();
+                        JKey::KeyJSHIFTCTRL();
+                        KKey::KeyKSHIFTCTRL();
+                        LKey::KeyLSHIFTCTRL();
+                        MKey::KeyMSHIFTCTRL();
+                        NKey::KeyNSHIFTCTRL();
+                        OKey::KeyOSHIFTCTRL();
+                        PKey::KeyPSHIFTCTRL();
+                        QKey::KeyQSHIFTCTRL();
+                        RKey::KeyRSHIFTCTRL();
+                        SKey::KeySSHIFTCTRL();
+                        TKey::KeyTSHIFTCTRL();
+                        UKey::KeyUSHIFTCTRL();
+                        VKey::KeyVSHIFTCTRL();
+                        WKey::KeyWSHIFTCTRL();
+                        XKey::KeyXSHIFTCTRL();
+                        YKey::KeyYSHIFTCTRL();
+                        ZKey::KeyZSHIFTCTRL();
+                        OneKey::KeyOneSHIFTCTRL();
+                        TwoKey::KeyTwoSHIFTCTRL();
+                        ThreeKey::KeyThreeSHIFTCTRL();
+                        FourKey::KeyFourSHIFTCTRL();
+                        FiveKey::KeyFiveSHIFTCTRL();
+                        SixKey::KeySixSHIFTCTRL();
+                        SevenKey::KeySevenSHIFTCTRL();
+                        EightKey::KeyEightSHIFTCTRL();
+                        NineKey::KeyNineSHIFTCTRL();
+                        ZeroKey::KeyZeroSHIFTCTRL();
+                        F1Key::KeyF1SHIFTCTRL();
+                        F2Key::KeyF2SHIFTCTRL();
+                        F3Key::KeyF3SHIFTCTRL();
+                        F4Key::KeyF4SHIFTCTRL();
+                        F5Key::KeyF5SHIFTCTRL();
+                        F6Key::KeyF6SHIFTCTRL();
+                        F7Key::KeyF7SHIFTCTRL();
+                        F8Key::KeyF8SHIFTCTRL();
+                        F9Key::KeyF9SHIFTCTRL();
+                        F10Key::KeyF10SHIFTCTRL();
+                        F11Key::KeyF11SHIFTCTRL();
+                        F12Key::KeyF12SHIFTCTRL();
+                        F13Key::KeyF13SHIFTCTRL();
+                        F14Key::KeyF14SHIFTCTRL();
+                        F15Key::KeyF15SHIFTCTRL();
+                        F16Key::KeyF16SHIFTCTRL();
+                        F17Key::KeyF17SHIFTCTRL();
+                        F18Key::KeyF18SHIFTCTRL();
+                        F19Key::KeyF19SHIFTCTRL();
+                        F20Key::KeyF20SHIFTCTRL();
+                        F21Key::KeyF21SHIFTCTRL();
+                        F22Key::KeyF22SHIFTCTRL();
+                        F23Key::KeyF23SHIFTCTRL();
+                        F24Key::KeyF24SHIFTCTRL();
+                        BackspaceKey::KeyBackspaceSHIFTCTRL();
+                        TabKey::KeyTabSHIFTCTRL();
+                        ClearKey::KeyClearSHIFTCTRL();
+                        EnterKey::KeyEnterSHIFTCTRL();
+                        LeftShiftKey::KeyLeftShiftSHIFTCTRL();
+                        LeftControlKey::KeyLeftControlSHIFTCTRL();
+                        LeftAltKey::KeyLeftAltSHIFTCTRL();
+                        RightShiftKey::KeyRightShiftSHIFTCTRL();
+                        RightControlKey::KeyRightControlSHIFTCTRL();
+                        RightAltKey::KeyRightAltSHIFTCTRL();
+                        PauseKey::KeyPauseSHIFTCTRL();
+                        CapsLockKey::KeyCapsLockSHIFTCTRL();
+                        EscapeKey::KeyEscapeSHIFTCTRL();
+                        SpaceKey::KeySpaceSHIFTCTRL();
+                        PageUpKey::KeyPageUpSHIFTCTRL();
+                        PageDownKey::KeyPageDownSHIFTCTRL();
+                        EndKey::KeyEndSHIFTCTRL();
+                        HomeKey::KeyHomeSHIFTCTRL();
+                        LeftArrowKey::KeyLeftArrowSHIFTCTRL();
+                        RightArrowKey::KeyRightArrowSHIFTCTRL();
+                        UpArrowKey::KeyUpArrowSHIFTCTRL();
+                        DownArrowKey::KeyDownArrowSHIFTCTRL();
+                        SelectKey::KeySelectSHIFTCTRL();
+                        PrintKey::KeyPrintSHIFTCTRL();
+                        ExecuteKey::KeyExecuteSHIFTCTRL();
+                        PrintScreenKey::KeyPrintScreenSHIFTCTRL();
+                        InsertKey::KeyInsertSHIFTCTRL();
+                        DeleteKey::KeyDeleteSHIFTCTRL();
+                        HelpKey::KeyHelpSHIFTCTRL();
+                        LeftWindowsKey::KeyLeftWindowsSHIFTCTRL();
+                        RightWindowsKey::KeyRightWindowsSHIFTCTRL();
+                        AppsKey::KeyAppsSHIFTCTRL();
+                        Numpad1Key::KeyNumpad1SHIFTCTRL();
+                        Numpad2Key::KeyNumpad2SHIFTCTRL();
+                        Numpad3Key::KeyNumpad3SHIFTCTRL();
+                        Numpad4Key::KeyNumpad4SHIFTCTRL();
+                        Numpad5Key::KeyNumpad5SHIFTCTRL();
+                        Numpad6Key::KeyNumpad6SHIFTCTRL();
+                        Numpad7Key::KeyNumpad7SHIFTCTRL();
+                        Numpad8Key::KeyNumpad8SHIFTCTRL();
+                        Numpad9Key::KeyNumpad9SHIFTCTRL();
+                        Numpad0Key::KeyNumpad0SHIFTCTRL();
+                        SubtractKey::KeySubtractSHIFTCTRL();
+                        PeriodKey::KeyPeriodSHIFTCTRL();
+                        ForwardSlashKey::KeyForwardSlashSHIFTCTRL();
+                        NumLockKey::KeyNumLockSHIFTCTRL();
+                        ScrollLockKey::KeyScrollLockSHIFTCTRL();
+                        BrowserBackKey::KeyBrowserBackSHIFTCTRL();
+                        BrowserForwardKey::KeyBrowserForwardSHIFTCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshSHIFTCTRL();
+                        BrowserStopKey::KeyBrowserStopSHIFTCTRL();
+                        BrowserSearchKey::KeyBrowserSearchSHIFTCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesSHIFTCTRL();
+                        BrowserStartKey::KeyBrowserStartSHIFTCTRL();
+                        VolumeMuteKey::KeyVolumeMuteSHIFTCTRL();
+                        VolumeDownKey::KeyVolumeDownSHIFTCTRL();
+                        VolumeUpKey::KeyVolumeUpSHIFTCTRL();
+                        NextTrackKey::KeyNextTrackSHIFTCTRL();
+                        PreviousTrackKey::KeyPreviousTrackSHIFTCTRL();
+                        StopTrackKey::KeyStopTrackSHIFTCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackSHIFTCTRL();
+                        StartMailKey::KeyStartMailSHIFTCTRL();
+                        SelectMediaKey::KeySelectMediaSHIFTCTRL();
+                        StartApplication1Key::KeyStartApplication1SHIFTCTRL();
+                        StartApplication2Key::KeyStartApplication2SHIFTCTRL();
+                    }
+                }
+            } else {
+                if(ALT) {
+                    if(OSKey) { // Ctrl Alt OSKey
+                        AKey::KeyAOsKeyALTCTRL();
+                        BKey::KeyBOsKeyALTCTRL();
+                        CKey::KeyCOsKeyALTCTRL();
+                        DKey::KeyDOsKeyALTCTRL();
+                        EKey::KeyEOsKeyALTCTRL();
+                        FKey::KeyFOsKeyALTCTRL();
+                        GKey::KeyGOsKeyALTCTRL();
+                        HKey::KeyHOsKeyALTCTRL();
+                        IKey::KeyIOsKeyALTCTRL();
+                        JKey::KeyJOsKeyALTCTRL();
+                        KKey::KeyKOsKeyALTCTRL();
+                        LKey::KeyLOsKeyALTCTRL();
+                        MKey::KeyMOsKeyALTCTRL();
+                        NKey::KeyNOsKeyALTCTRL();
+                        OKey::KeyOOsKeyALTCTRL();
+                        PKey::KeyPOsKeyALTCTRL();
+                        QKey::KeyQOsKeyALTCTRL();
+                        RKey::KeyROsKeyALTCTRL();
+                        SKey::KeySOsKeyALTCTRL();
+                        TKey::KeyTOsKeyALTCTRL();
+                        UKey::KeyUOsKeyALTCTRL();
+                        VKey::KeyVOsKeyALTCTRL();
+                        WKey::KeyWOsKeyALTCTRL();
+                        XKey::KeyXOsKeyALTCTRL();
+                        YKey::KeyYOsKeyALTCTRL();
+                        ZKey::KeyZOsKeyALTCTRL();
+                        OneKey::KeyOneOsKeyALTCTRL();
+                        TwoKey::KeyTwoOsKeyALTCTRL();
+                        ThreeKey::KeyThreeOsKeyALTCTRL();
+                        FourKey::KeyFourOsKeyALTCTRL();
+                        FiveKey::KeyFiveOsKeyALTCTRL();
+                        SixKey::KeySixOsKeyALTCTRL();
+                        SevenKey::KeySevenOsKeyALTCTRL();
+                        EightKey::KeyEightOsKeyALTCTRL();
+                        NineKey::KeyNineOsKeyALTCTRL();
+                        ZeroKey::KeyZeroOsKeyALTCTRL();
+                        F1Key::KeyF1OsKeyALTCTRL();
+                        F2Key::KeyF2OsKeyALTCTRL();
+                        F3Key::KeyF3OsKeyALTCTRL();
+                        F4Key::KeyF4OsKeyALTCTRL();
+                        F5Key::KeyF5OsKeyALTCTRL();
+                        F6Key::KeyF6OsKeyALTCTRL();
+                        F7Key::KeyF7OsKeyALTCTRL();
+                        F8Key::KeyF8OsKeyALTCTRL();
+                        F9Key::KeyF9OsKeyALTCTRL();
+                        F10Key::KeyF10OsKeyALTCTRL();
+                        F11Key::KeyF11OsKeyALTCTRL();
+                        F12Key::KeyF12OsKeyALTCTRL();
+                        F13Key::KeyF13OsKeyALTCTRL();
+                        F14Key::KeyF14OsKeyALTCTRL();
+                        F15Key::KeyF15OsKeyALTCTRL();
+                        F16Key::KeyF16OsKeyALTCTRL();
+                        F17Key::KeyF17OsKeyALTCTRL();
+                        F18Key::KeyF18OsKeyALTCTRL();
+                        F19Key::KeyF19OsKeyALTCTRL();
+                        F20Key::KeyF20OsKeyALTCTRL();
+                        F21Key::KeyF21OsKeyALTCTRL();
+                        F22Key::KeyF22OsKeyALTCTRL();
+                        F23Key::KeyF23OsKeyALTCTRL();
+                        F24Key::KeyF24OsKeyALTCTRL();
+                        BackspaceKey::KeyBackspaceOsKeyALTCTRL();
+                        TabKey::KeyTabOsKeyALTCTRL();
+                        ClearKey::KeyClearOsKeyALTCTRL();
+                        EnterKey::KeyEnterOsKeyALTCTRL();
+                        LeftShiftKey::KeyLeftShiftOsKeyALTCTRL();
+                        LeftControlKey::KeyLeftControlOsKeyALTCTRL();
+                        LeftAltKey::KeyLeftAltOsKeyALTCTRL();
+                        RightShiftKey::KeyRightShiftOsKeyALTCTRL();
+                        RightControlKey::KeyRightControlOsKeyALTCTRL();
+                        RightAltKey::KeyRightAltOsKeyALTCTRL();
+                        PauseKey::KeyPauseOsKeyALTCTRL();
+                        CapsLockKey::KeyCapsLockOsKeyALTCTRL();
+                        EscapeKey::KeyEscapeOsKeyALTCTRL();
+                        SpaceKey::KeySpaceOsKeyALTCTRL();
+                        PageUpKey::KeyPageUpOsKeyALTCTRL();
+                        PageDownKey::KeyPageDownOsKeyALTCTRL();
+                        EndKey::KeyEndOsKeyALTCTRL();
+                        HomeKey::KeyHomeOsKeyALTCTRL();
+                        LeftArrowKey::KeyLeftArrowOsKeyALTCTRL();
+                        RightArrowKey::KeyRightArrowOsKeyALTCTRL();
+                        UpArrowKey::KeyUpArrowOsKeyALTCTRL();
+                        DownArrowKey::KeyDownArrowOsKeyALTCTRL();
+                        SelectKey::KeySelectOsKeyALTCTRL();
+                        PrintKey::KeyPrintOsKeyALTCTRL();
+                        ExecuteKey::KeyExecuteOsKeyALTCTRL();
+                        PrintScreenKey::KeyPrintScreenOsKeyALTCTRL();
+                        InsertKey::KeyInsertOsKeyALTCTRL();
+                        DeleteKey::KeyDeleteOsKeyALTCTRL();
+                        HelpKey::KeyHelpOsKeyALTCTRL();
+                        LeftWindowsKey::KeyLeftWindowsOsKeyALTCTRL();
+                        RightWindowsKey::KeyRightWindowsOsKeyALTCTRL();
+                        AppsKey::KeyAppsOsKeyALTCTRL();
+                        Numpad1Key::KeyNumpad1OsKeyALTCTRL();
+                        Numpad2Key::KeyNumpad2OsKeyALTCTRL();
+                        Numpad3Key::KeyNumpad3OsKeyALTCTRL();
+                        Numpad4Key::KeyNumpad4OsKeyALTCTRL();
+                        Numpad5Key::KeyNumpad5OsKeyALTCTRL();
+                        Numpad6Key::KeyNumpad6OsKeyALTCTRL();
+                        Numpad7Key::KeyNumpad7OsKeyALTCTRL();
+                        Numpad8Key::KeyNumpad8OsKeyALTCTRL();
+                        Numpad9Key::KeyNumpad9OsKeyALTCTRL();
+                        Numpad0Key::KeyNumpad0OsKeyALTCTRL();
+                        SubtractKey::KeySubtractOsKeyALTCTRL();
+                        PeriodKey::KeyPeriodOsKeyALTCTRL();
+                        ForwardSlashKey::KeyForwardSlashOsKeyALTCTRL();
+                        NumLockKey::KeyNumLockOsKeyALTCTRL();
+                        ScrollLockKey::KeyScrollLockOsKeyALTCTRL();
+                        BrowserBackKey::KeyBrowserBackOsKeyALTCTRL();
+                        BrowserForwardKey::KeyBrowserForwardOsKeyALTCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKeyALTCTRL();
+                        BrowserStopKey::KeyBrowserStopOsKeyALTCTRL();
+                        BrowserSearchKey::KeyBrowserSearchOsKeyALTCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKeyALTCTRL();
+                        BrowserStartKey::KeyBrowserStartOsKeyALTCTRL();
+                        VolumeMuteKey::KeyVolumeMuteOsKeyALTCTRL();
+                        VolumeDownKey::KeyVolumeDownOsKeyALTCTRL();
+                        VolumeUpKey::KeyVolumeUpOsKeyALTCTRL();
+                        NextTrackKey::KeyNextTrackOsKeyALTCTRL();
+                        PreviousTrackKey::KeyPreviousTrackOsKeyALTCTRL();
+                        StopTrackKey::KeyStopTrackOsKeyALTCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKeyALTCTRL();
+                        StartMailKey::KeyStartMailOsKeyALTCTRL();
+                        SelectMediaKey::KeySelectMediaOsKeyALTCTRL();
+                        StartApplication1Key::KeyStartApplication1OsKeyALTCTRL();
+                        StartApplication2Key::KeyStartApplication2OsKeyALTCTRL();
+                    } else { // Ctrl Alt
+                        AKey::KeyAALTCTRL();
+                        BKey::KeyBALTCTRL();
+                        CKey::KeyCALTCTRL();
+                        DKey::KeyDALTCTRL();
+                        EKey::KeyEALTCTRL();
+                        FKey::KeyFALTCTRL();
+                        GKey::KeyGALTCTRL();
+                        HKey::KeyHALTCTRL();
+                        IKey::KeyIALTCTRL();
+                        JKey::KeyJALTCTRL();
+                        KKey::KeyKALTCTRL();
+                        LKey::KeyLALTCTRL();
+                        MKey::KeyMALTCTRL();
+                        NKey::KeyNALTCTRL();
+                        OKey::KeyOALTCTRL();
+                        PKey::KeyPALTCTRL();
+                        QKey::KeyQALTCTRL();
+                        RKey::KeyRALTCTRL();
+                        SKey::KeySALTCTRL();
+                        TKey::KeyTALTCTRL();
+                        UKey::KeyUALTCTRL();
+                        VKey::KeyVALTCTRL();
+                        WKey::KeyWALTCTRL();
+                        XKey::KeyXALTCTRL();
+                        YKey::KeyYALTCTRL();
+                        ZKey::KeyZALTCTRL();
+                        OneKey::KeyOneALTCTRL();
+                        TwoKey::KeyTwoALTCTRL();
+                        ThreeKey::KeyThreeALTCTRL();
+                        FourKey::KeyFourALTCTRL();
+                        FiveKey::KeyFiveALTCTRL();
+                        SixKey::KeySixALTCTRL();
+                        SevenKey::KeySevenALTCTRL();
+                        EightKey::KeyEightALTCTRL();
+                        NineKey::KeyNineALTCTRL();
+                        ZeroKey::KeyZeroALTCTRL();
+                        F1Key::KeyF1ALTCTRL();
+                        F2Key::KeyF2ALTCTRL();
+                        F3Key::KeyF3ALTCTRL();
+                        F4Key::KeyF4ALTCTRL();
+                        F5Key::KeyF5ALTCTRL();
+                        F6Key::KeyF6ALTCTRL();
+                        F7Key::KeyF7ALTCTRL();
+                        F8Key::KeyF8ALTCTRL();
+                        F9Key::KeyF9ALTCTRL();
+                        F10Key::KeyF10ALTCTRL();
+                        F11Key::KeyF11ALTCTRL();
+                        F12Key::KeyF12ALTCTRL();
+                        F13Key::KeyF13ALTCTRL();
+                        F14Key::KeyF14ALTCTRL();
+                        F15Key::KeyF15ALTCTRL();
+                        F16Key::KeyF16ALTCTRL();
+                        F17Key::KeyF17ALTCTRL();
+                        F18Key::KeyF18ALTCTRL();
+                        F19Key::KeyF19ALTCTRL();
+                        F20Key::KeyF20ALTCTRL();
+                        F21Key::KeyF21ALTCTRL();
+                        F22Key::KeyF22ALTCTRL();
+                        F23Key::KeyF23ALTCTRL();
+                        F24Key::KeyF24ALTCTRL();
+                        BackspaceKey::KeyBackspaceALTCTRL();
+                        TabKey::KeyTabALTCTRL();
+                        ClearKey::KeyClearALTCTRL();
+                        EnterKey::KeyEnterALTCTRL();
+                        LeftShiftKey::KeyLeftShiftALTCTRL();
+                        LeftControlKey::KeyLeftControlALTCTRL();
+                        LeftAltKey::KeyLeftAltALTCTRL();
+                        RightShiftKey::KeyRightShiftALTCTRL();
+                        RightControlKey::KeyRightControlALTCTRL();
+                        RightAltKey::KeyRightAltALTCTRL();
+                        PauseKey::KeyPauseALTCTRL();
+                        CapsLockKey::KeyCapsLockALTCTRL();
+                        EscapeKey::KeyEscapeALTCTRL();
+                        SpaceKey::KeySpaceALTCTRL();
+                        PageUpKey::KeyPageUpALTCTRL();
+                        PageDownKey::KeyPageDownALTCTRL();
+                        EndKey::KeyEndALTCTRL();
+                        HomeKey::KeyHomeALTCTRL();
+                        LeftArrowKey::KeyLeftArrowALTCTRL();
+                        RightArrowKey::KeyRightArrowALTCTRL();
+                        UpArrowKey::KeyUpArrowALTCTRL();
+                        DownArrowKey::KeyDownArrowALTCTRL();
+                        SelectKey::KeySelectALTCTRL();
+                        PrintKey::KeyPrintALTCTRL();
+                        ExecuteKey::KeyExecuteALTCTRL();
+                        PrintScreenKey::KeyPrintScreenALTCTRL();
+                        InsertKey::KeyInsertALTCTRL();
+                        DeleteKey::KeyDeleteALTCTRL();
+                        HelpKey::KeyHelpALTCTRL();
+                        LeftWindowsKey::KeyLeftWindowsALTCTRL();
+                        RightWindowsKey::KeyRightWindowsALTCTRL();
+                        AppsKey::KeyAppsALTCTRL();
+                        Numpad1Key::KeyNumpad1ALTCTRL();
+                        Numpad2Key::KeyNumpad2ALTCTRL();
+                        Numpad3Key::KeyNumpad3ALTCTRL();
+                        Numpad4Key::KeyNumpad4ALTCTRL();
+                        Numpad5Key::KeyNumpad5ALTCTRL();
+                        Numpad6Key::KeyNumpad6ALTCTRL();
+                        Numpad7Key::KeyNumpad7ALTCTRL();
+                        Numpad8Key::KeyNumpad8ALTCTRL();
+                        Numpad9Key::KeyNumpad9ALTCTRL();
+                        Numpad0Key::KeyNumpad0ALTCTRL();
+                        SubtractKey::KeySubtractALTCTRL();
+                        PeriodKey::KeyPeriodALTCTRL();
+                        ForwardSlashKey::KeyForwardSlashALTCTRL();
+                        NumLockKey::KeyNumLockALTCTRL();
+                        ScrollLockKey::KeyScrollLockALTCTRL();
+                        BrowserBackKey::KeyBrowserBackALTCTRL();
+                        BrowserForwardKey::KeyBrowserForwardALTCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshALTCTRL();
+                        BrowserStopKey::KeyBrowserStopALTCTRL();
+                        BrowserSearchKey::KeyBrowserSearchALTCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesALTCTRL();
+                        BrowserStartKey::KeyBrowserStartALTCTRL();
+                        VolumeMuteKey::KeyVolumeMuteALTCTRL();
+                        VolumeDownKey::KeyVolumeDownALTCTRL();
+                        VolumeUpKey::KeyVolumeUpALTCTRL();
+                        NextTrackKey::KeyNextTrackALTCTRL();
+                        PreviousTrackKey::KeyPreviousTrackALTCTRL();
+                        StopTrackKey::KeyStopTrackALTCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackALTCTRL();
+                        StartMailKey::KeyStartMailALTCTRL();
+                        SelectMediaKey::KeySelectMediaALTCTRL();
+                        StartApplication1Key::KeyStartApplication1ALTCTRL();
+                        StartApplication2Key::KeyStartApplication2ALTCTRL();
+                    }
+                } else {
+                    if(OSKey) { // Ctrl OSKey
+                        AKey::KeyAOsKeyCTRL();
+                        BKey::KeyBOsKeyCTRL();
+                        CKey::KeyCOsKeyCTRL();
+                        DKey::KeyDOsKeyCTRL();
+                        EKey::KeyEOsKeyCTRL();
+                        FKey::KeyFOsKeyCTRL();
+                        GKey::KeyGOsKeyCTRL();
+                        HKey::KeyHOsKeyCTRL();
+                        IKey::KeyIOsKeyCTRL();
+                        JKey::KeyJOsKeyCTRL();
+                        KKey::KeyKOsKeyCTRL();
+                        LKey::KeyLOsKeyCTRL();
+                        MKey::KeyMOsKeyCTRL();
+                        NKey::KeyNOsKeyCTRL();
+                        OKey::KeyOOsKeyCTRL();
+                        PKey::KeyPOsKeyCTRL();
+                        QKey::KeyQOsKeyCTRL();
+                        RKey::KeyROsKeyCTRL();
+                        SKey::KeySOsKeyCTRL();
+                        TKey::KeyTOsKeyCTRL();
+                        UKey::KeyUOsKeyCTRL();
+                        VKey::KeyVOsKeyCTRL();
+                        WKey::KeyWOsKeyCTRL();
+                        XKey::KeyXOsKeyCTRL();
+                        YKey::KeyYOsKeyCTRL();
+                        ZKey::KeyZOsKeyCTRL();
+                        OneKey::KeyOneOsKeyCTRL();
+                        TwoKey::KeyTwoOsKeyCTRL();
+                        ThreeKey::KeyThreeOsKeyCTRL();
+                        FourKey::KeyFourOsKeyCTRL();
+                        FiveKey::KeyFiveOsKeyCTRL();
+                        SixKey::KeySixOsKeyCTRL();
+                        SevenKey::KeySevenOsKeyCTRL();
+                        EightKey::KeyEightOsKeyCTRL();
+                        NineKey::KeyNineOsKeyCTRL();
+                        ZeroKey::KeyZeroOsKeyCTRL();
+                        F1Key::KeyF1OsKeyCTRL();
+                        F2Key::KeyF2OsKeyCTRL();
+                        F3Key::KeyF3OsKeyCTRL();
+                        F4Key::KeyF4OsKeyCTRL();
+                        F5Key::KeyF5OsKeyCTRL();
+                        F6Key::KeyF6OsKeyCTRL();
+                        F7Key::KeyF7OsKeyCTRL();
+                        F8Key::KeyF8OsKeyCTRL();
+                        F9Key::KeyF9OsKeyCTRL();
+                        F10Key::KeyF10OsKeyCTRL();
+                        F11Key::KeyF11OsKeyCTRL();
+                        F12Key::KeyF12OsKeyCTRL();
+                        F13Key::KeyF13OsKeyCTRL();
+                        F14Key::KeyF14OsKeyCTRL();
+                        F15Key::KeyF15OsKeyCTRL();
+                        F16Key::KeyF16OsKeyCTRL();
+                        F17Key::KeyF17OsKeyCTRL();
+                        F18Key::KeyF18OsKeyCTRL();
+                        F19Key::KeyF19OsKeyCTRL();
+                        F20Key::KeyF20OsKeyCTRL();
+                        F21Key::KeyF21OsKeyCTRL();
+                        F22Key::KeyF22OsKeyCTRL();
+                        F23Key::KeyF23OsKeyCTRL();
+                        F24Key::KeyF24OsKeyCTRL();
+                        BackspaceKey::KeyBackspaceOsKeyCTRL();
+                        TabKey::KeyTabOsKeyCTRL();
+                        ClearKey::KeyClearOsKeyCTRL();
+                        EnterKey::KeyEnterOsKeyCTRL();
+                        LeftShiftKey::KeyLeftShiftOsKeyCTRL();
+                        LeftControlKey::KeyLeftControlOsKeyCTRL();
+                        LeftAltKey::KeyLeftAltOsKeyCTRL();
+                        RightShiftKey::KeyRightShiftOsKeyCTRL();
+                        RightControlKey::KeyRightControlOsKeyCTRL();
+                        RightAltKey::KeyRightAltOsKeyCTRL();
+                        PauseKey::KeyPauseOsKeyCTRL();
+                        CapsLockKey::KeyCapsLockOsKeyCTRL();
+                        EscapeKey::KeyEscapeOsKeyCTRL();
+                        SpaceKey::KeySpaceOsKeyCTRL();
+                        PageUpKey::KeyPageUpOsKeyCTRL();
+                        PageDownKey::KeyPageDownOsKeyCTRL();
+                        EndKey::KeyEndOsKeyCTRL();
+                        HomeKey::KeyHomeOsKeyCTRL();
+                        LeftArrowKey::KeyLeftArrowOsKeyCTRL();
+                        RightArrowKey::KeyRightArrowOsKeyCTRL();
+                        UpArrowKey::KeyUpArrowOsKeyCTRL();
+                        DownArrowKey::KeyDownArrowOsKeyCTRL();
+                        SelectKey::KeySelectOsKeyCTRL();
+                        PrintKey::KeyPrintOsKeyCTRL();
+                        ExecuteKey::KeyExecuteOsKeyCTRL();
+                        PrintScreenKey::KeyPrintScreenOsKeyCTRL();
+                        InsertKey::KeyInsertOsKeyCTRL();
+                        DeleteKey::KeyDeleteOsKeyCTRL();
+                        HelpKey::KeyHelpOsKeyCTRL();
+                        LeftWindowsKey::KeyLeftWindowsOsKeyCTRL();
+                        RightWindowsKey::KeyRightWindowsOsKeyCTRL();
+                        AppsKey::KeyAppsOsKeyCTRL();
+                        Numpad1Key::KeyNumpad1OsKeyCTRL();
+                        Numpad2Key::KeyNumpad2OsKeyCTRL();
+                        Numpad3Key::KeyNumpad3OsKeyCTRL();
+                        Numpad4Key::KeyNumpad4OsKeyCTRL();
+                        Numpad5Key::KeyNumpad5OsKeyCTRL();
+                        Numpad6Key::KeyNumpad6OsKeyCTRL();
+                        Numpad7Key::KeyNumpad7OsKeyCTRL();
+                        Numpad8Key::KeyNumpad8OsKeyCTRL();
+                        Numpad9Key::KeyNumpad9OsKeyCTRL();
+                        Numpad0Key::KeyNumpad0OsKeyCTRL();
+                        SubtractKey::KeySubtractOsKeyCTRL();
+                        PeriodKey::KeyPeriodOsKeyCTRL();
+                        ForwardSlashKey::KeyForwardSlashOsKeyCTRL();
+                        NumLockKey::KeyNumLockOsKeyCTRL();
+                        ScrollLockKey::KeyScrollLockOsKeyCTRL();
+                        BrowserBackKey::KeyBrowserBackOsKeyCTRL();
+                        BrowserForwardKey::KeyBrowserForwardOsKeyCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKeyCTRL();
+                        BrowserStopKey::KeyBrowserStopOsKeyCTRL();
+                        BrowserSearchKey::KeyBrowserSearchOsKeyCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKeyCTRL();
+                        BrowserStartKey::KeyBrowserStartOsKeyCTRL();
+                        VolumeMuteKey::KeyVolumeMuteOsKeyCTRL();
+                        VolumeDownKey::KeyVolumeDownOsKeyCTRL();
+                        VolumeUpKey::KeyVolumeUpOsKeyCTRL();
+                        NextTrackKey::KeyNextTrackOsKeyCTRL();
+                        PreviousTrackKey::KeyPreviousTrackOsKeyCTRL();
+                        StopTrackKey::KeyStopTrackOsKeyCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKeyCTRL();
+                        StartMailKey::KeyStartMailOsKeyCTRL();
+                        SelectMediaKey::KeySelectMediaOsKeyCTRL();
+                        StartApplication1Key::KeyStartApplication1OsKeyCTRL();
+                        StartApplication2Key::KeyStartApplication2OsKeyCTRL();
+                    } else { // Ctrl
+                        AKey::KeyACTRL();
+                        BKey::KeyBCTRL();
+                        CKey::KeyCCTRL();
+                        DKey::KeyDCTRL();
+                        EKey::KeyECTRL();
+                        FKey::KeyFCTRL();
+                        GKey::KeyGCTRL();
+                        HKey::KeyHCTRL();
+                        IKey::KeyICTRL();
+                        JKey::KeyJCTRL();
+                        KKey::KeyKCTRL();
+                        LKey::KeyLCTRL();
+                        MKey::KeyMCTRL();
+                        NKey::KeyNCTRL();
+                        OKey::KeyOCTRL();
+                        PKey::KeyPCTRL();
+                        QKey::KeyQCTRL();
+                        RKey::KeyRCTRL();
+                        SKey::KeySCTRL();
+                        TKey::KeyTCTRL();
+                        UKey::KeyUCTRL();
+                        VKey::KeyVCTRL();
+                        WKey::KeyWCTRL();
+                        XKey::KeyXCTRL();
+                        YKey::KeyYCTRL();
+                        ZKey::KeyZCTRL();
+                        OneKey::KeyOneCTRL();
+                        TwoKey::KeyTwoCTRL();
+                        ThreeKey::KeyThreeCTRL();
+                        FourKey::KeyFourCTRL();
+                        FiveKey::KeyFiveCTRL();
+                        SixKey::KeySixCTRL();
+                        SevenKey::KeySevenCTRL();
+                        EightKey::KeyEightCTRL();
+                        NineKey::KeyNineCTRL();
+                        ZeroKey::KeyZeroCTRL();
+                        F1Key::KeyF1CTRL();
+                        F2Key::KeyF2CTRL();
+                        F3Key::KeyF3CTRL();
+                        F4Key::KeyF4CTRL();
+                        F5Key::KeyF5CTRL();
+                        F6Key::KeyF6CTRL();
+                        F7Key::KeyF7CTRL();
+                        F8Key::KeyF8CTRL();
+                        F9Key::KeyF9CTRL();
+                        F10Key::KeyF10CTRL();
+                        F11Key::KeyF11CTRL();
+                        F12Key::KeyF12CTRL();
+                        F13Key::KeyF13CTRL();
+                        F14Key::KeyF14CTRL();
+                        F15Key::KeyF15CTRL();
+                        F16Key::KeyF16CTRL();
+                        F17Key::KeyF17CTRL();
+                        F18Key::KeyF18CTRL();
+                        F19Key::KeyF19CTRL();
+                        F20Key::KeyF20CTRL();
+                        F21Key::KeyF21CTRL();
+                        F22Key::KeyF22CTRL();
+                        F23Key::KeyF23CTRL();
+                        F24Key::KeyF24CTRL();
+                        BackspaceKey::KeyBackspaceCTRL();
+                        TabKey::KeyTabCTRL();
+                        ClearKey::KeyClearCTRL();
+                        EnterKey::KeyEnterCTRL();
+                        LeftShiftKey::KeyLeftShiftCTRL();
+                        LeftControlKey::KeyLeftControlCTRL();
+                        LeftAltKey::KeyLeftAltCTRL();
+                        RightShiftKey::KeyRightShiftCTRL();
+                        RightControlKey::KeyRightControlCTRL();
+                        RightAltKey::KeyRightAltCTRL();
+                        PauseKey::KeyPauseCTRL();
+                        CapsLockKey::KeyCapsLockCTRL();
+                        EscapeKey::KeyEscapeCTRL();
+                        SpaceKey::KeySpaceCTRL();
+                        PageUpKey::KeyPageUpCTRL();
+                        PageDownKey::KeyPageDownCTRL();
+                        EndKey::KeyEndCTRL();
+                        HomeKey::KeyHomeCTRL();
+                        LeftArrowKey::KeyLeftArrowCTRL();
+                        RightArrowKey::KeyRightArrowCTRL();
+                        UpArrowKey::KeyUpArrowCTRL();
+                        DownArrowKey::KeyDownArrowCTRL();
+                        SelectKey::KeySelectCTRL();
+                        PrintKey::KeyPrintCTRL();
+                        ExecuteKey::KeyExecuteCTRL();
+                        PrintScreenKey::KeyPrintScreenCTRL();
+                        InsertKey::KeyInsertCTRL();
+                        DeleteKey::KeyDeleteCTRL();
+                        HelpKey::KeyHelpCTRL();
+                        LeftWindowsKey::KeyLeftWindowsCTRL();
+                        RightWindowsKey::KeyRightWindowsCTRL();
+                        AppsKey::KeyAppsCTRL();
+                        Numpad1Key::KeyNumpad1CTRL();
+                        Numpad2Key::KeyNumpad2CTRL();
+                        Numpad3Key::KeyNumpad3CTRL();
+                        Numpad4Key::KeyNumpad4CTRL();
+                        Numpad5Key::KeyNumpad5CTRL();
+                        Numpad6Key::KeyNumpad6CTRL();
+                        Numpad7Key::KeyNumpad7CTRL();
+                        Numpad8Key::KeyNumpad8CTRL();
+                        Numpad9Key::KeyNumpad9CTRL();
+                        Numpad0Key::KeyNumpad0CTRL();
+                        SubtractKey::KeySubtractCTRL();
+                        PeriodKey::KeyPeriodCTRL();
+                        ForwardSlashKey::KeyForwardSlashCTRL();
+                        NumLockKey::KeyNumLockCTRL();
+                        ScrollLockKey::KeyScrollLockCTRL();
+                        BrowserBackKey::KeyBrowserBackCTRL();
+                        BrowserForwardKey::KeyBrowserForwardCTRL();
+                        BrowserRefreshKey::KeyBrowserRefreshCTRL();
+                        BrowserStopKey::KeyBrowserStopCTRL();
+                        BrowserSearchKey::KeyBrowserSearchCTRL();
+                        BrowserFavoritesKey::KeyBrowserFavoritesCTRL();
+                        BrowserStartKey::KeyBrowserStartCTRL();
+                        VolumeMuteKey::KeyVolumeMuteCTRL();
+                        VolumeDownKey::KeyVolumeDownCTRL();
+                        VolumeUpKey::KeyVolumeUpCTRL();
+                        NextTrackKey::KeyNextTrackCTRL();
+                        PreviousTrackKey::KeyPreviousTrackCTRL();
+                        StopTrackKey::KeyStopTrackCTRL();
+                        PlayPauseTrackKey::KeyPlayPauseTrackCTRL();
+                        StartMailKey::KeyStartMailCTRL();
+                        SelectMediaKey::KeySelectMediaCTRL();
+                        StartApplication1Key::KeyStartApplication1CTRL();
+                        StartApplication2Key::KeyStartApplication2CTRL();
+                    }
+                }
+            }
+        } else {
+            if(SHIFT) {
+                if(ALT) {
+                    if(OSKey) { // Shift Alt OSKey
+                        AKey::KeyAOsKeySHIFTALT();
+                        BKey::KeyBOsKeySHIFTALT();
+                        CKey::KeyCOsKeySHIFTALT();
+                        DKey::KeyDOsKeySHIFTALT();
+                        EKey::KeyEOsKeySHIFTALT();
+                        FKey::KeyFOsKeySHIFTALT();
+                        GKey::KeyGOsKeySHIFTALT();
+                        HKey::KeyHOsKeySHIFTALT();
+                        IKey::KeyIOsKeySHIFTALT();
+                        JKey::KeyJOsKeySHIFTALT();
+                        KKey::KeyKOsKeySHIFTALT();
+                        LKey::KeyLOsKeySHIFTALT();
+                        MKey::KeyMOsKeySHIFTALT();
+                        NKey::KeyNOsKeySHIFTALT();
+                        OKey::KeyOOsKeySHIFTALT();
+                        PKey::KeyPOsKeySHIFTALT();
+                        QKey::KeyQOsKeySHIFTALT();
+                        RKey::KeyROsKeySHIFTALT();
+                        SKey::KeySOsKeySHIFTALT();
+                        TKey::KeyTOsKeySHIFTALT();
+                        UKey::KeyUOsKeySHIFTALT();
+                        VKey::KeyVOsKeySHIFTALT();
+                        WKey::KeyWOsKeySHIFTALT();
+                        XKey::KeyXOsKeySHIFTALT();
+                        YKey::KeyYOsKeySHIFTALT();
+                        ZKey::KeyZOsKeySHIFTALT();
+                        OneKey::KeyOneOsKeySHIFTALT();
+                        TwoKey::KeyTwoOsKeySHIFTALT();
+                        ThreeKey::KeyThreeOsKeySHIFTALT();
+                        FourKey::KeyFourOsKeySHIFTALT();
+                        FiveKey::KeyFiveOsKeySHIFTALT();
+                        SixKey::KeySixOsKeySHIFTALT();
+                        SevenKey::KeySevenOsKeySHIFTALT();
+                        EightKey::KeyEightOsKeySHIFTALT();
+                        NineKey::KeyNineOsKeySHIFTALT();
+                        ZeroKey::KeyZeroOsKeySHIFTALT();
+                        F1Key::KeyF1OsKeySHIFTALT();
+                        F2Key::KeyF2OsKeySHIFTALT();
+                        F3Key::KeyF3OsKeySHIFTALT();
+                        F4Key::KeyF4OsKeySHIFTALT();
+                        F5Key::KeyF5OsKeySHIFTALT();
+                        F6Key::KeyF6OsKeySHIFTALT();
+                        F7Key::KeyF7OsKeySHIFTALT();
+                        F8Key::KeyF8OsKeySHIFTALT();
+                        F9Key::KeyF9OsKeySHIFTALT();
+                        F10Key::KeyF10OsKeySHIFTALT();
+                        F11Key::KeyF11OsKeySHIFTALT();
+                        F12Key::KeyF12OsKeySHIFTALT();
+                        F13Key::KeyF13OsKeySHIFTALT();
+                        F14Key::KeyF14OsKeySHIFTALT();
+                        F15Key::KeyF15OsKeySHIFTALT();
+                        F16Key::KeyF16OsKeySHIFTALT();
+                        F17Key::KeyF17OsKeySHIFTALT();
+                        F18Key::KeyF18OsKeySHIFTALT();
+                        F19Key::KeyF19OsKeySHIFTALT();
+                        F20Key::KeyF20OsKeySHIFTALT();
+                        F21Key::KeyF21OsKeySHIFTALT();
+                        F22Key::KeyF22OsKeySHIFTALT();
+                        F23Key::KeyF23OsKeySHIFTALT();
+                        F24Key::KeyF24OsKeySHIFTALT();
+                        BackspaceKey::KeyBackspaceOsKeySHIFTALT();
+                        TabKey::KeyTabOsKeySHIFTALT();
+                        ClearKey::KeyClearOsKeySHIFTALT();
+                        EnterKey::KeyEnterOsKeySHIFTALT();
+                        LeftShiftKey::KeyLeftShiftOsKeySHIFTALT();
+                        LeftControlKey::KeyLeftControlOsKeySHIFTALT();
+                        LeftAltKey::KeyLeftAltOsKeySHIFTALT();
+                        RightShiftKey::KeyRightShiftOsKeySHIFTALT();
+                        RightControlKey::KeyRightControlOsKeySHIFTALT();
+                        RightAltKey::KeyRightAltOsKeySHIFTALT();
+                        PauseKey::KeyPauseOsKeySHIFTALT();
+                        CapsLockKey::KeyCapsLockOsKeySHIFTALT();
+                        EscapeKey::KeyEscapeOsKeySHIFTALT();
+                        SpaceKey::KeySpaceOsKeySHIFTALT();
+                        PageUpKey::KeyPageUpOsKeySHIFTALT();
+                        PageDownKey::KeyPageDownOsKeySHIFTALT();
+                        EndKey::KeyEndOsKeySHIFTALT();
+                        HomeKey::KeyHomeOsKeySHIFTALT();
+                        LeftArrowKey::KeyLeftArrowOsKeySHIFTALT();
+                        RightArrowKey::KeyRightArrowOsKeySHIFTALT();
+                        UpArrowKey::KeyUpArrowOsKeySHIFTALT();
+                        DownArrowKey::KeyDownArrowOsKeySHIFTALT();
+                        SelectKey::KeySelectOsKeySHIFTALT();
+                        PrintKey::KeyPrintOsKeySHIFTALT();
+                        ExecuteKey::KeyExecuteOsKeySHIFTALT();
+                        PrintScreenKey::KeyPrintScreenOsKeySHIFTALT();
+                        InsertKey::KeyInsertOsKeySHIFTALT();
+                        DeleteKey::KeyDeleteOsKeySHIFTALT();
+                        HelpKey::KeyHelpOsKeySHIFTALT();
+                        LeftWindowsKey::KeyLeftWindowsOsKeySHIFTALT();
+                        RightWindowsKey::KeyRightWindowsOsKeySHIFTALT();
+                        AppsKey::KeyAppsOsKeySHIFTALT();
+                        Numpad1Key::KeyNumpad1OsKeySHIFTALT();
+                        Numpad2Key::KeyNumpad2OsKeySHIFTALT();
+                        Numpad3Key::KeyNumpad3OsKeySHIFTALT();
+                        Numpad4Key::KeyNumpad4OsKeySHIFTALT();
+                        Numpad5Key::KeyNumpad5OsKeySHIFTALT();
+                        Numpad6Key::KeyNumpad6OsKeySHIFTALT();
+                        Numpad7Key::KeyNumpad7OsKeySHIFTALT();
+                        Numpad8Key::KeyNumpad8OsKeySHIFTALT();
+                        Numpad9Key::KeyNumpad9OsKeySHIFTALT();
+                        Numpad0Key::KeyNumpad0OsKeySHIFTALT();
+                        SubtractKey::KeySubtractOsKeySHIFTALT();
+                        PeriodKey::KeyPeriodOsKeySHIFTALT();
+                        ForwardSlashKey::KeyForwardSlashOsKeySHIFTALT();
+                        NumLockKey::KeyNumLockOsKeySHIFTALT();
+                        ScrollLockKey::KeyScrollLockOsKeySHIFTALT();
+                        BrowserBackKey::KeyBrowserBackOsKeySHIFTALT();
+                        BrowserForwardKey::KeyBrowserForwardOsKeySHIFTALT();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTALT();
+                        BrowserStopKey::KeyBrowserStopOsKeySHIFTALT();
+                        BrowserSearchKey::KeyBrowserSearchOsKeySHIFTALT();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTALT();
+                        BrowserStartKey::KeyBrowserStartOsKeySHIFTALT();
+                        VolumeMuteKey::KeyVolumeMuteOsKeySHIFTALT();
+                        VolumeDownKey::KeyVolumeDownOsKeySHIFTALT();
+                        VolumeUpKey::KeyVolumeUpOsKeySHIFTALT();
+                        NextTrackKey::KeyNextTrackOsKeySHIFTALT();
+                        PreviousTrackKey::KeyPreviousTrackOsKeySHIFTALT();
+                        StopTrackKey::KeyStopTrackOsKeySHIFTALT();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTALT();
+                        StartMailKey::KeyStartMailOsKeySHIFTALT();
+                        SelectMediaKey::KeySelectMediaOsKeySHIFTALT();
+                        StartApplication1Key::KeyStartApplication1OsKeySHIFTALT();
+                        StartApplication2Key::KeyStartApplication2OsKeySHIFTALT();
+                    } else { // Shift Alt
+                        AKey::KeyASHIFTALT();
+                        BKey::KeyBSHIFTALT();
+                        CKey::KeyCSHIFTALT();
+                        DKey::KeyDSHIFTALT();
+                        EKey::KeyESHIFTALT();
+                        FKey::KeyFSHIFTALT();
+                        GKey::KeyGSHIFTALT();
+                        HKey::KeyHSHIFTALT();
+                        IKey::KeyISHIFTALT();
+                        JKey::KeyJSHIFTALT();
+                        KKey::KeyKSHIFTALT();
+                        LKey::KeyLSHIFTALT();
+                        MKey::KeyMSHIFTALT();
+                        NKey::KeyNSHIFTALT();
+                        OKey::KeyOSHIFTALT();
+                        PKey::KeyPSHIFTALT();
+                        QKey::KeyQSHIFTALT();
+                        RKey::KeyRSHIFTALT();
+                        SKey::KeySSHIFTALT();
+                        TKey::KeyTSHIFTALT();
+                        UKey::KeyUSHIFTALT();
+                        VKey::KeyVSHIFTALT();
+                        WKey::KeyWSHIFTALT();
+                        XKey::KeyXSHIFTALT();
+                        YKey::KeyYSHIFTALT();
+                        ZKey::KeyZSHIFTALT();
+                        OneKey::KeyOneSHIFTALT();
+                        TwoKey::KeyTwoSHIFTALT();
+                        ThreeKey::KeyThreeSHIFTALT();
+                        FourKey::KeyFourSHIFTALT();
+                        FiveKey::KeyFiveSHIFTALT();
+                        SixKey::KeySixSHIFTALT();
+                        SevenKey::KeySevenSHIFTALT();
+                        EightKey::KeyEightSHIFTALT();
+                        NineKey::KeyNineSHIFTALT();
+                        ZeroKey::KeyZeroSHIFTALT();
+                        F1Key::KeyF1SHIFTALT();
+                        F2Key::KeyF2SHIFTALT();
+                        F3Key::KeyF3SHIFTALT();
+                        F4Key::KeyF4SHIFTALT();
+                        F5Key::KeyF5SHIFTALT();
+                        F6Key::KeyF6SHIFTALT();
+                        F7Key::KeyF7SHIFTALT();
+                        F8Key::KeyF8SHIFTALT();
+                        F9Key::KeyF9SHIFTALT();
+                        F10Key::KeyF10SHIFTALT();
+                        F11Key::KeyF11SHIFTALT();
+                        F12Key::KeyF12SHIFTALT();
+                        F13Key::KeyF13SHIFTALT();
+                        F14Key::KeyF14SHIFTALT();
+                        F15Key::KeyF15SHIFTALT();
+                        F16Key::KeyF16SHIFTALT();
+                        F17Key::KeyF17SHIFTALT();
+                        F18Key::KeyF18SHIFTALT();
+                        F19Key::KeyF19SHIFTALT();
+                        F20Key::KeyF20SHIFTALT();
+                        F21Key::KeyF21SHIFTALT();
+                        F22Key::KeyF22SHIFTALT();
+                        F23Key::KeyF23SHIFTALT();
+                        F24Key::KeyF24SHIFTALT();
+                        BackspaceKey::KeyBackspaceSHIFTALT();
+                        TabKey::KeyTabSHIFTALT();
+                        ClearKey::KeyClearSHIFTALT();
+                        EnterKey::KeyEnterSHIFTALT();
+                        LeftShiftKey::KeyLeftShiftSHIFTALT();
+                        LeftControlKey::KeyLeftControlSHIFTALT();
+                        LeftAltKey::KeyLeftAltSHIFTALT();
+                        RightShiftKey::KeyRightShiftSHIFTALT();
+                        RightControlKey::KeyRightControlSHIFTALT();
+                        RightAltKey::KeyRightAltSHIFTALT();
+                        PauseKey::KeyPauseSHIFTALT();
+                        CapsLockKey::KeyCapsLockSHIFTALT();
+                        EscapeKey::KeyEscapeSHIFTALT();
+                        SpaceKey::KeySpaceSHIFTALT();
+                        PageUpKey::KeyPageUpSHIFTALT();
+                        PageDownKey::KeyPageDownSHIFTALT();
+                        EndKey::KeyEndSHIFTALT();
+                        HomeKey::KeyHomeSHIFTALT();
+                        LeftArrowKey::KeyLeftArrowSHIFTALT();
+                        RightArrowKey::KeyRightArrowSHIFTALT();
+                        UpArrowKey::KeyUpArrowSHIFTALT();
+                        DownArrowKey::KeyDownArrowSHIFTALT();
+                        SelectKey::KeySelectSHIFTALT();
+                        PrintKey::KeyPrintSHIFTALT();
+                        ExecuteKey::KeyExecuteSHIFTALT();
+                        PrintScreenKey::KeyPrintScreenSHIFTALT();
+                        InsertKey::KeyInsertSHIFTALT();
+                        DeleteKey::KeyDeleteSHIFTALT();
+                        HelpKey::KeyHelpSHIFTALT();
+                        LeftWindowsKey::KeyLeftWindowsSHIFTALT();
+                        RightWindowsKey::KeyRightWindowsSHIFTALT();
+                        AppsKey::KeyAppsSHIFTALT();
+                        Numpad1Key::KeyNumpad1SHIFTALT();
+                        Numpad2Key::KeyNumpad2SHIFTALT();
+                        Numpad3Key::KeyNumpad3SHIFTALT();
+                        Numpad4Key::KeyNumpad4SHIFTALT();
+                        Numpad5Key::KeyNumpad5SHIFTALT();
+                        Numpad6Key::KeyNumpad6SHIFTALT();
+                        Numpad7Key::KeyNumpad7SHIFTALT();
+                        Numpad8Key::KeyNumpad8SHIFTALT();
+                        Numpad9Key::KeyNumpad9SHIFTALT();
+                        Numpad0Key::KeyNumpad0SHIFTALT();
+                        SubtractKey::KeySubtractSHIFTALT();
+                        PeriodKey::KeyPeriodSHIFTALT();
+                        ForwardSlashKey::KeyForwardSlashSHIFTALT();
+                        NumLockKey::KeyNumLockSHIFTALT();
+                        ScrollLockKey::KeyScrollLockSHIFTALT();
+                        BrowserBackKey::KeyBrowserBackSHIFTALT();
+                        BrowserForwardKey::KeyBrowserForwardSHIFTALT();
+                        BrowserRefreshKey::KeyBrowserRefreshSHIFTALT();
+                        BrowserStopKey::KeyBrowserStopSHIFTALT();
+                        BrowserSearchKey::KeyBrowserSearchSHIFTALT();
+                        BrowserFavoritesKey::KeyBrowserFavoritesSHIFTALT();
+                        BrowserStartKey::KeyBrowserStartSHIFTALT();
+                        VolumeMuteKey::KeyVolumeMuteSHIFTALT();
+                        VolumeDownKey::KeyVolumeDownSHIFTALT();
+                        VolumeUpKey::KeyVolumeUpSHIFTALT();
+                        NextTrackKey::KeyNextTrackSHIFTALT();
+                        PreviousTrackKey::KeyPreviousTrackSHIFTALT();
+                        StopTrackKey::KeyStopTrackSHIFTALT();
+                        PlayPauseTrackKey::KeyPlayPauseTrackSHIFTALT();
+                        StartMailKey::KeyStartMailSHIFTALT();
+                        SelectMediaKey::KeySelectMediaSHIFTALT();
+                        StartApplication1Key::KeyStartApplication1SHIFTALT();
+                        StartApplication2Key::KeyStartApplication2SHIFTALT();
+                    }
+                } else {
+                    if(OSKey) { // Shift OSKey
+                        AKey::KeyAOsKeySHIFT();
+                        BKey::KeyBOsKeySHIFT();
+                        CKey::KeyCOsKeySHIFT();
+                        DKey::KeyDOsKeySHIFT();
+                        EKey::KeyEOsKeySHIFT();
+                        FKey::KeyFOsKeySHIFT();
+                        GKey::KeyGOsKeySHIFT();
+                        HKey::KeyHOsKeySHIFT();
+                        IKey::KeyIOsKeySHIFT();
+                        JKey::KeyJOsKeySHIFT();
+                        KKey::KeyKOsKeySHIFT();
+                        LKey::KeyLOsKeySHIFT();
+                        MKey::KeyMOsKeySHIFT();
+                        NKey::KeyNOsKeySHIFT();
+                        OKey::KeyOOsKeySHIFT();
+                        PKey::KeyPOsKeySHIFT();
+                        QKey::KeyQOsKeySHIFT();
+                        RKey::KeyROsKeySHIFT();
+                        SKey::KeySOsKeySHIFT();
+                        TKey::KeyTOsKeySHIFT();
+                        UKey::KeyUOsKeySHIFT();
+                        VKey::KeyVOsKeySHIFT();
+                        WKey::KeyWOsKeySHIFT();
+                        XKey::KeyXOsKeySHIFT();
+                        YKey::KeyYOsKeySHIFT();
+                        ZKey::KeyZOsKeySHIFT();
+                        OneKey::KeyOneOsKeySHIFT();
+                        TwoKey::KeyTwoOsKeySHIFT();
+                        ThreeKey::KeyThreeOsKeySHIFT();
+                        FourKey::KeyFourOsKeySHIFT();
+                        FiveKey::KeyFiveOsKeySHIFT();
+                        SixKey::KeySixOsKeySHIFT();
+                        SevenKey::KeySevenOsKeySHIFT();
+                        EightKey::KeyEightOsKeySHIFT();
+                        NineKey::KeyNineOsKeySHIFT();
+                        ZeroKey::KeyZeroOsKeySHIFT();
+                        F1Key::KeyF1OsKeySHIFT();
+                        F2Key::KeyF2OsKeySHIFT();
+                        F3Key::KeyF3OsKeySHIFT();
+                        F4Key::KeyF4OsKeySHIFT();
+                        F5Key::KeyF5OsKeySHIFT();
+                        F6Key::KeyF6OsKeySHIFT();
+                        F7Key::KeyF7OsKeySHIFT();
+                        F8Key::KeyF8OsKeySHIFT();
+                        F9Key::KeyF9OsKeySHIFT();
+                        F10Key::KeyF10OsKeySHIFT();
+                        F11Key::KeyF11OsKeySHIFT();
+                        F12Key::KeyF12OsKeySHIFT();
+                        F13Key::KeyF13OsKeySHIFT();
+                        F14Key::KeyF14OsKeySHIFT();
+                        F15Key::KeyF15OsKeySHIFT();
+                        F16Key::KeyF16OsKeySHIFT();
+                        F17Key::KeyF17OsKeySHIFT();
+                        F18Key::KeyF18OsKeySHIFT();
+                        F19Key::KeyF19OsKeySHIFT();
+                        F20Key::KeyF20OsKeySHIFT();
+                        F21Key::KeyF21OsKeySHIFT();
+                        F22Key::KeyF22OsKeySHIFT();
+                        F23Key::KeyF23OsKeySHIFT();
+                        F24Key::KeyF24OsKeySHIFT();
+                        BackspaceKey::KeyBackspaceOsKeySHIFT();
+                        TabKey::KeyTabOsKeySHIFT();
+                        ClearKey::KeyClearOsKeySHIFT();
+                        EnterKey::KeyEnterOsKeySHIFT();
+                        LeftShiftKey::KeyLeftShiftOsKeySHIFT();
+                        LeftControlKey::KeyLeftControlOsKeySHIFT();
+                        LeftAltKey::KeyLeftAltOsKeySHIFT();
+                        RightShiftKey::KeyRightShiftOsKeySHIFT();
+                        RightControlKey::KeyRightControlOsKeySHIFT();
+                        RightAltKey::KeyRightAltOsKeySHIFT();
+                        PauseKey::KeyPauseOsKeySHIFT();
+                        CapsLockKey::KeyCapsLockOsKeySHIFT();
+                        EscapeKey::KeyEscapeOsKeySHIFT();
+                        SpaceKey::KeySpaceOsKeySHIFT();
+                        PageUpKey::KeyPageUpOsKeySHIFT();
+                        PageDownKey::KeyPageDownOsKeySHIFT();
+                        EndKey::KeyEndOsKeySHIFT();
+                        HomeKey::KeyHomeOsKeySHIFT();
+                        LeftArrowKey::KeyLeftArrowOsKeySHIFT();
+                        RightArrowKey::KeyRightArrowOsKeySHIFT();
+                        UpArrowKey::KeyUpArrowOsKeySHIFT();
+                        DownArrowKey::KeyDownArrowOsKeySHIFT();
+                        SelectKey::KeySelectOsKeySHIFT();
+                        PrintKey::KeyPrintOsKeySHIFT();
+                        ExecuteKey::KeyExecuteOsKeySHIFT();
+                        PrintScreenKey::KeyPrintScreenOsKeySHIFT();
+                        InsertKey::KeyInsertOsKeySHIFT();
+                        DeleteKey::KeyDeleteOsKeySHIFT();
+                        HelpKey::KeyHelpOsKeySHIFT();
+                        LeftWindowsKey::KeyLeftWindowsOsKeySHIFT();
+                        RightWindowsKey::KeyRightWindowsOsKeySHIFT();
+                        AppsKey::KeyAppsOsKeySHIFT();
+                        Numpad1Key::KeyNumpad1OsKeySHIFT();
+                        Numpad2Key::KeyNumpad2OsKeySHIFT();
+                        Numpad3Key::KeyNumpad3OsKeySHIFT();
+                        Numpad4Key::KeyNumpad4OsKeySHIFT();
+                        Numpad5Key::KeyNumpad5OsKeySHIFT();
+                        Numpad6Key::KeyNumpad6OsKeySHIFT();
+                        Numpad7Key::KeyNumpad7OsKeySHIFT();
+                        Numpad8Key::KeyNumpad8OsKeySHIFT();
+                        Numpad9Key::KeyNumpad9OsKeySHIFT();
+                        Numpad0Key::KeyNumpad0OsKeySHIFT();
+                        SubtractKey::KeySubtractOsKeySHIFT();
+                        PeriodKey::KeyPeriodOsKeySHIFT();
+                        ForwardSlashKey::KeyForwardSlashOsKeySHIFT();
+                        NumLockKey::KeyNumLockOsKeySHIFT();
+                        ScrollLockKey::KeyScrollLockOsKeySHIFT();
+                        BrowserBackKey::KeyBrowserBackOsKeySHIFT();
+                        BrowserForwardKey::KeyBrowserForwardOsKeySHIFT();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFT();
+                        BrowserStopKey::KeyBrowserStopOsKeySHIFT();
+                        BrowserSearchKey::KeyBrowserSearchOsKeySHIFT();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFT();
+                        BrowserStartKey::KeyBrowserStartOsKeySHIFT();
+                        VolumeMuteKey::KeyVolumeMuteOsKeySHIFT();
+                        VolumeDownKey::KeyVolumeDownOsKeySHIFT();
+                        VolumeUpKey::KeyVolumeUpOsKeySHIFT();
+                        NextTrackKey::KeyNextTrackOsKeySHIFT();
+                        PreviousTrackKey::KeyPreviousTrackOsKeySHIFT();
+                        StopTrackKey::KeyStopTrackOsKeySHIFT();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFT();
+                        StartMailKey::KeyStartMailOsKeySHIFT();
+                        SelectMediaKey::KeySelectMediaOsKeySHIFT();
+                        StartApplication1Key::KeyStartApplication1OsKeySHIFT();
+                        StartApplication2Key::KeyStartApplication2OsKeySHIFT();
+                    } else { // Shift
+                        AKey::KeyASHIFT();
+                        BKey::KeyBSHIFT();
+                        CKey::KeyCSHIFT();
+                        DKey::KeyDSHIFT();
+                        EKey::KeyESHIFT();
+                        FKey::KeyFSHIFT();
+                        GKey::KeyGSHIFT();
+                        HKey::KeyHSHIFT();
+                        IKey::KeyISHIFT();
+                        JKey::KeyJSHIFT();
+                        KKey::KeyKSHIFT();
+                        LKey::KeyLSHIFT();
+                        MKey::KeyMSHIFT();
+                        NKey::KeyNSHIFT();
+                        OKey::KeyOSHIFT();
+                        PKey::KeyPSHIFT();
+                        QKey::KeyQSHIFT();
+                        RKey::KeyRSHIFT();
+                        SKey::KeySSHIFT();
+                        TKey::KeyTSHIFT();
+                        UKey::KeyUSHIFT();
+                        VKey::KeyVSHIFT();
+                        WKey::KeyWSHIFT();
+                        XKey::KeyXSHIFT();
+                        YKey::KeyYSHIFT();
+                        ZKey::KeyZSHIFT();
+                        OneKey::KeyOneSHIFT();
+                        TwoKey::KeyTwoSHIFT();
+                        ThreeKey::KeyThreeSHIFT();
+                        FourKey::KeyFourSHIFT();
+                        FiveKey::KeyFiveSHIFT();
+                        SixKey::KeySixSHIFT();
+                        SevenKey::KeySevenSHIFT();
+                        EightKey::KeyEightSHIFT();
+                        NineKey::KeyNineSHIFT();
+                        ZeroKey::KeyZeroSHIFT();
+                        F1Key::KeyF1SHIFT();
+                        F2Key::KeyF2SHIFT();
+                        F3Key::KeyF3SHIFT();
+                        F4Key::KeyF4SHIFT();
+                        F5Key::KeyF5SHIFT();
+                        F6Key::KeyF6SHIFT();
+                        F7Key::KeyF7SHIFT();
+                        F8Key::KeyF8SHIFT();
+                        F9Key::KeyF9SHIFT();
+                        F10Key::KeyF10SHIFT();
+                        F11Key::KeyF11SHIFT();
+                        F12Key::KeyF12SHIFT();
+                        F13Key::KeyF13SHIFT();
+                        F14Key::KeyF14SHIFT();
+                        F15Key::KeyF15SHIFT();
+                        F16Key::KeyF16SHIFT();
+                        F17Key::KeyF17SHIFT();
+                        F18Key::KeyF18SHIFT();
+                        F19Key::KeyF19SHIFT();
+                        F20Key::KeyF20SHIFT();
+                        F21Key::KeyF21SHIFT();
+                        F22Key::KeyF22SHIFT();
+                        F23Key::KeyF23SHIFT();
+                        F24Key::KeyF24SHIFT();
+                        BackspaceKey::KeyBackspaceSHIFT();
+                        TabKey::KeyTabSHIFT();
+                        ClearKey::KeyClearSHIFT();
+                        EnterKey::KeyEnterSHIFT();
+                        LeftShiftKey::KeyLeftShiftSHIFT();
+                        LeftControlKey::KeyLeftControlSHIFT();
+                        LeftAltKey::KeyLeftAltSHIFT();
+                        RightShiftKey::KeyRightShiftSHIFT();
+                        RightControlKey::KeyRightControlSHIFT();
+                        RightAltKey::KeyRightAltSHIFT();
+                        PauseKey::KeyPauseSHIFT();
+                        CapsLockKey::KeyCapsLockSHIFT();
+                        EscapeKey::KeyEscapeSHIFT();
+                        SpaceKey::KeySpaceSHIFT();
+                        PageUpKey::KeyPageUpSHIFT();
+                        PageDownKey::KeyPageDownSHIFT();
+                        EndKey::KeyEndSHIFT();
+                        HomeKey::KeyHomeSHIFT();
+                        LeftArrowKey::KeyLeftArrowSHIFT();
+                        RightArrowKey::KeyRightArrowSHIFT();
+                        UpArrowKey::KeyUpArrowSHIFT();
+                        DownArrowKey::KeyDownArrowSHIFT();
+                        SelectKey::KeySelectSHIFT();
+                        PrintKey::KeyPrintSHIFT();
+                        ExecuteKey::KeyExecuteSHIFT();
+                        PrintScreenKey::KeyPrintScreenSHIFT();
+                        InsertKey::KeyInsertSHIFT();
+                        DeleteKey::KeyDeleteSHIFT();
+                        HelpKey::KeyHelpSHIFT();
+                        LeftWindowsKey::KeyLeftWindowsSHIFT();
+                        RightWindowsKey::KeyRightWindowsSHIFT();
+                        AppsKey::KeyAppsSHIFT();
+                        Numpad1Key::KeyNumpad1SHIFT();
+                        Numpad2Key::KeyNumpad2SHIFT();
+                        Numpad3Key::KeyNumpad3SHIFT();
+                        Numpad4Key::KeyNumpad4SHIFT();
+                        Numpad5Key::KeyNumpad5SHIFT();
+                        Numpad6Key::KeyNumpad6SHIFT();
+                        Numpad7Key::KeyNumpad7SHIFT();
+                        Numpad8Key::KeyNumpad8SHIFT();
+                        Numpad9Key::KeyNumpad9SHIFT();
+                        Numpad0Key::KeyNumpad0SHIFT();
+                        SubtractKey::KeySubtractSHIFT();
+                        PeriodKey::KeyPeriodSHIFT();
+                        ForwardSlashKey::KeyForwardSlashSHIFT();
+                        NumLockKey::KeyNumLockSHIFT();
+                        ScrollLockKey::KeyScrollLockSHIFT();
+                        BrowserBackKey::KeyBrowserBackSHIFT();
+                        BrowserForwardKey::KeyBrowserForwardSHIFT();
+                        BrowserRefreshKey::KeyBrowserRefreshSHIFT();
+                        BrowserStopKey::KeyBrowserStopSHIFT();
+                        BrowserSearchKey::KeyBrowserSearchSHIFT();
+                        BrowserFavoritesKey::KeyBrowserFavoritesSHIFT();
+                        BrowserStartKey::KeyBrowserStartSHIFT();
+                        VolumeMuteKey::KeyVolumeMuteSHIFT();
+                        VolumeDownKey::KeyVolumeDownSHIFT();
+                        VolumeUpKey::KeyVolumeUpSHIFT();
+                        NextTrackKey::KeyNextTrackSHIFT();
+                        PreviousTrackKey::KeyPreviousTrackSHIFT();
+                        StopTrackKey::KeyStopTrackSHIFT();
+                        PlayPauseTrackKey::KeyPlayPauseTrackSHIFT();
+                        StartMailKey::KeyStartMailSHIFT();
+                        SelectMediaKey::KeySelectMediaSHIFT();
+                        StartApplication1Key::KeyStartApplication1SHIFT();
+                        StartApplication2Key::KeyStartApplication2SHIFT();
+                    }
+                }
+            } else {
+                if(ALT) {
+                    if(OSKey) { // Alt OSKey
+                        AKey::KeyAOsKeyALT();
+                        BKey::KeyBOsKeyALT();
+                        CKey::KeyCOsKeyALT();
+                        DKey::KeyDOsKeyALT();
+                        EKey::KeyEOsKeyALT();
+                        FKey::KeyFOsKeyALT();
+                        GKey::KeyGOsKeyALT();
+                        HKey::KeyHOsKeyALT();
+                        IKey::KeyIOsKeyALT();
+                        JKey::KeyJOsKeyALT();
+                        KKey::KeyKOsKeyALT();
+                        LKey::KeyLOsKeyALT();
+                        MKey::KeyMOsKeyALT();
+                        NKey::KeyNOsKeyALT();
+                        OKey::KeyOOsKeyALT();
+                        PKey::KeyPOsKeyALT();
+                        QKey::KeyQOsKeyALT();
+                        RKey::KeyROsKeyALT();
+                        SKey::KeySOsKeyALT();
+                        TKey::KeyTOsKeyALT();
+                        UKey::KeyUOsKeyALT();
+                        VKey::KeyVOsKeyALT();
+                        WKey::KeyWOsKeyALT();
+                        XKey::KeyXOsKeyALT();
+                        YKey::KeyYOsKeyALT();
+                        ZKey::KeyZOsKeyALT();
+                        OneKey::KeyOneOsKeyALT();
+                        TwoKey::KeyTwoOsKeyALT();
+                        ThreeKey::KeyThreeOsKeyALT();
+                        FourKey::KeyFourOsKeyALT();
+                        FiveKey::KeyFiveOsKeyALT();
+                        SixKey::KeySixOsKeyALT();
+                        SevenKey::KeySevenOsKeyALT();
+                        EightKey::KeyEightOsKeyALT();
+                        NineKey::KeyNineOsKeyALT();
+                        ZeroKey::KeyZeroOsKeyALT();
+                        F1Key::KeyF1OsKeyALT();
+                        F2Key::KeyF2OsKeyALT();
+                        F3Key::KeyF3OsKeyALT();
+                        F4Key::KeyF4OsKeyALT();
+                        F5Key::KeyF5OsKeyALT();
+                        F6Key::KeyF6OsKeyALT();
+                        F7Key::KeyF7OsKeyALT();
+                        F8Key::KeyF8OsKeyALT();
+                        F9Key::KeyF9OsKeyALT();
+                        F10Key::KeyF10OsKeyALT();
+                        F11Key::KeyF11OsKeyALT();
+                        F12Key::KeyF12OsKeyALT();
+                        F13Key::KeyF13OsKeyALT();
+                        F14Key::KeyF14OsKeyALT();
+                        F15Key::KeyF15OsKeyALT();
+                        F16Key::KeyF16OsKeyALT();
+                        F17Key::KeyF17OsKeyALT();
+                        F18Key::KeyF18OsKeyALT();
+                        F19Key::KeyF19OsKeyALT();
+                        F20Key::KeyF20OsKeyALT();
+                        F21Key::KeyF21OsKeyALT();
+                        F22Key::KeyF22OsKeyALT();
+                        F23Key::KeyF23OsKeyALT();
+                        F24Key::KeyF24OsKeyALT();
+                        BackspaceKey::KeyBackspaceOsKeyALT();
+                        TabKey::KeyTabOsKeyALT();
+                        ClearKey::KeyClearOsKeyALT();
+                        EnterKey::KeyEnterOsKeyALT();
+                        LeftShiftKey::KeyLeftShiftOsKeyALT();
+                        LeftControlKey::KeyLeftControlOsKeyALT();
+                        LeftAltKey::KeyLeftAltOsKeyALT();
+                        RightShiftKey::KeyRightShiftOsKeyALT();
+                        RightControlKey::KeyRightControlOsKeyALT();
+                        RightAltKey::KeyRightAltOsKeyALT();
+                        PauseKey::KeyPauseOsKeyALT();
+                        CapsLockKey::KeyCapsLockOsKeyALT();
+                        EscapeKey::KeyEscapeOsKeyALT();
+                        SpaceKey::KeySpaceOsKeyALT();
+                        PageUpKey::KeyPageUpOsKeyALT();
+                        PageDownKey::KeyPageDownOsKeyALT();
+                        EndKey::KeyEndOsKeyALT();
+                        HomeKey::KeyHomeOsKeyALT();
+                        LeftArrowKey::KeyLeftArrowOsKeyALT();
+                        RightArrowKey::KeyRightArrowOsKeyALT();
+                        UpArrowKey::KeyUpArrowOsKeyALT();
+                        DownArrowKey::KeyDownArrowOsKeyALT();
+                        SelectKey::KeySelectOsKeyALT();
+                        PrintKey::KeyPrintOsKeyALT();
+                        ExecuteKey::KeyExecuteOsKeyALT();
+                        PrintScreenKey::KeyPrintScreenOsKeyALT();
+                        InsertKey::KeyInsertOsKeyALT();
+                        DeleteKey::KeyDeleteOsKeyALT();
+                        HelpKey::KeyHelpOsKeyALT();
+                        LeftWindowsKey::KeyLeftWindowsOsKeyALT();
+                        RightWindowsKey::KeyRightWindowsOsKeyALT();
+                        AppsKey::KeyAppsOsKeyALT();
+                        Numpad1Key::KeyNumpad1OsKeyALT();
+                        Numpad2Key::KeyNumpad2OsKeyALT();
+                        Numpad3Key::KeyNumpad3OsKeyALT();
+                        Numpad4Key::KeyNumpad4OsKeyALT();
+                        Numpad5Key::KeyNumpad5OsKeyALT();
+                        Numpad6Key::KeyNumpad6OsKeyALT();
+                        Numpad7Key::KeyNumpad7OsKeyALT();
+                        Numpad8Key::KeyNumpad8OsKeyALT();
+                        Numpad9Key::KeyNumpad9OsKeyALT();
+                        Numpad0Key::KeyNumpad0OsKeyALT();
+                        SubtractKey::KeySubtractOsKeyALT();
+                        PeriodKey::KeyPeriodOsKeyALT();
+                        ForwardSlashKey::KeyForwardSlashOsKeyALT();
+                        NumLockKey::KeyNumLockOsKeyALT();
+                        ScrollLockKey::KeyScrollLockOsKeyALT();
+                        BrowserBackKey::KeyBrowserBackOsKeyALT();
+                        BrowserForwardKey::KeyBrowserForwardOsKeyALT();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKeyALT();
+                        BrowserStopKey::KeyBrowserStopOsKeyALT();
+                        BrowserSearchKey::KeyBrowserSearchOsKeyALT();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKeyALT();
+                        BrowserStartKey::KeyBrowserStartOsKeyALT();
+                        VolumeMuteKey::KeyVolumeMuteOsKeyALT();
+                        VolumeDownKey::KeyVolumeDownOsKeyALT();
+                        VolumeUpKey::KeyVolumeUpOsKeyALT();
+                        NextTrackKey::KeyNextTrackOsKeyALT();
+                        PreviousTrackKey::KeyPreviousTrackOsKeyALT();
+                        StopTrackKey::KeyStopTrackOsKeyALT();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKeyALT();
+                        StartMailKey::KeyStartMailOsKeyALT();
+                        SelectMediaKey::KeySelectMediaOsKeyALT();
+                        StartApplication1Key::KeyStartApplication1OsKeyALT();
+                        StartApplication2Key::KeyStartApplication2OsKeyALT();
+                    } else { // Alt
+                        AKey::KeyAALT();
+                        BKey::KeyBALT();
+                        CKey::KeyCALT();
+                        DKey::KeyDALT();
+                        EKey::KeyEALT();
+                        FKey::KeyFALT();
+                        GKey::KeyGALT();
+                        HKey::KeyHALT();
+                        IKey::KeyIALT();
+                        JKey::KeyJALT();
+                        KKey::KeyKALT();
+                        LKey::KeyLALT();
+                        MKey::KeyMALT();
+                        NKey::KeyNALT();
+                        OKey::KeyOALT();
+                        PKey::KeyPALT();
+                        QKey::KeyQALT();
+                        RKey::KeyRALT();
+                        SKey::KeySALT();
+                        TKey::KeyTALT();
+                        UKey::KeyUALT();
+                        VKey::KeyVALT();
+                        WKey::KeyWALT();
+                        XKey::KeyXALT();
+                        YKey::KeyYALT();
+                        ZKey::KeyZALT();
+                        OneKey::KeyOneALT();
+                        TwoKey::KeyTwoALT();
+                        ThreeKey::KeyThreeALT();
+                        FourKey::KeyFourALT();
+                        FiveKey::KeyFiveALT();
+                        SixKey::KeySixALT();
+                        SevenKey::KeySevenALT();
+                        EightKey::KeyEightALT();
+                        NineKey::KeyNineALT();
+                        ZeroKey::KeyZeroALT();
+                        F1Key::KeyF1ALT();
+                        F2Key::KeyF2ALT();
+                        F3Key::KeyF3ALT();
+                        F4Key::KeyF4ALT();
+                        F5Key::KeyF5ALT();
+                        F6Key::KeyF6ALT();
+                        F7Key::KeyF7ALT();
+                        F8Key::KeyF8ALT();
+                        F9Key::KeyF9ALT();
+                        F10Key::KeyF10ALT();
+                        F11Key::KeyF11ALT();
+                        F12Key::KeyF12ALT();
+                        F13Key::KeyF13ALT();
+                        F14Key::KeyF14ALT();
+                        F15Key::KeyF15ALT();
+                        F16Key::KeyF16ALT();
+                        F17Key::KeyF17ALT();
+                        F18Key::KeyF18ALT();
+                        F19Key::KeyF19ALT();
+                        F20Key::KeyF20ALT();
+                        F21Key::KeyF21ALT();
+                        F22Key::KeyF22ALT();
+                        F23Key::KeyF23ALT();
+                        F24Key::KeyF24ALT();
+                        BackspaceKey::KeyBackspaceALT();
+                        TabKey::KeyTabALT();
+                        ClearKey::KeyClearALT();
+                        EnterKey::KeyEnterALT();
+                        LeftShiftKey::KeyLeftShiftALT();
+                        LeftControlKey::KeyLeftControlALT();
+                        LeftAltKey::KeyLeftAltALT();
+                        RightShiftKey::KeyRightShiftALT();
+                        RightControlKey::KeyRightControlALT();
+                        RightAltKey::KeyRightAltALT();
+                        PauseKey::KeyPauseALT();
+                        CapsLockKey::KeyCapsLockALT();
+                        EscapeKey::KeyEscapeALT();
+                        SpaceKey::KeySpaceALT();
+                        PageUpKey::KeyPageUpALT();
+                        PageDownKey::KeyPageDownALT();
+                        EndKey::KeyEndALT();
+                        HomeKey::KeyHomeALT();
+                        LeftArrowKey::KeyLeftArrowALT();
+                        RightArrowKey::KeyRightArrowALT();
+                        UpArrowKey::KeyUpArrowALT();
+                        DownArrowKey::KeyDownArrowALT();
+                        SelectKey::KeySelectALT();
+                        PrintKey::KeyPrintALT();
+                        ExecuteKey::KeyExecuteALT();
+                        PrintScreenKey::KeyPrintScreenALT();
+                        InsertKey::KeyInsertALT();
+                        DeleteKey::KeyDeleteALT();
+                        HelpKey::KeyHelpALT();
+                        LeftWindowsKey::KeyLeftWindowsALT();
+                        RightWindowsKey::KeyRightWindowsALT();
+                        AppsKey::KeyAppsALT();
+                        Numpad1Key::KeyNumpad1ALT();
+                        Numpad2Key::KeyNumpad2ALT();
+                        Numpad3Key::KeyNumpad3ALT();
+                        Numpad4Key::KeyNumpad4ALT();
+                        Numpad5Key::KeyNumpad5ALT();
+                        Numpad6Key::KeyNumpad6ALT();
+                        Numpad7Key::KeyNumpad7ALT();
+                        Numpad8Key::KeyNumpad8ALT();
+                        Numpad9Key::KeyNumpad9ALT();
+                        Numpad0Key::KeyNumpad0ALT();
+                        SubtractKey::KeySubtractALT();
+                        PeriodKey::KeyPeriodALT();
+                        ForwardSlashKey::KeyForwardSlashALT();
+                        NumLockKey::KeyNumLockALT();
+                        ScrollLockKey::KeyScrollLockALT();
+                        BrowserBackKey::KeyBrowserBackALT();
+                        BrowserForwardKey::KeyBrowserForwardALT();
+                        BrowserRefreshKey::KeyBrowserRefreshALT();
+                        BrowserStopKey::KeyBrowserStopALT();
+                        BrowserSearchKey::KeyBrowserSearchALT();
+                        BrowserFavoritesKey::KeyBrowserFavoritesALT();
+                        BrowserStartKey::KeyBrowserStartALT();
+                        VolumeMuteKey::KeyVolumeMuteALT();
+                        VolumeDownKey::KeyVolumeDownALT();
+                        VolumeUpKey::KeyVolumeUpALT();
+                        NextTrackKey::KeyNextTrackALT();
+                        PreviousTrackKey::KeyPreviousTrackALT();
+                        StopTrackKey::KeyStopTrackALT();
+                        PlayPauseTrackKey::KeyPlayPauseTrackALT();
+                        StartMailKey::KeyStartMailALT();
+                        SelectMediaKey::KeySelectMediaALT();
+                        StartApplication1Key::KeyStartApplication1ALT();
+                        StartApplication2Key::KeyStartApplication2ALT();
+                    }
+                } else {
+                    if(OSKey) { // OSKey
+                        AKey::KeyAOsKey();
+                        BKey::KeyBOsKey();
+                        CKey::KeyCOsKey();
+                        DKey::KeyDOsKey();
+                        EKey::KeyEOsKey();
+                        FKey::KeyFOsKey();
+                        GKey::KeyGOsKey();
+                        HKey::KeyHOsKey();
+                        IKey::KeyIOsKey();
+                        JKey::KeyJOsKey();
+                        KKey::KeyKOsKey();
+                        LKey::KeyLOsKey();
+                        MKey::KeyMOsKey();
+                        NKey::KeyNOsKey();
+                        OKey::KeyOOsKey();
+                        PKey::KeyPOsKey();
+                        QKey::KeyQOsKey();
+                        RKey::KeyROsKey();
+                        SKey::KeySOsKey();
+                        TKey::KeyTOsKey();
+                        UKey::KeyUOsKey();
+                        VKey::KeyVOsKey();
+                        WKey::KeyWOsKey();
+                        XKey::KeyXOsKey();
+                        YKey::KeyYOsKey();
+                        ZKey::KeyZOsKey();
+                        OneKey::KeyOneOsKey();
+                        TwoKey::KeyTwoOsKey();
+                        ThreeKey::KeyThreeOsKey();
+                        FourKey::KeyFourOsKey();
+                        FiveKey::KeyFiveOsKey();
+                        SixKey::KeySixOsKey();
+                        SevenKey::KeySevenOsKey();
+                        EightKey::KeyEightOsKey();
+                        NineKey::KeyNineOsKey();
+                        ZeroKey::KeyZeroOsKey();
+                        F1Key::KeyF1OsKey();
+                        F2Key::KeyF2OsKey();
+                        F3Key::KeyF3OsKey();
+                        F4Key::KeyF4OsKey();
+                        F5Key::KeyF5OsKey();
+                        F6Key::KeyF6OsKey();
+                        F7Key::KeyF7OsKey();
+                        F8Key::KeyF8OsKey();
+                        F9Key::KeyF9OsKey();
+                        F10Key::KeyF10OsKey();
+                        F11Key::KeyF11OsKey();
+                        F12Key::KeyF12OsKey();
+                        F13Key::KeyF13OsKey();
+                        F14Key::KeyF14OsKey();
+                        F15Key::KeyF15OsKey();
+                        F16Key::KeyF16OsKey();
+                        F17Key::KeyF17OsKey();
+                        F18Key::KeyF18OsKey();
+                        F19Key::KeyF19OsKey();
+                        F20Key::KeyF20OsKey();
+                        F21Key::KeyF21OsKey();
+                        F22Key::KeyF22OsKey();
+                        F23Key::KeyF23OsKey();
+                        F24Key::KeyF24OsKey();
+                        BackspaceKey::KeyBackspaceOsKey();
+                        TabKey::KeyTabOsKey();
+                        ClearKey::KeyClearOsKey();
+                        EnterKey::KeyEnterOsKey();
+                        LeftShiftKey::KeyLeftShiftOsKey();
+                        LeftControlKey::KeyLeftControlOsKey();
+                        LeftAltKey::KeyLeftAltOsKey();
+                        RightShiftKey::KeyRightShiftOsKey();
+                        RightControlKey::KeyRightControlOsKey();
+                        RightAltKey::KeyRightAltOsKey();
+                        PauseKey::KeyPauseOsKey();
+                        CapsLockKey::KeyCapsLockOsKey();
+                        EscapeKey::KeyEscapeOsKey();
+                        SpaceKey::KeySpaceOsKey();
+                        PageUpKey::KeyPageUpOsKey();
+                        PageDownKey::KeyPageDownOsKey();
+                        EndKey::KeyEndOsKey();
+                        HomeKey::KeyHomeOsKey();
+                        LeftArrowKey::KeyLeftArrowOsKey();
+                        RightArrowKey::KeyRightArrowOsKey();
+                        UpArrowKey::KeyUpArrowOsKey();
+                        DownArrowKey::KeyDownArrowOsKey();
+                        SelectKey::KeySelectOsKey();
+                        PrintKey::KeyPrintOsKey();
+                        ExecuteKey::KeyExecuteOsKey();
+                        PrintScreenKey::KeyPrintScreenOsKey();
+                        InsertKey::KeyInsertOsKey();
+                        DeleteKey::KeyDeleteOsKey();
+                        HelpKey::KeyHelpOsKey();
+                        LeftWindowsKey::KeyLeftWindowsOsKey();
+                        RightWindowsKey::KeyRightWindowsOsKey();
+                        AppsKey::KeyAppsOsKey();
+                        Numpad1Key::KeyNumpad1OsKey();
+                        Numpad2Key::KeyNumpad2OsKey();
+                        Numpad3Key::KeyNumpad3OsKey();
+                        Numpad4Key::KeyNumpad4OsKey();
+                        Numpad5Key::KeyNumpad5OsKey();
+                        Numpad6Key::KeyNumpad6OsKey();
+                        Numpad7Key::KeyNumpad7OsKey();
+                        Numpad8Key::KeyNumpad8OsKey();
+                        Numpad9Key::KeyNumpad9OsKey();
+                        Numpad0Key::KeyNumpad0OsKey();
+                        SubtractKey::KeySubtractOsKey();
+                        PeriodKey::KeyPeriodOsKey();
+                        ForwardSlashKey::KeyForwardSlashOsKey();
+                        NumLockKey::KeyNumLockOsKey();
+                        ScrollLockKey::KeyScrollLockOsKey();
+                        BrowserBackKey::KeyBrowserBackOsKey();
+                        BrowserForwardKey::KeyBrowserForwardOsKey();
+                        BrowserRefreshKey::KeyBrowserRefreshOsKey();
+                        BrowserStopKey::KeyBrowserStopOsKey();
+                        BrowserSearchKey::KeyBrowserSearchOsKey();
+                        BrowserFavoritesKey::KeyBrowserFavoritesOsKey();
+                        BrowserStartKey::KeyBrowserStartOsKey();
+                        VolumeMuteKey::KeyVolumeMuteOsKey();
+                        VolumeDownKey::KeyVolumeDownOsKey();
+                        VolumeUpKey::KeyVolumeUpOsKey();
+                        NextTrackKey::KeyNextTrackOsKey();
+                        PreviousTrackKey::KeyPreviousTrackOsKey();
+                        StopTrackKey::KeyStopTrackOsKey();
+                        PlayPauseTrackKey::KeyPlayPauseTrackOsKey();
+                        StartMailKey::KeyStartMailOsKey();
+                        SelectMediaKey::KeySelectMediaOsKey();
+                        StartApplication1Key::KeyStartApplication1OsKey();
+                        StartApplication2Key::KeyStartApplication2OsKey();
+                    } else { // None
+                        AKey::KeyA();
+                        BKey::KeyB();
+                        CKey::KeyC();
+                        DKey::KeyD();
+                        EKey::KeyE();
+                        FKey::KeyF();
+                        GKey::KeyG();
+                        HKey::KeyH();
+                        IKey::KeyI();
+                        JKey::KeyJ();
+                        KKey::KeyK();
+                        LKey::KeyL();
+                        MKey::KeyM();
+                        NKey::KeyN();
+                        OKey::KeyO();
+                        PKey::KeyP();
+                        QKey::KeyQ();
+                        RKey::KeyR();
+                        SKey::KeyS();
+                        TKey::KeyT();
+                        UKey::KeyU();
+                        VKey::KeyV();
+                        WKey::KeyW();
+                        XKey::KeyX();
+                        YKey::KeyY();
+                        ZKey::KeyZ();
+                        OneKey::KeyOne();
+                        TwoKey::KeyTwo();
+                        ThreeKey::KeyThree();
+                        FourKey::KeyFour();
+                        FiveKey::KeyFive();
+                        SixKey::KeySix();
+                        SevenKey::KeySeven();
+                        EightKey::KeyEight();
+                        NineKey::KeyNine();
+                        ZeroKey::KeyZero();
+                        F1Key::KeyF1();
+                        F2Key::KeyF2();
+                        F3Key::KeyF3();
+                        F4Key::KeyF4();
+                        F5Key::KeyF5();
+                        F6Key::KeyF6();
+                        F7Key::KeyF7();
+                        F8Key::KeyF8();
+                        F9Key::KeyF9();
+                        F10Key::KeyF10();
+                        F11Key::KeyF11();
+                        F12Key::KeyF12();
+                        F13Key::KeyF13();
+                        F14Key::KeyF14();
+                        F15Key::KeyF15();
+                        F16Key::KeyF16();
+                        F17Key::KeyF17();
+                        F18Key::KeyF18();
+                        F19Key::KeyF19();
+                        F20Key::KeyF20();
+                        F21Key::KeyF21();
+                        F22Key::KeyF22();
+                        F23Key::KeyF23();
+                        F24Key::KeyF24();
+                        BackspaceKey::KeyBackspace();
+                        TabKey::KeyTab();
+                        ClearKey::KeyClear();
+                        EnterKey::KeyEnter();
+                        LeftShiftKey::KeyLeftShift();
+                        LeftControlKey::KeyLeftControl();
+                        LeftAltKey::KeyLeftAlt();
+                        RightShiftKey::KeyRightShift();
+                        RightControlKey::KeyRightControl();
+                        RightAltKey::KeyRightAlt();
+                        PauseKey::KeyPause();
+                        CapsLockKey::KeyCapsLock();
+                        EscapeKey::KeyEscape();
+                        SpaceKey::KeySpace();
+                        PageUpKey::KeyPageUp();
+                        PageDownKey::KeyPageDown();
+                        EndKey::KeyEnd();
+                        HomeKey::KeyHome();
+                        LeftArrowKey::KeyLeftArrow();
+                        RightArrowKey::KeyRightArrow();
+                        UpArrowKey::KeyUpArrow();
+                        DownArrowKey::KeyDownArrow();
+                        SelectKey::KeySelect();
+                        PrintKey::KeyPrint();
+                        ExecuteKey::KeyExecute();
+                        PrintScreenKey::KeyPrintScreen();
+                        InsertKey::KeyInsert();
+                        DeleteKey::KeyDelete();
+                        HelpKey::KeyHelp();
+                        LeftWindowsKey::KeyLeftWindows();
+                        RightWindowsKey::KeyRightWindows();
+                        AppsKey::KeyApps();
+                        Numpad1Key::KeyNumpad1();
+                        Numpad2Key::KeyNumpad2();
+                        Numpad3Key::KeyNumpad3();
+                        Numpad4Key::KeyNumpad4();
+                        Numpad5Key::KeyNumpad5();
+                        Numpad6Key::KeyNumpad6();
+                        Numpad7Key::KeyNumpad7();
+                        Numpad8Key::KeyNumpad8();
+                        Numpad9Key::KeyNumpad9();
+                        Numpad0Key::KeyNumpad0();
+                        SubtractKey::KeySubtract();
+                        PeriodKey::KeyPeriod();
+                        ForwardSlashKey::KeyForwardSlash();
+                        NumLockKey::KeyNumLock();
+                        ScrollLockKey::KeyScrollLock();
+                        BrowserBackKey::KeyBrowserBack();
+                        BrowserForwardKey::KeyBrowserForward();
+                        BrowserRefreshKey::KeyBrowserRefresh();
+                        BrowserStopKey::KeyBrowserStop();
+                        BrowserSearchKey::KeyBrowserSearch();
+                        BrowserFavoritesKey::KeyBrowserFavorites();
+                        BrowserStartKey::KeyBrowserStart();
+                        VolumeMuteKey::KeyVolumeMute();
+                        VolumeDownKey::KeyVolumeDown();
+                        VolumeUpKey::KeyVolumeUp();
+                        NextTrackKey::KeyNextTrack();
+                        PreviousTrackKey::KeyPreviousTrack();
+                        StopTrackKey::KeyStopTrack();
+                        PlayPauseTrackKey::KeyPlayPauseTrack();
+                        StartMailKey::KeyStartMail();
+                        SelectMediaKey::KeySelectMedia();
+                        StartApplication1Key::KeyStartApplication1();
+                        StartApplication2Key::KeyStartApplication2();
+                    }
+                }
+            }
+        }
+    }
 }
-
-bool KeyboardKeyIsPressed::IsBPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('B') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsCPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('C') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsDPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('D') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsEPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('E') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsFPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('F') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsGPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('G') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsHPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('H') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsIPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('I') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsJPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('J') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsKPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('K') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsLPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('L') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsMPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('M') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('N') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsOPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('O') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('P') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsQPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('Q') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsRPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('R') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsSPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('S') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsTPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('T') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsUPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('U') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsVPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('V') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsWPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('W') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsXPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('X') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsYPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('Y') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsZPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('Z') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is1Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('1') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is2Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('2') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is3Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('3') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is4Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('4') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is5Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('5') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is6Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('6') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is7Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('7') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is8Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('8') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is9Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('9') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::Is0Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState('0') & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF1Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F1) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF2Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F2) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF3Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F3) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF4Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F4) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF5Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F5) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF6Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F6) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF7Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F7) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF8Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F8) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF9Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F9) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF10Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F10) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF11Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F11) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF12Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F12) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF13Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F13) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF14Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F14) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF15Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F15) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF16Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F16) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF17Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F17) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF18Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F18) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF19Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F19) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF20Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F20) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF21Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F21) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF22Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F22) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF23Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F23) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsF24Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_F24) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBackspacePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BACK) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsTabPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_TAB) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsClearPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_CLEAR) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsEnterPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_RETURN) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsLeftShiftPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LSHIFT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsLeftControlPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LCONTROL) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsLeftAltPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LMENU) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsRightShiftPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_RSHIFT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsRightControlPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_RCONTROL) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsRightAltPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_RMENU) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPausePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_PAUSE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsCapsLockPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_CAPITAL) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsEscapePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_ESCAPE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsSpacePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_SPACE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPageUpPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_PRIOR) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPageDownPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NEXT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsEndPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_END) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsHomePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_HOME) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsLeftArrowPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LEFT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsRightArrowPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_RIGHT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsUpArrowPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_UP) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsDownArrowPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_DOWN) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsSelectPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_SELECT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPrintPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_PRINT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsExecutePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_EXECUTE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPrintScreenPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_SNAPSHOT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsInsertPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_INSERT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsDeletePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_DELETE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsHelpPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_HELP) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsLeftWindowsPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LWIN) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsRightWindowsPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_RWIN) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsAppsPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_APPS) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad1Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD1) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad2Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD2) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad3Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD3) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad4Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD4) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad5Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD5) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad6Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD6) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad7Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD7) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad8Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD8) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad9Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD9) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumpad0Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMPAD0) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsSubtractPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_SUBTRACT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPeriodPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_DECIMAL) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsForwardSlashPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_DIVIDE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNumLockPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_NUMLOCK) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsScrollLockPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_SCROLL) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBrowserBackPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BROWSER_BACK) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBrowserForwardPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BROWSER_FORWARD) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBrowserRefreshPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BROWSER_REFRESH) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBrowserStopPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BROWSER_STOP) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBrowserSearchPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BROWSER_SEARCH) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBrowserFavoritesPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BROWSER_FAVORITES) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsBrowserStartPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_BROWSER_HOME) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsVolumeMutePressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_VOLUME_MUTE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsVolumeDownPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_VOLUME_DOWN) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsVolumeUpPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_VOLUME_UP) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsNextTrackPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_MEDIA_NEXT_TRACK) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPreviousTrackPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_MEDIA_PREV_TRACK) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsStopTrackPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_MEDIA_STOP) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsPlayPauseTrackPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_MEDIA_PLAY_PAUSE) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsStartMailPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LAUNCH_MAIL) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsSelectMediaPressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LAUNCH_MEDIA_SELECT) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsStartApplication1Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LAUNCH_APP1) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
-bool KeyboardKeyIsPressed::IsStartApplication2Pressed() {
-    #ifdef _WIN32 // Windows
-        return (GetAsyncKeyState(VK_LAUNCH_APP2) & 0x8000);
-    #elif __APPLE__ // MacOS
-        return ;
-    #elif __linux__ // Linux
-        return ;
-    #elif TARGET_OS_IPHONE // iOS
-        return ;
-    #elif __ANDROID__ // Android
-        return ;
-    #else
-        std::cout << "Unsupported platform" << std::endl;
-        return false;
-    #endif
-}
-
 
 #endif

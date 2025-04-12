@@ -7,10 +7,9 @@
 #include <string>
 #include <bitset>
 #include <cstdint>
-#include <iostream>
 
 // Program imported files
-
+#include "Log.h"
 
 // Function definitions
 class FromBinary {

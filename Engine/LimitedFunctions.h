@@ -6,10 +6,9 @@
 // C++ imported files
 #include <functional>
 #include <vector>
-#include <iostream>
 
 // Program imported files
-
+#include "Log.h"
 
 // Function definitions
 class LimitedFunction {

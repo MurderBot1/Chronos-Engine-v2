@@ -5,4 +5,5 @@
 #include "KeyboardFunctions.h"
 #include "LimitedFunctions.h"
 #include "StructuralFunctions.h"
-#include "time.h"
+#include "Time.h"
+#include "Log.h"

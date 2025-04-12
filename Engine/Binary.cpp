@@ -12,7 +12,7 @@
 // Start of program
 float FromBinary::BinaryToFloat(const std::string& Binary) {
     if (Binary.length() != 32) { // Ensure 32 bits for a valid float representation
-        throw std::invalid_argument("Binary string must be 32 bits long.");
+        Log::Errors.push_back("Binary string must be 32 bits long.");
     }
     // Convert binary string to unsigned 32-bit integer
     uint32_t IntRepresentation = std::bitset<32>(Binary).to_ulong();
@@ -23,7 +23,7 @@ float FromBinary::BinaryToFloat(const std::string& Binary) {
 
 int FromBinary::BinaryToInt(const std::string& Binary) {
     if (Binary.length() > 32) { // Ensure the binary string doesn't exceed 32 bits
-        throw std::invalid_argument("Binary string must be 32 bits or less.");
+        Log::Errors.push_back("Binary string must be 32 bits or less.");
     }
     // Convert binary string to unsigned 32-bit integer
     int IntValue = std::bitset<32>(Binary).to_ulong();
@@ -36,7 +36,8 @@ bool FromBinary::BinaryStringToBool(const std::string& Binary) {
     } else if (Binary == "0") {
         return false; // "0" represents false
     } else {
-        throw std::invalid_argument("Invalid binary string for boolean. Use '0' or '1'.");
+        Log::Errors.push_back("Invalid binary string for boolean. Use 0 or 1.");
+        return false;
     }
 }
 

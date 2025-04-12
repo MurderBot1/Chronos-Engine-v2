@@ -10,7 +10,7 @@
 bool Exit::ExitTheMainLoop;
 
 // Start of program
-void ExitTheProgram() {
+void Exit::ExitTheProgram() {
     Exit::ExitTheMainLoop = true;
 }
 

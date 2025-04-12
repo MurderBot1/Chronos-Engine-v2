@@ -1,0 +1,34 @@
+// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+
+#ifndef PrintKey_H
+#define PrintKey_H
+
+// C++ imported files
+
+
+// Program imported files
+
+
+// Function definitions
+
+class PrintKey{
+    public:
+        static void KeyPrintOsKeySHIFTALTCTRL();
+        static void KeyPrintSHIFTALTCTRL();
+        static void KeyPrintOsKeyALTCTRL();
+        static void KeyPrintOsKeySHIFTCTRL();
+        static void KeyPrintOsKeySHIFTALT();
+        static void KeyPrintALTCTRL();
+        static void KeyPrintSHIFTCTRL();
+        static void KeyPrintSHIFTALT();
+        static void KeyPrintOsKeyCTRL();
+        static void KeyPrintOsKeyALT();
+        static void KeyPrintOsKeySHIFT();
+        static void KeyPrintCTRL();
+        static void KeyPrintALT();
+        static void KeyPrintSHIFT();
+        static void KeyPrintOsKey();
+        static void KeyPrint();
+};
+
+#endif

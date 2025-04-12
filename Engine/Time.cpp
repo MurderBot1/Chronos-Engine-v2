@@ -5,7 +5,6 @@
 
 // CPP files .h file
 #include "Time.h"
-#include <iostream>
 
 // Redefine vars if needed
 int64_t Time::CurrentTimeInMicroS;
@@ -13,6 +12,7 @@ int64_t Time::LastFramesTimeInMicroS;
 int64_t Time::DifferenceOfTimeInMicroS;
 float Time::DeltaTime;
 float Time::FPS;
+std::string Time::WhenProgramStart;
 
 // Start of program
 int64_t Time::FindCurrentTime() {
@@ -35,6 +35,24 @@ void Time::FillValuesForLoading() {
     Time::DifferenceOfTimeInMicroS = 0;
     Time::DeltaTime = 0;
     Time::FPS = 0;
+    Time::WhenProgramStart = Time::GetMDYHMS();
+}
+
+std::string Time::GetMDYHMS() {
+    // Get the current time
+    std::time_t now = std::time(nullptr);
+    std::tm* localTime = std::localtime(&now);
+
+    // Use a stringstream to format the time
+    std::stringstream ss;
+    ss << std::setfill('0') << std::setw(2) << (localTime->tm_mon + 1) << "M"
+       << std::setw(2) << localTime->tm_mday << "D"
+       << (localTime->tm_year + 1900) << "Y_"
+       << std::setw(2) << localTime->tm_hour << "H_"
+       << std::setw(2) << localTime->tm_min << "M_"
+       << std::setw(2) << localTime->tm_sec << "S";
+
+    return ss.str();
 }
 
 #endif

@@ -12,11 +12,15 @@
 // Start of program
 void StartFunction() {
     Time::FillValuesForLoading();
+    Log::SetupLog();
 }
 
 void LoopFunction() {
     LimitedFunction::ResetAllLimitedFunctions();
+    Keyboard::CallAllKeyboardFunctionsIfKeyIsPressed();
     Time::ComupteDeltaTime();
+    Log::UpdateCounters();
+    Log::OutputDataToFile();
 }
 
 #endif

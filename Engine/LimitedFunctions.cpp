@@ -21,7 +21,7 @@ void LimitedFunction::RunFunction() {
         this->Function();
         this->CalledThisFrame =+ 1;
     } else {
-        std::cout << "Max calls reached on a LimitedFunction();" << std::endl;
+        Log::Errors.push_back("Max calls reached on a LimitedFunction();");
     }
 }
 

@@ -1,0 +1,34 @@
+// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+
+#ifndef BrowserStartKey_H
+#define BrowserStartKey_H
+
+// C++ imported files
+
+
+// Program imported files
+
+
+// Function definitions
+
+class BrowserStartKey{
+    public:
+        static void KeyBrowserStartOsKeySHIFTALTCTRL();
+        static void KeyBrowserStartSHIFTALTCTRL();
+        static void KeyBrowserStartOsKeyALTCTRL();
+        static void KeyBrowserStartOsKeySHIFTCTRL();
+        static void KeyBrowserStartOsKeySHIFTALT();
+        static void KeyBrowserStartALTCTRL();
+        static void KeyBrowserStartSHIFTCTRL();
+        static void KeyBrowserStartSHIFTALT();
+        static void KeyBrowserStartOsKeyCTRL();
+        static void KeyBrowserStartOsKeyALT();
+        static void KeyBrowserStartOsKeySHIFT();
+        static void KeyBrowserStartCTRL();
+        static void KeyBrowserStartALT();
+        static void KeyBrowserStartSHIFT();
+        static void KeyBrowserStartOsKey();
+        static void KeyBrowserStart();
+};
+
+#endif

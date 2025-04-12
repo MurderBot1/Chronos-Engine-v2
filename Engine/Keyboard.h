@@ -4,26 +4,17 @@
 #define Keyboard_H
 
 // C++ imported files
+#include <condition_variable>
+#include <functional>
+#include <iostream>
+#include <mutex>
+#include <queue>
+#include <thread>
 #include <string>
 #include <map>
-#include <iostream>
 
 // Program imported files
-#include "KeyboardFunctions.h"
-#ifdef _WIN32 // Windows
-    #include <windows.h>
-#elif __APPLE__ // MacOS
-    #include
-#elif __linux__ // Linux
-    #include
-#elif TARGET_OS_IPHONE // iOS
-    #include
-#elif __ANDROID__ // Android
-    #include
-#else
-    std::cout << "Unsupported platform" << std::endl;
-    return false;
-#endif
+#include "KeyboardKeys.h"
 
 // Function definitions
 enum KeyboardKeys {
@@ -32,137 +23,10 @@ enum KeyboardKeys {
 
 class Keyboard {
     public:
+        static bool IsDisabled;
         static bool IsKeyPressed(KeyboardKeys Key);
-};
-
-class KeyboardKeyIsPressed {
-    public:
+        static void CallAllKeyboardFunctionsIfKeyIsPressed();
         static std::map<std::string, bool> KeysPressed();
-        static bool IsAPressed();
-        static bool IsBPressed();
-        static bool IsCPressed();
-        static bool IsDPressed();
-        static bool IsEPressed();
-        static bool IsFPressed();
-        static bool IsGPressed();
-        static bool IsHPressed();
-        static bool IsIPressed();
-        static bool IsJPressed();
-        static bool IsKPressed();
-        static bool IsLPressed();
-        static bool IsMPressed();
-        static bool IsNPressed();
-        static bool IsOPressed();
-        static bool IsPPressed();
-        static bool IsQPressed();
-        static bool IsRPressed();
-        static bool IsSPressed();
-        static bool IsTPressed();
-        static bool IsUPressed();
-        static bool IsVPressed();
-        static bool IsWPressed();
-        static bool IsXPressed();
-        static bool IsYPressed();
-        static bool IsZPressed();
-        static bool Is1Pressed();
-        static bool Is2Pressed();
-        static bool Is3Pressed();
-        static bool Is4Pressed();
-        static bool Is5Pressed();
-        static bool Is6Pressed();
-        static bool Is7Pressed();
-        static bool Is8Pressed();
-        static bool Is9Pressed();
-        static bool Is0Pressed();
-        static bool IsF1Pressed();
-        static bool IsF2Pressed();
-        static bool IsF3Pressed();
-        static bool IsF4Pressed();
-        static bool IsF5Pressed();
-        static bool IsF6Pressed();
-        static bool IsF7Pressed();
-        static bool IsF8Pressed();
-        static bool IsF9Pressed();
-        static bool IsF10Pressed();
-        static bool IsF11Pressed();
-        static bool IsF12Pressed();
-        static bool IsF13Pressed();
-        static bool IsF14Pressed();
-        static bool IsF15Pressed();
-        static bool IsF16Pressed();
-        static bool IsF17Pressed();
-        static bool IsF18Pressed();
-        static bool IsF19Pressed();
-        static bool IsF20Pressed();
-        static bool IsF21Pressed();
-        static bool IsF22Pressed();
-        static bool IsF23Pressed();
-        static bool IsF24Pressed();
-        static bool IsBackspacePressed();
-        static bool IsTabPressed();
-        static bool IsClearPressed();
-        static bool IsEnterPressed();
-        static bool IsLeftShiftPressed();
-        static bool IsLeftControlPressed();
-        static bool IsLeftAltPressed();
-        static bool IsRightShiftPressed();
-        static bool IsRightControlPressed();
-        static bool IsRightAltPressed();
-        static bool IsPausePressed();
-        static bool IsCapsLockPressed();
-        static bool IsEscapePressed();
-        static bool IsSpacePressed();
-        static bool IsPageUpPressed();
-        static bool IsPageDownPressed();
-        static bool IsEndPressed();
-        static bool IsHomePressed();
-        static bool IsLeftArrowPressed();
-        static bool IsRightArrowPressed();
-        static bool IsUpArrowPressed();
-        static bool IsDownArrowPressed();
-        static bool IsSelectPressed();
-        static bool IsPrintPressed();
-        static bool IsExecutePressed();
-        static bool IsPrintScreenPressed();
-        static bool IsInsertPressed();
-        static bool IsDeletePressed();
-        static bool IsHelpPressed();
-        static bool IsLeftWindowsPressed();
-        static bool IsRightWindowsPressed();
-        static bool IsAppsPressed();
-        static bool IsNumpad1Pressed();
-        static bool IsNumpad2Pressed();
-        static bool IsNumpad3Pressed();
-        static bool IsNumpad4Pressed();
-        static bool IsNumpad5Pressed();
-        static bool IsNumpad6Pressed();
-        static bool IsNumpad7Pressed();
-        static bool IsNumpad8Pressed();
-        static bool IsNumpad9Pressed();
-        static bool IsNumpad0Pressed();
-        static bool IsSubtractPressed();
-        static bool IsPeriodPressed();
-        static bool IsForwardSlashPressed();
-        static bool IsNumLockPressed();
-        static bool IsScrollLockPressed();
-        static bool IsBrowserBackPressed();
-        static bool IsBrowserForwardPressed();
-        static bool IsBrowserRefreshPressed();
-        static bool IsBrowserStopPressed();
-        static bool IsBrowserSearchPressed();
-        static bool IsBrowserFavoritesPressed();
-        static bool IsBrowserStartPressed();
-        static bool IsVolumeMutePressed();
-        static bool IsVolumeDownPressed();
-        static bool IsVolumeUpPressed();
-        static bool IsNextTrackPressed();
-        static bool IsPreviousTrackPressed();
-        static bool IsStopTrackPressed();
-        static bool IsPlayPauseTrackPressed();
-        static bool IsStartMailPressed();
-        static bool IsSelectMediaPressed();
-        static bool IsStartApplication1Pressed();
-        static bool IsStartApplication2Pressed();
 };
 
 #endif

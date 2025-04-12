@@ -1,2 +1,0 @@
-g++ -o ChronosEngine Engine/Main.cpp Engine\Time.cpp Engine/StructuralFunctions.cpp Engine/Exit.cpp Engine/Keyboard.cpp Engine/KeyboardFunctions.cpp Engine/LimitedFunctions.cpp
-./ChronosEngine

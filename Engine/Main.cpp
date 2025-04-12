@@ -6,6 +6,9 @@
 // Included file
 #include "StructuralFunctions.h"
 
+// Other included Libraries
+#include <iostream>
+
 // Redefine vars if needed
 
 
