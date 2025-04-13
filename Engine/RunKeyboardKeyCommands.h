@@ -1,0 +1,33 @@
+// © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+
+#ifndef RunKeyboardKeyCommands_H
+#define RunKeyboardKeyCommands_H
+
+// C++ imported files
+
+
+// Program imported files
+#include "KeyboardKeys.h"
+
+// Function definitions
+class KeyboardCommands {
+    public:
+        static void KeysOsKeySHIFTALTCTRL();
+        static void KeysSHIFTALTCTRL();
+        static void KeysOsKeysALTCTRL();
+        static void KeysOsKeySHIFTCTRL();
+        static void KeysOsKeySHIFTALT();
+        static void KeysALTCTRL();
+        static void KeysSHIFTCTRL();
+        static void KeysSHIFTALT();
+        static void KeysOsKeyCTRL();
+        static void KeysOsKeysALT();
+        static void KeysOsKeySHIFT();
+        static void KeysCTRL();
+        static void KeysALT();
+        static void KeysSHIFT();
+        static void KeysOsKey();
+        static void Keys();
+};
+
+#endif

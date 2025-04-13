@@ -17,7 +17,7 @@ std::vector<float> Log::FPS;
 
 // Start of program
 void Log::SetupLog() {
-    std::ifstream SettingsFile("./Engine/Settings/LogSettings.txt");
+    std::ifstream SettingsFile("./Engine/Logs/Settings/LogSettings.txt");
     if(SettingsFile.is_open()) {
         std::vector<std::string> SettingsFileLines;
         std::string Line;

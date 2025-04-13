@@ -4,17 +4,12 @@
 #define Keyboard_H
 
 // C++ imported files
-#include <condition_variable>
-#include <functional>
 #include <iostream>
-#include <mutex>
-#include <queue>
-#include <thread>
 #include <string>
 #include <map>
 
 // Program imported files
-#include "KeyboardKeys.h"
+#include "RunKeyboardKeyCommands.h"
 
 // Function definitions
 enum KeyboardKeys {
