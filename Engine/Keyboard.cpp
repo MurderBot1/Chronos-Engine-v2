@@ -277,35 +277,30 @@ void Keyboard::CallAllKeyboardFunctionsIfKeyIsPressed(){
     if(!Keyboard::IsDisabled) {
         std::map<std::string, bool> KeysPressed = Keyboard::KeysPressed();
 
-        const bool CTRL = KeysPressed["RightControl"] || KeysPressed["LefttControl"];
-        const bool SHIFT = KeysPressed["RightShift"] || KeysPressed["LeftShift"];
-        const bool ALT = KeysPressed["RightAlt"] || KeysPressed["LeftAlt"];
-        const bool OSKey = KeysPressed["RightWindows"] || KeysPressed["LeftWindows"];
-        
-        if(CTRL) {
-            if(SHIFT) {
-                if(ALT) {
-                    if(OSKey) { // Ctrl Shift Alt OSKey
+        if(KeysPressed["RightControl"] || KeysPressed["LefttControl"]) {
+            if(KeysPressed["RightShift"] || KeysPressed["LeftShift"]) {
+                if(KeysPressed["RightAlt"] || KeysPressed["LeftAlt"]) {
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // Ctrl Shift Alt OSKey
                         KeyboardCommands::KeysOsKeySHIFTALTCTRL();
                     } else { // Ctrl Shift Alt
                         KeyboardCommands::KeysSHIFTALTCTRL();
                     }
                 } else {
-                    if(OSKey) { // Ctrl Shift OSKey
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // Ctrl Shift OSKey
                         KeyboardCommands::KeysOsKeySHIFTCTRL();
                     } else { // Ctrl Shift
                         KeyboardCommands::KeysSHIFTCTRL();
                     }
                 }
             } else {
-                if(ALT) {
-                    if(OSKey) { // Ctrl Alt OSKey
+                if(KeysPressed["RightAlt"] || KeysPressed["LeftAlt"]) {
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // Ctrl Alt OSKey
                         KeyboardCommands::KeysOsKeysALTCTRL();
                     } else { // Ctrl Alt
                         KeyboardCommands::KeysALTCTRL();
                     }
                 } else {
-                    if(OSKey) { // Ctrl OSKey
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // Ctrl OSKey
                         KeyboardCommands::KeysOsKeyCTRL();
                     } else { // Ctrl
                         KeyboardCommands::KeysCTRL();
@@ -313,29 +308,29 @@ void Keyboard::CallAllKeyboardFunctionsIfKeyIsPressed(){
                 }
             }
         } else {
-            if(SHIFT) {
-                if(ALT) {
-                    if(OSKey) { // Shift Alt OSKey
+            if(KeysPressed["RightShift"] || KeysPressed["LeftShift"]) {
+                if(KeysPressed["RightAlt"] || KeysPressed["LeftAlt"]) {
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // Shift Alt OSKey
                         KeyboardCommands::KeysOsKeySHIFTALT();
                     } else { // Shift Alt
                         KeyboardCommands::KeysSHIFTALT(); 
                     }
                 } else {
-                    if(OSKey) { // Shift OSKey
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // Shift OSKey
                         KeyboardCommands::KeysOsKeySHIFT();
                     } else { // Shift
                         KeyboardCommands::KeysSHIFT();
                     }
                 }
             } else {
-                if(ALT) {
-                    if(OSKey) { // Alt OSKey
+                if(KeysPressed["RightAlt"] || KeysPressed["LeftAlt"]) {
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // Alt OSKey
                         KeyboardCommands::KeysOsKeysALT();
                     } else { // Alt
                         KeyboardCommands::KeysALT();
                     }
                 } else {
-                    if(OSKey) { // OSKey
+                    if(KeysPressed["RightWindows"] || KeysPressed["LeftWindows"]) { // OSKey
                         KeyboardCommands::KeysOsKey();
                     } else { // None
                         KeyboardCommands::Keys();
