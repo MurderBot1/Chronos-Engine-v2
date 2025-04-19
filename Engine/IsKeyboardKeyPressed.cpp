@@ -23,7 +23,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -40,7 +40,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -57,7 +57,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -74,7 +74,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -91,7 +91,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -108,7 +108,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -125,7 +125,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -142,7 +142,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -159,7 +159,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -176,7 +176,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -193,7 +193,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -210,7 +210,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -227,7 +227,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -244,7 +244,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -261,7 +261,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -278,7 +278,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -295,7 +295,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -312,7 +312,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -329,7 +329,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -346,7 +346,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -363,7 +363,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -380,7 +380,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -397,7 +397,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -414,7 +414,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -431,7 +431,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -448,7 +448,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -465,7 +465,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -482,7 +482,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -499,7 +499,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -516,7 +516,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -533,7 +533,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -550,7 +550,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -567,7 +567,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -584,7 +584,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -601,7 +601,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -618,7 +618,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -635,7 +635,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -652,7 +652,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -669,7 +669,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -686,7 +686,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -703,7 +703,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -720,7 +720,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -737,7 +737,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -754,7 +754,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -771,7 +771,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -788,7 +788,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -805,7 +805,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -822,7 +822,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -839,7 +839,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -856,7 +856,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -873,7 +873,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -890,7 +890,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -907,7 +907,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -924,7 +924,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -941,7 +941,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -958,7 +958,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -975,7 +975,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -992,7 +992,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1009,7 +1009,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1026,7 +1026,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1043,7 +1043,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1060,7 +1060,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1077,7 +1077,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1094,7 +1094,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1111,7 +1111,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1128,7 +1128,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1145,7 +1145,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1162,7 +1162,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1179,7 +1179,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1196,7 +1196,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1213,7 +1213,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1230,7 +1230,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1247,7 +1247,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1264,7 +1264,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1281,7 +1281,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1298,7 +1298,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1315,7 +1315,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1332,7 +1332,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1349,7 +1349,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1366,7 +1366,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1383,7 +1383,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1400,7 +1400,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1417,7 +1417,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1434,7 +1434,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1451,7 +1451,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1468,7 +1468,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1485,7 +1485,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1502,7 +1502,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1519,7 +1519,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1536,7 +1536,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1553,7 +1553,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1570,7 +1570,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1587,7 +1587,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1604,7 +1604,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1621,7 +1621,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1638,7 +1638,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1655,7 +1655,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1672,7 +1672,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1689,7 +1689,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1706,7 +1706,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1723,7 +1723,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1740,7 +1740,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1757,7 +1757,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1774,7 +1774,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1791,7 +1791,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1808,7 +1808,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1825,7 +1825,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1842,7 +1842,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1859,7 +1859,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1876,7 +1876,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1893,7 +1893,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1910,7 +1910,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1927,7 +1927,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1944,7 +1944,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1961,7 +1961,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1978,7 +1978,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -1995,7 +1995,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2012,7 +2012,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2029,7 +2029,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2046,7 +2046,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2063,7 +2063,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2080,7 +2080,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2097,7 +2097,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2114,7 +2114,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }
@@ -2131,7 +2131,7 @@ namespace KeyboardKeyIsPressed {
         #elif __ANDROID__ // Android
             return ;
         #else
-            std::cout << "Unsupported platform" << std::endl;
+            Log::Errors.InfoOutputs("Unsupported platform for key inputs");
             return false;
         #endif
     }

@@ -10,165 +10,180 @@
 
 
 // Start of program
-        void UpArrowKey::KeyUpArrowOsKeySHIFTALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowSHIFTALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowOsKeyALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowOsKeySHIFTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowOsKeySHIFTALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowSHIFTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowSHIFTALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowOsKeyCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowOsKeyALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowOsKeySHIFT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowSHIFT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrowOsKey() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void UpArrowKey::KeyUpArrow() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-            */
-        }
+void UpArrowKey::KeyUpArrowOsKeySHIFTALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowSHIFTALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowOsKeyALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowOsKeySHIFTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowOsKeySHIFTALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowSHIFTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowSHIFTALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowOsKeyCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowOsKeyALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowOsKeySHIFT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowSHIFT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrowOsKey() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void UpArrowKey::KeyUpArrow() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
 
 #endif

@@ -9,7 +9,6 @@
 #include <string>
 #include <iomanip>
 #include <sstream>
-#include <ctime>
 
 // Program imported files
 

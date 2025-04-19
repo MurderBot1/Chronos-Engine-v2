@@ -15,7 +15,7 @@
 #elif __ANDROID__ // Android
     #include
 #else
-    std::cout << "Unsupported platform" << std::endl;
+    Log::Errors.InfoOutputs("Unsupported platform for key inputs");
     return false;
 #endif
 

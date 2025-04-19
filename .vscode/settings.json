@@ -87,7 +87,8 @@
         "stop_token": "cpp",
         "thread": "cpp",
         "mutex": "cpp",
-        "testing": "cpp"
+        "testing": "cpp",
+        "future": "cpp"
     },
     "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe"
 }

@@ -9,6 +9,8 @@
 
 // Program imported files
 #include "RunKeyboardKeyCommands.h"
+#include "Settings.h"
+#include "Log.h"
 
 // Function definitions
 enum KeyboardKeys {

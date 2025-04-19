@@ -10,165 +10,180 @@
 
 
 // Start of program
-        void F1Key::KeyF1OsKeySHIFTALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1SHIFTALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1OsKeyALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1OsKeySHIFTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1OsKeySHIFTALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1ALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1SHIFTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1SHIFTALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1OsKeyCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1OsKeyALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1OsKeySHIFT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1CTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1ALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1SHIFT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1OsKey() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void F1Key::KeyF1() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-            */
-        }
+void F1Key::KeyF1OsKeySHIFTALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1SHIFTALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1OsKeyALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1OsKeySHIFTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1OsKeySHIFTALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1ALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1SHIFTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1SHIFTALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1OsKeyCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1OsKeyALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1OsKeySHIFT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1CTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1ALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1SHIFT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1OsKey() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void F1Key::KeyF1() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
 
 #endif

@@ -8,6 +8,7 @@
 
 // Redefine vars if needed
 bool Keyboard::IsDisabled;
+int Settings::NumCoresForKeyboard;
 
 // Start of program
 std::map<std::string, bool> Keyboard::KeysPressed() {
@@ -138,7 +139,7 @@ std::map<std::string, bool> Keyboard::KeysPressed() {
     ReturnedKeys["SelectMedia"] = KeyboardKeyIsPressed::IsSelectMediaPressed();
     ReturnedKeys["StartApplication1"] = KeyboardKeyIsPressed::IsStartApplication1Pressed();
     ReturnedKeys["StartApplication2"] = KeyboardKeyIsPressed::IsStartApplication2Pressed();
-    
+
     return ReturnedKeys;
 }
 

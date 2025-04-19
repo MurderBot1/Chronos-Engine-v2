@@ -10,165 +10,180 @@
 
 
 // Start of program
-        void IKey::KeyIOsKeySHIFTALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyISHIFTALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIOsKeyALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIOsKeySHIFTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIOsKeySHIFTALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIALTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyISHIFTCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyISHIFTALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIOsKeyCTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIOsKeyALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIOsKeySHIFT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyICTRL() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIALT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyISHIFT() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyIOsKey() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-*/
-        }
-        void IKey::KeyI() {
-            /*
-                Windows 11 = 
-                Windows 10 = 
-                Linux = 
-                MacOS = 
-                Android = 
-                IOS = 
-            */
-        }
+void IKey::KeyIOsKeySHIFTALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyISHIFTALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIOsKeyALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIOsKeySHIFTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIOsKeySHIFTALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIALTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyISHIFTCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyISHIFTALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIOsKeyCTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIOsKeyALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIOsKeySHIFT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyICTRL() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIALT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyISHIFT() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyIOsKey() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
+
+void IKey::KeyI() {
+    /*
+        Windows 11 = 
+        Windows 10 = 
+        Linux = 
+        MacOS = 
+        Android = 
+        IOS = 
+    */
+}
 
 #endif
