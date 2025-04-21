@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef SubtractKey_CPP
 #define SubtractKey_CPP
@@ -19,6 +20,7 @@ void SubtractKey::KeySubtractOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void SubtractKey::KeySubtractSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void SubtractKey::KeySubtractOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void SubtractKey::KeySubtractOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void SubtractKey::KeySubtractOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractALTCTRL() {
@@ -74,6 +80,7 @@ void SubtractKey::KeySubtractALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractSHIFTCTRL() {
@@ -85,6 +92,7 @@ void SubtractKey::KeySubtractSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractSHIFTALT() {
@@ -96,6 +104,7 @@ void SubtractKey::KeySubtractSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractOsKeyCTRL() {
@@ -107,6 +116,7 @@ void SubtractKey::KeySubtractOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractOsKeyALT() {
@@ -118,6 +128,7 @@ void SubtractKey::KeySubtractOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractOsKeySHIFT() {
@@ -129,6 +140,7 @@ void SubtractKey::KeySubtractOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractCTRL() {
@@ -140,6 +152,7 @@ void SubtractKey::KeySubtractCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractALT() {
@@ -151,6 +164,7 @@ void SubtractKey::KeySubtractALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractSHIFT() {
@@ -162,6 +176,7 @@ void SubtractKey::KeySubtractSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtractOsKey() {
@@ -173,6 +188,7 @@ void SubtractKey::KeySubtractOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SubtractKey::KeySubtract() {
@@ -184,6 +200,7 @@ void SubtractKey::KeySubtract() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

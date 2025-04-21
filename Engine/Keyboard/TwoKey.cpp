@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef TwoKey_CPP
 #define TwoKey_CPP
@@ -19,6 +20,7 @@ void TwoKey::KeyTwoOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void TwoKey::KeyTwoSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void TwoKey::KeyTwoOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void TwoKey::KeyTwoOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void TwoKey::KeyTwoOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoALTCTRL() {
@@ -74,6 +80,7 @@ void TwoKey::KeyTwoALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoSHIFTCTRL() {
@@ -85,6 +92,7 @@ void TwoKey::KeyTwoSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoSHIFTALT() {
@@ -96,6 +104,7 @@ void TwoKey::KeyTwoSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoOsKeyCTRL() {
@@ -107,6 +116,7 @@ void TwoKey::KeyTwoOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoOsKeyALT() {
@@ -118,6 +128,7 @@ void TwoKey::KeyTwoOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoOsKeySHIFT() {
@@ -129,6 +140,7 @@ void TwoKey::KeyTwoOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoCTRL() {
@@ -140,6 +152,7 @@ void TwoKey::KeyTwoCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoALT() {
@@ -151,6 +164,7 @@ void TwoKey::KeyTwoALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoSHIFT() {
@@ -162,6 +176,7 @@ void TwoKey::KeyTwoSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwoOsKey() {
@@ -173,6 +188,7 @@ void TwoKey::KeyTwoOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TwoKey::KeyTwo() {
@@ -184,6 +200,7 @@ void TwoKey::KeyTwo() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

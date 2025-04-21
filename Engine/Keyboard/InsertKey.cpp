@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef InsertKey_CPP
 #define InsertKey_CPP
@@ -19,6 +20,7 @@ void InsertKey::KeyInsertOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void InsertKey::KeyInsertSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void InsertKey::KeyInsertOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void InsertKey::KeyInsertOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void InsertKey::KeyInsertOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertALTCTRL() {
@@ -74,6 +80,7 @@ void InsertKey::KeyInsertALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertSHIFTCTRL() {
@@ -85,6 +92,7 @@ void InsertKey::KeyInsertSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertSHIFTALT() {
@@ -96,6 +104,7 @@ void InsertKey::KeyInsertSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertOsKeyCTRL() {
@@ -107,6 +116,7 @@ void InsertKey::KeyInsertOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertOsKeyALT() {
@@ -118,6 +128,7 @@ void InsertKey::KeyInsertOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertOsKeySHIFT() {
@@ -129,17 +140,19 @@ void InsertKey::KeyInsertOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertCTRL() {
     /*
-        Windows 11 = 
+        Windows 11 = Copies the selected text to the clipboard.
         Windows 10 = 
         Linux = 
         MacOS = 
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertALT() {
@@ -151,6 +164,7 @@ void InsertKey::KeyInsertALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertSHIFT() {
@@ -162,6 +176,7 @@ void InsertKey::KeyInsertSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsertOsKey() {
@@ -173,6 +188,7 @@ void InsertKey::KeyInsertOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void InsertKey::KeyInsert() {
@@ -184,6 +200,7 @@ void InsertKey::KeyInsert() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

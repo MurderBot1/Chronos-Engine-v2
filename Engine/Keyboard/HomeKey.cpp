@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef HomeKey_CPP
 #define HomeKey_CPP
@@ -19,6 +20,7 @@ void HomeKey::KeyHomeOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void HomeKey::KeyHomeSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void HomeKey::KeyHomeOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void HomeKey::KeyHomeOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void HomeKey::KeyHomeOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeALTCTRL() {
@@ -74,6 +80,7 @@ void HomeKey::KeyHomeALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeSHIFTCTRL() {
@@ -85,6 +92,7 @@ void HomeKey::KeyHomeSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeSHIFTALT() {
@@ -96,6 +104,7 @@ void HomeKey::KeyHomeSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeOsKeyCTRL() {
@@ -107,6 +116,7 @@ void HomeKey::KeyHomeOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeOsKeyALT() {
@@ -118,6 +128,7 @@ void HomeKey::KeyHomeOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeOsKeySHIFT() {
@@ -129,6 +140,7 @@ void HomeKey::KeyHomeOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeCTRL() {
@@ -140,6 +152,7 @@ void HomeKey::KeyHomeCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeALT() {
@@ -151,6 +164,7 @@ void HomeKey::KeyHomeALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeSHIFT() {
@@ -162,6 +176,7 @@ void HomeKey::KeyHomeSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHomeOsKey() {
@@ -173,6 +188,7 @@ void HomeKey::KeyHomeOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HomeKey::KeyHome() {
@@ -184,6 +200,7 @@ void HomeKey::KeyHome() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

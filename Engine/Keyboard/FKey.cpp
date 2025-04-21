@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef FKey_CPP
 #define FKey_CPP
@@ -19,6 +20,7 @@ void FKey::KeyFOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void FKey::KeyFSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void FKey::KeyFOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void FKey::KeyFOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void FKey::KeyFOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFALTCTRL() {
@@ -74,6 +80,7 @@ void FKey::KeyFALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFSHIFTCTRL() {
@@ -85,6 +92,7 @@ void FKey::KeyFSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFSHIFTALT() {
@@ -96,6 +104,7 @@ void FKey::KeyFSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFOsKeyCTRL() {
@@ -107,6 +116,7 @@ void FKey::KeyFOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFOsKeyALT() {
@@ -118,6 +128,7 @@ void FKey::KeyFOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFOsKeySHIFT() {
@@ -129,6 +140,7 @@ void FKey::KeyFOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFCTRL() {
@@ -140,6 +152,7 @@ void FKey::KeyFCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFALT() {
@@ -151,6 +164,7 @@ void FKey::KeyFALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFSHIFT() {
@@ -162,6 +176,7 @@ void FKey::KeyFSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyFOsKey() {
@@ -173,6 +188,7 @@ void FKey::KeyFOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FKey::KeyF() {
@@ -184,6 +200,7 @@ void FKey::KeyF() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

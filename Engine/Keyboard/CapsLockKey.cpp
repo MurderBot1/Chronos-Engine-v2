@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef CapsLockKey_CPP
 #define CapsLockKey_CPP
@@ -19,6 +20,7 @@ void CapsLockKey::KeyCapsLockOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void CapsLockKey::KeyCapsLockSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void CapsLockKey::KeyCapsLockOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void CapsLockKey::KeyCapsLockOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void CapsLockKey::KeyCapsLockOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockALTCTRL() {
@@ -74,6 +80,7 @@ void CapsLockKey::KeyCapsLockALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockSHIFTCTRL() {
@@ -85,6 +92,7 @@ void CapsLockKey::KeyCapsLockSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockSHIFTALT() {
@@ -96,6 +104,7 @@ void CapsLockKey::KeyCapsLockSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockOsKeyCTRL() {
@@ -107,6 +116,7 @@ void CapsLockKey::KeyCapsLockOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockOsKeyALT() {
@@ -118,6 +128,7 @@ void CapsLockKey::KeyCapsLockOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockOsKeySHIFT() {
@@ -129,6 +140,7 @@ void CapsLockKey::KeyCapsLockOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockCTRL() {
@@ -140,6 +152,7 @@ void CapsLockKey::KeyCapsLockCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockALT() {
@@ -151,6 +164,7 @@ void CapsLockKey::KeyCapsLockALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockSHIFT() {
@@ -162,6 +176,7 @@ void CapsLockKey::KeyCapsLockSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLockOsKey() {
@@ -173,6 +188,7 @@ void CapsLockKey::KeyCapsLockOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CapsLockKey::KeyCapsLock() {
@@ -184,6 +200,7 @@ void CapsLockKey::KeyCapsLock() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -88,7 +88,8 @@
         "thread": "cpp",
         "mutex": "cpp",
         "testing": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "xtree": "cpp"
     },
     "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe"
 }

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PageUpKey_CPP
 #define PageUpKey_CPP
@@ -19,6 +20,7 @@ void PageUpKey::KeyPageUpOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PageUpKey::KeyPageUpSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PageUpKey::KeyPageUpOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PageUpKey::KeyPageUpOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PageUpKey::KeyPageUpOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpALTCTRL() {
@@ -74,6 +80,7 @@ void PageUpKey::KeyPageUpALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PageUpKey::KeyPageUpSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpSHIFTALT() {
@@ -96,6 +104,7 @@ void PageUpKey::KeyPageUpSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PageUpKey::KeyPageUpOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpOsKeyALT() {
@@ -118,6 +128,7 @@ void PageUpKey::KeyPageUpOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PageUpKey::KeyPageUpOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpCTRL() {
@@ -140,6 +152,7 @@ void PageUpKey::KeyPageUpCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpALT() {
@@ -151,6 +164,7 @@ void PageUpKey::KeyPageUpALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpSHIFT() {
@@ -162,6 +176,7 @@ void PageUpKey::KeyPageUpSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUpOsKey() {
@@ -173,6 +188,7 @@ void PageUpKey::KeyPageUpOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PageUpKey::KeyPageUp() {
@@ -184,6 +200,7 @@ void PageUpKey::KeyPageUp() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

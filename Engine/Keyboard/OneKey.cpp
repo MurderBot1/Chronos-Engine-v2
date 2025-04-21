@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef OneKey_CPP
 #define OneKey_CPP
@@ -19,6 +20,7 @@ void OneKey::KeyOneOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void OneKey::KeyOneSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void OneKey::KeyOneOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void OneKey::KeyOneOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void OneKey::KeyOneOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneALTCTRL() {
@@ -74,6 +80,7 @@ void OneKey::KeyOneALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneSHIFTCTRL() {
@@ -85,6 +92,7 @@ void OneKey::KeyOneSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneSHIFTALT() {
@@ -96,6 +104,7 @@ void OneKey::KeyOneSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneOsKeyCTRL() {
@@ -107,6 +116,7 @@ void OneKey::KeyOneOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneOsKeyALT() {
@@ -118,6 +128,7 @@ void OneKey::KeyOneOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneOsKeySHIFT() {
@@ -129,6 +140,7 @@ void OneKey::KeyOneOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneCTRL() {
@@ -140,6 +152,7 @@ void OneKey::KeyOneCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneALT() {
@@ -151,6 +164,7 @@ void OneKey::KeyOneALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneSHIFT() {
@@ -162,6 +176,7 @@ void OneKey::KeyOneSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOneOsKey() {
@@ -173,6 +188,7 @@ void OneKey::KeyOneOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void OneKey::KeyOne() {
@@ -184,6 +200,7 @@ void OneKey::KeyOne() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

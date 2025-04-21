@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef ClearKey_CPP
 #define ClearKey_CPP
@@ -19,6 +20,7 @@ void ClearKey::KeyClearOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void ClearKey::KeyClearSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void ClearKey::KeyClearOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void ClearKey::KeyClearOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void ClearKey::KeyClearOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearALTCTRL() {
@@ -74,6 +80,7 @@ void ClearKey::KeyClearALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearSHIFTCTRL() {
@@ -85,6 +92,7 @@ void ClearKey::KeyClearSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearSHIFTALT() {
@@ -96,6 +104,7 @@ void ClearKey::KeyClearSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearOsKeyCTRL() {
@@ -107,6 +116,7 @@ void ClearKey::KeyClearOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearOsKeyALT() {
@@ -118,6 +128,7 @@ void ClearKey::KeyClearOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearOsKeySHIFT() {
@@ -129,6 +140,7 @@ void ClearKey::KeyClearOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearCTRL() {
@@ -140,6 +152,7 @@ void ClearKey::KeyClearCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearALT() {
@@ -151,6 +164,7 @@ void ClearKey::KeyClearALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearSHIFT() {
@@ -162,6 +176,7 @@ void ClearKey::KeyClearSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClearOsKey() {
@@ -173,6 +188,7 @@ void ClearKey::KeyClearOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ClearKey::KeyClear() {
@@ -184,6 +200,7 @@ void ClearKey::KeyClear() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

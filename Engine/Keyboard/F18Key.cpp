@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F18Key_CPP
 #define F18Key_CPP
@@ -19,6 +20,7 @@ void F18Key::KeyF18OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F18Key::KeyF18SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F18Key::KeyF18OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F18Key::KeyF18OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F18Key::KeyF18OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18ALTCTRL() {
@@ -74,6 +80,7 @@ void F18Key::KeyF18ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F18Key::KeyF18SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18SHIFTALT() {
@@ -96,6 +104,7 @@ void F18Key::KeyF18SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F18Key::KeyF18OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18OsKeyALT() {
@@ -118,6 +128,7 @@ void F18Key::KeyF18OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F18Key::KeyF18OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18CTRL() {
@@ -140,6 +152,7 @@ void F18Key::KeyF18CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18ALT() {
@@ -151,6 +164,7 @@ void F18Key::KeyF18ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18SHIFT() {
@@ -162,6 +176,7 @@ void F18Key::KeyF18SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18OsKey() {
@@ -173,6 +188,7 @@ void F18Key::KeyF18OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F18Key::KeyF18() {
@@ -184,6 +200,7 @@ void F18Key::KeyF18() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

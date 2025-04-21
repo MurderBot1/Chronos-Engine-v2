@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PlayPauseTrackKey_CPP
 #define PlayPauseTrackKey_CPP
@@ -19,6 +20,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackALTCTRL() {
@@ -74,6 +80,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackSHIFTALT() {
@@ -96,6 +104,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackOsKeyALT() {
@@ -118,6 +128,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackCTRL() {
@@ -140,6 +152,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackALT() {
@@ -151,6 +164,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackSHIFT() {
@@ -162,6 +176,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrackOsKey() {
@@ -173,6 +188,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrackOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PlayPauseTrackKey::KeyPlayPauseTrack() {
@@ -184,6 +200,7 @@ void PlayPauseTrackKey::KeyPlayPauseTrack() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

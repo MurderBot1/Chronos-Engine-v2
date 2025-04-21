@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BrowserStopKey_CPP
 #define BrowserStopKey_CPP
@@ -19,6 +20,7 @@ void BrowserStopKey::KeyBrowserStopOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BrowserStopKey::KeyBrowserStopSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BrowserStopKey::KeyBrowserStopOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BrowserStopKey::KeyBrowserStopOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BrowserStopKey::KeyBrowserStopOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopALTCTRL() {
@@ -74,6 +80,7 @@ void BrowserStopKey::KeyBrowserStopALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BrowserStopKey::KeyBrowserStopSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopSHIFTALT() {
@@ -96,6 +104,7 @@ void BrowserStopKey::KeyBrowserStopSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BrowserStopKey::KeyBrowserStopOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopOsKeyALT() {
@@ -118,6 +128,7 @@ void BrowserStopKey::KeyBrowserStopOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopOsKeySHIFT() {
@@ -129,6 +140,7 @@ void BrowserStopKey::KeyBrowserStopOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopCTRL() {
@@ -140,6 +152,7 @@ void BrowserStopKey::KeyBrowserStopCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopALT() {
@@ -151,6 +164,7 @@ void BrowserStopKey::KeyBrowserStopALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopSHIFT() {
@@ -162,6 +176,7 @@ void BrowserStopKey::KeyBrowserStopSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStopOsKey() {
@@ -173,6 +188,7 @@ void BrowserStopKey::KeyBrowserStopOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStopKey::KeyBrowserStop() {
@@ -184,6 +200,7 @@ void BrowserStopKey::KeyBrowserStop() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

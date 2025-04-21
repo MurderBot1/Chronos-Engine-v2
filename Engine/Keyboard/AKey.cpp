@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef AKey_CPP
 #define AKey_CPP
@@ -19,6 +20,7 @@ void AKey::KeyAOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyASHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void AKey::KeyASHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void AKey::KeyAOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void AKey::KeyAOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void AKey::KeyAOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAALTCTRL() {
@@ -74,6 +80,7 @@ void AKey::KeyAALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyASHIFTCTRL() {
@@ -85,6 +92,7 @@ void AKey::KeyASHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyASHIFTALT() {
@@ -96,6 +104,7 @@ void AKey::KeyASHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAOsKeyCTRL() {
@@ -107,6 +116,7 @@ void AKey::KeyAOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAOsKeyALT() {
@@ -118,6 +128,7 @@ void AKey::KeyAOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAOsKeySHIFT() {
@@ -129,17 +140,19 @@ void AKey::KeyAOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyACTRL() {
     /*
-        Windows 11 = 
+        Windows 11 = Selects all text in the current window.
         Windows 10 = 
         Linux = 
         MacOS = 
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAALT() {
@@ -151,6 +164,7 @@ void AKey::KeyAALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyASHIFT() {
@@ -162,6 +176,7 @@ void AKey::KeyASHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyAOsKey() {
@@ -173,6 +188,7 @@ void AKey::KeyAOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AKey::KeyA() {
@@ -184,6 +200,7 @@ void AKey::KeyA() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

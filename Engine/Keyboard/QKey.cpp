@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef QKey_CPP
 #define QKey_CPP
@@ -19,6 +20,7 @@ void QKey::KeyQOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void QKey::KeyQSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void QKey::KeyQOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void QKey::KeyQOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void QKey::KeyQOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQALTCTRL() {
@@ -74,6 +80,7 @@ void QKey::KeyQALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQSHIFTCTRL() {
@@ -85,6 +92,7 @@ void QKey::KeyQSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQSHIFTALT() {
@@ -96,6 +104,7 @@ void QKey::KeyQSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQOsKeyCTRL() {
@@ -107,6 +116,7 @@ void QKey::KeyQOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQOsKeyALT() {
@@ -118,6 +128,7 @@ void QKey::KeyQOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQOsKeySHIFT() {
@@ -129,6 +140,7 @@ void QKey::KeyQOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQCTRL() {
@@ -140,6 +152,7 @@ void QKey::KeyQCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQALT() {
@@ -151,6 +164,7 @@ void QKey::KeyQALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQSHIFT() {
@@ -162,6 +176,7 @@ void QKey::KeyQSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQOsKey() {
@@ -173,6 +188,7 @@ void QKey::KeyQOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void QKey::KeyQ() {
@@ -184,6 +200,7 @@ void QKey::KeyQ() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

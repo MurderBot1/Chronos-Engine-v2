@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef SpaceKey_CPP
 #define SpaceKey_CPP
@@ -19,6 +20,7 @@ void SpaceKey::KeySpaceOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void SpaceKey::KeySpaceSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void SpaceKey::KeySpaceOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void SpaceKey::KeySpaceOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void SpaceKey::KeySpaceOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceALTCTRL() {
@@ -74,6 +80,7 @@ void SpaceKey::KeySpaceALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceSHIFTCTRL() {
@@ -85,6 +92,7 @@ void SpaceKey::KeySpaceSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceSHIFTALT() {
@@ -96,6 +104,7 @@ void SpaceKey::KeySpaceSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceOsKeyCTRL() {
@@ -107,6 +116,7 @@ void SpaceKey::KeySpaceOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceOsKeyALT() {
@@ -118,6 +128,7 @@ void SpaceKey::KeySpaceOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceOsKeySHIFT() {
@@ -129,6 +140,7 @@ void SpaceKey::KeySpaceOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceCTRL() {
@@ -140,6 +152,7 @@ void SpaceKey::KeySpaceCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceALT() {
@@ -151,6 +164,7 @@ void SpaceKey::KeySpaceALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceSHIFT() {
@@ -162,6 +176,7 @@ void SpaceKey::KeySpaceSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpaceOsKey() {
@@ -173,6 +188,7 @@ void SpaceKey::KeySpaceOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SpaceKey::KeySpace() {
@@ -184,6 +200,7 @@ void SpaceKey::KeySpace() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

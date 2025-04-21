@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef ThreeKey_CPP
 #define ThreeKey_CPP
@@ -19,6 +20,7 @@ void ThreeKey::KeyThreeOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void ThreeKey::KeyThreeSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void ThreeKey::KeyThreeOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void ThreeKey::KeyThreeOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void ThreeKey::KeyThreeOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeALTCTRL() {
@@ -74,6 +80,7 @@ void ThreeKey::KeyThreeALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeSHIFTCTRL() {
@@ -85,6 +92,7 @@ void ThreeKey::KeyThreeSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeSHIFTALT() {
@@ -96,6 +104,7 @@ void ThreeKey::KeyThreeSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeOsKeyCTRL() {
@@ -107,6 +116,7 @@ void ThreeKey::KeyThreeOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeOsKeyALT() {
@@ -118,6 +128,7 @@ void ThreeKey::KeyThreeOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeOsKeySHIFT() {
@@ -129,6 +140,7 @@ void ThreeKey::KeyThreeOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeCTRL() {
@@ -140,6 +152,7 @@ void ThreeKey::KeyThreeCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeALT() {
@@ -151,6 +164,7 @@ void ThreeKey::KeyThreeALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeSHIFT() {
@@ -162,6 +176,7 @@ void ThreeKey::KeyThreeSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThreeOsKey() {
@@ -173,6 +188,7 @@ void ThreeKey::KeyThreeOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ThreeKey::KeyThree() {
@@ -184,6 +200,7 @@ void ThreeKey::KeyThree() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

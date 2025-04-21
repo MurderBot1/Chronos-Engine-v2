@@ -1,2 +1,2 @@
-100000
+100
 C:/Users/trent/Documents/GitHub/Chronos-Engine-v2/Engine/Logs/

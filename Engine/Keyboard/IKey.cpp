@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef IKey_CPP
 #define IKey_CPP
@@ -19,6 +20,7 @@ void IKey::KeyIOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyISHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void IKey::KeyISHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void IKey::KeyIOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void IKey::KeyIOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void IKey::KeyIOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIALTCTRL() {
@@ -74,6 +80,7 @@ void IKey::KeyIALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyISHIFTCTRL() {
@@ -85,6 +92,7 @@ void IKey::KeyISHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyISHIFTALT() {
@@ -96,6 +104,7 @@ void IKey::KeyISHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIOsKeyCTRL() {
@@ -107,6 +116,7 @@ void IKey::KeyIOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIOsKeyALT() {
@@ -118,6 +128,7 @@ void IKey::KeyIOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIOsKeySHIFT() {
@@ -129,6 +140,7 @@ void IKey::KeyIOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyICTRL() {
@@ -140,6 +152,7 @@ void IKey::KeyICTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIALT() {
@@ -151,6 +164,7 @@ void IKey::KeyIALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyISHIFT() {
@@ -162,6 +176,7 @@ void IKey::KeyISHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyIOsKey() {
@@ -173,6 +188,7 @@ void IKey::KeyIOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void IKey::KeyI() {
@@ -184,6 +200,7 @@ void IKey::KeyI() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

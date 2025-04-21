@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef MKey_CPP
 #define MKey_CPP
@@ -19,6 +20,7 @@ void MKey::KeyMOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void MKey::KeyMSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void MKey::KeyMOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void MKey::KeyMOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void MKey::KeyMOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMALTCTRL() {
@@ -74,6 +80,7 @@ void MKey::KeyMALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMSHIFTCTRL() {
@@ -85,6 +92,7 @@ void MKey::KeyMSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMSHIFTALT() {
@@ -96,6 +104,7 @@ void MKey::KeyMSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMOsKeyCTRL() {
@@ -107,6 +116,7 @@ void MKey::KeyMOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMOsKeyALT() {
@@ -118,6 +128,7 @@ void MKey::KeyMOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMOsKeySHIFT() {
@@ -129,6 +140,7 @@ void MKey::KeyMOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMCTRL() {
@@ -140,6 +152,7 @@ void MKey::KeyMCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMALT() {
@@ -151,6 +164,7 @@ void MKey::KeyMALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMSHIFT() {
@@ -162,6 +176,7 @@ void MKey::KeyMSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyMOsKey() {
@@ -173,6 +188,7 @@ void MKey::KeyMOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void MKey::KeyM() {
@@ -184,6 +200,7 @@ void MKey::KeyM() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

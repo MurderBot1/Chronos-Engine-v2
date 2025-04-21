@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef LeftWindowsKey_CPP
 #define LeftWindowsKey_CPP
@@ -19,6 +20,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void LeftWindowsKey::KeyLeftWindowsSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsALTCTRL() {
@@ -74,6 +80,7 @@ void LeftWindowsKey::KeyLeftWindowsALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsSHIFTCTRL() {
@@ -85,6 +92,7 @@ void LeftWindowsKey::KeyLeftWindowsSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsSHIFTALT() {
@@ -96,6 +104,7 @@ void LeftWindowsKey::KeyLeftWindowsSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsOsKeyCTRL() {
@@ -107,6 +116,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsOsKeyALT() {
@@ -118,6 +128,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsOsKeySHIFT() {
@@ -129,6 +140,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsCTRL() {
@@ -140,6 +152,7 @@ void LeftWindowsKey::KeyLeftWindowsCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsALT() {
@@ -151,6 +164,7 @@ void LeftWindowsKey::KeyLeftWindowsALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsSHIFT() {
@@ -162,6 +176,7 @@ void LeftWindowsKey::KeyLeftWindowsSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindowsOsKey() {
@@ -173,6 +188,7 @@ void LeftWindowsKey::KeyLeftWindowsOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftWindowsKey::KeyLeftWindows() {
@@ -184,6 +200,7 @@ void LeftWindowsKey::KeyLeftWindows() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

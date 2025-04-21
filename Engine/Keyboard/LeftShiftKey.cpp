@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef LeftShiftKey_CPP
 #define LeftShiftKey_CPP
@@ -19,6 +20,7 @@ void LeftShiftKey::KeyLeftShiftOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void LeftShiftKey::KeyLeftShiftSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void LeftShiftKey::KeyLeftShiftOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void LeftShiftKey::KeyLeftShiftOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void LeftShiftKey::KeyLeftShiftOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftALTCTRL() {
@@ -74,6 +80,7 @@ void LeftShiftKey::KeyLeftShiftALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftSHIFTCTRL() {
@@ -85,6 +92,7 @@ void LeftShiftKey::KeyLeftShiftSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftSHIFTALT() {
@@ -96,6 +104,7 @@ void LeftShiftKey::KeyLeftShiftSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftOsKeyCTRL() {
@@ -107,6 +116,7 @@ void LeftShiftKey::KeyLeftShiftOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftOsKeyALT() {
@@ -118,6 +128,7 @@ void LeftShiftKey::KeyLeftShiftOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftOsKeySHIFT() {
@@ -129,6 +140,7 @@ void LeftShiftKey::KeyLeftShiftOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftCTRL() {
@@ -140,6 +152,7 @@ void LeftShiftKey::KeyLeftShiftCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftALT() {
@@ -151,6 +164,7 @@ void LeftShiftKey::KeyLeftShiftALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftSHIFT() {
@@ -162,6 +176,7 @@ void LeftShiftKey::KeyLeftShiftSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShiftOsKey() {
@@ -173,6 +188,7 @@ void LeftShiftKey::KeyLeftShiftOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LeftShiftKey::KeyLeftShift() {
@@ -184,6 +200,7 @@ void LeftShiftKey::KeyLeftShift() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

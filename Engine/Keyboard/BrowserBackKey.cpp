@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BrowserBackKey_CPP
 #define BrowserBackKey_CPP
@@ -19,6 +20,7 @@ void BrowserBackKey::KeyBrowserBackOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BrowserBackKey::KeyBrowserBackSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BrowserBackKey::KeyBrowserBackOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BrowserBackKey::KeyBrowserBackOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BrowserBackKey::KeyBrowserBackOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackALTCTRL() {
@@ -74,6 +80,7 @@ void BrowserBackKey::KeyBrowserBackALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BrowserBackKey::KeyBrowserBackSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackSHIFTALT() {
@@ -96,6 +104,7 @@ void BrowserBackKey::KeyBrowserBackSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BrowserBackKey::KeyBrowserBackOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackOsKeyALT() {
@@ -118,6 +128,7 @@ void BrowserBackKey::KeyBrowserBackOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackOsKeySHIFT() {
@@ -129,6 +140,7 @@ void BrowserBackKey::KeyBrowserBackOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackCTRL() {
@@ -140,6 +152,7 @@ void BrowserBackKey::KeyBrowserBackCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackALT() {
@@ -151,6 +164,7 @@ void BrowserBackKey::KeyBrowserBackALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackSHIFT() {
@@ -162,6 +176,7 @@ void BrowserBackKey::KeyBrowserBackSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBackOsKey() {
@@ -173,6 +188,7 @@ void BrowserBackKey::KeyBrowserBackOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserBackKey::KeyBrowserBack() {
@@ -184,6 +200,7 @@ void BrowserBackKey::KeyBrowserBack() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

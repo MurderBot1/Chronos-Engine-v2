@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F23Key_CPP
 #define F23Key_CPP
@@ -19,6 +20,7 @@ void F23Key::KeyF23OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F23Key::KeyF23SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F23Key::KeyF23OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F23Key::KeyF23OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F23Key::KeyF23OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23ALTCTRL() {
@@ -74,6 +80,7 @@ void F23Key::KeyF23ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F23Key::KeyF23SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23SHIFTALT() {
@@ -96,6 +104,7 @@ void F23Key::KeyF23SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F23Key::KeyF23OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23OsKeyALT() {
@@ -118,6 +128,7 @@ void F23Key::KeyF23OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F23Key::KeyF23OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23CTRL() {
@@ -140,6 +152,7 @@ void F23Key::KeyF23CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23ALT() {
@@ -151,6 +164,7 @@ void F23Key::KeyF23ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23SHIFT() {
@@ -162,6 +176,7 @@ void F23Key::KeyF23SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23OsKey() {
@@ -173,6 +188,7 @@ void F23Key::KeyF23OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F23Key::KeyF23() {
@@ -184,6 +200,7 @@ void F23Key::KeyF23() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef ScrollLockKey_CPP
 #define ScrollLockKey_CPP
@@ -19,6 +20,7 @@ void ScrollLockKey::KeyScrollLockOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void ScrollLockKey::KeyScrollLockSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void ScrollLockKey::KeyScrollLockOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void ScrollLockKey::KeyScrollLockOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void ScrollLockKey::KeyScrollLockOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockALTCTRL() {
@@ -74,6 +80,7 @@ void ScrollLockKey::KeyScrollLockALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockSHIFTCTRL() {
@@ -85,6 +92,7 @@ void ScrollLockKey::KeyScrollLockSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockSHIFTALT() {
@@ -96,6 +104,7 @@ void ScrollLockKey::KeyScrollLockSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockOsKeyCTRL() {
@@ -107,6 +116,7 @@ void ScrollLockKey::KeyScrollLockOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockOsKeyALT() {
@@ -118,6 +128,7 @@ void ScrollLockKey::KeyScrollLockOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockOsKeySHIFT() {
@@ -129,6 +140,7 @@ void ScrollLockKey::KeyScrollLockOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockCTRL() {
@@ -140,6 +152,7 @@ void ScrollLockKey::KeyScrollLockCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockALT() {
@@ -151,6 +164,7 @@ void ScrollLockKey::KeyScrollLockALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockSHIFT() {
@@ -162,6 +176,7 @@ void ScrollLockKey::KeyScrollLockSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLockOsKey() {
@@ -173,6 +188,7 @@ void ScrollLockKey::KeyScrollLockOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ScrollLockKey::KeyScrollLock() {
@@ -184,6 +200,7 @@ void ScrollLockKey::KeyScrollLock() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

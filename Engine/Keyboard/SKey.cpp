@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef SKey_CPP
 #define SKey_CPP
@@ -19,6 +20,7 @@ void SKey::KeySOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void SKey::KeySSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void SKey::KeySOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void SKey::KeySOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void SKey::KeySOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySALTCTRL() {
@@ -74,6 +80,7 @@ void SKey::KeySALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySSHIFTCTRL() {
@@ -85,6 +92,7 @@ void SKey::KeySSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySSHIFTALT() {
@@ -96,6 +104,7 @@ void SKey::KeySSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySOsKeyCTRL() {
@@ -107,6 +116,7 @@ void SKey::KeySOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySOsKeyALT() {
@@ -118,6 +128,7 @@ void SKey::KeySOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySOsKeySHIFT() {
@@ -129,6 +140,7 @@ void SKey::KeySOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySCTRL() {
@@ -140,6 +152,7 @@ void SKey::KeySCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySALT() {
@@ -151,6 +164,7 @@ void SKey::KeySALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySSHIFT() {
@@ -162,6 +176,7 @@ void SKey::KeySSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeySOsKey() {
@@ -173,6 +188,7 @@ void SKey::KeySOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SKey::KeyS() {
@@ -184,6 +200,7 @@ void SKey::KeyS() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

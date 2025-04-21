@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F13Key_CPP
 #define F13Key_CPP
@@ -19,6 +20,7 @@ void F13Key::KeyF13OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F13Key::KeyF13SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F13Key::KeyF13OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F13Key::KeyF13OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F13Key::KeyF13OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13ALTCTRL() {
@@ -74,6 +80,7 @@ void F13Key::KeyF13ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F13Key::KeyF13SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13SHIFTALT() {
@@ -96,6 +104,7 @@ void F13Key::KeyF13SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F13Key::KeyF13OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13OsKeyALT() {
@@ -118,6 +128,7 @@ void F13Key::KeyF13OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F13Key::KeyF13OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13CTRL() {
@@ -140,6 +152,7 @@ void F13Key::KeyF13CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13ALT() {
@@ -151,6 +164,7 @@ void F13Key::KeyF13ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13SHIFT() {
@@ -162,6 +176,7 @@ void F13Key::KeyF13SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13OsKey() {
@@ -173,6 +188,7 @@ void F13Key::KeyF13OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F13Key::KeyF13() {
@@ -184,6 +200,7 @@ void F13Key::KeyF13() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

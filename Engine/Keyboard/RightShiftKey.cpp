@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef RightShiftKey_CPP
 #define RightShiftKey_CPP
@@ -19,6 +20,7 @@ void RightShiftKey::KeyRightShiftOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void RightShiftKey::KeyRightShiftSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void RightShiftKey::KeyRightShiftOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void RightShiftKey::KeyRightShiftOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void RightShiftKey::KeyRightShiftOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftALTCTRL() {
@@ -74,6 +80,7 @@ void RightShiftKey::KeyRightShiftALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftSHIFTCTRL() {
@@ -85,6 +92,7 @@ void RightShiftKey::KeyRightShiftSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftSHIFTALT() {
@@ -96,6 +104,7 @@ void RightShiftKey::KeyRightShiftSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftOsKeyCTRL() {
@@ -107,6 +116,7 @@ void RightShiftKey::KeyRightShiftOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftOsKeyALT() {
@@ -118,6 +128,7 @@ void RightShiftKey::KeyRightShiftOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftOsKeySHIFT() {
@@ -129,6 +140,7 @@ void RightShiftKey::KeyRightShiftOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftCTRL() {
@@ -140,6 +152,7 @@ void RightShiftKey::KeyRightShiftCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftALT() {
@@ -151,6 +164,7 @@ void RightShiftKey::KeyRightShiftALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftSHIFT() {
@@ -162,6 +176,7 @@ void RightShiftKey::KeyRightShiftSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShiftOsKey() {
@@ -173,6 +188,7 @@ void RightShiftKey::KeyRightShiftOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightShiftKey::KeyRightShift() {
@@ -184,6 +200,7 @@ void RightShiftKey::KeyRightShift() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

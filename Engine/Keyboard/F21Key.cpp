@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F21Key_CPP
 #define F21Key_CPP
@@ -19,6 +20,7 @@ void F21Key::KeyF21OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F21Key::KeyF21SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F21Key::KeyF21OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F21Key::KeyF21OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F21Key::KeyF21OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21ALTCTRL() {
@@ -74,6 +80,7 @@ void F21Key::KeyF21ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F21Key::KeyF21SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21SHIFTALT() {
@@ -96,6 +104,7 @@ void F21Key::KeyF21SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F21Key::KeyF21OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21OsKeyALT() {
@@ -118,6 +128,7 @@ void F21Key::KeyF21OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F21Key::KeyF21OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21CTRL() {
@@ -140,6 +152,7 @@ void F21Key::KeyF21CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21ALT() {
@@ -151,6 +164,7 @@ void F21Key::KeyF21ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21SHIFT() {
@@ -162,6 +176,7 @@ void F21Key::KeyF21SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21OsKey() {
@@ -173,6 +188,7 @@ void F21Key::KeyF21OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F21Key::KeyF21() {
@@ -184,6 +200,7 @@ void F21Key::KeyF21() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

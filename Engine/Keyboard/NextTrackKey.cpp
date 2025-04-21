@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef NextTrackKey_CPP
 #define NextTrackKey_CPP
@@ -19,6 +20,7 @@ void NextTrackKey::KeyNextTrackOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void NextTrackKey::KeyNextTrackSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void NextTrackKey::KeyNextTrackOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void NextTrackKey::KeyNextTrackOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void NextTrackKey::KeyNextTrackOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackALTCTRL() {
@@ -74,6 +80,7 @@ void NextTrackKey::KeyNextTrackALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackSHIFTCTRL() {
@@ -85,6 +92,7 @@ void NextTrackKey::KeyNextTrackSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackSHIFTALT() {
@@ -96,6 +104,7 @@ void NextTrackKey::KeyNextTrackSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackOsKeyCTRL() {
@@ -107,6 +116,7 @@ void NextTrackKey::KeyNextTrackOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackOsKeyALT() {
@@ -118,6 +128,7 @@ void NextTrackKey::KeyNextTrackOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackOsKeySHIFT() {
@@ -129,6 +140,7 @@ void NextTrackKey::KeyNextTrackOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackCTRL() {
@@ -140,6 +152,7 @@ void NextTrackKey::KeyNextTrackCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackALT() {
@@ -151,6 +164,7 @@ void NextTrackKey::KeyNextTrackALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackSHIFT() {
@@ -162,6 +176,7 @@ void NextTrackKey::KeyNextTrackSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrackOsKey() {
@@ -173,6 +188,7 @@ void NextTrackKey::KeyNextTrackOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NextTrackKey::KeyNextTrack() {
@@ -184,6 +200,7 @@ void NextTrackKey::KeyNextTrack() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

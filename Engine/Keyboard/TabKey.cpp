@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef TabKey_CPP
 #define TabKey_CPP
@@ -19,6 +20,7 @@ void TabKey::KeyTabOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void TabKey::KeyTabSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void TabKey::KeyTabOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void TabKey::KeyTabOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void TabKey::KeyTabOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabALTCTRL() {
@@ -74,6 +80,7 @@ void TabKey::KeyTabALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabSHIFTCTRL() {
@@ -85,6 +92,7 @@ void TabKey::KeyTabSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabSHIFTALT() {
@@ -96,6 +104,7 @@ void TabKey::KeyTabSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabOsKeyCTRL() {
@@ -107,6 +116,7 @@ void TabKey::KeyTabOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabOsKeyALT() {
@@ -118,6 +128,7 @@ void TabKey::KeyTabOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabOsKeySHIFT() {
@@ -129,6 +140,7 @@ void TabKey::KeyTabOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabCTRL() {
@@ -140,6 +152,7 @@ void TabKey::KeyTabCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabALT() {
@@ -151,6 +164,7 @@ void TabKey::KeyTabALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabSHIFT() {
@@ -162,6 +176,7 @@ void TabKey::KeyTabSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTabOsKey() {
@@ -173,6 +188,7 @@ void TabKey::KeyTabOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TabKey::KeyTab() {
@@ -184,6 +200,7 @@ void TabKey::KeyTab() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

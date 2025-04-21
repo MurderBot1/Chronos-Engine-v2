@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F16Key_CPP
 #define F16Key_CPP
@@ -19,6 +20,7 @@ void F16Key::KeyF16OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F16Key::KeyF16SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F16Key::KeyF16OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F16Key::KeyF16OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F16Key::KeyF16OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16ALTCTRL() {
@@ -74,6 +80,7 @@ void F16Key::KeyF16ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F16Key::KeyF16SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16SHIFTALT() {
@@ -96,6 +104,7 @@ void F16Key::KeyF16SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F16Key::KeyF16OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16OsKeyALT() {
@@ -118,6 +128,7 @@ void F16Key::KeyF16OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F16Key::KeyF16OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16CTRL() {
@@ -140,6 +152,7 @@ void F16Key::KeyF16CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16ALT() {
@@ -151,6 +164,7 @@ void F16Key::KeyF16ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16SHIFT() {
@@ -162,6 +176,7 @@ void F16Key::KeyF16SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16OsKey() {
@@ -173,6 +188,7 @@ void F16Key::KeyF16OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F16Key::KeyF16() {
@@ -184,6 +200,7 @@ void F16Key::KeyF16() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

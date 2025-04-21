@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PrintKey_CPP
 #define PrintKey_CPP
@@ -19,6 +20,7 @@ void PrintKey::KeyPrintOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PrintKey::KeyPrintSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PrintKey::KeyPrintOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PrintKey::KeyPrintOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PrintKey::KeyPrintOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintALTCTRL() {
@@ -74,6 +80,7 @@ void PrintKey::KeyPrintALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PrintKey::KeyPrintSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintSHIFTALT() {
@@ -96,6 +104,7 @@ void PrintKey::KeyPrintSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PrintKey::KeyPrintOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintOsKeyALT() {
@@ -118,6 +128,7 @@ void PrintKey::KeyPrintOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PrintKey::KeyPrintOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintCTRL() {
@@ -140,6 +152,7 @@ void PrintKey::KeyPrintCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintALT() {
@@ -151,6 +164,7 @@ void PrintKey::KeyPrintALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintSHIFT() {
@@ -162,6 +176,7 @@ void PrintKey::KeyPrintSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrintOsKey() {
@@ -173,6 +188,7 @@ void PrintKey::KeyPrintOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintKey::KeyPrint() {
@@ -184,6 +200,7 @@ void PrintKey::KeyPrint() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

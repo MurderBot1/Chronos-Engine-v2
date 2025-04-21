@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef Numpad2Key_CPP
 #define Numpad2Key_CPP
@@ -19,6 +20,7 @@ void Numpad2Key::KeyNumpad2OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void Numpad2Key::KeyNumpad2SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void Numpad2Key::KeyNumpad2OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void Numpad2Key::KeyNumpad2OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void Numpad2Key::KeyNumpad2OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2ALTCTRL() {
@@ -74,6 +80,7 @@ void Numpad2Key::KeyNumpad2ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2SHIFTCTRL() {
@@ -85,6 +92,7 @@ void Numpad2Key::KeyNumpad2SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2SHIFTALT() {
@@ -96,6 +104,7 @@ void Numpad2Key::KeyNumpad2SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2OsKeyCTRL() {
@@ -107,6 +116,7 @@ void Numpad2Key::KeyNumpad2OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2OsKeyALT() {
@@ -118,6 +128,7 @@ void Numpad2Key::KeyNumpad2OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2OsKeySHIFT() {
@@ -129,6 +140,7 @@ void Numpad2Key::KeyNumpad2OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2CTRL() {
@@ -140,6 +152,7 @@ void Numpad2Key::KeyNumpad2CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2ALT() {
@@ -151,6 +164,7 @@ void Numpad2Key::KeyNumpad2ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2SHIFT() {
@@ -162,6 +176,7 @@ void Numpad2Key::KeyNumpad2SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2OsKey() {
@@ -173,6 +188,7 @@ void Numpad2Key::KeyNumpad2OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad2Key::KeyNumpad2() {
@@ -184,6 +200,7 @@ void Numpad2Key::KeyNumpad2() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

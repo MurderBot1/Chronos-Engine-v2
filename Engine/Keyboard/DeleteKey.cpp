@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef DeleteKey_CPP
 #define DeleteKey_CPP
@@ -19,6 +20,7 @@ void DeleteKey::KeyDeleteOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void DeleteKey::KeyDeleteSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void DeleteKey::KeyDeleteOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void DeleteKey::KeyDeleteOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void DeleteKey::KeyDeleteOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteALTCTRL() {
@@ -74,6 +80,7 @@ void DeleteKey::KeyDeleteALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteSHIFTCTRL() {
@@ -85,6 +92,7 @@ void DeleteKey::KeyDeleteSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteSHIFTALT() {
@@ -96,6 +104,7 @@ void DeleteKey::KeyDeleteSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteOsKeyCTRL() {
@@ -107,6 +116,7 @@ void DeleteKey::KeyDeleteOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteOsKeyALT() {
@@ -118,6 +128,7 @@ void DeleteKey::KeyDeleteOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteOsKeySHIFT() {
@@ -129,17 +140,19 @@ void DeleteKey::KeyDeleteOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteCTRL() {
     /*
-        Windows 11 = 
+        Windows 11 = Delete words to the right of the cursor.
         Windows 10 = 
         Linux = 
         MacOS = 
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteALT() {
@@ -151,6 +164,7 @@ void DeleteKey::KeyDeleteALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteSHIFT() {
@@ -162,6 +176,7 @@ void DeleteKey::KeyDeleteSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDeleteOsKey() {
@@ -173,6 +188,7 @@ void DeleteKey::KeyDeleteOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DeleteKey::KeyDelete() {
@@ -184,6 +200,7 @@ void DeleteKey::KeyDelete() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

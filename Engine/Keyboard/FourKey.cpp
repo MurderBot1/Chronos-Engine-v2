@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef FourKey_CPP
 #define FourKey_CPP
@@ -19,6 +20,7 @@ void FourKey::KeyFourOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void FourKey::KeyFourSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void FourKey::KeyFourOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void FourKey::KeyFourOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void FourKey::KeyFourOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourALTCTRL() {
@@ -74,6 +80,7 @@ void FourKey::KeyFourALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourSHIFTCTRL() {
@@ -85,6 +92,7 @@ void FourKey::KeyFourSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourSHIFTALT() {
@@ -96,6 +104,7 @@ void FourKey::KeyFourSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourOsKeyCTRL() {
@@ -107,6 +116,7 @@ void FourKey::KeyFourOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourOsKeyALT() {
@@ -118,6 +128,7 @@ void FourKey::KeyFourOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourOsKeySHIFT() {
@@ -129,6 +140,7 @@ void FourKey::KeyFourOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourCTRL() {
@@ -140,6 +152,7 @@ void FourKey::KeyFourCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourALT() {
@@ -151,6 +164,7 @@ void FourKey::KeyFourALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourSHIFT() {
@@ -162,6 +176,7 @@ void FourKey::KeyFourSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFourOsKey() {
@@ -173,6 +188,7 @@ void FourKey::KeyFourOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FourKey::KeyFour() {
@@ -184,6 +200,7 @@ void FourKey::KeyFour() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

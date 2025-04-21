@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef FiveKey_CPP
 #define FiveKey_CPP
@@ -19,6 +20,7 @@ void FiveKey::KeyFiveOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void FiveKey::KeyFiveSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void FiveKey::KeyFiveOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void FiveKey::KeyFiveOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void FiveKey::KeyFiveOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveALTCTRL() {
@@ -74,6 +80,7 @@ void FiveKey::KeyFiveALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveSHIFTCTRL() {
@@ -85,6 +92,7 @@ void FiveKey::KeyFiveSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveSHIFTALT() {
@@ -96,6 +104,7 @@ void FiveKey::KeyFiveSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveOsKeyCTRL() {
@@ -107,6 +116,7 @@ void FiveKey::KeyFiveOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveOsKeyALT() {
@@ -118,6 +128,7 @@ void FiveKey::KeyFiveOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveOsKeySHIFT() {
@@ -129,6 +140,7 @@ void FiveKey::KeyFiveOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveCTRL() {
@@ -140,6 +152,7 @@ void FiveKey::KeyFiveCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveALT() {
@@ -151,6 +164,7 @@ void FiveKey::KeyFiveALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveSHIFT() {
@@ -162,6 +176,7 @@ void FiveKey::KeyFiveSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFiveOsKey() {
@@ -173,6 +188,7 @@ void FiveKey::KeyFiveOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void FiveKey::KeyFive() {
@@ -184,6 +200,7 @@ void FiveKey::KeyFive() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

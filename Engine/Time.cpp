@@ -1,4 +1,5 @@
-// © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef Time_CPP
 #define Time_CPP
@@ -13,6 +14,7 @@ int64_t Time::DifferenceOfTimeInMicroS;
 float Time::DeltaTime;
 float Time::FPS;
 std::string Time::WhenProgramStart;
+int16_t Settings::MaxFPS;
 
 // Start of program
 int64_t Time::FindCurrentTime() {
@@ -53,6 +55,16 @@ std::string Time::GetMDYHMS() {
        << std::setw(2) << localTime->tm_sec << "S";
 
     return ss.str();
+}
+
+void Time::Sleep() {
+    const float MCPF = 1000000/Settings::MaxFPS;
+    const int64_t CTIM = Time::CurrentTimeInMicroS;
+    const int64_t CTMCTIM = (Time::FindCurrentTime() - Time::CurrentTimeInMicroS);
+    const int Delay = MCPF - CTMCTIM;
+    auto start = std::chrono::high_resolution_clock::now();
+    auto end = start + std::chrono::microseconds(Delay);
+    while (std::chrono::high_resolution_clock::now() < end);
 }
 
 #endif

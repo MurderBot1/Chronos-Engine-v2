@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef RKey_CPP
 #define RKey_CPP
@@ -19,6 +20,7 @@ void RKey::KeyROsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyRSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void RKey::KeyRSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyROsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void RKey::KeyROsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyROsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void RKey::KeyROsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyROsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void RKey::KeyROsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyRALTCTRL() {
@@ -74,6 +80,7 @@ void RKey::KeyRALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyRSHIFTCTRL() {
@@ -85,6 +92,7 @@ void RKey::KeyRSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyRSHIFTALT() {
@@ -96,6 +104,7 @@ void RKey::KeyRSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyROsKeyCTRL() {
@@ -107,6 +116,7 @@ void RKey::KeyROsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyROsKeyALT() {
@@ -118,6 +128,7 @@ void RKey::KeyROsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyROsKeySHIFT() {
@@ -129,6 +140,7 @@ void RKey::KeyROsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyRCTRL() {
@@ -140,6 +152,7 @@ void RKey::KeyRCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyRALT() {
@@ -151,6 +164,7 @@ void RKey::KeyRALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyRSHIFT() {
@@ -162,6 +176,7 @@ void RKey::KeyRSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyROsKey() {
@@ -173,6 +188,7 @@ void RKey::KeyROsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RKey::KeyR() {
@@ -184,6 +200,7 @@ void RKey::KeyR() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

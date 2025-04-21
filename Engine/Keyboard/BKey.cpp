@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BKey_CPP
 #define BKey_CPP
@@ -19,6 +20,7 @@ void BKey::KeyBOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BKey::KeyBSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BKey::KeyBOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BKey::KeyBOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BKey::KeyBOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBALTCTRL() {
@@ -74,6 +80,7 @@ void BKey::KeyBALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BKey::KeyBSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBSHIFTALT() {
@@ -96,6 +104,7 @@ void BKey::KeyBSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BKey::KeyBOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBOsKeyALT() {
@@ -118,6 +128,7 @@ void BKey::KeyBOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBOsKeySHIFT() {
@@ -129,17 +140,19 @@ void BKey::KeyBOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBCTRL() {
     /*
-        Windows 11 = 
+        Windows 11 = Applies the bold format to the selected text or toggle bold formatting on and off for the current text input.
         Windows 10 = 
         Linux = 
         MacOS = 
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBALT() {
@@ -151,6 +164,7 @@ void BKey::KeyBALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBSHIFT() {
@@ -162,6 +176,7 @@ void BKey::KeyBSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyBOsKey() {
@@ -173,6 +188,7 @@ void BKey::KeyBOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BKey::KeyB() {
@@ -184,6 +200,7 @@ void BKey::KeyB() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

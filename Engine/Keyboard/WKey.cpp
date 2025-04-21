@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef WKey_CPP
 #define WKey_CPP
@@ -19,6 +20,7 @@ void WKey::KeyWOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void WKey::KeyWSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void WKey::KeyWOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void WKey::KeyWOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void WKey::KeyWOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWALTCTRL() {
@@ -74,6 +80,7 @@ void WKey::KeyWALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWSHIFTCTRL() {
@@ -85,6 +92,7 @@ void WKey::KeyWSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWSHIFTALT() {
@@ -96,6 +104,7 @@ void WKey::KeyWSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWOsKeyCTRL() {
@@ -107,6 +116,7 @@ void WKey::KeyWOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWOsKeyALT() {
@@ -118,6 +128,7 @@ void WKey::KeyWOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWOsKeySHIFT() {
@@ -129,6 +140,7 @@ void WKey::KeyWOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWCTRL() {
@@ -140,6 +152,7 @@ void WKey::KeyWCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWALT() {
@@ -151,6 +164,7 @@ void WKey::KeyWALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWSHIFT() {
@@ -162,6 +176,7 @@ void WKey::KeyWSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyWOsKey() {
@@ -173,6 +188,7 @@ void WKey::KeyWOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void WKey::KeyW() {
@@ -184,6 +200,7 @@ void WKey::KeyW() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

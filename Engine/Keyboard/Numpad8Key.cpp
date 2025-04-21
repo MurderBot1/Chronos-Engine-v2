@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef Numpad8Key_CPP
 #define Numpad8Key_CPP
@@ -19,6 +20,7 @@ void Numpad8Key::KeyNumpad8OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void Numpad8Key::KeyNumpad8SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void Numpad8Key::KeyNumpad8OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void Numpad8Key::KeyNumpad8OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void Numpad8Key::KeyNumpad8OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8ALTCTRL() {
@@ -74,6 +80,7 @@ void Numpad8Key::KeyNumpad8ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8SHIFTCTRL() {
@@ -85,6 +92,7 @@ void Numpad8Key::KeyNumpad8SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8SHIFTALT() {
@@ -96,6 +104,7 @@ void Numpad8Key::KeyNumpad8SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8OsKeyCTRL() {
@@ -107,6 +116,7 @@ void Numpad8Key::KeyNumpad8OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8OsKeyALT() {
@@ -118,6 +128,7 @@ void Numpad8Key::KeyNumpad8OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8OsKeySHIFT() {
@@ -129,6 +140,7 @@ void Numpad8Key::KeyNumpad8OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8CTRL() {
@@ -140,6 +152,7 @@ void Numpad8Key::KeyNumpad8CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8ALT() {
@@ -151,6 +164,7 @@ void Numpad8Key::KeyNumpad8ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8SHIFT() {
@@ -162,6 +176,7 @@ void Numpad8Key::KeyNumpad8SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8OsKey() {
@@ -173,6 +188,7 @@ void Numpad8Key::KeyNumpad8OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad8Key::KeyNumpad8() {
@@ -184,6 +200,7 @@ void Numpad8Key::KeyNumpad8() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

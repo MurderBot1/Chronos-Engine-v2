@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F8Key_CPP
 #define F8Key_CPP
@@ -19,6 +20,7 @@ void F8Key::KeyF8OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F8Key::KeyF8SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F8Key::KeyF8OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F8Key::KeyF8OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F8Key::KeyF8OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8ALTCTRL() {
@@ -74,6 +80,7 @@ void F8Key::KeyF8ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F8Key::KeyF8SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8SHIFTALT() {
@@ -96,6 +104,7 @@ void F8Key::KeyF8SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F8Key::KeyF8OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8OsKeyALT() {
@@ -118,6 +128,7 @@ void F8Key::KeyF8OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F8Key::KeyF8OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8CTRL() {
@@ -140,6 +152,7 @@ void F8Key::KeyF8CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8ALT() {
@@ -151,6 +164,7 @@ void F8Key::KeyF8ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8SHIFT() {
@@ -162,6 +176,7 @@ void F8Key::KeyF8SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8OsKey() {
@@ -173,6 +188,7 @@ void F8Key::KeyF8OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F8Key::KeyF8() {
@@ -184,6 +200,7 @@ void F8Key::KeyF8() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

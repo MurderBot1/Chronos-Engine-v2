@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef SelectKey_CPP
 #define SelectKey_CPP
@@ -19,6 +20,7 @@ void SelectKey::KeySelectOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void SelectKey::KeySelectSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void SelectKey::KeySelectOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void SelectKey::KeySelectOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void SelectKey::KeySelectOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectALTCTRL() {
@@ -74,6 +80,7 @@ void SelectKey::KeySelectALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectSHIFTCTRL() {
@@ -85,6 +92,7 @@ void SelectKey::KeySelectSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectSHIFTALT() {
@@ -96,6 +104,7 @@ void SelectKey::KeySelectSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectOsKeyCTRL() {
@@ -107,6 +116,7 @@ void SelectKey::KeySelectOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectOsKeyALT() {
@@ -118,6 +128,7 @@ void SelectKey::KeySelectOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectOsKeySHIFT() {
@@ -129,6 +140,7 @@ void SelectKey::KeySelectOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectCTRL() {
@@ -140,6 +152,7 @@ void SelectKey::KeySelectCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectALT() {
@@ -151,6 +164,7 @@ void SelectKey::KeySelectALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectSHIFT() {
@@ -162,6 +176,7 @@ void SelectKey::KeySelectSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelectOsKey() {
@@ -173,6 +188,7 @@ void SelectKey::KeySelectOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectKey::KeySelect() {
@@ -184,6 +200,7 @@ void SelectKey::KeySelect() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef ZeroKey_CPP
 #define ZeroKey_CPP
@@ -19,6 +20,7 @@ void ZeroKey::KeyZeroOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void ZeroKey::KeyZeroSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void ZeroKey::KeyZeroOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void ZeroKey::KeyZeroOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void ZeroKey::KeyZeroOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroALTCTRL() {
@@ -74,6 +80,7 @@ void ZeroKey::KeyZeroALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroSHIFTCTRL() {
@@ -85,6 +92,7 @@ void ZeroKey::KeyZeroSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroSHIFTALT() {
@@ -96,6 +104,7 @@ void ZeroKey::KeyZeroSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroOsKeyCTRL() {
@@ -107,6 +116,7 @@ void ZeroKey::KeyZeroOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroOsKeyALT() {
@@ -118,6 +128,7 @@ void ZeroKey::KeyZeroOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroOsKeySHIFT() {
@@ -129,6 +140,7 @@ void ZeroKey::KeyZeroOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroCTRL() {
@@ -140,6 +152,7 @@ void ZeroKey::KeyZeroCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroALT() {
@@ -151,6 +164,7 @@ void ZeroKey::KeyZeroALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroSHIFT() {
@@ -162,6 +176,7 @@ void ZeroKey::KeyZeroSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZeroOsKey() {
@@ -173,6 +188,7 @@ void ZeroKey::KeyZeroOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZeroKey::KeyZero() {
@@ -184,6 +200,7 @@ void ZeroKey::KeyZero() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

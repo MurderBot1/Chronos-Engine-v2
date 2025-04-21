@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef VolumeUpKey_CPP
 #define VolumeUpKey_CPP
@@ -19,6 +20,7 @@ void VolumeUpKey::KeyVolumeUpOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void VolumeUpKey::KeyVolumeUpSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void VolumeUpKey::KeyVolumeUpOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void VolumeUpKey::KeyVolumeUpOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void VolumeUpKey::KeyVolumeUpOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpALTCTRL() {
@@ -74,6 +80,7 @@ void VolumeUpKey::KeyVolumeUpALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpSHIFTCTRL() {
@@ -85,6 +92,7 @@ void VolumeUpKey::KeyVolumeUpSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpSHIFTALT() {
@@ -96,6 +104,7 @@ void VolumeUpKey::KeyVolumeUpSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpOsKeyCTRL() {
@@ -107,6 +116,7 @@ void VolumeUpKey::KeyVolumeUpOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpOsKeyALT() {
@@ -118,6 +128,7 @@ void VolumeUpKey::KeyVolumeUpOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpOsKeySHIFT() {
@@ -129,6 +140,7 @@ void VolumeUpKey::KeyVolumeUpOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpCTRL() {
@@ -140,6 +152,7 @@ void VolumeUpKey::KeyVolumeUpCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpALT() {
@@ -151,6 +164,7 @@ void VolumeUpKey::KeyVolumeUpALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpSHIFT() {
@@ -162,6 +176,7 @@ void VolumeUpKey::KeyVolumeUpSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUpOsKey() {
@@ -173,6 +188,7 @@ void VolumeUpKey::KeyVolumeUpOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeUpKey::KeyVolumeUp() {
@@ -184,6 +200,7 @@ void VolumeUpKey::KeyVolumeUp() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

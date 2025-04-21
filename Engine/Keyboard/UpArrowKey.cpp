@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef UpArrowKey_CPP
 #define UpArrowKey_CPP
@@ -19,6 +20,7 @@ void UpArrowKey::KeyUpArrowOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void UpArrowKey::KeyUpArrowSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void UpArrowKey::KeyUpArrowOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void UpArrowKey::KeyUpArrowOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void UpArrowKey::KeyUpArrowOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowALTCTRL() {
@@ -74,6 +80,7 @@ void UpArrowKey::KeyUpArrowALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowSHIFTCTRL() {
@@ -85,6 +92,7 @@ void UpArrowKey::KeyUpArrowSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowSHIFTALT() {
@@ -96,6 +104,7 @@ void UpArrowKey::KeyUpArrowSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowOsKeyCTRL() {
@@ -107,6 +116,7 @@ void UpArrowKey::KeyUpArrowOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowOsKeyALT() {
@@ -118,6 +128,7 @@ void UpArrowKey::KeyUpArrowOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowOsKeySHIFT() {
@@ -129,6 +140,7 @@ void UpArrowKey::KeyUpArrowOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowCTRL() {
@@ -140,6 +152,7 @@ void UpArrowKey::KeyUpArrowCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowALT() {
@@ -151,6 +164,7 @@ void UpArrowKey::KeyUpArrowALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowSHIFT() {
@@ -162,6 +176,7 @@ void UpArrowKey::KeyUpArrowSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrowOsKey() {
@@ -173,6 +188,7 @@ void UpArrowKey::KeyUpArrowOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UpArrowKey::KeyUpArrow() {
@@ -184,6 +200,7 @@ void UpArrowKey::KeyUpArrow() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

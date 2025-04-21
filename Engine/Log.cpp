@@ -1,4 +1,5 @@
-// © 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef Log_CPP
 #define Log_CPP
@@ -41,7 +42,14 @@ void Log::OutputDataToFile() {
         std::ofstream OutFile(Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt");
         
         if (OutFile.is_open()) {
-            OutFile << "FPS = " + std::to_string(std::accumulate(Log::FPS.begin(), Log::FPS.end(), 0)/Log::FPS.size()) << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
+            float FPSTotal;
+            for(float FPS : Log::FPS) {
+                FPSTotal += FPS;
+            }
+
+            FPSTotal = FPSTotal / Log::FPS.size();
+
+            OutFile << "FPS = " + std::to_string(FPSTotal) << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
 
             for(std::string Error : Log::Errors) {
                 OutFile << Error + "\n";

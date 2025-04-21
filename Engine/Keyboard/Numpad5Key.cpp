@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef Numpad5Key_CPP
 #define Numpad5Key_CPP
@@ -19,6 +20,7 @@ void Numpad5Key::KeyNumpad5OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void Numpad5Key::KeyNumpad5SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void Numpad5Key::KeyNumpad5OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void Numpad5Key::KeyNumpad5OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void Numpad5Key::KeyNumpad5OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5ALTCTRL() {
@@ -74,6 +80,7 @@ void Numpad5Key::KeyNumpad5ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5SHIFTCTRL() {
@@ -85,6 +92,7 @@ void Numpad5Key::KeyNumpad5SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5SHIFTALT() {
@@ -96,6 +104,7 @@ void Numpad5Key::KeyNumpad5SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5OsKeyCTRL() {
@@ -107,6 +116,7 @@ void Numpad5Key::KeyNumpad5OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5OsKeyALT() {
@@ -118,6 +128,7 @@ void Numpad5Key::KeyNumpad5OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5OsKeySHIFT() {
@@ -129,6 +140,7 @@ void Numpad5Key::KeyNumpad5OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5CTRL() {
@@ -140,6 +152,7 @@ void Numpad5Key::KeyNumpad5CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5ALT() {
@@ -151,6 +164,7 @@ void Numpad5Key::KeyNumpad5ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5SHIFT() {
@@ -162,6 +176,7 @@ void Numpad5Key::KeyNumpad5SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5OsKey() {
@@ -173,6 +188,7 @@ void Numpad5Key::KeyNumpad5OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad5Key::KeyNumpad5() {
@@ -184,6 +200,7 @@ void Numpad5Key::KeyNumpad5() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F15Key_CPP
 #define F15Key_CPP
@@ -19,6 +20,7 @@ void F15Key::KeyF15OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F15Key::KeyF15SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F15Key::KeyF15OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F15Key::KeyF15OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F15Key::KeyF15OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15ALTCTRL() {
@@ -74,6 +80,7 @@ void F15Key::KeyF15ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F15Key::KeyF15SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15SHIFTALT() {
@@ -96,6 +104,7 @@ void F15Key::KeyF15SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F15Key::KeyF15OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15OsKeyALT() {
@@ -118,6 +128,7 @@ void F15Key::KeyF15OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F15Key::KeyF15OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15CTRL() {
@@ -140,6 +152,7 @@ void F15Key::KeyF15CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15ALT() {
@@ -151,6 +164,7 @@ void F15Key::KeyF15ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15SHIFT() {
@@ -162,6 +176,7 @@ void F15Key::KeyF15SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15OsKey() {
@@ -173,6 +188,7 @@ void F15Key::KeyF15OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F15Key::KeyF15() {
@@ -184,6 +200,7 @@ void F15Key::KeyF15() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

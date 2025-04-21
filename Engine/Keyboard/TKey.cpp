@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef TKey_CPP
 #define TKey_CPP
@@ -19,6 +20,7 @@ void TKey::KeyTOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void TKey::KeyTSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void TKey::KeyTOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void TKey::KeyTOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void TKey::KeyTOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTALTCTRL() {
@@ -74,6 +80,7 @@ void TKey::KeyTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTSHIFTCTRL() {
@@ -85,6 +92,7 @@ void TKey::KeyTSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTSHIFTALT() {
@@ -96,6 +104,7 @@ void TKey::KeyTSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTOsKeyCTRL() {
@@ -107,6 +116,7 @@ void TKey::KeyTOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTOsKeyALT() {
@@ -118,6 +128,7 @@ void TKey::KeyTOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTOsKeySHIFT() {
@@ -129,6 +140,7 @@ void TKey::KeyTOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTCTRL() {
@@ -140,6 +152,7 @@ void TKey::KeyTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTALT() {
@@ -151,6 +164,7 @@ void TKey::KeyTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTSHIFT() {
@@ -162,6 +176,7 @@ void TKey::KeyTSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyTOsKey() {
@@ -173,6 +188,7 @@ void TKey::KeyTOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void TKey::KeyT() {
@@ -184,6 +200,7 @@ void TKey::KeyT() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

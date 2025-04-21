@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef DownArrowKey_CPP
 #define DownArrowKey_CPP
@@ -19,6 +20,7 @@ void DownArrowKey::KeyDownArrowOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void DownArrowKey::KeyDownArrowSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void DownArrowKey::KeyDownArrowOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void DownArrowKey::KeyDownArrowOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void DownArrowKey::KeyDownArrowOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowALTCTRL() {
@@ -74,6 +80,7 @@ void DownArrowKey::KeyDownArrowALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowSHIFTCTRL() {
@@ -85,6 +92,7 @@ void DownArrowKey::KeyDownArrowSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowSHIFTALT() {
@@ -96,6 +104,7 @@ void DownArrowKey::KeyDownArrowSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowOsKeyCTRL() {
@@ -107,6 +116,7 @@ void DownArrowKey::KeyDownArrowOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowOsKeyALT() {
@@ -118,6 +128,7 @@ void DownArrowKey::KeyDownArrowOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowOsKeySHIFT() {
@@ -129,6 +140,7 @@ void DownArrowKey::KeyDownArrowOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowCTRL() {
@@ -140,6 +152,7 @@ void DownArrowKey::KeyDownArrowCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowALT() {
@@ -151,6 +164,7 @@ void DownArrowKey::KeyDownArrowALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowSHIFT() {
@@ -162,6 +176,7 @@ void DownArrowKey::KeyDownArrowSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrowOsKey() {
@@ -173,6 +188,7 @@ void DownArrowKey::KeyDownArrowOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DownArrowKey::KeyDownArrow() {
@@ -184,6 +200,7 @@ void DownArrowKey::KeyDownArrow() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

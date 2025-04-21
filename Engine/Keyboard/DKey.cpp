@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef DKey_CPP
 #define DKey_CPP
@@ -19,6 +20,7 @@ void DKey::KeyDOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void DKey::KeyDSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void DKey::KeyDOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void DKey::KeyDOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void DKey::KeyDOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDALTCTRL() {
@@ -74,6 +80,7 @@ void DKey::KeyDALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDSHIFTCTRL() {
@@ -85,6 +92,7 @@ void DKey::KeyDSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDSHIFTALT() {
@@ -96,6 +104,7 @@ void DKey::KeyDSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDOsKeyCTRL() {
@@ -107,6 +116,7 @@ void DKey::KeyDOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDOsKeyALT() {
@@ -118,6 +128,7 @@ void DKey::KeyDOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDOsKeySHIFT() {
@@ -129,6 +140,7 @@ void DKey::KeyDOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDCTRL() {
@@ -140,6 +152,7 @@ void DKey::KeyDCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDALT() {
@@ -151,6 +164,7 @@ void DKey::KeyDALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDSHIFT() {
@@ -162,6 +176,7 @@ void DKey::KeyDSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyDOsKey() {
@@ -173,6 +188,7 @@ void DKey::KeyDOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void DKey::KeyD() {
@@ -184,6 +200,7 @@ void DKey::KeyD() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

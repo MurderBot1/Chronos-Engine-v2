@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F19Key_CPP
 #define F19Key_CPP
@@ -19,6 +20,7 @@ void F19Key::KeyF19OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F19Key::KeyF19SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F19Key::KeyF19OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F19Key::KeyF19OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F19Key::KeyF19OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19ALTCTRL() {
@@ -74,6 +80,7 @@ void F19Key::KeyF19ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F19Key::KeyF19SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19SHIFTALT() {
@@ -96,6 +104,7 @@ void F19Key::KeyF19SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F19Key::KeyF19OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19OsKeyALT() {
@@ -118,6 +128,7 @@ void F19Key::KeyF19OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F19Key::KeyF19OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19CTRL() {
@@ -140,6 +152,7 @@ void F19Key::KeyF19CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19ALT() {
@@ -151,6 +164,7 @@ void F19Key::KeyF19ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19SHIFT() {
@@ -162,6 +176,7 @@ void F19Key::KeyF19SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19OsKey() {
@@ -173,6 +188,7 @@ void F19Key::KeyF19OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F19Key::KeyF19() {
@@ -184,6 +200,7 @@ void F19Key::KeyF19() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

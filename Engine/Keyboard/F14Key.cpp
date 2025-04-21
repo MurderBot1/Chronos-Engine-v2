@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F14Key_CPP
 #define F14Key_CPP
@@ -19,6 +20,7 @@ void F14Key::KeyF14OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F14Key::KeyF14SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F14Key::KeyF14OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F14Key::KeyF14OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F14Key::KeyF14OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14ALTCTRL() {
@@ -74,6 +80,7 @@ void F14Key::KeyF14ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F14Key::KeyF14SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14SHIFTALT() {
@@ -96,6 +104,7 @@ void F14Key::KeyF14SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F14Key::KeyF14OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14OsKeyALT() {
@@ -118,6 +128,7 @@ void F14Key::KeyF14OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F14Key::KeyF14OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14CTRL() {
@@ -140,6 +152,7 @@ void F14Key::KeyF14CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14ALT() {
@@ -151,6 +164,7 @@ void F14Key::KeyF14ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14SHIFT() {
@@ -162,6 +176,7 @@ void F14Key::KeyF14SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14OsKey() {
@@ -173,6 +188,7 @@ void F14Key::KeyF14OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F14Key::KeyF14() {
@@ -184,6 +200,7 @@ void F14Key::KeyF14() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef VolumeMuteKey_CPP
 #define VolumeMuteKey_CPP
@@ -19,6 +20,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void VolumeMuteKey::KeyVolumeMuteSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteALTCTRL() {
@@ -74,6 +80,7 @@ void VolumeMuteKey::KeyVolumeMuteALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteSHIFTCTRL() {
@@ -85,6 +92,7 @@ void VolumeMuteKey::KeyVolumeMuteSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteSHIFTALT() {
@@ -96,6 +104,7 @@ void VolumeMuteKey::KeyVolumeMuteSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteOsKeyCTRL() {
@@ -107,6 +116,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteOsKeyALT() {
@@ -118,6 +128,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteOsKeySHIFT() {
@@ -129,6 +140,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteCTRL() {
@@ -140,6 +152,7 @@ void VolumeMuteKey::KeyVolumeMuteCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteALT() {
@@ -151,6 +164,7 @@ void VolumeMuteKey::KeyVolumeMuteALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteSHIFT() {
@@ -162,6 +176,7 @@ void VolumeMuteKey::KeyVolumeMuteSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMuteOsKey() {
@@ -173,6 +188,7 @@ void VolumeMuteKey::KeyVolumeMuteOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeMuteKey::KeyVolumeMute() {
@@ -184,6 +200,7 @@ void VolumeMuteKey::KeyVolumeMute() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

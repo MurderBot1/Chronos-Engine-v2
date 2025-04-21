@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F22Key_CPP
 #define F22Key_CPP
@@ -19,6 +20,7 @@ void F22Key::KeyF22OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F22Key::KeyF22SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F22Key::KeyF22OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F22Key::KeyF22OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F22Key::KeyF22OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22ALTCTRL() {
@@ -74,6 +80,7 @@ void F22Key::KeyF22ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F22Key::KeyF22SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22SHIFTALT() {
@@ -96,6 +104,7 @@ void F22Key::KeyF22SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F22Key::KeyF22OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22OsKeyALT() {
@@ -118,6 +128,7 @@ void F22Key::KeyF22OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F22Key::KeyF22OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22CTRL() {
@@ -140,6 +152,7 @@ void F22Key::KeyF22CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22ALT() {
@@ -151,6 +164,7 @@ void F22Key::KeyF22ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22SHIFT() {
@@ -162,6 +176,7 @@ void F22Key::KeyF22SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22OsKey() {
@@ -173,6 +188,7 @@ void F22Key::KeyF22OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F22Key::KeyF22() {
@@ -184,6 +200,7 @@ void F22Key::KeyF22() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

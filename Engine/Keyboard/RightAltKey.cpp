@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef RightAltKey_CPP
 #define RightAltKey_CPP
@@ -19,6 +20,7 @@ void RightAltKey::KeyRightAltOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void RightAltKey::KeyRightAltSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void RightAltKey::KeyRightAltOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void RightAltKey::KeyRightAltOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void RightAltKey::KeyRightAltOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltALTCTRL() {
@@ -74,6 +80,7 @@ void RightAltKey::KeyRightAltALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltSHIFTCTRL() {
@@ -85,6 +92,7 @@ void RightAltKey::KeyRightAltSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltSHIFTALT() {
@@ -96,6 +104,7 @@ void RightAltKey::KeyRightAltSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltOsKeyCTRL() {
@@ -107,6 +116,7 @@ void RightAltKey::KeyRightAltOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltOsKeyALT() {
@@ -118,6 +128,7 @@ void RightAltKey::KeyRightAltOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltOsKeySHIFT() {
@@ -129,6 +140,7 @@ void RightAltKey::KeyRightAltOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltCTRL() {
@@ -140,6 +152,7 @@ void RightAltKey::KeyRightAltCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltALT() {
@@ -151,6 +164,7 @@ void RightAltKey::KeyRightAltALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltSHIFT() {
@@ -162,6 +176,7 @@ void RightAltKey::KeyRightAltSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAltOsKey() {
@@ -173,6 +188,7 @@ void RightAltKey::KeyRightAltOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightAltKey::KeyRightAlt() {
@@ -184,6 +200,7 @@ void RightAltKey::KeyRightAlt() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

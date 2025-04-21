@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PKey_CPP
 #define PKey_CPP
@@ -19,6 +20,7 @@ void PKey::KeyPOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PKey::KeyPSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PKey::KeyPOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PKey::KeyPOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PKey::KeyPOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPALTCTRL() {
@@ -74,6 +80,7 @@ void PKey::KeyPALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PKey::KeyPSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPSHIFTALT() {
@@ -96,6 +104,7 @@ void PKey::KeyPSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PKey::KeyPOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPOsKeyALT() {
@@ -118,6 +128,7 @@ void PKey::KeyPOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PKey::KeyPOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPCTRL() {
@@ -140,6 +152,7 @@ void PKey::KeyPCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPALT() {
@@ -151,6 +164,7 @@ void PKey::KeyPALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPSHIFT() {
@@ -162,6 +176,7 @@ void PKey::KeyPSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyPOsKey() {
@@ -173,6 +188,7 @@ void PKey::KeyPOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PKey::KeyP() {
@@ -184,6 +200,7 @@ void PKey::KeyP() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

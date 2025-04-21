@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef NineKey_CPP
 #define NineKey_CPP
@@ -19,6 +20,7 @@ void NineKey::KeyNineOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void NineKey::KeyNineSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void NineKey::KeyNineOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void NineKey::KeyNineOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void NineKey::KeyNineOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineALTCTRL() {
@@ -74,6 +80,7 @@ void NineKey::KeyNineALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineSHIFTCTRL() {
@@ -85,6 +92,7 @@ void NineKey::KeyNineSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineSHIFTALT() {
@@ -96,6 +104,7 @@ void NineKey::KeyNineSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineOsKeyCTRL() {
@@ -107,6 +116,7 @@ void NineKey::KeyNineOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineOsKeyALT() {
@@ -118,6 +128,7 @@ void NineKey::KeyNineOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineOsKeySHIFT() {
@@ -129,6 +140,7 @@ void NineKey::KeyNineOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineCTRL() {
@@ -140,6 +152,7 @@ void NineKey::KeyNineCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineALT() {
@@ -151,6 +164,7 @@ void NineKey::KeyNineALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineSHIFT() {
@@ -162,6 +176,7 @@ void NineKey::KeyNineSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNineOsKey() {
@@ -173,6 +188,7 @@ void NineKey::KeyNineOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NineKey::KeyNine() {
@@ -184,6 +200,7 @@ void NineKey::KeyNine() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

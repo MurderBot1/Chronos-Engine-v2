@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef LKey_CPP
 #define LKey_CPP
@@ -19,6 +20,7 @@ void LKey::KeyLOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void LKey::KeyLSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void LKey::KeyLOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void LKey::KeyLOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void LKey::KeyLOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLALTCTRL() {
@@ -74,6 +80,7 @@ void LKey::KeyLALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLSHIFTCTRL() {
@@ -85,6 +92,7 @@ void LKey::KeyLSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLSHIFTALT() {
@@ -96,6 +104,7 @@ void LKey::KeyLSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLOsKeyCTRL() {
@@ -107,6 +116,7 @@ void LKey::KeyLOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLOsKeyALT() {
@@ -118,6 +128,7 @@ void LKey::KeyLOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLOsKeySHIFT() {
@@ -129,6 +140,7 @@ void LKey::KeyLOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLCTRL() {
@@ -140,6 +152,7 @@ void LKey::KeyLCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLALT() {
@@ -151,6 +164,7 @@ void LKey::KeyLALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLSHIFT() {
@@ -162,6 +176,7 @@ void LKey::KeyLSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyLOsKey() {
@@ -173,6 +188,7 @@ void LKey::KeyLOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void LKey::KeyL() {
@@ -184,6 +200,7 @@ void LKey::KeyL() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

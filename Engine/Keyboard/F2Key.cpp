@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F2Key_CPP
 #define F2Key_CPP
@@ -19,6 +20,7 @@ void F2Key::KeyF2OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F2Key::KeyF2SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F2Key::KeyF2OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F2Key::KeyF2OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F2Key::KeyF2OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2ALTCTRL() {
@@ -74,6 +80,7 @@ void F2Key::KeyF2ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F2Key::KeyF2SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2SHIFTALT() {
@@ -96,6 +104,7 @@ void F2Key::KeyF2SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F2Key::KeyF2OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2OsKeyALT() {
@@ -118,6 +128,7 @@ void F2Key::KeyF2OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F2Key::KeyF2OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2CTRL() {
@@ -140,6 +152,7 @@ void F2Key::KeyF2CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2ALT() {
@@ -151,6 +164,7 @@ void F2Key::KeyF2ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2SHIFT() {
@@ -162,6 +176,7 @@ void F2Key::KeyF2SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2OsKey() {
@@ -173,6 +188,7 @@ void F2Key::KeyF2OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F2Key::KeyF2() {
@@ -184,6 +200,7 @@ void F2Key::KeyF2() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

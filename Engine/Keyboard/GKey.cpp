@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef GKey_CPP
 #define GKey_CPP
@@ -19,6 +20,7 @@ void GKey::KeyGOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void GKey::KeyGSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void GKey::KeyGOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void GKey::KeyGOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void GKey::KeyGOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGALTCTRL() {
@@ -74,6 +80,7 @@ void GKey::KeyGALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGSHIFTCTRL() {
@@ -85,6 +92,7 @@ void GKey::KeyGSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGSHIFTALT() {
@@ -96,6 +104,7 @@ void GKey::KeyGSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGOsKeyCTRL() {
@@ -107,6 +116,7 @@ void GKey::KeyGOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGOsKeyALT() {
@@ -118,6 +128,7 @@ void GKey::KeyGOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGOsKeySHIFT() {
@@ -129,6 +140,7 @@ void GKey::KeyGOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGCTRL() {
@@ -140,6 +152,7 @@ void GKey::KeyGCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGALT() {
@@ -151,6 +164,7 @@ void GKey::KeyGALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGSHIFT() {
@@ -162,6 +176,7 @@ void GKey::KeyGSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyGOsKey() {
@@ -173,6 +188,7 @@ void GKey::KeyGOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void GKey::KeyG() {
@@ -184,6 +200,7 @@ void GKey::KeyG() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F5Key_CPP
 #define F5Key_CPP
@@ -19,6 +20,7 @@ void F5Key::KeyF5OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F5Key::KeyF5SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F5Key::KeyF5OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F5Key::KeyF5OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F5Key::KeyF5OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5ALTCTRL() {
@@ -74,6 +80,7 @@ void F5Key::KeyF5ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F5Key::KeyF5SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5SHIFTALT() {
@@ -96,6 +104,7 @@ void F5Key::KeyF5SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F5Key::KeyF5OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5OsKeyALT() {
@@ -118,6 +128,7 @@ void F5Key::KeyF5OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F5Key::KeyF5OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5CTRL() {
@@ -140,6 +152,7 @@ void F5Key::KeyF5CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5ALT() {
@@ -151,6 +164,7 @@ void F5Key::KeyF5ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5SHIFT() {
@@ -162,6 +176,7 @@ void F5Key::KeyF5SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5OsKey() {
@@ -173,6 +188,7 @@ void F5Key::KeyF5OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F5Key::KeyF5() {
@@ -184,6 +200,7 @@ void F5Key::KeyF5() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

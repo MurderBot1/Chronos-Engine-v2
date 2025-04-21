@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef NumLockKey_CPP
 #define NumLockKey_CPP
@@ -19,6 +20,7 @@ void NumLockKey::KeyNumLockOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void NumLockKey::KeyNumLockSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void NumLockKey::KeyNumLockOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void NumLockKey::KeyNumLockOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void NumLockKey::KeyNumLockOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockALTCTRL() {
@@ -74,6 +80,7 @@ void NumLockKey::KeyNumLockALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockSHIFTCTRL() {
@@ -85,6 +92,7 @@ void NumLockKey::KeyNumLockSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockSHIFTALT() {
@@ -96,6 +104,7 @@ void NumLockKey::KeyNumLockSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockOsKeyCTRL() {
@@ -107,6 +116,7 @@ void NumLockKey::KeyNumLockOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockOsKeyALT() {
@@ -118,6 +128,7 @@ void NumLockKey::KeyNumLockOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockOsKeySHIFT() {
@@ -129,6 +140,7 @@ void NumLockKey::KeyNumLockOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockCTRL() {
@@ -140,6 +152,7 @@ void NumLockKey::KeyNumLockCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockALT() {
@@ -151,6 +164,7 @@ void NumLockKey::KeyNumLockALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockSHIFT() {
@@ -162,6 +176,7 @@ void NumLockKey::KeyNumLockSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLockOsKey() {
@@ -173,6 +188,7 @@ void NumLockKey::KeyNumLockOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NumLockKey::KeyNumLock() {
@@ -184,6 +200,7 @@ void NumLockKey::KeyNumLock() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

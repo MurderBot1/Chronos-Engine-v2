@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef CKey_CPP
 #define CKey_CPP
@@ -19,6 +20,7 @@ void CKey::KeyCOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void CKey::KeyCSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void CKey::KeyCOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void CKey::KeyCOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void CKey::KeyCOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCALTCTRL() {
@@ -74,6 +80,7 @@ void CKey::KeyCALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCSHIFTCTRL() {
@@ -85,6 +92,7 @@ void CKey::KeyCSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCSHIFTALT() {
@@ -96,6 +104,7 @@ void CKey::KeyCSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCOsKeyCTRL() {
@@ -107,6 +116,7 @@ void CKey::KeyCOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCOsKeyALT() {
@@ -118,6 +128,7 @@ void CKey::KeyCOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCOsKeySHIFT() {
@@ -129,17 +140,19 @@ void CKey::KeyCOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCCTRL() {
     /*
-        Windows 11 = 
+        Windows 11 = Copies the selected text to the clipboard.
         Windows 10 = 
         Linux = 
         MacOS = 
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCALT() {
@@ -151,6 +164,7 @@ void CKey::KeyCALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCSHIFT() {
@@ -162,6 +176,7 @@ void CKey::KeyCSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyCOsKey() {
@@ -173,6 +188,7 @@ void CKey::KeyCOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void CKey::KeyC() {
@@ -184,6 +200,7 @@ void CKey::KeyC() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

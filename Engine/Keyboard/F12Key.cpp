@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F12Key_CPP
 #define F12Key_CPP
@@ -19,6 +20,7 @@ void F12Key::KeyF12OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F12Key::KeyF12SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F12Key::KeyF12OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F12Key::KeyF12OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F12Key::KeyF12OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12ALTCTRL() {
@@ -74,6 +80,7 @@ void F12Key::KeyF12ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F12Key::KeyF12SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12SHIFTALT() {
@@ -96,6 +104,7 @@ void F12Key::KeyF12SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F12Key::KeyF12OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12OsKeyALT() {
@@ -118,6 +128,7 @@ void F12Key::KeyF12OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F12Key::KeyF12OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12CTRL() {
@@ -140,6 +152,7 @@ void F12Key::KeyF12CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12ALT() {
@@ -151,6 +164,7 @@ void F12Key::KeyF12ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12SHIFT() {
@@ -162,6 +176,7 @@ void F12Key::KeyF12SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12OsKey() {
@@ -173,6 +188,7 @@ void F12Key::KeyF12OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F12Key::KeyF12() {
@@ -184,6 +200,7 @@ void F12Key::KeyF12() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

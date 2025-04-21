@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef ZKey_CPP
 #define ZKey_CPP
@@ -19,6 +20,7 @@ void ZKey::KeyZOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void ZKey::KeyZSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void ZKey::KeyZOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void ZKey::KeyZOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void ZKey::KeyZOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZALTCTRL() {
@@ -74,6 +80,7 @@ void ZKey::KeyZALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZSHIFTCTRL() {
@@ -85,6 +92,7 @@ void ZKey::KeyZSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZSHIFTALT() {
@@ -96,6 +104,7 @@ void ZKey::KeyZSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZOsKeyCTRL() {
@@ -107,6 +116,7 @@ void ZKey::KeyZOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZOsKeyALT() {
@@ -118,6 +128,7 @@ void ZKey::KeyZOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZOsKeySHIFT() {
@@ -129,6 +140,7 @@ void ZKey::KeyZOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZCTRL() {
@@ -140,6 +152,7 @@ void ZKey::KeyZCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZALT() {
@@ -151,6 +164,7 @@ void ZKey::KeyZALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZSHIFT() {
@@ -162,6 +176,7 @@ void ZKey::KeyZSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZOsKey() {
@@ -173,6 +188,7 @@ void ZKey::KeyZOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ZKey::KeyZ() {
@@ -184,6 +200,7 @@ void ZKey::KeyZ() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

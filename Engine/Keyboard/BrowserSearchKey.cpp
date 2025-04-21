@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BrowserSearchKey_CPP
 #define BrowserSearchKey_CPP
@@ -19,6 +20,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BrowserSearchKey::KeyBrowserSearchSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchALTCTRL() {
@@ -74,6 +80,7 @@ void BrowserSearchKey::KeyBrowserSearchALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BrowserSearchKey::KeyBrowserSearchSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchSHIFTALT() {
@@ -96,6 +104,7 @@ void BrowserSearchKey::KeyBrowserSearchSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchOsKeyALT() {
@@ -118,6 +128,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchOsKeySHIFT() {
@@ -129,6 +140,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchCTRL() {
@@ -140,6 +152,7 @@ void BrowserSearchKey::KeyBrowserSearchCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchALT() {
@@ -151,6 +164,7 @@ void BrowserSearchKey::KeyBrowserSearchALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchSHIFT() {
@@ -162,6 +176,7 @@ void BrowserSearchKey::KeyBrowserSearchSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearchOsKey() {
@@ -173,6 +188,7 @@ void BrowserSearchKey::KeyBrowserSearchOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserSearchKey::KeyBrowserSearch() {
@@ -184,6 +200,7 @@ void BrowserSearchKey::KeyBrowserSearch() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F20Key_CPP
 #define F20Key_CPP
@@ -19,6 +20,7 @@ void F20Key::KeyF20OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F20Key::KeyF20SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F20Key::KeyF20OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F20Key::KeyF20OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F20Key::KeyF20OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20ALTCTRL() {
@@ -74,6 +80,7 @@ void F20Key::KeyF20ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F20Key::KeyF20SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20SHIFTALT() {
@@ -96,6 +104,7 @@ void F20Key::KeyF20SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F20Key::KeyF20OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20OsKeyALT() {
@@ -118,6 +128,7 @@ void F20Key::KeyF20OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F20Key::KeyF20OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20CTRL() {
@@ -140,6 +152,7 @@ void F20Key::KeyF20CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20ALT() {
@@ -151,6 +164,7 @@ void F20Key::KeyF20ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20SHIFT() {
@@ -162,6 +176,7 @@ void F20Key::KeyF20SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20OsKey() {
@@ -173,6 +188,7 @@ void F20Key::KeyF20OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F20Key::KeyF20() {
@@ -184,6 +200,7 @@ void F20Key::KeyF20() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

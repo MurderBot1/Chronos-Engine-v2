@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef StartMailKey_CPP
 #define StartMailKey_CPP
@@ -19,6 +20,7 @@ void StartMailKey::KeyStartMailOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void StartMailKey::KeyStartMailSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void StartMailKey::KeyStartMailOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void StartMailKey::KeyStartMailOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void StartMailKey::KeyStartMailOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailALTCTRL() {
@@ -74,6 +80,7 @@ void StartMailKey::KeyStartMailALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailSHIFTCTRL() {
@@ -85,6 +92,7 @@ void StartMailKey::KeyStartMailSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailSHIFTALT() {
@@ -96,6 +104,7 @@ void StartMailKey::KeyStartMailSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailOsKeyCTRL() {
@@ -107,6 +116,7 @@ void StartMailKey::KeyStartMailOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailOsKeyALT() {
@@ -118,6 +128,7 @@ void StartMailKey::KeyStartMailOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailOsKeySHIFT() {
@@ -129,6 +140,7 @@ void StartMailKey::KeyStartMailOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailCTRL() {
@@ -140,6 +152,7 @@ void StartMailKey::KeyStartMailCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailALT() {
@@ -151,6 +164,7 @@ void StartMailKey::KeyStartMailALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailSHIFT() {
@@ -162,6 +176,7 @@ void StartMailKey::KeyStartMailSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMailOsKey() {
@@ -173,6 +188,7 @@ void StartMailKey::KeyStartMailOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartMailKey::KeyStartMail() {
@@ -184,6 +200,7 @@ void StartMailKey::KeyStartMail() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

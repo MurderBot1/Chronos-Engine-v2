@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef HKey_CPP
 #define HKey_CPP
@@ -19,6 +20,7 @@ void HKey::KeyHOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void HKey::KeyHSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void HKey::KeyHOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void HKey::KeyHOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void HKey::KeyHOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHALTCTRL() {
@@ -74,6 +80,7 @@ void HKey::KeyHALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHSHIFTCTRL() {
@@ -85,6 +92,7 @@ void HKey::KeyHSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHSHIFTALT() {
@@ -96,6 +104,7 @@ void HKey::KeyHSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHOsKeyCTRL() {
@@ -107,6 +116,7 @@ void HKey::KeyHOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHOsKeyALT() {
@@ -118,6 +128,7 @@ void HKey::KeyHOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHOsKeySHIFT() {
@@ -129,6 +140,7 @@ void HKey::KeyHOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHCTRL() {
@@ -140,6 +152,7 @@ void HKey::KeyHCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHALT() {
@@ -151,6 +164,7 @@ void HKey::KeyHALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHSHIFT() {
@@ -162,6 +176,7 @@ void HKey::KeyHSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyHOsKey() {
@@ -173,6 +188,7 @@ void HKey::KeyHOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HKey::KeyH() {
@@ -184,6 +200,7 @@ void HKey::KeyH() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef UKey_CPP
 #define UKey_CPP
@@ -19,6 +20,7 @@ void UKey::KeyUOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void UKey::KeyUSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void UKey::KeyUOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void UKey::KeyUOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void UKey::KeyUOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUALTCTRL() {
@@ -74,6 +80,7 @@ void UKey::KeyUALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUSHIFTCTRL() {
@@ -85,6 +92,7 @@ void UKey::KeyUSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUSHIFTALT() {
@@ -96,6 +104,7 @@ void UKey::KeyUSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUOsKeyCTRL() {
@@ -107,6 +116,7 @@ void UKey::KeyUOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUOsKeyALT() {
@@ -118,6 +128,7 @@ void UKey::KeyUOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUOsKeySHIFT() {
@@ -129,6 +140,7 @@ void UKey::KeyUOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUCTRL() {
@@ -140,6 +152,7 @@ void UKey::KeyUCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUALT() {
@@ -151,6 +164,7 @@ void UKey::KeyUALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUSHIFT() {
@@ -162,6 +176,7 @@ void UKey::KeyUSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyUOsKey() {
@@ -173,6 +188,7 @@ void UKey::KeyUOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void UKey::KeyU() {
@@ -184,6 +200,7 @@ void UKey::KeyU() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

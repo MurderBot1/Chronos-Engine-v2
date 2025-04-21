@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F7Key_CPP
 #define F7Key_CPP
@@ -19,6 +20,7 @@ void F7Key::KeyF7OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F7Key::KeyF7SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F7Key::KeyF7OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F7Key::KeyF7OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F7Key::KeyF7OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7ALTCTRL() {
@@ -74,6 +80,7 @@ void F7Key::KeyF7ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F7Key::KeyF7SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7SHIFTALT() {
@@ -96,6 +104,7 @@ void F7Key::KeyF7SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F7Key::KeyF7OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7OsKeyALT() {
@@ -118,6 +128,7 @@ void F7Key::KeyF7OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F7Key::KeyF7OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7CTRL() {
@@ -140,6 +152,7 @@ void F7Key::KeyF7CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7ALT() {
@@ -151,6 +164,7 @@ void F7Key::KeyF7ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7SHIFT() {
@@ -162,6 +176,7 @@ void F7Key::KeyF7SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7OsKey() {
@@ -173,6 +188,7 @@ void F7Key::KeyF7OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F7Key::KeyF7() {
@@ -184,6 +200,7 @@ void F7Key::KeyF7() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

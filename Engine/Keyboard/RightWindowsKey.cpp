@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef RightWindowsKey_CPP
 #define RightWindowsKey_CPP
@@ -19,6 +20,7 @@ void RightWindowsKey::KeyRightWindowsOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void RightWindowsKey::KeyRightWindowsSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void RightWindowsKey::KeyRightWindowsOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void RightWindowsKey::KeyRightWindowsOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void RightWindowsKey::KeyRightWindowsOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsALTCTRL() {
@@ -74,6 +80,7 @@ void RightWindowsKey::KeyRightWindowsALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsSHIFTCTRL() {
@@ -85,6 +92,7 @@ void RightWindowsKey::KeyRightWindowsSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsSHIFTALT() {
@@ -96,6 +104,7 @@ void RightWindowsKey::KeyRightWindowsSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsOsKeyCTRL() {
@@ -107,6 +116,7 @@ void RightWindowsKey::KeyRightWindowsOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsOsKeyALT() {
@@ -118,6 +128,7 @@ void RightWindowsKey::KeyRightWindowsOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsOsKeySHIFT() {
@@ -129,6 +140,7 @@ void RightWindowsKey::KeyRightWindowsOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsCTRL() {
@@ -140,6 +152,7 @@ void RightWindowsKey::KeyRightWindowsCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsALT() {
@@ -151,6 +164,7 @@ void RightWindowsKey::KeyRightWindowsALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsSHIFT() {
@@ -162,6 +176,7 @@ void RightWindowsKey::KeyRightWindowsSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindowsOsKey() {
@@ -173,6 +188,7 @@ void RightWindowsKey::KeyRightWindowsOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void RightWindowsKey::KeyRightWindows() {
@@ -184,6 +200,7 @@ void RightWindowsKey::KeyRightWindows() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

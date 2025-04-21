@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PrintScreenKey_CPP
 #define PrintScreenKey_CPP
@@ -19,6 +20,7 @@ void PrintScreenKey::KeyPrintScreenOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PrintScreenKey::KeyPrintScreenSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PrintScreenKey::KeyPrintScreenOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PrintScreenKey::KeyPrintScreenOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PrintScreenKey::KeyPrintScreenOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenALTCTRL() {
@@ -74,6 +80,7 @@ void PrintScreenKey::KeyPrintScreenALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PrintScreenKey::KeyPrintScreenSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenSHIFTALT() {
@@ -96,6 +104,7 @@ void PrintScreenKey::KeyPrintScreenSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PrintScreenKey::KeyPrintScreenOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenOsKeyALT() {
@@ -118,6 +128,7 @@ void PrintScreenKey::KeyPrintScreenOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PrintScreenKey::KeyPrintScreenOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenCTRL() {
@@ -140,6 +152,7 @@ void PrintScreenKey::KeyPrintScreenCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenALT() {
@@ -151,6 +164,7 @@ void PrintScreenKey::KeyPrintScreenALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenSHIFT() {
@@ -162,6 +176,7 @@ void PrintScreenKey::KeyPrintScreenSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreenOsKey() {
@@ -173,6 +188,7 @@ void PrintScreenKey::KeyPrintScreenOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PrintScreenKey::KeyPrintScreen() {
@@ -184,6 +200,7 @@ void PrintScreenKey::KeyPrintScreen() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

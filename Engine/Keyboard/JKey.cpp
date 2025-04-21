@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef JKey_CPP
 #define JKey_CPP
@@ -19,6 +20,7 @@ void JKey::KeyJOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void JKey::KeyJSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void JKey::KeyJOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void JKey::KeyJOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void JKey::KeyJOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJALTCTRL() {
@@ -74,6 +80,7 @@ void JKey::KeyJALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJSHIFTCTRL() {
@@ -85,6 +92,7 @@ void JKey::KeyJSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJSHIFTALT() {
@@ -96,6 +104,7 @@ void JKey::KeyJSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJOsKeyCTRL() {
@@ -107,6 +116,7 @@ void JKey::KeyJOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJOsKeyALT() {
@@ -118,6 +128,7 @@ void JKey::KeyJOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJOsKeySHIFT() {
@@ -129,6 +140,7 @@ void JKey::KeyJOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJCTRL() {
@@ -140,6 +152,7 @@ void JKey::KeyJCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJALT() {
@@ -151,6 +164,7 @@ void JKey::KeyJALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJSHIFT() {
@@ -162,6 +176,7 @@ void JKey::KeyJSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJOsKey() {
@@ -173,6 +188,7 @@ void JKey::KeyJOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void JKey::KeyJ() {
@@ -184,6 +200,7 @@ void JKey::KeyJ() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

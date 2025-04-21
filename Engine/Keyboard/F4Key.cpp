@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F4Key_CPP
 #define F4Key_CPP
@@ -19,6 +20,7 @@ void F4Key::KeyF4OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F4Key::KeyF4SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F4Key::KeyF4OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F4Key::KeyF4OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F4Key::KeyF4OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4ALTCTRL() {
@@ -74,6 +80,7 @@ void F4Key::KeyF4ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F4Key::KeyF4SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4SHIFTALT() {
@@ -96,6 +104,7 @@ void F4Key::KeyF4SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F4Key::KeyF4OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4OsKeyALT() {
@@ -118,6 +128,7 @@ void F4Key::KeyF4OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F4Key::KeyF4OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4CTRL() {
@@ -140,6 +152,7 @@ void F4Key::KeyF4CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4ALT() {
@@ -151,6 +164,7 @@ void F4Key::KeyF4ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4SHIFT() {
@@ -162,6 +176,7 @@ void F4Key::KeyF4SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4OsKey() {
@@ -173,6 +188,7 @@ void F4Key::KeyF4OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F4Key::KeyF4() {
@@ -184,6 +200,7 @@ void F4Key::KeyF4() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

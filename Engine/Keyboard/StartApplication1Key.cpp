@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef StartApplication1Key_CPP
 #define StartApplication1Key_CPP
@@ -19,6 +20,7 @@ void StartApplication1Key::KeyStartApplication1OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void StartApplication1Key::KeyStartApplication1SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void StartApplication1Key::KeyStartApplication1OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void StartApplication1Key::KeyStartApplication1OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void StartApplication1Key::KeyStartApplication1OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1ALTCTRL() {
@@ -74,6 +80,7 @@ void StartApplication1Key::KeyStartApplication1ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1SHIFTCTRL() {
@@ -85,6 +92,7 @@ void StartApplication1Key::KeyStartApplication1SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1SHIFTALT() {
@@ -96,6 +104,7 @@ void StartApplication1Key::KeyStartApplication1SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1OsKeyCTRL() {
@@ -107,6 +116,7 @@ void StartApplication1Key::KeyStartApplication1OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1OsKeyALT() {
@@ -118,6 +128,7 @@ void StartApplication1Key::KeyStartApplication1OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1OsKeySHIFT() {
@@ -129,6 +140,7 @@ void StartApplication1Key::KeyStartApplication1OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1CTRL() {
@@ -140,6 +152,7 @@ void StartApplication1Key::KeyStartApplication1CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1ALT() {
@@ -151,6 +164,7 @@ void StartApplication1Key::KeyStartApplication1ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1SHIFT() {
@@ -162,6 +176,7 @@ void StartApplication1Key::KeyStartApplication1SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1OsKey() {
@@ -173,6 +188,7 @@ void StartApplication1Key::KeyStartApplication1OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StartApplication1Key::KeyStartApplication1() {
@@ -184,6 +200,7 @@ void StartApplication1Key::KeyStartApplication1() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

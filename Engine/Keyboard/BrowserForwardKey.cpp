@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BrowserForwardKey_CPP
 #define BrowserForwardKey_CPP
@@ -19,6 +20,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BrowserForwardKey::KeyBrowserForwardSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardALTCTRL() {
@@ -74,6 +80,7 @@ void BrowserForwardKey::KeyBrowserForwardALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BrowserForwardKey::KeyBrowserForwardSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardSHIFTALT() {
@@ -96,6 +104,7 @@ void BrowserForwardKey::KeyBrowserForwardSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardOsKeyALT() {
@@ -118,6 +128,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardOsKeySHIFT() {
@@ -129,6 +140,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardCTRL() {
@@ -140,6 +152,7 @@ void BrowserForwardKey::KeyBrowserForwardCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardALT() {
@@ -151,6 +164,7 @@ void BrowserForwardKey::KeyBrowserForwardALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardSHIFT() {
@@ -162,6 +176,7 @@ void BrowserForwardKey::KeyBrowserForwardSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForwardOsKey() {
@@ -173,6 +188,7 @@ void BrowserForwardKey::KeyBrowserForwardOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserForwardKey::KeyBrowserForward() {
@@ -184,6 +200,7 @@ void BrowserForwardKey::KeyBrowserForward() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

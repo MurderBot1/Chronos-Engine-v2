@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef EscapeKey_CPP
 #define EscapeKey_CPP
@@ -19,6 +20,7 @@ void EscapeKey::KeyEscapeOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void EscapeKey::KeyEscapeSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void EscapeKey::KeyEscapeOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void EscapeKey::KeyEscapeOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void EscapeKey::KeyEscapeOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeALTCTRL() {
@@ -74,6 +80,7 @@ void EscapeKey::KeyEscapeALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeSHIFTCTRL() {
@@ -85,6 +92,7 @@ void EscapeKey::KeyEscapeSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeSHIFTALT() {
@@ -96,6 +104,7 @@ void EscapeKey::KeyEscapeSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeOsKeyCTRL() {
@@ -107,6 +116,7 @@ void EscapeKey::KeyEscapeOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeOsKeyALT() {
@@ -118,6 +128,7 @@ void EscapeKey::KeyEscapeOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeOsKeySHIFT() {
@@ -129,6 +140,7 @@ void EscapeKey::KeyEscapeOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeCTRL() {
@@ -140,6 +152,7 @@ void EscapeKey::KeyEscapeCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeALT() {
@@ -151,6 +164,7 @@ void EscapeKey::KeyEscapeALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeSHIFT() {
@@ -162,6 +176,7 @@ void EscapeKey::KeyEscapeSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscapeOsKey() {
@@ -173,6 +188,7 @@ void EscapeKey::KeyEscapeOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EscapeKey::KeyEscape() {
@@ -184,6 +200,7 @@ void EscapeKey::KeyEscape() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

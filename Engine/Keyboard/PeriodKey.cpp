@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PeriodKey_CPP
 #define PeriodKey_CPP
@@ -19,6 +20,7 @@ void PeriodKey::KeyPeriodOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PeriodKey::KeyPeriodSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PeriodKey::KeyPeriodOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PeriodKey::KeyPeriodOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PeriodKey::KeyPeriodOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodALTCTRL() {
@@ -74,6 +80,7 @@ void PeriodKey::KeyPeriodALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PeriodKey::KeyPeriodSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodSHIFTALT() {
@@ -96,6 +104,7 @@ void PeriodKey::KeyPeriodSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PeriodKey::KeyPeriodOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodOsKeyALT() {
@@ -118,6 +128,7 @@ void PeriodKey::KeyPeriodOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PeriodKey::KeyPeriodOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodCTRL() {
@@ -140,6 +152,7 @@ void PeriodKey::KeyPeriodCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodALT() {
@@ -151,6 +164,7 @@ void PeriodKey::KeyPeriodALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodSHIFT() {
@@ -162,6 +176,7 @@ void PeriodKey::KeyPeriodSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriodOsKey() {
@@ -173,6 +188,7 @@ void PeriodKey::KeyPeriodOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PeriodKey::KeyPeriod() {
@@ -184,6 +200,7 @@ void PeriodKey::KeyPeriod() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

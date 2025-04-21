@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef NKey_CPP
 #define NKey_CPP
@@ -19,6 +20,7 @@ void NKey::KeyNOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void NKey::KeyNSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void NKey::KeyNOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void NKey::KeyNOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void NKey::KeyNOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNALTCTRL() {
@@ -74,6 +80,7 @@ void NKey::KeyNALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNSHIFTCTRL() {
@@ -85,6 +92,7 @@ void NKey::KeyNSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNSHIFTALT() {
@@ -96,6 +104,7 @@ void NKey::KeyNSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNOsKeyCTRL() {
@@ -107,6 +116,7 @@ void NKey::KeyNOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNOsKeyALT() {
@@ -118,6 +128,7 @@ void NKey::KeyNOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNOsKeySHIFT() {
@@ -129,6 +140,7 @@ void NKey::KeyNOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNCTRL() {
@@ -140,6 +152,7 @@ void NKey::KeyNCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNALT() {
@@ -151,6 +164,7 @@ void NKey::KeyNALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNSHIFT() {
@@ -162,6 +176,7 @@ void NKey::KeyNSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyNOsKey() {
@@ -173,6 +188,7 @@ void NKey::KeyNOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void NKey::KeyN() {
@@ -184,6 +200,7 @@ void NKey::KeyN() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef SixKey_CPP
 #define SixKey_CPP
@@ -19,6 +20,7 @@ void SixKey::KeySixOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void SixKey::KeySixSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void SixKey::KeySixOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void SixKey::KeySixOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void SixKey::KeySixOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixALTCTRL() {
@@ -74,6 +80,7 @@ void SixKey::KeySixALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixSHIFTCTRL() {
@@ -85,6 +92,7 @@ void SixKey::KeySixSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixSHIFTALT() {
@@ -96,6 +104,7 @@ void SixKey::KeySixSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixOsKeyCTRL() {
@@ -107,6 +116,7 @@ void SixKey::KeySixOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixOsKeyALT() {
@@ -118,6 +128,7 @@ void SixKey::KeySixOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixOsKeySHIFT() {
@@ -129,6 +140,7 @@ void SixKey::KeySixOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixCTRL() {
@@ -140,6 +152,7 @@ void SixKey::KeySixCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixALT() {
@@ -151,6 +164,7 @@ void SixKey::KeySixALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixSHIFT() {
@@ -162,6 +176,7 @@ void SixKey::KeySixSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySixOsKey() {
@@ -173,6 +188,7 @@ void SixKey::KeySixOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SixKey::KeySix() {
@@ -184,6 +200,7 @@ void SixKey::KeySix() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

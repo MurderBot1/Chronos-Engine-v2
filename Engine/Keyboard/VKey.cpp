@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef VKey_CPP
 #define VKey_CPP
@@ -19,6 +20,7 @@ void VKey::KeyVOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void VKey::KeyVSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void VKey::KeyVOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void VKey::KeyVOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void VKey::KeyVOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVALTCTRL() {
@@ -74,6 +80,7 @@ void VKey::KeyVALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVSHIFTCTRL() {
@@ -85,6 +92,7 @@ void VKey::KeyVSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVSHIFTALT() {
@@ -96,6 +104,7 @@ void VKey::KeyVSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVOsKeyCTRL() {
@@ -107,6 +116,7 @@ void VKey::KeyVOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVOsKeyALT() {
@@ -118,6 +128,7 @@ void VKey::KeyVOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVOsKeySHIFT() {
@@ -129,6 +140,7 @@ void VKey::KeyVOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVCTRL() {
@@ -140,6 +152,7 @@ void VKey::KeyVCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVALT() {
@@ -151,6 +164,7 @@ void VKey::KeyVALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVSHIFT() {
@@ -162,6 +176,7 @@ void VKey::KeyVSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyVOsKey() {
@@ -173,6 +188,7 @@ void VKey::KeyVOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VKey::KeyV() {
@@ -184,6 +200,7 @@ void VKey::KeyV() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

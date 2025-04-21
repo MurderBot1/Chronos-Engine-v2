@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef EndKey_CPP
 #define EndKey_CPP
@@ -19,6 +20,7 @@ void EndKey::KeyEndOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void EndKey::KeyEndSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void EndKey::KeyEndOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void EndKey::KeyEndOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void EndKey::KeyEndOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndALTCTRL() {
@@ -74,6 +80,7 @@ void EndKey::KeyEndALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndSHIFTCTRL() {
@@ -85,6 +92,7 @@ void EndKey::KeyEndSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndSHIFTALT() {
@@ -96,6 +104,7 @@ void EndKey::KeyEndSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndOsKeyCTRL() {
@@ -107,6 +116,7 @@ void EndKey::KeyEndOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndOsKeyALT() {
@@ -118,6 +128,7 @@ void EndKey::KeyEndOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndOsKeySHIFT() {
@@ -129,6 +140,7 @@ void EndKey::KeyEndOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndCTRL() {
@@ -140,6 +152,7 @@ void EndKey::KeyEndCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndALT() {
@@ -151,6 +164,7 @@ void EndKey::KeyEndALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndSHIFT() {
@@ -162,6 +176,7 @@ void EndKey::KeyEndSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEndOsKey() {
@@ -173,6 +188,7 @@ void EndKey::KeyEndOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EndKey::KeyEnd() {
@@ -184,6 +200,7 @@ void EndKey::KeyEnd() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

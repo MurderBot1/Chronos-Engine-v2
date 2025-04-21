@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BackspaceKey_CPP
 #define BackspaceKey_CPP
@@ -19,6 +20,7 @@ void BackspaceKey::KeyBackspaceOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BackspaceKey::KeyBackspaceSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BackspaceKey::KeyBackspaceOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BackspaceKey::KeyBackspaceOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BackspaceKey::KeyBackspaceOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceALTCTRL() {
@@ -74,6 +80,7 @@ void BackspaceKey::KeyBackspaceALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BackspaceKey::KeyBackspaceSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceSHIFTALT() {
@@ -96,6 +104,7 @@ void BackspaceKey::KeyBackspaceSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BackspaceKey::KeyBackspaceOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceOsKeyALT() {
@@ -118,6 +128,7 @@ void BackspaceKey::KeyBackspaceOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceOsKeySHIFT() {
@@ -129,17 +140,19 @@ void BackspaceKey::KeyBackspaceOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceCTRL() {
     /*
-        Windows 11 = 
+        Windows 11 = Delete words to the left of the cursor.
         Windows 10 = 
         Linux = 
         MacOS = 
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceALT() {
@@ -151,6 +164,7 @@ void BackspaceKey::KeyBackspaceALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceSHIFT() {
@@ -162,6 +176,7 @@ void BackspaceKey::KeyBackspaceSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspaceOsKey() {
@@ -173,17 +188,19 @@ void BackspaceKey::KeyBackspaceOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BackspaceKey::KeyBackspace() {
     /*
-        Windows 11 = 
+        Windows 11 = Delete characters to the left of the cursor.
         Windows 10 = 
         Linux = 
         MacOS = 
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PauseKey_CPP
 #define PauseKey_CPP
@@ -19,6 +20,7 @@ void PauseKey::KeyPauseOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PauseKey::KeyPauseSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PauseKey::KeyPauseOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PauseKey::KeyPauseOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PauseKey::KeyPauseOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseALTCTRL() {
@@ -74,6 +80,7 @@ void PauseKey::KeyPauseALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PauseKey::KeyPauseSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseSHIFTALT() {
@@ -96,6 +104,7 @@ void PauseKey::KeyPauseSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PauseKey::KeyPauseOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseOsKeyALT() {
@@ -118,6 +128,7 @@ void PauseKey::KeyPauseOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PauseKey::KeyPauseOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseCTRL() {
@@ -140,6 +152,7 @@ void PauseKey::KeyPauseCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseALT() {
@@ -151,6 +164,7 @@ void PauseKey::KeyPauseALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseSHIFT() {
@@ -162,6 +176,7 @@ void PauseKey::KeyPauseSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPauseOsKey() {
@@ -173,6 +188,7 @@ void PauseKey::KeyPauseOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PauseKey::KeyPause() {
@@ -184,6 +200,7 @@ void PauseKey::KeyPause() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

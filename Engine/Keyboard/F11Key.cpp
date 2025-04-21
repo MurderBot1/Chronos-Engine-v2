@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F11Key_CPP
 #define F11Key_CPP
@@ -19,6 +20,7 @@ void F11Key::KeyF11OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F11Key::KeyF11SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F11Key::KeyF11OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F11Key::KeyF11OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F11Key::KeyF11OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11ALTCTRL() {
@@ -74,6 +80,7 @@ void F11Key::KeyF11ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F11Key::KeyF11SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11SHIFTALT() {
@@ -96,6 +104,7 @@ void F11Key::KeyF11SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F11Key::KeyF11OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11OsKeyALT() {
@@ -118,6 +128,7 @@ void F11Key::KeyF11OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F11Key::KeyF11OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11CTRL() {
@@ -140,6 +152,7 @@ void F11Key::KeyF11CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11ALT() {
@@ -151,6 +164,7 @@ void F11Key::KeyF11ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11SHIFT() {
@@ -162,6 +176,7 @@ void F11Key::KeyF11SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11OsKey() {
@@ -173,6 +188,7 @@ void F11Key::KeyF11OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F11Key::KeyF11() {
@@ -184,6 +200,7 @@ void F11Key::KeyF11() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

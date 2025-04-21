@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef ForwardSlashKey_CPP
 #define ForwardSlashKey_CPP
@@ -19,6 +20,7 @@ void ForwardSlashKey::KeyForwardSlashOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void ForwardSlashKey::KeyForwardSlashSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void ForwardSlashKey::KeyForwardSlashOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void ForwardSlashKey::KeyForwardSlashOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void ForwardSlashKey::KeyForwardSlashOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashALTCTRL() {
@@ -74,6 +80,7 @@ void ForwardSlashKey::KeyForwardSlashALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashSHIFTCTRL() {
@@ -85,6 +92,7 @@ void ForwardSlashKey::KeyForwardSlashSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashSHIFTALT() {
@@ -96,6 +104,7 @@ void ForwardSlashKey::KeyForwardSlashSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashOsKeyCTRL() {
@@ -107,6 +116,7 @@ void ForwardSlashKey::KeyForwardSlashOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashOsKeyALT() {
@@ -118,6 +128,7 @@ void ForwardSlashKey::KeyForwardSlashOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashOsKeySHIFT() {
@@ -129,6 +140,7 @@ void ForwardSlashKey::KeyForwardSlashOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashCTRL() {
@@ -140,6 +152,7 @@ void ForwardSlashKey::KeyForwardSlashCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashALT() {
@@ -151,6 +164,7 @@ void ForwardSlashKey::KeyForwardSlashALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashSHIFT() {
@@ -162,6 +176,7 @@ void ForwardSlashKey::KeyForwardSlashSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlashOsKey() {
@@ -173,6 +188,7 @@ void ForwardSlashKey::KeyForwardSlashOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ForwardSlashKey::KeyForwardSlash() {
@@ -184,6 +200,7 @@ void ForwardSlashKey::KeyForwardSlash() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

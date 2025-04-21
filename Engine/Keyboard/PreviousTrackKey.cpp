@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef PreviousTrackKey_CPP
 #define PreviousTrackKey_CPP
@@ -19,6 +20,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void PreviousTrackKey::KeyPreviousTrackSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackALTCTRL() {
@@ -74,6 +80,7 @@ void PreviousTrackKey::KeyPreviousTrackALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackSHIFTCTRL() {
@@ -85,6 +92,7 @@ void PreviousTrackKey::KeyPreviousTrackSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackSHIFTALT() {
@@ -96,6 +104,7 @@ void PreviousTrackKey::KeyPreviousTrackSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackOsKeyCTRL() {
@@ -107,6 +116,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackOsKeyALT() {
@@ -118,6 +128,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackOsKeySHIFT() {
@@ -129,6 +140,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackCTRL() {
@@ -140,6 +152,7 @@ void PreviousTrackKey::KeyPreviousTrackCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackALT() {
@@ -151,6 +164,7 @@ void PreviousTrackKey::KeyPreviousTrackALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackSHIFT() {
@@ -162,6 +176,7 @@ void PreviousTrackKey::KeyPreviousTrackSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrackOsKey() {
@@ -173,6 +188,7 @@ void PreviousTrackKey::KeyPreviousTrackOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void PreviousTrackKey::KeyPreviousTrack() {
@@ -184,6 +200,7 @@ void PreviousTrackKey::KeyPreviousTrack() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

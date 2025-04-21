@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef SevenKey_CPP
 #define SevenKey_CPP
@@ -19,6 +20,7 @@ void SevenKey::KeySevenOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void SevenKey::KeySevenSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void SevenKey::KeySevenOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void SevenKey::KeySevenOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void SevenKey::KeySevenOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenALTCTRL() {
@@ -74,6 +80,7 @@ void SevenKey::KeySevenALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenSHIFTCTRL() {
@@ -85,6 +92,7 @@ void SevenKey::KeySevenSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenSHIFTALT() {
@@ -96,6 +104,7 @@ void SevenKey::KeySevenSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenOsKeyCTRL() {
@@ -107,6 +116,7 @@ void SevenKey::KeySevenOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenOsKeyALT() {
@@ -118,6 +128,7 @@ void SevenKey::KeySevenOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenOsKeySHIFT() {
@@ -129,6 +140,7 @@ void SevenKey::KeySevenOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenCTRL() {
@@ -140,6 +152,7 @@ void SevenKey::KeySevenCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenALT() {
@@ -151,6 +164,7 @@ void SevenKey::KeySevenALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenSHIFT() {
@@ -162,6 +176,7 @@ void SevenKey::KeySevenSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySevenOsKey() {
@@ -173,6 +188,7 @@ void SevenKey::KeySevenOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SevenKey::KeySeven() {
@@ -184,6 +200,7 @@ void SevenKey::KeySeven() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

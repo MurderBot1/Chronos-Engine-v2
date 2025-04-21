@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F10Key_CPP
 #define F10Key_CPP
@@ -19,6 +20,7 @@ void F10Key::KeyF10OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F10Key::KeyF10SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F10Key::KeyF10OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F10Key::KeyF10OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F10Key::KeyF10OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10ALTCTRL() {
@@ -74,6 +80,7 @@ void F10Key::KeyF10ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F10Key::KeyF10SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10SHIFTALT() {
@@ -96,6 +104,7 @@ void F10Key::KeyF10SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F10Key::KeyF10OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10OsKeyALT() {
@@ -118,6 +128,7 @@ void F10Key::KeyF10OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F10Key::KeyF10OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10CTRL() {
@@ -140,6 +152,7 @@ void F10Key::KeyF10CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10ALT() {
@@ -151,6 +164,7 @@ void F10Key::KeyF10ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10SHIFT() {
@@ -162,6 +176,7 @@ void F10Key::KeyF10SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10OsKey() {
@@ -173,6 +188,7 @@ void F10Key::KeyF10OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F10Key::KeyF10() {
@@ -184,6 +200,7 @@ void F10Key::KeyF10() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

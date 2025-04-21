@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef SelectMediaKey_CPP
 #define SelectMediaKey_CPP
@@ -19,6 +20,7 @@ void SelectMediaKey::KeySelectMediaOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void SelectMediaKey::KeySelectMediaSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void SelectMediaKey::KeySelectMediaOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void SelectMediaKey::KeySelectMediaOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void SelectMediaKey::KeySelectMediaOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaALTCTRL() {
@@ -74,6 +80,7 @@ void SelectMediaKey::KeySelectMediaALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaSHIFTCTRL() {
@@ -85,6 +92,7 @@ void SelectMediaKey::KeySelectMediaSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaSHIFTALT() {
@@ -96,6 +104,7 @@ void SelectMediaKey::KeySelectMediaSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaOsKeyCTRL() {
@@ -107,6 +116,7 @@ void SelectMediaKey::KeySelectMediaOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaOsKeyALT() {
@@ -118,6 +128,7 @@ void SelectMediaKey::KeySelectMediaOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaOsKeySHIFT() {
@@ -129,6 +140,7 @@ void SelectMediaKey::KeySelectMediaOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaCTRL() {
@@ -140,6 +152,7 @@ void SelectMediaKey::KeySelectMediaCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaALT() {
@@ -151,6 +164,7 @@ void SelectMediaKey::KeySelectMediaALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaSHIFT() {
@@ -162,6 +176,7 @@ void SelectMediaKey::KeySelectMediaSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMediaOsKey() {
@@ -173,6 +188,7 @@ void SelectMediaKey::KeySelectMediaOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void SelectMediaKey::KeySelectMedia() {
@@ -184,6 +200,7 @@ void SelectMediaKey::KeySelectMedia() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

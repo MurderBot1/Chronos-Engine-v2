@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BrowserStartKey_CPP
 #define BrowserStartKey_CPP
@@ -19,6 +20,7 @@ void BrowserStartKey::KeyBrowserStartOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BrowserStartKey::KeyBrowserStartSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BrowserStartKey::KeyBrowserStartOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BrowserStartKey::KeyBrowserStartOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BrowserStartKey::KeyBrowserStartOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartALTCTRL() {
@@ -74,6 +80,7 @@ void BrowserStartKey::KeyBrowserStartALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BrowserStartKey::KeyBrowserStartSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartSHIFTALT() {
@@ -96,6 +104,7 @@ void BrowserStartKey::KeyBrowserStartSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BrowserStartKey::KeyBrowserStartOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartOsKeyALT() {
@@ -118,6 +128,7 @@ void BrowserStartKey::KeyBrowserStartOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartOsKeySHIFT() {
@@ -129,6 +140,7 @@ void BrowserStartKey::KeyBrowserStartOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartCTRL() {
@@ -140,6 +152,7 @@ void BrowserStartKey::KeyBrowserStartCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartALT() {
@@ -151,6 +164,7 @@ void BrowserStartKey::KeyBrowserStartALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartSHIFT() {
@@ -162,6 +176,7 @@ void BrowserStartKey::KeyBrowserStartSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStartOsKey() {
@@ -173,6 +188,7 @@ void BrowserStartKey::KeyBrowserStartOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserStartKey::KeyBrowserStart() {
@@ -184,6 +200,7 @@ void BrowserStartKey::KeyBrowserStart() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

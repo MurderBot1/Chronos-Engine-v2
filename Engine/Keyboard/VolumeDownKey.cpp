@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef VolumeDownKey_CPP
 #define VolumeDownKey_CPP
@@ -19,6 +20,7 @@ void VolumeDownKey::KeyVolumeDownOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void VolumeDownKey::KeyVolumeDownSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void VolumeDownKey::KeyVolumeDownOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void VolumeDownKey::KeyVolumeDownOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void VolumeDownKey::KeyVolumeDownOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownALTCTRL() {
@@ -74,6 +80,7 @@ void VolumeDownKey::KeyVolumeDownALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownSHIFTCTRL() {
@@ -85,6 +92,7 @@ void VolumeDownKey::KeyVolumeDownSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownSHIFTALT() {
@@ -96,6 +104,7 @@ void VolumeDownKey::KeyVolumeDownSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownOsKeyCTRL() {
@@ -107,6 +116,7 @@ void VolumeDownKey::KeyVolumeDownOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownOsKeyALT() {
@@ -118,6 +128,7 @@ void VolumeDownKey::KeyVolumeDownOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownOsKeySHIFT() {
@@ -129,6 +140,7 @@ void VolumeDownKey::KeyVolumeDownOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownCTRL() {
@@ -140,6 +152,7 @@ void VolumeDownKey::KeyVolumeDownCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownALT() {
@@ -151,6 +164,7 @@ void VolumeDownKey::KeyVolumeDownALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownSHIFT() {
@@ -162,6 +176,7 @@ void VolumeDownKey::KeyVolumeDownSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDownOsKey() {
@@ -173,6 +188,7 @@ void VolumeDownKey::KeyVolumeDownOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void VolumeDownKey::KeyVolumeDown() {
@@ -184,6 +200,7 @@ void VolumeDownKey::KeyVolumeDown() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

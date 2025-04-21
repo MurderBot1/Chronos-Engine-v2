@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F9Key_CPP
 #define F9Key_CPP
@@ -19,6 +20,7 @@ void F9Key::KeyF9OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F9Key::KeyF9SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F9Key::KeyF9OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F9Key::KeyF9OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F9Key::KeyF9OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9ALTCTRL() {
@@ -74,6 +80,7 @@ void F9Key::KeyF9ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F9Key::KeyF9SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9SHIFTALT() {
@@ -96,6 +104,7 @@ void F9Key::KeyF9SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F9Key::KeyF9OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9OsKeyALT() {
@@ -118,6 +128,7 @@ void F9Key::KeyF9OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F9Key::KeyF9OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9CTRL() {
@@ -140,6 +152,7 @@ void F9Key::KeyF9CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9ALT() {
@@ -151,6 +164,7 @@ void F9Key::KeyF9ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9SHIFT() {
@@ -162,6 +176,7 @@ void F9Key::KeyF9SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9OsKey() {
@@ -173,6 +188,7 @@ void F9Key::KeyF9OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F9Key::KeyF9() {
@@ -184,6 +200,7 @@ void F9Key::KeyF9() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef EnterKey_CPP
 #define EnterKey_CPP
@@ -19,6 +20,7 @@ void EnterKey::KeyEnterOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void EnterKey::KeyEnterSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void EnterKey::KeyEnterOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void EnterKey::KeyEnterOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void EnterKey::KeyEnterOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterALTCTRL() {
@@ -74,6 +80,7 @@ void EnterKey::KeyEnterALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterSHIFTCTRL() {
@@ -85,6 +92,7 @@ void EnterKey::KeyEnterSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterSHIFTALT() {
@@ -96,6 +104,7 @@ void EnterKey::KeyEnterSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterOsKeyCTRL() {
@@ -107,6 +116,7 @@ void EnterKey::KeyEnterOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterOsKeyALT() {
@@ -118,6 +128,7 @@ void EnterKey::KeyEnterOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterOsKeySHIFT() {
@@ -129,6 +140,7 @@ void EnterKey::KeyEnterOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterCTRL() {
@@ -140,6 +152,7 @@ void EnterKey::KeyEnterCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterALT() {
@@ -151,6 +164,7 @@ void EnterKey::KeyEnterALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterSHIFT() {
@@ -162,6 +176,7 @@ void EnterKey::KeyEnterSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnterOsKey() {
@@ -173,6 +188,7 @@ void EnterKey::KeyEnterOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EnterKey::KeyEnter() {
@@ -184,6 +200,7 @@ void EnterKey::KeyEnter() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef XKey_CPP
 #define XKey_CPP
@@ -19,6 +20,7 @@ void XKey::KeyXOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void XKey::KeyXSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void XKey::KeyXOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void XKey::KeyXOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void XKey::KeyXOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXALTCTRL() {
@@ -74,6 +80,7 @@ void XKey::KeyXALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXSHIFTCTRL() {
@@ -85,6 +92,7 @@ void XKey::KeyXSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXSHIFTALT() {
@@ -96,6 +104,7 @@ void XKey::KeyXSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXOsKeyCTRL() {
@@ -107,6 +116,7 @@ void XKey::KeyXOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXOsKeyALT() {
@@ -118,6 +128,7 @@ void XKey::KeyXOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXOsKeySHIFT() {
@@ -129,6 +140,7 @@ void XKey::KeyXOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXCTRL() {
@@ -140,6 +152,7 @@ void XKey::KeyXCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXALT() {
@@ -151,6 +164,7 @@ void XKey::KeyXALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXSHIFT() {
@@ -162,6 +176,7 @@ void XKey::KeyXSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyXOsKey() {
@@ -173,6 +188,7 @@ void XKey::KeyXOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void XKey::KeyX() {
@@ -184,6 +200,7 @@ void XKey::KeyX() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

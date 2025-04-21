@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef Numpad4Key_CPP
 #define Numpad4Key_CPP
@@ -19,6 +20,7 @@ void Numpad4Key::KeyNumpad4OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void Numpad4Key::KeyNumpad4SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void Numpad4Key::KeyNumpad4OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void Numpad4Key::KeyNumpad4OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void Numpad4Key::KeyNumpad4OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4ALTCTRL() {
@@ -74,6 +80,7 @@ void Numpad4Key::KeyNumpad4ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4SHIFTCTRL() {
@@ -85,6 +92,7 @@ void Numpad4Key::KeyNumpad4SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4SHIFTALT() {
@@ -96,6 +104,7 @@ void Numpad4Key::KeyNumpad4SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4OsKeyCTRL() {
@@ -107,6 +116,7 @@ void Numpad4Key::KeyNumpad4OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4OsKeyALT() {
@@ -118,6 +128,7 @@ void Numpad4Key::KeyNumpad4OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4OsKeySHIFT() {
@@ -129,6 +140,7 @@ void Numpad4Key::KeyNumpad4OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4CTRL() {
@@ -140,6 +152,7 @@ void Numpad4Key::KeyNumpad4CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4ALT() {
@@ -151,6 +164,7 @@ void Numpad4Key::KeyNumpad4ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4SHIFT() {
@@ -162,6 +176,7 @@ void Numpad4Key::KeyNumpad4SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4OsKey() {
@@ -173,6 +188,7 @@ void Numpad4Key::KeyNumpad4OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void Numpad4Key::KeyNumpad4() {
@@ -184,6 +200,7 @@ void Numpad4Key::KeyNumpad4() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

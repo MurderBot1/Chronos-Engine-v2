@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef AppsKey_CPP
 #define AppsKey_CPP
@@ -19,6 +20,7 @@ void AppsKey::KeyAppsOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void AppsKey::KeyAppsSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void AppsKey::KeyAppsOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void AppsKey::KeyAppsOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void AppsKey::KeyAppsOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsALTCTRL() {
@@ -74,6 +80,7 @@ void AppsKey::KeyAppsALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsSHIFTCTRL() {
@@ -85,6 +92,7 @@ void AppsKey::KeyAppsSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsSHIFTALT() {
@@ -96,6 +104,7 @@ void AppsKey::KeyAppsSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsOsKeyCTRL() {
@@ -107,6 +116,7 @@ void AppsKey::KeyAppsOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsOsKeyALT() {
@@ -118,6 +128,7 @@ void AppsKey::KeyAppsOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsOsKeySHIFT() {
@@ -129,6 +140,7 @@ void AppsKey::KeyAppsOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsCTRL() {
@@ -140,6 +152,7 @@ void AppsKey::KeyAppsCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsALT() {
@@ -151,6 +164,7 @@ void AppsKey::KeyAppsALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsSHIFT() {
@@ -162,6 +176,7 @@ void AppsKey::KeyAppsSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyAppsOsKey() {
@@ -173,6 +188,7 @@ void AppsKey::KeyAppsOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void AppsKey::KeyApps() {
@@ -184,6 +200,7 @@ void AppsKey::KeyApps() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

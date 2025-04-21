@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef EightKey_CPP
 #define EightKey_CPP
@@ -19,6 +20,7 @@ void EightKey::KeyEightOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void EightKey::KeyEightSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void EightKey::KeyEightOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void EightKey::KeyEightOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void EightKey::KeyEightOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightALTCTRL() {
@@ -74,6 +80,7 @@ void EightKey::KeyEightALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightSHIFTCTRL() {
@@ -85,6 +92,7 @@ void EightKey::KeyEightSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightSHIFTALT() {
@@ -96,6 +104,7 @@ void EightKey::KeyEightSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightOsKeyCTRL() {
@@ -107,6 +116,7 @@ void EightKey::KeyEightOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightOsKeyALT() {
@@ -118,6 +128,7 @@ void EightKey::KeyEightOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightOsKeySHIFT() {
@@ -129,6 +140,7 @@ void EightKey::KeyEightOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightCTRL() {
@@ -140,6 +152,7 @@ void EightKey::KeyEightCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightALT() {
@@ -151,6 +164,7 @@ void EightKey::KeyEightALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightSHIFT() {
@@ -162,6 +176,7 @@ void EightKey::KeyEightSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEightOsKey() {
@@ -173,6 +188,7 @@ void EightKey::KeyEightOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void EightKey::KeyEight() {
@@ -184,6 +200,7 @@ void EightKey::KeyEight() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

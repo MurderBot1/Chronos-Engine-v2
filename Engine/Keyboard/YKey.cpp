@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef YKey_CPP
 #define YKey_CPP
@@ -19,6 +20,7 @@ void YKey::KeyYOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void YKey::KeyYSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void YKey::KeyYOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void YKey::KeyYOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void YKey::KeyYOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYALTCTRL() {
@@ -74,6 +80,7 @@ void YKey::KeyYALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYSHIFTCTRL() {
@@ -85,6 +92,7 @@ void YKey::KeyYSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYSHIFTALT() {
@@ -96,6 +104,7 @@ void YKey::KeyYSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYOsKeyCTRL() {
@@ -107,6 +116,7 @@ void YKey::KeyYOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYOsKeyALT() {
@@ -118,6 +128,7 @@ void YKey::KeyYOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYOsKeySHIFT() {
@@ -129,6 +140,7 @@ void YKey::KeyYOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYCTRL() {
@@ -140,6 +152,7 @@ void YKey::KeyYCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYALT() {
@@ -151,6 +164,7 @@ void YKey::KeyYALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYSHIFT() {
@@ -162,6 +176,7 @@ void YKey::KeyYSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyYOsKey() {
@@ -173,6 +188,7 @@ void YKey::KeyYOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void YKey::KeyY() {
@@ -184,6 +200,7 @@ void YKey::KeyY() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

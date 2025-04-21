@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F6Key_CPP
 #define F6Key_CPP
@@ -19,6 +20,7 @@ void F6Key::KeyF6OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F6Key::KeyF6SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F6Key::KeyF6OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F6Key::KeyF6OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F6Key::KeyF6OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6ALTCTRL() {
@@ -74,6 +80,7 @@ void F6Key::KeyF6ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F6Key::KeyF6SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6SHIFTALT() {
@@ -96,6 +104,7 @@ void F6Key::KeyF6SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F6Key::KeyF6OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6OsKeyALT() {
@@ -118,6 +128,7 @@ void F6Key::KeyF6OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F6Key::KeyF6OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6CTRL() {
@@ -140,6 +152,7 @@ void F6Key::KeyF6CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6ALT() {
@@ -151,6 +164,7 @@ void F6Key::KeyF6ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6SHIFT() {
@@ -162,6 +176,7 @@ void F6Key::KeyF6SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6OsKey() {
@@ -173,6 +188,7 @@ void F6Key::KeyF6OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F6Key::KeyF6() {
@@ -184,6 +200,7 @@ void F6Key::KeyF6() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

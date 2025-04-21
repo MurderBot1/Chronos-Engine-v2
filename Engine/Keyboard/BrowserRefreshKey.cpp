@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BrowserRefreshKey_CPP
 #define BrowserRefreshKey_CPP
@@ -19,6 +20,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BrowserRefreshKey::KeyBrowserRefreshSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshALTCTRL() {
@@ -74,6 +80,7 @@ void BrowserRefreshKey::KeyBrowserRefreshALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BrowserRefreshKey::KeyBrowserRefreshSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshSHIFTALT() {
@@ -96,6 +104,7 @@ void BrowserRefreshKey::KeyBrowserRefreshSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshOsKeyALT() {
@@ -118,6 +128,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFT() {
@@ -129,6 +140,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshCTRL() {
@@ -140,6 +152,7 @@ void BrowserRefreshKey::KeyBrowserRefreshCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshALT() {
@@ -151,6 +164,7 @@ void BrowserRefreshKey::KeyBrowserRefreshALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshSHIFT() {
@@ -162,6 +176,7 @@ void BrowserRefreshKey::KeyBrowserRefreshSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefreshOsKey() {
@@ -173,6 +188,7 @@ void BrowserRefreshKey::KeyBrowserRefreshOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserRefreshKey::KeyBrowserRefresh() {
@@ -184,6 +200,7 @@ void BrowserRefreshKey::KeyBrowserRefresh() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

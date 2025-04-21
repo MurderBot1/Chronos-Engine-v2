@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef StopTrackKey_CPP
 #define StopTrackKey_CPP
@@ -19,6 +20,7 @@ void StopTrackKey::KeyStopTrackOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void StopTrackKey::KeyStopTrackSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void StopTrackKey::KeyStopTrackOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void StopTrackKey::KeyStopTrackOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void StopTrackKey::KeyStopTrackOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackALTCTRL() {
@@ -74,6 +80,7 @@ void StopTrackKey::KeyStopTrackALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackSHIFTCTRL() {
@@ -85,6 +92,7 @@ void StopTrackKey::KeyStopTrackSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackSHIFTALT() {
@@ -96,6 +104,7 @@ void StopTrackKey::KeyStopTrackSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackOsKeyCTRL() {
@@ -107,6 +116,7 @@ void StopTrackKey::KeyStopTrackOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackOsKeyALT() {
@@ -118,6 +128,7 @@ void StopTrackKey::KeyStopTrackOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackOsKeySHIFT() {
@@ -129,6 +140,7 @@ void StopTrackKey::KeyStopTrackOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackCTRL() {
@@ -140,6 +152,7 @@ void StopTrackKey::KeyStopTrackCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackALT() {
@@ -151,6 +164,7 @@ void StopTrackKey::KeyStopTrackALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackSHIFT() {
@@ -162,6 +176,7 @@ void StopTrackKey::KeyStopTrackSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrackOsKey() {
@@ -173,6 +188,7 @@ void StopTrackKey::KeyStopTrackOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void StopTrackKey::KeyStopTrack() {
@@ -184,6 +200,7 @@ void StopTrackKey::KeyStopTrack() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

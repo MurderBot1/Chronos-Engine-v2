@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef HelpKey_CPP
 #define HelpKey_CPP
@@ -19,6 +20,7 @@ void HelpKey::KeyHelpOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void HelpKey::KeyHelpSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void HelpKey::KeyHelpOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void HelpKey::KeyHelpOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void HelpKey::KeyHelpOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpALTCTRL() {
@@ -74,6 +80,7 @@ void HelpKey::KeyHelpALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpSHIFTCTRL() {
@@ -85,6 +92,7 @@ void HelpKey::KeyHelpSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpSHIFTALT() {
@@ -96,6 +104,7 @@ void HelpKey::KeyHelpSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpOsKeyCTRL() {
@@ -107,6 +116,7 @@ void HelpKey::KeyHelpOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpOsKeyALT() {
@@ -118,6 +128,7 @@ void HelpKey::KeyHelpOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpOsKeySHIFT() {
@@ -129,6 +140,7 @@ void HelpKey::KeyHelpOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpCTRL() {
@@ -140,6 +152,7 @@ void HelpKey::KeyHelpCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpALT() {
@@ -151,6 +164,7 @@ void HelpKey::KeyHelpALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpSHIFT() {
@@ -162,6 +176,7 @@ void HelpKey::KeyHelpSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelpOsKey() {
@@ -173,6 +188,7 @@ void HelpKey::KeyHelpOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void HelpKey::KeyHelp() {
@@ -184,6 +200,7 @@ void HelpKey::KeyHelp() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

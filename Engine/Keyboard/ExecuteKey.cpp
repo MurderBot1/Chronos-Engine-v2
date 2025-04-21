@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef ExecuteKey_CPP
 #define ExecuteKey_CPP
@@ -19,6 +20,7 @@ void ExecuteKey::KeyExecuteOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void ExecuteKey::KeyExecuteSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void ExecuteKey::KeyExecuteOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void ExecuteKey::KeyExecuteOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void ExecuteKey::KeyExecuteOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteALTCTRL() {
@@ -74,6 +80,7 @@ void ExecuteKey::KeyExecuteALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteSHIFTCTRL() {
@@ -85,6 +92,7 @@ void ExecuteKey::KeyExecuteSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteSHIFTALT() {
@@ -96,6 +104,7 @@ void ExecuteKey::KeyExecuteSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteOsKeyCTRL() {
@@ -107,6 +116,7 @@ void ExecuteKey::KeyExecuteOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteOsKeyALT() {
@@ -118,6 +128,7 @@ void ExecuteKey::KeyExecuteOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteOsKeySHIFT() {
@@ -129,6 +140,7 @@ void ExecuteKey::KeyExecuteOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteCTRL() {
@@ -140,6 +152,7 @@ void ExecuteKey::KeyExecuteCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteALT() {
@@ -151,6 +164,7 @@ void ExecuteKey::KeyExecuteALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteSHIFT() {
@@ -162,6 +176,7 @@ void ExecuteKey::KeyExecuteSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecuteOsKey() {
@@ -173,6 +188,7 @@ void ExecuteKey::KeyExecuteOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void ExecuteKey::KeyExecute() {
@@ -184,6 +200,7 @@ void ExecuteKey::KeyExecute() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

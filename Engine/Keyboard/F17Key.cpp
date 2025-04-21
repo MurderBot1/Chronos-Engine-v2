@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F17Key_CPP
 #define F17Key_CPP
@@ -19,6 +20,7 @@ void F17Key::KeyF17OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F17Key::KeyF17SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F17Key::KeyF17OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F17Key::KeyF17OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F17Key::KeyF17OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17ALTCTRL() {
@@ -74,6 +80,7 @@ void F17Key::KeyF17ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F17Key::KeyF17SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17SHIFTALT() {
@@ -96,6 +104,7 @@ void F17Key::KeyF17SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F17Key::KeyF17OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17OsKeyALT() {
@@ -118,6 +128,7 @@ void F17Key::KeyF17OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F17Key::KeyF17OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17CTRL() {
@@ -140,6 +152,7 @@ void F17Key::KeyF17CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17ALT() {
@@ -151,6 +164,7 @@ void F17Key::KeyF17ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17SHIFT() {
@@ -162,6 +176,7 @@ void F17Key::KeyF17SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17OsKey() {
@@ -173,6 +188,7 @@ void F17Key::KeyF17OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F17Key::KeyF17() {
@@ -184,6 +200,7 @@ void F17Key::KeyF17() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

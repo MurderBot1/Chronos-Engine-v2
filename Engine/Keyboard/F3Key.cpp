@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F3Key_CPP
 #define F3Key_CPP
@@ -19,6 +20,7 @@ void F3Key::KeyF3OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F3Key::KeyF3SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F3Key::KeyF3OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F3Key::KeyF3OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F3Key::KeyF3OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3ALTCTRL() {
@@ -74,6 +80,7 @@ void F3Key::KeyF3ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F3Key::KeyF3SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3SHIFTALT() {
@@ -96,6 +104,7 @@ void F3Key::KeyF3SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F3Key::KeyF3OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3OsKeyALT() {
@@ -118,6 +128,7 @@ void F3Key::KeyF3OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F3Key::KeyF3OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3CTRL() {
@@ -140,6 +152,7 @@ void F3Key::KeyF3CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3ALT() {
@@ -151,6 +164,7 @@ void F3Key::KeyF3ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3SHIFT() {
@@ -162,6 +176,7 @@ void F3Key::KeyF3SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3OsKey() {
@@ -173,6 +188,7 @@ void F3Key::KeyF3OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F3Key::KeyF3() {
@@ -184,6 +200,7 @@ void F3Key::KeyF3() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

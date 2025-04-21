@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef BrowserFavoritesKey_CPP
 #define BrowserFavoritesKey_CPP
@@ -19,6 +20,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesSHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesSHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesOsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesALTCTRL() {
@@ -74,6 +80,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesSHIFTCTRL() {
@@ -85,6 +92,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesSHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesSHIFTALT() {
@@ -96,6 +104,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesSHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesOsKeyCTRL() {
@@ -107,6 +116,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesOsKeyALT() {
@@ -118,6 +128,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFT() {
@@ -129,6 +140,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesCTRL() {
@@ -140,6 +152,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesALT() {
@@ -151,6 +164,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesSHIFT() {
@@ -162,6 +176,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesSHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavoritesOsKey() {
@@ -173,6 +188,7 @@ void BrowserFavoritesKey::KeyBrowserFavoritesOsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void BrowserFavoritesKey::KeyBrowserFavorites() {
@@ -184,6 +200,7 @@ void BrowserFavoritesKey::KeyBrowserFavorites() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif

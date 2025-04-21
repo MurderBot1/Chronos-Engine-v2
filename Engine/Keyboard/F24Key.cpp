@@ -1,4 +1,5 @@
-// � 2025 Trent Cridland Murderbot1@outlook.com All Rights Reserved
+// © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
+/* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
 #ifndef F24Key_CPP
 #define F24Key_CPP
@@ -19,6 +20,7 @@ void F24Key::KeyF24OsKeySHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24SHIFTALTCTRL() {
@@ -30,6 +32,7 @@ void F24Key::KeyF24SHIFTALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24OsKeyALTCTRL() {
@@ -41,6 +44,7 @@ void F24Key::KeyF24OsKeyALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24OsKeySHIFTCTRL() {
@@ -52,6 +56,7 @@ void F24Key::KeyF24OsKeySHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24OsKeySHIFTALT() {
@@ -63,6 +68,7 @@ void F24Key::KeyF24OsKeySHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24ALTCTRL() {
@@ -74,6 +80,7 @@ void F24Key::KeyF24ALTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24SHIFTCTRL() {
@@ -85,6 +92,7 @@ void F24Key::KeyF24SHIFTCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24SHIFTALT() {
@@ -96,6 +104,7 @@ void F24Key::KeyF24SHIFTALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24OsKeyCTRL() {
@@ -107,6 +116,7 @@ void F24Key::KeyF24OsKeyCTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24OsKeyALT() {
@@ -118,6 +128,7 @@ void F24Key::KeyF24OsKeyALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24OsKeySHIFT() {
@@ -129,6 +140,7 @@ void F24Key::KeyF24OsKeySHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24CTRL() {
@@ -140,6 +152,7 @@ void F24Key::KeyF24CTRL() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24ALT() {
@@ -151,6 +164,7 @@ void F24Key::KeyF24ALT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24SHIFT() {
@@ -162,6 +176,7 @@ void F24Key::KeyF24SHIFT() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24OsKey() {
@@ -173,6 +188,7 @@ void F24Key::KeyF24OsKey() {
         Android = 
         IOS = 
     */
+    
 }
 
 void F24Key::KeyF24() {
@@ -184,6 +200,7 @@ void F24Key::KeyF24() {
         Android = 
         IOS = 
     */
+    
 }
 
 #endif
