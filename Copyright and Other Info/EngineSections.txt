@@ -1,5 +1,6 @@
 NOTE: Every part of the engine unless it is listed under this text and is indented is free to use with the engine.
     Server hosting for multiplayer : (Cost per month) 
+        * Note : To order fill out this form ()
         * Note : This is a service provided by Chronos Engine
         * Note : This option may not be avalible 
         * Note : You need to contact us to get this
@@ -9,6 +10,7 @@ NOTE: Every part of the engine unless it is listed under this text and is indent
         + $0.0625 per 1Mb of internet (Megabit = 1/8 of a Megabyte) (This is combined input and output streams)
         + $2.50 service fee
     Nonlocal AI hosting : (Cost per month) 
+        * Note : To order fill out this form ()
         * Note : This is a service provided by Chronos Engine
         * Note : This option may not be avalible 
         * Note : You need to contact us to get this
