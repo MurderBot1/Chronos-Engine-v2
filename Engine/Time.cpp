@@ -14,7 +14,6 @@ int64_t Time::DifferenceOfTimeInMicroS;
 float Time::DeltaTime;
 float Time::FPS;
 std::string Time::WhenProgramStart;
-int16_t Settings::MaxFPS;
 
 // Start of program
 int64_t Time::FindCurrentTime() {
@@ -58,7 +57,7 @@ std::string Time::GetMDYHMS() {
 }
 
 void Time::Sleep() {
-    const float MCPF = 1000000/Settings::MaxFPS;
+    const double MCPF = 1000000/Settings::MaxFPS;
     const int64_t CTIM = Time::CurrentTimeInMicroS;
     const int64_t CTMCTIM = (Time::FindCurrentTime() - Time::CurrentTimeInMicroS);
     const int Delay = MCPF - CTMCTIM;

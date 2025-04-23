@@ -10,6 +10,7 @@
 #include <typeinfo>
 #include <fstream>
 #include <numeric>
+#include <quadmath.h>
 
 // Program imported files
 #include "time.h"

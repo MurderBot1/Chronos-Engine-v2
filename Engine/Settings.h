@@ -8,9 +8,11 @@
 #include <stdint.h>
 #include <map>
 #include <string>
+#include <vector>
+#include <fstream>
 
 // Program imported files
-
+#include "Binary.h"
 
 // Function definitions
 enum GraphicLevels {
@@ -28,10 +30,17 @@ enum GraphicLevels {
 
 class Settings {
     public:
+        static void LoadSettings();
+
         // Graphics
+            static GraphicLevels DecodeGraphicLevels(std::string GraphicLevel);
+            static void LoadGraphicsSettings(std::string FilePath);
+            static void LoadAudioSettings(std::string FilePath);
+            static void LoadRenderingSettings(std::string FilePath);
+            static void LoadOptionsSettings(std::string FilePath);
             // Moniter
             static int16_t ResolutionX; // Horizontal resolution of the display
-            static int16_t ResolutionY; // Horizontal resolution of the display
+            static int16_t ResolutionY; // Vertical resolution of the display
             static int16_t MaxFPS; // Maximum FPS the engine will output
             static bool SetFPSAtMonitersMax; // Limit the FPS to the moniters maximum
             // Graphics levels

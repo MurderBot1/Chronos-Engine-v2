@@ -1,0 +1,4 @@
+C:\Users\trent\Documents\GitHub\Chronos-Engine-v2\ExampleGame\Settings\Graphics\Graphics.txt
+C:\Users\trent\Documents\GitHub\Chronos-Engine-v2\ExampleGame\Settings\Audio\Audio.txt
+C:\Users\trent\Documents\GitHub\Chronos-Engine-v2\ExampleGame\Settings\RenderingMode\Rendering.txt
+C:\Users\trent\Documents\GitHub\Chronos-Engine-v2\ExampleGame\Settings\Options\Options.txt

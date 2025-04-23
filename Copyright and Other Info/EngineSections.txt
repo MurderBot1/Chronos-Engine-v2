@@ -1,0 +1,32 @@
+NOTE: Every part of the engine unless it is listed under this text and is indented is free to use with the engine.
+    Server hosting for multiplayer : (Cost per month) 
+        * Note : This is a service provided by Chronos Engine
+        * Note : This option may not be avalible 
+        * Note : You need to contact us to get this
+        + $7.5 per thread
+        + $0.0005 per 1MB of ram
+        + $0.01 per 1GB of SSD space
+        + $0.0625 per 1Mb of internet (Megabit = 1/8 of a Megabyte) (This is combined input and output streams)
+        + $2.50 service fee
+    Nonlocal AI hosting : (Cost per month) 
+        * Note : This is a service provided by Chronos Engine
+        * Note : This option may not be avalible 
+        * Note : You need to contact us to get this
+        + $7.5 per thread
+        + $0.0005 per 1MB of ram
+        + $0.01 per 1GB of SSD space
+        + $0.0625 per 1Mb of internet (Megabit = 1/8 of a Megabyte) (This is combined input and output streams)
+        + $75.00 per 3060
+        + $25.00 service fee
+        
+
+Parts that you may not use for any reason outside of the engine:
+    Server hosting for multiplayer (This is a service provided by Chronos Engine)
+    Nonlocal AI hosting (This is a service provided by Chronos Engine)
+    
+
+Parts of the engine that are free to use outside of the engine: (Part, Download link)
+    The keyboard related functions (includes key detection and the running of functions when those keys are pressed), 
+
+Parts of the engine that you can use outside of the engine for a cost: (Part, Download link, Price (one time payment), Price (per year))
+    

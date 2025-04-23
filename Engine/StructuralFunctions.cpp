@@ -14,6 +14,7 @@
 void StartFunction() {
     Time::FillValuesForLoading();
     Log::SetupLog();
+    Settings::LoadSettings();
 }
 
 void LoopFunction() {

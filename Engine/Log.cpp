@@ -42,14 +42,20 @@ void Log::OutputDataToFile() {
         std::ofstream OutFile(Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt");
         
         if (OutFile.is_open()) {
-            float FPSTotal;
+            __float128 FPSTotal;
             for(float FPS : Log::FPS) {
                 FPSTotal += FPS;
             }
 
             FPSTotal = FPSTotal / Log::FPS.size();
 
-            OutFile << "FPS = " + std::to_string(FPSTotal) << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
+            // Convert for printing
+            long double castValue = static_cast<long double>(FPSTotal);
+            std::ostringstream oss;
+            oss.precision(36); // Set precision (adjust as needed)
+            oss << castValue;
+
+            OutFile << "FPS = " + oss.str() << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
 
             for(std::string Error : Log::Errors) {
                 OutFile << Error + "\n";
