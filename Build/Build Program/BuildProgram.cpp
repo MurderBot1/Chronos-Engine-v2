@@ -21,6 +21,13 @@ int main() {
         ""
     };
 
+    // List of Cpp files
+    const char* ListOfCPPFiles[] = {};
+
+    // Add commands to compile .cpp to .o
+    
+
+    // Run all commands
     for(const char* Command : Commands) {
         int Result = std::system(Command);
     

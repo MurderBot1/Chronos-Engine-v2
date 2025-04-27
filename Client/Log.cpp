@@ -52,7 +52,7 @@ void Log::OutputDataToFile() {
             // Convert for printing
             long double castValue = static_cast<long double>(FPSTotal);
             std::ostringstream oss;
-            oss.precision(36); // Set precision (adjust as needed)
+            oss.precision(36);
             oss << castValue;
 
             OutFile << "FPS = " + oss.str() << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
@@ -62,8 +62,10 @@ void Log::OutputDataToFile() {
             }
 
             for(std::string INFO : Log::InfoOutputs) {
-                OutFile <<INFO + "\n";
+                OutFile << INFO + "\n";
             }
+        } else {
+            std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt" << std::endl;
         }
 
         OutFile.close();

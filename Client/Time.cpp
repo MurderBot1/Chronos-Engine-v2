@@ -58,7 +58,6 @@ std::string Time::GetMDYHMS() {
 
 void Time::Sleep() {
     const double MCPF = 1000000/Settings::MaxFPS;
-    const int64_t CTIM = Time::CurrentTimeInMicroS;
     const int64_t CTMCTIM = (Time::FindCurrentTime() - Time::CurrentTimeInMicroS);
     const int Delay = MCPF - CTMCTIM;
     auto start = std::chrono::high_resolution_clock::now();

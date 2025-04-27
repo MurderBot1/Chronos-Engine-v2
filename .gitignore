@@ -1,6 +1,9 @@
 # VSCode
 .vscode/
 
+# Temp
+Temp/
+
 # Ignore object files and binaries
 *.o
 *.obj

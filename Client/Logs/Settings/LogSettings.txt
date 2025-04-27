@@ -1,0 +1,2 @@
+100
+C:/Users/trent/Documents/GitHub/Chronos-Engine-v2/Client/Logs/
