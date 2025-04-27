@@ -1,2 +1,8 @@
 # VSCode
-/.VSCode
+/.vscode
+
+# Ignore object files and binaries
+*.o
+*.obj
+*.exe
+*.out
