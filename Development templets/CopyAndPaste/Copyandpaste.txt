@@ -1,125 +1,3045 @@
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
+        Vector2_d();
+
+        // Start up variable with an array
+        Vector2_d(int Data[2]);
+        Vector2_d(float Data[2]);
+        Vector2_d(double Data[2]);
+        Vector2_d(int8_t Data[2]);
+        Vector2_d(int16_t Data[2]);
+        Vector2_d(int32_t Data[2]);
+        Vector2_d(int64_t Data[2]);
+        Vector2_d(__int128_t Data[2]);
+        Vector2_d(_Float16 Data[2]);
+        Vector2_d(_Float32 Data[2]);
+        Vector2_d(_Float64 Data[2]);
+        Vector2_d(_Float128 Data[2]);
+        Vector2_d(__float128 Data[2]);
+        // Start up variable with an array pointer
+        Vector2_d(int* Data[2]);
+        Vector2_d(float* Data[2]);
+        Vector2_d(double* Data[2]);
+        Vector2_d(int8_t* Data[2]);
+        Vector2_d(int16_t* Data[2]);
+        Vector2_d(int32_t* Data[2]);
+        Vector2_d(int64_t* Data[2]);
+        Vector2_d(__int128_t* Data[2]);
+        Vector2_d(_Float16* Data[2]);
+        Vector2_d(_Float32* Data[2]);
+        Vector2_d(_Float64* Data[2]);
+        Vector2_d(_Float128* Data[2]);
+        Vector2_d(__float128* Data[2]);
+        // Start up variable with an array (const)
+        Vector2_d(const int Data[2]);
+        Vector2_d(const float Data[2]);
+        Vector2_d(const double Data[2]);
+        Vector2_d(const int8_t Data[2]);
+        Vector2_d(const int16_t Data[2]);
+        Vector2_d(const int32_t Data[2]);
+        Vector2_d(const int64_t Data[2]);
+        Vector2_d(const __int128_t Data[2]);
+        Vector2_d(const _Float16 Data[2]);
+        Vector2_d(const _Float32 Data[2]);
+        Vector2_d(const _Float64 Data[2]);
+        Vector2_d(const _Float128 Data[2]);
+        Vector2_d(const __float128 Data[2]);
+        // Start up variable with an array pointer (const)
+        Vector2_d(const int* Data[2]);
+        Vector2_d(const float* Data[2]);
+        Vector2_d(const double* Data[2]);
+        Vector2_d(const int8_t* Data[2]);
+        Vector2_d(const int16_t* Data[2]);
+        Vector2_d(const int32_t* Data[2]);
+        Vector2_d(const int64_t* Data[2]);
+        Vector2_d(const __int128_t* Data[2]);
+        Vector2_d(const _Float16* Data[2]);
+        Vector2_d(const _Float32* Data[2]);
+        Vector2_d(const _Float64* Data[2]);
+        Vector2_d(const _Float128* Data[2]);
+        Vector2_d(const __float128* Data[2]);
+
+        // Start up variable with 2 variables
+        // int (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(int X, int Y);
+        Vector2_d(int X, int8_t Y);
+        Vector2_d(int X, int16_t Y);
+        Vector2_d(int X, int32_t Y);
+        Vector2_d(int X, int64_t Y);
+        Vector2_d(int X, __int128_t Y);
+        Vector2_d(int X, _Float16 Y);
+        Vector2_d(int X, _Float32 Y);
+        Vector2_d(int X, _Float64 Y);
+        Vector2_d(int X, _Float128 Y);
+        Vector2_d(int X, __float128 Y);
+        Vector2_d(int X, float Y);
+        Vector2_d(int X, double Y);
+        // int (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const int X, int Y);
+        Vector2_d(const int X, int8_t Y);
+        Vector2_d(const int X, int16_t Y);
+        Vector2_d(const int X, int32_t Y);
+        Vector2_d(const int X, int64_t Y);
+        Vector2_d(const int X, __int128_t Y);
+        Vector2_d(const int X, _Float16 Y);
+        Vector2_d(const int X, _Float32 Y);
+        Vector2_d(const int X, _Float64 Y);
+        Vector2_d(const int X, _Float128 Y);
+        Vector2_d(const int X, __float128 Y);
+        Vector2_d(const int X, float Y);
+        Vector2_d(const int X, double Y);
+        // int (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(int X, const int Y);
+        Vector2_d(int X, const int8_t Y);
+        Vector2_d(int X, const int16_t Y);
+        Vector2_d(int X, const int32_t Y);
+        Vector2_d(int X, const int64_t Y);
+        Vector2_d(int X, const __int128_t Y);
+        Vector2_d(int X, const _Float16 Y);
+        Vector2_d(int X, const _Float32 Y);
+        Vector2_d(int X, const _Float64 Y);
+        Vector2_d(int X, const _Float128 Y);
+        Vector2_d(int X, const __float128 Y);
+        Vector2_d(int X, const float Y);
+        Vector2_d(int X, const double Y);
+        // int (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const int X, const int Y);
+        Vector2_d(const int X, const int8_t Y);
+        Vector2_d(const int X, const int16_t Y);
+        Vector2_d(const int X, const int32_t Y);
+        Vector2_d(const int X, const int64_t Y);
+        Vector2_d(const int X, const __int128_t Y);
+        Vector2_d(const int X, const _Float16 Y);
+        Vector2_d(const int X, const _Float32 Y);
+        Vector2_d(const int X, const _Float64 Y);
+        Vector2_d(const int X, const _Float128 Y);
+        Vector2_d(const int X, const __float128 Y);
+        Vector2_d(const int X, const float Y);
+        Vector2_d(const int X, const double Y);
+        // int (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(int* X, int Y);
+        Vector2_d(int* X, int8_t Y);
+        Vector2_d(int* X, int16_t Y);
+        Vector2_d(int* X, int32_t Y);
+        Vector2_d(int* X, int64_t Y);
+        Vector2_d(int* X, __int128_t Y);
+        Vector2_d(int* X, _Float16 Y);
+        Vector2_d(int* X, _Float32 Y);
+        Vector2_d(int* X, _Float64 Y);
+        Vector2_d(int* X, _Float128 Y);
+        Vector2_d(int* X, __float128 Y);
+        Vector2_d(int* X, float Y);
+        Vector2_d(int* X, double Y);
+        // int (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const int* X, int Y);
+        Vector2_d(const int* X, int8_t Y);
+        Vector2_d(const int* X, int16_t Y);
+        Vector2_d(const int* X, int32_t Y);
+        Vector2_d(const int* X, int64_t Y);
+        Vector2_d(const int* X, __int128_t Y);
+        Vector2_d(const int* X, _Float16 Y);
+        Vector2_d(const int* X, _Float32 Y);
+        Vector2_d(const int* X, _Float64 Y);
+        Vector2_d(const int* X, _Float128 Y);
+        Vector2_d(const int* X, __float128 Y);
+        Vector2_d(const int* X, float Y);
+        Vector2_d(const int* X, double Y);
+        // int (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(int* X, const int Y);
+        Vector2_d(int* X, const int8_t Y);
+        Vector2_d(int* X, const int16_t Y);
+        Vector2_d(int* X, const int32_t Y);
+        Vector2_d(int* X, const int64_t Y);
+        Vector2_d(int* X, const __int128_t Y);
+        Vector2_d(int* X, const _Float16 Y);
+        Vector2_d(int* X, const _Float32 Y);
+        Vector2_d(int* X, const _Float64 Y);
+        Vector2_d(int* X, const _Float128 Y);
+        Vector2_d(int* X, const __float128 Y);
+        Vector2_d(int* X, const float Y);
+        Vector2_d(int* X, const double Y);
+        // int (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const int* X, const int Y);
+        Vector2_d(const int* X, const int8_t Y);
+        Vector2_d(const int* X, const int16_t Y);
+        Vector2_d(const int* X, const int32_t Y);
+        Vector2_d(const int* X, const int64_t Y);
+        Vector2_d(const int* X, const __int128_t Y);
+        Vector2_d(const int* X, const _Float16 Y);
+        Vector2_d(const int* X, const _Float32 Y);
+        Vector2_d(const int* X, const _Float64 Y);
+        Vector2_d(const int* X, const _Float128 Y);
+        Vector2_d(const int* X, const __float128 Y);
+        Vector2_d(const int* X, const float Y);
+        Vector2_d(const int* X, const double Y);
+        // int (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(int X, int* Y);
+        Vector2_d(int X, int8_t* Y);
+        Vector2_d(int X, int16_t* Y);
+        Vector2_d(int X, int32_t* Y);
+        Vector2_d(int X, int64_t* Y);
+        Vector2_d(int X, __int128_t* Y);
+        Vector2_d(int X, _Float16* Y);
+        Vector2_d(int X, _Float32* Y);
+        Vector2_d(int X, _Float64* Y);
+        Vector2_d(int X, _Float128* Y);
+        Vector2_d(int X, __float128* Y);
+        Vector2_d(int X, float* Y);
+        Vector2_d(int X, double* Y);
+        // int (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const int X, int* Y);
+        Vector2_d(const int X, int8_t* Y);
+        Vector2_d(const int X, int16_t* Y);
+        Vector2_d(const int X, int32_t* Y);
+        Vector2_d(const int X, int64_t* Y);
+        Vector2_d(const int X, __int128_t* Y);
+        Vector2_d(const int X, _Float16* Y);
+        Vector2_d(const int X, _Float32* Y);
+        Vector2_d(const int X, _Float64* Y);
+        Vector2_d(const int X, _Float128* Y);
+        Vector2_d(const int X, __float128* Y);
+        Vector2_d(const int X, float* Y);
+        Vector2_d(const int X, double* Y);
+        // int (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(int X, const int* Y);
+        Vector2_d(int X, const int8_t* Y);
+        Vector2_d(int X, const int16_t* Y);
+        Vector2_d(int X, const int32_t* Y);
+        Vector2_d(int X, const int64_t* Y);
+        Vector2_d(int X, const __int128_t* Y);
+        Vector2_d(int X, const _Float16* Y);
+        Vector2_d(int X, const _Float32* Y);
+        Vector2_d(int X, const _Float64* Y);
+        Vector2_d(int X, const _Float128* Y);
+        Vector2_d(int X, const __float128* Y);
+        Vector2_d(int X, const float* Y);
+        Vector2_d(int X, const double* Y);
+        // int (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const int X, const int* Y);
+        Vector2_d(const int X, const int8_t* Y);
+        Vector2_d(const int X, const int16_t* Y);
+        Vector2_d(const int X, const int32_t* Y);
+        Vector2_d(const int X, const int64_t* Y);
+        Vector2_d(const int X, const __int128_t* Y);
+        Vector2_d(const int X, const _Float16* Y);
+        Vector2_d(const int X, const _Float32* Y);
+        Vector2_d(const int X, const _Float64* Y);
+        Vector2_d(const int X, const _Float128* Y);
+        Vector2_d(const int X, const __float128* Y);
+        Vector2_d(const int X, const float* Y);
+        Vector2_d(const int X, const double* Y);
+        // int (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(int* X, int* Y);
+        Vector2_d(int* X, int8_t* Y);
+        Vector2_d(int* X, int16_t* Y);
+        Vector2_d(int* X, int32_t* Y);
+        Vector2_d(int* X, int64_t* Y);
+        Vector2_d(int* X, __int128_t* Y);
+        Vector2_d(int* X, _Float16* Y);
+        Vector2_d(int* X, _Float32* Y);
+        Vector2_d(int* X, _Float64* Y);
+        Vector2_d(int* X, _Float128* Y);
+        Vector2_d(int* X, __float128* Y);
+        Vector2_d(int* X, float* Y);
+        Vector2_d(int* X, double* Y);
+        // int (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const int* X, int* Y);
+        Vector2_d(const int* X, int8_t* Y);
+        Vector2_d(const int* X, int16_t* Y);
+        Vector2_d(const int* X, int32_t* Y);
+        Vector2_d(const int* X, int64_t* Y);
+        Vector2_d(const int* X, __int128_t* Y);
+        Vector2_d(const int* X, _Float16* Y);
+        Vector2_d(const int* X, _Float32* Y);
+        Vector2_d(const int* X, _Float64* Y);
+        Vector2_d(const int* X, _Float128* Y);
+        Vector2_d(const int* X, __float128* Y);
+        Vector2_d(const int* X, float* Y);
+        Vector2_d(const int* X, double* Y);
+        // int (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(int* X, const int* Y);
+        Vector2_d(int* X, const int8_t* Y);
+        Vector2_d(int* X, const int16_t* Y);
+        Vector2_d(int* X, const int32_t* Y);
+        Vector2_d(int* X, const int64_t* Y);
+        Vector2_d(int* X, const __int128_t* Y);
+        Vector2_d(int* X, const _Float16* Y);
+        Vector2_d(int* X, const _Float32* Y);
+        Vector2_d(int* X, const _Float64* Y);
+        Vector2_d(int* X, const _Float128* Y);
+        Vector2_d(int* X, const __float128* Y);
+        Vector2_d(int* X, const float* Y);
+        Vector2_d(int* X, const double* Y);
+        // int (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const int* X, const int* Y);
+        Vector2_d(const int* X, const int8_t* Y);
+        Vector2_d(const int* X, const int16_t* Y);
+        Vector2_d(const int* X, const int32_t* Y);
+        Vector2_d(const int* X, const int64_t* Y);
+        Vector2_d(const int* X, const __int128_t* Y);
+        Vector2_d(const int* X, const _Float16* Y);
+        Vector2_d(const int* X, const _Float32* Y);
+        Vector2_d(const int* X, const _Float64* Y);
+        Vector2_d(const int* X, const _Float128* Y);
+        Vector2_d(const int* X, const __float128* Y);
+        Vector2_d(const int* X, const float* Y);
+        Vector2_d(const int* X, const double* Y);
+        // int8_t (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(int8_t X, int Y);
+        Vector2_d(int8_t X, int8_t Y);
+        Vector2_d(int8_t X, int16_t Y);
+        Vector2_d(int8_t X, int32_t Y);
+        Vector2_d(int8_t X, int64_t Y);
+        Vector2_d(int8_t X, __int128_t Y);
+        Vector2_d(int8_t X, _Float16 Y);
+        Vector2_d(int8_t X, _Float32 Y);
+        Vector2_d(int8_t X, _Float64 Y);
+        Vector2_d(int8_t X, _Float128 Y);
+        Vector2_d(int8_t X, __float128 Y);
+        Vector2_d(int8_t X, float Y);
+        Vector2_d(int8_t X, double Y);
+        // int8_t (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const int8_t X, int Y);
+        Vector2_d(const int8_t X, int8_t Y);
+        Vector2_d(const int8_t X, int16_t Y);
+        Vector2_d(const int8_t X, int32_t Y);
+        Vector2_d(const int8_t X, int64_t Y);
+        Vector2_d(const int8_t X, __int128_t Y);
+        Vector2_d(const int8_t X, _Float16 Y);
+        Vector2_d(const int8_t X, _Float32 Y);
+        Vector2_d(const int8_t X, _Float64 Y);
+        Vector2_d(const int8_t X, _Float128 Y);
+        Vector2_d(const int8_t X, __float128 Y);
+        Vector2_d(const int8_t X, float Y);
+        Vector2_d(const int8_t X, double Y);
+        // int8_t (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(int8_t X, const int Y);
+        Vector2_d(int8_t X, const int8_t Y);
+        Vector2_d(int8_t X, const int16_t Y);
+        Vector2_d(int8_t X, const int32_t Y);
+        Vector2_d(int8_t X, const int64_t Y);
+        Vector2_d(int8_t X, const __int128_t Y);
+        Vector2_d(int8_t X, const _Float16 Y);
+        Vector2_d(int8_t X, const _Float32 Y);
+        Vector2_d(int8_t X, const _Float64 Y);
+        Vector2_d(int8_t X, const _Float128 Y);
+        Vector2_d(int8_t X, const __float128 Y);
+        Vector2_d(int8_t X, const float Y);
+        Vector2_d(int8_t X, const double Y);
+        // int8_t (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const int8_t X, const int Y);
+        Vector2_d(const int8_t X, const int8_t Y);
+        Vector2_d(const int8_t X, const int16_t Y);
+        Vector2_d(const int8_t X, const int32_t Y);
+        Vector2_d(const int8_t X, const int64_t Y);
+        Vector2_d(const int8_t X, const __int128_t Y);
+        Vector2_d(const int8_t X, const _Float16 Y);
+        Vector2_d(const int8_t X, const _Float32 Y);
+        Vector2_d(const int8_t X, const _Float64 Y);
+        Vector2_d(const int8_t X, const _Float128 Y);
+        Vector2_d(const int8_t X, const __float128 Y);
+        Vector2_d(const int8_t X, const float Y);
+        Vector2_d(const int8_t X, const double Y);
+        // int8_t (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(int8_t* X, int Y);
+        Vector2_d(int8_t* X, int8_t Y);
+        Vector2_d(int8_t* X, int16_t Y);
+        Vector2_d(int8_t* X, int32_t Y);
+        Vector2_d(int8_t* X, int64_t Y);
+        Vector2_d(int8_t* X, __int128_t Y);
+        Vector2_d(int8_t* X, _Float16 Y);
+        Vector2_d(int8_t* X, _Float32 Y);
+        Vector2_d(int8_t* X, _Float64 Y);
+        Vector2_d(int8_t* X, _Float128 Y);
+        Vector2_d(int8_t* X, __float128 Y);
+        Vector2_d(int8_t* X, float Y);
+        Vector2_d(int8_t* X, double Y);
+        // int8_t (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const int8_t* X, int Y);
+        Vector2_d(const int8_t* X, int8_t Y);
+        Vector2_d(const int8_t* X, int16_t Y);
+        Vector2_d(const int8_t* X, int32_t Y);
+        Vector2_d(const int8_t* X, int64_t Y);
+        Vector2_d(const int8_t* X, __int128_t Y);
+        Vector2_d(const int8_t* X, _Float16 Y);
+        Vector2_d(const int8_t* X, _Float32 Y);
+        Vector2_d(const int8_t* X, _Float64 Y);
+        Vector2_d(const int8_t* X, _Float128 Y);
+        Vector2_d(const int8_t* X, __float128 Y);
+        Vector2_d(const int8_t* X, float Y);
+        Vector2_d(const int8_t* X, double Y);
+        // int8_t (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(int8_t* X, const int Y);
+        Vector2_d(int8_t* X, const int8_t Y);
+        Vector2_d(int8_t* X, const int16_t Y);
+        Vector2_d(int8_t* X, const int32_t Y);
+        Vector2_d(int8_t* X, const int64_t Y);
+        Vector2_d(int8_t* X, const __int128_t Y);
+        Vector2_d(int8_t* X, const _Float16 Y);
+        Vector2_d(int8_t* X, const _Float32 Y);
+        Vector2_d(int8_t* X, const _Float64 Y);
+        Vector2_d(int8_t* X, const _Float128 Y);
+        Vector2_d(int8_t* X, const __float128 Y);
+        Vector2_d(int8_t* X, const float Y);
+        Vector2_d(int8_t* X, const double Y);
+        // int8_t (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const int8_t* X, const int Y);
+        Vector2_d(const int8_t* X, const int8_t Y);
+        Vector2_d(const int8_t* X, const int16_t Y);
+        Vector2_d(const int8_t* X, const int32_t Y);
+        Vector2_d(const int8_t* X, const int64_t Y);
+        Vector2_d(const int8_t* X, const __int128_t Y);
+        Vector2_d(const int8_t* X, const _Float16 Y);
+        Vector2_d(const int8_t* X, const _Float32 Y);
+        Vector2_d(const int8_t* X, const _Float64 Y);
+        Vector2_d(const int8_t* X, const _Float128 Y);
+        Vector2_d(const int8_t* X, const __float128 Y);
+        Vector2_d(const int8_t* X, const float Y);
+        Vector2_d(const int8_t* X, const double Y);
+        // int8_t (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(int8_t X, int* Y);
+        Vector2_d(int8_t X, int8_t* Y);
+        Vector2_d(int8_t X, int16_t* Y);
+        Vector2_d(int8_t X, int32_t* Y);
+        Vector2_d(int8_t X, int64_t* Y);
+        Vector2_d(int8_t X, __int128_t* Y);
+        Vector2_d(int8_t X, _Float16* Y);
+        Vector2_d(int8_t X, _Float32* Y);
+        Vector2_d(int8_t X, _Float64* Y);
+        Vector2_d(int8_t X, _Float128* Y);
+        Vector2_d(int8_t X, __float128* Y);
+        Vector2_d(int8_t X, float* Y);
+        Vector2_d(int8_t X, double* Y);
+        // int8_t (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const int8_t X, int* Y);
+        Vector2_d(const int8_t X, int8_t* Y);
+        Vector2_d(const int8_t X, int16_t* Y);
+        Vector2_d(const int8_t X, int32_t* Y);
+        Vector2_d(const int8_t X, int64_t* Y);
+        Vector2_d(const int8_t X, __int128_t* Y);
+        Vector2_d(const int8_t X, _Float16* Y);
+        Vector2_d(const int8_t X, _Float32* Y);
+        Vector2_d(const int8_t X, _Float64* Y);
+        Vector2_d(const int8_t X, _Float128* Y);
+        Vector2_d(const int8_t X, __float128* Y);
+        Vector2_d(const int8_t X, float* Y);
+        Vector2_d(const int8_t X, double* Y);
+        // int8_t (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(int8_t X, const int* Y);
+        Vector2_d(int8_t X, const int8_t* Y);
+        Vector2_d(int8_t X, const int16_t* Y);
+        Vector2_d(int8_t X, const int32_t* Y);
+        Vector2_d(int8_t X, const int64_t* Y);
+        Vector2_d(int8_t X, const __int128_t* Y);
+        Vector2_d(int8_t X, const _Float16* Y);
+        Vector2_d(int8_t X, const _Float32* Y);
+        Vector2_d(int8_t X, const _Float64* Y);
+        Vector2_d(int8_t X, const _Float128* Y);
+        Vector2_d(int8_t X, const __float128* Y);
+        Vector2_d(int8_t X, const float* Y);
+        Vector2_d(int8_t X, const double* Y);
+        // int8_t (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const int8_t X, const int* Y);
+        Vector2_d(const int8_t X, const int8_t* Y);
+        Vector2_d(const int8_t X, const int16_t* Y);
+        Vector2_d(const int8_t X, const int32_t* Y);
+        Vector2_d(const int8_t X, const int64_t* Y);
+        Vector2_d(const int8_t X, const __int128_t* Y);
+        Vector2_d(const int8_t X, const _Float16* Y);
+        Vector2_d(const int8_t X, const _Float32* Y);
+        Vector2_d(const int8_t X, const _Float64* Y);
+        Vector2_d(const int8_t X, const _Float128* Y);
+        Vector2_d(const int8_t X, const __float128* Y);
+        Vector2_d(const int8_t X, const float* Y);
+        Vector2_d(const int8_t X, const double* Y);
+        // int8_t (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(int8_t* X, int* Y);
+        Vector2_d(int8_t* X, int8_t* Y);
+        Vector2_d(int8_t* X, int16_t* Y);
+        Vector2_d(int8_t* X, int32_t* Y);
+        Vector2_d(int8_t* X, int64_t* Y);
+        Vector2_d(int8_t* X, __int128_t* Y);
+        Vector2_d(int8_t* X, _Float16* Y);
+        Vector2_d(int8_t* X, _Float32* Y);
+        Vector2_d(int8_t* X, _Float64* Y);
+        Vector2_d(int8_t* X, _Float128* Y);
+        Vector2_d(int8_t* X, __float128* Y);
+        Vector2_d(int8_t* X, float* Y);
+        Vector2_d(int8_t* X, double* Y);
+        // int8_t (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const int8_t* X, int* Y);
+        Vector2_d(const int8_t* X, int8_t* Y);
+        Vector2_d(const int8_t* X, int16_t* Y);
+        Vector2_d(const int8_t* X, int32_t* Y);
+        Vector2_d(const int8_t* X, int64_t* Y);
+        Vector2_d(const int8_t* X, __int128_t* Y);
+        Vector2_d(const int8_t* X, _Float16* Y);
+        Vector2_d(const int8_t* X, _Float32* Y);
+        Vector2_d(const int8_t* X, _Float64* Y);
+        Vector2_d(const int8_t* X, _Float128* Y);
+        Vector2_d(const int8_t* X, __float128* Y);
+        Vector2_d(const int8_t* X, float* Y);
+        Vector2_d(const int8_t* X, double* Y);
+        // int8_t (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(int8_t* X, const int* Y);
+        Vector2_d(int8_t* X, const int8_t* Y);
+        Vector2_d(int8_t* X, const int16_t* Y);
+        Vector2_d(int8_t* X, const int32_t* Y);
+        Vector2_d(int8_t* X, const int64_t* Y);
+        Vector2_d(int8_t* X, const __int128_t* Y);
+        Vector2_d(int8_t* X, const _Float16* Y);
+        Vector2_d(int8_t* X, const _Float32* Y);
+        Vector2_d(int8_t* X, const _Float64* Y);
+        Vector2_d(int8_t* X, const _Float128* Y);
+        Vector2_d(int8_t* X, const __float128* Y);
+        Vector2_d(int8_t* X, const float* Y);
+        Vector2_d(int8_t* X, const double* Y);
+        // int8_t (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const int8_t* X, const int* Y);
+        Vector2_d(const int8_t* X, const int8_t* Y);
+        Vector2_d(const int8_t* X, const int16_t* Y);
+        Vector2_d(const int8_t* X, const int32_t* Y);
+        Vector2_d(const int8_t* X, const int64_t* Y);
+        Vector2_d(const int8_t* X, const __int128_t* Y);
+        Vector2_d(const int8_t* X, const _Float16* Y);
+        Vector2_d(const int8_t* X, const _Float32* Y);
+        Vector2_d(const int8_t* X, const _Float64* Y);
+        Vector2_d(const int8_t* X, const _Float128* Y);
+        Vector2_d(const int8_t* X, const __float128* Y);
+        Vector2_d(const int8_t* X, const float* Y);
+        Vector2_d(const int8_t* X, const double* Y);
+        // int16_t (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(int16_t X, int Y);
+        Vector2_d(int16_t X, int8_t Y);
+        Vector2_d(int16_t X, int16_t Y);
+        Vector2_d(int16_t X, int32_t Y);
+        Vector2_d(int16_t X, int64_t Y);
+        Vector2_d(int16_t X, __int128_t Y);
+        Vector2_d(int16_t X, _Float16 Y);
+        Vector2_d(int16_t X, _Float32 Y);
+        Vector2_d(int16_t X, _Float64 Y);
+        Vector2_d(int16_t X, _Float128 Y);
+        Vector2_d(int16_t X, __float128 Y);
+        Vector2_d(int16_t X, float Y);
+        Vector2_d(int16_t X, double Y);
+        // int16_t (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const int16_t X, int Y);
+        Vector2_d(const int16_t X, int8_t Y);
+        Vector2_d(const int16_t X, int16_t Y);
+        Vector2_d(const int16_t X, int32_t Y);
+        Vector2_d(const int16_t X, int64_t Y);
+        Vector2_d(const int16_t X, __int128_t Y);
+        Vector2_d(const int16_t X, _Float16 Y);
+        Vector2_d(const int16_t X, _Float32 Y);
+        Vector2_d(const int16_t X, _Float64 Y);
+        Vector2_d(const int16_t X, _Float128 Y);
+        Vector2_d(const int16_t X, __float128 Y);
+        Vector2_d(const int16_t X, float Y);
+        Vector2_d(const int16_t X, double Y);
+        // int16_t (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(int16_t X, const int Y);
+        Vector2_d(int16_t X, const int8_t Y);
+        Vector2_d(int16_t X, const int16_t Y);
+        Vector2_d(int16_t X, const int32_t Y);
+        Vector2_d(int16_t X, const int64_t Y);
+        Vector2_d(int16_t X, const __int128_t Y);
+        Vector2_d(int16_t X, const _Float16 Y);
+        Vector2_d(int16_t X, const _Float32 Y);
+        Vector2_d(int16_t X, const _Float64 Y);
+        Vector2_d(int16_t X, const _Float128 Y);
+        Vector2_d(int16_t X, const __float128 Y);
+        Vector2_d(int16_t X, const float Y);
+        Vector2_d(int16_t X, const double Y);
+        // int16_t (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const int16_t X, const int Y);
+        Vector2_d(const int16_t X, const int8_t Y);
+        Vector2_d(const int16_t X, const int16_t Y);
+        Vector2_d(const int16_t X, const int32_t Y);
+        Vector2_d(const int16_t X, const int64_t Y);
+        Vector2_d(const int16_t X, const __int128_t Y);
+        Vector2_d(const int16_t X, const _Float16 Y);
+        Vector2_d(const int16_t X, const _Float32 Y);
+        Vector2_d(const int16_t X, const _Float64 Y);
+        Vector2_d(const int16_t X, const _Float128 Y);
+        Vector2_d(const int16_t X, const __float128 Y);
+        Vector2_d(const int16_t X, const float Y);
+        Vector2_d(const int16_t X, const double Y);
+        // int16_t (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(int16_t* X, int Y);
+        Vector2_d(int16_t* X, int8_t Y);
+        Vector2_d(int16_t* X, int16_t Y);
+        Vector2_d(int16_t* X, int32_t Y);
+        Vector2_d(int16_t* X, int64_t Y);
+        Vector2_d(int16_t* X, __int128_t Y);
+        Vector2_d(int16_t* X, _Float16 Y);
+        Vector2_d(int16_t* X, _Float32 Y);
+        Vector2_d(int16_t* X, _Float64 Y);
+        Vector2_d(int16_t* X, _Float128 Y);
+        Vector2_d(int16_t* X, __float128 Y);
+        Vector2_d(int16_t* X, float Y);
+        Vector2_d(int16_t* X, double Y);
+        // int16_t (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const int16_t* X, int Y);
+        Vector2_d(const int16_t* X, int8_t Y);
+        Vector2_d(const int16_t* X, int16_t Y);
+        Vector2_d(const int16_t* X, int32_t Y);
+        Vector2_d(const int16_t* X, int64_t Y);
+        Vector2_d(const int16_t* X, __int128_t Y);
+        Vector2_d(const int16_t* X, _Float16 Y);
+        Vector2_d(const int16_t* X, _Float32 Y);
+        Vector2_d(const int16_t* X, _Float64 Y);
+        Vector2_d(const int16_t* X, _Float128 Y);
+        Vector2_d(const int16_t* X, __float128 Y);
+        Vector2_d(const int16_t* X, float Y);
+        Vector2_d(const int16_t* X, double Y);
+        // int16_t (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(int16_t* X, const int Y);
+        Vector2_d(int16_t* X, const int8_t Y);
+        Vector2_d(int16_t* X, const int16_t Y);
+        Vector2_d(int16_t* X, const int32_t Y);
+        Vector2_d(int16_t* X, const int64_t Y);
+        Vector2_d(int16_t* X, const __int128_t Y);
+        Vector2_d(int16_t* X, const _Float16 Y);
+        Vector2_d(int16_t* X, const _Float32 Y);
+        Vector2_d(int16_t* X, const _Float64 Y);
+        Vector2_d(int16_t* X, const _Float128 Y);
+        Vector2_d(int16_t* X, const __float128 Y);
+        Vector2_d(int16_t* X, const float Y);
+        Vector2_d(int16_t* X, const double Y);
+        // int16_t (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const int16_t* X, const int Y);
+        Vector2_d(const int16_t* X, const int8_t Y);
+        Vector2_d(const int16_t* X, const int16_t Y);
+        Vector2_d(const int16_t* X, const int32_t Y);
+        Vector2_d(const int16_t* X, const int64_t Y);
+        Vector2_d(const int16_t* X, const __int128_t Y);
+        Vector2_d(const int16_t* X, const _Float16 Y);
+        Vector2_d(const int16_t* X, const _Float32 Y);
+        Vector2_d(const int16_t* X, const _Float64 Y);
+        Vector2_d(const int16_t* X, const _Float128 Y);
+        Vector2_d(const int16_t* X, const __float128 Y);
+        Vector2_d(const int16_t* X, const float Y);
+        Vector2_d(const int16_t* X, const double Y);
+        // int16_t (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(int16_t X, int* Y);
+        Vector2_d(int16_t X, int8_t* Y);
+        Vector2_d(int16_t X, int16_t* Y);
+        Vector2_d(int16_t X, int32_t* Y);
+        Vector2_d(int16_t X, int64_t* Y);
+        Vector2_d(int16_t X, __int128_t* Y);
+        Vector2_d(int16_t X, _Float16* Y);
+        Vector2_d(int16_t X, _Float32* Y);
+        Vector2_d(int16_t X, _Float64* Y);
+        Vector2_d(int16_t X, _Float128* Y);
+        Vector2_d(int16_t X, __float128* Y);
+        Vector2_d(int16_t X, float* Y);
+        Vector2_d(int16_t X, double* Y);
+        // int16_t (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const int16_t X, int* Y);
+        Vector2_d(const int16_t X, int8_t* Y);
+        Vector2_d(const int16_t X, int16_t* Y);
+        Vector2_d(const int16_t X, int32_t* Y);
+        Vector2_d(const int16_t X, int64_t* Y);
+        Vector2_d(const int16_t X, __int128_t* Y);
+        Vector2_d(const int16_t X, _Float16* Y);
+        Vector2_d(const int16_t X, _Float32* Y);
+        Vector2_d(const int16_t X, _Float64* Y);
+        Vector2_d(const int16_t X, _Float128* Y);
+        Vector2_d(const int16_t X, __float128* Y);
+        Vector2_d(const int16_t X, float* Y);
+        Vector2_d(const int16_t X, double* Y);
+        // int16_t (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(int16_t X, const int* Y);
+        Vector2_d(int16_t X, const int8_t* Y);
+        Vector2_d(int16_t X, const int16_t* Y);
+        Vector2_d(int16_t X, const int32_t* Y);
+        Vector2_d(int16_t X, const int64_t* Y);
+        Vector2_d(int16_t X, const __int128_t* Y);
+        Vector2_d(int16_t X, const _Float16* Y);
+        Vector2_d(int16_t X, const _Float32* Y);
+        Vector2_d(int16_t X, const _Float64* Y);
+        Vector2_d(int16_t X, const _Float128* Y);
+        Vector2_d(int16_t X, const __float128* Y);
+        Vector2_d(int16_t X, const float* Y);
+        Vector2_d(int16_t X, const double* Y);
+        // int16_t (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const int16_t X, const int* Y);
+        Vector2_d(const int16_t X, const int8_t* Y);
+        Vector2_d(const int16_t X, const int16_t* Y);
+        Vector2_d(const int16_t X, const int32_t* Y);
+        Vector2_d(const int16_t X, const int64_t* Y);
+        Vector2_d(const int16_t X, const __int128_t* Y);
+        Vector2_d(const int16_t X, const _Float16* Y);
+        Vector2_d(const int16_t X, const _Float32* Y);
+        Vector2_d(const int16_t X, const _Float64* Y);
+        Vector2_d(const int16_t X, const _Float128* Y);
+        Vector2_d(const int16_t X, const __float128* Y);
+        Vector2_d(const int16_t X, const float* Y);
+        Vector2_d(const int16_t X, const double* Y);
+        // int16_t (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(int16_t* X, int* Y);
+        Vector2_d(int16_t* X, int8_t* Y);
+        Vector2_d(int16_t* X, int16_t* Y);
+        Vector2_d(int16_t* X, int32_t* Y);
+        Vector2_d(int16_t* X, int64_t* Y);
+        Vector2_d(int16_t* X, __int128_t* Y);
+        Vector2_d(int16_t* X, _Float16* Y);
+        Vector2_d(int16_t* X, _Float32* Y);
+        Vector2_d(int16_t* X, _Float64* Y);
+        Vector2_d(int16_t* X, _Float128* Y);
+        Vector2_d(int16_t* X, __float128* Y);
+        Vector2_d(int16_t* X, float* Y);
+        Vector2_d(int16_t* X, double* Y);
+        // int16_t (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const int16_t* X, int* Y);
+        Vector2_d(const int16_t* X, int8_t* Y);
+        Vector2_d(const int16_t* X, int16_t* Y);
+        Vector2_d(const int16_t* X, int32_t* Y);
+        Vector2_d(const int16_t* X, int64_t* Y);
+        Vector2_d(const int16_t* X, __int128_t* Y);
+        Vector2_d(const int16_t* X, _Float16* Y);
+        Vector2_d(const int16_t* X, _Float32* Y);
+        Vector2_d(const int16_t* X, _Float64* Y);
+        Vector2_d(const int16_t* X, _Float128* Y);
+        Vector2_d(const int16_t* X, __float128* Y);
+        Vector2_d(const int16_t* X, float* Y);
+        Vector2_d(const int16_t* X, double* Y);
+        // int16_t (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(int16_t* X, const int* Y);
+        Vector2_d(int16_t* X, const int8_t* Y);
+        Vector2_d(int16_t* X, const int16_t* Y);
+        Vector2_d(int16_t* X, const int32_t* Y);
+        Vector2_d(int16_t* X, const int64_t* Y);
+        Vector2_d(int16_t* X, const __int128_t* Y);
+        Vector2_d(int16_t* X, const _Float16* Y);
+        Vector2_d(int16_t* X, const _Float32* Y);
+        Vector2_d(int16_t* X, const _Float64* Y);
+        Vector2_d(int16_t* X, const _Float128* Y);
+        Vector2_d(int16_t* X, const __float128* Y);
+        Vector2_d(int16_t* X, const float* Y);
+        Vector2_d(int16_t* X, const double* Y);
+        // int16_t (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const int16_t* X, const int* Y);
+        Vector2_d(const int16_t* X, const int8_t* Y);
+        Vector2_d(const int16_t* X, const int16_t* Y);
+        Vector2_d(const int16_t* X, const int32_t* Y);
+        Vector2_d(const int16_t* X, const int64_t* Y);
+        Vector2_d(const int16_t* X, const __int128_t* Y);
+        Vector2_d(const int16_t* X, const _Float16* Y);
+        Vector2_d(const int16_t* X, const _Float32* Y);
+        Vector2_d(const int16_t* X, const _Float64* Y);
+        Vector2_d(const int16_t* X, const _Float128* Y);
+        Vector2_d(const int16_t* X, const __float128* Y);
+        Vector2_d(const int16_t* X, const float* Y);
+        Vector2_d(const int16_t* X, const double* Y);
+        // int32_t (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(int32_t X, int Y);
+        Vector2_d(int32_t X, int8_t Y);
+        Vector2_d(int32_t X, int16_t Y);
+        Vector2_d(int32_t X, int32_t Y);
+        Vector2_d(int32_t X, int64_t Y);
+        Vector2_d(int32_t X, __int128_t Y);
+        Vector2_d(int32_t X, _Float16 Y);
+        Vector2_d(int32_t X, _Float32 Y);
+        Vector2_d(int32_t X, _Float64 Y);
+        Vector2_d(int32_t X, _Float128 Y);
+        Vector2_d(int32_t X, __float128 Y);
+        Vector2_d(int32_t X, float Y);
+        Vector2_d(int32_t X, double Y);
+        // int32_t (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const int32_t X, int Y);
+        Vector2_d(const int32_t X, int8_t Y);
+        Vector2_d(const int32_t X, int16_t Y);
+        Vector2_d(const int32_t X, int32_t Y);
+        Vector2_d(const int32_t X, int64_t Y);
+        Vector2_d(const int32_t X, __int128_t Y);
+        Vector2_d(const int32_t X, _Float16 Y);
+        Vector2_d(const int32_t X, _Float32 Y);
+        Vector2_d(const int32_t X, _Float64 Y);
+        Vector2_d(const int32_t X, _Float128 Y);
+        Vector2_d(const int32_t X, __float128 Y);
+        Vector2_d(const int32_t X, float Y);
+        Vector2_d(const int32_t X, double Y);
+        // int32_t (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(int32_t X, const int Y);
+        Vector2_d(int32_t X, const int8_t Y);
+        Vector2_d(int32_t X, const int16_t Y);
+        Vector2_d(int32_t X, const int32_t Y);
+        Vector2_d(int32_t X, const int64_t Y);
+        Vector2_d(int32_t X, const __int128_t Y);
+        Vector2_d(int32_t X, const _Float16 Y);
+        Vector2_d(int32_t X, const _Float32 Y);
+        Vector2_d(int32_t X, const _Float64 Y);
+        Vector2_d(int32_t X, const _Float128 Y);
+        Vector2_d(int32_t X, const __float128 Y);
+        Vector2_d(int32_t X, const float Y);
+        Vector2_d(int32_t X, const double Y);
+        // int32_t (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const int32_t X, const int Y);
+        Vector2_d(const int32_t X, const int8_t Y);
+        Vector2_d(const int32_t X, const int16_t Y);
+        Vector2_d(const int32_t X, const int32_t Y);
+        Vector2_d(const int32_t X, const int64_t Y);
+        Vector2_d(const int32_t X, const __int128_t Y);
+        Vector2_d(const int32_t X, const _Float16 Y);
+        Vector2_d(const int32_t X, const _Float32 Y);
+        Vector2_d(const int32_t X, const _Float64 Y);
+        Vector2_d(const int32_t X, const _Float128 Y);
+        Vector2_d(const int32_t X, const __float128 Y);
+        Vector2_d(const int32_t X, const float Y);
+        Vector2_d(const int32_t X, const double Y);
+        // int32_t (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(int32_t* X, int Y);
+        Vector2_d(int32_t* X, int8_t Y);
+        Vector2_d(int32_t* X, int16_t Y);
+        Vector2_d(int32_t* X, int32_t Y);
+        Vector2_d(int32_t* X, int64_t Y);
+        Vector2_d(int32_t* X, __int128_t Y);
+        Vector2_d(int32_t* X, _Float16 Y);
+        Vector2_d(int32_t* X, _Float32 Y);
+        Vector2_d(int32_t* X, _Float64 Y);
+        Vector2_d(int32_t* X, _Float128 Y);
+        Vector2_d(int32_t* X, __float128 Y);
+        Vector2_d(int32_t* X, float Y);
+        Vector2_d(int32_t* X, double Y);
+        // int32_t (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const int32_t* X, int Y);
+        Vector2_d(const int32_t* X, int8_t Y);
+        Vector2_d(const int32_t* X, int16_t Y);
+        Vector2_d(const int32_t* X, int32_t Y);
+        Vector2_d(const int32_t* X, int64_t Y);
+        Vector2_d(const int32_t* X, __int128_t Y);
+        Vector2_d(const int32_t* X, _Float16 Y);
+        Vector2_d(const int32_t* X, _Float32 Y);
+        Vector2_d(const int32_t* X, _Float64 Y);
+        Vector2_d(const int32_t* X, _Float128 Y);
+        Vector2_d(const int32_t* X, __float128 Y);
+        Vector2_d(const int32_t* X, float Y);
+        Vector2_d(const int32_t* X, double Y);
+        // int32_t (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(int32_t* X, const int Y);
+        Vector2_d(int32_t* X, const int8_t Y);
+        Vector2_d(int32_t* X, const int16_t Y);
+        Vector2_d(int32_t* X, const int32_t Y);
+        Vector2_d(int32_t* X, const int64_t Y);
+        Vector2_d(int32_t* X, const __int128_t Y);
+        Vector2_d(int32_t* X, const _Float16 Y);
+        Vector2_d(int32_t* X, const _Float32 Y);
+        Vector2_d(int32_t* X, const _Float64 Y);
+        Vector2_d(int32_t* X, const _Float128 Y);
+        Vector2_d(int32_t* X, const __float128 Y);
+        Vector2_d(int32_t* X, const float Y);
+        Vector2_d(int32_t* X, const double Y);
+        // int32_t (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const int32_t* X, const int Y);
+        Vector2_d(const int32_t* X, const int8_t Y);
+        Vector2_d(const int32_t* X, const int16_t Y);
+        Vector2_d(const int32_t* X, const int32_t Y);
+        Vector2_d(const int32_t* X, const int64_t Y);
+        Vector2_d(const int32_t* X, const __int128_t Y);
+        Vector2_d(const int32_t* X, const _Float16 Y);
+        Vector2_d(const int32_t* X, const _Float32 Y);
+        Vector2_d(const int32_t* X, const _Float64 Y);
+        Vector2_d(const int32_t* X, const _Float128 Y);
+        Vector2_d(const int32_t* X, const __float128 Y);
+        Vector2_d(const int32_t* X, const float Y);
+        Vector2_d(const int32_t* X, const double Y);
+        // int32_t (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(int32_t X, int* Y);
+        Vector2_d(int32_t X, int8_t* Y);
+        Vector2_d(int32_t X, int16_t* Y);
+        Vector2_d(int32_t X, int32_t* Y);
+        Vector2_d(int32_t X, int64_t* Y);
+        Vector2_d(int32_t X, __int128_t* Y);
+        Vector2_d(int32_t X, _Float16* Y);
+        Vector2_d(int32_t X, _Float32* Y);
+        Vector2_d(int32_t X, _Float64* Y);
+        Vector2_d(int32_t X, _Float128* Y);
+        Vector2_d(int32_t X, __float128* Y);
+        Vector2_d(int32_t X, float* Y);
+        Vector2_d(int32_t X, double* Y);
+        // int32_t (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const int32_t X, int* Y);
+        Vector2_d(const int32_t X, int8_t* Y);
+        Vector2_d(const int32_t X, int16_t* Y);
+        Vector2_d(const int32_t X, int32_t* Y);
+        Vector2_d(const int32_t X, int64_t* Y);
+        Vector2_d(const int32_t X, __int128_t* Y);
+        Vector2_d(const int32_t X, _Float16* Y);
+        Vector2_d(const int32_t X, _Float32* Y);
+        Vector2_d(const int32_t X, _Float64* Y);
+        Vector2_d(const int32_t X, _Float128* Y);
+        Vector2_d(const int32_t X, __float128* Y);
+        Vector2_d(const int32_t X, float* Y);
+        Vector2_d(const int32_t X, double* Y);
+        // int32_t (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(int32_t X, const int* Y);
+        Vector2_d(int32_t X, const int8_t* Y);
+        Vector2_d(int32_t X, const int16_t* Y);
+        Vector2_d(int32_t X, const int32_t* Y);
+        Vector2_d(int32_t X, const int64_t* Y);
+        Vector2_d(int32_t X, const __int128_t* Y);
+        Vector2_d(int32_t X, const _Float16* Y);
+        Vector2_d(int32_t X, const _Float32* Y);
+        Vector2_d(int32_t X, const _Float64* Y);
+        Vector2_d(int32_t X, const _Float128* Y);
+        Vector2_d(int32_t X, const __float128* Y);
+        Vector2_d(int32_t X, const float* Y);
+        Vector2_d(int32_t X, const double* Y);
+        // int32_t (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const int32_t X, const int* Y);
+        Vector2_d(const int32_t X, const int8_t* Y);
+        Vector2_d(const int32_t X, const int16_t* Y);
+        Vector2_d(const int32_t X, const int32_t* Y);
+        Vector2_d(const int32_t X, const int64_t* Y);
+        Vector2_d(const int32_t X, const __int128_t* Y);
+        Vector2_d(const int32_t X, const _Float16* Y);
+        Vector2_d(const int32_t X, const _Float32* Y);
+        Vector2_d(const int32_t X, const _Float64* Y);
+        Vector2_d(const int32_t X, const _Float128* Y);
+        Vector2_d(const int32_t X, const __float128* Y);
+        Vector2_d(const int32_t X, const float* Y);
+        Vector2_d(const int32_t X, const double* Y);
+        // int32_t (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(int32_t* X, int* Y);
+        Vector2_d(int32_t* X, int8_t* Y);
+        Vector2_d(int32_t* X, int16_t* Y);
+        Vector2_d(int32_t* X, int32_t* Y);
+        Vector2_d(int32_t* X, int64_t* Y);
+        Vector2_d(int32_t* X, __int128_t* Y);
+        Vector2_d(int32_t* X, _Float16* Y);
+        Vector2_d(int32_t* X, _Float32* Y);
+        Vector2_d(int32_t* X, _Float64* Y);
+        Vector2_d(int32_t* X, _Float128* Y);
+        Vector2_d(int32_t* X, __float128* Y);
+        Vector2_d(int32_t* X, float* Y);
+        Vector2_d(int32_t* X, double* Y);
+        // int32_t (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const int32_t* X, int* Y);
+        Vector2_d(const int32_t* X, int8_t* Y);
+        Vector2_d(const int32_t* X, int16_t* Y);
+        Vector2_d(const int32_t* X, int32_t* Y);
+        Vector2_d(const int32_t* X, int64_t* Y);
+        Vector2_d(const int32_t* X, __int128_t* Y);
+        Vector2_d(const int32_t* X, _Float16* Y);
+        Vector2_d(const int32_t* X, _Float32* Y);
+        Vector2_d(const int32_t* X, _Float64* Y);
+        Vector2_d(const int32_t* X, _Float128* Y);
+        Vector2_d(const int32_t* X, __float128* Y);
+        Vector2_d(const int32_t* X, float* Y);
+        Vector2_d(const int32_t* X, double* Y);
+        // int32_t (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(int32_t* X, const int* Y);
+        Vector2_d(int32_t* X, const int8_t* Y);
+        Vector2_d(int32_t* X, const int16_t* Y);
+        Vector2_d(int32_t* X, const int32_t* Y);
+        Vector2_d(int32_t* X, const int64_t* Y);
+        Vector2_d(int32_t* X, const __int128_t* Y);
+        Vector2_d(int32_t* X, const _Float16* Y);
+        Vector2_d(int32_t* X, const _Float32* Y);
+        Vector2_d(int32_t* X, const _Float64* Y);
+        Vector2_d(int32_t* X, const _Float128* Y);
+        Vector2_d(int32_t* X, const __float128* Y);
+        Vector2_d(int32_t* X, const float* Y);
+        Vector2_d(int32_t* X, const double* Y);
+        // int32_t (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const int32_t* X, const int* Y);
+        Vector2_d(const int32_t* X, const int8_t* Y);
+        Vector2_d(const int32_t* X, const int16_t* Y);
+        Vector2_d(const int32_t* X, const int32_t* Y);
+        Vector2_d(const int32_t* X, const int64_t* Y);
+        Vector2_d(const int32_t* X, const __int128_t* Y);
+        Vector2_d(const int32_t* X, const _Float16* Y);
+        Vector2_d(const int32_t* X, const _Float32* Y);
+        Vector2_d(const int32_t* X, const _Float64* Y);
+        Vector2_d(const int32_t* X, const _Float128* Y);
+        Vector2_d(const int32_t* X, const __float128* Y);
+        Vector2_d(const int32_t* X, const float* Y);
+        Vector2_d(const int32_t* X, const double* Y);
+        // int64_t (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(int64_t X, int Y);
+        Vector2_d(int64_t X, int8_t Y);
+        Vector2_d(int64_t X, int16_t Y);
+        Vector2_d(int64_t X, int32_t Y);
+        Vector2_d(int64_t X, int64_t Y);
+        Vector2_d(int64_t X, __int128_t Y);
+        Vector2_d(int64_t X, _Float16 Y);
+        Vector2_d(int64_t X, _Float32 Y);
+        Vector2_d(int64_t X, _Float64 Y);
+        Vector2_d(int64_t X, _Float128 Y);
+        Vector2_d(int64_t X, __float128 Y);
+        Vector2_d(int64_t X, float Y);
+        Vector2_d(int64_t X, double Y);
+        // int64_t (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const int64_t X, int Y);
+        Vector2_d(const int64_t X, int8_t Y);
+        Vector2_d(const int64_t X, int16_t Y);
+        Vector2_d(const int64_t X, int32_t Y);
+        Vector2_d(const int64_t X, int64_t Y);
+        Vector2_d(const int64_t X, __int128_t Y);
+        Vector2_d(const int64_t X, _Float16 Y);
+        Vector2_d(const int64_t X, _Float32 Y);
+        Vector2_d(const int64_t X, _Float64 Y);
+        Vector2_d(const int64_t X, _Float128 Y);
+        Vector2_d(const int64_t X, __float128 Y);
+        Vector2_d(const int64_t X, float Y);
+        Vector2_d(const int64_t X, double Y);
+        // int64_t (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(int64_t X, const int Y);
+        Vector2_d(int64_t X, const int8_t Y);
+        Vector2_d(int64_t X, const int16_t Y);
+        Vector2_d(int64_t X, const int32_t Y);
+        Vector2_d(int64_t X, const int64_t Y);
+        Vector2_d(int64_t X, const __int128_t Y);
+        Vector2_d(int64_t X, const _Float16 Y);
+        Vector2_d(int64_t X, const _Float32 Y);
+        Vector2_d(int64_t X, const _Float64 Y);
+        Vector2_d(int64_t X, const _Float128 Y);
+        Vector2_d(int64_t X, const __float128 Y);
+        Vector2_d(int64_t X, const float Y);
+        Vector2_d(int64_t X, const double Y);
+        // int64_t (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const int64_t X, const int Y);
+        Vector2_d(const int64_t X, const int8_t Y);
+        Vector2_d(const int64_t X, const int16_t Y);
+        Vector2_d(const int64_t X, const int32_t Y);
+        Vector2_d(const int64_t X, const int64_t Y);
+        Vector2_d(const int64_t X, const __int128_t Y);
+        Vector2_d(const int64_t X, const _Float16 Y);
+        Vector2_d(const int64_t X, const _Float32 Y);
+        Vector2_d(const int64_t X, const _Float64 Y);
+        Vector2_d(const int64_t X, const _Float128 Y);
+        Vector2_d(const int64_t X, const __float128 Y);
+        Vector2_d(const int64_t X, const float Y);
+        Vector2_d(const int64_t X, const double Y);
+        // int64_t (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(int64_t* X, int Y);
+        Vector2_d(int64_t* X, int8_t Y);
+        Vector2_d(int64_t* X, int16_t Y);
+        Vector2_d(int64_t* X, int32_t Y);
+        Vector2_d(int64_t* X, int64_t Y);
+        Vector2_d(int64_t* X, __int128_t Y);
+        Vector2_d(int64_t* X, _Float16 Y);
+        Vector2_d(int64_t* X, _Float32 Y);
+        Vector2_d(int64_t* X, _Float64 Y);
+        Vector2_d(int64_t* X, _Float128 Y);
+        Vector2_d(int64_t* X, __float128 Y);
+        Vector2_d(int64_t* X, float Y);
+        Vector2_d(int64_t* X, double Y);
+        // int64_t (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const int64_t* X, int Y);
+        Vector2_d(const int64_t* X, int8_t Y);
+        Vector2_d(const int64_t* X, int16_t Y);
+        Vector2_d(const int64_t* X, int32_t Y);
+        Vector2_d(const int64_t* X, int64_t Y);
+        Vector2_d(const int64_t* X, __int128_t Y);
+        Vector2_d(const int64_t* X, _Float16 Y);
+        Vector2_d(const int64_t* X, _Float32 Y);
+        Vector2_d(const int64_t* X, _Float64 Y);
+        Vector2_d(const int64_t* X, _Float128 Y);
+        Vector2_d(const int64_t* X, __float128 Y);
+        Vector2_d(const int64_t* X, float Y);
+        Vector2_d(const int64_t* X, double Y);
+        // int64_t (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(int64_t* X, const int Y);
+        Vector2_d(int64_t* X, const int8_t Y);
+        Vector2_d(int64_t* X, const int16_t Y);
+        Vector2_d(int64_t* X, const int32_t Y);
+        Vector2_d(int64_t* X, const int64_t Y);
+        Vector2_d(int64_t* X, const __int128_t Y);
+        Vector2_d(int64_t* X, const _Float16 Y);
+        Vector2_d(int64_t* X, const _Float32 Y);
+        Vector2_d(int64_t* X, const _Float64 Y);
+        Vector2_d(int64_t* X, const _Float128 Y);
+        Vector2_d(int64_t* X, const __float128 Y);
+        Vector2_d(int64_t* X, const float Y);
+        Vector2_d(int64_t* X, const double Y);
+        // int64_t (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const int64_t* X, const int Y);
+        Vector2_d(const int64_t* X, const int8_t Y);
+        Vector2_d(const int64_t* X, const int16_t Y);
+        Vector2_d(const int64_t* X, const int32_t Y);
+        Vector2_d(const int64_t* X, const int64_t Y);
+        Vector2_d(const int64_t* X, const __int128_t Y);
+        Vector2_d(const int64_t* X, const _Float16 Y);
+        Vector2_d(const int64_t* X, const _Float32 Y);
+        Vector2_d(const int64_t* X, const _Float64 Y);
+        Vector2_d(const int64_t* X, const _Float128 Y);
+        Vector2_d(const int64_t* X, const __float128 Y);
+        Vector2_d(const int64_t* X, const float Y);
+        Vector2_d(const int64_t* X, const double Y);
+        // int64_t (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(int64_t X, int* Y);
+        Vector2_d(int64_t X, int8_t* Y);
+        Vector2_d(int64_t X, int16_t* Y);
+        Vector2_d(int64_t X, int32_t* Y);
+        Vector2_d(int64_t X, int64_t* Y);
+        Vector2_d(int64_t X, __int128_t* Y);
+        Vector2_d(int64_t X, _Float16* Y);
+        Vector2_d(int64_t X, _Float32* Y);
+        Vector2_d(int64_t X, _Float64* Y);
+        Vector2_d(int64_t X, _Float128* Y);
+        Vector2_d(int64_t X, __float128* Y);
+        Vector2_d(int64_t X, float* Y);
+        Vector2_d(int64_t X, double* Y);
+        // int64_t (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const int64_t X, int* Y);
+        Vector2_d(const int64_t X, int8_t* Y);
+        Vector2_d(const int64_t X, int16_t* Y);
+        Vector2_d(const int64_t X, int32_t* Y);
+        Vector2_d(const int64_t X, int64_t* Y);
+        Vector2_d(const int64_t X, __int128_t* Y);
+        Vector2_d(const int64_t X, _Float16* Y);
+        Vector2_d(const int64_t X, _Float32* Y);
+        Vector2_d(const int64_t X, _Float64* Y);
+        Vector2_d(const int64_t X, _Float128* Y);
+        Vector2_d(const int64_t X, __float128* Y);
+        Vector2_d(const int64_t X, float* Y);
+        Vector2_d(const int64_t X, double* Y);
+        // int64_t (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(int64_t X, const int* Y);
+        Vector2_d(int64_t X, const int8_t* Y);
+        Vector2_d(int64_t X, const int16_t* Y);
+        Vector2_d(int64_t X, const int32_t* Y);
+        Vector2_d(int64_t X, const int64_t* Y);
+        Vector2_d(int64_t X, const __int128_t* Y);
+        Vector2_d(int64_t X, const _Float16* Y);
+        Vector2_d(int64_t X, const _Float32* Y);
+        Vector2_d(int64_t X, const _Float64* Y);
+        Vector2_d(int64_t X, const _Float128* Y);
+        Vector2_d(int64_t X, const __float128* Y);
+        Vector2_d(int64_t X, const float* Y);
+        Vector2_d(int64_t X, const double* Y);
+        // int64_t (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const int64_t X, const int* Y);
+        Vector2_d(const int64_t X, const int8_t* Y);
+        Vector2_d(const int64_t X, const int16_t* Y);
+        Vector2_d(const int64_t X, const int32_t* Y);
+        Vector2_d(const int64_t X, const int64_t* Y);
+        Vector2_d(const int64_t X, const __int128_t* Y);
+        Vector2_d(const int64_t X, const _Float16* Y);
+        Vector2_d(const int64_t X, const _Float32* Y);
+        Vector2_d(const int64_t X, const _Float64* Y);
+        Vector2_d(const int64_t X, const _Float128* Y);
+        Vector2_d(const int64_t X, const __float128* Y);
+        Vector2_d(const int64_t X, const float* Y);
+        Vector2_d(const int64_t X, const double* Y);
+        // int64_t (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(int64_t* X, int* Y);
+        Vector2_d(int64_t* X, int8_t* Y);
+        Vector2_d(int64_t* X, int16_t* Y);
+        Vector2_d(int64_t* X, int32_t* Y);
+        Vector2_d(int64_t* X, int64_t* Y);
+        Vector2_d(int64_t* X, __int128_t* Y);
+        Vector2_d(int64_t* X, _Float16* Y);
+        Vector2_d(int64_t* X, _Float32* Y);
+        Vector2_d(int64_t* X, _Float64* Y);
+        Vector2_d(int64_t* X, _Float128* Y);
+        Vector2_d(int64_t* X, __float128* Y);
+        Vector2_d(int64_t* X, float* Y);
+        Vector2_d(int64_t* X, double* Y);
+        // int64_t (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const int64_t* X, int* Y);
+        Vector2_d(const int64_t* X, int8_t* Y);
+        Vector2_d(const int64_t* X, int16_t* Y);
+        Vector2_d(const int64_t* X, int32_t* Y);
+        Vector2_d(const int64_t* X, int64_t* Y);
+        Vector2_d(const int64_t* X, __int128_t* Y);
+        Vector2_d(const int64_t* X, _Float16* Y);
+        Vector2_d(const int64_t* X, _Float32* Y);
+        Vector2_d(const int64_t* X, _Float64* Y);
+        Vector2_d(const int64_t* X, _Float128* Y);
+        Vector2_d(const int64_t* X, __float128* Y);
+        Vector2_d(const int64_t* X, float* Y);
+        Vector2_d(const int64_t* X, double* Y);
+        // int64_t (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(int64_t* X, const int* Y);
+        Vector2_d(int64_t* X, const int8_t* Y);
+        Vector2_d(int64_t* X, const int16_t* Y);
+        Vector2_d(int64_t* X, const int32_t* Y);
+        Vector2_d(int64_t* X, const int64_t* Y);
+        Vector2_d(int64_t* X, const __int128_t* Y);
+        Vector2_d(int64_t* X, const _Float16* Y);
+        Vector2_d(int64_t* X, const _Float32* Y);
+        Vector2_d(int64_t* X, const _Float64* Y);
+        Vector2_d(int64_t* X, const _Float128* Y);
+        Vector2_d(int64_t* X, const __float128* Y);
+        Vector2_d(int64_t* X, const float* Y);
+        Vector2_d(int64_t* X, const double* Y);
+        // int64_t (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const int64_t* X, const int* Y);
+        Vector2_d(const int64_t* X, const int8_t* Y);
+        Vector2_d(const int64_t* X, const int16_t* Y);
+        Vector2_d(const int64_t* X, const int32_t* Y);
+        Vector2_d(const int64_t* X, const int64_t* Y);
+        Vector2_d(const int64_t* X, const __int128_t* Y);
+        Vector2_d(const int64_t* X, const _Float16* Y);
+        Vector2_d(const int64_t* X, const _Float32* Y);
+        Vector2_d(const int64_t* X, const _Float64* Y);
+        Vector2_d(const int64_t* X, const _Float128* Y);
+        Vector2_d(const int64_t* X, const __float128* Y);
+        Vector2_d(const int64_t* X, const float* Y);
+        Vector2_d(const int64_t* X, const double* Y);
+        // __int128_t (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(__int128_t X, int Y);
+        Vector2_d(__int128_t X, int8_t Y);
+        Vector2_d(__int128_t X, int16_t Y);
+        Vector2_d(__int128_t X, int32_t Y);
+        Vector2_d(__int128_t X, int64_t Y);
+        Vector2_d(__int128_t X, __int128_t Y);
+        Vector2_d(__int128_t X, _Float16 Y);
+        Vector2_d(__int128_t X, _Float32 Y);
+        Vector2_d(__int128_t X, _Float64 Y);
+        Vector2_d(__int128_t X, _Float128 Y);
+        Vector2_d(__int128_t X, __float128 Y);
+        Vector2_d(__int128_t X, float Y);
+        Vector2_d(__int128_t X, double Y);
+        // __int128_t (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const __int128_t X, int Y);
+        Vector2_d(const __int128_t X, int8_t Y);
+        Vector2_d(const __int128_t X, int16_t Y);
+        Vector2_d(const __int128_t X, int32_t Y);
+        Vector2_d(const __int128_t X, int64_t Y);
+        Vector2_d(const __int128_t X, __int128_t Y);
+        Vector2_d(const __int128_t X, _Float16 Y);
+        Vector2_d(const __int128_t X, _Float32 Y);
+        Vector2_d(const __int128_t X, _Float64 Y);
+        Vector2_d(const __int128_t X, _Float128 Y);
+        Vector2_d(const __int128_t X, __float128 Y);
+        Vector2_d(const __int128_t X, float Y);
+        Vector2_d(const __int128_t X, double Y);
+        // __int128_t (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(__int128_t X, const int Y);
+        Vector2_d(__int128_t X, const int8_t Y);
+        Vector2_d(__int128_t X, const int16_t Y);
+        Vector2_d(__int128_t X, const int32_t Y);
+        Vector2_d(__int128_t X, const int64_t Y);
+        Vector2_d(__int128_t X, const __int128_t Y);
+        Vector2_d(__int128_t X, const _Float16 Y);
+        Vector2_d(__int128_t X, const _Float32 Y);
+        Vector2_d(__int128_t X, const _Float64 Y);
+        Vector2_d(__int128_t X, const _Float128 Y);
+        Vector2_d(__int128_t X, const __float128 Y);
+        Vector2_d(__int128_t X, const float Y);
+        Vector2_d(__int128_t X, const double Y);
+        // __int128_t (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const __int128_t X, const int Y);
+        Vector2_d(const __int128_t X, const int8_t Y);
+        Vector2_d(const __int128_t X, const int16_t Y);
+        Vector2_d(const __int128_t X, const int32_t Y);
+        Vector2_d(const __int128_t X, const int64_t Y);
+        Vector2_d(const __int128_t X, const __int128_t Y);
+        Vector2_d(const __int128_t X, const _Float16 Y);
+        Vector2_d(const __int128_t X, const _Float32 Y);
+        Vector2_d(const __int128_t X, const _Float64 Y);
+        Vector2_d(const __int128_t X, const _Float128 Y);
+        Vector2_d(const __int128_t X, const __float128 Y);
+        Vector2_d(const __int128_t X, const float Y);
+        Vector2_d(const __int128_t X, const double Y);
+        // __int128_t (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(__int128_t* X, int Y);
+        Vector2_d(__int128_t* X, int8_t Y);
+        Vector2_d(__int128_t* X, int16_t Y);
+        Vector2_d(__int128_t* X, int32_t Y);
+        Vector2_d(__int128_t* X, int64_t Y);
+        Vector2_d(__int128_t* X, __int128_t Y);
+        Vector2_d(__int128_t* X, _Float16 Y);
+        Vector2_d(__int128_t* X, _Float32 Y);
+        Vector2_d(__int128_t* X, _Float64 Y);
+        Vector2_d(__int128_t* X, _Float128 Y);
+        Vector2_d(__int128_t* X, __float128 Y);
+        Vector2_d(__int128_t* X, float Y);
+        Vector2_d(__int128_t* X, double Y);
+        // __int128_t (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const __int128_t* X, int Y);
+        Vector2_d(const __int128_t* X, int8_t Y);
+        Vector2_d(const __int128_t* X, int16_t Y);
+        Vector2_d(const __int128_t* X, int32_t Y);
+        Vector2_d(const __int128_t* X, int64_t Y);
+        Vector2_d(const __int128_t* X, __int128_t Y);
+        Vector2_d(const __int128_t* X, _Float16 Y);
+        Vector2_d(const __int128_t* X, _Float32 Y);
+        Vector2_d(const __int128_t* X, _Float64 Y);
+        Vector2_d(const __int128_t* X, _Float128 Y);
+        Vector2_d(const __int128_t* X, __float128 Y);
+        Vector2_d(const __int128_t* X, float Y);
+        Vector2_d(const __int128_t* X, double Y);
+        // __int128_t (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(__int128_t* X, const int Y);
+        Vector2_d(__int128_t* X, const int8_t Y);
+        Vector2_d(__int128_t* X, const int16_t Y);
+        Vector2_d(__int128_t* X, const int32_t Y);
+        Vector2_d(__int128_t* X, const int64_t Y);
+        Vector2_d(__int128_t* X, const __int128_t Y);
+        Vector2_d(__int128_t* X, const _Float16 Y);
+        Vector2_d(__int128_t* X, const _Float32 Y);
+        Vector2_d(__int128_t* X, const _Float64 Y);
+        Vector2_d(__int128_t* X, const _Float128 Y);
+        Vector2_d(__int128_t* X, const __float128 Y);
+        Vector2_d(__int128_t* X, const float Y);
+        Vector2_d(__int128_t* X, const double Y);
+        // __int128_t (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const __int128_t* X, const int Y);
+        Vector2_d(const __int128_t* X, const int8_t Y);
+        Vector2_d(const __int128_t* X, const int16_t Y);
+        Vector2_d(const __int128_t* X, const int32_t Y);
+        Vector2_d(const __int128_t* X, const int64_t Y);
+        Vector2_d(const __int128_t* X, const __int128_t Y);
+        Vector2_d(const __int128_t* X, const _Float16 Y);
+        Vector2_d(const __int128_t* X, const _Float32 Y);
+        Vector2_d(const __int128_t* X, const _Float64 Y);
+        Vector2_d(const __int128_t* X, const _Float128 Y);
+        Vector2_d(const __int128_t* X, const __float128 Y);
+        Vector2_d(const __int128_t* X, const float Y);
+        Vector2_d(const __int128_t* X, const double Y);
+        // __int128_t (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(__int128_t X, int* Y);
+        Vector2_d(__int128_t X, int8_t* Y);
+        Vector2_d(__int128_t X, int16_t* Y);
+        Vector2_d(__int128_t X, int32_t* Y);
+        Vector2_d(__int128_t X, int64_t* Y);
+        Vector2_d(__int128_t X, __int128_t* Y);
+        Vector2_d(__int128_t X, _Float16* Y);
+        Vector2_d(__int128_t X, _Float32* Y);
+        Vector2_d(__int128_t X, _Float64* Y);
+        Vector2_d(__int128_t X, _Float128* Y);
+        Vector2_d(__int128_t X, __float128* Y);
+        Vector2_d(__int128_t X, float* Y);
+        Vector2_d(__int128_t X, double* Y);
+        // __int128_t (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const __int128_t X, int* Y);
+        Vector2_d(const __int128_t X, int8_t* Y);
+        Vector2_d(const __int128_t X, int16_t* Y);
+        Vector2_d(const __int128_t X, int32_t* Y);
+        Vector2_d(const __int128_t X, int64_t* Y);
+        Vector2_d(const __int128_t X, __int128_t* Y);
+        Vector2_d(const __int128_t X, _Float16* Y);
+        Vector2_d(const __int128_t X, _Float32* Y);
+        Vector2_d(const __int128_t X, _Float64* Y);
+        Vector2_d(const __int128_t X, _Float128* Y);
+        Vector2_d(const __int128_t X, __float128* Y);
+        Vector2_d(const __int128_t X, float* Y);
+        Vector2_d(const __int128_t X, double* Y);
+        // __int128_t (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(__int128_t X, const int* Y);
+        Vector2_d(__int128_t X, const int8_t* Y);
+        Vector2_d(__int128_t X, const int16_t* Y);
+        Vector2_d(__int128_t X, const int32_t* Y);
+        Vector2_d(__int128_t X, const int64_t* Y);
+        Vector2_d(__int128_t X, const __int128_t* Y);
+        Vector2_d(__int128_t X, const _Float16* Y);
+        Vector2_d(__int128_t X, const _Float32* Y);
+        Vector2_d(__int128_t X, const _Float64* Y);
+        Vector2_d(__int128_t X, const _Float128* Y);
+        Vector2_d(__int128_t X, const __float128* Y);
+        Vector2_d(__int128_t X, const float* Y);
+        Vector2_d(__int128_t X, const double* Y);
+        // __int128_t (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const __int128_t X, const int* Y);
+        Vector2_d(const __int128_t X, const int8_t* Y);
+        Vector2_d(const __int128_t X, const int16_t* Y);
+        Vector2_d(const __int128_t X, const int32_t* Y);
+        Vector2_d(const __int128_t X, const int64_t* Y);
+        Vector2_d(const __int128_t X, const __int128_t* Y);
+        Vector2_d(const __int128_t X, const _Float16* Y);
+        Vector2_d(const __int128_t X, const _Float32* Y);
+        Vector2_d(const __int128_t X, const _Float64* Y);
+        Vector2_d(const __int128_t X, const _Float128* Y);
+        Vector2_d(const __int128_t X, const __float128* Y);
+        Vector2_d(const __int128_t X, const float* Y);
+        Vector2_d(const __int128_t X, const double* Y);
+        // __int128_t (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(__int128_t* X, int* Y);
+        Vector2_d(__int128_t* X, int8_t* Y);
+        Vector2_d(__int128_t* X, int16_t* Y);
+        Vector2_d(__int128_t* X, int32_t* Y);
+        Vector2_d(__int128_t* X, int64_t* Y);
+        Vector2_d(__int128_t* X, __int128_t* Y);
+        Vector2_d(__int128_t* X, _Float16* Y);
+        Vector2_d(__int128_t* X, _Float32* Y);
+        Vector2_d(__int128_t* X, _Float64* Y);
+        Vector2_d(__int128_t* X, _Float128* Y);
+        Vector2_d(__int128_t* X, __float128* Y);
+        Vector2_d(__int128_t* X, float* Y);
+        Vector2_d(__int128_t* X, double* Y);
+        // __int128_t (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const __int128_t* X, int* Y);
+        Vector2_d(const __int128_t* X, int8_t* Y);
+        Vector2_d(const __int128_t* X, int16_t* Y);
+        Vector2_d(const __int128_t* X, int32_t* Y);
+        Vector2_d(const __int128_t* X, int64_t* Y);
+        Vector2_d(const __int128_t* X, __int128_t* Y);
+        Vector2_d(const __int128_t* X, _Float16* Y);
+        Vector2_d(const __int128_t* X, _Float32* Y);
+        Vector2_d(const __int128_t* X, _Float64* Y);
+        Vector2_d(const __int128_t* X, _Float128* Y);
+        Vector2_d(const __int128_t* X, __float128* Y);
+        Vector2_d(const __int128_t* X, float* Y);
+        Vector2_d(const __int128_t* X, double* Y);
+        // __int128_t (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(__int128_t* X, const int* Y);
+        Vector2_d(__int128_t* X, const int8_t* Y);
+        Vector2_d(__int128_t* X, const int16_t* Y);
+        Vector2_d(__int128_t* X, const int32_t* Y);
+        Vector2_d(__int128_t* X, const int64_t* Y);
+        Vector2_d(__int128_t* X, const __int128_t* Y);
+        Vector2_d(__int128_t* X, const _Float16* Y);
+        Vector2_d(__int128_t* X, const _Float32* Y);
+        Vector2_d(__int128_t* X, const _Float64* Y);
+        Vector2_d(__int128_t* X, const _Float128* Y);
+        Vector2_d(__int128_t* X, const __float128* Y);
+        Vector2_d(__int128_t* X, const float* Y);
+        Vector2_d(__int128_t* X, const double* Y);
+        // __int128_t (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const __int128_t* X, const int* Y);
+        Vector2_d(const __int128_t* X, const int8_t* Y);
+        Vector2_d(const __int128_t* X, const int16_t* Y);
+        Vector2_d(const __int128_t* X, const int32_t* Y);
+        Vector2_d(const __int128_t* X, const int64_t* Y);
+        Vector2_d(const __int128_t* X, const __int128_t* Y);
+        Vector2_d(const __int128_t* X, const _Float16* Y);
+        Vector2_d(const __int128_t* X, const _Float32* Y);
+        Vector2_d(const __int128_t* X, const _Float64* Y);
+        Vector2_d(const __int128_t* X, const _Float128* Y);
+        Vector2_d(const __int128_t* X, const __float128* Y);
+        Vector2_d(const __int128_t* X, const float* Y);
+        Vector2_d(const __int128_t* X, const double* Y);
+        // _Float16 (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(_Float16 X, int Y);
+        Vector2_d(_Float16 X, int8_t Y);
+        Vector2_d(_Float16 X, int16_t Y);
+        Vector2_d(_Float16 X, int32_t Y);
+        Vector2_d(_Float16 X, int64_t Y);
+        Vector2_d(_Float16 X, __int128_t Y);
+        Vector2_d(_Float16 X, _Float16 Y);
+        Vector2_d(_Float16 X, _Float32 Y);
+        Vector2_d(_Float16 X, _Float64 Y);
+        Vector2_d(_Float16 X, _Float128 Y);
+        Vector2_d(_Float16 X, __float128 Y);
+        Vector2_d(_Float16 X, float Y);
+        Vector2_d(_Float16 X, double Y);
+        // _Float16 (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float16 X, int Y);
+        Vector2_d(const _Float16 X, int8_t Y);
+        Vector2_d(const _Float16 X, int16_t Y);
+        Vector2_d(const _Float16 X, int32_t Y);
+        Vector2_d(const _Float16 X, int64_t Y);
+        Vector2_d(const _Float16 X, __int128_t Y);
+        Vector2_d(const _Float16 X, _Float16 Y);
+        Vector2_d(const _Float16 X, _Float32 Y);
+        Vector2_d(const _Float16 X, _Float64 Y);
+        Vector2_d(const _Float16 X, _Float128 Y);
+        Vector2_d(const _Float16 X, __float128 Y);
+        Vector2_d(const _Float16 X, float Y);
+        Vector2_d(const _Float16 X, double Y);
+        // _Float16 (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(_Float16 X, const int Y);
+        Vector2_d(_Float16 X, const int8_t Y);
+        Vector2_d(_Float16 X, const int16_t Y);
+        Vector2_d(_Float16 X, const int32_t Y);
+        Vector2_d(_Float16 X, const int64_t Y);
+        Vector2_d(_Float16 X, const __int128_t Y);
+        Vector2_d(_Float16 X, const _Float16 Y);
+        Vector2_d(_Float16 X, const _Float32 Y);
+        Vector2_d(_Float16 X, const _Float64 Y);
+        Vector2_d(_Float16 X, const _Float128 Y);
+        Vector2_d(_Float16 X, const __float128 Y);
+        Vector2_d(_Float16 X, const float Y);
+        Vector2_d(_Float16 X, const double Y);
+        // _Float16 (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float16 X, const int Y);
+        Vector2_d(const _Float16 X, const int8_t Y);
+        Vector2_d(const _Float16 X, const int16_t Y);
+        Vector2_d(const _Float16 X, const int32_t Y);
+        Vector2_d(const _Float16 X, const int64_t Y);
+        Vector2_d(const _Float16 X, const __int128_t Y);
+        Vector2_d(const _Float16 X, const _Float16 Y);
+        Vector2_d(const _Float16 X, const _Float32 Y);
+        Vector2_d(const _Float16 X, const _Float64 Y);
+        Vector2_d(const _Float16 X, const _Float128 Y);
+        Vector2_d(const _Float16 X, const __float128 Y);
+        Vector2_d(const _Float16 X, const float Y);
+        Vector2_d(const _Float16 X, const double Y);
+        // _Float16 (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(_Float16* X, int Y);
+        Vector2_d(_Float16* X, int8_t Y);
+        Vector2_d(_Float16* X, int16_t Y);
+        Vector2_d(_Float16* X, int32_t Y);
+        Vector2_d(_Float16* X, int64_t Y);
+        Vector2_d(_Float16* X, __int128_t Y);
+        Vector2_d(_Float16* X, _Float16 Y);
+        Vector2_d(_Float16* X, _Float32 Y);
+        Vector2_d(_Float16* X, _Float64 Y);
+        Vector2_d(_Float16* X, _Float128 Y);
+        Vector2_d(_Float16* X, __float128 Y);
+        Vector2_d(_Float16* X, float Y);
+        Vector2_d(_Float16* X, double Y);
+        // _Float16 (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float16* X, int Y);
+        Vector2_d(const _Float16* X, int8_t Y);
+        Vector2_d(const _Float16* X, int16_t Y);
+        Vector2_d(const _Float16* X, int32_t Y);
+        Vector2_d(const _Float16* X, int64_t Y);
+        Vector2_d(const _Float16* X, __int128_t Y);
+        Vector2_d(const _Float16* X, _Float16 Y);
+        Vector2_d(const _Float16* X, _Float32 Y);
+        Vector2_d(const _Float16* X, _Float64 Y);
+        Vector2_d(const _Float16* X, _Float128 Y);
+        Vector2_d(const _Float16* X, __float128 Y);
+        Vector2_d(const _Float16* X, float Y);
+        Vector2_d(const _Float16* X, double Y);
+        // _Float16 (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(_Float16* X, const int Y);
+        Vector2_d(_Float16* X, const int8_t Y);
+        Vector2_d(_Float16* X, const int16_t Y);
+        Vector2_d(_Float16* X, const int32_t Y);
+        Vector2_d(_Float16* X, const int64_t Y);
+        Vector2_d(_Float16* X, const __int128_t Y);
+        Vector2_d(_Float16* X, const _Float16 Y);
+        Vector2_d(_Float16* X, const _Float32 Y);
+        Vector2_d(_Float16* X, const _Float64 Y);
+        Vector2_d(_Float16* X, const _Float128 Y);
+        Vector2_d(_Float16* X, const __float128 Y);
+        Vector2_d(_Float16* X, const float Y);
+        Vector2_d(_Float16* X, const double Y);
+        // _Float16 (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float16* X, const int Y);
+        Vector2_d(const _Float16* X, const int8_t Y);
+        Vector2_d(const _Float16* X, const int16_t Y);
+        Vector2_d(const _Float16* X, const int32_t Y);
+        Vector2_d(const _Float16* X, const int64_t Y);
+        Vector2_d(const _Float16* X, const __int128_t Y);
+        Vector2_d(const _Float16* X, const _Float16 Y);
+        Vector2_d(const _Float16* X, const _Float32 Y);
+        Vector2_d(const _Float16* X, const _Float64 Y);
+        Vector2_d(const _Float16* X, const _Float128 Y);
+        Vector2_d(const _Float16* X, const __float128 Y);
+        Vector2_d(const _Float16* X, const float Y);
+        Vector2_d(const _Float16* X, const double Y);
+        // _Float16 (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(_Float16 X, int* Y);
+        Vector2_d(_Float16 X, int8_t* Y);
+        Vector2_d(_Float16 X, int16_t* Y);
+        Vector2_d(_Float16 X, int32_t* Y);
+        Vector2_d(_Float16 X, int64_t* Y);
+        Vector2_d(_Float16 X, __int128_t* Y);
+        Vector2_d(_Float16 X, _Float16* Y);
+        Vector2_d(_Float16 X, _Float32* Y);
+        Vector2_d(_Float16 X, _Float64* Y);
+        Vector2_d(_Float16 X, _Float128* Y);
+        Vector2_d(_Float16 X, __float128* Y);
+        Vector2_d(_Float16 X, float* Y);
+        Vector2_d(_Float16 X, double* Y);
+        // _Float16 (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float16 X, int* Y);
+        Vector2_d(const _Float16 X, int8_t* Y);
+        Vector2_d(const _Float16 X, int16_t* Y);
+        Vector2_d(const _Float16 X, int32_t* Y);
+        Vector2_d(const _Float16 X, int64_t* Y);
+        Vector2_d(const _Float16 X, __int128_t* Y);
+        Vector2_d(const _Float16 X, _Float16* Y);
+        Vector2_d(const _Float16 X, _Float32* Y);
+        Vector2_d(const _Float16 X, _Float64* Y);
+        Vector2_d(const _Float16 X, _Float128* Y);
+        Vector2_d(const _Float16 X, __float128* Y);
+        Vector2_d(const _Float16 X, float* Y);
+        Vector2_d(const _Float16 X, double* Y);
+        // _Float16 (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(_Float16 X, const int* Y);
+        Vector2_d(_Float16 X, const int8_t* Y);
+        Vector2_d(_Float16 X, const int16_t* Y);
+        Vector2_d(_Float16 X, const int32_t* Y);
+        Vector2_d(_Float16 X, const int64_t* Y);
+        Vector2_d(_Float16 X, const __int128_t* Y);
+        Vector2_d(_Float16 X, const _Float16* Y);
+        Vector2_d(_Float16 X, const _Float32* Y);
+        Vector2_d(_Float16 X, const _Float64* Y);
+        Vector2_d(_Float16 X, const _Float128* Y);
+        Vector2_d(_Float16 X, const __float128* Y);
+        Vector2_d(_Float16 X, const float* Y);
+        Vector2_d(_Float16 X, const double* Y);
+        // _Float16 (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float16 X, const int* Y);
+        Vector2_d(const _Float16 X, const int8_t* Y);
+        Vector2_d(const _Float16 X, const int16_t* Y);
+        Vector2_d(const _Float16 X, const int32_t* Y);
+        Vector2_d(const _Float16 X, const int64_t* Y);
+        Vector2_d(const _Float16 X, const __int128_t* Y);
+        Vector2_d(const _Float16 X, const _Float16* Y);
+        Vector2_d(const _Float16 X, const _Float32* Y);
+        Vector2_d(const _Float16 X, const _Float64* Y);
+        Vector2_d(const _Float16 X, const _Float128* Y);
+        Vector2_d(const _Float16 X, const __float128* Y);
+        Vector2_d(const _Float16 X, const float* Y);
+        Vector2_d(const _Float16 X, const double* Y);
+        // _Float16 (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(_Float16* X, int* Y);
+        Vector2_d(_Float16* X, int8_t* Y);
+        Vector2_d(_Float16* X, int16_t* Y);
+        Vector2_d(_Float16* X, int32_t* Y);
+        Vector2_d(_Float16* X, int64_t* Y);
+        Vector2_d(_Float16* X, __int128_t* Y);
+        Vector2_d(_Float16* X, _Float16* Y);
+        Vector2_d(_Float16* X, _Float32* Y);
+        Vector2_d(_Float16* X, _Float64* Y);
+        Vector2_d(_Float16* X, _Float128* Y);
+        Vector2_d(_Float16* X, __float128* Y);
+        Vector2_d(_Float16* X, float* Y);
+        Vector2_d(_Float16* X, double* Y);
+        // _Float16 (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float16* X, int* Y);
+        Vector2_d(const _Float16* X, int8_t* Y);
+        Vector2_d(const _Float16* X, int16_t* Y);
+        Vector2_d(const _Float16* X, int32_t* Y);
+        Vector2_d(const _Float16* X, int64_t* Y);
+        Vector2_d(const _Float16* X, __int128_t* Y);
+        Vector2_d(const _Float16* X, _Float16* Y);
+        Vector2_d(const _Float16* X, _Float32* Y);
+        Vector2_d(const _Float16* X, _Float64* Y);
+        Vector2_d(const _Float16* X, _Float128* Y);
+        Vector2_d(const _Float16* X, __float128* Y);
+        Vector2_d(const _Float16* X, float* Y);
+        Vector2_d(const _Float16* X, double* Y);
+        // _Float16 (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(_Float16* X, const int* Y);
+        Vector2_d(_Float16* X, const int8_t* Y);
+        Vector2_d(_Float16* X, const int16_t* Y);
+        Vector2_d(_Float16* X, const int32_t* Y);
+        Vector2_d(_Float16* X, const int64_t* Y);
+        Vector2_d(_Float16* X, const __int128_t* Y);
+        Vector2_d(_Float16* X, const _Float16* Y);
+        Vector2_d(_Float16* X, const _Float32* Y);
+        Vector2_d(_Float16* X, const _Float64* Y);
+        Vector2_d(_Float16* X, const _Float128* Y);
+        Vector2_d(_Float16* X, const __float128* Y);
+        Vector2_d(_Float16* X, const float* Y);
+        Vector2_d(_Float16* X, const double* Y);
+        // _Float16 (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float16* X, const int* Y);
+        Vector2_d(const _Float16* X, const int8_t* Y);
+        Vector2_d(const _Float16* X, const int16_t* Y);
+        Vector2_d(const _Float16* X, const int32_t* Y);
+        Vector2_d(const _Float16* X, const int64_t* Y);
+        Vector2_d(const _Float16* X, const __int128_t* Y);
+        Vector2_d(const _Float16* X, const _Float16* Y);
+        Vector2_d(const _Float16* X, const _Float32* Y);
+        Vector2_d(const _Float16* X, const _Float64* Y);
+        Vector2_d(const _Float16* X, const _Float128* Y);
+        Vector2_d(const _Float16* X, const __float128* Y);
+        Vector2_d(const _Float16* X, const float* Y);
+        Vector2_d(const _Float16* X, const double* Y);
+        // _Float32 (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(_Float32 X, int Y);
+        Vector2_d(_Float32 X, int8_t Y);
+        Vector2_d(_Float32 X, int16_t Y);
+        Vector2_d(_Float32 X, int32_t Y);
+        Vector2_d(_Float32 X, int64_t Y);
+        Vector2_d(_Float32 X, __int128_t Y);
+        Vector2_d(_Float32 X, _Float16 Y);
+        Vector2_d(_Float32 X, _Float32 Y);
+        Vector2_d(_Float32 X, _Float64 Y);
+        Vector2_d(_Float32 X, _Float128 Y);
+        Vector2_d(_Float32 X, __float128 Y);
+        Vector2_d(_Float32 X, float Y);
+        Vector2_d(_Float32 X, double Y);
+        // _Float32 (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float32 X, int Y);
+        Vector2_d(const _Float32 X, int8_t Y);
+        Vector2_d(const _Float32 X, int16_t Y);
+        Vector2_d(const _Float32 X, int32_t Y);
+        Vector2_d(const _Float32 X, int64_t Y);
+        Vector2_d(const _Float32 X, __int128_t Y);
+        Vector2_d(const _Float32 X, _Float16 Y);
+        Vector2_d(const _Float32 X, _Float32 Y);
+        Vector2_d(const _Float32 X, _Float64 Y);
+        Vector2_d(const _Float32 X, _Float128 Y);
+        Vector2_d(const _Float32 X, __float128 Y);
+        Vector2_d(const _Float32 X, float Y);
+        Vector2_d(const _Float32 X, double Y);
+        // _Float32 (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(_Float32 X, const int Y);
+        Vector2_d(_Float32 X, const int8_t Y);
+        Vector2_d(_Float32 X, const int16_t Y);
+        Vector2_d(_Float32 X, const int32_t Y);
+        Vector2_d(_Float32 X, const int64_t Y);
+        Vector2_d(_Float32 X, const __int128_t Y);
+        Vector2_d(_Float32 X, const _Float16 Y);
+        Vector2_d(_Float32 X, const _Float32 Y);
+        Vector2_d(_Float32 X, const _Float64 Y);
+        Vector2_d(_Float32 X, const _Float128 Y);
+        Vector2_d(_Float32 X, const __float128 Y);
+        Vector2_d(_Float32 X, const float Y);
+        Vector2_d(_Float32 X, const double Y);
+        // _Float32 (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float32 X, const int Y);
+        Vector2_d(const _Float32 X, const int8_t Y);
+        Vector2_d(const _Float32 X, const int16_t Y);
+        Vector2_d(const _Float32 X, const int32_t Y);
+        Vector2_d(const _Float32 X, const int64_t Y);
+        Vector2_d(const _Float32 X, const __int128_t Y);
+        Vector2_d(const _Float32 X, const _Float16 Y);
+        Vector2_d(const _Float32 X, const _Float32 Y);
+        Vector2_d(const _Float32 X, const _Float64 Y);
+        Vector2_d(const _Float32 X, const _Float128 Y);
+        Vector2_d(const _Float32 X, const __float128 Y);
+        Vector2_d(const _Float32 X, const float Y);
+        Vector2_d(const _Float32 X, const double Y);
+        // _Float32 (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(_Float32* X, int Y);
+        Vector2_d(_Float32* X, int8_t Y);
+        Vector2_d(_Float32* X, int16_t Y);
+        Vector2_d(_Float32* X, int32_t Y);
+        Vector2_d(_Float32* X, int64_t Y);
+        Vector2_d(_Float32* X, __int128_t Y);
+        Vector2_d(_Float32* X, _Float16 Y);
+        Vector2_d(_Float32* X, _Float32 Y);
+        Vector2_d(_Float32* X, _Float64 Y);
+        Vector2_d(_Float32* X, _Float128 Y);
+        Vector2_d(_Float32* X, __float128 Y);
+        Vector2_d(_Float32* X, float Y);
+        Vector2_d(_Float32* X, double Y);
+        // _Float32 (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float32* X, int Y);
+        Vector2_d(const _Float32* X, int8_t Y);
+        Vector2_d(const _Float32* X, int16_t Y);
+        Vector2_d(const _Float32* X, int32_t Y);
+        Vector2_d(const _Float32* X, int64_t Y);
+        Vector2_d(const _Float32* X, __int128_t Y);
+        Vector2_d(const _Float32* X, _Float16 Y);
+        Vector2_d(const _Float32* X, _Float32 Y);
+        Vector2_d(const _Float32* X, _Float64 Y);
+        Vector2_d(const _Float32* X, _Float128 Y);
+        Vector2_d(const _Float32* X, __float128 Y);
+        Vector2_d(const _Float32* X, float Y);
+        Vector2_d(const _Float32* X, double Y);
+        // _Float32 (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(_Float32* X, const int Y);
+        Vector2_d(_Float32* X, const int8_t Y);
+        Vector2_d(_Float32* X, const int16_t Y);
+        Vector2_d(_Float32* X, const int32_t Y);
+        Vector2_d(_Float32* X, const int64_t Y);
+        Vector2_d(_Float32* X, const __int128_t Y);
+        Vector2_d(_Float32* X, const _Float16 Y);
+        Vector2_d(_Float32* X, const _Float32 Y);
+        Vector2_d(_Float32* X, const _Float64 Y);
+        Vector2_d(_Float32* X, const _Float128 Y);
+        Vector2_d(_Float32* X, const __float128 Y);
+        Vector2_d(_Float32* X, const float Y);
+        Vector2_d(_Float32* X, const double Y);
+        // _Float32 (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float32* X, const int Y);
+        Vector2_d(const _Float32* X, const int8_t Y);
+        Vector2_d(const _Float32* X, const int16_t Y);
+        Vector2_d(const _Float32* X, const int32_t Y);
+        Vector2_d(const _Float32* X, const int64_t Y);
+        Vector2_d(const _Float32* X, const __int128_t Y);
+        Vector2_d(const _Float32* X, const _Float16 Y);
+        Vector2_d(const _Float32* X, const _Float32 Y);
+        Vector2_d(const _Float32* X, const _Float64 Y);
+        Vector2_d(const _Float32* X, const _Float128 Y);
+        Vector2_d(const _Float32* X, const __float128 Y);
+        Vector2_d(const _Float32* X, const float Y);
+        Vector2_d(const _Float32* X, const double Y);
+        // _Float32 (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(_Float32 X, int* Y);
+        Vector2_d(_Float32 X, int8_t* Y);
+        Vector2_d(_Float32 X, int16_t* Y);
+        Vector2_d(_Float32 X, int32_t* Y);
+        Vector2_d(_Float32 X, int64_t* Y);
+        Vector2_d(_Float32 X, __int128_t* Y);
+        Vector2_d(_Float32 X, _Float16* Y);
+        Vector2_d(_Float32 X, _Float32* Y);
+        Vector2_d(_Float32 X, _Float64* Y);
+        Vector2_d(_Float32 X, _Float128* Y);
+        Vector2_d(_Float32 X, __float128* Y);
+        Vector2_d(_Float32 X, float* Y);
+        Vector2_d(_Float32 X, double* Y);
+        // _Float32 (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float32 X, int* Y);
+        Vector2_d(const _Float32 X, int8_t* Y);
+        Vector2_d(const _Float32 X, int16_t* Y);
+        Vector2_d(const _Float32 X, int32_t* Y);
+        Vector2_d(const _Float32 X, int64_t* Y);
+        Vector2_d(const _Float32 X, __int128_t* Y);
+        Vector2_d(const _Float32 X, _Float16* Y);
+        Vector2_d(const _Float32 X, _Float32* Y);
+        Vector2_d(const _Float32 X, _Float64* Y);
+        Vector2_d(const _Float32 X, _Float128* Y);
+        Vector2_d(const _Float32 X, __float128* Y);
+        Vector2_d(const _Float32 X, float* Y);
+        Vector2_d(const _Float32 X, double* Y);
+        // _Float32 (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(_Float32 X, const int* Y);
+        Vector2_d(_Float32 X, const int8_t* Y);
+        Vector2_d(_Float32 X, const int16_t* Y);
+        Vector2_d(_Float32 X, const int32_t* Y);
+        Vector2_d(_Float32 X, const int64_t* Y);
+        Vector2_d(_Float32 X, const __int128_t* Y);
+        Vector2_d(_Float32 X, const _Float16* Y);
+        Vector2_d(_Float32 X, const _Float32* Y);
+        Vector2_d(_Float32 X, const _Float64* Y);
+        Vector2_d(_Float32 X, const _Float128* Y);
+        Vector2_d(_Float32 X, const __float128* Y);
+        Vector2_d(_Float32 X, const float* Y);
+        Vector2_d(_Float32 X, const double* Y);
+        // _Float32 (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float32 X, const int* Y);
+        Vector2_d(const _Float32 X, const int8_t* Y);
+        Vector2_d(const _Float32 X, const int16_t* Y);
+        Vector2_d(const _Float32 X, const int32_t* Y);
+        Vector2_d(const _Float32 X, const int64_t* Y);
+        Vector2_d(const _Float32 X, const __int128_t* Y);
+        Vector2_d(const _Float32 X, const _Float16* Y);
+        Vector2_d(const _Float32 X, const _Float32* Y);
+        Vector2_d(const _Float32 X, const _Float64* Y);
+        Vector2_d(const _Float32 X, const _Float128* Y);
+        Vector2_d(const _Float32 X, const __float128* Y);
+        Vector2_d(const _Float32 X, const float* Y);
+        Vector2_d(const _Float32 X, const double* Y);
+        // _Float32 (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(_Float32* X, int* Y);
+        Vector2_d(_Float32* X, int8_t* Y);
+        Vector2_d(_Float32* X, int16_t* Y);
+        Vector2_d(_Float32* X, int32_t* Y);
+        Vector2_d(_Float32* X, int64_t* Y);
+        Vector2_d(_Float32* X, __int128_t* Y);
+        Vector2_d(_Float32* X, _Float16* Y);
+        Vector2_d(_Float32* X, _Float32* Y);
+        Vector2_d(_Float32* X, _Float64* Y);
+        Vector2_d(_Float32* X, _Float128* Y);
+        Vector2_d(_Float32* X, __float128* Y);
+        Vector2_d(_Float32* X, float* Y);
+        Vector2_d(_Float32* X, double* Y);
+        // _Float32 (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float32* X, int* Y);
+        Vector2_d(const _Float32* X, int8_t* Y);
+        Vector2_d(const _Float32* X, int16_t* Y);
+        Vector2_d(const _Float32* X, int32_t* Y);
+        Vector2_d(const _Float32* X, int64_t* Y);
+        Vector2_d(const _Float32* X, __int128_t* Y);
+        Vector2_d(const _Float32* X, _Float16* Y);
+        Vector2_d(const _Float32* X, _Float32* Y);
+        Vector2_d(const _Float32* X, _Float64* Y);
+        Vector2_d(const _Float32* X, _Float128* Y);
+        Vector2_d(const _Float32* X, __float128* Y);
+        Vector2_d(const _Float32* X, float* Y);
+        Vector2_d(const _Float32* X, double* Y);
+        // _Float32 (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(_Float32* X, const int* Y);
+        Vector2_d(_Float32* X, const int8_t* Y);
+        Vector2_d(_Float32* X, const int16_t* Y);
+        Vector2_d(_Float32* X, const int32_t* Y);
+        Vector2_d(_Float32* X, const int64_t* Y);
+        Vector2_d(_Float32* X, const __int128_t* Y);
+        Vector2_d(_Float32* X, const _Float16* Y);
+        Vector2_d(_Float32* X, const _Float32* Y);
+        Vector2_d(_Float32* X, const _Float64* Y);
+        Vector2_d(_Float32* X, const _Float128* Y);
+        Vector2_d(_Float32* X, const __float128* Y);
+        Vector2_d(_Float32* X, const float* Y);
+        Vector2_d(_Float32* X, const double* Y);
+        // _Float32 (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float32* X, const int* Y);
+        Vector2_d(const _Float32* X, const int8_t* Y);
+        Vector2_d(const _Float32* X, const int16_t* Y);
+        Vector2_d(const _Float32* X, const int32_t* Y);
+        Vector2_d(const _Float32* X, const int64_t* Y);
+        Vector2_d(const _Float32* X, const __int128_t* Y);
+        Vector2_d(const _Float32* X, const _Float16* Y);
+        Vector2_d(const _Float32* X, const _Float32* Y);
+        Vector2_d(const _Float32* X, const _Float64* Y);
+        Vector2_d(const _Float32* X, const _Float128* Y);
+        Vector2_d(const _Float32* X, const __float128* Y);
+        Vector2_d(const _Float32* X, const float* Y);
+        Vector2_d(const _Float32* X, const double* Y);
+        // _Float64 (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(_Float64 X, int Y);
+        Vector2_d(_Float64 X, int8_t Y);
+        Vector2_d(_Float64 X, int16_t Y);
+        Vector2_d(_Float64 X, int32_t Y);
+        Vector2_d(_Float64 X, int64_t Y);
+        Vector2_d(_Float64 X, __int128_t Y);
+        Vector2_d(_Float64 X, _Float16 Y);
+        Vector2_d(_Float64 X, _Float32 Y);
+        Vector2_d(_Float64 X, _Float64 Y);
+        Vector2_d(_Float64 X, _Float128 Y);
+        Vector2_d(_Float64 X, __float128 Y);
+        Vector2_d(_Float64 X, float Y);
+        Vector2_d(_Float64 X, double Y);
+        // _Float64 (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float64 X, int Y);
+        Vector2_d(const _Float64 X, int8_t Y);
+        Vector2_d(const _Float64 X, int16_t Y);
+        Vector2_d(const _Float64 X, int32_t Y);
+        Vector2_d(const _Float64 X, int64_t Y);
+        Vector2_d(const _Float64 X, __int128_t Y);
+        Vector2_d(const _Float64 X, _Float16 Y);
+        Vector2_d(const _Float64 X, _Float32 Y);
+        Vector2_d(const _Float64 X, _Float64 Y);
+        Vector2_d(const _Float64 X, _Float128 Y);
+        Vector2_d(const _Float64 X, __float128 Y);
+        Vector2_d(const _Float64 X, float Y);
+        Vector2_d(const _Float64 X, double Y);
+        // _Float64 (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(_Float64 X, const int Y);
+        Vector2_d(_Float64 X, const int8_t Y);
+        Vector2_d(_Float64 X, const int16_t Y);
+        Vector2_d(_Float64 X, const int32_t Y);
+        Vector2_d(_Float64 X, const int64_t Y);
+        Vector2_d(_Float64 X, const __int128_t Y);
+        Vector2_d(_Float64 X, const _Float16 Y);
+        Vector2_d(_Float64 X, const _Float32 Y);
+        Vector2_d(_Float64 X, const _Float64 Y);
+        Vector2_d(_Float64 X, const _Float128 Y);
+        Vector2_d(_Float64 X, const __float128 Y);
+        Vector2_d(_Float64 X, const float Y);
+        Vector2_d(_Float64 X, const double Y);
+        // _Float64 (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float64 X, const int Y);
+        Vector2_d(const _Float64 X, const int8_t Y);
+        Vector2_d(const _Float64 X, const int16_t Y);
+        Vector2_d(const _Float64 X, const int32_t Y);
+        Vector2_d(const _Float64 X, const int64_t Y);
+        Vector2_d(const _Float64 X, const __int128_t Y);
+        Vector2_d(const _Float64 X, const _Float16 Y);
+        Vector2_d(const _Float64 X, const _Float32 Y);
+        Vector2_d(const _Float64 X, const _Float64 Y);
+        Vector2_d(const _Float64 X, const _Float128 Y);
+        Vector2_d(const _Float64 X, const __float128 Y);
+        Vector2_d(const _Float64 X, const float Y);
+        Vector2_d(const _Float64 X, const double Y);
+        // _Float64 (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(_Float64* X, int Y);
+        Vector2_d(_Float64* X, int8_t Y);
+        Vector2_d(_Float64* X, int16_t Y);
+        Vector2_d(_Float64* X, int32_t Y);
+        Vector2_d(_Float64* X, int64_t Y);
+        Vector2_d(_Float64* X, __int128_t Y);
+        Vector2_d(_Float64* X, _Float16 Y);
+        Vector2_d(_Float64* X, _Float32 Y);
+        Vector2_d(_Float64* X, _Float64 Y);
+        Vector2_d(_Float64* X, _Float128 Y);
+        Vector2_d(_Float64* X, __float128 Y);
+        Vector2_d(_Float64* X, float Y);
+        Vector2_d(_Float64* X, double Y);
+        // _Float64 (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float64* X, int Y);
+        Vector2_d(const _Float64* X, int8_t Y);
+        Vector2_d(const _Float64* X, int16_t Y);
+        Vector2_d(const _Float64* X, int32_t Y);
+        Vector2_d(const _Float64* X, int64_t Y);
+        Vector2_d(const _Float64* X, __int128_t Y);
+        Vector2_d(const _Float64* X, _Float16 Y);
+        Vector2_d(const _Float64* X, _Float32 Y);
+        Vector2_d(const _Float64* X, _Float64 Y);
+        Vector2_d(const _Float64* X, _Float128 Y);
+        Vector2_d(const _Float64* X, __float128 Y);
+        Vector2_d(const _Float64* X, float Y);
+        Vector2_d(const _Float64* X, double Y);
+        // _Float64 (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(_Float64* X, const int Y);
+        Vector2_d(_Float64* X, const int8_t Y);
+        Vector2_d(_Float64* X, const int16_t Y);
+        Vector2_d(_Float64* X, const int32_t Y);
+        Vector2_d(_Float64* X, const int64_t Y);
+        Vector2_d(_Float64* X, const __int128_t Y);
+        Vector2_d(_Float64* X, const _Float16 Y);
+        Vector2_d(_Float64* X, const _Float32 Y);
+        Vector2_d(_Float64* X, const _Float64 Y);
+        Vector2_d(_Float64* X, const _Float128 Y);
+        Vector2_d(_Float64* X, const __float128 Y);
+        Vector2_d(_Float64* X, const float Y);
+        Vector2_d(_Float64* X, const double Y);
+        // _Float64 (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float64* X, const int Y);
+        Vector2_d(const _Float64* X, const int8_t Y);
+        Vector2_d(const _Float64* X, const int16_t Y);
+        Vector2_d(const _Float64* X, const int32_t Y);
+        Vector2_d(const _Float64* X, const int64_t Y);
+        Vector2_d(const _Float64* X, const __int128_t Y);
+        Vector2_d(const _Float64* X, const _Float16 Y);
+        Vector2_d(const _Float64* X, const _Float32 Y);
+        Vector2_d(const _Float64* X, const _Float64 Y);
+        Vector2_d(const _Float64* X, const _Float128 Y);
+        Vector2_d(const _Float64* X, const __float128 Y);
+        Vector2_d(const _Float64* X, const float Y);
+        Vector2_d(const _Float64* X, const double Y);
+        // _Float64 (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(_Float64 X, int* Y);
+        Vector2_d(_Float64 X, int8_t* Y);
+        Vector2_d(_Float64 X, int16_t* Y);
+        Vector2_d(_Float64 X, int32_t* Y);
+        Vector2_d(_Float64 X, int64_t* Y);
+        Vector2_d(_Float64 X, __int128_t* Y);
+        Vector2_d(_Float64 X, _Float16* Y);
+        Vector2_d(_Float64 X, _Float32* Y);
+        Vector2_d(_Float64 X, _Float64* Y);
+        Vector2_d(_Float64 X, _Float128* Y);
+        Vector2_d(_Float64 X, __float128* Y);
+        Vector2_d(_Float64 X, float* Y);
+        Vector2_d(_Float64 X, double* Y);
+        // _Float64 (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float64 X, int* Y);
+        Vector2_d(const _Float64 X, int8_t* Y);
+        Vector2_d(const _Float64 X, int16_t* Y);
+        Vector2_d(const _Float64 X, int32_t* Y);
+        Vector2_d(const _Float64 X, int64_t* Y);
+        Vector2_d(const _Float64 X, __int128_t* Y);
+        Vector2_d(const _Float64 X, _Float16* Y);
+        Vector2_d(const _Float64 X, _Float32* Y);
+        Vector2_d(const _Float64 X, _Float64* Y);
+        Vector2_d(const _Float64 X, _Float128* Y);
+        Vector2_d(const _Float64 X, __float128* Y);
+        Vector2_d(const _Float64 X, float* Y);
+        Vector2_d(const _Float64 X, double* Y);
+        // _Float64 (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(_Float64 X, const int* Y);
+        Vector2_d(_Float64 X, const int8_t* Y);
+        Vector2_d(_Float64 X, const int16_t* Y);
+        Vector2_d(_Float64 X, const int32_t* Y);
+        Vector2_d(_Float64 X, const int64_t* Y);
+        Vector2_d(_Float64 X, const __int128_t* Y);
+        Vector2_d(_Float64 X, const _Float16* Y);
+        Vector2_d(_Float64 X, const _Float32* Y);
+        Vector2_d(_Float64 X, const _Float64* Y);
+        Vector2_d(_Float64 X, const _Float128* Y);
+        Vector2_d(_Float64 X, const __float128* Y);
+        Vector2_d(_Float64 X, const float* Y);
+        Vector2_d(_Float64 X, const double* Y);
+        // _Float64 (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float64 X, const int* Y);
+        Vector2_d(const _Float64 X, const int8_t* Y);
+        Vector2_d(const _Float64 X, const int16_t* Y);
+        Vector2_d(const _Float64 X, const int32_t* Y);
+        Vector2_d(const _Float64 X, const int64_t* Y);
+        Vector2_d(const _Float64 X, const __int128_t* Y);
+        Vector2_d(const _Float64 X, const _Float16* Y);
+        Vector2_d(const _Float64 X, const _Float32* Y);
+        Vector2_d(const _Float64 X, const _Float64* Y);
+        Vector2_d(const _Float64 X, const _Float128* Y);
+        Vector2_d(const _Float64 X, const __float128* Y);
+        Vector2_d(const _Float64 X, const float* Y);
+        Vector2_d(const _Float64 X, const double* Y);
+        // _Float64 (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(_Float64* X, int* Y);
+        Vector2_d(_Float64* X, int8_t* Y);
+        Vector2_d(_Float64* X, int16_t* Y);
+        Vector2_d(_Float64* X, int32_t* Y);
+        Vector2_d(_Float64* X, int64_t* Y);
+        Vector2_d(_Float64* X, __int128_t* Y);
+        Vector2_d(_Float64* X, _Float16* Y);
+        Vector2_d(_Float64* X, _Float32* Y);
+        Vector2_d(_Float64* X, _Float64* Y);
+        Vector2_d(_Float64* X, _Float128* Y);
+        Vector2_d(_Float64* X, __float128* Y);
+        Vector2_d(_Float64* X, float* Y);
+        Vector2_d(_Float64* X, double* Y);
+        // _Float64 (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float64* X, int* Y);
+        Vector2_d(const _Float64* X, int8_t* Y);
+        Vector2_d(const _Float64* X, int16_t* Y);
+        Vector2_d(const _Float64* X, int32_t* Y);
+        Vector2_d(const _Float64* X, int64_t* Y);
+        Vector2_d(const _Float64* X, __int128_t* Y);
+        Vector2_d(const _Float64* X, _Float16* Y);
+        Vector2_d(const _Float64* X, _Float32* Y);
+        Vector2_d(const _Float64* X, _Float64* Y);
+        Vector2_d(const _Float64* X, _Float128* Y);
+        Vector2_d(const _Float64* X, __float128* Y);
+        Vector2_d(const _Float64* X, float* Y);
+        Vector2_d(const _Float64* X, double* Y);
+        // _Float64 (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(_Float64* X, const int* Y);
+        Vector2_d(_Float64* X, const int8_t* Y);
+        Vector2_d(_Float64* X, const int16_t* Y);
+        Vector2_d(_Float64* X, const int32_t* Y);
+        Vector2_d(_Float64* X, const int64_t* Y);
+        Vector2_d(_Float64* X, const __int128_t* Y);
+        Vector2_d(_Float64* X, const _Float16* Y);
+        Vector2_d(_Float64* X, const _Float32* Y);
+        Vector2_d(_Float64* X, const _Float64* Y);
+        Vector2_d(_Float64* X, const _Float128* Y);
+        Vector2_d(_Float64* X, const __float128* Y);
+        Vector2_d(_Float64* X, const float* Y);
+        Vector2_d(_Float64* X, const double* Y);
+        // _Float64 (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float64* X, const int* Y);
+        Vector2_d(const _Float64* X, const int8_t* Y);
+        Vector2_d(const _Float64* X, const int16_t* Y);
+        Vector2_d(const _Float64* X, const int32_t* Y);
+        Vector2_d(const _Float64* X, const int64_t* Y);
+        Vector2_d(const _Float64* X, const __int128_t* Y);
+        Vector2_d(const _Float64* X, const _Float16* Y);
+        Vector2_d(const _Float64* X, const _Float32* Y);
+        Vector2_d(const _Float64* X, const _Float64* Y);
+        Vector2_d(const _Float64* X, const _Float128* Y);
+        Vector2_d(const _Float64* X, const __float128* Y);
+        Vector2_d(const _Float64* X, const float* Y);
+        Vector2_d(const _Float64* X, const double* Y);
+        // _Float128 (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(_Float128 X, int Y);
+        Vector2_d(_Float128 X, int8_t Y);
+        Vector2_d(_Float128 X, int16_t Y);
+        Vector2_d(_Float128 X, int32_t Y);
+        Vector2_d(_Float128 X, int64_t Y);
+        Vector2_d(_Float128 X, __int128_t Y);
+        Vector2_d(_Float128 X, _Float16 Y);
+        Vector2_d(_Float128 X, _Float32 Y);
+        Vector2_d(_Float128 X, _Float64 Y);
+        Vector2_d(_Float128 X, _Float128 Y);
+        Vector2_d(_Float128 X, __float128 Y);
+        Vector2_d(_Float128 X, float Y);
+        Vector2_d(_Float128 X, double Y);
+        // _Float128 (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float128 X, int Y);
+        Vector2_d(const _Float128 X, int8_t Y);
+        Vector2_d(const _Float128 X, int16_t Y);
+        Vector2_d(const _Float128 X, int32_t Y);
+        Vector2_d(const _Float128 X, int64_t Y);
+        Vector2_d(const _Float128 X, __int128_t Y);
+        Vector2_d(const _Float128 X, _Float16 Y);
+        Vector2_d(const _Float128 X, _Float32 Y);
+        Vector2_d(const _Float128 X, _Float64 Y);
+        Vector2_d(const _Float128 X, _Float128 Y);
+        Vector2_d(const _Float128 X, __float128 Y);
+        Vector2_d(const _Float128 X, float Y);
+        Vector2_d(const _Float128 X, double Y);
+        // _Float128 (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(_Float128 X, const int Y);
+        Vector2_d(_Float128 X, const int8_t Y);
+        Vector2_d(_Float128 X, const int16_t Y);
+        Vector2_d(_Float128 X, const int32_t Y);
+        Vector2_d(_Float128 X, const int64_t Y);
+        Vector2_d(_Float128 X, const __int128_t Y);
+        Vector2_d(_Float128 X, const _Float16 Y);
+        Vector2_d(_Float128 X, const _Float32 Y);
+        Vector2_d(_Float128 X, const _Float64 Y);
+        Vector2_d(_Float128 X, const _Float128 Y);
+        Vector2_d(_Float128 X, const __float128 Y);
+        Vector2_d(_Float128 X, const float Y);
+        Vector2_d(_Float128 X, const double Y);
+        // _Float128 (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const _Float128 X, const int Y);
+        Vector2_d(const _Float128 X, const int8_t Y);
+        Vector2_d(const _Float128 X, const int16_t Y);
+        Vector2_d(const _Float128 X, const int32_t Y);
+        Vector2_d(const _Float128 X, const int64_t Y);
+        Vector2_d(const _Float128 X, const __int128_t Y);
+        Vector2_d(const _Float128 X, const _Float16 Y);
+        Vector2_d(const _Float128 X, const _Float32 Y);
+        Vector2_d(const _Float128 X, const _Float64 Y);
+        Vector2_d(const _Float128 X, const _Float128 Y);
+        Vector2_d(const _Float128 X, const __float128 Y);
+        Vector2_d(const _Float128 X, const float Y);
+        Vector2_d(const _Float128 X, const double Y);
+        // _Float128 (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(_Float128* X, int Y);
+        Vector2_d(_Float128* X, int8_t Y);
+        Vector2_d(_Float128* X, int16_t Y);
+        Vector2_d(_Float128* X, int32_t Y);
+        Vector2_d(_Float128* X, int64_t Y);
+        Vector2_d(_Float128* X, __int128_t Y);
+        Vector2_d(_Float128* X, _Float16 Y);
+        Vector2_d(_Float128* X, _Float32 Y);
+        Vector2_d(_Float128* X, _Float64 Y);
+        Vector2_d(_Float128* X, _Float128 Y);
+        Vector2_d(_Float128* X, __float128 Y);
+        Vector2_d(_Float128* X, float Y);
+        Vector2_d(_Float128* X, double Y);
+        // _Float128 (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float128* X, int Y);
+        Vector2_d(const _Float128* X, int8_t Y);
+        Vector2_d(const _Float128* X, int16_t Y);
+        Vector2_d(const _Float128* X, int32_t Y);
+        Vector2_d(const _Float128* X, int64_t Y);
+        Vector2_d(const _Float128* X, __int128_t Y);
+        Vector2_d(const _Float128* X, _Float16 Y);
+        Vector2_d(const _Float128* X, _Float32 Y);
+        Vector2_d(const _Float128* X, _Float64 Y);
+        Vector2_d(const _Float128* X, _Float128 Y);
+        Vector2_d(const _Float128* X, __float128 Y);
+        Vector2_d(const _Float128* X, float Y);
+        Vector2_d(const _Float128* X, double Y);
+        // _Float128 (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(_Float128* X, const int Y);
+        Vector2_d(_Float128* X, const int8_t Y);
+        Vector2_d(_Float128* X, const int16_t Y);
+        Vector2_d(_Float128* X, const int32_t Y);
+        Vector2_d(_Float128* X, const int64_t Y);
+        Vector2_d(_Float128* X, const __int128_t Y);
+        Vector2_d(_Float128* X, const _Float16 Y);
+        Vector2_d(_Float128* X, const _Float32 Y);
+        Vector2_d(_Float128* X, const _Float64 Y);
+        Vector2_d(_Float128* X, const _Float128 Y);
+        Vector2_d(_Float128* X, const __float128 Y);
+        Vector2_d(_Float128* X, const float Y);
+        Vector2_d(_Float128* X, const double Y);
+        // _Float128 (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const _Float128* X, const int Y);
+        Vector2_d(const _Float128* X, const int8_t Y);
+        Vector2_d(const _Float128* X, const int16_t Y);
+        Vector2_d(const _Float128* X, const int32_t Y);
+        Vector2_d(const _Float128* X, const int64_t Y);
+        Vector2_d(const _Float128* X, const __int128_t Y);
+        Vector2_d(const _Float128* X, const _Float16 Y);
+        Vector2_d(const _Float128* X, const _Float32 Y);
+        Vector2_d(const _Float128* X, const _Float64 Y);
+        Vector2_d(const _Float128* X, const _Float128 Y);
+        Vector2_d(const _Float128* X, const __float128 Y);
+        Vector2_d(const _Float128* X, const float Y);
+        Vector2_d(const _Float128* X, const double Y);
+        // _Float128 (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(_Float128 X, int* Y);
+        Vector2_d(_Float128 X, int8_t* Y);
+        Vector2_d(_Float128 X, int16_t* Y);
+        Vector2_d(_Float128 X, int32_t* Y);
+        Vector2_d(_Float128 X, int64_t* Y);
+        Vector2_d(_Float128 X, __int128_t* Y);
+        Vector2_d(_Float128 X, _Float16* Y);
+        Vector2_d(_Float128 X, _Float32* Y);
+        Vector2_d(_Float128 X, _Float64* Y);
+        Vector2_d(_Float128 X, _Float128* Y);
+        Vector2_d(_Float128 X, __float128* Y);
+        Vector2_d(_Float128 X, float* Y);
+        Vector2_d(_Float128 X, double* Y);
+        // _Float128 (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float128 X, int* Y);
+        Vector2_d(const _Float128 X, int8_t* Y);
+        Vector2_d(const _Float128 X, int16_t* Y);
+        Vector2_d(const _Float128 X, int32_t* Y);
+        Vector2_d(const _Float128 X, int64_t* Y);
+        Vector2_d(const _Float128 X, __int128_t* Y);
+        Vector2_d(const _Float128 X, _Float16* Y);
+        Vector2_d(const _Float128 X, _Float32* Y);
+        Vector2_d(const _Float128 X, _Float64* Y);
+        Vector2_d(const _Float128 X, _Float128* Y);
+        Vector2_d(const _Float128 X, __float128* Y);
+        Vector2_d(const _Float128 X, float* Y);
+        Vector2_d(const _Float128 X, double* Y);
+        // _Float128 (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(_Float128 X, const int* Y);
+        Vector2_d(_Float128 X, const int8_t* Y);
+        Vector2_d(_Float128 X, const int16_t* Y);
+        Vector2_d(_Float128 X, const int32_t* Y);
+        Vector2_d(_Float128 X, const int64_t* Y);
+        Vector2_d(_Float128 X, const __int128_t* Y);
+        Vector2_d(_Float128 X, const _Float16* Y);
+        Vector2_d(_Float128 X, const _Float32* Y);
+        Vector2_d(_Float128 X, const _Float64* Y);
+        Vector2_d(_Float128 X, const _Float128* Y);
+        Vector2_d(_Float128 X, const __float128* Y);
+        Vector2_d(_Float128 X, const float* Y);
+        Vector2_d(_Float128 X, const double* Y);
+        // _Float128 (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const _Float128 X, const int* Y);
+        Vector2_d(const _Float128 X, const int8_t* Y);
+        Vector2_d(const _Float128 X, const int16_t* Y);
+        Vector2_d(const _Float128 X, const int32_t* Y);
+        Vector2_d(const _Float128 X, const int64_t* Y);
+        Vector2_d(const _Float128 X, const __int128_t* Y);
+        Vector2_d(const _Float128 X, const _Float16* Y);
+        Vector2_d(const _Float128 X, const _Float32* Y);
+        Vector2_d(const _Float128 X, const _Float64* Y);
+        Vector2_d(const _Float128 X, const _Float128* Y);
+        Vector2_d(const _Float128 X, const __float128* Y);
+        Vector2_d(const _Float128 X, const float* Y);
+        Vector2_d(const _Float128 X, const double* Y);
+        // _Float128 (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(_Float128* X, int* Y);
+        Vector2_d(_Float128* X, int8_t* Y);
+        Vector2_d(_Float128* X, int16_t* Y);
+        Vector2_d(_Float128* X, int32_t* Y);
+        Vector2_d(_Float128* X, int64_t* Y);
+        Vector2_d(_Float128* X, __int128_t* Y);
+        Vector2_d(_Float128* X, _Float16* Y);
+        Vector2_d(_Float128* X, _Float32* Y);
+        Vector2_d(_Float128* X, _Float64* Y);
+        Vector2_d(_Float128* X, _Float128* Y);
+        Vector2_d(_Float128* X, __float128* Y);
+        Vector2_d(_Float128* X, float* Y);
+        Vector2_d(_Float128* X, double* Y);
+        // _Float128 (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float128* X, int* Y);
+        Vector2_d(const _Float128* X, int8_t* Y);
+        Vector2_d(const _Float128* X, int16_t* Y);
+        Vector2_d(const _Float128* X, int32_t* Y);
+        Vector2_d(const _Float128* X, int64_t* Y);
+        Vector2_d(const _Float128* X, __int128_t* Y);
+        Vector2_d(const _Float128* X, _Float16* Y);
+        Vector2_d(const _Float128* X, _Float32* Y);
+        Vector2_d(const _Float128* X, _Float64* Y);
+        Vector2_d(const _Float128* X, _Float128* Y);
+        Vector2_d(const _Float128* X, __float128* Y);
+        Vector2_d(const _Float128* X, float* Y);
+        Vector2_d(const _Float128* X, double* Y);
+        // _Float128 (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(_Float128* X, const int* Y);
+        Vector2_d(_Float128* X, const int8_t* Y);
+        Vector2_d(_Float128* X, const int16_t* Y);
+        Vector2_d(_Float128* X, const int32_t* Y);
+        Vector2_d(_Float128* X, const int64_t* Y);
+        Vector2_d(_Float128* X, const __int128_t* Y);
+        Vector2_d(_Float128* X, const _Float16* Y);
+        Vector2_d(_Float128* X, const _Float32* Y);
+        Vector2_d(_Float128* X, const _Float64* Y);
+        Vector2_d(_Float128* X, const _Float128* Y);
+        Vector2_d(_Float128* X, const __float128* Y);
+        Vector2_d(_Float128* X, const float* Y);
+        Vector2_d(_Float128* X, const double* Y);
+        // _Float128 (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const _Float128* X, const int* Y);
+        Vector2_d(const _Float128* X, const int8_t* Y);
+        Vector2_d(const _Float128* X, const int16_t* Y);
+        Vector2_d(const _Float128* X, const int32_t* Y);
+        Vector2_d(const _Float128* X, const int64_t* Y);
+        Vector2_d(const _Float128* X, const __int128_t* Y);
+        Vector2_d(const _Float128* X, const _Float16* Y);
+        Vector2_d(const _Float128* X, const _Float32* Y);
+        Vector2_d(const _Float128* X, const _Float64* Y);
+        Vector2_d(const _Float128* X, const _Float128* Y);
+        Vector2_d(const _Float128* X, const __float128* Y);
+        Vector2_d(const _Float128* X, const float* Y);
+        Vector2_d(const _Float128* X, const double* Y);
+        // __float128 (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(__float128 X, int Y);
+        Vector2_d(__float128 X, int8_t Y);
+        Vector2_d(__float128 X, int16_t Y);
+        Vector2_d(__float128 X, int32_t Y);
+        Vector2_d(__float128 X, int64_t Y);
+        Vector2_d(__float128 X, __int128_t Y);
+        Vector2_d(__float128 X, _Float16 Y);
+        Vector2_d(__float128 X, _Float32 Y);
+        Vector2_d(__float128 X, _Float64 Y);
+        Vector2_d(__float128 X, _Float128 Y);
+        Vector2_d(__float128 X, __float128 Y);
+        Vector2_d(__float128 X, float Y);
+        Vector2_d(__float128 X, double Y);
+        // __float128 (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const __float128 X, int Y);
+        Vector2_d(const __float128 X, int8_t Y);
+        Vector2_d(const __float128 X, int16_t Y);
+        Vector2_d(const __float128 X, int32_t Y);
+        Vector2_d(const __float128 X, int64_t Y);
+        Vector2_d(const __float128 X, __int128_t Y);
+        Vector2_d(const __float128 X, _Float16 Y);
+        Vector2_d(const __float128 X, _Float32 Y);
+        Vector2_d(const __float128 X, _Float64 Y);
+        Vector2_d(const __float128 X, _Float128 Y);
+        Vector2_d(const __float128 X, __float128 Y);
+        Vector2_d(const __float128 X, float Y);
+        Vector2_d(const __float128 X, double Y);
+        // __float128 (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(__float128 X, const int Y);
+        Vector2_d(__float128 X, const int8_t Y);
+        Vector2_d(__float128 X, const int16_t Y);
+        Vector2_d(__float128 X, const int32_t Y);
+        Vector2_d(__float128 X, const int64_t Y);
+        Vector2_d(__float128 X, const __int128_t Y);
+        Vector2_d(__float128 X, const _Float16 Y);
+        Vector2_d(__float128 X, const _Float32 Y);
+        Vector2_d(__float128 X, const _Float64 Y);
+        Vector2_d(__float128 X, const _Float128 Y);
+        Vector2_d(__float128 X, const __float128 Y);
+        Vector2_d(__float128 X, const float Y);
+        Vector2_d(__float128 X, const double Y);
+        // __float128 (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const __float128 X, const int Y);
+        Vector2_d(const __float128 X, const int8_t Y);
+        Vector2_d(const __float128 X, const int16_t Y);
+        Vector2_d(const __float128 X, const int32_t Y);
+        Vector2_d(const __float128 X, const int64_t Y);
+        Vector2_d(const __float128 X, const __int128_t Y);
+        Vector2_d(const __float128 X, const _Float16 Y);
+        Vector2_d(const __float128 X, const _Float32 Y);
+        Vector2_d(const __float128 X, const _Float64 Y);
+        Vector2_d(const __float128 X, const _Float128 Y);
+        Vector2_d(const __float128 X, const __float128 Y);
+        Vector2_d(const __float128 X, const float Y);
+        Vector2_d(const __float128 X, const double Y);
+        // __float128 (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(__float128* X, int Y);
+        Vector2_d(__float128* X, int8_t Y);
+        Vector2_d(__float128* X, int16_t Y);
+        Vector2_d(__float128* X, int32_t Y);
+        Vector2_d(__float128* X, int64_t Y);
+        Vector2_d(__float128* X, __int128_t Y);
+        Vector2_d(__float128* X, _Float16 Y);
+        Vector2_d(__float128* X, _Float32 Y);
+        Vector2_d(__float128* X, _Float64 Y);
+        Vector2_d(__float128* X, _Float128 Y);
+        Vector2_d(__float128* X, __float128 Y);
+        Vector2_d(__float128* X, float Y);
+        Vector2_d(__float128* X, double Y);
+        // __float128 (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const __float128* X, int Y);
+        Vector2_d(const __float128* X, int8_t Y);
+        Vector2_d(const __float128* X, int16_t Y);
+        Vector2_d(const __float128* X, int32_t Y);
+        Vector2_d(const __float128* X, int64_t Y);
+        Vector2_d(const __float128* X, __int128_t Y);
+        Vector2_d(const __float128* X, _Float16 Y);
+        Vector2_d(const __float128* X, _Float32 Y);
+        Vector2_d(const __float128* X, _Float64 Y);
+        Vector2_d(const __float128* X, _Float128 Y);
+        Vector2_d(const __float128* X, __float128 Y);
+        Vector2_d(const __float128* X, float Y);
+        Vector2_d(const __float128* X, double Y);
+        // __float128 (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(__float128* X, const int Y);
+        Vector2_d(__float128* X, const int8_t Y);
+        Vector2_d(__float128* X, const int16_t Y);
+        Vector2_d(__float128* X, const int32_t Y);
+        Vector2_d(__float128* X, const int64_t Y);
+        Vector2_d(__float128* X, const __int128_t Y);
+        Vector2_d(__float128* X, const _Float16 Y);
+        Vector2_d(__float128* X, const _Float32 Y);
+        Vector2_d(__float128* X, const _Float64 Y);
+        Vector2_d(__float128* X, const _Float128 Y);
+        Vector2_d(__float128* X, const __float128 Y);
+        Vector2_d(__float128* X, const float Y);
+        Vector2_d(__float128* X, const double Y);
+        // __float128 (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const __float128* X, const int Y);
+        Vector2_d(const __float128* X, const int8_t Y);
+        Vector2_d(const __float128* X, const int16_t Y);
+        Vector2_d(const __float128* X, const int32_t Y);
+        Vector2_d(const __float128* X, const int64_t Y);
+        Vector2_d(const __float128* X, const __int128_t Y);
+        Vector2_d(const __float128* X, const _Float16 Y);
+        Vector2_d(const __float128* X, const _Float32 Y);
+        Vector2_d(const __float128* X, const _Float64 Y);
+        Vector2_d(const __float128* X, const _Float128 Y);
+        Vector2_d(const __float128* X, const __float128 Y);
+        Vector2_d(const __float128* X, const float Y);
+        Vector2_d(const __float128* X, const double Y);
+        // __float128 (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(__float128 X, int* Y);
+        Vector2_d(__float128 X, int8_t* Y);
+        Vector2_d(__float128 X, int16_t* Y);
+        Vector2_d(__float128 X, int32_t* Y);
+        Vector2_d(__float128 X, int64_t* Y);
+        Vector2_d(__float128 X, __int128_t* Y);
+        Vector2_d(__float128 X, _Float16* Y);
+        Vector2_d(__float128 X, _Float32* Y);
+        Vector2_d(__float128 X, _Float64* Y);
+        Vector2_d(__float128 X, _Float128* Y);
+        Vector2_d(__float128 X, __float128* Y);
+        Vector2_d(__float128 X, float* Y);
+        Vector2_d(__float128 X, double* Y);
+        // __float128 (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const __float128 X, int* Y);
+        Vector2_d(const __float128 X, int8_t* Y);
+        Vector2_d(const __float128 X, int16_t* Y);
+        Vector2_d(const __float128 X, int32_t* Y);
+        Vector2_d(const __float128 X, int64_t* Y);
+        Vector2_d(const __float128 X, __int128_t* Y);
+        Vector2_d(const __float128 X, _Float16* Y);
+        Vector2_d(const __float128 X, _Float32* Y);
+        Vector2_d(const __float128 X, _Float64* Y);
+        Vector2_d(const __float128 X, _Float128* Y);
+        Vector2_d(const __float128 X, __float128* Y);
+        Vector2_d(const __float128 X, float* Y);
+        Vector2_d(const __float128 X, double* Y);
+        // __float128 (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(__float128 X, const int* Y);
+        Vector2_d(__float128 X, const int8_t* Y);
+        Vector2_d(__float128 X, const int16_t* Y);
+        Vector2_d(__float128 X, const int32_t* Y);
+        Vector2_d(__float128 X, const int64_t* Y);
+        Vector2_d(__float128 X, const __int128_t* Y);
+        Vector2_d(__float128 X, const _Float16* Y);
+        Vector2_d(__float128 X, const _Float32* Y);
+        Vector2_d(__float128 X, const _Float64* Y);
+        Vector2_d(__float128 X, const _Float128* Y);
+        Vector2_d(__float128 X, const __float128* Y);
+        Vector2_d(__float128 X, const float* Y);
+        Vector2_d(__float128 X, const double* Y);
+        // __float128 (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const __float128 X, const int* Y);
+        Vector2_d(const __float128 X, const int8_t* Y);
+        Vector2_d(const __float128 X, const int16_t* Y);
+        Vector2_d(const __float128 X, const int32_t* Y);
+        Vector2_d(const __float128 X, const int64_t* Y);
+        Vector2_d(const __float128 X, const __int128_t* Y);
+        Vector2_d(const __float128 X, const _Float16* Y);
+        Vector2_d(const __float128 X, const _Float32* Y);
+        Vector2_d(const __float128 X, const _Float64* Y);
+        Vector2_d(const __float128 X, const _Float128* Y);
+        Vector2_d(const __float128 X, const __float128* Y);
+        Vector2_d(const __float128 X, const float* Y);
+        Vector2_d(const __float128 X, const double* Y);
+        // __float128 (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(__float128* X, int* Y);
+        Vector2_d(__float128* X, int8_t* Y);
+        Vector2_d(__float128* X, int16_t* Y);
+        Vector2_d(__float128* X, int32_t* Y);
+        Vector2_d(__float128* X, int64_t* Y);
+        Vector2_d(__float128* X, __int128_t* Y);
+        Vector2_d(__float128* X, _Float16* Y);
+        Vector2_d(__float128* X, _Float32* Y);
+        Vector2_d(__float128* X, _Float64* Y);
+        Vector2_d(__float128* X, _Float128* Y);
+        Vector2_d(__float128* X, __float128* Y);
+        Vector2_d(__float128* X, float* Y);
+        Vector2_d(__float128* X, double* Y);
+        // __float128 (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const __float128* X, int* Y);
+        Vector2_d(const __float128* X, int8_t* Y);
+        Vector2_d(const __float128* X, int16_t* Y);
+        Vector2_d(const __float128* X, int32_t* Y);
+        Vector2_d(const __float128* X, int64_t* Y);
+        Vector2_d(const __float128* X, __int128_t* Y);
+        Vector2_d(const __float128* X, _Float16* Y);
+        Vector2_d(const __float128* X, _Float32* Y);
+        Vector2_d(const __float128* X, _Float64* Y);
+        Vector2_d(const __float128* X, _Float128* Y);
+        Vector2_d(const __float128* X, __float128* Y);
+        Vector2_d(const __float128* X, float* Y);
+        Vector2_d(const __float128* X, double* Y);
+        // __float128 (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(__float128* X, const int* Y);
+        Vector2_d(__float128* X, const int8_t* Y);
+        Vector2_d(__float128* X, const int16_t* Y);
+        Vector2_d(__float128* X, const int32_t* Y);
+        Vector2_d(__float128* X, const int64_t* Y);
+        Vector2_d(__float128* X, const __int128_t* Y);
+        Vector2_d(__float128* X, const _Float16* Y);
+        Vector2_d(__float128* X, const _Float32* Y);
+        Vector2_d(__float128* X, const _Float64* Y);
+        Vector2_d(__float128* X, const _Float128* Y);
+        Vector2_d(__float128* X, const __float128* Y);
+        Vector2_d(__float128* X, const float* Y);
+        Vector2_d(__float128* X, const double* Y);
+        // __float128 (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const __float128* X, const int* Y);
+        Vector2_d(const __float128* X, const int8_t* Y);
+        Vector2_d(const __float128* X, const int16_t* Y);
+        Vector2_d(const __float128* X, const int32_t* Y);
+        Vector2_d(const __float128* X, const int64_t* Y);
+        Vector2_d(const __float128* X, const __int128_t* Y);
+        Vector2_d(const __float128* X, const _Float16* Y);
+        Vector2_d(const __float128* X, const _Float32* Y);
+        Vector2_d(const __float128* X, const _Float64* Y);
+        Vector2_d(const __float128* X, const _Float128* Y);
+        Vector2_d(const __float128* X, const __float128* Y);
+        Vector2_d(const __float128* X, const float* Y);
+        Vector2_d(const __float128* X, const double* Y);
+        // float (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(float X, int Y);
+        Vector2_d(float X, int8_t Y);
+        Vector2_d(float X, int16_t Y);
+        Vector2_d(float X, int32_t Y);
+        Vector2_d(float X, int64_t Y);
+        Vector2_d(float X, __int128_t Y);
+        Vector2_d(float X, _Float16 Y);
+        Vector2_d(float X, _Float32 Y);
+        Vector2_d(float X, _Float64 Y);
+        Vector2_d(float X, _Float128 Y);
+        Vector2_d(float X, __float128 Y);
+        Vector2_d(float X, float Y);
+        Vector2_d(float X, double Y);
+        // float (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const float X, int Y);
+        Vector2_d(const float X, int8_t Y);
+        Vector2_d(const float X, int16_t Y);
+        Vector2_d(const float X, int32_t Y);
+        Vector2_d(const float X, int64_t Y);
+        Vector2_d(const float X, __int128_t Y);
+        Vector2_d(const float X, _Float16 Y);
+        Vector2_d(const float X, _Float32 Y);
+        Vector2_d(const float X, _Float64 Y);
+        Vector2_d(const float X, _Float128 Y);
+        Vector2_d(const float X, __float128 Y);
+        Vector2_d(const float X, float Y);
+        Vector2_d(const float X, double Y);
+        // float (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(float X, const int Y);
+        Vector2_d(float X, const int8_t Y);
+        Vector2_d(float X, const int16_t Y);
+        Vector2_d(float X, const int32_t Y);
+        Vector2_d(float X, const int64_t Y);
+        Vector2_d(float X, const __int128_t Y);
+        Vector2_d(float X, const _Float16 Y);
+        Vector2_d(float X, const _Float32 Y);
+        Vector2_d(float X, const _Float64 Y);
+        Vector2_d(float X, const _Float128 Y);
+        Vector2_d(float X, const __float128 Y);
+        Vector2_d(float X, const float Y);
+        Vector2_d(float X, const double Y);
+        // float (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const float X, const int Y);
+        Vector2_d(const float X, const int8_t Y);
+        Vector2_d(const float X, const int16_t Y);
+        Vector2_d(const float X, const int32_t Y);
+        Vector2_d(const float X, const int64_t Y);
+        Vector2_d(const float X, const __int128_t Y);
+        Vector2_d(const float X, const _Float16 Y);
+        Vector2_d(const float X, const _Float32 Y);
+        Vector2_d(const float X, const _Float64 Y);
+        Vector2_d(const float X, const _Float128 Y);
+        Vector2_d(const float X, const __float128 Y);
+        Vector2_d(const float X, const float Y);
+        Vector2_d(const float X, const double Y);
+        // float (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(float* X, int Y);
+        Vector2_d(float* X, int8_t Y);
+        Vector2_d(float* X, int16_t Y);
+        Vector2_d(float* X, int32_t Y);
+        Vector2_d(float* X, int64_t Y);
+        Vector2_d(float* X, __int128_t Y);
+        Vector2_d(float* X, _Float16 Y);
+        Vector2_d(float* X, _Float32 Y);
+        Vector2_d(float* X, _Float64 Y);
+        Vector2_d(float* X, _Float128 Y);
+        Vector2_d(float* X, __float128 Y);
+        Vector2_d(float* X, float Y);
+        Vector2_d(float* X, double Y);
+        // float (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const float* X, int Y);
+        Vector2_d(const float* X, int8_t Y);
+        Vector2_d(const float* X, int16_t Y);
+        Vector2_d(const float* X, int32_t Y);
+        Vector2_d(const float* X, int64_t Y);
+        Vector2_d(const float* X, __int128_t Y);
+        Vector2_d(const float* X, _Float16 Y);
+        Vector2_d(const float* X, _Float32 Y);
+        Vector2_d(const float* X, _Float64 Y);
+        Vector2_d(const float* X, _Float128 Y);
+        Vector2_d(const float* X, __float128 Y);
+        Vector2_d(const float* X, float Y);
+        Vector2_d(const float* X, double Y);
+        // float (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(float* X, const int Y);
+        Vector2_d(float* X, const int8_t Y);
+        Vector2_d(float* X, const int16_t Y);
+        Vector2_d(float* X, const int32_t Y);
+        Vector2_d(float* X, const int64_t Y);
+        Vector2_d(float* X, const __int128_t Y);
+        Vector2_d(float* X, const _Float16 Y);
+        Vector2_d(float* X, const _Float32 Y);
+        Vector2_d(float* X, const _Float64 Y);
+        Vector2_d(float* X, const _Float128 Y);
+        Vector2_d(float* X, const __float128 Y);
+        Vector2_d(float* X, const float Y);
+        Vector2_d(float* X, const double Y);
+        // float (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const float* X, const int Y);
+        Vector2_d(const float* X, const int8_t Y);
+        Vector2_d(const float* X, const int16_t Y);
+        Vector2_d(const float* X, const int32_t Y);
+        Vector2_d(const float* X, const int64_t Y);
+        Vector2_d(const float* X, const __int128_t Y);
+        Vector2_d(const float* X, const _Float16 Y);
+        Vector2_d(const float* X, const _Float32 Y);
+        Vector2_d(const float* X, const _Float64 Y);
+        Vector2_d(const float* X, const _Float128 Y);
+        Vector2_d(const float* X, const __float128 Y);
+        Vector2_d(const float* X, const float Y);
+        Vector2_d(const float* X, const double Y);
+        // float (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(float X, int* Y);
+        Vector2_d(float X, int8_t* Y);
+        Vector2_d(float X, int16_t* Y);
+        Vector2_d(float X, int32_t* Y);
+        Vector2_d(float X, int64_t* Y);
+        Vector2_d(float X, __int128_t* Y);
+        Vector2_d(float X, _Float16* Y);
+        Vector2_d(float X, _Float32* Y);
+        Vector2_d(float X, _Float64* Y);
+        Vector2_d(float X, _Float128* Y);
+        Vector2_d(float X, __float128* Y);
+        Vector2_d(float X, float* Y);
+        Vector2_d(float X, double* Y);
+        // float (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const float X, int* Y);
+        Vector2_d(const float X, int8_t* Y);
+        Vector2_d(const float X, int16_t* Y);
+        Vector2_d(const float X, int32_t* Y);
+        Vector2_d(const float X, int64_t* Y);
+        Vector2_d(const float X, __int128_t* Y);
+        Vector2_d(const float X, _Float16* Y);
+        Vector2_d(const float X, _Float32* Y);
+        Vector2_d(const float X, _Float64* Y);
+        Vector2_d(const float X, _Float128* Y);
+        Vector2_d(const float X, __float128* Y);
+        Vector2_d(const float X, float* Y);
+        Vector2_d(const float X, double* Y);
+        // float (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(float X, const int* Y);
+        Vector2_d(float X, const int8_t* Y);
+        Vector2_d(float X, const int16_t* Y);
+        Vector2_d(float X, const int32_t* Y);
+        Vector2_d(float X, const int64_t* Y);
+        Vector2_d(float X, const __int128_t* Y);
+        Vector2_d(float X, const _Float16* Y);
+        Vector2_d(float X, const _Float32* Y);
+        Vector2_d(float X, const _Float64* Y);
+        Vector2_d(float X, const _Float128* Y);
+        Vector2_d(float X, const __float128* Y);
+        Vector2_d(float X, const float* Y);
+        Vector2_d(float X, const double* Y);
+        // float (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const float X, const int* Y);
+        Vector2_d(const float X, const int8_t* Y);
+        Vector2_d(const float X, const int16_t* Y);
+        Vector2_d(const float X, const int32_t* Y);
+        Vector2_d(const float X, const int64_t* Y);
+        Vector2_d(const float X, const __int128_t* Y);
+        Vector2_d(const float X, const _Float16* Y);
+        Vector2_d(const float X, const _Float32* Y);
+        Vector2_d(const float X, const _Float64* Y);
+        Vector2_d(const float X, const _Float128* Y);
+        Vector2_d(const float X, const __float128* Y);
+        Vector2_d(const float X, const float* Y);
+        Vector2_d(const float X, const double* Y);
+        // float (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(float* X, int* Y);
+        Vector2_d(float* X, int8_t* Y);
+        Vector2_d(float* X, int16_t* Y);
+        Vector2_d(float* X, int32_t* Y);
+        Vector2_d(float* X, int64_t* Y);
+        Vector2_d(float* X, __int128_t* Y);
+        Vector2_d(float* X, _Float16* Y);
+        Vector2_d(float* X, _Float32* Y);
+        Vector2_d(float* X, _Float64* Y);
+        Vector2_d(float* X, _Float128* Y);
+        Vector2_d(float* X, __float128* Y);
+        Vector2_d(float* X, float* Y);
+        Vector2_d(float* X, double* Y);
+        // float (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const float* X, int* Y);
+        Vector2_d(const float* X, int8_t* Y);
+        Vector2_d(const float* X, int16_t* Y);
+        Vector2_d(const float* X, int32_t* Y);
+        Vector2_d(const float* X, int64_t* Y);
+        Vector2_d(const float* X, __int128_t* Y);
+        Vector2_d(const float* X, _Float16* Y);
+        Vector2_d(const float* X, _Float32* Y);
+        Vector2_d(const float* X, _Float64* Y);
+        Vector2_d(const float* X, _Float128* Y);
+        Vector2_d(const float* X, __float128* Y);
+        Vector2_d(const float* X, float* Y);
+        Vector2_d(const float* X, double* Y);
+        // float (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(float* X, const int* Y);
+        Vector2_d(float* X, const int8_t* Y);
+        Vector2_d(float* X, const int16_t* Y);
+        Vector2_d(float* X, const int32_t* Y);
+        Vector2_d(float* X, const int64_t* Y);
+        Vector2_d(float* X, const __int128_t* Y);
+        Vector2_d(float* X, const _Float16* Y);
+        Vector2_d(float* X, const _Float32* Y);
+        Vector2_d(float* X, const _Float64* Y);
+        Vector2_d(float* X, const _Float128* Y);
+        Vector2_d(float* X, const __float128* Y);
+        Vector2_d(float* X, const float* Y);
+        Vector2_d(float* X, const double* Y);
+        // float (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const float* X, const int* Y);
+        Vector2_d(const float* X, const int8_t* Y);
+        Vector2_d(const float* X, const int16_t* Y);
+        Vector2_d(const float* X, const int32_t* Y);
+        Vector2_d(const float* X, const int64_t* Y);
+        Vector2_d(const float* X, const __int128_t* Y);
+        Vector2_d(const float* X, const _Float16* Y);
+        Vector2_d(const float* X, const _Float32* Y);
+        Vector2_d(const float* X, const _Float64* Y);
+        Vector2_d(const float* X, const _Float128* Y);
+        Vector2_d(const float* X, const __float128* Y);
+        Vector2_d(const float* X, const float* Y);
+        Vector2_d(const float* X, const double* Y);
+        // double (Non const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(double X, int Y);
+        Vector2_d(double X, int8_t Y);
+        Vector2_d(double X, int16_t Y);
+        Vector2_d(double X, int32_t Y);
+        Vector2_d(double X, int64_t Y);
+        Vector2_d(double X, __int128_t Y);
+        Vector2_d(double X, _Float16 Y);
+        Vector2_d(double X, _Float32 Y);
+        Vector2_d(double X, _Float64 Y);
+        Vector2_d(double X, _Float128 Y);
+        Vector2_d(double X, __float128 Y);
+        Vector2_d(double X, float Y);
+        Vector2_d(double X, double Y);
+        // double (Const, Non cosnt) (No pointer, No pointer)
+        Vector2_d(const double X, int Y);
+        Vector2_d(const double X, int8_t Y);
+        Vector2_d(const double X, int16_t Y);
+        Vector2_d(const double X, int32_t Y);
+        Vector2_d(const double X, int64_t Y);
+        Vector2_d(const double X, __int128_t Y);
+        Vector2_d(const double X, _Float16 Y);
+        Vector2_d(const double X, _Float32 Y);
+        Vector2_d(const double X, _Float64 Y);
+        Vector2_d(const double X, _Float128 Y);
+        Vector2_d(const double X, __float128 Y);
+        Vector2_d(const double X, float Y);
+        Vector2_d(const double X, double Y);
+        // double (Non const, Cosnt) (No pointer, No pointer)
+        Vector2_d(double X, const int Y);
+        Vector2_d(double X, const int8_t Y);
+        Vector2_d(double X, const int16_t Y);
+        Vector2_d(double X, const int32_t Y);
+        Vector2_d(double X, const int64_t Y);
+        Vector2_d(double X, const __int128_t Y);
+        Vector2_d(double X, const _Float16 Y);
+        Vector2_d(double X, const _Float32 Y);
+        Vector2_d(double X, const _Float64 Y);
+        Vector2_d(double X, const _Float128 Y);
+        Vector2_d(double X, const __float128 Y);
+        Vector2_d(double X, const float Y);
+        Vector2_d(double X, const double Y);
+        // double (Const, Cosnt) (No pointer, No pointer)
+        Vector2_d(const double X, const int Y);
+        Vector2_d(const double X, const int8_t Y);
+        Vector2_d(const double X, const int16_t Y);
+        Vector2_d(const double X, const int32_t Y);
+        Vector2_d(const double X, const int64_t Y);
+        Vector2_d(const double X, const __int128_t Y);
+        Vector2_d(const double X, const _Float16 Y);
+        Vector2_d(const double X, const _Float32 Y);
+        Vector2_d(const double X, const _Float64 Y);
+        Vector2_d(const double X, const _Float128 Y);
+        Vector2_d(const double X, const __float128 Y);
+        Vector2_d(const double X, const float Y);
+        Vector2_d(const double X, const double Y);
+        // double (Non const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(double* X, int Y);
+        Vector2_d(double* X, int8_t Y);
+        Vector2_d(double* X, int16_t Y);
+        Vector2_d(double* X, int32_t Y);
+        Vector2_d(double* X, int64_t Y);
+        Vector2_d(double* X, __int128_t Y);
+        Vector2_d(double* X, _Float16 Y);
+        Vector2_d(double* X, _Float32 Y);
+        Vector2_d(double* X, _Float64 Y);
+        Vector2_d(double* X, _Float128 Y);
+        Vector2_d(double* X, __float128 Y);
+        Vector2_d(double* X, float Y);
+        Vector2_d(double* X, double Y);
+        // double (Const, Non cosnt) (Pointer, No pointer)
+        Vector2_d(const double* X, int Y);
+        Vector2_d(const double* X, int8_t Y);
+        Vector2_d(const double* X, int16_t Y);
+        Vector2_d(const double* X, int32_t Y);
+        Vector2_d(const double* X, int64_t Y);
+        Vector2_d(const double* X, __int128_t Y);
+        Vector2_d(const double* X, _Float16 Y);
+        Vector2_d(const double* X, _Float32 Y);
+        Vector2_d(const double* X, _Float64 Y);
+        Vector2_d(const double* X, _Float128 Y);
+        Vector2_d(const double* X, __float128 Y);
+        Vector2_d(const double* X, float Y);
+        Vector2_d(const double* X, double Y);
+        // double (Non const, Cosnt) (Pointer, No pointer)
+        Vector2_d(double* X, const int Y);
+        Vector2_d(double* X, const int8_t Y);
+        Vector2_d(double* X, const int16_t Y);
+        Vector2_d(double* X, const int32_t Y);
+        Vector2_d(double* X, const int64_t Y);
+        Vector2_d(double* X, const __int128_t Y);
+        Vector2_d(double* X, const _Float16 Y);
+        Vector2_d(double* X, const _Float32 Y);
+        Vector2_d(double* X, const _Float64 Y);
+        Vector2_d(double* X, const _Float128 Y);
+        Vector2_d(double* X, const __float128 Y);
+        Vector2_d(double* X, const float Y);
+        Vector2_d(double* X, const double Y);
+        // double (Const, Cosnt) (Pointer, No pointer)
+        Vector2_d(const double* X, const int Y);
+        Vector2_d(const double* X, const int8_t Y);
+        Vector2_d(const double* X, const int16_t Y);
+        Vector2_d(const double* X, const int32_t Y);
+        Vector2_d(const double* X, const int64_t Y);
+        Vector2_d(const double* X, const __int128_t Y);
+        Vector2_d(const double* X, const _Float16 Y);
+        Vector2_d(const double* X, const _Float32 Y);
+        Vector2_d(const double* X, const _Float64 Y);
+        Vector2_d(const double* X, const _Float128 Y);
+        Vector2_d(const double* X, const __float128 Y);
+        Vector2_d(const double* X, const float Y);
+        Vector2_d(const double* X, const double Y);
+        // double (Non const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(double X, int* Y);
+        Vector2_d(double X, int8_t* Y);
+        Vector2_d(double X, int16_t* Y);
+        Vector2_d(double X, int32_t* Y);
+        Vector2_d(double X, int64_t* Y);
+        Vector2_d(double X, __int128_t* Y);
+        Vector2_d(double X, _Float16* Y);
+        Vector2_d(double X, _Float32* Y);
+        Vector2_d(double X, _Float64* Y);
+        Vector2_d(double X, _Float128* Y);
+        Vector2_d(double X, __float128* Y);
+        Vector2_d(double X, float* Y);
+        Vector2_d(double X, double* Y);
+        // double (Const, Non cosnt) (No pointer, Pointer)
+        Vector2_d(const double X, int* Y);
+        Vector2_d(const double X, int8_t* Y);
+        Vector2_d(const double X, int16_t* Y);
+        Vector2_d(const double X, int32_t* Y);
+        Vector2_d(const double X, int64_t* Y);
+        Vector2_d(const double X, __int128_t* Y);
+        Vector2_d(const double X, _Float16* Y);
+        Vector2_d(const double X, _Float32* Y);
+        Vector2_d(const double X, _Float64* Y);
+        Vector2_d(const double X, _Float128* Y);
+        Vector2_d(const double X, __float128* Y);
+        Vector2_d(const double X, float* Y);
+        Vector2_d(const double X, double* Y);
+        // double (Non const, Cosnt) (No pointer, Pointer)
+        Vector2_d(double X, const int* Y);
+        Vector2_d(double X, const int8_t* Y);
+        Vector2_d(double X, const int16_t* Y);
+        Vector2_d(double X, const int32_t* Y);
+        Vector2_d(double X, const int64_t* Y);
+        Vector2_d(double X, const __int128_t* Y);
+        Vector2_d(double X, const _Float16* Y);
+        Vector2_d(double X, const _Float32* Y);
+        Vector2_d(double X, const _Float64* Y);
+        Vector2_d(double X, const _Float128* Y);
+        Vector2_d(double X, const __float128* Y);
+        Vector2_d(double X, const float* Y);
+        Vector2_d(double X, const double* Y);
+        // double (Const, Cosnt) (No pointer, Pointer)
+        Vector2_d(const double X, const int* Y);
+        Vector2_d(const double X, const int8_t* Y);
+        Vector2_d(const double X, const int16_t* Y);
+        Vector2_d(const double X, const int32_t* Y);
+        Vector2_d(const double X, const int64_t* Y);
+        Vector2_d(const double X, const __int128_t* Y);
+        Vector2_d(const double X, const _Float16* Y);
+        Vector2_d(const double X, const _Float32* Y);
+        Vector2_d(const double X, const _Float64* Y);
+        Vector2_d(const double X, const _Float128* Y);
+        Vector2_d(const double X, const __float128* Y);
+        Vector2_d(const double X, const float* Y);
+        Vector2_d(const double X, const double* Y);
+        // double (Non const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(double* X, int* Y);
+        Vector2_d(double* X, int8_t* Y);
+        Vector2_d(double* X, int16_t* Y);
+        Vector2_d(double* X, int32_t* Y);
+        Vector2_d(double* X, int64_t* Y);
+        Vector2_d(double* X, __int128_t* Y);
+        Vector2_d(double* X, _Float16* Y);
+        Vector2_d(double* X, _Float32* Y);
+        Vector2_d(double* X, _Float64* Y);
+        Vector2_d(double* X, _Float128* Y);
+        Vector2_d(double* X, __float128* Y);
+        Vector2_d(double* X, float* Y);
+        Vector2_d(double* X, double* Y);
+        // double (Const, Non cosnt) (Pointer, Pointer)
+        Vector2_d(const double* X, int* Y);
+        Vector2_d(const double* X, int8_t* Y);
+        Vector2_d(const double* X, int16_t* Y);
+        Vector2_d(const double* X, int32_t* Y);
+        Vector2_d(const double* X, int64_t* Y);
+        Vector2_d(const double* X, __int128_t* Y);
+        Vector2_d(const double* X, _Float16* Y);
+        Vector2_d(const double* X, _Float32* Y);
+        Vector2_d(const double* X, _Float64* Y);
+        Vector2_d(const double* X, _Float128* Y);
+        Vector2_d(const double* X, __float128* Y);
+        Vector2_d(const double* X, float* Y);
+        Vector2_d(const double* X, double* Y);
+        // double (Non const, Cosnt) (Pointer, Pointer)
+        Vector2_d(double* X, const int* Y);
+        Vector2_d(double* X, const int8_t* Y);
+        Vector2_d(double* X, const int16_t* Y);
+        Vector2_d(double* X, const int32_t* Y);
+        Vector2_d(double* X, const int64_t* Y);
+        Vector2_d(double* X, const __int128_t* Y);
+        Vector2_d(double* X, const _Float16* Y);
+        Vector2_d(double* X, const _Float32* Y);
+        Vector2_d(double* X, const _Float64* Y);
+        Vector2_d(double* X, const _Float128* Y);
+        Vector2_d(double* X, const __float128* Y);
+        Vector2_d(double* X, const float* Y);
+        Vector2_d(double* X, const double* Y);
+        // double (Const, Cosnt) (Pointer, Pointer)
+        Vector2_d(const double* X, const int* Y);
+        Vector2_d(const double* X, const int8_t* Y);
+        Vector2_d(const double* X, const int16_t* Y);
+        Vector2_d(const double* X, const int32_t* Y);
+        Vector2_d(const double* X, const int64_t* Y);
+        Vector2_d(const double* X, const __int128_t* Y);
+        Vector2_d(const double* X, const _Float16* Y);
+        Vector2_d(const double* X, const _Float32* Y);
+        Vector2_d(const double* X, const _Float64* Y);
+        Vector2_d(const double* X, const _Float128* Y);
+        Vector2_d(const double* X, const __float128* Y);
+        Vector2_d(const double* X, const float* Y);
+        Vector2_d(const double* X, const double* Y);
+
+        // Start up variable with another variable pointer
+        Vector2_d(Vector2_i* Data);
+        Vector2_d(Vector2_f* Data);
+        Vector2_d(Vector2_d* Data);
+        // Start up variable with another variable
+        Vector2_d(Vector2_f Data);
+        Vector2_d(Vector2_d Data);
+        // Start up variable with another variable pointer (const)
+        Vector2_d(const Vector2_i* Data);
+        Vector2_d(const Vector2_f* Data);
+        Vector2_d(const Vector2_d* Data);
+        // Start up variable with another variable (const)
+        Vector2_d(const Vector2_f Data);
+        Vector2_d(const Vector2_d Data);
+
+        // Addition
+        Vector2_d operator+(Vector2_i Other);
+        Vector2_d operator+(Vector2_f Other);
+        Vector2_d operator+(Vector2_d Other);
+
+        // Subtraction
+        Vector2_d operator-(Vector2_i Other);
+        Vector2_d operator-(Vector2_f Other);
+        Vector2_d operator-(Vector2_d Other);
+
+        // Multiplication
+        Vector2_d operator*(Vector2_i Other);
+        Vector2_d operator*(Vector2_f Other);
+        Vector2_d operator*(Vector2_d Other);
+
+        // Division
+        Vector2_d operator/(Vector2_i Other);
+        Vector2_d operator/(Vector2_f Other);
+        Vector2_d operator/(Vector2_d Other);
+
+        // Greater than
+        bool operator>(Vector2_i Other);
+        bool operator>(Vector2_f Other);
+        bool operator>(Vector2_d Other);
+
+        // Less than
+        bool operator<(Vector2_i Other);
+        bool operator<(Vector2_f Other);
+        bool operator<(Vector2_d Other);
+
+        // Greater than or equal to
+        bool operator>=(Vector2_i Other);
+        bool operator>=(Vector2_f Other);
+        bool operator>=(Vector2_d Other);
+
+        // Less than or equal to
+        bool operator<=(Vector2_i Other);
+        bool operator<=(Vector2_f Other);
+        bool operator<=(Vector2_d Other);
+
+        // Equal to
+        bool operator==(Vector2_i Other);
+        bool operator==(Vector2_f Other);
+        bool operator==(Vector2_d Other);
+
+        // Not equal to
+        bool operator!=(Vector2_i Other);
+        bool operator!=(Vector2_f Other);
+        bool operator!=(Vector2_d Other);
+
+        // Modulo operation
+        Vector2_d operator%(Vector2_i Other);
+        Vector2_d operator%(Vector2_f Other);
+        Vector2_d operator%(Vector2_d Other);
+
+        // Return memory address
+        Vector2_i* operator&(Vector2_i Other);

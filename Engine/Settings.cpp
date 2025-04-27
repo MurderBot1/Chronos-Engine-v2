@@ -18,6 +18,12 @@ int16_t Settings::ResolutionX; // Horizontal resolution of the display
 int16_t Settings::ResolutionY; // Vertical resolution of the display
 int16_t Settings::MaxFPS; // Maximum FPS the engine will output
 bool Settings::SetFPSAtMonitersMax; // Limit the FPS to the moniters maximum
+float Settings::Sensitivity; // The current multipier to the mouse DPI
+float Settings::FOV; // The current field of vision for the camera
+int8_t Settings::Bounces; // The current number of bounces each ray makes while rendering the scene
+bool Settings::UseBounces; // Does the ray bounce while rendering the scene
+bool Settings::GPURendering; // Does the engine use the GPU
+float Settings::Volume; // The current volume multipier for the engine
 
 void Settings::LoadGraphicsSettings(std::string FilePath) {
     // Graphics
@@ -63,10 +69,14 @@ void Settings::LoadAudioSettings(std::string FilePath) {
             AudioSettingsFileLines.push_back(Line);
         }
 
-        
+        Settings::Volume = FromBinary::BinaryToInt(AudioSettingsFileLines[0]);
     }
 
     AudioSettingsFile.close();
+}
+
+void Settings::LoadInGPUAndCPU(){
+    
 }
 
 void Settings::LoadRenderingSettings(std::string FilePath) {
@@ -81,7 +91,9 @@ void Settings::LoadRenderingSettings(std::string FilePath) {
             RenderingSettingsFileLines.push_back(Line);
         }
 
-        
+        Settings::GPURendering = FromBinary::BinaryStringToBool(RenderingSettingsFileLines[0]); 
+        Settings::UseBounces = FromBinary::BinaryStringToBool(RenderingSettingsFileLines[1]);
+        Settings::Bounces = FromBinary::BinaryToInt(RenderingSettingsFileLines[2]);               
     }
 
     RenderingSettingsFile.close();
@@ -99,7 +111,8 @@ void Settings::LoadOptionsSettings(std::string FilePath) {
             OptionsSettingsFileLines.push_back(Line);
         }
 
-        
+        Settings::FOV = FromBinary::BinaryToInt(OptionsSettingsFileLines[0]);
+        Settings::Sensitivity = FromBinary::BinaryToFloat(OptionsSettingsFileLines[1]);
     }
 
     OptionsSettingsFile.close();

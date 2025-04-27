@@ -78,10 +78,14 @@ class Settings {
         static float Volume;
 
         // Rendering
+        static void LoadInGPUAndCPU();
         static std::map<int, std::string> GPUID;
         static std::map<int, std::string> CPUID;
         static int TotalNumCores;
         static int NumCoresForKeyboard;
+        static bool GPURendering;
+        static bool UseBounces;
+        static int8_t Bounces;
 
         // Options
         static float FOV;

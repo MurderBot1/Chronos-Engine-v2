@@ -6,11 +6,9 @@
 
 // Included file
 #include "StructuralFunctions.h"
-#include <iostream>
-#include <windows.h>
 
 // Other included Libraries
-
+#include "UnCompiledCode/VariableTypes.h"
 
 // Redefine vars if needed
 

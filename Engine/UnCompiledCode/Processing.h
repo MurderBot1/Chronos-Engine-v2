@@ -1,8 +1,8 @@
 // © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
 /* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
-#ifndef Rendering_H
-#define Rendering_H
+#ifndef Processing_H
+#define Processing_H
 
 // C++ imported files
 #include <string>
@@ -20,6 +20,7 @@ class CPU;
 
 class Thread {
     public:
+        void LoadThreadData();
         std::string ThreadID;
         bool IsTaskRunning;
         Core* CoreItBelongsTo;
@@ -27,6 +28,7 @@ class Thread {
 
 class Core {
     public:
+        void LoadCoreData();
         std::string CoreID;
         int8_t NumThreads;
         std::map<int, Thread*> Threads;
@@ -36,6 +38,7 @@ class Core {
 
 class GPU {
     public:
+        void LoadGPUData();
         std::string GPUID;
         int16_t NumberOfCores;
         std::map<int, Core*> Cores;
@@ -43,6 +46,7 @@ class GPU {
 
 class CPU {
     public:
+        void LoadCPUData();
         std::string CPUID;
         int16_t NumberOfCores;
         std::map<int, Core*> Cores;
