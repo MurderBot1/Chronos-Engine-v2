@@ -1,5 +1,5 @@
 # VSCode
-/.vscode
+.vscode/
 
 # Ignore object files and binaries
 *.o
