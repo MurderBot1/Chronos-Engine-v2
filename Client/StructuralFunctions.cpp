@@ -13,8 +13,8 @@
 // Start of program
 void StartFunction() {
     Time::FillValuesForLoading();
-    Log::SetupLog();
-    Settings::LoadSettings();
+    Log::SetupLog("C:\\Users\\trent\\Documents\\GitHub\\Chronos-Engine-v2\\Client\\Logs\\Settings\\LogSettings.txt");
+    Settings::LoadSettings("C:\\Users\\trent\\Documents\\GitHub\\Chronos-Engine-v2\\ExampleGame\\Settings\\PathOfSettingsFiles.txt");
 }
 
 void LoopFunction() {

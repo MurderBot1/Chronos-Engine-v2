@@ -17,19 +17,21 @@ std::string Log::OutputFilePath;
 std::vector<float> Log::FPS;
 
 // Start of program
-void Log::SetupLog() {
-    std::ifstream SettingsFile("./Engine/Logs/Settings/LogSettings.txt");
-    if(SettingsFile.is_open()) {
-        std::vector<std::string> SettingsFileLines;
-        std::string Line;
+void Log::SetupLog(std::string LogSettingsFile) {
+    constexpr int NumLines = 2;
+    std::ifstream SettingsFile(LogSettingsFile);
+    std::array<std::string, NumLines> Lines;
+    std::string Line;
+    size_t Index = 0;
 
-        while (getline(SettingsFile, Line)) {
-            SettingsFileLines.push_back(Line);
-        }
+    if(!SettingsFile.is_open()) {return;};
 
-        Log::EveryXFrames = std::stoi(SettingsFileLines[0]);
-        Log::OutputFilePath = SettingsFileLines[1];
+    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+        Lines[Index++] = Line;
     }
+
+    Log::EveryXFrames = std::stoi(Lines[0]);
+    Log::OutputFilePath = Lines[1];
 }
 
 template <typename T>
@@ -38,43 +40,49 @@ std::string Log::FunctionNameToString(T func) {
 }
 
 void Log::OutputDataToFile() {
-    if(Log::FramesSinceLastAdd == Log::EveryXFrames) {
-        std::ofstream OutFile(Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt");
-        
-        if (OutFile.is_open()) {
-            __float128 FPSTotal;
-            for(float FPS : Log::FPS) {
-                FPSTotal += FPS;
-            }
+    // Check if correct number of frames have passed
+    if(!(Log::FramesSinceLastAdd == Log::EveryXFrames)) {return;}
 
-            FPSTotal = FPSTotal / Log::FPS.size();
-
-            // Convert for printing
-            long double castValue = static_cast<long double>(FPSTotal);
-            std::ostringstream oss;
-            oss.precision(36);
-            oss << castValue;
-
-            OutFile << "FPS = " + oss.str() << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
-
-            for(std::string Error : Log::Errors) {
-                OutFile << Error + "\n";
-            }
-
-            for(std::string INFO : Log::InfoOutputs) {
-                OutFile << INFO + "\n";
-            }
-        } else {
-            std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt" << std::endl;
-        }
-
-        OutFile.close();
-        Log::FramesSinceLastAdd = 0;
-        Log::NumLogFiles += 1;
-        Log::InfoOutputs.clear();
-        Log::Errors.clear();
-        Log::FPS.clear();
+    // Open the file
+    std::ofstream OutFile(Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".ChronosLog");
+    
+    // Check if the file is open
+    if (!OutFile.is_open()) {
+        std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt" << std::endl;
+        return;
     }
+
+    // Calculate the average FPS
+    __float128 FPSTotal;
+    for(float FPS : Log::FPS) {
+        FPSTotal += FPS;
+    }
+    FPSTotal = FPSTotal / Log::FPS.size();
+
+    // Convert the __float128 for printing
+    long double castValue = static_cast<long double>(FPSTotal);
+    std::ostringstream oss;
+    oss.precision(36);
+    oss << castValue;
+
+    // Output all of the information to the .ChronosLog file
+    OutFile << "FPS = " + oss.str() << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
+
+    for(std::string Error : Log::Errors) {
+        OutFile << Error + "\n";
+    }
+
+    for(std::string INFO : Log::InfoOutputs) {
+        OutFile << INFO + "\n";
+    }
+
+    // Clear all of the variables to restart the cycle
+    OutFile.close();
+    Log::FramesSinceLastAdd = 0;
+    Log::NumLogFiles += 1;
+    Log::InfoOutputs.clear();
+    Log::Errors.clear();
+    Log::FPS.clear();
 }
 
 void Log::UpdateCounters() {

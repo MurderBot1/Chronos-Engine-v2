@@ -10,6 +10,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <array>
 
 // Program imported files
 #include "Binary.h"
@@ -30,7 +31,7 @@ enum GraphicLevels {
 
 class Settings {
     public:
-        static void LoadSettings();
+        static void LoadSettings(std::string LoadSettingsPath);
 
         // Graphics
             static GraphicLevels DecodeGraphicLevels(std::string GraphicLevel);

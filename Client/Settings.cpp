@@ -27,117 +27,137 @@ float Settings::Volume; // The current volume multipier for the engine
 
 void Settings::LoadGraphicsSettings(std::string FilePath) {
     // Graphics
-    std::ifstream GraphicsSettingsFile(FilePath);
-    
-    if(GraphicsSettingsFile.is_open()) {
-        std::vector<std::string> GraphicsSettingsFileLines;
-        std::string Line;
+    // Define the variables to load the file in
+    constexpr int NumLines = 10;
+    std::ifstream SettingsFile(FilePath);
+    std::array<std::string, NumLines> Lines;
+    std::string Line;
+    size_t Index = 0;
 
-        while (getline(GraphicsSettingsFile, Line)) {
-            GraphicsSettingsFileLines.push_back(Line);
-        }
-        
-        // Moniter settings
-        Settings::ResolutionX = FromBinary::BinaryToInt(GraphicsSettingsFileLines[0]);
-        Settings::ResolutionY = FromBinary::BinaryToInt(GraphicsSettingsFileLines[1]); 
-        Settings::MaxFPS = FromBinary::BinaryToInt(GraphicsSettingsFileLines[2]);       
-        Settings::SetFPSAtMonitersMax = FromBinary::BinaryStringToBool(GraphicsSettingsFileLines[3]);
+    // Check if the file can be opened
+    if(!SettingsFile.is_open()) {return;};
 
-        // Graphics levels
-        Settings::GraphicLevel = Settings::DecodeGraphicLevels(GraphicsSettingsFileLines[4]);
-        Settings::Lighting = Settings::DecodeGraphicLevels(GraphicsSettingsFileLines[5]);
-        Settings::Shaders = Settings::DecodeGraphicLevels(GraphicsSettingsFileLines[6]);
-        Settings::Particles = Settings::DecodeGraphicLevels(GraphicsSettingsFileLines[7]);
-        Settings::Shadows = Settings::DecodeGraphicLevels(GraphicsSettingsFileLines[8]);
-        Settings::SSAntiAllasing = Settings::DecodeGraphicLevels(GraphicsSettingsFileLines[9]);
+    // Load the file in
+    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+        Lines[Index++] = Line;
     }
+    
+    // Load the file in to the settings it corrisponds with
+    // Moniter settings
+    Settings::ResolutionX = FromBinary::BinaryToInt(Lines[0]);
+    Settings::ResolutionY = FromBinary::BinaryToInt(Lines[1]); 
+    Settings::MaxFPS = FromBinary::BinaryToInt(Lines[2]);       
+    Settings::SetFPSAtMonitersMax = FromBinary::BinaryStringToBool(Lines[3]);
 
-    GraphicsSettingsFile.close();
+    // Graphics levels
+    Settings::GraphicLevel = Settings::DecodeGraphicLevels(Lines[4]);
+    Settings::Lighting = Settings::DecodeGraphicLevels(Lines[5]);
+    Settings::Shaders = Settings::DecodeGraphicLevels(Lines[6]);
+    Settings::Particles = Settings::DecodeGraphicLevels(Lines[7]);
+    Settings::Shadows = Settings::DecodeGraphicLevels(Lines[8]);
+    Settings::SSAntiAllasing = Settings::DecodeGraphicLevels(Lines[9]);
 
-    Settings::MaxFPS = 120;
+    SettingsFile.close(); // Close the file
 }
 
 void Settings::LoadAudioSettings(std::string FilePath) {
-    // Audio    
-    std::ifstream AudioSettingsFile(FilePath);
-    
-    if(AudioSettingsFile.is_open()) {
-        std::vector<std::string> AudioSettingsFileLines;
-        std::string Line;
+    // Audio
+    // Define the variables to load the file in
+    constexpr int NumLines = 1;
+    std::ifstream SettingsFile(FilePath);
+    std::array<std::string, NumLines> Lines;
+    std::string Line;
+    size_t Index = 0;
 
-        while (getline(AudioSettingsFile, Line)) {
-            AudioSettingsFileLines.push_back(Line);
-        }
+    // Check if the file can be opened
+    if(!SettingsFile.is_open()) {return;};
 
-        Settings::Volume = FromBinary::BinaryToInt(AudioSettingsFileLines[0]);
+    // Load the file in
+    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+        Lines[Index++] = Line;
     }
-
-    AudioSettingsFile.close();
-}
-
-void Settings::LoadInGPUAndCPU(){
     
+    // Load the variables from the file
+    Settings::Volume = FromBinary::BinaryToFloat(Lines[0]);
+
+    SettingsFile.close(); // Close the file
 }
 
 void Settings::LoadRenderingSettings(std::string FilePath) {
     // Rendering
-    std::ifstream RenderingSettingsFile(FilePath);
-    
-    if(RenderingSettingsFile.is_open()) {
-        std::vector<std::string> RenderingSettingsFileLines;
-        std::string Line;
+    // Define the variables to load the file in
+    constexpr int NumLines = 3;
+    std::ifstream SettingsFile(FilePath);
+    std::array<std::string, NumLines> Lines;
+    std::string Line;
+    size_t Index = 0;
 
-        while (getline(RenderingSettingsFile, Line)) {
-            RenderingSettingsFileLines.push_back(Line);
-        }
+    // Check if the file can be opened
+    if(!SettingsFile.is_open()) {return;};
 
-        Settings::GPURendering = FromBinary::BinaryStringToBool(RenderingSettingsFileLines[0]); 
-        Settings::UseBounces = FromBinary::BinaryStringToBool(RenderingSettingsFileLines[1]);
-        Settings::Bounces = FromBinary::BinaryToInt(RenderingSettingsFileLines[2]);               
+    // Load the file in
+    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+        Lines[Index++] = Line;
     }
 
-    RenderingSettingsFile.close();
+    // Load the variables from the file
+    Settings::GPURendering = FromBinary::BinaryStringToBool(Lines[0]); 
+    Settings::UseBounces = FromBinary::BinaryStringToBool(Lines[1]);
+    Settings::Bounces = FromBinary::BinaryToInt(Lines[2]);               
+
+    SettingsFile.close(); // Close the file
 }
 
 void Settings::LoadOptionsSettings(std::string FilePath) {
     // Options
-    std::ifstream OptionsSettingsFile(FilePath);
-    
-    if(OptionsSettingsFile.is_open()) {
-        std::vector<std::string> OptionsSettingsFileLines;
-        std::string Line;
+    // Define the variables to load the file in
+    constexpr int NumLines = 2;
+    std::ifstream SettingsFile(FilePath);
+    std::array<std::string, NumLines> Lines;
+    std::string Line;
+    size_t Index = 0;
 
-        while (getline(OptionsSettingsFile, Line)) {
-            OptionsSettingsFileLines.push_back(Line);
-        }
+    // Check if the file can be opened
+    if(!SettingsFile.is_open()) {return;};
 
-        Settings::FOV = FromBinary::BinaryToInt(OptionsSettingsFileLines[0]);
-        Settings::Sensitivity = FromBinary::BinaryToFloat(OptionsSettingsFileLines[1]);
+    // Load the file in
+    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+        Lines[Index++] = Line;
     }
 
-    OptionsSettingsFile.close();
+    // Load the variables from the file
+    Settings::FOV = FromBinary::BinaryToInt(Lines[0]);
+    Settings::Sensitivity = FromBinary::BinaryToFloat(Lines[1]);
+
+    SettingsFile.close(); // Close the file
 }
 
 
-void Settings::LoadSettings() {
+void Settings::LoadSettings(std::string LoadSettingsPath) {
     // Options
-    std::ifstream SettingsFile("./Settings/PathOfSettingsFiles.txt");
-    
-    if(SettingsFile.is_open()) {
-        std::vector<std::string> FilePaths;
-        std::string Line;
+    // Define the variables to load the file in
+    constexpr int NumLines = 4;
+    std::ifstream SettingsFile(LoadSettingsPath);
+    std::array<std::string, NumLines> Lines;
+    std::string Line;
+    size_t Index = 0;
 
-        while (getline(SettingsFile, Line)) {
-            FilePaths.push_back(Line);
-        }
+    // Check if the file can be opened
+    if(!SettingsFile.is_open()) {return;};
 
-        Settings::LoadGraphicsSettings(FilePaths[0]);
-        Settings::LoadAudioSettings(FilePaths[1]);
-        Settings::LoadRenderingSettings(FilePaths[2]);
-        Settings::LoadOptionsSettings(FilePaths[3]);
+    // Load the file in
+    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+        Lines[Index++] = Line;
     }
 
-    SettingsFile.close();
+    // Load the variables from the file
+    Settings::LoadGraphicsSettings(Lines[0]);
+    Settings::LoadAudioSettings(Lines[1]);
+    Settings::LoadRenderingSettings(Lines[2]);
+    Settings::LoadOptionsSettings(Lines[3]);
+    
+
+    SettingsFile.close(); // Close the file
 }
 
 GraphicLevels Settings::DecodeGraphicLevels(std::string GraphicLevel){
@@ -166,13 +186,18 @@ GraphicLevels Settings::DecodeGraphicLevels(std::string GraphicLevel){
     }
 }
 
+void Settings::LoadInGPUAndCPU(){
+    
+}
+
 // Start of program
 void Settings::SetAsGraphicsLevel() {
-    Settings::Lighting = Settings::GraphicLevel;
-    Settings::Shaders = Settings::GraphicLevel;
-    Settings::Particles = Settings::GraphicLevel;
-    Settings::Shadows = Settings::GraphicLevel;
-    Settings::SSAntiAllasing = Settings::GraphicLevel;
+    const GraphicLevels CurrentGraphicLevel = Settings::GraphicLevel;
+    Settings::Lighting = CurrentGraphicLevel;
+    Settings::Shaders = CurrentGraphicLevel;
+    Settings::Particles = CurrentGraphicLevel;
+    Settings::Shadows = CurrentGraphicLevel;
+    Settings::SSAntiAllasing = CurrentGraphicLevel;
 }
 
 #endif

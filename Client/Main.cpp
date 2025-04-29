@@ -16,7 +16,6 @@
 // Start of program
 int main() {
     StartFunction();
-    Settings::MaxFPS = 100;
     while(Exit::ExitTheMainLoop == false) {
         LoopFunction();
     }

@@ -11,6 +11,7 @@
 #include <fstream>
 #include <numeric>
 #include <quadmath.h>
+#include <array>
 
 // Program imported files
 #include "time.h"
@@ -30,7 +31,7 @@ class Log {
         static int EveryXFrames;
 
         // Functions
-        static void SetupLog();
+        static void SetupLog(std::string LogSettingsFile);
         template <typename T>
         static std::string FunctionNameToString(T func);
         static void OutputDataToFile();

@@ -9,3 +9,6 @@ Temp/
 *.obj
 *.exe
 *.out
+
+# Ignore .ChronosLog
+*.ChronosLog
