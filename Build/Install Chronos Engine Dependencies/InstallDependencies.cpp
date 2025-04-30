@@ -28,6 +28,7 @@
         // Install XGWigets 
         // Install SDL
         // Install Vulcan
+        // Install OpenSSL
         if(UseMyInformationForTraining) {
             // Install FFMPEG
             // Install upscayl-ncnn
@@ -47,6 +48,7 @@
         // Install XGWigets 
         // Install SDL
         // Install Vulcan
+        // Install OpenSSL
         if(UseMyInformationForTraining) {
             // Install FFMPEG
             // Install upscayl-ncnn
@@ -67,6 +69,7 @@
         // Install XGWigets 
         // Install SDL
         // Install Vulcan
+        // Install OpenSSL
         if(UseMyInformationForTraining) {
             // Install FFMPEG
             // Install upscayl-ncnn
@@ -87,6 +90,7 @@
         // Install XGWigets 
         // Install SDL
         // Install Vulcan
+        // Install OpenSSL
         
 
         return Return;
@@ -103,6 +107,7 @@
         // Install XGWigets 
         // Install SDL
         // Install Vulcan
+        // Install OpenSSL
         
 
         return Return;

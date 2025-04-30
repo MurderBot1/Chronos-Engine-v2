@@ -1,0 +1,37 @@
+This is the Chronos Engine form for renting a server.
+
+About the game that you will be hosting
+Games Name : 
+Genre Of Game : 
+Games Website : 
+Release Date : 
+Supported Devices : 
+
+About your company
+Company Name : 
+Company Email : 
+Company Phone Number : 
+Company Website : 
+Other Company Contact 1 : 
+Other Company Contact 2 : 
+Other Company Contact 3 : 
+
+About What Will Be Installed On The Rented computer
+Will you have any user emails or other information on this computer? (Yes / No) : 
+    Usernames and Taglines (Yes / No) : 
+    User Passwords (Yes / No) : 
+    Emails (Yes / No) : 
+    Payment Info (Yes / No) : 
+    User Coins and Other Ingame Currency (Yes / No) : 
+    User ingame items and other tokens (Yes / No) : 
+    User IP : 
+    User hardware IDs : 
+    User logs (Yes / No) : 
+    List all other user data you will have installed : 
+Are you going to have any programs that are not related to Chronos Engine installed on this computer? : 
+    If so list all programs here : 
+    If so list all types of programs here : 
+
+By signing at the bottom you agree to these terms
+1. Chronos's Right To Search
+    When you sign at the bottom of this page you

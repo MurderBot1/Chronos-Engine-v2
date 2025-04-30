@@ -35,6 +35,7 @@ class Settings {
 
         // Graphics
             static GraphicLevels DecodeGraphicLevels(std::string GraphicLevel);
+            static std::string EncodeGraphicLevels(GraphicLevels GraphicLevel);
             static void LoadGraphicsSettings(std::string FilePath);
             static void LoadAudioSettings(std::string FilePath);
             static void LoadRenderingSettings(std::string FilePath);

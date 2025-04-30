@@ -161,28 +161,50 @@ void Settings::LoadSettings(std::string LoadSettingsPath) {
 }
 
 GraphicLevels Settings::DecodeGraphicLevels(std::string GraphicLevel){
-    if(GraphicLevel == "UltraLow") {
-        return UltraLow;
-    } else if(GraphicLevel == "Low") {
-        return Low;
-    } else if(GraphicLevel == "MediumLow,") {
-        return MediumLow;
-    } else if(GraphicLevel == "Medium") {
-        return Medium;
-    } else if(GraphicLevel == "MediumHigh") {
-        return MediumHigh;
-    } else if(GraphicLevel == "High") {
-        return High;
-    } else if(GraphicLevel == "VeryHigh") {
-        return VeryHigh;
-    } else if(GraphicLevel == "Ultra") {
-        return Ultra;
+    if(GraphicLevel == "Unreal") {
+        return Unreal;
     } else if(GraphicLevel == "Realistic") {
         return Realistic;
-    } else if(GraphicLevel == "Unreal") {
-        return Unreal;
+    } else if(GraphicLevel == "Ultra") {
+        return Ultra;
+    } else if(GraphicLevel == "VeryHigh") {
+        return VeryHigh;
+    } else if(GraphicLevel == "High") {
+        return High;
+    } else if(GraphicLevel == "MediumHigh") {
+        return MediumHigh;
+    } else if(GraphicLevel == "Medium") {
+        return Medium;
+    } else if(GraphicLevel == "MediumLow") {
+        return MediumLow;
+    } else if(GraphicLevel == "Low") {
+        return Low;
     } else {
-        return UltraLow;
+        return UltraLow; // Returns ultra low if nothing is found or if it is Ultralow
+    }
+}
+
+std::string Settings::EncodeGraphicLevels(GraphicLevels GraphicLevel){
+    if(GraphicLevel == Unreal) {
+        return "Unreal";
+    } else if(GraphicLevel == Realistic) {
+        return "Realistic";
+    } else if(GraphicLevel == Ultra) {
+        return "Ultra";
+    } else if(GraphicLevel == VeryHigh) {
+        return "VeryHigh";
+    } else if(GraphicLevel == High) {
+        return "High";
+    } else if(GraphicLevel == MediumHigh) {
+        return "MediumHigh";
+    } else if(GraphicLevel == Medium) {
+        return "Medium";
+    } else if(GraphicLevel == MediumLow) {
+        return "MediumLow";
+    } else if(GraphicLevel == Low) {
+        return "Low";    
+    } else {
+        return "UltraLow"; // Returns ultra low if nothing is found or if it is Ultralow
     }
 }
 
@@ -192,7 +214,7 @@ void Settings::LoadInGPUAndCPU(){
 
 // Start of program
 void Settings::SetAsGraphicsLevel() {
-    const GraphicLevels CurrentGraphicLevel = Settings::GraphicLevel;
+    GraphicLevels CurrentGraphicLevel = Settings::GraphicLevel;
     Settings::Lighting = CurrentGraphicLevel;
     Settings::Shaders = CurrentGraphicLevel;
     Settings::Particles = CurrentGraphicLevel;
