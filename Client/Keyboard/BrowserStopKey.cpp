@@ -4,13 +4,13 @@
 #ifndef BrowserStopKey_CPP
 #define BrowserStopKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "BrowserStopKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void BrowserStopKey::KeyBrowserStopOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

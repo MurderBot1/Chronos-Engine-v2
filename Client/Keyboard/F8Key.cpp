@@ -4,13 +4,13 @@
 #ifndef F8Key_CPP
 #define F8Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F8Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F8Key::KeyF8OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

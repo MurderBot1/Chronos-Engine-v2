@@ -4,13 +4,13 @@
 #ifndef F20Key_CPP
 #define F20Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F20Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F20Key::KeyF20OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

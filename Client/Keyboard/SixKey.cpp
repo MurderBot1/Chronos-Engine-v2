@@ -4,13 +4,13 @@
 #ifndef SixKey_CPP
 #define SixKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "SixKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void SixKey::KeySixOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

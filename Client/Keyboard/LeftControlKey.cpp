@@ -4,13 +4,13 @@
 #ifndef LeftControlKey_CPP
 #define LeftControlKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "LeftControlKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void LeftControlKey::KeyLeftControlOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

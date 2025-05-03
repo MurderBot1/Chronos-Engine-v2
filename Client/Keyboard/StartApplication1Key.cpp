@@ -4,13 +4,13 @@
 #ifndef StartApplication1Key_CPP
 #define StartApplication1Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "StartApplication1Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void StartApplication1Key::KeyStartApplication1OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

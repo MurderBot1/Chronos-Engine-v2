@@ -4,13 +4,13 @@
 #ifndef SevenKey_CPP
 #define SevenKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "SevenKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void SevenKey::KeySevenOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

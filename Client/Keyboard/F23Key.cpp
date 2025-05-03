@@ -4,13 +4,13 @@
 #ifndef F23Key_CPP
 #define F23Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F23Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F23Key::KeyF23OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

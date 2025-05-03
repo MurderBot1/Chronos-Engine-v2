@@ -4,13 +4,13 @@
 #ifndef SpaceKey_CPP
 #define SpaceKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "SpaceKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void SpaceKey::KeySpaceOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -4,13 +4,13 @@
 #ifndef BrowserRefreshKey_CPP
 #define BrowserRefreshKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "BrowserRefreshKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void BrowserRefreshKey::KeyBrowserRefreshOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

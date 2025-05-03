@@ -11,7 +11,7 @@
 // Program imported files
 #include "Log.h"
 
-// Function definitions
+// Definitions
 class LimitedFunction {
     public:
         LimitedFunction(int MaxCallPerFrame, std::function<void()> Function) {

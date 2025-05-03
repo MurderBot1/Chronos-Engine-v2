@@ -4,13 +4,13 @@
 #ifndef FiveKey_CPP
 #define FiveKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "FiveKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void FiveKey::KeyFiveOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

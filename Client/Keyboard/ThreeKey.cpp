@@ -4,13 +4,13 @@
 #ifndef ThreeKey_CPP
 #define ThreeKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "ThreeKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void ThreeKey::KeyThreeOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

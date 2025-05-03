@@ -4,13 +4,13 @@
 #ifndef RightWindowsKey_CPP
 #define RightWindowsKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "RightWindowsKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void RightWindowsKey::KeyRightWindowsOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

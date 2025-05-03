@@ -4,13 +4,13 @@
 #ifndef ClearKey_CPP
 #define ClearKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "ClearKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void ClearKey::KeyClearOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

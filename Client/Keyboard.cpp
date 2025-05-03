@@ -4,14 +4,14 @@
 #ifndef Keyboard_CPP
 #define Keyboard_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "Keyboard.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 bool Keyboard::IsDisabled;
 int Settings::NumCoresForKeyboard;
 
-// Start of program
+// Definitions
 std::map<std::string, bool> Keyboard::KeysPressed() {
     std::map<std::string, bool> ReturnedKeys;
 

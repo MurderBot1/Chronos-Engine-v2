@@ -4,13 +4,13 @@
 #ifndef RightShiftKey_CPP
 #define RightShiftKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "RightShiftKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void RightShiftKey::KeyRightShiftOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -4,13 +4,13 @@
 #ifndef PageUpKey_CPP
 #define PageUpKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "PageUpKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void PageUpKey::KeyPageUpOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

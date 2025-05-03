@@ -4,13 +4,13 @@
 #ifndef XKey_CPP
 #define XKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "XKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void XKey::KeyXOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

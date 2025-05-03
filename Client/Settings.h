@@ -11,31 +11,19 @@
 #include <vector>
 #include <fstream>
 #include <array>
+#include <filesystem>
 
 // Program imported files
 #include "Binary.h"
 
-// Function definitions
-enum GraphicLevels {
-    UltraLow,
-    Low,
-    MediumLow, 
-    Medium,
-    MediumHigh,
-    High,
-    VeryHigh,
-    Ultra,
-    Realistic,
-    Unreal
-};
-
+// Definitions
 class Settings {
     public:
         static void LoadSettings(std::string LoadSettingsPath);
 
         // Graphics
-            static GraphicLevels DecodeGraphicLevels(std::string GraphicLevel);
-            static std::string EncodeGraphicLevels(GraphicLevels GraphicLevel);
+            static SettingsValues::GraphicLevels DecodeGraphicLevels(std::string GraphicLevel);
+            static std::string EncodeGraphicLevels(SettingsValues::GraphicLevels GraphicLevel);
             static void LoadGraphicsSettings(std::string FilePath);
             static void LoadAudioSettings(std::string FilePath);
             static void LoadRenderingSettings(std::string FilePath);
@@ -47,12 +35,12 @@ class Settings {
             static bool SetFPSAtMonitersMax; // Limit the FPS to the moniters maximum
             // Graphics levels
             static void SetAsGraphicsLevel();
-            static GraphicLevels GraphicLevel; // Sets all settings to this level when Settings::SetAsGraphicsLevel(); Is Ran
-            static GraphicLevels Lighting; // How accurate is the lighting
-            static GraphicLevels Shaders; // What level of shaders are used
-            static GraphicLevels Particles; // What level of particles are used
-            static GraphicLevels Shadows; // What level of shadows are used
-            static GraphicLevels SSAntiAllasing; // Settings and there levels are shown below
+            static SettingsValues::GraphicLevels GraphicLevel; // Sets all settings to this level when Settings::SetAsGraphicsLevel(); Is Ran
+            static SettingsValues::GraphicLevels Lighting; // How accurate is the lighting
+            static SettingsValues::GraphicLevels Shaders; // What level of shaders are used
+            static SettingsValues::GraphicLevels Particles; // What level of particles are used
+            static SettingsValues::GraphicLevels Shadows; // What level of shadows are used
+            static SettingsValues::GraphicLevels SSAntiAllasing; // Settings and there levels are shown below
                 /*
                     UltraLow = 1x
                         With 4k texture files they would be 4k

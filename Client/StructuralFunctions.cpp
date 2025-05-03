@@ -4,13 +4,13 @@
 #ifndef StructuralFunctions_CPP
 #define StructuralFunctions_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "StructuralFunctions.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void StartFunction() {
     Time::FillValuesForLoading();
     Log::SetupLog("C:\\Users\\trent\\Documents\\GitHub\\Chronos-Engine-v2\\Client\\Logs\\Settings\\LogSettings.txt");

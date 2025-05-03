@@ -4,13 +4,13 @@
 #ifndef F18Key_CPP
 #define F18Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F18Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F18Key::KeyF18OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

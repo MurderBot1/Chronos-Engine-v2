@@ -4,13 +4,13 @@
 #ifndef F22Key_CPP
 #define F22Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F22Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F22Key::KeyF22OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

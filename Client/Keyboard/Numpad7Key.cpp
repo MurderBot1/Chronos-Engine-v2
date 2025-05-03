@@ -4,13 +4,13 @@
 #ifndef Numpad7Key_CPP
 #define Numpad7Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "Numpad7Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void Numpad7Key::KeyNumpad7OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

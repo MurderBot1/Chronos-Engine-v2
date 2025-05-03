@@ -4,13 +4,13 @@
 #ifndef F3Key_CPP
 #define F3Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F3Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F3Key::KeyF3OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

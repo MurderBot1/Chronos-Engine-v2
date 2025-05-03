@@ -4,13 +4,13 @@
 #ifndef F24Key_CPP
 #define F24Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F24Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F24Key::KeyF24OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

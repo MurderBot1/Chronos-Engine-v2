@@ -4,13 +4,13 @@
 #ifndef BackspaceKey_CPP
 #define BackspaceKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "BackspaceKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void BackspaceKey::KeyBackspaceOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

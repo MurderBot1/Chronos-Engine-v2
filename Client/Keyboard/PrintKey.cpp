@@ -4,13 +4,13 @@
 #ifndef PrintKey_CPP
 #define PrintKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "PrintKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void PrintKey::KeyPrintOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

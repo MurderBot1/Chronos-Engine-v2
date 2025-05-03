@@ -4,13 +4,13 @@
 #ifndef SKey_CPP
 #define SKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "SKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void SKey::KeySOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

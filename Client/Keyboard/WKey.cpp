@@ -4,13 +4,13 @@
 #ifndef WKey_CPP
 #define WKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "WKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void WKey::KeyWOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

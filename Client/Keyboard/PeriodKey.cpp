@@ -4,13 +4,13 @@
 #ifndef PeriodKey_CPP
 #define PeriodKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "PeriodKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void PeriodKey::KeyPeriodOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

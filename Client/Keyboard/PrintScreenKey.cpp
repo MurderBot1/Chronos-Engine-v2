@@ -4,13 +4,13 @@
 #ifndef PrintScreenKey_CPP
 #define PrintScreenKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "PrintScreenKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void PrintScreenKey::KeyPrintScreenOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

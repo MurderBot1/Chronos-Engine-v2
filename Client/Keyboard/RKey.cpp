@@ -4,13 +4,13 @@
 #ifndef RKey_CPP
 #define RKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "RKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void RKey::KeyROsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -4,13 +4,13 @@
 #ifndef BrowserForwardKey_CPP
 #define BrowserForwardKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "BrowserForwardKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void BrowserForwardKey::KeyBrowserForwardOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

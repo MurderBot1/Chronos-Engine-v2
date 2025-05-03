@@ -4,15 +4,15 @@
 #ifndef LimitedFunctions_CPP
 #define LimitedFunctions_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "LimitedFunctions.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 std::vector<LimitedFunction*> LimitedFunction::AllLimitedFunctions;
 
-// Start of program
+// Definitions
 void LimitedFunction::ResetAllLimitedFunctions() {
-    for (LimitedFunction* Function : LimitedFunction::AllLimitedFunctions){
+    for (const auto& Function : LimitedFunction::AllLimitedFunctions){
         Function->CalledThisFrame = 0;
     }
 }

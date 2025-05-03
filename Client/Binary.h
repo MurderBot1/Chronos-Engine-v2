@@ -11,13 +11,14 @@
 
 // Program imported files
 #include "Log.h"
+#include "Constants.h"
 
-// Function definitions
+// Definitions
 class FromBinary {
     public:
         static float BinaryToFloat(const std::string& Binary);
         static int BinaryToInt(const std::string& Binary);
-        static bool BinaryStringToBool(const std::string& Binary);
+        static bool BinaryToBool(const std::string& Binary);
 };
 
 class ToBinary {

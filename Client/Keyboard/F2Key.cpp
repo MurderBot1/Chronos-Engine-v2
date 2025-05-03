@@ -4,13 +4,13 @@
 #ifndef F2Key_CPP
 #define F2Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F2Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F2Key::KeyF2OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

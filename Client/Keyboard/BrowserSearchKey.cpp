@@ -4,13 +4,13 @@
 #ifndef BrowserSearchKey_CPP
 #define BrowserSearchKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "BrowserSearchKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void BrowserSearchKey::KeyBrowserSearchOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

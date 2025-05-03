@@ -10,14 +10,14 @@
 // Program imported files
 
 
-// Function definitions
+// Definitions
 class Exit {
     public:
         Exit(){
             ExitTheMainLoop = false;
         }
         static bool ExitTheMainLoop;
-        void ExitTheProgram();
+        static void ExitTheProgram();
 };
 
 #endif

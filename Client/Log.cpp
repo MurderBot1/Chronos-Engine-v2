@@ -4,10 +4,10 @@
 #ifndef Log_CPP
 #define Log_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "Log.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 std::vector<std::string> Log::InfoOutputs;
 std::vector<std::string> Log::Errors;
 int Log::NumLogFiles;
@@ -16,13 +16,13 @@ int Log::EveryXFrames;
 std::string Log::OutputFilePath;
 std::vector<float> Log::FPS;
 
-// Start of program
+// Definitions
 void Log::SetupLog(std::string LogSettingsFile) {
-    constexpr int NumLines = 2;
+    constexpr int NumLines = LogValues::LINES_IN_LOG_SETUP_FILE;
     std::ifstream SettingsFile(LogSettingsFile);
     std::array<std::string, NumLines> Lines;
     std::string Line;
-    size_t Index = 0;
+    size_t Index = INDEX_START;
 
     if(!SettingsFile.is_open()) {return;};
 
@@ -35,8 +35,8 @@ void Log::SetupLog(std::string LogSettingsFile) {
 }
 
 template <typename T>
-std::string Log::FunctionNameToString(T func) {
-    return typeid(func).name();
+std::string Log::FunctionNameToString(T Func) {
+    return typeid(Func).name();
 }
 
 void Log::OutputDataToFile() {
@@ -48,13 +48,13 @@ void Log::OutputDataToFile() {
     
     // Check if the file is open
     if (!OutFile.is_open()) {
-        std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt" << std::endl;
+        std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt\n";
         return;
     }
 
     // Calculate the average FPS
     __float128 FPSTotal;
-    for(float FPS : Log::FPS) {
+    for(const auto& FPS : Log::FPS) {
         FPSTotal += FPS;
     }
     FPSTotal = FPSTotal / Log::FPS.size();
@@ -68,11 +68,11 @@ void Log::OutputDataToFile() {
     // Output all of the information to the .ChronosLog file
     OutFile << "FPS = " + oss.str() << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
 
-    for(std::string Error : Log::Errors) {
+    for(const auto& Error : Log::Errors) {
         OutFile << Error + "\n";
     }
 
-    for(std::string INFO : Log::InfoOutputs) {
+    for(const auto& INFO : Log::InfoOutputs) {
         OutFile << INFO + "\n";
     }
 

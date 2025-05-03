@@ -4,13 +4,13 @@
 #ifndef MKey_CPP
 #define MKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "MKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void MKey::KeyMOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

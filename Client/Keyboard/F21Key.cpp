@@ -4,13 +4,13 @@
 #ifndef F21Key_CPP
 #define F21Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F21Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F21Key::KeyF21OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

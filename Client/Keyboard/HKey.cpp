@@ -4,13 +4,13 @@
 #ifndef HKey_CPP
 #define HKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "HKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void HKey::KeyHOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

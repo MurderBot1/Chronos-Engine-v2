@@ -4,13 +4,13 @@
 #ifndef VolumeDownKey_CPP
 #define VolumeDownKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "VolumeDownKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void VolumeDownKey::KeyVolumeDownOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

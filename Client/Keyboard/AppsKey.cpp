@@ -4,13 +4,13 @@
 #ifndef AppsKey_CPP
 #define AppsKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "AppsKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void AppsKey::KeyAppsOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

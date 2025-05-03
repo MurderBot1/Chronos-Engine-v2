@@ -4,13 +4,13 @@
 #ifndef EightKey_CPP
 #define EightKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "EightKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void EightKey::KeyEightOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

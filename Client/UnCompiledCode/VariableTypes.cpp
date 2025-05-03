@@ -4,13 +4,13 @@
 #ifndef VariableTypes_CPP
 #define VariableTypes_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "VariableTypes.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 Vector::Vector2_i::Vector2_i() {
     this->X = 0;
     this->Y = 0;

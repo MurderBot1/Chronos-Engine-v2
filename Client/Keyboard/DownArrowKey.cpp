@@ -4,13 +4,13 @@
 #ifndef DownArrowKey_CPP
 #define DownArrowKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "DownArrowKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void DownArrowKey::KeyDownArrowOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

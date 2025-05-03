@@ -16,7 +16,7 @@
 // Program imported files
 #include "Settings.h"
 
-// Function definitions
+// Definitions
 class Time {
     public:
         static int64_t CurrentTimeInMicroS;

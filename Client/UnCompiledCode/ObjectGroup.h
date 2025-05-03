@@ -9,12 +9,22 @@
 
 // Program imported files
 #include "Object.h"
+#include "Camera.h"
+#include "Particles.h"
+#include "Lights.h"
 
-// Function definitions
+// Definitions
 class ObjectGroup {
-    public: 
-        std::vector<Object*> ObjectsInGroup;
+    public:
+        // Constructor and deconstructor
+        ObjectGroup();
+        ~ObjectGroup();
         
+        // Objects contained in group 
+        std::vector<Object*> ObjectsInGroup;
+        std::vector<Camera*> CamerasInGroup;
+        std::vector<Light*> LightsInGroup;
+        std::vector<ParticleGenerator*> ParticleGeneratorsInGroups;
 };
 
 #endif

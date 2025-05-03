@@ -4,13 +4,13 @@
 #ifndef OneKey_CPP
 #define OneKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "OneKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void OneKey::KeyOneOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

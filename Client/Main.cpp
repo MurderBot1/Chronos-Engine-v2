@@ -10,10 +10,10 @@
 // Other included Libraries
 
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 int main() {
     StartFunction();
     while(Exit::ExitTheMainLoop == false) {

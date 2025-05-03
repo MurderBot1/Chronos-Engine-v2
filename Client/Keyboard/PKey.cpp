@@ -4,13 +4,13 @@
 #ifndef PKey_CPP
 #define PKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "PKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void PKey::KeyPOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

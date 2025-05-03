@@ -4,13 +4,13 @@
 #ifndef HelpKey_CPP
 #define HelpKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "HelpKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void HelpKey::KeyHelpOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

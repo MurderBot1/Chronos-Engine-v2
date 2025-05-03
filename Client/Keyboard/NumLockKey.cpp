@@ -4,13 +4,13 @@
 #ifndef NumLockKey_CPP
 #define NumLockKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "NumLockKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void NumLockKey::KeyNumLockOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

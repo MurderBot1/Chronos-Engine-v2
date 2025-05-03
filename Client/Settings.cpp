@@ -4,16 +4,16 @@
 #ifndef Settings_CPP
 #define Settings_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "Settings.h"
 
-// Redefine vars if needed
-GraphicLevels Settings::GraphicLevel; // Sets all settings to this level when Settings::SetAsGraphicsLevel(); Is Ran
-GraphicLevels Settings::Lighting; // How accurate is the lighting
-GraphicLevels Settings::Shaders; // What level of shaders are used
-GraphicLevels Settings::Particles; // What level of particles are used
-GraphicLevels Settings::Shadows; // What level of shadows are used
-GraphicLevels Settings::SSAntiAllasing; // Settings and there levels are shown below
+// Variable redefinitions
+SettingsValues::GraphicLevels Settings::GraphicLevel; // Sets all settings to this level when Settings::SetAsGraphicsLevel(); Is Ran
+SettingsValues::GraphicLevels Settings::Lighting; // How accurate is the lighting
+SettingsValues::GraphicLevels Settings::Shaders; // What level of shaders are used
+SettingsValues::GraphicLevels Settings::Particles; // What level of particles are used
+SettingsValues::GraphicLevels Settings::Shadows; // What level of shadows are used
+SettingsValues::GraphicLevels Settings::SSAntiAllasing; // Settings and there levels are shown below
 int16_t Settings::ResolutionX; // Horizontal resolution of the display
 int16_t Settings::ResolutionY; // Vertical resolution of the display
 int16_t Settings::MaxFPS; // Maximum FPS the engine will output
@@ -28,17 +28,34 @@ float Settings::Volume; // The current volume multipier for the engine
 void Settings::LoadGraphicsSettings(std::string FilePath) {
     // Graphics
     // Define the variables to load the file in
-    constexpr int NumLines = 10;
     std::ifstream SettingsFile(FilePath);
-    std::array<std::string, NumLines> Lines;
+    std::array<std::string, SettingsValues::LINES_IN_GRAPHICS_SETUP_FILE> Lines;
     std::string Line;
-    size_t Index = 0;
+    size_t Index = INDEX_START;
 
     // Check if the file can be opened
-    if(!SettingsFile.is_open()) {return;};
+    if(!SettingsFile.is_open()) {
+        // Set default settings
+        // Moniter settings
+        Settings::ResolutionX = 1920;
+        Settings::ResolutionY = 1080; 
+        Settings::MaxFPS = 60;       
+        Settings::SetFPSAtMonitersMax = false;
+
+        // Graphics levels
+        Settings::GraphicLevel = SettingsValues::GraphicLevels::UltraLow;
+        Settings::Lighting = SettingsValues::GraphicLevels::UltraLow;
+        Settings::Shaders = SettingsValues::GraphicLevels::UltraLow;
+        Settings::Particles = SettingsValues::GraphicLevels::UltraLow;
+        Settings::Shadows = SettingsValues::GraphicLevels::UltraLow;
+        Settings::SSAntiAllasing = SettingsValues::GraphicLevels::UltraLow;
+
+        // Exit out of the function
+        return;
+    };
 
     // Load the file in
-    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+    while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_GRAPHICS_SETUP_FILE) {
         Lines[Index++] = Line;
     }
     
@@ -47,7 +64,7 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
     Settings::ResolutionX = FromBinary::BinaryToInt(Lines[0]);
     Settings::ResolutionY = FromBinary::BinaryToInt(Lines[1]); 
     Settings::MaxFPS = FromBinary::BinaryToInt(Lines[2]);       
-    Settings::SetFPSAtMonitersMax = FromBinary::BinaryStringToBool(Lines[3]);
+    Settings::SetFPSAtMonitersMax = FromBinary::BinaryToBool(Lines[3]);
 
     // Graphics levels
     Settings::GraphicLevel = Settings::DecodeGraphicLevels(Lines[4]);
@@ -63,17 +80,22 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
 void Settings::LoadAudioSettings(std::string FilePath) {
     // Audio
     // Define the variables to load the file in
-    constexpr int NumLines = 1;
     std::ifstream SettingsFile(FilePath);
-    std::array<std::string, NumLines> Lines;
+    std::array<std::string, SettingsValues::LINES_IN_AUDIO_SETUP_FILE> Lines;
     std::string Line;
-    size_t Index = 0;
+    size_t Index = INDEX_START;
 
     // Check if the file can be opened
-    if(!SettingsFile.is_open()) {return;};
+    if(!SettingsFile.is_open()) {
+        // Set default settings
+        Settings::Volume = 100.0f;
+
+        // Exit out of the function
+        return;
+    };
 
     // Load the file in
-    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+    while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_AUDIO_SETUP_FILE) {
         Lines[Index++] = Line;
     }
     
@@ -86,23 +108,30 @@ void Settings::LoadAudioSettings(std::string FilePath) {
 void Settings::LoadRenderingSettings(std::string FilePath) {
     // Rendering
     // Define the variables to load the file in
-    constexpr int NumLines = 3;
     std::ifstream SettingsFile(FilePath);
-    std::array<std::string, NumLines> Lines;
+    std::array<std::string, SettingsValues::LINES_IN_RENDERING_SETUP_FILE> Lines;
     std::string Line;
-    size_t Index = 0;
+    size_t Index = INDEX_START;
 
     // Check if the file can be opened
-    if(!SettingsFile.is_open()) {return;};
+    if(!SettingsFile.is_open()) {
+        // Set default settings
+        Settings::GPURendering = false; 
+        Settings::UseBounces = true;
+        Settings::Bounces = 2;  
+        
+        // Exit out of the function
+        return;
+    };
 
     // Load the file in
-    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+    while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_RENDERING_SETUP_FILE) {
         Lines[Index++] = Line;
     }
 
     // Load the variables from the file
-    Settings::GPURendering = FromBinary::BinaryStringToBool(Lines[0]); 
-    Settings::UseBounces = FromBinary::BinaryStringToBool(Lines[1]);
+    Settings::GPURendering = FromBinary::BinaryToBool(Lines[0]); 
+    Settings::UseBounces = FromBinary::BinaryToBool(Lines[1]);
     Settings::Bounces = FromBinary::BinaryToInt(Lines[2]);               
 
     SettingsFile.close(); // Close the file
@@ -111,17 +140,23 @@ void Settings::LoadRenderingSettings(std::string FilePath) {
 void Settings::LoadOptionsSettings(std::string FilePath) {
     // Options
     // Define the variables to load the file in
-    constexpr int NumLines = 2;
     std::ifstream SettingsFile(FilePath);
-    std::array<std::string, NumLines> Lines;
+    std::array<std::string, SettingsValues::LINES_IN_OPTIONS_SETUP_FILE> Lines;
     std::string Line;
-    size_t Index = 0;
+    size_t Index = INDEX_START;
 
     // Check if the file can be opened
-    if(!SettingsFile.is_open()) {return;};
+    if(!SettingsFile.is_open()) {
+        // Set default settings
+        Settings::FOV = 100.0f;
+        Settings::Sensitivity = 1.0f;
+        
+        // Exit out of the function
+        return;
+    };
 
     // Load the file in
-    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+    while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_OPTIONS_SETUP_FILE) {
         Lines[Index++] = Line;
     }
 
@@ -136,17 +171,26 @@ void Settings::LoadOptionsSettings(std::string FilePath) {
 void Settings::LoadSettings(std::string LoadSettingsPath) {
     // Options
     // Define the variables to load the file in
-    constexpr int NumLines = 4;
     std::ifstream SettingsFile(LoadSettingsPath);
-    std::array<std::string, NumLines> Lines;
+    std::array<std::string, SettingsValues::LINES_IN_LOAD_SETTINGS_SETUP_FILE> Lines;
     std::string Line;
-    size_t Index = 0;
+    size_t Index = INDEX_START;
 
     // Check if the file can be opened
-    if(!SettingsFile.is_open()) {return;};
+    if(!SettingsFile.is_open()) {
+        // Set default settings
+        const std::filesystem::path CurrentPath = std::filesystem::current_path();
+        Settings::LoadGraphicsSettings(CurrentPath.string() + "/Settings/Graphics/Graphics.txt");
+        Settings::LoadAudioSettings(CurrentPath.string() + "/Settings/Audio/Audio.txt");
+        Settings::LoadRenderingSettings(CurrentPath.string() + "/Settings/Rendering/Rendering.txt");
+        Settings::LoadOptionsSettings(CurrentPath.string() + "/Settings/Options/Options.txt");
+        
+        // Exit out of the function
+        return;
+    };
 
     // Load the file in
-    while (std::getline(SettingsFile, Line) && Index < NumLines) {
+    while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_LOAD_SETTINGS_SETUP_FILE) {
         Lines[Index++] = Line;
     }
 
@@ -160,51 +204,54 @@ void Settings::LoadSettings(std::string LoadSettingsPath) {
     SettingsFile.close(); // Close the file
 }
 
-GraphicLevels Settings::DecodeGraphicLevels(std::string GraphicLevel){
+SettingsValues::GraphicLevels Settings::DecodeGraphicLevels(std::string GraphicLevel){
     if(GraphicLevel == "Unreal") {
-        return Unreal;
+        return SettingsValues::GraphicLevels::Unreal;
     } else if(GraphicLevel == "Realistic") {
-        return Realistic;
+        return SettingsValues::GraphicLevels::Realistic;
     } else if(GraphicLevel == "Ultra") {
-        return Ultra;
+        return SettingsValues::GraphicLevels::Ultra;
     } else if(GraphicLevel == "VeryHigh") {
-        return VeryHigh;
+        return SettingsValues::GraphicLevels::VeryHigh;
     } else if(GraphicLevel == "High") {
-        return High;
+        return SettingsValues::GraphicLevels::High;
     } else if(GraphicLevel == "MediumHigh") {
-        return MediumHigh;
+        return SettingsValues::GraphicLevels::MediumHigh;
     } else if(GraphicLevel == "Medium") {
-        return Medium;
+        return SettingsValues::GraphicLevels::Medium;
     } else if(GraphicLevel == "MediumLow") {
-        return MediumLow;
+        return SettingsValues::GraphicLevels::MediumLow;
     } else if(GraphicLevel == "Low") {
-        return Low;
+        return SettingsValues::GraphicLevels::Low;
     } else {
-        return UltraLow; // Returns ultra low if nothing is found or if it is Ultralow
+        return SettingsValues::GraphicLevels::UltraLow; // Returns ultra low if nothing is found or if it is Ultralow
     }
 }
 
-std::string Settings::EncodeGraphicLevels(GraphicLevels GraphicLevel){
-    if(GraphicLevel == Unreal) {
-        return "Unreal";
-    } else if(GraphicLevel == Realistic) {
-        return "Realistic";
-    } else if(GraphicLevel == Ultra) {
-        return "Ultra";
-    } else if(GraphicLevel == VeryHigh) {
-        return "VeryHigh";
-    } else if(GraphicLevel == High) {
-        return "High";
-    } else if(GraphicLevel == MediumHigh) {
-        return "MediumHigh";
-    } else if(GraphicLevel == Medium) {
-        return "Medium";
-    } else if(GraphicLevel == MediumLow) {
-        return "MediumLow";
-    } else if(GraphicLevel == Low) {
-        return "Low";    
-    } else {
-        return "UltraLow"; // Returns ultra low if nothing is found or if it is Ultralow
+std::string Settings::EncodeGraphicLevels(SettingsValues::GraphicLevels GraphicLevel){
+    switch (GraphicLevel) {
+        case SettingsValues::GraphicLevels::Unreal:
+            return "Unreal";
+        case SettingsValues::GraphicLevels::Realistic:
+            return "Realistic";
+        case SettingsValues::GraphicLevels::Ultra:
+            return "Ultra";
+        case SettingsValues::GraphicLevels::VeryHigh:
+            return "VeryHigh";
+        case SettingsValues::GraphicLevels::High:
+            return "High";
+        case SettingsValues::GraphicLevels::MediumHigh:
+            return "MediumHigh";
+        case SettingsValues::GraphicLevels::Medium:
+            return "Medium";
+        case SettingsValues::GraphicLevels::MediumLow:
+            return "MediumLow";
+        case SettingsValues::GraphicLevels::Low:
+            return "Low";    
+            break;
+        default: // Returns ultra low if nothing is found or if it is Ultra
+            return "UltraLow"; 
+            break;
     }
 }
 
@@ -212,9 +259,9 @@ void Settings::LoadInGPUAndCPU(){
     
 }
 
-// Start of program
+// Definitions
 void Settings::SetAsGraphicsLevel() {
-    GraphicLevels CurrentGraphicLevel = Settings::GraphicLevel;
+    SettingsValues::GraphicLevels CurrentGraphicLevel = Settings::GraphicLevel;
     Settings::Lighting = CurrentGraphicLevel;
     Settings::Shaders = CurrentGraphicLevel;
     Settings::Particles = CurrentGraphicLevel;

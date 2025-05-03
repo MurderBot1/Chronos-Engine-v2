@@ -4,13 +4,13 @@
 #ifndef F16Key_CPP
 #define F16Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F16Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F16Key::KeyF16OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

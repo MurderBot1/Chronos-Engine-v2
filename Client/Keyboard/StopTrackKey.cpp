@@ -4,13 +4,13 @@
 #ifndef StopTrackKey_CPP
 #define StopTrackKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "StopTrackKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void StopTrackKey::KeyStopTrackOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

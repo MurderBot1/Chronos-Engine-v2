@@ -4,13 +4,13 @@
 #ifndef YKey_CPP
 #define YKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "YKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void YKey::KeyYOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

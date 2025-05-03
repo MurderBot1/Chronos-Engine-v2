@@ -4,13 +4,13 @@
 #ifndef DeleteKey_CPP
 #define DeleteKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "DeleteKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void DeleteKey::KeyDeleteOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

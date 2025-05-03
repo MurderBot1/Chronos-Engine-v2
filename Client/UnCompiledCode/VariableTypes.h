@@ -10,8 +10,7 @@
 
 // Program imported files
 
-
-// Function definitions
+// Definitions
 namespace Vector {
     struct Vector2_i;
     struct Vector2_f;

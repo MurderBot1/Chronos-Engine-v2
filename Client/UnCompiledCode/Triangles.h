@@ -5,15 +5,28 @@
 #define Triangles_H
 
 // C++ imported files
-
+#include <array>
 
 // Program imported files
 #include "VariableTypes.h"
+#include "Texture.h"
+#include "Object.h"
 
-// Function definitions
+// Definitions
 class Triangle {
     public:
-        Vector::Vector3_f L1, L2, L3;
+        // Define a constructor and a deconstructor
+        Triangle();
+        ~Triangle();
+
+        // A variable that holds the texture
+        Texture LoadedTexture;
+
+        // A pointer to the object
+        Object* Obj;
+
+        // The coordinates of the triangle
+        std::array<Vector::Vector3_f, 3> VectorCoordinates{};
 };
 
 #endif

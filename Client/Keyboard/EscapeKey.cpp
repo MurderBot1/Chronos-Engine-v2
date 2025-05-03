@@ -4,13 +4,13 @@
 #ifndef EscapeKey_CPP
 #define EscapeKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "EscapeKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void EscapeKey::KeyEscapeOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

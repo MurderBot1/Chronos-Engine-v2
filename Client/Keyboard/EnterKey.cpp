@@ -4,13 +4,13 @@
 #ifndef EnterKey_CPP
 #define EnterKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "EnterKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void EnterKey::KeyEnterOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

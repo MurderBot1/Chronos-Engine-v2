@@ -4,13 +4,13 @@
 #ifndef UpArrowKey_CPP
 #define UpArrowKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "UpArrowKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void UpArrowKey::KeyUpArrowOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

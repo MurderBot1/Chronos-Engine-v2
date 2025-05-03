@@ -4,13 +4,13 @@
 #ifndef FourKey_CPP
 #define FourKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "FourKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void FourKey::KeyFourOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

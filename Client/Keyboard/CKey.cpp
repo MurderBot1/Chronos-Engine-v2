@@ -4,13 +4,13 @@
 #ifndef CKey_CPP
 #define CKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "CKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void CKey::KeyCOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

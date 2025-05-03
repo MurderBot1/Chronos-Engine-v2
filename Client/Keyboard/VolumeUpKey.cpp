@@ -4,13 +4,13 @@
 #ifndef VolumeUpKey_CPP
 #define VolumeUpKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "VolumeUpKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void VolumeUpKey::KeyVolumeUpOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -4,13 +4,13 @@
 #ifndef ZKey_CPP
 #define ZKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "ZKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void ZKey::KeyZOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -4,13 +4,13 @@
 #ifndef NKey_CPP
 #define NKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "NKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void NKey::KeyNOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

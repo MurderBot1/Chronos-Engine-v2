@@ -12,7 +12,7 @@
 // Program imported files
 
 
-// Function definitions
+// Definitions
 class Thread;
 class Core;
 class GPU;
@@ -20,10 +20,26 @@ class CPU;
 
 class Thread {
     public:
+        // Constructor and deconstructor
+        Thread();
+        ~Thread();
+
+        // Load data in to thread
         void LoadThreadData();
+
+        // The treads information
         std::string ThreadID;
         bool IsTaskRunning;
-        Core* CoreItBelongsTo;
+        Core* PerentCore;
+        CPU* GrandperentCPU;
+        GPU* GrandperentGPU;
+
+        // Change the threads information
+        void SetThreadID(std::string);
+        void SetIsTaskRunning(bool);
+        void SetPerentCore(Core*);
+        void SetGrandperentCPU(CPU*);
+        void SetGrandperentGPU(GPU*);
 };
 
 class Core {
@@ -32,8 +48,8 @@ class Core {
         std::string CoreID;
         int8_t NumThreads;
         std::map<int, Thread*> Threads;
-        CPU* CPUItBelongsTo;
-        GPU* GPUItBelongsTo;
+        CPU* PerentCPU;
+        GPU* PerentGPU;
 };
 
 class GPU {

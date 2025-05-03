@@ -4,13 +4,13 @@
 #ifndef F7Key_CPP
 #define F7Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F7Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F7Key::KeyF7OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

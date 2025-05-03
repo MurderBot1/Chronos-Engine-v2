@@ -4,13 +4,13 @@
 #ifndef QKey_CPP
 #define QKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "QKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void QKey::KeyQOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

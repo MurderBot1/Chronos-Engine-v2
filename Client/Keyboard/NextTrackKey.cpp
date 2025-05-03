@@ -4,13 +4,13 @@
 #ifndef NextTrackKey_CPP
 #define NextTrackKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "NextTrackKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void NextTrackKey::KeyNextTrackOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -14,9 +14,10 @@
 #include <array>
 
 // Program imported files
-#include "time.h"
+#include "Time.h"
+#include "Constants.h"
 
-// Function definitions
+// Definitions
 class Log {
     public:
         // Data
@@ -33,7 +34,7 @@ class Log {
         // Functions
         static void SetupLog(std::string LogSettingsFile);
         template <typename T>
-        static std::string FunctionNameToString(T func);
+        static std::string FunctionNameToString(T Func);
         static void OutputDataToFile();
         static void UpdateCounters();
 };

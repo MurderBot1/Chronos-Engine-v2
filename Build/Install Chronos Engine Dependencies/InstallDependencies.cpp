@@ -12,13 +12,13 @@
 // Other included Libraries
 
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 #ifdef _WIN32
-    std::vector<char*> WindowsCommands(bool UseMyInformationForTraining) {
-        std::vector<char*> Return;
+    std::vector<std::string> WindowsCommands(bool UseMyInformationForTraining) {
+        std::vector<std::string> Return;
 
         // Installing dependencies 
         // Install CMake
@@ -37,8 +37,8 @@
         return Return;
     }
 #elif __linux__
-    std::vector<char*> LinuxCommands(bool UseMyInformationForTraining) {
-        std::vector<char*> Return;
+    std::vector<std::string> LinuxCommands(bool UseMyInformationForTraining) {
+        std::vector<std::string> Return;
 
         // Installing dependencies 
         // Install CMake
@@ -58,8 +58,8 @@
         return Return;
     }
 #elif __APPLE__ || __MACH__
-    std::vector<char*> MacCommands(bool UseMyInformationForTraining) {
-        std::vector<char*> Return;
+    std::vector<std::string> MacCommands(bool UseMyInformationForTraining) {
+        std::vector<std::string> Return;
 
         // Installing dependencies 
         // Install CMake
@@ -79,8 +79,8 @@
         return Return;
     }
 #elif __ANDROID__
-    std::vector<char*> AndroidCommands() {
-        std::vector<char*> Return;
+    std::vector<std::string> AndroidCommands() {
+        std::vector<std::string> Return;
 
         // Installing dependencies 
         // Install CMake
@@ -96,8 +96,8 @@
         return Return;
     }
 #elif __APPLE__ && __IPHONE_OS_VERSION_MIN_REQUIRED
-    std::vector<char*> IOSCommands() {
-        std::vector<char*> Return;
+    std::vector<std::string> IOSCommands() {
+        std::vector<std::string> Return;
 
         // Installing dependencies 
         // Install CMake
@@ -118,48 +118,48 @@
 
 int main() {
     // Command to be executed
-    char* Commands[] = {};
+    std::vector<std::string> Commands;
     bool UseInfoForTraining;
 
     
 
     #ifdef _WIN32
         auto WindowsCmds = WindowsCommands(UseInfoForTraining);
-        for (size_t i = 0; i < WindowsCmds.size(); ++i) {
-            Commands[i] = WindowsCmds[i];
+        for (const auto& Command : WindowsCmds) {
+            Commands.push_back(Command);
         }
     #elif __linux__
         auto LinuxCmds = LinuxCommands(UseInfoForTraining);
-        for (size_t i = 0; i < LinuxCmds.size(); ++i) {
-            Commands[i] = LinuxCmds[i];
+        for (const auto& Command : LinuxCmds) {
+            Commands.push_back(Command);
         }
     #elif __APPLE__ || __MACH__
         auto MacCmds = MacCommands(UseInfoForTraining);
-        for (size_t i = 0; i < MacCmds.size(); ++i) {
-            Commands[i] = MacCmds[i];
+        for (const auto& Command : MacCmds) {
+            Commands.push_back(Command);
         }
     #elif __ANDROID__
         auto AndroidCmds = AndroidCommands();
-        for (size_t i = 0; i < AndroidCmds.size(); ++i) {
-            Commands[i] = AndroidCmds[i];
+        for (const auto& Command : AndroidCmds) {
+            Commands.push_back(Command);
         }
     #elif __APPLE__ && __IPHONE_OS_VERSION_MIN_REQUIRED
         auto IOSCmds = IOSCommands();
-        for (size_t i = 0; i < IOSCmds.size(); ++i) {
-            Commands[i] = IOSCmds[i];
+        for (const auto& Command : IOSCmds) {
+            Commands.push_back(Command);
         }
     #else
         return 0;
     #endif
 
-    for(char* Command : Commands) {
-        int Result = std::system(Command);
+    for(const auto& Command : Commands) {
+        int Result = std::system(Command.data());
     
         // Check if the command was executed successfully
         if (Result == 0) {
-            std::cout << "Command executed successfully" << std::endl;
+            std::cout << "Command executed successfully\n";
         } else {
-            std::cout << "Command did not execute successfully. The command was : " + std::to_string(*Command) + "." << std::endl;
+            std::cout << "Command did not execute successfully. The command was : " + Command + ".\n";
         }
     }
 

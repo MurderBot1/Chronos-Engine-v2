@@ -4,13 +4,13 @@
 #ifndef LeftArrowKey_CPP
 #define LeftArrowKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "LeftArrowKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void LeftArrowKey::KeyLeftArrowOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

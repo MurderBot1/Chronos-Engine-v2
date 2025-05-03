@@ -22,9 +22,10 @@
 
 
 // Program imported files
+#include "Constants.h"
 
 
-// Function definitions
+// Definitions
 namespace KeyboardKeyIsPressed {
     bool IsAPressed();
     bool IsBPressed();

@@ -4,17 +4,17 @@
 #ifndef IsKeyboardKeyPressed_CPP
 #define IsKeyboardKeyPressed_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "IsKeyboardKeyPressed.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 namespace KeyboardKeyIsPressed {
     bool IsAPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('A') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_A) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -31,7 +31,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsBPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('B') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_B) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -48,7 +48,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsCPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('C') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_C) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -65,7 +65,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsDPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('D') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_D) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -82,7 +82,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsEPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('E') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_E) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -99,7 +99,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsFPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('F') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_F) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -116,7 +116,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsGPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('G') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_G) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -133,7 +133,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsHPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('H') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_H) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -150,7 +150,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsIPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('I') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_I) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -167,7 +167,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsJPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('J') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_J) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -184,7 +184,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsKPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('K') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_K) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -201,7 +201,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsLPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('L') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_L) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -218,7 +218,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsMPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('M') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_M) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -235,7 +235,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsNPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('N') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_N) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -252,7 +252,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsOPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('O') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_O) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -269,7 +269,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsPPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('P') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_P) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -286,7 +286,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsQPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('Q') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_Q) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -303,7 +303,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsRPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('R') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_R) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -320,7 +320,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsSPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('S') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_S) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -337,7 +337,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsTPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('T') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_T) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -354,7 +354,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsUPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('U') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_U) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -371,7 +371,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsVPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('V') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_V) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -388,7 +388,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsWPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('W') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_W) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -405,7 +405,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsXPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('X') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_X) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -422,7 +422,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsYPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('Y') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_Y) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -439,7 +439,7 @@ namespace KeyboardKeyIsPressed {
 
     bool IsZPressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('Z') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_Z) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -456,7 +456,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is1Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('1') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_1) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -473,7 +473,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is2Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('2') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_2) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -490,7 +490,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is3Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('3') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_3) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -507,7 +507,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is4Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('4') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_4) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -524,7 +524,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is5Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('5') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_5) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -541,7 +541,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is6Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('6') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_6) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -558,7 +558,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is7Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('7') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_7) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -575,7 +575,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is8Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('8') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_8) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -592,7 +592,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is9Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('9') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_9) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux
@@ -609,7 +609,7 @@ namespace KeyboardKeyIsPressed {
 
     bool Is0Pressed() {
         #ifdef _WIN32 // Windows
-            return (GetAsyncKeyState('0') & 0x8000);
+            return (GetAsyncKeyState(KeyboardValues::KEY_0) & 0x8000);
         #elif __APPLE__ // MacOS
             return ;
         #elif __linux__ // Linux

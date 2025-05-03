@@ -4,13 +4,13 @@
 #ifndef F5Key_CPP
 #define F5Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F5Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F5Key::KeyF5OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

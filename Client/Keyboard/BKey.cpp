@@ -4,13 +4,13 @@
 #ifndef BKey_CPP
 #define BKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "BKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void BKey::KeyBOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

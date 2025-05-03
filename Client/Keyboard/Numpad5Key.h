@@ -10,7 +10,7 @@
 // Program imported files
 
 
-// Function definitions
+// Definitions
 
 class Numpad5Key{
     public:

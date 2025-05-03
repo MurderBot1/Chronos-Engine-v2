@@ -4,13 +4,13 @@
 #ifndef IKey_CPP
 #define IKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "IKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void IKey::KeyIOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

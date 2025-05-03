@@ -10,7 +10,7 @@
 // Program imported files
 
 
-// Function definitions
+// Definitions
 
 class F15Key{
     public:

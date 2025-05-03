@@ -4,13 +4,13 @@
 #ifndef TabKey_CPP
 #define TabKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "TabKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void TabKey::KeyTabOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -13,7 +13,7 @@
 #include "Keyboard.h"
 #include "LimitedFunctions.h"
 
-// Function definitions
+// Definitions
 void StartFunction();
 void LoopFunction();
 

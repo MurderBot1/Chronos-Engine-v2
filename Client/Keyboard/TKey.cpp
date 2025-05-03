@@ -4,13 +4,13 @@
 #ifndef TKey_CPP
 #define TKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "TKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void TKey::KeyTOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

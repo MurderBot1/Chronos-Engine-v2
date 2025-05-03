@@ -4,13 +4,13 @@
 #ifndef F6Key_CPP
 #define F6Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F6Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F6Key::KeyF6OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

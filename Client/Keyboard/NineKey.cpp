@@ -4,13 +4,13 @@
 #ifndef NineKey_CPP
 #define NineKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "NineKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void NineKey::KeyNineOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

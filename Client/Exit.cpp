@@ -4,13 +4,13 @@
 #ifndef Exit_CPP
 #define Exit_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "Exit.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 bool Exit::ExitTheMainLoop;
 
-// Start of program
+// Definitions
 void Exit::ExitTheProgram() {
     Exit::ExitTheMainLoop = true;
 }

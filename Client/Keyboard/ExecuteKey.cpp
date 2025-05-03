@@ -4,13 +4,13 @@
 #ifndef ExecuteKey_CPP
 #define ExecuteKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "ExecuteKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void ExecuteKey::KeyExecuteOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

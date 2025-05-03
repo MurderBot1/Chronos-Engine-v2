@@ -4,13 +4,13 @@
 #ifndef F9Key_CPP
 #define F9Key_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "F9Key.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void F9Key::KeyF9OsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

@@ -4,13 +4,13 @@
 #ifndef DKey_CPP
 #define DKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "DKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void DKey::KeyDOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

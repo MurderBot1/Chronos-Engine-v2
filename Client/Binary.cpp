@@ -4,13 +4,13 @@
 #ifndef Binary_CPP
 #define Binary_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "Binary.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 float FromBinary::BinaryToFloat(const std::string& Binary) {
     if(Binary.length() != 32) { // Ensure 32 bits for a valid float representation
         Log::Errors.push_back("Binary string must be 32 bits long.");
@@ -33,14 +33,14 @@ int FromBinary::BinaryToInt(const std::string& Binary) {
     return IntValue;
 }
 
-bool FromBinary::BinaryStringToBool(const std::string& Binary) {
-    if(Binary == "1") {
+bool FromBinary::BinaryToBool(const std::string& Binary) {
+    if(Binary[0] == BinaryValues::BIT_ONE) {
         return true;  // "1" represents true
-    } else if (Binary == "0") {
+    } else if (Binary[0] == BinaryValues::BIT_ZERO) {
         return false; // "0" represents false
     } else {
         Log::Errors.push_back("Invalid binary string for boolean. Use 0 or 1.");
-        return false;
+        return false; // Anything else represents false
     }
 }
 

@@ -4,13 +4,13 @@
 #ifndef PauseKey_CPP
 #define PauseKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "PauseKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void PauseKey::KeyPauseOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

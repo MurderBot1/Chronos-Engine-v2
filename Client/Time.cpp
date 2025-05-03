@@ -4,10 +4,10 @@
 #ifndef Time_CPP
 #define Time_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "Time.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 int64_t Time::CurrentTimeInMicroS;
 int64_t Time::LastFramesTimeInMicroS;
 int64_t Time::DifferenceOfTimeInMicroS;
@@ -15,7 +15,7 @@ float Time::DeltaTime;
 float Time::FPS;
 std::string Time::WhenProgramStart;
 
-// Start of program
+// Definitions
 int64_t Time::FindCurrentTime() {
     auto Now = std::chrono::high_resolution_clock::now();
     auto Microseconds = std::chrono::duration_cast<std::chrono::microseconds>(Now.time_since_epoch()).count();

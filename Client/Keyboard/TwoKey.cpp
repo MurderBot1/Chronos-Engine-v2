@@ -4,13 +4,13 @@
 #ifndef TwoKey_CPP
 #define TwoKey_CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include "TwoKey.h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 void TwoKey::KeyTwoOsKeySHIFTALTCTRL() {
     /*
         Windows 11 = 

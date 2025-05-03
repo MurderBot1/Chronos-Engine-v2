@@ -10,7 +10,7 @@
 // Program imported files
 #include "KeyboardKeys.h"
 
-// Function definitions
+// Definitions
 class KeyboardCommands {
     public:
         static void KeysOsKeySHIFTALTCTRL();

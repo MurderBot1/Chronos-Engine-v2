@@ -4,13 +4,13 @@
 #ifndef _CPP
 #define _CPP
 
-// CPP files .h file
+// Include the C++'s .h file
 #include ".h"
 
-// Redefine vars if needed
+// Variable redefinitions
 
 
-// Start of program
+// Definitions
 
 
 #endif
