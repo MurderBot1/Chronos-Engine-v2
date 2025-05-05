@@ -152,6 +152,6 @@ namespace KeyboardKeyIsPressed {
     bool IsSelectMediaPressed();
     bool IsStartApplication1Pressed();
     bool IsStartApplication2Pressed();
-};
+}
 
 #endif

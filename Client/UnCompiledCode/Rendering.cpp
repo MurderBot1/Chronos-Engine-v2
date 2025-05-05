@@ -77,15 +77,15 @@ std::vector<Triangle*> VideoRendering::ListPossableObjects(Vector::Vector3_f Sta
 
     for(Object *Obj : Object::ObjectList) {
         if(VideoRendering::CouldObjectBeHit(Obj, Start, Direction)) {
+            RoughReturn.reserve(Obj->Triangle.size() + RoughReturn.capacity());
             for(Triangle Tri : Obj->Triangle) {
-                RoughReturn.reserve(Obj->Triangle.size() + RoughReturn.capacity());
                 RoughReturn.emplace_back(&Tri);
             }
         }
     }
 
     // See which objects are hit
-    std::vector<Triangle*> Return(RoughReturn.capacity()); // Add the capacity of the last to assign a max
+    std::vector<Triangle*> Return; // Add the capacity of the last to assign a max
 
     // Detect if any triangles are hit and then add them to the list
     for(Triangle *Tri : RoughReturn) {
@@ -113,19 +113,73 @@ Vector::Vector3_f VideoRendering::FindNewReflectionDirection(Vector::Vector3_f S
 
 }
 
+VideoRendering::RenderingOutput VideoRendering::CombineRayColors(VideoRendering::RenderingOutput *ThisRay, VideoRendering::RenderingOutput *ReflectionRay, VideoRendering::RenderingOutput *TransperencyRay) {
+    /* This is not tested */
+    VideoRendering::RenderingOutput Return;
+
+    // Decode AA
+    uint8_t DecodedAA = Settings::DecodeAA(Settings::AntiAllasing);
+
+    // Round the hit location
+    int RoundedXLocation = round(ThisRay->HitLocation.X);
+    int RoundedYLocation = round(ThisRay->HitLocation.Y);
+
+    // Calculate the value of this rays color based on antiallasing value
+    int ReserveAmount = (DecodedAA + 1) * (DecodedAA + 1);
+    std::vector<Pixels*> PixelColor;
+    PixelColor.reserve(ReserveAmount);
+    std::vector<float> DistanceFrom2DHitLocation;
+    DistanceFrom2DHitLocation.reserve(ReserveAmount);
+
+    int XMaxIndex = RoundedXLocation + DecodedAA; // Find the max and min indexs to loop over
+    int XMinIndex = RoundedXLocation - DecodedAA;
+    int YMaxIndex = RoundedYLocation + DecodedAA;
+    int YMinIndex = RoundedYLocation - DecodedAA;
+
+    int ArrayCounter = 0;
+
+    for(int YIndex = YMinIndex; YIndex <= YMaxIndex; YIndex++) {
+        for(int XIndex = XMinIndex; XIndex <= XMaxIndex; XIndex++) {
+            // Find the distance to the hit location compared to this pixel
+            float IndexDiffX = ThisRay->TextureHitLocation.X - XIndex;
+            float IndexDiffY = ThisRay->TextureHitLocation.Y - YIndex;
+            float Distance = sqrt(IndexDiffX * IndexDiffX + IndexDiffY * IndexDiffY);
+            float DistanceWDropoff = Distance * Settings::AADropoff;
+            DistanceFrom2DHitLocation.emplace_back(DistanceWDropoff);
+
+            // Find the pixel it goes with
+        }
+    }
+
+    // Calculate the percentage of each color
+    uint16_t FractionalSums = ThisRay->RefColor + ThisRay->TransColor + ThisRay->ThisColor;
+    float RefPercentage = ThisRay->RefColor / FractionalSums;
+    float TransPercentage = ThisRay->TransColor / FractionalSums;
+    float ThisPercentage = ThisRay->ThisColor / FractionalSums;
+
+    // Calculate the displayed color
+
+    
+    return Return;
+}
+
 VideoRendering::RenderingOutput VideoRendering::RenderPixel(int Bounces, Vector::Vector3_f Start, Vector::Vector3_f Direction) {
     std::vector<Triangle*> TriList = VideoRendering::ListPossableObjects(Start, Direction);
     Triangle* Tri = VideoRendering::FindHitTriangle(TriList);
     VideoRendering::RenderingOutput HitTrianglesData = VideoRendering::RetriveTriangleColorData(Tri); 
     Vector::Vector3_f NewDirection = VideoRendering::FindNewReflectionDirection(Start, Direction, HitTrianglesData.TrianglePtr);
-    if(Bounces > 0) {
-        // Find the data of the reflection triangle
-        VideoRendering::RenderingOutput ReflectionData = VideoRendering::RenderPixel(Bounces - 1, HitTrianglesData.HitLocation, NewDirection);
-        // Find the data of the triangle behind it
-        VideoRendering::RenderingOutput TransparentData = VideoRendering::RenderPixel(Bounces - 1, HitTrianglesData.HitLocation, Direction);
-    } else {
-        return HitTrianglesData;
-    }
+
+    if(Bounces <= 0) { return HitTrianglesData; }
+    
+    // Find the data of the reflection triangle
+    VideoRendering::RenderingOutput ReflectionData = VideoRendering::RenderPixel(Bounces--, HitTrianglesData.HitLocation, NewDirection);
+
+    // Find the data of the triangle behind it
+    VideoRendering::RenderingOutput TransparentData = VideoRendering::RenderPixel(Bounces--, HitTrianglesData.HitLocation, Direction);
+
+    VideoRendering::RenderingOutput Return;
+    Return = VideoRendering::CombineRayColors(&HitTrianglesData, &ReflectionData, &TransparentData);    
+    return Return;
 }
 
 std::vector<Vector::Vector3_f> VideoRendering::RayDirection() {

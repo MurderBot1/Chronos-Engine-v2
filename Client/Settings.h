@@ -15,6 +15,7 @@
 
 // Program imported files
 #include "Binary.h"
+#include "Constants.h"
 
 // Definitions
 class Settings {
@@ -31,7 +32,7 @@ class Settings {
             // Moniter
             static int16_t ResolutionX; // Horizontal resolution of the display
             static int16_t ResolutionY; // Vertical resolution of the display
-            static int16_t MaxFPS; // Maximum FPS the engine will output
+            static int MaxFPS; // Maximum FPS the engine will output
             static bool SetFPSAtMonitersMax; // Limit the FPS to the moniters maximum
             // Graphics levels
             static void SetAsGraphicsLevel();
@@ -40,29 +41,9 @@ class Settings {
             static SettingsValues::GraphicLevels Shaders; // What level of shaders are used
             static SettingsValues::GraphicLevels Particles; // What level of particles are used
             static SettingsValues::GraphicLevels Shadows; // What level of shadows are used
-            static SettingsValues::GraphicLevels SSAntiAllasing; // Settings and there levels are shown below
-                /*
-                    UltraLow = 1x
-                        With 4k texture files they would be 4k
-                    Low = 1x
-                        With 4k texture files they would be 4k
-                    MediumLow = 2x
-                        With 4k texture files they would be 8k
-                    Medium = 2x
-                        With 4k texture files they would be 8k
-                    MediumHigh = 4x
-                        With 4k texture files they would be 16k
-                    High = 4x
-                        With 4k texture files they would be 16k
-                    VeryHigh = 8x
-                        With 4k texture files they would be 32k
-                    Ultra = 8x
-                        With 4k texture files they would be 32k
-                    Realistic = 16x
-                        With 4k texture files they would be 64k
-                    Unreal = 16x
-                        With 4k texture files they would be 64k
-                */
+            static SettingsValues::GraphicLevels AntiAllasing; // Settings and there levels are shown below
+            static float AADropoff;
+            static uint8_t DecodeAA(SettingsValues::GraphicLevels AntiAllasing);
 
         // Audio
         static float Volume;

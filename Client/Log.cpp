@@ -24,14 +24,24 @@ void Log::SetupLog(std::string LogSettingsFile) {
     std::string Line;
     size_t Index = INDEX_START;
 
-    if(!SettingsFile.is_open()) {return;};
+    if(!SettingsFile.is_open()) {
+        // Set the defaults
+        Log::EveryXFrames = 100;
+        Log::OutputFilePath = CurrentPath.string() + "\\Logs\\";
+
+        FPS.reserve(100);
+
+        // Exit the function
+        return;
+    };
 
     while (std::getline(SettingsFile, Line) && Index < NumLines) {
         Lines[Index++] = Line;
     }
 
     Log::EveryXFrames = std::stoi(Lines[0]);
-    Log::OutputFilePath = Lines[1];
+    Log::OutputFilePath = CurrentPath.string() + Lines[1];
+    FPS.reserve(EveryXFrames);
 }
 
 template <typename T>

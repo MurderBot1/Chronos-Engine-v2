@@ -7,12 +7,14 @@
 // C++ imported files
 #include <vector>
 #include <array>
+#include <cmath>
 
 // Program imported files
 #include "Object.h"
 #include "Triangles.h"
 #include "VariableTypes.h"
 #include "Settings.h"
+#include "Texture.h"
 
 // Definitions
 class VideoRendering {
@@ -20,6 +22,10 @@ class VideoRendering {
         struct RenderingOutput {
             Triangle* TrianglePtr;
             Vector::Vector3_f HitLocation;
+            Vector::Vector2_f TextureHitLocation;
+            Texture* ReturnTexture;
+            uint8_t R, G, B;
+            uint8_t RefColor, TransColor, ThisColor; // Ref = Reflection, Trans = Transperency, This = This 
         };
         static bool RayIntersectsTriangle(Vector::Vector3_f TL1, Vector::Vector3_f TL2, Vector::Vector3_f TL3, Vector::Vector3_f Start, Vector::Vector3_f Direction);
         static float ApplyRotaitonToLocation(float Value, Object* Obj);
@@ -30,6 +36,7 @@ class VideoRendering {
         static Vector::Vector3_f FindNewReflectionDirection(Vector::Vector3_f Start, Vector::Vector3_f Direction, Triangle* TrianglePtr);
         static VideoRendering::RenderingOutput RenderPixel(int Bounces, Vector::Vector3_f Start, Vector::Vector3_f Direction);
         static std::vector<Vector::Vector3_f> RayDirection();
+        static VideoRendering::RenderingOutput CombineRayColors(VideoRendering::RenderingOutput* ThisRay, VideoRendering::RenderingOutput* ReflectionRay, VideoRendering::RenderingOutput* TransperencyRay);
         static std::vector<std::vector<VideoRendering::RenderingOutput>> RenderTheScene();
 };
 

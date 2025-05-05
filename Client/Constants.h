@@ -6,21 +6,27 @@
 
 // C++ imported files
 #include <string>
+#include <stdint.h>
+#include <filesystem>
 
 // Definitions
+const std::filesystem::path CurrentPath = std::filesystem::current_path();
+constexpr std::string_view GameName_SV = "ExampleGame";
+const std::string GameName = std::string{GameName_SV};
+
 constexpr uint8_t INDEX_START = 0; 
 
 namespace BinaryValues {
     constexpr char BIT_ONE  = '1';
     constexpr char BIT_ZERO = '0';
-};
+}
 
 namespace LogValues {
     constexpr uint8_t LINES_IN_LOG_SETUP_FILE = 2;
-};
+}
 
 namespace SettingsValues {
-    constexpr enum GraphicLevels {
+    enum GraphicLevels {
         UltraLow,
         Low,
         MediumLow, 
@@ -33,12 +39,40 @@ namespace SettingsValues {
         Unreal
     };
 
-    constexpr uint8_t LINES_IN_GRAPHICS_SETUP_FILE = 10;
+    constexpr uint8_t LINES_IN_GRAPHICS_SETUP_FILE = 11;
     constexpr uint8_t LINES_IN_AUDIO_SETUP_FILE = 1;
     constexpr uint8_t LINES_IN_RENDERING_SETUP_FILE = 3;
     constexpr uint8_t LINES_IN_OPTIONS_SETUP_FILE = 2;
     constexpr uint8_t LINES_IN_LOAD_SETTINGS_SETUP_FILE = 4;
-};
+
+    const std::string_view LOAD_GRAPHICS_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Graphics/Graphics.txt";
+    const std::string_view LOAD_AUDIO_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Audio/Audio.txt";
+    const std::string_view LOAD_RENDERING_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Rendering/Rendering.txt";
+    const std::string_view LOAD_OPTIONS_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Options/Options.txt";
+
+    constexpr float DEFAULT_FOV = 100.0f;
+    constexpr float DEFAULT_SENSITIVITY = 1.0f;
+
+    constexpr bool USE_GPU_RENDERING = false;
+    constexpr bool USE_BOUNCES = true;
+    constexpr int8_t DEFAULT_NUMBER_OF_BOUNCES = 2;
+    constexpr int8_t NUMBER_OF_FRAMES_BUFFERED = 2;
+
+    constexpr float DEFAULT_VOLUME = 100.0f;
+
+    constexpr SettingsValues::GraphicLevels DEFAULT_GRAPHIC_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr SettingsValues::GraphicLevels DEFAULT_LIGHTING_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr SettingsValues::GraphicLevels DEFAULT_SHADERS_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr SettingsValues::GraphicLevels DEFAULT_PARTICLEs_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr SettingsValues::GraphicLevels DEFAULT_SHADOW_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr SettingsValues::GraphicLevels DEFAULT_AntiAllasing_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr float DEFAULT_AADROPOFF = 1.5f;
+
+    constexpr int16_t DEFAULT_RESOLUTION_X = 1920;
+    constexpr int16_t DEFAULT_RESOLUTION_Y = 1080;
+    constexpr int DEFAULT_MAX_FPS = 120;
+    constexpr bool USE_MONITERS_MAX_FPS = false;
+}
 
 namespace KeyboardValues {
     constexpr char KEY_A = 'A';
@@ -77,6 +111,6 @@ namespace KeyboardValues {
     constexpr char KEY_8 = '8';
     constexpr char KEY_9 = '9';
     constexpr char KEY_0 = '0';
-};
+}
 
 #endif

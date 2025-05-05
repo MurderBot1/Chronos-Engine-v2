@@ -11,10 +11,22 @@
 
 
 // Definitions
+void TODO() {
+    std::cout << "TODO : Finish function \"VideoRendering::RenderingOutput VideoRendering::CombineRayColors(VideoRendering::RenderingOutput *ThisRay, VideoRendering::RenderingOutput *ReflectionRay, VideoRendering::RenderingOutput *TransperencyRay)\" in Rendering.cpp\n";
+    std::cout << "TODO : Create function to run the keyboard functions on a seperate thread\n";
+    std::cout << "TODO : Write function \"bool VideoRendering::RayIntersectsTriangle(Vector::Vector3_f TL1, Vector::Vector3_f TL2, Vector::Vector3_f TL3, Vector::Vector3_f Start, Vector::Vector3_f Direction)\" in Rendering.cpp\n";
+    std::cout << "TODO : Write function \"float VideoRendering::ApplyRotaitonToLocation(float Value, Object *Obj)\" in Rendering.cpp\n";
+    std::cout << "TODO : Write function \"Triangle* VideoRendering::FindHitTriangle(std::vector<Triangle*>& TriList)\" in Rendering.cpp\n";
+    std::cout << "TODO : Write function \"VideoRendering::RenderingOutput VideoRendering::RetriveTriangleColorData(Triangle* Tri)\" in Rendering.cpp\n";
+    std::cout << "TODO : Write function \"Vector::Vector3_f VideoRendering::FindNewReflectionDirection(Vector::Vector3_f Start, Vector::Vector3_f Direction, Triangle *TrianglePtr)\" in Rendering.cpp\n";
+    std::cout << "TODO : Write function \"std::vector<Vector::Vector3_f> VideoRendering::RayDirection()\" in Rendering.cpp\n";
+    std::cout << "TODO : Write function \"std::vector<std::vector<VideoRendering::RenderingOutput>> VideoRendering::RenderTheScene()\" in Rendering.cpp\n";
+}
+
 void StartFunction() {
     Time::FillValuesForLoading();
-    Log::SetupLog("C:\\Users\\trent\\Documents\\GitHub\\Chronos-Engine-v2\\Client\\Logs\\Settings\\LogSettings.txt");
-    Settings::LoadSettings("C:\\Users\\trent\\Documents\\GitHub\\Chronos-Engine-v2\\ExampleGame\\Settings\\PathOfSettingsFiles.txt");
+    Log::SetupLog(CurrentPath.string() + "\\Settings\\Logs\\LogSettings.txt");
+    Settings::LoadSettings(CurrentPath.string() + "\\Settings\\PathOfSettingsFiles.txt");
 }
 
 void LoopFunction() {

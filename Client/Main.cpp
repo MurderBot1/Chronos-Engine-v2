@@ -8,13 +8,14 @@
 #include "StructuralFunctions.h"
 
 // Other included Libraries
-
+#include <cmath>
 
 // Variable redefinitions
 
 
 // Definitions
 int main() {
+    TODO();
     StartFunction();
     while(Exit::ExitTheMainLoop == false) {
         LoopFunction();

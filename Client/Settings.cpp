@@ -13,10 +13,10 @@ SettingsValues::GraphicLevels Settings::Lighting; // How accurate is the lightin
 SettingsValues::GraphicLevels Settings::Shaders; // What level of shaders are used
 SettingsValues::GraphicLevels Settings::Particles; // What level of particles are used
 SettingsValues::GraphicLevels Settings::Shadows; // What level of shadows are used
-SettingsValues::GraphicLevels Settings::SSAntiAllasing; // Settings and there levels are shown below
+SettingsValues::GraphicLevels Settings::AntiAllasing; // Settings and there levels are shown below
 int16_t Settings::ResolutionX; // Horizontal resolution of the display
 int16_t Settings::ResolutionY; // Vertical resolution of the display
-int16_t Settings::MaxFPS; // Maximum FPS the engine will output
+int Settings::MaxFPS; // Maximum FPS the engine will output
 bool Settings::SetFPSAtMonitersMax; // Limit the FPS to the moniters maximum
 float Settings::Sensitivity; // The current multipier to the mouse DPI
 float Settings::FOV; // The current field of vision for the camera
@@ -24,6 +24,7 @@ int8_t Settings::Bounces; // The current number of bounces each ray makes while 
 bool Settings::UseBounces; // Does the ray bounce while rendering the scene
 bool Settings::GPURendering; // Does the engine use the GPU
 float Settings::Volume; // The current volume multipier for the engine
+float Settings::AADropoff; // The amount that the color drops of in the antiA. function
 
 void Settings::LoadGraphicsSettings(std::string FilePath) {
     // Graphics
@@ -37,18 +38,19 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
     if(!SettingsFile.is_open()) {
         // Set default settings
         // Moniter settings
-        Settings::ResolutionX = 1920;
-        Settings::ResolutionY = 1080; 
-        Settings::MaxFPS = 60;       
-        Settings::SetFPSAtMonitersMax = false;
+        Settings::ResolutionX = SettingsValues::DEFAULT_RESOLUTION_X;
+        Settings::ResolutionY = SettingsValues::DEFAULT_RESOLUTION_Y;
+       Settings::MaxFPS = SettingsValues::DEFAULT_MAX_FPS;
+ Settings::SetFPSAtMonitersMax = SettingsValues::USE_MONITERS_MAX_FPS;
 
         // Graphics levels
-        Settings::GraphicLevel = SettingsValues::GraphicLevels::UltraLow;
-        Settings::Lighting = SettingsValues::GraphicLevels::UltraLow;
-        Settings::Shaders = SettingsValues::GraphicLevels::UltraLow;
-        Settings::Particles = SettingsValues::GraphicLevels::UltraLow;
-        Settings::Shadows = SettingsValues::GraphicLevels::UltraLow;
-        Settings::SSAntiAllasing = SettingsValues::GraphicLevels::UltraLow;
+        Settings::GraphicLevel = SettingsValues::DEFAULT_GRAPHIC_LEVEL;
+        Settings::Lighting = SettingsValues::DEFAULT_LIGHTING_LEVEL;
+        Settings::Shaders = SettingsValues::DEFAULT_SHADERS_LEVEL;
+        Settings::Particles = SettingsValues::DEFAULT_PARTICLEs_LEVEL;
+        Settings::Shadows = SettingsValues::DEFAULT_SHADOW_LEVEL;
+        Settings::AntiAllasing = SettingsValues::DEFAULT_AntiAllasing_LEVEL;
+        Settings::AADropoff = SettingsValues::DEFAULT_AADROPOFF;
 
         // Exit out of the function
         return;
@@ -58,13 +60,13 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
     while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_GRAPHICS_SETUP_FILE) {
         Lines[Index++] = Line;
     }
-    
-    // Load the file in to the settings it corrisponds with
+
+// Load the file in to the settings it corrisponds with
     // Moniter settings
     Settings::ResolutionX = FromBinary::BinaryToInt(Lines[0]);
-    Settings::ResolutionY = FromBinary::BinaryToInt(Lines[1]); 
-    Settings::MaxFPS = FromBinary::BinaryToInt(Lines[2]);       
-    Settings::SetFPSAtMonitersMax = FromBinary::BinaryToBool(Lines[3]);
+    Settings::ResolutionY = FromBinary::BinaryToInt(Lines[1]);
+   Settings::MaxFPS = FromBinary::BinaryToInt(Lines[2]);   
+Settings::SetFPSAtMonitersMax = FromBinary::BinaryToBool(Lines[3]);
 
     // Graphics levels
     Settings::GraphicLevel = Settings::DecodeGraphicLevels(Lines[4]);
@@ -72,7 +74,8 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
     Settings::Shaders = Settings::DecodeGraphicLevels(Lines[6]);
     Settings::Particles = Settings::DecodeGraphicLevels(Lines[7]);
     Settings::Shadows = Settings::DecodeGraphicLevels(Lines[8]);
-    Settings::SSAntiAllasing = Settings::DecodeGraphicLevels(Lines[9]);
+    Settings::AntiAllasing = Settings::DecodeGraphicLevels(Lines[9]);
+    Settings::AADropoff = FromBinary::BinaryToFloat(Lines[10]);
 
     SettingsFile.close(); // Close the file
 }
@@ -88,7 +91,7 @@ void Settings::LoadAudioSettings(std::string FilePath) {
     // Check if the file can be opened
     if(!SettingsFile.is_open()) {
         // Set default settings
-        Settings::Volume = 100.0f;
+        Settings::Volume = SettingsValues::DEFAULT_VOLUME;
 
         // Exit out of the function
         return;
@@ -98,8 +101,8 @@ void Settings::LoadAudioSettings(std::string FilePath) {
     while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_AUDIO_SETUP_FILE) {
         Lines[Index++] = Line;
     }
-    
-    // Load the variables from the file
+
+// Load the variables from the file
     Settings::Volume = FromBinary::BinaryToFloat(Lines[0]);
 
     SettingsFile.close(); // Close the file
@@ -116,11 +119,11 @@ void Settings::LoadRenderingSettings(std::string FilePath) {
     // Check if the file can be opened
     if(!SettingsFile.is_open()) {
         // Set default settings
-        Settings::GPURendering = false; 
-        Settings::UseBounces = true;
-        Settings::Bounces = 2;  
-        
-        // Exit out of the function
+        Settings::GPURendering = SettingsValues::USE_GPU_RENDERING;
+       Settings::UseBounces = SettingsValues::USE_BOUNCES;
+        Settings::Bounces = SettingsValues::DEFAULT_NUMBER_OF_BOUNCES;
+
+  // Exit out of the function
         return;
     };
 
@@ -130,8 +133,8 @@ void Settings::LoadRenderingSettings(std::string FilePath) {
     }
 
     // Load the variables from the file
-    Settings::GPURendering = FromBinary::BinaryToBool(Lines[0]); 
-    Settings::UseBounces = FromBinary::BinaryToBool(Lines[1]);
+    Settings::GPURendering = FromBinary::BinaryToBool(Lines[0]);
+   Settings::UseBounces = FromBinary::BinaryToBool(Lines[1]);
     Settings::Bounces = FromBinary::BinaryToInt(Lines[2]);               
 
     SettingsFile.close(); // Close the file
@@ -148,10 +151,10 @@ void Settings::LoadOptionsSettings(std::string FilePath) {
     // Check if the file can be opened
     if(!SettingsFile.is_open()) {
         // Set default settings
-        Settings::FOV = 100.0f;
-        Settings::Sensitivity = 1.0f;
-        
-        // Exit out of the function
+        Settings::FOV = SettingsValues::DEFAULT_FOV;
+        Settings::Sensitivity = SettingsValues::DEFAULT_SENSITIVITY;
+
+// Exit out of the function
         return;
     };
 
@@ -179,12 +182,11 @@ void Settings::LoadSettings(std::string LoadSettingsPath) {
     // Check if the file can be opened
     if(!SettingsFile.is_open()) {
         // Set default settings
-        const std::filesystem::path CurrentPath = std::filesystem::current_path();
-        Settings::LoadGraphicsSettings(CurrentPath.string() + "/Settings/Graphics/Graphics.txt");
-        Settings::LoadAudioSettings(CurrentPath.string() + "/Settings/Audio/Audio.txt");
-        Settings::LoadRenderingSettings(CurrentPath.string() + "/Settings/Rendering/Rendering.txt");
-        Settings::LoadOptionsSettings(CurrentPath.string() + "/Settings/Options/Options.txt");
-        
+        Settings::LoadGraphicsSettings(std::string{SettingsValues::LOAD_GRAPHICS_SETTINGS_DEFAULT_PATH});
+        Settings::LoadAudioSettings(std::string{SettingsValues::LOAD_AUDIO_SETTINGS_DEFAULT_PATH});
+        Settings::LoadRenderingSettings(std::string{SettingsValues::LOAD_RENDERING_SETTINGS_DEFAULT_PATH});
+        Settings::LoadOptionsSettings(std::string{SettingsValues::LOAD_OPTIONS_SETTINGS_DEFAULT_PATH});
+
         // Exit out of the function
         return;
     };
@@ -195,10 +197,10 @@ void Settings::LoadSettings(std::string LoadSettingsPath) {
     }
 
     // Load the variables from the file
-    Settings::LoadGraphicsSettings(Lines[0]);
-    Settings::LoadAudioSettings(Lines[1]);
-    Settings::LoadRenderingSettings(Lines[2]);
-    Settings::LoadOptionsSettings(Lines[3]);
+    Settings::LoadGraphicsSettings(CurrentPath.string() + Lines[0]);
+    Settings::LoadAudioSettings(CurrentPath.string() + Lines[1]);
+    Settings::LoadRenderingSettings(CurrentPath.string() + Lines[2]);
+    Settings::LoadOptionsSettings(CurrentPath.string() + Lines[3]);
     
 
     SettingsFile.close(); // Close the file
@@ -247,16 +249,41 @@ std::string Settings::EncodeGraphicLevels(SettingsValues::GraphicLevels GraphicL
         case SettingsValues::GraphicLevels::MediumLow:
             return "MediumLow";
         case SettingsValues::GraphicLevels::Low:
-            return "Low";    
-            break;
-        default: // Returns ultra low if nothing is found or if it is Ultra
-            return "UltraLow"; 
-            break;
+            return "Low";
+        default: // Returns ultra low if nothing is found or if it is Ultralow
+            return "UltraLow";
+           break;
     }
 }
 
-void Settings::LoadInGPUAndCPU(){
-    
+uint8_t Settings::DecodeAA(SettingsValues::GraphicLevels AntiAllasing) {
+    switch (GraphicLevel) {
+        case SettingsValues::GraphicLevels::Unreal:
+            return 16;
+        case SettingsValues::GraphicLevels::Realistic:
+            return 16;
+        case SettingsValues::GraphicLevels::Ultra:
+            return 8;
+        case SettingsValues::GraphicLevels::VeryHigh:
+            return 8;
+        case SettingsValues::GraphicLevels::High:
+            return 4;
+        case SettingsValues::GraphicLevels::MediumHigh:
+            return 4;
+        case SettingsValues::GraphicLevels::Medium:
+            return 2;
+        case SettingsValues::GraphicLevels::MediumLow:
+            return 2;
+        case SettingsValues::GraphicLevels::Low:
+            return 1;
+        default: // Returns ultra low if nothing is found or if it is Ultralow
+            return 1;
+           break;
+    }
+}
+
+void Settings::LoadInGPUAndCPU()
+{
 }
 
 // Definitions
@@ -266,7 +293,7 @@ void Settings::SetAsGraphicsLevel() {
     Settings::Shaders = CurrentGraphicLevel;
     Settings::Particles = CurrentGraphicLevel;
     Settings::Shadows = CurrentGraphicLevel;
-    Settings::SSAntiAllasing = CurrentGraphicLevel;
+    Settings::AntiAllasing = CurrentGraphicLevel;
 }
 
 #endif
