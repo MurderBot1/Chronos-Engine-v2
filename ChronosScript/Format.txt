@@ -1,0 +1,96 @@
+var<Type> name = definition for a variable
+
+Types
+    bool = Variable type (1 bit)
+        EG : var<bool> bool_example
+        Can store :
+            1 or true
+            0 or false
+    int = Variable type (32 bits)
+        EG : var<int> int_example
+        Can store : 
+            -2147483647 to 2147483647 (no decimals)
+    float = Variable type (32 bits)
+        EG : var<float> float_example
+        Can store : 
+            - and + values (1 bit)
+            multiply by powers of 10, -127 to 127 (16 bits)
+            mantissa of 0 to 8388607 (23 bits)
+    double = Variable type (64 bits)
+        EG : var<double> double_example
+        Can store : 
+            - and + values (1 bit)
+            multiply by powers of 10, -32,767 to 32,767 (16 bits)
+            mantissa of 0 to 140,737,488,355,327 (47 bits)
+    char = Variable type (8 bits)
+        EG : var<char> char_example
+        Can store : 
+            Ascii values 
+    char_16 = Variable type (16 bits)
+        EG : var<char> char_example
+        Can store : 
+            16 bit key codes
+    string = Variable type (8*Length bits)
+        EG : var<string> string_example
+        Can store : 
+            List of chars
+
+Arrays
+    Examples 
+        var<Type>[Number of objects] example
+        Number of objects is the number of objects that the array can store
+        If number of objects is blank var<Type>[] it will be a blank array
+
+Defining variables with values initiated
+    Examples
+        var<char> = 'A'
+            This can have 1 predefined value initiated
+        var<char>[2] = {'A', 'B'}
+            This can have 2 predefined values initiated
+        var<char>[] = {'A', 'B', 'C'} 
+            This can have any number of predefined values initiated
+
+Operators
+    '=' = = is an operator that sets a variable equal to a value
+    '+' = + is an operator that adds a value from this variable
+    '-' = - is an operator that subtracts a value from this variable
+    '*' = * is an operator that multiplies this variables value with a value
+    '/' = / is an operator that devides this variables value with a value
+    '%' = % is an operator that returns the remainder of a division operation
+    '>' = > is an operator that sees which value is larger than returns that object or a bool depending on context
+    '<' = < is an operator that sees which value is smaller than returns that object or a bool depending on context
+    '!' = ! returns the opposite of the bool it is next to
+    '<=' = <= is an operator that sees which value is smaller or equal to it than returns that object or a bool depending on context
+    '>=' = >= is an operator that sees which value is larger or equal to it than returns that object or a bool depending on context
+    '==' = == is an operator that sees if two values are equal and then returns a bool
+    '!=' = != is an operator that sees if two values are not equal and then returns a bool
+
+If statements
+
+
+Else statements
+
+
+If else statements
+
+
+While loops
+
+
+For loops
+
+
+Foreach loops
+
+
+Functions
+    func<type> ExampleFunction (<Type> Name_Of_Inputted_Variable_1, <Type> Name_Of_Inputted_Variable_2, ...) {
+        Things you want to do go here
+    }
+
+Classes
+    class ClassName {
+        public:
+        
+        private:
+    }
