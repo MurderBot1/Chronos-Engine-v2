@@ -118,38 +118,7 @@ VideoRendering::RenderingOutput VideoRendering::CombineRayColors(VideoRendering:
     VideoRendering::RenderingOutput Return;
 
     // Decode AA
-    uint8_t DecodedAA = Settings::DecodeAA(Settings::AntiAllasing);
-
-    // Round the hit location
-    int RoundedXLocation = round(ThisRay->HitLocation.X);
-    int RoundedYLocation = round(ThisRay->HitLocation.Y);
-
-    // Calculate the value of this rays color based on antiallasing value
-    int ReserveAmount = (DecodedAA + 1) * (DecodedAA + 1);
-    std::vector<Pixels*> PixelColor;
-    PixelColor.reserve(ReserveAmount);
-    std::vector<float> DistanceFrom2DHitLocation;
-    DistanceFrom2DHitLocation.reserve(ReserveAmount);
-
-    int XMaxIndex = RoundedXLocation + DecodedAA; // Find the max and min indexs to loop over
-    int XMinIndex = RoundedXLocation - DecodedAA;
-    int YMaxIndex = RoundedYLocation + DecodedAA;
-    int YMinIndex = RoundedYLocation - DecodedAA;
-
-    int ArrayCounter = 0;
-
-    for(int YIndex = YMinIndex; YIndex <= YMaxIndex; YIndex++) {
-        for(int XIndex = XMinIndex; XIndex <= XMaxIndex; XIndex++) {
-            // Find the distance to the hit location compared to this pixel
-            float IndexDiffX = ThisRay->TextureHitLocation.X - XIndex;
-            float IndexDiffY = ThisRay->TextureHitLocation.Y - YIndex;
-            float Distance = sqrt(IndexDiffX * IndexDiffX + IndexDiffY * IndexDiffY);
-            float DistanceWDropoff = Distance * Settings::AADropoff;
-            DistanceFrom2DHitLocation.emplace_back(DistanceWDropoff);
-
-            // Find the pixel it goes with
-        }
-    }
+    uint8_t DecodedAA = Settings::DecodeAA(Settings::AntiAllasing); 
 
     // Calculate the percentage of each color
     uint16_t FractionalSums = ThisRay->RefColor + ThisRay->TransColor + ThisRay->ThisColor;
