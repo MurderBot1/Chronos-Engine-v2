@@ -7,23 +7,40 @@
 // C++ imported files
 #include <string>
 #include <map>
+#include <shared_mutex>
+#include <thread>
 
 // Program imported files
-#include "RunKeyboardKeyCommands.h"
 #include "Settings.h"
 #include "Log.h"
 
 // Definitions
-enum KeyboardKeys {
-    A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, Backspace, Tab, Clear, Enter, LeftShift, LeftControl, LeftAlt, RightShift, RightControl, RightAlt, Pause, CapsLock, Esc, Space, PageUp, PageDown, End, Home, LeftArrow, RightArrow, UpArrow, DownArrow, Select, Print, Execute, PrintScreen, Insert, Delete, Help, LeftWindows, RightWindows, Apps, Numpad1, Numpad2, Numpad3, Numpad4, Numpad5, Numpad6, Numpad7, Numpad8, Numpad9, Numpad0, Subtract, Period, ForwardSlash, NumLock, ScrollLock, BrowserBack, BrowserForward, BrowserRefresh, BrowserStop, BrowserSearch, BrowserFavorites, BrowserStart, VolumeMute, VolumeDown, VolumeUp, NextTrack, PreviousTrack, StopTrack, PlayPauseTrack, StartMail, SelectMedia, StartApplication1, StartApplication2
-};
-
 class Keyboard {
     public:
-        static bool IsDisabled;
-        static bool IsKeyPressed(KeyboardKeys Key);
-        static void CallAllKeyboardFunctionsIfKeyIsPressed();
-        static std::map<std::string, bool> KeysPressed();
+        // Is running
+        static std::shared_mutex KeyboardRunningMX;
+        static bool KeyboardRunning;
+        
+        // Changing is running
+        void StopRunning();
+
+        // Mutex and thread
+        static std::thread* KeyboardThread;
+        static std::shared_mutex KeyCodesMX;
+        static std::map<uint16_t, bool> KeyCodes;
+
+        // Reading detected results
+        std::map<uint16_t, bool> ReadOutAllCodes();
+        bool ReadOutCode(uint16_t Code);
+        
+        // Detection
+        static bool DetectKeyPressed(uint16_t KeyCode);
+        static std::map<uint16_t, bool> DetectIfKeysArePressed();
+        static void LoopedDetectIfKeysArePressed();
+
+        // Start and cleanup
+        static void StartKeyboardThread();
+        static void CleanUpKeyboard();
 };
 
 #endif

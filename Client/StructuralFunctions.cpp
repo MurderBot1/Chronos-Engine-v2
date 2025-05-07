@@ -32,7 +32,6 @@ void StartFunction() {
 void LoopFunction() {
     Time::ComupteDeltaTime();
     LimitedFunction::ResetAllLimitedFunctions();
-    Keyboard::CallAllKeyboardFunctionsIfKeyIsPressed();
     Log::UpdateCounters();
     Log::OutputDataToFile();
     Time::Sleep();
