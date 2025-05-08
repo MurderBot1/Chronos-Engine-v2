@@ -5,7 +5,7 @@
 #define IntToBinary_CPP
 
 // Include the C++'s .h file
-#include "./Client/Exit.h"
+#include "../../Client/Exit.h"
 
 // Include c++ files
 #include <iostream>
@@ -13,14 +13,13 @@
 
 // Definitions
 int main() {
-    Exit exit = Exit();
+    Exit::StartUpExit();
     Exit::ExitTheProgram();
-
     if(Exit::ExitTheMainLoop == true) {
-        std::cout << "Test : FloatToBinaryString(); in Client/Exit.h - Passed\n";
+        std::cout << "Test : ExitTheProgram(); in Client/Exit.h - Passed\n";
     } else {
-        std::cout << "Test : FloatToBinaryString(); in Client/Exit.h - Failed !!!\n";
-        std::cout << "    Test : FloatToBinaryString(); in Client/Exit.h - Failed !!!\n";
+        std::cout << "Test : ExitTheProgram(); in Client/Exit.h - Failed !!!\n";
+        std::cout << "    Details : Expected output was true\n";
     }
 
     return 1;

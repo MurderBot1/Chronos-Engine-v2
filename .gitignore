@@ -4,6 +4,9 @@
 # Temp
 Temp/
 
+# Test .exe files
+Build/TestsEXE/
+
 # Ignore object files and binaries
 *.o
 *.obj

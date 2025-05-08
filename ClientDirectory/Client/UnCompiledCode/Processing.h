@@ -35,11 +35,6 @@ class Thread {
         GPU* GrandperentGPU;
 
         // Change the threads information
-        void SetThreadID(std::string);
-        void SetIsTaskRunning(bool);
-        void SetPerentCore(Core*);
-        void SetGrandperentCPU(CPU*);
-        void SetGrandperentGPU(GPU*);
 };
 
 class Core {

@@ -5,7 +5,7 @@
 #define FloatToBinary_CPP
 
 // Include the C++'s .h file
-#include "./Client/Binary.h"
+#include "../../Client/Binary.h"
 
 // Include c++ files
 #include <iostream>

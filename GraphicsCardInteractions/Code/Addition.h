@@ -11,7 +11,7 @@ namespace GPU_Addition {
         std::string DeviceID;
 
         public:
-            Intiger_Addition(std::string DeviceID, std::vector<int>& Input, std::vector<int>* Output);
+            Intiger_Addition(const std::string& DeviceID, std::vector<int>& Input, std::vector<int>* Output);
             ~Intiger_Addition();
     };
     
@@ -19,7 +19,7 @@ namespace GPU_Addition {
         std::string DeviceID;
 
         public:
-            Float_Addition(std::string DeviceID, std::vector<float>& Input, std::vector<float>* Output);
+            Float_Addition(const std::string& DeviceID, std::vector<float>& Input, std::vector<float>* Output);
             ~Float_Addition();
     };
     
@@ -27,7 +27,7 @@ namespace GPU_Addition {
         std::string DeviceID;
 
         public:
-            Double_Addition(std::string DeviceID, std::vector<double>& Input, std::vector<double>* Output);
+            Double_Addition(const std::string& DeviceID, std::vector<double>& Input, std::vector<double>* Output);
             ~Double_Addition();
     };
 }

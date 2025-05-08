@@ -39,7 +39,7 @@ class Log {
 
     public:
         // Functions
-        static void SetupLog(std::string LogSettingsFile);
+        static void SetupLog(const std::string& LogSettingsFile);
         template <typename T>
         static std::string FunctionNameToString(T Func);
         static void OutputDataToFile();
@@ -48,8 +48,8 @@ class Log {
         static std::vector<std::string> ReturnErrorList();
         static std::vector<std::string> ReturnInfoList();
         static void AddFPSLog(float FPS);
-        static void AddErrorLog(std::string Error);
-        static void AddInfoLog(std::string Data);
+        static void AddErrorLog(const std::string& Error);
+        static void AddInfoLog(const std::string& Data);
 };
 
 #endif

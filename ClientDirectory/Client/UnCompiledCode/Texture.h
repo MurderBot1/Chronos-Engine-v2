@@ -15,7 +15,7 @@
 // Definitions
 class Texture {
     public:
-        Texture(std::string FilePath);
+        Texture(const std::string& FilePath);
         ~Texture();
 
         int Dx, Dy; // The x and y widths and hight of the image

@@ -4,11 +4,8 @@
 // List of every function
 #include "Binary.h"
 #include "Exit.h"
-#include "IsKeyboardKeyPressed.h"
 #include "Keyboard.h"
-#include "KeyboardKeys.h"
 #include "LimitedFunctions.h"
 #include "Log.h"
-#include "RunKeyboardKeyCommands.h"
 #include "StructuralFunctions.h"
 #include "Time.h"

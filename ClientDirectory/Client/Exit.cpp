@@ -10,6 +10,10 @@
 // Variable redefinitions
 bool Exit::ExitTheMainLoop;
 
+void Exit::StartUpExit() {
+    Exit::ExitTheMainLoop = false;
+}
+
 // Definitions
 void Exit::ExitTheProgram() {
     Exit::ExitTheMainLoop = true;

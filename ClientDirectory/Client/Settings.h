@@ -20,15 +20,15 @@
 // Definitions
 class Settings {
     public:
-        static void LoadSettings(std::string LoadSettingsPath);
+        static void LoadSettings(const std::string& LoadSettingsPath);
 
         // Graphics
-            static SettingsValues::GraphicLevels DecodeGraphicLevels(std::string GraphicLevel);
+            static SettingsValues::GraphicLevels DecodeGraphicLevels(const std::string& GraphicLevel);
             static std::string EncodeGraphicLevels(SettingsValues::GraphicLevels GraphicLevel);
-            static void LoadGraphicsSettings(std::string FilePath);
-            static void LoadAudioSettings(std::string FilePath);
-            static void LoadRenderingSettings(std::string FilePath);
-            static void LoadOptionsSettings(std::string FilePath);
+            static void LoadGraphicsSettings(const std::string& FilePath);
+            static void LoadAudioSettings(const std::string& FilePath);
+            static void LoadRenderingSettings(const std::string& FilePath);
+            static void LoadOptionsSettings(const std::string& FilePath);
             // Moniter
             static int16_t ResolutionX; // Horizontal resolution of the display
             static int16_t ResolutionY; // Vertical resolution of the display

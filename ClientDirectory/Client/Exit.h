@@ -13,9 +13,7 @@
 // Definitions
 class Exit {
     public:
-        Exit(){
-            ExitTheMainLoop = false;
-        }
+        static void StartUpExit();
         static bool ExitTheMainLoop;
         static void ExitTheProgram();
 };

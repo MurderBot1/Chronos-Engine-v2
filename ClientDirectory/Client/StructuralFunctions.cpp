@@ -29,6 +29,7 @@ void StartFunction() {
     Log::SetupLog(CurrentPath.string() + "\\Settings\\Logs\\LogSettings.txt");
     Settings::LoadSettings(CurrentPath.string() + "\\Settings\\PathOfSettingsFiles.txt");
     Keyboard::StartKeyboardThread();
+    Exit::StartUpExit();
 }
 
 void LoopFunction() {

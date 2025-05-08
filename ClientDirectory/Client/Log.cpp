@@ -15,9 +15,12 @@ int Log::FramesSinceLastAdd;
 int Log::EveryXFrames;
 std::string Log::OutputFilePath;
 std::vector<float> Log::FPS;
+std::mutex Log::FPSMX;
+std::mutex Log::ErrorsMX;
+std::mutex Log::InfoInputsMX;
 
 // Definitions
-void Log::SetupLog(std::string LogSettingsFile) {
+void Log::SetupLog(const std::string& LogSettingsFile) {
     constexpr int NumLines = LogValues::LINES_IN_LOG_SETUP_FILE;
     std::ifstream SettingsFile(LogSettingsFile);
     std::array<std::string, NumLines> Lines;
@@ -99,49 +102,41 @@ void Log::OutputDataToFile() {
 
 void Log::UpdateCounters() {
     Log::FramesSinceLastAdd += 1;
+    std::lock_guard<std::mutex> lock(Log::FPSMX);
     Log::FPS.push_back(Time::FPS);
 }
 
 std::vector<float> Log::ReturnFPSList() {
-    Log::FPSMX.lock();
+    std::lock_guard<std::mutex> lock(Log::FPSMX);
     const std::vector<float> Output = Log::FPS;
-    Log::FPSMX.unlock();
     return Output;
 }
 
 std::vector<std::string> Log::ReturnErrorList() {
-    Log::ErrorsMX.lock();
+    std::lock_guard<std::mutex> lock(Log::ErrorsMX);
     const std::vector<std::string> Output = Log::Errors;
-    Log::InfoInputsMX.unlock();
     return Output;
 }
 
 std::vector<std::string> Log::ReturnInfoList() {
-    Log::InfoInputsMX.lock();
+    std::lock_guard<std::mutex> lock(Log::InfoInputsMX);
     const std::vector<std::string> Output = Log::InfoOutputs;
-    Log::InfoInputsMX.unlock();
     return Output;
 }
 
-std::vector<float> Log::ReturnFPSList() {
-    Log::FPSMX.lock();
-    const std::vector<float> Output = Log::FPS;
-    Log::FPSMX.unlock();
-    return Output;
+void Log::AddFPSLog(float FPS) {
+    std::lock_guard<std::mutex> lock(Log::FPSMX);
+    Log::FPS.emplace_back(FPS);
 }
 
-std::vector<std::string> Log::ReturnErrorList() {
-    Log::ErrorsMX.lock();
-    const std::vector<std::string> Output = Log::Errors;
-    Log::InfoInputsMX.unlock();
-    return Output;
+void Log::AddErrorLog(const std::string& Error) {
+    std::lock_guard<std::mutex> lock(Log::ErrorsMX);
+    Log::Errors.emplace_back(Error);
 }
 
-std::vector<std::string> Log::ReturnInfoList() {
-    Log::InfoInputsMX.lock();
-    const std::vector<std::string> Output = Log::InfoOutputs;
-    Log::InfoInputsMX.unlock();
-    return Output;
+void Log::AddInfoLog(const std::string& Data) {
+    std::lock_guard<std::mutex> lock(Log::InfoInputsMX);
+    Log::InfoOutputs.emplace_back(Data);
 }
 
 #endif

@@ -6,9 +6,22 @@ Chronos Engine is a graphics engine that has a goal of making videogames and oth
 - We also want to support the minds of young developers which is why we have created a learning platform where you can start in a block coding format called Chronos Block then transfer to a simple object-based language called Chronos Script and then finally to C++. This approach teaches young developers the basics of programming and then how to use these things in lower-level work. This is aided by the ability to directly transform from Chronos block to Chronos Script to C++. 
 - We have extensive cohesive documentation that is free online and downloaded when you install the engine as well as built in tips for young developers that help them write clean and cohesive code. This is supplemented with a clean customizable menus and other productivity tools such as batch editing on images to allow for effective usage of all of our tools. 
 - Our engine supports many of the most popular IDEs to allow a seamless transition from other engines as well as its built in IDE. We try to make AI as approachable as possible by allowing for the inputs and outputs of the AI to be directly inserted with a GUI or with a text editor. The AI training is also as simple as possible by creating checkpoints for when the AI does something correct in the scene such as walking to a location or changing its shape depending on what is going on around it.
+
 ***
-### How To Build
-We try to make building Chronos Engine as easy as possible to allow for easy development of 3rd party packages. 
+### How To Download (General Use)
+We try and make it as easy as possible to get started creating your first project or game.
+***
+### Windows
+- 
+***
+### Mac
+- 
+***
+### Linux
+- 
+***
+### How To Build (Development)
+We try to make building Chronos Engine as easy as possible to allow for easy development of 3rd party packages and resorces. 
 ***
 ### Windows
 - 

@@ -26,7 +26,7 @@ bool Settings::GPURendering; // Does the engine use the GPU
 float Settings::Volume; // The current volume multipier for the engine
 float Settings::AADropoff; // The amount that the color drops of in the antiA. function
 
-void Settings::LoadGraphicsSettings(std::string FilePath) {
+void Settings::LoadGraphicsSettings(const std::string& FilePath) {
     // Graphics
     // Define the variables to load the file in
     std::ifstream SettingsFile(FilePath);
@@ -80,7 +80,7 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
     SettingsFile.close(); // Close the file
 }
 
-void Settings::LoadAudioSettings(std::string FilePath) {
+void Settings::LoadAudioSettings(const std::string& FilePath) {
     // Audio
     // Define the variables to load the file in
     std::ifstream SettingsFile(FilePath);
@@ -108,7 +108,7 @@ void Settings::LoadAudioSettings(std::string FilePath) {
     SettingsFile.close(); // Close the file
 }
 
-void Settings::LoadRenderingSettings(std::string FilePath) {
+void Settings::LoadRenderingSettings(const std::string& FilePath) {
     // Rendering
     // Define the variables to load the file in
     std::ifstream SettingsFile(FilePath);
@@ -140,7 +140,7 @@ void Settings::LoadRenderingSettings(std::string FilePath) {
     SettingsFile.close(); // Close the file
 }
 
-void Settings::LoadOptionsSettings(std::string FilePath) {
+void Settings::LoadOptionsSettings(const std::string& FilePath) {
     // Options
     // Define the variables to load the file in
     std::ifstream SettingsFile(FilePath);
@@ -171,7 +171,7 @@ void Settings::LoadOptionsSettings(std::string FilePath) {
 }
 
 
-void Settings::LoadSettings(std::string LoadSettingsPath) {
+void Settings::LoadSettings(const std::string& LoadSettingsPath) {
     // Options
     // Define the variables to load the file in
     std::ifstream SettingsFile(LoadSettingsPath);
@@ -206,7 +206,7 @@ void Settings::LoadSettings(std::string LoadSettingsPath) {
     SettingsFile.close(); // Close the file
 }
 
-SettingsValues::GraphicLevels Settings::DecodeGraphicLevels(std::string GraphicLevel){
+SettingsValues::GraphicLevels Settings::DecodeGraphicLevels(const std::string& GraphicLevel){
     if(GraphicLevel == "Unreal") {
         return SettingsValues::GraphicLevels::Unreal;
     } else if(GraphicLevel == "Realistic") {
