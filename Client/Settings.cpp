@@ -40,8 +40,8 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
         // Moniter settings
         Settings::ResolutionX = SettingsValues::DEFAULT_RESOLUTION_X;
         Settings::ResolutionY = SettingsValues::DEFAULT_RESOLUTION_Y;
-       Settings::MaxFPS = SettingsValues::DEFAULT_MAX_FPS;
- Settings::SetFPSAtMonitersMax = SettingsValues::USE_MONITERS_MAX_FPS;
+        Settings::MaxFPS = SettingsValues::DEFAULT_MAX_FPS;
+        Settings::SetFPSAtMonitersMax = SettingsValues::USE_MONITERS_MAX_FPS;
 
         // Graphics levels
         Settings::GraphicLevel = SettingsValues::DEFAULT_GRAPHIC_LEVEL;
@@ -65,8 +65,8 @@ void Settings::LoadGraphicsSettings(std::string FilePath) {
     // Moniter settings
     Settings::ResolutionX = FromBinary::BinaryToInt(Lines[0]);
     Settings::ResolutionY = FromBinary::BinaryToInt(Lines[1]);
-   Settings::MaxFPS = FromBinary::BinaryToInt(Lines[2]);   
-Settings::SetFPSAtMonitersMax = FromBinary::BinaryToBool(Lines[3]);
+    Settings::MaxFPS = FromBinary::BinaryToInt(Lines[2]);   
+    Settings::SetFPSAtMonitersMax = FromBinary::BinaryToBool(Lines[3]);
 
     // Graphics levels
     Settings::GraphicLevel = Settings::DecodeGraphicLevels(Lines[4]);
@@ -102,7 +102,7 @@ void Settings::LoadAudioSettings(std::string FilePath) {
         Lines[Index++] = Line;
     }
 
-// Load the variables from the file
+    // Load the variables from the file
     Settings::Volume = FromBinary::BinaryToFloat(Lines[0]);
 
     SettingsFile.close(); // Close the file
@@ -120,10 +120,10 @@ void Settings::LoadRenderingSettings(std::string FilePath) {
     if(!SettingsFile.is_open()) {
         // Set default settings
         Settings::GPURendering = SettingsValues::USE_GPU_RENDERING;
-       Settings::UseBounces = SettingsValues::USE_BOUNCES;
+        Settings::UseBounces = SettingsValues::USE_BOUNCES;
         Settings::Bounces = SettingsValues::DEFAULT_NUMBER_OF_BOUNCES;
 
-  // Exit out of the function
+        // Exit out of the function
         return;
     };
 
@@ -134,7 +134,7 @@ void Settings::LoadRenderingSettings(std::string FilePath) {
 
     // Load the variables from the file
     Settings::GPURendering = FromBinary::BinaryToBool(Lines[0]);
-   Settings::UseBounces = FromBinary::BinaryToBool(Lines[1]);
+    Settings::UseBounces = FromBinary::BinaryToBool(Lines[1]);
     Settings::Bounces = FromBinary::BinaryToInt(Lines[2]);               
 
     SettingsFile.close(); // Close the file
@@ -154,7 +154,7 @@ void Settings::LoadOptionsSettings(std::string FilePath) {
         Settings::FOV = SettingsValues::DEFAULT_FOV;
         Settings::Sensitivity = SettingsValues::DEFAULT_SENSITIVITY;
 
-// Exit out of the function
+        // Exit out of the function
         return;
     };
 

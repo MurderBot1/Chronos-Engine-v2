@@ -8,62 +8,53 @@
 #include "Keyboard.h"
 
 // Variable redefinitions
-
+std::thread Keyboard::KeyboardThread;
+std::array<bool, 65536> Keyboard::KeyCodes;
+std::shared_mutex Keyboard::KeyCodesMX;
+std::shared_mutex Keyboard::KeyboardRunningMX;
+bool Keyboard::KeyboardRunning;
 
 // Definitions
+void Keyboard::StopRunning() {
+    std::unique_lock<std::shared_mutex> lock(Keyboard::KeyboardRunningMX);
+    Keyboard::KeyboardRunning = false;
+}
+
+std::array<bool, 65536> Keyboard::ReadOutAllCodes() {
+    std::shared_lock<std::shared_mutex> lock(Keyboard::KeyCodesMX);
+    return Keyboard::KeyCodes;
+}
+
+bool Keyboard::ReadOutCode(uint16_t Code) {
+    std::shared_lock<std::shared_mutex> lock(Keyboard::KeyCodesMX);
+    return Keyboard::KeyCodes[Code];
+}
+
 bool Keyboard::DetectKeyPressed(uint16_t KeyCode) {
     return false;
 }
 
-std::map<uint16_t, bool> Keyboard::DetectIfKeysArePressed() {
-    std::map<uint16_t, bool> ReturnedCodes;
+std::array<bool, 65536> Keyboard::DetectIfKeysArePressed() {
+    std::array<bool, 65536> ReturnedCodes;
     for(uint16_t CurrentKeyCode = 0; CurrentKeyCode <= 65535; CurrentKeyCode++) {
         ReturnedCodes[CurrentKeyCode] = DetectKeyPressed(CurrentKeyCode);
     }
     return ReturnedCodes;
 }
 
-/* Mutex AI expl.
-    #include <iostream>
-    #include <thread>
-    #include <shared_mutex>
-
-    std::shared_mutex rwMutex;
-    int sharedVar = 0;
-
-    void reader() {
-        std::shared_lock<std::shared_mutex> lock(rwMutex);
-        std::cout << "Read: " << sharedVar << std::endl;
-    }
-
-    void writer() {
-        std::unique_lock<std::shared_mutex> lock(rwMutex);
-        sharedVar++;
-    }
-
-    int main() {
-        std::thread t1(reader);
-        std::thread t2(writer);
-
-        t1.join();
-        t2.join();
-
-        return 0;
-    }
-*/
-
 void Keyboard::LoopedDetectIfKeysArePressed() {
-    bool Running = true;
-    while (Running) {
-        { // Detect if the keycodes are pressed
-            std::map<uint16_t, bool> TempMap;
-            TempMap = Keyboard::DetectIfKeysArePressed();
-            std::shared_lock<std::shared_mutex> lock(Keyboard::KeyCodesMX);
-            Keyboard::KeyCodes = TempMap;
-        }
-        {
+    while (true) {
+        { // Check if keyboard is running
             std::shared_lock<std::shared_mutex> lock(Keyboard::KeyboardRunningMX);
-            Running = Keyboard::KeyboardRunning;
+            if(!(Keyboard::KeyboardRunning)) { return; }
+        } // Release the lock on keyboardRunningMX
+
+        { // Detect if the keycodes are pressed
+            std::array<bool, 65536> TempMap;
+            TempMap = Keyboard::DetectIfKeysArePressed();
+            std::unique_lock<std::shared_mutex> lock(Keyboard::KeyCodesMX);
+            Keyboard::KeyCodes = std::array<bool, 65536>{};
+            Keyboard::KeyCodes = TempMap;
         }
     }
 }
@@ -74,7 +65,12 @@ void Keyboard::StartKeyboardThread() {
 
     // Create a thread and then swap the task
     std::thread TempThread(LoopedDetectIfKeysArePressed);
-    Keyboard::KeyboardThread->swap(TempThread);
+    Keyboard::KeyboardThread.swap(TempThread);
+}
+
+void Keyboard::CleanUpKeyboard() {
+    Keyboard::StopRunning();
+    Keyboard::KeyboardThread.join();
 }
 
 #endif

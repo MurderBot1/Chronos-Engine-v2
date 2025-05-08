@@ -12,6 +12,8 @@
 #include <numeric>
 #include <quadmath.h>
 #include <array>
+#include <mutex>
+#include <shared_mutex>
 
 // Program imported files
 #include "Time.h"
@@ -19,7 +21,7 @@
 
 // Definitions
 class Log {
-    public:
+    private:
         // Data
         static int FramesSinceLastAdd;
         static int NumLogFiles;
@@ -27,16 +29,27 @@ class Log {
         static std::vector<float> FPS;
         static std::vector<std::string> Errors;
         static std::vector<std::string> InfoOutputs;
+        // Mutex
+        static std::mutex FPSMX;
+        static std::mutex ErrorsMX;
+        static std::mutex InfoInputsMX;
         // Inputs from settings file
         static std::string OutputFilePath;
         static int EveryXFrames;
 
+    public:
         // Functions
         static void SetupLog(std::string LogSettingsFile);
         template <typename T>
         static std::string FunctionNameToString(T Func);
         static void OutputDataToFile();
         static void UpdateCounters();
+        static std::vector<float> ReturnFPSList();
+        static std::vector<std::string> ReturnErrorList();
+        static std::vector<std::string> ReturnInfoList();
+        static void AddFPSLog(float FPS);
+        static void AddErrorLog(std::string Error);
+        static void AddInfoLog(std::string Data);
 };
 
 #endif

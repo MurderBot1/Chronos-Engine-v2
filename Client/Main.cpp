@@ -8,7 +8,7 @@
 #include "StructuralFunctions.h"
 
 // Other included Libraries
-#include <cmath>
+
 
 // Variable redefinitions
 
@@ -20,6 +20,7 @@ int main() {
     while(Exit::ExitTheMainLoop == false) {
         LoopFunction();
     }
+    EndFunction();
     return 1;
 }
 

@@ -6,9 +6,10 @@
 
 // C++ imported files
 #include <string>
-#include <map>
+#include <array>
 #include <shared_mutex>
 #include <thread>
+#include <mutex>
 
 // Program imported files
 #include "Settings.h"
@@ -16,27 +17,28 @@
 
 // Definitions
 class Keyboard {
-    public:
+    private:
         // Is running
         static std::shared_mutex KeyboardRunningMX;
         static bool KeyboardRunning;
-        
-        // Changing is running
-        void StopRunning();
 
         // Mutex and thread
-        static std::thread* KeyboardThread;
+        static std::thread KeyboardThread;
         static std::shared_mutex KeyCodesMX;
-        static std::map<uint16_t, bool> KeyCodes;
-
-        // Reading detected results
-        std::map<uint16_t, bool> ReadOutAllCodes();
-        bool ReadOutCode(uint16_t Code);
+        static std::array<bool, 65536> KeyCodes;
         
         // Detection
         static bool DetectKeyPressed(uint16_t KeyCode);
-        static std::map<uint16_t, bool> DetectIfKeysArePressed();
+        static std::array<bool, 65536> DetectIfKeysArePressed();
         static void LoopedDetectIfKeysArePressed();
+
+    public:
+        // Changing is running
+        static void StopRunning();
+
+        // Reading detected results
+        static std::array<bool, 65536> ReadOutAllCodes();
+        static bool ReadOutCode(uint16_t Code);
 
         // Start and cleanup
         static void StartKeyboardThread();

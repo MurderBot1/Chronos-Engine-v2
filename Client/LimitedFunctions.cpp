@@ -19,7 +19,7 @@ void LimitedFunction::ResetAllLimitedFunctions() {
 
 void LimitedFunction::RunFunction() {
     if(this->MaxCallPerFrame >! CalledThisFrame) {
-        Log::Errors.push_back("Max calls reached on a LimitedFunction();");
+        Log::AddErrorLog("Max calls reached on a LimitedFunction();");
     }
     this->Function();
     this->CalledThisFrame =+ 1;

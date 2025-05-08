@@ -18,5 +18,6 @@
 void TODO();
 void StartFunction();
 void LoopFunction();
+void EndFunction();
 
 #endif

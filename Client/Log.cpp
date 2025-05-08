@@ -93,11 +93,55 @@ void Log::OutputDataToFile() {
     Log::InfoOutputs.clear();
     Log::Errors.clear();
     Log::FPS.clear();
+    Log::Errors.reserve(500);
+    Log::InfoOutputs.reserve(500);
 }
 
 void Log::UpdateCounters() {
     Log::FramesSinceLastAdd += 1;
     Log::FPS.push_back(Time::FPS);
+}
+
+std::vector<float> Log::ReturnFPSList() {
+    Log::FPSMX.lock();
+    const std::vector<float> Output = Log::FPS;
+    Log::FPSMX.unlock();
+    return Output;
+}
+
+std::vector<std::string> Log::ReturnErrorList() {
+    Log::ErrorsMX.lock();
+    const std::vector<std::string> Output = Log::Errors;
+    Log::InfoInputsMX.unlock();
+    return Output;
+}
+
+std::vector<std::string> Log::ReturnInfoList() {
+    Log::InfoInputsMX.lock();
+    const std::vector<std::string> Output = Log::InfoOutputs;
+    Log::InfoInputsMX.unlock();
+    return Output;
+}
+
+std::vector<float> Log::ReturnFPSList() {
+    Log::FPSMX.lock();
+    const std::vector<float> Output = Log::FPS;
+    Log::FPSMX.unlock();
+    return Output;
+}
+
+std::vector<std::string> Log::ReturnErrorList() {
+    Log::ErrorsMX.lock();
+    const std::vector<std::string> Output = Log::Errors;
+    Log::InfoInputsMX.unlock();
+    return Output;
+}
+
+std::vector<std::string> Log::ReturnInfoList() {
+    Log::InfoInputsMX.lock();
+    const std::vector<std::string> Output = Log::InfoOutputs;
+    Log::InfoInputsMX.unlock();
+    return Output;
 }
 
 #endif
