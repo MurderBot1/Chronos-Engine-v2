@@ -1,5 +1,8 @@
 ### IMPORTANT NOTICE
-THIS REPO IS UNDER DEVELOPMENT SOME OF THESE THINGS ARE NOT OFFERED AT THIS TIME
+THIS REPO IS UNDER DEVELOPMENT SOME OF THESE THINGS ARE NOT OFFERED AT THIS TIME'
+Other Things
+- The code right now is very slow I havn't optimised it yet
+- The keyboard scripts do not register keys right now
 ***
 ### Our Mission
 Chronos Engine is a graphics engine that has a goal of making videogames and other 3d modeling as free as possible to everybody. 
