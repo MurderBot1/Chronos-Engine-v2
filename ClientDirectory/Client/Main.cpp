@@ -15,7 +15,6 @@
 
 // Definitions
 int main() {
-    TODO();
     StartFunction();
     while(Exit::ExitTheMainLoop == false) {
         LoopFunction();

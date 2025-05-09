@@ -15,7 +15,6 @@
 #include "Constants.h"
 
 // Definitions
-void TODO();
 void StartFunction();
 void LoopFunction();
 void EndFunction();
