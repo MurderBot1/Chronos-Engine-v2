@@ -1,3 +1,6 @@
+### IMPORTANT NOTICE
+THIS REPO IS UNDER DEVELOPMENT SOME OF THESE THINGS ARE NOT OFFERED AT THIS TIME
+***
 ### Our Mission
 Chronos Engine is a graphics engine that has a goal of making videogames and other 3d modeling as free as possible to everybody. 
 
