@@ -16,6 +16,7 @@
 // Program imported files
 #include "Binary.h"
 #include "Constants.h"
+#include "Args.h"
 
 // Definitions
 class Settings {

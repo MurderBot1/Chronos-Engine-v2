@@ -21,6 +21,7 @@ class Args {
         static void LoadArgs(int argc, char* argv[]);
         static std::string_view Game;
         static std::string_view Save;
+        static bool Debug;
 };
 
 #endif

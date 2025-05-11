@@ -14,6 +14,9 @@ uint64_t Time::DifferenceOfTimeInMicroS;
 float Time::DeltaTime;
 float Time::FPS;
 std::string Time::WhenProgramStart;
+bool ScopedTimer::LoadToVisualRenderer;
+std::vector<VisualTimeRendererObject> ScopedTimer::VisualRenderer;
+std::string ScopedTimer::VisualRendererOutput;
 
 // Definitions
 uint64_t Time::FindCurrentTime() {
@@ -23,6 +26,7 @@ uint64_t Time::FindCurrentTime() {
 }
 
 void Time::ComupteDeltaTime() {
+    ScopedTimer timer = ScopedTimer("ComupteDeltaTime", true);
     Time::LastFramesTimeInMicroS = Time::CurrentTimeInMicroS;
     Time::CurrentTimeInMicroS = Time::FindCurrentTime();
     Time::DifferenceOfTimeInMicroS = Time::CurrentTimeInMicroS - Time::LastFramesTimeInMicroS;
@@ -57,12 +61,47 @@ std::string Time::GetMDYHMS() {
 }
 
 void Time::Sleep() {
-    const double MCPF = 1000000/Settings::MaxFPS;
-    const uint64_t CTMCTIM = (Time::FindCurrentTime() - Time::CurrentTimeInMicroS);
-    const int Delay = MCPF - CTMCTIM;
-    auto start = std::chrono::high_resolution_clock::now();
-    auto end = start + std::chrono::microseconds(Delay);
-    while (std::chrono::high_resolution_clock::now() < end);
+    if(Settings::SetFPSAtMonitersMax) {
+        const double MCPF = 1000000/Settings::MaxFPS;
+        const uint64_t CTMCTIM = (Time::FindCurrentTime() - Time::CurrentTimeInMicroS);
+        const int Delay = MCPF - CTMCTIM;
+        auto start = std::chrono::high_resolution_clock::now();
+        auto end = start + std::chrono::microseconds(Delay);
+        while (std::chrono::high_resolution_clock::now() < end);
+    }
+}
+
+void ScopedTimer::StartVisualRenderer(bool Debug, std::string VisualRendererFilePath) {
+    ScopedTimer::LoadToVisualRenderer = Debug;
+    ScopedTimer::VisualRenderer.reserve(1000);
+
+    std::ofstream VisualRendererFile(VisualRendererFilePath);
+    VisualRendererFile << "";
+    VisualRendererFile.close();
+}
+
+void ScopedTimer::UpdateVisualRenderer(std::string VisualRendererFilePath) {
+    if(ScopedTimer::LoadToVisualRenderer) {
+        std::ofstream VisualRendererFile(VisualRendererFilePath, std::ios::app);
+
+        for(VisualTimeRendererObject CurrentListing : ScopedTimer::VisualRenderer) {
+            std::stringstream ss;
+            ss << CurrentListing.ThreadID;
+
+            ScopedTimer::VisualRendererOutput += "{\n";
+            ScopedTimer::VisualRendererOutput += "    TimerName : " + std::string(CurrentListing.TimerName) + "\n";
+            ScopedTimer::VisualRendererOutput += "    StartTime : " + std::to_string(CurrentListing.StartTime) + "\n";
+            ScopedTimer::VisualRendererOutput += "    TotalTime : " + std::to_string(CurrentListing.TotalTime) + "\n";
+            ScopedTimer::VisualRendererOutput += "    ThreadID : " + ss.str() + "\n";
+            ScopedTimer::VisualRendererOutput += "},\n";
+        }
+
+        VisualRendererFile << ScopedTimer::VisualRendererOutput;
+        VisualRendererFile.close();
+
+        ScopedTimer::VisualRendererOutput = "";
+        ScopedTimer::VisualRenderer.clear();
+    }
 }
 
 ScopedTimer::ScopedTimer() {
@@ -91,10 +130,22 @@ ScopedTimer::ScopedTimer(std::string TimerName, bool UseLog) {
 
 ScopedTimer::~ScopedTimer() {
     uint64_t EndTimeInMicroS = Time::FindCurrentTime();
+
     if(UseLog) {
-        Log::AddInfoLog("CHRONOS TIMER : " + TimerName + " took " + std::to_string(EndTimeInMicroS - StartTimeInMicroS) + " microseconds to execute");
+        Log::AddInfoLog("CHRONOS TIMER : " + std::string{TimerName} + " took " + std::to_string(EndTimeInMicroS - StartTimeInMicroS) + " microseconds to execute");
     } else {
         std::cout << "CHRONOS TIMER : " << TimerName << " took " << (EndTimeInMicroS - StartTimeInMicroS) << " microseconds to execute\n";
+    }
+
+    if(LoadToVisualRenderer) {
+        VisualTimeRendererObject TempObject;
+
+        TempObject.TimerName = TimerName;
+        TempObject.StartTime = StartTimeInMicroS;
+        TempObject.TotalTime = EndTimeInMicroS - StartTimeInMicroS;
+        TempObject.ThreadID = std::this_thread::get_id();
+
+        ScopedTimer::VisualRenderer.emplace_back(TempObject);
     }
 }
 

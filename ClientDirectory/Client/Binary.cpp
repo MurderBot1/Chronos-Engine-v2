@@ -19,7 +19,8 @@ float FromBinary::BinaryToFloat(const std::string& Binary) {
     // Convert binary string to unsigned 32-bit integer
     uint32_t IntRepresentation = std::bitset<32>(Binary).to_ulong();
     // Reinterpret the integer bits as a float
-    float FloatValue = *reinterpret_cast<float*>(&IntRepresentation);
+    float FloatValue;
+    std::memcpy(&FloatValue, &IntRepresentation, sizeof(FloatValue));
     return FloatValue;
 }
 
@@ -51,7 +52,8 @@ std::string ToBinary::IntToBinaryString(int Value) {
 // Function to convert a float to a binary string
 std::string ToBinary::FloatToBinaryString(float Value) {
     // Reinterpret the float as an unsigned 32-bit integer
-    uint32_t IntRepresentation = *reinterpret_cast<uint32_t*>(&Value);
+    uint32_t IntRepresentation;
+    std::memcpy(&IntRepresentation, &Value, sizeof(Value));
     return std::bitset<32>(IntRepresentation).to_string();
 }
 

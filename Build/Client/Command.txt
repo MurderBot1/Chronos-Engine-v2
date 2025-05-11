@@ -1,4 +1,4 @@
 cd E:\Projects\Chronos-Engine-v2
-g++ -o GameFolder/ChronosEngine_Client ClientDirectory/Client/Main.cpp ClientDirectory/Client/Time.cpp ClientDirectory/Client/Settings.cpp ClientDirectory/Client/StructuralFunctions.cpp ClientDirectory/Client/Exit.cpp ClientDirectory/Client/Keyboard.cpp ClientDirectory/Client/LimitedFunctions.cpp ClientDirectory/Client/Log.cpp ClientDirectory/Client/Args.cpp ClientDirectory/Client/Binary.cpp -std=c++20 -Wall -Werror -Wpedantic
+g++ -o GameFolder/ChronosEngine_Client ClientDirectory/Client/Main.cpp ClientDirectory/Client/Time.cpp ClientDirectory/Client/Settings.cpp ClientDirectory/Client/StructuralFunctions.cpp ClientDirectory/Client/Exit.cpp ClientDirectory/Client/Keyboard.cpp ClientDirectory/Client/LimitedFunctions.cpp ClientDirectory/Client/Log.cpp ClientDirectory/Client/Args.cpp ClientDirectory/Client/Binary.cpp -std=c++20 -Wall -Werror -Wpedantic -O3
 cd GameFolder
-./ChronosEngine_Client --game ExampleGame
+./ChronosEngine_Client --game ExampleGame --debug 1

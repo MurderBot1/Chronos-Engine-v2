@@ -33,8 +33,22 @@ class Time {
         static void Sleep();
 };
 
+struct VisualTimeRendererObject {
+    uint64_t StartTime;
+    uint64_t TotalTime;
+    std::string_view TimerName;
+    std::thread::id ThreadID;
+};
+
 class ScopedTimer {
     public:
+        static bool LoadToVisualRenderer;
+        static std::vector<VisualTimeRendererObject> VisualRenderer;
+        static std::string VisualRendererOutput;
+
+        static void StartVisualRenderer(bool Debug, std::string VisualRendererFilePath);
+        static void UpdateVisualRenderer(std::string VisualRendererFilePath);
+
         ScopedTimer();
         ScopedTimer(std::string TimerName);
         ScopedTimer(bool UseLog);
@@ -42,7 +56,7 @@ class ScopedTimer {
         ~ScopedTimer();
 
         bool UseLog;
-        std::string TimerName;
+        std::string_view TimerName;
         uint64_t StartTimeInMicroS;
 };
 

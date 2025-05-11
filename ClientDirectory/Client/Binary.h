@@ -8,6 +8,7 @@
 #include <string>
 #include <bitset>
 #include <cstdint>
+#include <cstring>
 
 // Program imported files
 #include "Log.h"

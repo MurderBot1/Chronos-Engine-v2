@@ -66,7 +66,7 @@ void Log::OutputDataToFile() {
     }
 
     // Calculate the average FPS
-    double FPSTotal;
+    double FPSTotal = 0;
     for(const auto& FPS : Log::FPS) {
         FPSTotal += FPS;
     }

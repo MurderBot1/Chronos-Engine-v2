@@ -10,6 +10,7 @@
 // Variable redefinitions
 std::string_view Args::Game;
 std::string_view Args::Save;
+bool Args::Debug;
 
 // Definitions
 void Args::LoadArgs(int argc, char *argv[]) {
@@ -35,16 +36,23 @@ void Args::LoadArgs(int argc, char *argv[]) {
     }
 
     // Assign to variable
-    const std::array<std::string_view, 2> CompilerArgs = {
+    const std::array<std::string_view, 3> CompilerArgs = {
         "--game",
-        "--save"
+        "--save",
+        "--debug"
     };
 
     for(std::pair<std::string_view, std::string_view> CurrentArgToDecode : ArgListWithMatchingValue) {
-        if(CurrentArgToDecode.first == CompilerArgs[0]) {
+        if(CurrentArgToDecode.first == CompilerArgs[0]) { // --game
             Args::Game = CurrentArgToDecode.second;
-        } else if (CurrentArgToDecode.first == CompilerArgs[1]) { // Placeholder for future args
+        } else if (CurrentArgToDecode.first == CompilerArgs[1]) { // --save
             Args::Save = CurrentArgToDecode.second;
+        } else if (CurrentArgToDecode.first == CompilerArgs[2]) { // --debug
+            if(CurrentArgToDecode.second == "0") {
+                Args::Debug = false;
+            } else {
+                Args::Debug = true;
+            }
         } else if (false) { // Placeholder for future args
 
         } else {
