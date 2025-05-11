@@ -289,7 +289,7 @@ std::string Settings::EncodeGraphicLevels(SettingsValues::GraphicLevels GraphicL
 }
 
 uint8_t Settings::DecodeAA(SettingsValues::GraphicLevels AntiAllasing) {
-    switch (GraphicLevel) {
+    switch (AntiAllasing) {
         case SettingsValues::GraphicLevels::Unreal:
             return 16;
         case SettingsValues::GraphicLevels::Realistic:

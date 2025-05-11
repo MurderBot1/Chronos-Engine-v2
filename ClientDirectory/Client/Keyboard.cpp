@@ -31,12 +31,18 @@ bool Keyboard::ReadOutCode(uint16_t Code) {
 }
 
 bool Keyboard::DetectKeyPressed(uint16_t KeyCode) {
+    switch (KeyCode) {
+        case 0:
+            return false;
+        default:
+            return false;
+    }
     return false;
 }
 
 std::array<bool, 65536> Keyboard::DetectIfKeysArePressed() {
     std::array<bool, 65536> ReturnedCodes;
-    for(uint16_t CurrentKeyCode = 0; CurrentKeyCode <= 65535; CurrentKeyCode++) {
+    for(int CurrentKeyCode = 0; CurrentKeyCode <= 65535; CurrentKeyCode++) {
         ReturnedCodes[CurrentKeyCode] = DetectKeyPressed(CurrentKeyCode);
     }
     return ReturnedCodes;
