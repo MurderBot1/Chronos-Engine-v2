@@ -1,6 +1,9 @@
 # VSCode
 .vscode/
 
+# VS
+.vs/
+
 # Temp
 Temp/
 

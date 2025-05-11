@@ -6,13 +6,12 @@
 
 // C++ imported files
 #include <string>
-#include <stdint.h>
+#include <cstdint>
+#include <string_view>
 #include <filesystem>
 
 // Definitions
 const std::filesystem::path CurrentPath = std::filesystem::current_path();
-constexpr std::string_view GameName_SV = "ExampleGame";
-const std::string GameName = std::string{GameName_SV};
 
 constexpr uint8_t INDEX_START = 0; 
 

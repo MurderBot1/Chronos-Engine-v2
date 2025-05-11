@@ -30,7 +30,7 @@ void Log::SetupLog(const std::string& LogSettingsFile) {
     if(!SettingsFile.is_open()) {
         // Set the defaults
         Log::EveryXFrames = 100;
-        Log::OutputFilePath = CurrentPath.string() + "\\Logs\\";
+        Log::OutputFilePath = "";
 
         FPS.reserve(100);
 
@@ -43,7 +43,7 @@ void Log::SetupLog(const std::string& LogSettingsFile) {
     }
 
     Log::EveryXFrames = std::stoi(Lines[0]);
-    Log::OutputFilePath = CurrentPath.string() + Lines[1];
+    Log::OutputFilePath = CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[1];
     FPS.reserve(EveryXFrames);
 }
 
@@ -61,25 +61,19 @@ void Log::OutputDataToFile() {
     
     // Check if the file is open
     if (!OutFile.is_open()) {
-        std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".txt\n";
+        std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".ChronosLog\n";
         return;
     }
 
     // Calculate the average FPS
-    __float128 FPSTotal;
+    double FPSTotal;
     for(const auto& FPS : Log::FPS) {
         FPSTotal += FPS;
     }
     FPSTotal = FPSTotal / Log::FPS.size();
 
-    // Convert the __float128 for printing
-    long double castValue = static_cast<long double>(FPSTotal);
-    std::ostringstream oss;
-    oss.precision(36);
-    oss << castValue;
-
     // Output all of the information to the .ChronosLog file
-    OutFile << "FPS = " + oss.str() << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
+    OutFile << "FPS = " + std::to_string(FPSTotal) << " (Over " + std::to_string(Log::EveryXFrames) + " frames)\n";
 
     for(const auto& Error : Log::Errors) {
         OutFile << Error + "\n";

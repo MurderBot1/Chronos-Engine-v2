@@ -1,24 +1,26 @@
 // © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
 /* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
-#ifndef Camera_H
-#define Camera_H
+#ifndef Args_H
+#define Args_H
 
 // C++ imported files
+#include <string>
+#include <iostream>
+#include <string_view>
 #include <vector>
+#include <map>
+#include <array>
 
 // Program imported files
-#include "LocationClass.h"
-#include "RotationClass.h"
+#include "Exit.h"
 
 // Definitions
-class Camera : public LocationClass, public RotationClass{
+class Args {
     public:
-        // Main camera
-        static Camera* MainCamera;
-
-        // Camera list
-        static std::vector<Camera*> CameraList;
+        static void LoadArgs(int argc, char* argv[]);
+        static std::string_view Game;
+        static std::string_view Save;
 };
 
 #endif

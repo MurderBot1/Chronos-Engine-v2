@@ -10,7 +10,6 @@
 #include <typeinfo>
 #include <fstream>
 #include <numeric>
-#include <quadmath.h>
 #include <array>
 #include <mutex>
 #include <shared_mutex>
@@ -18,6 +17,7 @@
 // Program imported files
 #include "Time.h"
 #include "Constants.h"
+#include "Args.h"
 
 // Definitions
 class Log {

@@ -14,8 +14,8 @@
 
 
 // Definitions
-int main() {
-    StartFunction();
+int main(int argc, char* argv[]) {
+    StartFunction(argc, argv);
     while(Exit::ExitTheMainLoop == false) {
         LoopFunction();
     }

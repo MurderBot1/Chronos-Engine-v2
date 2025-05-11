@@ -5,7 +5,7 @@
 #define Exit_H
 
 // C++ imported files
-
+#include <mutex>
 
 // Program imported files
 
@@ -15,6 +15,7 @@ class Exit {
     public:
         static void StartUpExit();
         static bool ExitTheMainLoop;
+        static std::mutex ExitMX;
         static void ExitTheProgram();
 };
 

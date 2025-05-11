@@ -13,9 +13,10 @@
 #include "Keyboard.h"
 #include "LimitedFunctions.h"
 #include "Constants.h"
+#include "Args.h"
 
 // Definitions
-void StartFunction();
+void StartFunction(int argc, char* argv[]);
 void LoopFunction();
 void EndFunction();
 

@@ -1,4 +1,4 @@
 \Settings\Graphics\Graphics.txt
 \Settings\Audio\Audio.txt
-\Settings\RenderingMode\Rendering.txt
+\Settings\Rendering\Rendering.txt
 \Settings\Options\Options.txt

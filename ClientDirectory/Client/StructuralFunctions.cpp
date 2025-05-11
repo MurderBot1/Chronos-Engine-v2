@@ -11,12 +11,13 @@
 
 
 // Definitions
-void StartFunction() {
-    Time::FillValuesForLoading();
-    Log::SetupLog(CurrentPath.string() + "\\Settings\\Logs\\LogSettings.txt");
-    Settings::LoadSettings(CurrentPath.string() + "\\Settings\\PathOfSettingsFiles.txt");
-    Keyboard::StartKeyboardThread();
+void StartFunction(int argc, char* argv[]) {
     Exit::StartUpExit();
+    Args::LoadArgs(argc, argv);
+    Time::FillValuesForLoading();
+    Log::SetupLog(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\Logs\\LogSettings.txt");
+    Settings::LoadSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\PathOfSettingsFiles.txt");
+    Keyboard::StartKeyboardThread();
 }
 
 void LoopFunction() {

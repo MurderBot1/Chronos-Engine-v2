@@ -6,34 +6,15 @@
 
 // C++ imported files
 #include <vector>
+#include <string>
 
 // Program imported files
-#include "Particles.h"
-#include "Lights.h"
-#include "Object.h"
-#include "Scripts.h"
-#include "Camera.h"
 
 // Definitions
 class Scene {
     public:
         Scene();
         ~Scene();
-        
-        std::vector<Script*> ScriptsInScene;
-        std::vector<Object*> ObjectsInScene;
-        std::vector<Light*> LightsInScene;
-        std::vector<ParticleGenerator*> ParticleGeneratorsInScene;
-        std::vector<Particle*> ParticlesInScene;
-        std::vector<Camera*> CamerasInScene;
-        
-        void CleanIpScene();
-        void CleanUpnPlayerScripts();
-        void CleanUpObjects();
-        void CleanUpLights();
-        void CleanUpParticleGenerators();
-        void CleanUpParticles();
-        void CleanUpCameras();
 };
 
 #endif

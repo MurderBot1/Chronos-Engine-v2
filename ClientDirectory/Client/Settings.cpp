@@ -52,6 +52,10 @@ void Settings::LoadGraphicsSettings(const std::string& FilePath) {
         Settings::AntiAllasing = SettingsValues::DEFAULT_AntiAllasing_LEVEL;
         Settings::AADropoff = SettingsValues::DEFAULT_AADROPOFF;
 
+        std::cout << "Can't load settings. Chronos engine will use defaults\n";
+        std::cout << "Settings files should be at : \n";
+        std::cout << "The file at : " << FilePath << " could not be loaded by the settings loader\n";
+
         // Exit out of the function
         return;
     };
@@ -61,7 +65,7 @@ void Settings::LoadGraphicsSettings(const std::string& FilePath) {
         Lines[Index++] = Line;
     }
 
-// Load the file in to the settings it corrisponds with
+    // Load the file in to the settings it corrisponds with
     // Moniter settings
     Settings::ResolutionX = FromBinary::BinaryToInt(Lines[0]);
     Settings::ResolutionY = FromBinary::BinaryToInt(Lines[1]);
@@ -78,6 +82,8 @@ void Settings::LoadGraphicsSettings(const std::string& FilePath) {
     Settings::AADropoff = FromBinary::BinaryToFloat(Lines[10]);
 
     SettingsFile.close(); // Close the file
+
+    return;
 }
 
 void Settings::LoadAudioSettings(const std::string& FilePath) {
@@ -93,6 +99,10 @@ void Settings::LoadAudioSettings(const std::string& FilePath) {
         // Set default settings
         Settings::Volume = SettingsValues::DEFAULT_VOLUME;
 
+        std::cout << "Can't load settings. Chronos engine will use defaults\n";
+        std::cout << "Settings files should be at : \n";
+        std::cout << "The file at : " << FilePath << " could not be loaded by the settings loader\n";
+
         // Exit out of the function
         return;
     };
@@ -106,6 +116,8 @@ void Settings::LoadAudioSettings(const std::string& FilePath) {
     Settings::Volume = FromBinary::BinaryToFloat(Lines[0]);
 
     SettingsFile.close(); // Close the file
+
+    return;
 }
 
 void Settings::LoadRenderingSettings(const std::string& FilePath) {
@@ -123,6 +135,10 @@ void Settings::LoadRenderingSettings(const std::string& FilePath) {
         Settings::UseBounces = SettingsValues::USE_BOUNCES;
         Settings::Bounces = SettingsValues::DEFAULT_NUMBER_OF_BOUNCES;
 
+        std::cout << "Can't load settings. Chronos engine will use defaults\n";
+        std::cout << "Settings files should be at : \n";
+        std::cout << "The file at : " << FilePath << " could not be loaded by the settings loader\n";
+
         // Exit out of the function
         return;
     };
@@ -138,6 +154,8 @@ void Settings::LoadRenderingSettings(const std::string& FilePath) {
     Settings::Bounces = FromBinary::BinaryToInt(Lines[2]);               
 
     SettingsFile.close(); // Close the file
+
+    return;
 }
 
 void Settings::LoadOptionsSettings(const std::string& FilePath) {
@@ -154,6 +172,10 @@ void Settings::LoadOptionsSettings(const std::string& FilePath) {
         Settings::FOV = SettingsValues::DEFAULT_FOV;
         Settings::Sensitivity = SettingsValues::DEFAULT_SENSITIVITY;
 
+        std::cout << "Can't load settings. Chronos engine will use defaults\n";
+        std::cout << "Settings files should be at : \n";
+        std::cout << "The file at : " << FilePath << " could not be loaded by the settings loader\n";
+
         // Exit out of the function
         return;
     };
@@ -168,6 +190,8 @@ void Settings::LoadOptionsSettings(const std::string& FilePath) {
     Settings::Sensitivity = FromBinary::BinaryToFloat(Lines[1]);
 
     SettingsFile.close(); // Close the file
+
+    return;
 }
 
 
@@ -182,10 +206,17 @@ void Settings::LoadSettings(const std::string& LoadSettingsPath) {
     // Check if the file can be opened
     if(!SettingsFile.is_open()) {
         // Set default settings
-        Settings::LoadGraphicsSettings(std::string{SettingsValues::LOAD_GRAPHICS_SETTINGS_DEFAULT_PATH});
-        Settings::LoadAudioSettings(std::string{SettingsValues::LOAD_AUDIO_SETTINGS_DEFAULT_PATH});
-        Settings::LoadRenderingSettings(std::string{SettingsValues::LOAD_RENDERING_SETTINGS_DEFAULT_PATH});
-        Settings::LoadOptionsSettings(std::string{SettingsValues::LOAD_OPTIONS_SETTINGS_DEFAULT_PATH});
+        Settings::LoadGraphicsSettings("");
+        Settings::LoadAudioSettings("");
+        Settings::LoadRenderingSettings("");
+        Settings::LoadOptionsSettings("");
+
+        std::cout << "Can't load settings. Chronos engine will use defaults\n";
+        std::cout << "Settings files should be at\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[0] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[1] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[2] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[3] << "\n";
 
         // Exit out of the function
         return;
@@ -197,11 +228,12 @@ void Settings::LoadSettings(const std::string& LoadSettingsPath) {
     }
 
     // Load the variables from the file
-    Settings::LoadGraphicsSettings(CurrentPath.string() + Lines[0]);
-    Settings::LoadAudioSettings(CurrentPath.string() + Lines[1]);
-    Settings::LoadRenderingSettings(CurrentPath.string() + Lines[2]);
-    Settings::LoadOptionsSettings(CurrentPath.string() + Lines[3]);
+    Settings::LoadGraphicsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[0]);
+    Settings::LoadAudioSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[1]);
+    Settings::LoadRenderingSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[2]);
+    Settings::LoadOptionsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[3]);
     
+
 
     SettingsFile.close(); // Close the file
 }
