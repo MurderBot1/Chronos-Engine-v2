@@ -8,15 +8,15 @@
 #include "Time.h"
 
 // Variable redefinitions
-int64_t Time::CurrentTimeInMicroS;
-int64_t Time::LastFramesTimeInMicroS;
-int64_t Time::DifferenceOfTimeInMicroS;
+uint64_t Time::CurrentTimeInMicroS;
+uint64_t Time::LastFramesTimeInMicroS;
+uint64_t Time::DifferenceOfTimeInMicroS;
 float Time::DeltaTime;
 float Time::FPS;
 std::string Time::WhenProgramStart;
 
 // Definitions
-int64_t Time::FindCurrentTime() {
+uint64_t Time::FindCurrentTime() {
     auto Now = std::chrono::high_resolution_clock::now();
     auto Microseconds = std::chrono::duration_cast<std::chrono::microseconds>(Now.time_since_epoch()).count();
     return Microseconds;
@@ -58,11 +58,44 @@ std::string Time::GetMDYHMS() {
 
 void Time::Sleep() {
     const double MCPF = 1000000/Settings::MaxFPS;
-    const int64_t CTMCTIM = (Time::FindCurrentTime() - Time::CurrentTimeInMicroS);
+    const uint64_t CTMCTIM = (Time::FindCurrentTime() - Time::CurrentTimeInMicroS);
     const int Delay = MCPF - CTMCTIM;
     auto start = std::chrono::high_resolution_clock::now();
     auto end = start + std::chrono::microseconds(Delay);
     while (std::chrono::high_resolution_clock::now() < end);
+}
+
+ScopedTimer::ScopedTimer() {
+    UseLog = false;
+    TimerName = "A function";
+    StartTimeInMicroS = Time::FindCurrentTime();
+}
+
+ScopedTimer::ScopedTimer(std::string TimerName) {
+    UseLog = false;
+    this->TimerName = TimerName;
+    StartTimeInMicroS = Time::FindCurrentTime();
+}
+
+ScopedTimer::ScopedTimer(bool UseLog) {
+    this->UseLog = UseLog;
+    TimerName = "A function";
+    StartTimeInMicroS = Time::FindCurrentTime();
+}
+
+ScopedTimer::ScopedTimer(std::string TimerName, bool UseLog) {
+    this->UseLog = UseLog;
+    this->TimerName = TimerName;
+    StartTimeInMicroS = Time::FindCurrentTime();
+}
+
+ScopedTimer::~ScopedTimer() {
+    uint64_t EndTimeInMicroS = Time::FindCurrentTime();
+    if(UseLog) {
+        Log::AddInfoLog("CHRONOS TIMER : " + TimerName + " took " + std::to_string(EndTimeInMicroS - StartTimeInMicroS) + " microseconds to execute");
+    } else {
+        std::cout << "CHRONOS TIMER : " << TimerName << " took " << (EndTimeInMicroS - StartTimeInMicroS) << " microseconds to execute\n";
+    }
 }
 
 #endif

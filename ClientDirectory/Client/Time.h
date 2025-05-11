@@ -19,18 +19,31 @@
 // Definitions
 class Time {
     public:
-        static int64_t CurrentTimeInMicroS;
-        static int64_t LastFramesTimeInMicroS;
-        static int64_t DifferenceOfTimeInMicroS;
+        static uint64_t CurrentTimeInMicroS;
+        static uint64_t LastFramesTimeInMicroS;
+        static uint64_t DifferenceOfTimeInMicroS;
         static float DeltaTime;
         static float FPS;
         static std::string WhenProgramStart;
 
-        static int64_t FindCurrentTime();
+        static uint64_t FindCurrentTime();
         static void ComupteDeltaTime();
         static void FillValuesForLoading();
         static std::string GetMDYHMS();
         static void Sleep();
-    };
+};
+
+class ScopedTimer {
+    public:
+        ScopedTimer();
+        ScopedTimer(std::string TimerName);
+        ScopedTimer(bool UseLog);
+        ScopedTimer(std::string TimerName, bool UseLog);
+        ~ScopedTimer();
+
+        bool UseLog;
+        std::string TimerName;
+        uint64_t StartTimeInMicroS;
+};
 
 #endif

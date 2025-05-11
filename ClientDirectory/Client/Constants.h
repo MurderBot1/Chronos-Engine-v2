@@ -44,11 +44,6 @@ namespace SettingsValues {
     constexpr uint8_t LINES_IN_OPTIONS_SETUP_FILE = 2;
     constexpr uint8_t LINES_IN_LOAD_SETTINGS_SETUP_FILE = 4;
 
-    const std::string_view LOAD_GRAPHICS_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Graphics/Graphics.txt";
-    const std::string_view LOAD_AUDIO_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Audio/Audio.txt";
-    const std::string_view LOAD_RENDERING_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Rendering/Rendering.txt";
-    const std::string_view LOAD_OPTIONS_SETTINGS_DEFAULT_PATH = CurrentPath.string() + "/Settings/Options/Options.txt";
-
     constexpr float DEFAULT_FOV = 100.0f;
     constexpr float DEFAULT_SENSITIVITY = 1.0f;
 
