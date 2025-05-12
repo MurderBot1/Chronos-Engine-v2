@@ -19,7 +19,7 @@ void StartFunction(int argc, char* argv[]) {
     Args::LoadArgs(argc, argv);
 
     // Load the visual renderer code
-    ScopedTimer::StartVisualRenderer(Args::Debug, CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen");
+    ScopedTimer::StartVisualRenderer(Args::Debug, CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.ChronosVisRen");
 
     // Load the delta time and FPS variables
     Time::FillValuesForLoading();
@@ -46,7 +46,7 @@ void LoopFunction() {
     Log::OutputDataToFile();
 
     // Add the current timings to the file (Debug only)
-    ScopedTimer::UpdateVisualRenderer(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen");
+    ScopedTimer::UpdateVisualRenderer(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.ChronosVisRen");
 
     // Wait for loop to limit max FPS
     Time::Sleep();

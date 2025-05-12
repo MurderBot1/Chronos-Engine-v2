@@ -71,16 +71,20 @@ void Time::Sleep() {
     }
 }
 
-void ScopedTimer::StartVisualRenderer(bool Debug, std::string VisualRendererFilePath) {
+void ScopedTimer::StartVisualRenderer(bool Debug, std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser) {
     ScopedTimer::LoadToVisualRenderer = Debug;
     ScopedTimer::VisualRenderer.reserve(1000);
 
     std::ofstream VisualRendererFile(VisualRendererFilePath);
     VisualRendererFile << "";
     VisualRendererFile.close();
+
+    std::ofstream VisualRendererFileForBrowser(VisualRendererFilePathForBrowser);
+    VisualRendererFileForBrowser << "{\n    \"traceEvents\": [\n";
+    VisualRendererFileForBrowser.close();
 }
 
-void ScopedTimer::UpdateVisualRenderer(std::string VisualRendererFilePath) {
+void ScopedTimer::UpdateVisualRenderer(std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser) {
     if(ScopedTimer::LoadToVisualRenderer) {
         std::ofstream VisualRendererFile(VisualRendererFilePath, std::ios::app);
 
@@ -98,6 +102,44 @@ void ScopedTimer::UpdateVisualRenderer(std::string VisualRendererFilePath) {
 
         VisualRendererFile << ScopedTimer::VisualRendererOutput;
         VisualRendererFile.close();
+        ScopedTimer::VisualRendererOutput = "";
+
+        std::ofstream VisualRendererFileForBrowser(VisualRendererFilePathForBrowser, std::ios::app);
+
+        for(VisualTimeRendererObject CurrentListing : ScopedTimer::VisualRenderer) {
+            std::stringstream ss;
+            ss << CurrentListing.ThreadID;
+
+            auto processID = GET_PROCESS_ID();
+            std::stringstream pidss;
+            pidss << processID;
+
+            ScopedTimer::VisualRendererOutput += ",\n        {\n";
+            ScopedTimer::VisualRendererOutput += "            \"name\": \"" + std::string(CurrentListing.TimerName) + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"cat\": \"ChronosEngineTimer\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"ph\": \"B\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"ts\": \"" + std::to_string(CurrentListing.StartTime) + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"pid\": \"" + pidss.str() + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"tid\": \"" + ss.str() + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"args\": {\n";
+            ScopedTimer::VisualRendererOutput += "                \"functionName\": \"" + std::string(CurrentListing.TimerName) + "\"\n";
+            ScopedTimer::VisualRendererOutput += "            }\n";
+            ScopedTimer::VisualRendererOutput += "        },\n";
+            ScopedTimer::VisualRendererOutput += "        {\n";
+            ScopedTimer::VisualRendererOutput += "            \"name\": \"" + std::string(CurrentListing.TimerName) + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"cat\": \"ChronosEngineTimer\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"ph\": \"E\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"ts\": \"" + std::to_string(CurrentListing.TotalTime + CurrentListing.StartTime) + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"pid\": \"" + pidss.str() + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"tid\": \"" + ss.str() + "\",\n";
+            ScopedTimer::VisualRendererOutput += "            \"args\": {\n";
+            ScopedTimer::VisualRendererOutput += "                \"functionName\": \"" + std::string(CurrentListing.TimerName) + "\"\n";
+            ScopedTimer::VisualRendererOutput += "            }\n";
+            ScopedTimer::VisualRendererOutput += "        }";
+        }
+
+        VisualRendererFileForBrowser << ScopedTimer::VisualRendererOutput;
+        VisualRendererFileForBrowser.close();
 
         ScopedTimer::VisualRendererOutput = "";
         ScopedTimer::VisualRenderer.clear();

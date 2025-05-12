@@ -16,6 +16,15 @@
 // Program imported files
 #include "Settings.h"
 
+// Include libs for the proccess id
+#ifdef _WIN32
+    #include <windows.h>
+    #define GET_PROCESS_ID() GetCurrentProcessId()
+#else
+    #include <unistd.h>
+    #define GET_PROCESS_ID() getpid()
+#endif
+
 // Definitions
 class Time {
     public:
@@ -43,15 +52,15 @@ struct VisualTimeRendererObject {
 class ScopedTimer {
     public:
         static bool LoadToVisualRenderer;
-        static std::vector<VisualTimeRendererObject> VisualRenderer;
         static std::string VisualRendererOutput;
+        static std::vector<VisualTimeRendererObject> VisualRenderer;
 
-        static void StartVisualRenderer(bool Debug, std::string VisualRendererFilePath);
-        static void UpdateVisualRenderer(std::string VisualRendererFilePath);
+        static void UpdateVisualRenderer(std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser);
+        static void StartVisualRenderer(bool Debug, std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser);
 
         ScopedTimer();
-        ScopedTimer(std::string TimerName);
         ScopedTimer(bool UseLog);
+        ScopedTimer(std::string TimerName);
         ScopedTimer(std::string TimerName, bool UseLog);
         ~ScopedTimer();
 
