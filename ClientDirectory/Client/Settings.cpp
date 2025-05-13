@@ -213,10 +213,10 @@ void Settings::LoadSettings(const std::string& LoadSettingsPath) {
 
         std::cout << "Can't load settings. Chronos engine will use defaults\n";
         std::cout << "Settings files should be at\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[0] << "\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[1] << "\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[2] << "\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[3] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string(Args::Game) << Lines[0] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string(Args::Game) << Lines[1] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string(Args::Game) << Lines[2] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string(Args::Game) << Lines[3] << "\n";
 
         // Exit out of the function
         return;
@@ -228,10 +228,10 @@ void Settings::LoadSettings(const std::string& LoadSettingsPath) {
     }
 
     // Load the variables from the file
-    Settings::LoadGraphicsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[0]);
-    Settings::LoadAudioSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[1]);
-    Settings::LoadRenderingSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[2]);
-    Settings::LoadOptionsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[3]);
+    Settings::LoadGraphicsSettings(CurrentPath.string() + "\\" + std::string(Args::Game) + Lines[0]);
+    Settings::LoadAudioSettings(CurrentPath.string() + "\\" + std::string(Args::Game) + Lines[1]);
+    Settings::LoadRenderingSettings(CurrentPath.string() + "\\" + std::string(Args::Game) + Lines[2]);
+    Settings::LoadOptionsSettings(CurrentPath.string() + "\\" + std::string(Args::Game) + Lines[3]);
     
 
 

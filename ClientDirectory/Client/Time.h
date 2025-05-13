@@ -37,7 +37,7 @@ class Time {
 
         static uint64_t FindCurrentTime();
         static void ComupteDeltaTime();
-        static void FillValuesForLoading();
+        static void SetupTime();
         static std::string GetMDYHMS();
         static void Sleep();
 };

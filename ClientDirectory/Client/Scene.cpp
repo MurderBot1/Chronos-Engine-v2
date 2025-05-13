@@ -1,20 +1,24 @@
 // © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
 /* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
-#ifndef Scene_H
-#define Scene_H
+#ifndef Scene_CPP
+#define Scene_CPP
 
-// C++ imported files
-#include <vector>
-#include <string>
+// Include the C++'s .h file
+#include "Scene.h"
 
-// Program imported files
+// Variable redefinitions
+
 
 // Definitions
-class Scene {
-    public:
-        Scene();
-        ~Scene();
-};
+
 
 #endif
+
+Scene::Scene(std::string SceneName) {
+    SceneName.clear();
+}
+
+Scene::~Scene() {
+
+}

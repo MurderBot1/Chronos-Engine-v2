@@ -26,7 +26,6 @@ uint64_t Time::FindCurrentTime() {
 }
 
 void Time::ComupteDeltaTime() {
-    ScopedTimer timer = ScopedTimer("ComupteDeltaTime", true);
     Time::LastFramesTimeInMicroS = Time::CurrentTimeInMicroS;
     Time::CurrentTimeInMicroS = Time::FindCurrentTime();
     Time::DifferenceOfTimeInMicroS = Time::CurrentTimeInMicroS - Time::LastFramesTimeInMicroS;
@@ -34,7 +33,7 @@ void Time::ComupteDeltaTime() {
     Time::FPS = 1/Time::DeltaTime;
 }
 
-void Time::FillValuesForLoading() {
+void Time::SetupTime() {
     Time::CurrentTimeInMicroS = Time::FindCurrentTime() - 10;
     Time::LastFramesTimeInMicroS = 0;
     Time::DifferenceOfTimeInMicroS = 0;
@@ -85,7 +84,7 @@ void ScopedTimer::StartVisualRenderer(bool Debug, std::string VisualRendererFile
 }
 
 void ScopedTimer::UpdateVisualRenderer(std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser) {
-    if(ScopedTimer::LoadToVisualRenderer) {
+    if(ScopedTimer::LoadToVisualRenderer && (!ScopedTimer::VisualRenderer.empty())) {
         std::ofstream VisualRendererFile(VisualRendererFilePath, std::ios::app);
 
         for(VisualTimeRendererObject CurrentListing : ScopedTimer::VisualRenderer) {
@@ -174,11 +173,13 @@ ScopedTimer::~ScopedTimer() {
     uint64_t EndTimeInMicroS = Time::FindCurrentTime();
 
     if(UseLog) {
-        Log::AddInfoLog("CHRONOS TIMER : " + std::string{TimerName} + " took " + std::to_string(EndTimeInMicroS - StartTimeInMicroS) + " microseconds to execute");
+        Log::AddInfoLog("CHRONOS TIMER : " + std::string(TimerName) + " took " + std::to_string(EndTimeInMicroS - StartTimeInMicroS) + " microseconds to execute");
     } else {
-        std::cout << "CHRONOS TIMER : " << TimerName << " took " << (EndTimeInMicroS - StartTimeInMicroS) << " microseconds to execute\n";
+        if(Args::Debug == 1) {
+            std::cout << "CHRONOS TIMER : " << TimerName << " took " << (EndTimeInMicroS - StartTimeInMicroS) << " microseconds to execute\n";
+        }
     }
-
+    
     if(LoadToVisualRenderer) {
         VisualTimeRendererObject TempObject;
 

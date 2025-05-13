@@ -11,7 +11,7 @@
 
 
 // Definitions
-void StartFunction(int argc, char* argv[]) {
+StructuralFunctions::StructuralFunctions(int argc, char *argv[]) {
     // Set the running variable to true
     Exit::StartUpExit();
 
@@ -19,22 +19,28 @@ void StartFunction(int argc, char* argv[]) {
     Args::LoadArgs(argc, argv);
 
     // Load the visual renderer code
-    ScopedTimer::StartVisualRenderer(Args::Debug, CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.ChronosVisRen");
+    ScopedTimer::StartVisualRenderer(Args::Debug, CurrentPath.string() + "\\" + std::string(Args::Game) + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string(Args::Game) + "\\Logs\\VisualRenderer\\BrowserRenderer.json");
 
     // Load the delta time and FPS variables
-    Time::FillValuesForLoading();
+    Time::SetupTime();
 
     // Load the log setup variables
-    Log::SetupLog(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\Logs\\LogSettings.txt");
+    Log::SetupLog(CurrentPath.string() + "\\" + std::string(Args::Game) + "\\Settings\\Logs\\LogSettings.txt");
 
     // Load the settings
-    Settings::LoadSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\PathOfSettingsFiles.txt");
+    Settings::LoadSettings(CurrentPath.string() + "\\" + std::string(Args::Game) + "\\Settings\\PathOfSettingsFiles.txt");
 
     // Start a new thread to keep track of the keyboard
     Keyboard::StartKeyboardThread();
+
+    // Load the current game
+    Game::LoadGame(std::string(Args::Game));
+
+    // Start the game loop up
+    StructuralFunctions::RunLoop();
 }
 
-void LoopFunction() {
+void StructuralFunctions::LoopFunction() {
     // Compute this frames delta time
     Time::ComupteDeltaTime();
 
@@ -46,13 +52,20 @@ void LoopFunction() {
     Log::OutputDataToFile();
 
     // Add the current timings to the file (Debug only)
-    ScopedTimer::UpdateVisualRenderer(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.ChronosVisRen");
+    ScopedTimer::UpdateVisualRenderer(CurrentPath.string() + "\\" + std::string(Args::Game) + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string(Args::Game) + "\\Logs\\VisualRenderer\\BrowserRenderer.json");
 
     // Wait for loop to limit max FPS
     Time::Sleep();
 }
 
-void EndFunction() {
+void StructuralFunctions::RunLoop() {
+    // Run until the game is exited
+    while(Exit::ExitTheMainLoop == false) {
+        LoopFunction();
+    }
+}
+
+StructuralFunctions::~StructuralFunctions() {
     Keyboard::CleanUpKeyboard();
 }
 
