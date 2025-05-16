@@ -7,9 +7,20 @@
 // Included file
 #include "StructuralFunctions.h"
 
+// Other included Libraries
+
+
+// Variable redefinitions
+
+
 // Definitions
 int main(int argc, char* argv[]) {
-    StructuralFunctions CurrentInstance(argc, argv);
+    StartFunction(argc, argv);
+    while(Exit::ExitTheMainLoop == false) {
+        LoopFunction();
+    }
+    EndFunction();
+    return 1;
 }
 
 #endif

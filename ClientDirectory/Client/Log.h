@@ -30,9 +30,9 @@ class Log {
         static std::vector<std::string> Errors;
         static std::vector<std::string> InfoOutputs;
         // Mutex
-        static std::mutex FPS_MX;
-        static std::mutex Errors_MX;
-        static std::mutex InfoInputs_MX;
+        static std::mutex FPSMX;
+        static std::mutex ErrorsMX;
+        static std::mutex InfoInputsMX;
         // Inputs from settings file
         static std::string OutputFilePath;
         static int EveryXFrames;

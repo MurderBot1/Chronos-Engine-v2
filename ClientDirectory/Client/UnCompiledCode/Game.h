@@ -1,23 +1,22 @@
 // © 2025 Trent Cridland, Murderbot1@outlook.com, All Rights Reserved.
 /* Some parts of this engine can be used either for free or for a cost, look at the EngineSections.txt document for more information. */
 
-#ifndef StructuralFunctions_H
-#define StructuralFunctions_H
+#ifndef Game_H
+#define Game_H
 
 // C++ imported files
-#include <iostream>
+#include <vector>
+#include <string>
 
 // Program imported files
-#include "Exit.h"
-#include "Time.h"
-#include "Keyboard.h"
-#include "LimitedFunctions.h"
 #include "Constants.h"
-#include "Args.h"
+#include "Scene.h"
 
 // Definitions
-void StartFunction(int argc, char* argv[]);
-void LoopFunction();
-void EndFunction();
+class Game {
+    public: 
+        Game(std::string FilePath);
+        ~Game();
+};
 
 #endif

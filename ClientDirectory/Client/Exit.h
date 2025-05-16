@@ -15,7 +15,7 @@ class Exit {
     public:
         static void StartUpExit();
         static bool ExitTheMainLoop;
-        static std::mutex Exit_MX;
+        static std::mutex ExitMX;
         static void ExitTheProgram();
 };
 

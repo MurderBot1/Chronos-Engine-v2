@@ -9,16 +9,16 @@
 
 // Variable redefinitions
 bool Exit::ExitTheMainLoop;
-std::mutex Exit::Exit_MX;
+std::mutex Exit::ExitMX;
 
 void Exit::StartUpExit() {
-    std::lock_guard<std::mutex> lock(Exit::Exit_MX);
+    std::lock_guard<std::mutex> lock(Exit::ExitMX);
     Exit::ExitTheMainLoop = false;
 }
 
 // Definitions
 void Exit::ExitTheProgram() {
-    std::lock_guard<std::mutex> lock(Exit::Exit_MX);
+    std::lock_guard<std::mutex> lock(Exit::ExitMX);
     Exit::ExitTheMainLoop = true;
 }
 
