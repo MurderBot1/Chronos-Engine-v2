@@ -26,7 +26,6 @@ uint64_t Time::FindCurrentTime() {
 }
 
 void Time::ComupteDeltaTime() {
-    ScopedTimer timer = ScopedTimer("ComupteDeltaTime", true);
     Time::LastFramesTimeInMicroS = Time::CurrentTimeInMicroS;
     Time::CurrentTimeInMicroS = Time::FindCurrentTime();
     Time::DifferenceOfTimeInMicroS = Time::CurrentTimeInMicroS - Time::LastFramesTimeInMicroS;

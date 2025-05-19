@@ -22,4 +22,8 @@ void Exit::ExitTheProgram() {
     Exit::ExitTheMainLoop = true;
 }
 
+bool Exit::IsExit() {
+    return Exit::ExitTheMainLoop;
+}
+
 #endif

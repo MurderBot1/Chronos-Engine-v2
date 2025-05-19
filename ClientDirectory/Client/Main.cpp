@@ -15,12 +15,7 @@
 
 // Definitions
 int main(int argc, char* argv[]) {
-    StartFunction(argc, argv);
-    while(Exit::ExitTheMainLoop == false) {
-        LoopFunction();
-    }
-    EndFunction();
-    return 1;
+    StructuralFunctions Start(argc, argv);
 }
 
 #endif

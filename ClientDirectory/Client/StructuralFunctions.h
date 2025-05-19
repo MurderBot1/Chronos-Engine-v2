@@ -14,10 +14,15 @@
 #include "LimitedFunctions.h"
 #include "Constants.h"
 #include "Args.h"
+#include "Game.h"
 
 // Definitions
-void StartFunction(int argc, char* argv[]);
-void LoopFunction();
-void EndFunction();
+class StructuralFunctions {
+    public:
+        StructuralFunctions(int argc, char* argv[]);
+        static void LoopFunctions();
+        static void StartLoop();
+        ~StructuralFunctions();
+};
 
 #endif
