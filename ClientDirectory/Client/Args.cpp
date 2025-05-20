@@ -11,6 +11,8 @@
 std::string_view Args::Game;
 std::string_view Args::Save;
 bool Args::Debug;
+int Args::Frames;
+bool Args::UseFrames;
 
 // Definitions
 void Args::LoadArgs(int argc, char *argv[]) {
@@ -36,10 +38,11 @@ void Args::LoadArgs(int argc, char *argv[]) {
     }
 
     // Assign to variable
-    const std::array<std::string_view, 3> CompilerArgs = {
+    const std::array<std::string_view, 4> CompilerArgs = {
         "--game",
         "--save",
-        "--debug"
+        "--debug",
+        "--frames"
     };
 
     for(std::pair<std::string_view, std::string_view> CurrentArgToDecode : ArgListWithMatchingValue) {
@@ -53,6 +56,9 @@ void Args::LoadArgs(int argc, char *argv[]) {
             } else {
                 Args::Debug = true;
             }
+        } else if (CurrentArgToDecode.first == CompilerArgs[3]) { // -- frames
+            Args::Frames = std::stoi(std::string{CurrentArgToDecode.second});
+            Args::UseFrames = true;
         } else if (false) { // Placeholder for future args
 
         } else {

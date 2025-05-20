@@ -72,6 +72,31 @@ void Time::Sleep() {
     }
 }
 
+uint64_t Time::GetCurrentTimeInMicroS() {
+    return Time::CurrentTimeInMicroS;
+}
+
+uint64_t Time::GetLastFramesTimeInMicroS() {
+    return Time::LastFramesTimeInMicroS;
+}
+
+uint64_t Time::GetDifferenceOfTimeInMicroS() {
+    return Time::DifferenceOfTimeInMicroS;
+}
+
+float Time::GetDeltaTime() {
+    return Time::DeltaTime;
+}
+
+float Time::GetFPS() {
+    return Time::FPS;
+}
+
+std::string Time::GetWhenProgramStart() {
+    return Time::WhenProgramStart;
+}
+
+
 void ScopedTimer::StartVisualRenderer(bool Debug, std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser) {
     ScopedTimer::LoadToVisualRenderer = Debug;
     ScopedTimer::VisualRenderer.reserve(1000);

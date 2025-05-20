@@ -57,11 +57,11 @@ void Log::OutputDataToFile() {
     if(!(Log::FramesSinceLastAdd == Log::EveryXFrames)) {return;}
 
     // Open the file
-    std::ofstream OutFile(Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".ChronosLog");
+    std::ofstream OutFile(Log::OutputFilePath + Time::GetWhenProgramStart() + "LogFile" + std::to_string(Log::NumLogFiles) + ".ChronosLog");
     
     // Check if the file is open
     if (!OutFile.is_open()) {
-        std::cout << "Error with : " + Log::OutputFilePath + Time::WhenProgramStart + "LogFile" + std::to_string(Log::NumLogFiles) + ".ChronosLog\n";
+        std::cout << "Error with : " + Log::OutputFilePath + Time::GetWhenProgramStart() + "LogFile" + std::to_string(Log::NumLogFiles) + ".ChronosLog\n";
         return;
     }
 
@@ -97,7 +97,7 @@ void Log::OutputDataToFile() {
 void Log::UpdateCounters() {
     Log::FramesSinceLastAdd += 1;
     std::lock_guard<std::mutex> lock(Log::FPSMX);
-    Log::FPS.push_back(Time::FPS);
+    Log::FPS.push_back(Time::GetFPS());
 }
 
 std::vector<float> Log::ReturnFPSList() {

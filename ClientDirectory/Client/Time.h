@@ -12,6 +12,7 @@
 #include <sstream>
 #include <thread>
 #include <iostream>
+#include <mutex>
 
 // Program imported files
 #include "Settings.h"
@@ -28,18 +29,32 @@
 // Definitions
 class Time {
     public:
+        static void Sleep();
+        static uint64_t FindCurrentTime();
+        static void ComupteDeltaTime();
+        static void FillValuesForLoading();
+        static std::string GetMDYHMS();
+
+        static uint64_t GetCurrentTimeInMicroS();
+        static uint64_t GetLastFramesTimeInMicroS();
+        static uint64_t GetDifferenceOfTimeInMicroS();
+        static float GetDeltaTime();
+        static float GetFPS();
+        static std::string GetWhenProgramStart();
+    private:
         static uint64_t CurrentTimeInMicroS;
         static uint64_t LastFramesTimeInMicroS;
         static uint64_t DifferenceOfTimeInMicroS;
         static float DeltaTime;
         static float FPS;
         static std::string WhenProgramStart;
-
-        static uint64_t FindCurrentTime();
-        static void ComupteDeltaTime();
-        static void FillValuesForLoading();
-        static std::string GetMDYHMS();
-        static void Sleep();
+        
+        static std::mutex CurrentTimeInMicroS_MX;
+        static std::mutex LastFramesTimeInMicroS_MX;
+        static std::mutex DifferenceOfTimeInMicroS_MX;
+        static std::mutex DeltaTime_MX;
+        static std::mutex FPS_MX;
+        static std::mutex WhenProgramStart_MX;
 };
 
 struct VisualTimeRendererObject {

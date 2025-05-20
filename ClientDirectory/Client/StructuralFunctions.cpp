@@ -50,9 +50,11 @@ void StructuralFunctions::LoopFunctions() {
 
     // Reset all limited functions
     LimitedFunction::ResetAllLimitedFunctions();
+    
+    // Update the log info
+    Log::UpdateCounters();
 
     // Create a new log file
-    Log::UpdateCounters();
     Log::OutputDataToFile();
 
     // Add the current timings to the file (Debug only)
