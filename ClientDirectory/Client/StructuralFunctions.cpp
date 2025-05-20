@@ -19,7 +19,11 @@ StructuralFunctions::StructuralFunctions(int argc, char* argv[]) {
     Args::LoadArgs(argc, argv);
 
     // Load the visual renderer code
-    ScopedTimer::StartVisualRenderer(Args::Debug, CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.json");
+    ScopedTimer::StartVisualRenderer(
+        Args::Debug, 
+        CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", 
+        CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.json"
+    );
 
     // Load the delta time and FPS variables
     Time::FillValuesForLoading();
@@ -34,7 +38,7 @@ StructuralFunctions::StructuralFunctions(int argc, char* argv[]) {
     Keyboard::StartKeyboardThread();
 
     // Load the game 
-    Game::LoadGame(std::string{Args::Game});
+    Game::LoadGame(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Scenes.ChrScenes");
 
     // Start the game loop
     StartLoop();
@@ -52,7 +56,7 @@ void StructuralFunctions::LoopFunctions() {
     Log::OutputDataToFile();
 
     // Add the current timings to the file (Debug only)
-    ScopedTimer::UpdateVisualRenderer(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.json");
+    ScopedTimer::UpdateVisualRenderer();
 
     // Wait for loop to limit max FPS
     Time::Sleep();

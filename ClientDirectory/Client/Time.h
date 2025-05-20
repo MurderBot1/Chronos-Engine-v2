@@ -55,8 +55,12 @@ class ScopedTimer {
         static std::string VisualRendererOutput;
         static std::vector<VisualTimeRendererObject> VisualRenderer;
 
-        static void UpdateVisualRenderer(std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser);
+        static std::string VisualRendererPath;
+        static std::string BrowserRendererPath;
+        
+
         static void StartVisualRenderer(bool Debug, std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser);
+        static void UpdateVisualRenderer();
 
         ScopedTimer();
         ScopedTimer(bool UseLog);

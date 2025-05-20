@@ -17,6 +17,8 @@ std::string Time::WhenProgramStart;
 bool ScopedTimer::LoadToVisualRenderer;
 std::vector<VisualTimeRendererObject> ScopedTimer::VisualRenderer;
 std::string ScopedTimer::VisualRendererOutput;
+std::string ScopedTimer::VisualRendererPath;
+std::string ScopedTimer::BrowserRendererPath;
 
 // Definitions
 uint64_t Time::FindCurrentTime() {
@@ -81,11 +83,14 @@ void ScopedTimer::StartVisualRenderer(bool Debug, std::string VisualRendererFile
     std::ofstream VisualRendererFileForBrowser(VisualRendererFilePathForBrowser);
     VisualRendererFileForBrowser << "{\n    \"traceEvents\": [\n";
     VisualRendererFileForBrowser.close();
+
+    ScopedTimer::VisualRendererPath = VisualRendererFilePath;
+    ScopedTimer::BrowserRendererPath = VisualRendererFilePathForBrowser;
 }
 
-void ScopedTimer::UpdateVisualRenderer(std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser) {
+void ScopedTimer::UpdateVisualRenderer() {
     if(ScopedTimer::LoadToVisualRenderer) {
-        std::ofstream VisualRendererFile(VisualRendererFilePath, std::ios::app);
+        std::ofstream VisualRendererFile(ScopedTimer::VisualRendererPath, std::ios::app);
 
         for(VisualTimeRendererObject CurrentListing : ScopedTimer::VisualRenderer) {
             std::stringstream ss;
@@ -103,7 +108,7 @@ void ScopedTimer::UpdateVisualRenderer(std::string VisualRendererFilePath, std::
         VisualRendererFile.close();
         ScopedTimer::VisualRendererOutput = "";
 
-        std::ofstream VisualRendererFileForBrowser(VisualRendererFilePathForBrowser, std::ios::app);
+        std::ofstream VisualRendererFileForBrowser(ScopedTimer::BrowserRendererPath, std::ios::app);
 
         for(VisualTimeRendererObject CurrentListing : ScopedTimer::VisualRenderer) {
             std::stringstream ss;

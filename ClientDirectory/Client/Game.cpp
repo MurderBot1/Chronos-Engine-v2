@@ -21,15 +21,24 @@ std::vector<std::weak_ptr<int>> Game::LoadedImages;
 std::vector<std::weak_ptr<int>> Game::LoadedVideos;
 
 // Definitions
-
-
-#endif
+std::vector<std::string> Game::ListOfLoadedAndUnloadedScenes;
 
 void Game::LoadGame(std::string FilePath) {
-    std::ifstream Scenes(FilePath + "/Scenes.ChrScenes");
+    std::ifstream Scenes(FilePath);
 
-    if(!Scenes) {
+    if(!Scenes.is_open()) {
         Exit::ExitTheProgram();
+        Scenes.close();
+        std::cout << "There are no scenes in to project\n";
+        return;
+    }
+
+    std::string Line;
+
+    while(std::getline(Scenes, Line)) {
+        Game::ListOfLoadedAndUnloadedScenes.push_back(
+            CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Scenes\\" + Line + "\\"
+        );
     }
 
     Scenes.close();
@@ -43,3 +52,6 @@ void Game::UnloadScene(std::shared_ptr<Scene> Scene) {
         Game::LoadedScenes.end()
     );
 }
+
+
+#endif

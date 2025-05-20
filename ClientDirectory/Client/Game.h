@@ -10,10 +10,13 @@
 #include <memory>
 #include <fstream>
 #include <algorithm>
+#include <iostream>
 
 // Program imported files
 #include "Scene.h"
 #include "Exit.h"
+#include "Args.h"
+#include "Constants.h"
 
 // Definitions
 class Game {
@@ -24,6 +27,7 @@ class Game {
     private:
         // Loaded scenes
         static std::vector<std::shared_ptr<Scene>> LoadedScenes;
+        static std::vector<std::string> ListOfLoadedAndUnloadedScenes;
 
         // Basic objects
         static std::vector<std::weak_ptr<int>> LoadedObjects;
