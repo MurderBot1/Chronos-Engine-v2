@@ -18,6 +18,7 @@
 #include "Time.h"
 #include "Constants.h"
 #include "Args.h"
+#include "Game.h"
 
 // Definitions
 class Log {
@@ -39,7 +40,7 @@ class Log {
 
     public:
         // Functions
-        static void SetupLog(const std::string& LogSettingsFile);
+        static void SetupLog();
         template <typename T>
         static std::string FunctionNameToString(T Func);
         static void OutputDataToFile();

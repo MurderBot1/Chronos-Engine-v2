@@ -16,6 +16,9 @@
 #endif
 
 Scene::Scene(std::string FilePath) {
+    // Load identity
+    Identity.LoadIdentity();
+
     std::ifstream LoadScene(FilePath + ".ChrScene");
 
     LoadScene.close();

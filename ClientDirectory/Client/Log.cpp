@@ -20,9 +20,9 @@ std::mutex Log::ErrorsMX;
 std::mutex Log::InfoInputsMX;
 
 // Definitions
-void Log::SetupLog(const std::string& LogSettingsFile) {
+void Log::SetupLog() {   
     constexpr int NumLines = LogValues::LINES_IN_LOG_SETUP_FILE;
-    std::ifstream SettingsFile(LogSettingsFile);
+    std::ifstream SettingsFile(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\Logs\\LogSettings.txt");
     std::array<std::string, NumLines> Lines;
     std::string Line;
     size_t Index = INDEX_START;
@@ -45,6 +45,10 @@ void Log::SetupLog(const std::string& LogSettingsFile) {
     Log::EveryXFrames = std::stoi(Lines[0]);
     Log::OutputFilePath = CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[1];
     FPS.reserve(EveryXFrames);
+
+    // Create log paths
+    std::filesystem::create_directory(Log::OutputFilePath);
+    std::filesystem::create_directory(Log::OutputFilePath + "VisualRenderer\\");
 }
 
 template <typename T>

@@ -19,12 +19,14 @@
 class Keyboard {
     private:
         // Is running
-        static std::shared_mutex KeyboardRunningMX;
+        static std::mutex KeyboardRunning_MX;
         static bool KeyboardRunning;
+        static std::mutex MainKeyboardRunning_MX;
+        static bool MainKeyboardRunning;
 
         // Mutex and thread
         static std::thread KeyboardThread;
-        static std::shared_mutex KeyCodesMX;
+        static std::mutex KeyCodesMX;
         static std::array<bool, 65536> KeyCodes;
         
         // Detection
@@ -35,6 +37,7 @@ class Keyboard {
     public:
         // Changing is running
         static void StopRunning();
+        static void StartRunning();
 
         // Reading detected results
         static std::array<bool, 65536> ReadOutAllCodes();

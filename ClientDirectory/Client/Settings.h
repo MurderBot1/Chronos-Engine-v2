@@ -21,7 +21,7 @@
 // Definitions
 class Settings {
     public:
-        static void LoadSettings(const std::string& LoadSettingsPath);
+        static void LoadSettings();
 
         // Graphics
             static SettingsValues::GraphicLevels DecodeGraphicLevels(const std::string& GraphicLevel);

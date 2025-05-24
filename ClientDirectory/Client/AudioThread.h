@@ -6,6 +6,8 @@
 
 // C++ imported files
 #include <thread>
+#include <mutex>
+#include <iostream>
 
 // Program imported files
 
@@ -13,10 +15,19 @@
 // Definitions
 class AudioThread {
     public:
-        AudioThread();
-        ~AudioThread(); 
+        static void StartAudioThread();
+        static void StopAudioThread();
+        static void CleanUpAudioThread();
 
+        static void OutputAudio();
+
+        static void AudioThreadSetupWork();
+
+    private:
         static std::thread Thread;
+
+        static bool AudioRunning;
+        static std::mutex AudioRunning_MX;
 };
 
 #endif

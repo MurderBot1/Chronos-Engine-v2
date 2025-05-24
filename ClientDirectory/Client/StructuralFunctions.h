@@ -15,13 +15,16 @@
 #include "Constants.h"
 #include "Args.h"
 #include "Game.h"
+#include "ClassIdentifier.h"
+#include "AudioThread.h"
+#include "FrameDebugger.h"
 
 // Definitions
 class StructuralFunctions {
     public:
         StructuralFunctions(int argc, char* argv[]);
-        static void LoopFunctions();
         static void StartLoop();
+        static void LoopFunctions();
         ~StructuralFunctions();
 };
 

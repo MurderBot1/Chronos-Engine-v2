@@ -18,3 +18,7 @@ Build/TestsEXE/
 
 # Ignore .ChronosLog
 *.ChronosLog
+
+# Ignore logs
+GameFolder/ExampleGame/FrameDebugData
+GameFolder/ExampleGame/Logs

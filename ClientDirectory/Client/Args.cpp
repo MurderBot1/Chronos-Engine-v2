@@ -13,6 +13,7 @@ std::string_view Args::Save;
 bool Args::Debug;
 int Args::Frames;
 bool Args::UseFrames;
+bool Args::UseFrameDebug;
 
 // Definitions
 void Args::LoadArgs(int argc, char *argv[]) {
@@ -38,12 +39,16 @@ void Args::LoadArgs(int argc, char *argv[]) {
     }
 
     // Assign to variable
-    const std::array<std::string_view, 4> CompilerArgs = {
+    const std::array<std::string_view, 5> CompilerArgs = {
         "--game",
         "--save",
         "--debug",
-        "--frames"
+        "--frames",
+        "--useframedebug"
     };
+
+    Args::Debug = true;
+    Args::UseFrameDebug = false;
 
     for(std::pair<std::string_view, std::string_view> CurrentArgToDecode : ArgListWithMatchingValue) {
         if(CurrentArgToDecode.first == CompilerArgs[0]) { // --game
@@ -59,6 +64,12 @@ void Args::LoadArgs(int argc, char *argv[]) {
         } else if (CurrentArgToDecode.first == CompilerArgs[3]) { // -- frames
             Args::Frames = std::stoi(std::string{CurrentArgToDecode.second});
             Args::UseFrames = true;
+        } else if (CurrentArgToDecode.first == CompilerArgs[4]) { // --useframedebug
+            if(CurrentArgToDecode.second == "true") {
+                Args::UseFrameDebug = true;
+            } else {
+                Args::UseFrameDebug = false;
+            }
         } else if (false) { // Placeholder for future args
 
         } else {
@@ -66,6 +77,15 @@ void Args::LoadArgs(int argc, char *argv[]) {
             std::cout << CurrentArgToDecode.first << " is not a valid argument\n";
         }
     }
+}
+
+void Args::DeIncrementFrames() {
+    if(Frames > 1) {
+        Frames--;
+        return;
+    }
+
+    Exit::ExitTheProgram();
 }
 
 #endif

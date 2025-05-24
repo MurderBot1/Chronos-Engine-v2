@@ -74,7 +74,7 @@ class ScopedTimer {
         static std::string BrowserRendererPath;
         
 
-        static void StartVisualRenderer(bool Debug, std::string VisualRendererFilePath, std::string VisualRendererFilePathForBrowser);
+        static void StartVisualRenderer();
         static void UpdateVisualRenderer();
 
         ScopedTimer();

@@ -19,11 +19,13 @@
 class Args {
     public:
         static void LoadArgs(int argc, char* argv[]);
+        static void DeIncrementFrames();
         static std::string_view Game;
         static std::string_view Save;
         static bool Debug;
         static int Frames;
         static bool UseFrames;
+        static bool UseFrameDebug;
 };
 
 #endif

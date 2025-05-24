@@ -10,23 +10,54 @@
 // Variable redefinitions
 std::thread Keyboard::KeyboardThread;
 std::array<bool, 65536> Keyboard::KeyCodes;
-std::shared_mutex Keyboard::KeyCodesMX;
-std::shared_mutex Keyboard::KeyboardRunningMX;
+std::mutex Keyboard::KeyCodesMX;
+std::mutex Keyboard::KeyboardRunning_MX;
 bool Keyboard::KeyboardRunning;
+std::mutex Keyboard::MainKeyboardRunning_MX;
+bool Keyboard::MainKeyboardRunning;
 
 // Definitions
+void Keyboard::StartKeyboardThread() {
+    // Set the keyboard to the running state
+    std::lock_guard<std::mutex> LockUnderLoop(Keyboard::KeyCodesMX);
+    Keyboard::KeyboardRunning = true;
+    std::lock_guard<std::mutex> LockOverLoop(Keyboard::MainKeyboardRunning_MX);
+    Keyboard::MainKeyboardRunning = true;
+
+    // Create a thread and then swap the task
+    std::thread TempThread(LoopedDetectIfKeysArePressed);
+    Keyboard::KeyboardThread.swap(TempThread);
+}
+
+void Keyboard::CleanUpKeyboard() {
+    // Stop the inner loop
+    Keyboard::StopRunning();
+
+    { // Set the main running to false
+        std::lock_guard<std::mutex> Lock(Keyboard::MainKeyboardRunning_MX);
+        Keyboard::MainKeyboardRunning = false;
+    } // Lock guard goes out of scope
+
+    Keyboard::KeyboardThread.join();
+}
+
 void Keyboard::StopRunning() {
-    std::unique_lock<std::shared_mutex> lock(Keyboard::KeyboardRunningMX);
+    std::unique_lock<std::mutex> Lock(Keyboard::KeyboardRunning_MX);
     Keyboard::KeyboardRunning = false;
 }
 
+void Keyboard::StartRunning() {
+    std::unique_lock<std::mutex> Lock(Keyboard::KeyboardRunning_MX);
+    Keyboard::KeyboardRunning = true;
+}
+
 std::array<bool, 65536> Keyboard::ReadOutAllCodes() {
-    std::shared_lock<std::shared_mutex> lock(Keyboard::KeyCodesMX);
+    std::lock_guard<std::mutex> Lock(Keyboard::KeyCodesMX);
     return Keyboard::KeyCodes;
 }
 
 bool Keyboard::ReadOutCode(uint16_t Code) {
-    std::shared_lock<std::shared_mutex> lock(Keyboard::KeyCodesMX);
+    std::lock_guard<std::mutex> Lock(Keyboard::KeyCodesMX);
     return Keyboard::KeyCodes[Code];
 }
 
@@ -49,34 +80,36 @@ std::array<bool, 65536> Keyboard::DetectIfKeysArePressed() {
 }
 
 void Keyboard::LoopedDetectIfKeysArePressed() {
-    while (true) {
-        { // Check if keyboard is running
-            std::shared_lock<std::shared_mutex> lock(Keyboard::KeyboardRunningMX);
-            if(!(Keyboard::KeyboardRunning)) { return; }
-        } // Release the lock on keyboardRunningMX
+    bool MainKeyboardLoopIsRunning = true; // Set up a main scope is running var
 
-        { // Detect if the keycodes are pressed
-            std::array<bool, 65536> TempMap;
-            TempMap = Keyboard::DetectIfKeysArePressed();
-            std::unique_lock<std::shared_mutex> lock(Keyboard::KeyCodesMX);
-            Keyboard::KeyCodes = std::array<bool, 65536>{};
-            Keyboard::KeyCodes = TempMap;
+    { // Add scope to auto release the lock
+        std::lock_guard<std::mutex> Lock(Keyboard::MainKeyboardRunning_MX);
+        MainKeyboardLoopIsRunning = Keyboard::MainKeyboardRunning;
+    } // Relases the lock
+
+    while(MainKeyboardLoopIsRunning) {
+        bool KeyboardIsRunning; // Set up a secondary scope is running var
+
+        { // Add scope to auto release the lock
+            std::lock_guard<std::mutex> Lock(Keyboard::KeyboardRunning_MX);
+            KeyboardIsRunning = Keyboard::KeyboardRunning;
+        } // Relases the lock
+
+        if(KeyboardIsRunning) {
+            { // Detect if the keycodes are pressed
+                std::array<bool, 65536> TempMap;
+                TempMap = Keyboard::DetectIfKeysArePressed();
+                std::unique_lock<std::mutex> Lock(Keyboard::KeyCodesMX);
+                Keyboard::KeyCodes = std::array<bool, 65536>{};
+                Keyboard::KeyCodes = TempMap;
+            }
         }
+
+        { // Add scope to auto release the lock
+            std::lock_guard<std::mutex> Lock(Keyboard::MainKeyboardRunning_MX);
+            MainKeyboardLoopIsRunning = Keyboard::MainKeyboardRunning;
+        } // Relases the lock
     }
-}
-
-void Keyboard::StartKeyboardThread() {
-    // Set the keyboard to the running state
-    Keyboard::KeyboardRunning = true;
-
-    // Create a thread and then swap the task
-    std::thread TempThread(LoopedDetectIfKeysArePressed);
-    Keyboard::KeyboardThread.swap(TempThread);
-}
-
-void Keyboard::CleanUpKeyboard() {
-    Keyboard::StopRunning();
-    Keyboard::KeyboardThread.join();
 }
 
 #endif

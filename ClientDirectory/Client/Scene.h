@@ -11,13 +11,16 @@
 #include <fstream>
 
 // Program imported files
-
+#include "ClassIdentifier.h"
 
 // Definitions
 class Scene {
     public:
         Scene(std::string FilePath);
         ~Scene();
+        
+        // Unique identity
+        IdentityToken Identity;
         
     private:
         // Basic objects

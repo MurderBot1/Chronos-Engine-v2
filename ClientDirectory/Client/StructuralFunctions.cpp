@@ -18,60 +18,75 @@ StructuralFunctions::StructuralFunctions(int argc, char* argv[]) {
     // Load in the commands that were run with the .exe
     Args::LoadArgs(argc, argv);
 
+    // Start the identitifier tokens
+    IdentityToken::StartIdentityToken();
+
     // Load the visual renderer code
-    ScopedTimer::StartVisualRenderer(
-        Args::Debug, 
-        CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\VisualRenderer.ChronosVisRen", 
-        CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Logs\\VisualRenderer\\BrowserRenderer.json"
-    );
+    ScopedTimer::StartVisualRenderer();
 
     // Load the delta time and FPS variables
     Time::FillValuesForLoading();
 
     // Load the log setup variables
-    Log::SetupLog(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\Logs\\LogSettings.txt");
+    Log::SetupLog();
 
     // Load the settings
-    Settings::LoadSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\PathOfSettingsFiles.txt");
+    Settings::LoadSettings();
+
+    // Startup the frame debugger (only if "--useframedebug true" is in arguments)
+    FrameDebug::SetupFrameDebugger();
 
     // Start a new thread to keep track of the keyboard
     Keyboard::StartKeyboardThread();
 
+    // Start the audio thread
+    AudioThread::StartAudioThread();
+
     // Load the game 
-    Game::LoadGame(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Scenes.ChrScenes");
+    Game::LoadGame();
 
     // Start the game loop
-    StartLoop();
+    StructuralFunctions::StartLoop();
+}
+
+void StructuralFunctions::StartLoop() {
+    while(Exit::IsExit() == false) {
+        StructuralFunctions::LoopFunctions();
+    }
 }
 
 void StructuralFunctions::LoopFunctions() {
     // Compute this frames delta time
     Time::ComupteDeltaTime();
-
+    
     // Reset all limited functions
     LimitedFunction::ResetAllLimitedFunctions();
     
     // Update the log info
     Log::UpdateCounters();
-
+    
     // Create a new log file
     Log::OutputDataToFile();
-
+    
     // Add the current timings to the file (Debug only)
     ScopedTimer::UpdateVisualRenderer();
-
+    
+    // Deincrement frames
+    Args::DeIncrementFrames();
+    
+    // Create debug file
+    FrameDebug::SaveFrameData();
+    
     // Wait for loop to limit max FPS
     Time::Sleep();
 }
 
-void StructuralFunctions::StartLoop() {
-    while(Exit::IsExit() == false) {
-        LoopFunctions();
-    }
-}
-
 StructuralFunctions::~StructuralFunctions() {
+    // Wait for the keyboard thread to stop
     Keyboard::CleanUpKeyboard();
+
+    // Wait for the audio thread to stop
+    AudioThread::CleanUpAudioThread();
 }
 
 #endif

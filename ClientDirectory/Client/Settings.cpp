@@ -26,6 +26,49 @@ bool Settings::GPURendering; // Does the engine use the GPU
 float Settings::Volume; // The current volume multipier for the engine
 float Settings::AADropoff; // The amount that the color drops of in the antiA. function
 
+void Settings::LoadSettings() {
+    // Options
+    // Define the variables to load the file in
+    std::ifstream SettingsFile(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\Settings\\PathOfSettingsFiles.txt");
+    std::array<std::string, SettingsValues::LINES_IN_LOAD_SETTINGS_SETUP_FILE> Lines;
+    std::string Line;
+    size_t Index = INDEX_START;
+
+    // Check if the file can be opened
+    if(!SettingsFile.is_open()) {
+        // Set default settings
+        Settings::LoadGraphicsSettings("");
+        Settings::LoadAudioSettings("");
+        Settings::LoadRenderingSettings("");
+        Settings::LoadOptionsSettings("");
+
+        std::cout << "Can't load settings. Chronos engine will use defaults\n";
+        std::cout << "Settings files should be at\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[0] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[1] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[2] << "\n";
+        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[3] << "\n";
+
+        // Exit out of the function
+        return;
+    };
+
+    // Load the file in
+    while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_LOAD_SETTINGS_SETUP_FILE) {
+        Lines[Index++] = Line;
+    }
+
+    // Load the variables from the file
+    Settings::LoadGraphicsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[0]);
+    Settings::LoadAudioSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[1]);
+    Settings::LoadRenderingSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[2]);
+    Settings::LoadOptionsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[3]);
+    
+
+
+    SettingsFile.close(); // Close the file
+}
+
 void Settings::LoadGraphicsSettings(const std::string& FilePath) {
     // Graphics
     // Define the variables to load the file in
@@ -192,50 +235,6 @@ void Settings::LoadOptionsSettings(const std::string& FilePath) {
     SettingsFile.close(); // Close the file
 
     return;
-}
-
-
-void Settings::LoadSettings(const std::string& LoadSettingsPath) {
-    // Options
-    // Define the variables to load the file in
-    std::ifstream SettingsFile(LoadSettingsPath);
-    std::array<std::string, SettingsValues::LINES_IN_LOAD_SETTINGS_SETUP_FILE> Lines;
-    std::string Line;
-    size_t Index = INDEX_START;
-
-    // Check if the file can be opened
-    if(!SettingsFile.is_open()) {
-        // Set default settings
-        Settings::LoadGraphicsSettings("");
-        Settings::LoadAudioSettings("");
-        Settings::LoadRenderingSettings("");
-        Settings::LoadOptionsSettings("");
-
-        std::cout << "Can't load settings. Chronos engine will use defaults\n";
-        std::cout << "Settings files should be at\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[0] << "\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[1] << "\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[2] << "\n";
-        std::cout << CurrentPath.string() << "\\" << std::string{Args::Game} << Lines[3] << "\n";
-
-        // Exit out of the function
-        return;
-    };
-
-    // Load the file in
-    while (std::getline(SettingsFile, Line) && Index < SettingsValues::LINES_IN_LOAD_SETTINGS_SETUP_FILE) {
-        Lines[Index++] = Line;
-    }
-
-    // Load the variables from the file
-    Settings::LoadGraphicsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[0]);
-    Settings::LoadAudioSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[1]);
-    Settings::LoadRenderingSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[2]);
-    Settings::LoadOptionsSettings(CurrentPath.string() + "\\" + std::string{Args::Game} + Lines[3]);
-    
-
-
-    SettingsFile.close(); // Close the file
 }
 
 SettingsValues::GraphicLevels Settings::DecodeGraphicLevels(const std::string& GraphicLevel){
