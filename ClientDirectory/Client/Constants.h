@@ -24,6 +24,32 @@ namespace LogValues {
     constexpr uint8_t LINES_IN_LOG_SETUP_FILE = 2;
 }
 
+namespace ChronosPixel {
+    struct RGB {
+        uint16_t R, G, B;
+    };
+
+    struct LightLevel {
+        uint16_t Level;
+    };
+
+    struct ScreenLocation {
+        int X, Y;    
+    };
+
+    struct Pixel {
+        RGB Color;
+        LightLevel Brightness;
+        ScreenLocation Location;
+    };
+}
+
+namespace RendererInfo {
+    struct Direction {
+        float X, Y, Z;
+    };
+}
+
 namespace SettingsValues {
     enum GraphicLevels {
         UltraLow,
