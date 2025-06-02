@@ -20,23 +20,38 @@ Chronos Engine is a graphics engine that has a goal of making videogames and oth
 We try and make it as easy as possible to get started creating your first project or game.
 ***
 ### Windows
-- 
+- Go to the releases tab of github on the right
+- Go to the version that you want
+- Download the .exe installer
+- Run the installer
 ***
 ### Mac
-- 
+- Go to the releases tab of github on the right
+- Go to the version that you want
+- Download the binary installer
+- Run the installer
 ***
 ### Linux
-- 
+- Go to the releases tab of github on the right
+- Go to the version that you want
+- Download the binary installer
+- Run the installer
 ***
 ### How To Build (Development)
 We try to make building Chronos Engine as easy as possible to allow for easy development of 3rd party packages and resorces. 
 ***
 ### Windows
-- 
+- Clone this repo
+- Install G++ or GCC from the officail page
+- Build the repo with the biuld command in the build directory for the application you want (Client / Engine / Server)
 ***
 ### Mac
-- 
+- Clone this repo
+- Install G++ or GCC from the officail page
+- Build the repo with the biuld command in the build directory for the application you want (Client / Engine / Server)
 ***
 ### Linux
-- 
+- Clone this repo
+- Install G++ or GCC from the officail page
+- Build the repo with the biuld command in the build directory for the application you want (Client / Engine / Server)
 ***
