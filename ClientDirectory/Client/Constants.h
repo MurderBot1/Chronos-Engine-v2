@@ -6,9 +6,13 @@
 
 // C++ imported files
 #include <string>
+#include <vector>
+#include <array>
 #include <cstdint>
 #include <string_view>
 #include <filesystem>
+#include <unordered_map>
+#include <algorithm>
 
 // Definitions
 const std::filesystem::path CurrentPath = std::filesystem::current_path();

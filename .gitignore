@@ -22,3 +22,9 @@ Build/TestsEXE/
 # Ignore logs
 GameFolder/ExampleGame/FrameDebugData
 GameFolder/ExampleGame/Logs
+
+# Ignore copyright
+Copyright and Other Info/
+
+# Ignore launcher
+LauncherDirectory/
