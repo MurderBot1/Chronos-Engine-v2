@@ -28,3 +28,9 @@ Copyright and Other Info/
 
 # Ignore launcher
 LauncherDirectory/
+
+# Ignore chronos script
+ChronosScript/
+
+# Ignore graphics card interactions
+GraphicsCardInteractions/
