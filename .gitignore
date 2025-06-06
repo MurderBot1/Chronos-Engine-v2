@@ -24,13 +24,13 @@ GameFolder/ExampleGame/FrameDebugData
 GameFolder/ExampleGame/Logs
 
 # Ignore copyright
-Copyright and Other Info/
+CopyrightandOtherInfo/
 
 # Ignore launcher
 LauncherDirectory/
 
 # Ignore chronos script
-ChronosScript/
+ChronosScripting/
 
 # Ignore graphics card interactions
-GraphicsCardInteractions/
+GPUInteractions/
