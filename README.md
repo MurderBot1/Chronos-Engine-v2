@@ -3,7 +3,7 @@ THIS REPO IS UNDER DEVELOPMENT SOME OF THESE THINGS ARE NOT OFFERED AT THIS TIME
 ***
 ### Other Things
 - The code right now is very slow I havn't optimised it yet
-- The keyboard scripts do not register keys right now
+- The keyboard scripts do not register keys right now (writing a program to do this)
 - The point of this library is for me to learn how to do a lot of things in RAW (No outside libs) C++
 - There is no veiwport on the editor or client (I am currently developing my own app builder for Mac, Linux, and Windows)
 ***
