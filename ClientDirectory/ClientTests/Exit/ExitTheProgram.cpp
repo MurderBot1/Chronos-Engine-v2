@@ -15,7 +15,7 @@
 int main() {
     Exit::StartUpExit();
     Exit::ExitTheProgram();
-    if(Exit::ExitTheMainLoop == true) {
+    if(Exit::IsExit() == true) {
         std::cout << "Test : ExitTheProgram(); in Client/Exit.h - Passed\n";
     } else {
         std::cout << "Test : ExitTheProgram(); in Client/Exit.h - Failed !!!\n";
