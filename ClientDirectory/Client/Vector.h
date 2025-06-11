@@ -9,6 +9,11 @@
 #include <array>
 
 // Definitions
+#define NULL_Vec1 {0}
+#define NULL_Vec2 {0, 0}
+#define NULL_Vec3 {0, 0, 0}
+#define NULL_Vec4 {0, 0, 0, 0}
+
 namespace Vector {
     template<typename T>
     class Vector1 {
@@ -73,6 +78,153 @@ namespace Vector {
             Vector3(const std::vector<T> &Value);
             Vector3(T Xvalue, T Yvalue, T Zvalue);
             Vector3(std::array<T, 3> Value);
+
+            // Int operators
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator+(const Vector3& Other) const {
+                return Vector3(X + Other.X, Y + Other.Y, Z + Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator-(const Vector3& Other) const {
+                return Vector3(X - Other.X, Y - Other.Y, Z - Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator*(const Vector3& Other) const {
+                return Vector3(X * Other.X, Y * Other.Y, Z * Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator/(const Vector3& Other) const {
+                return Vector3(X / Other.X, Y / Other.Y, Z / Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator+(T Other) const {
+                return Vector3(X + Other, Y + Other, Z + Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator-(T Other) const {
+                return Vector3(X - Other, Y - Other, Z - Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator*(T Other) const {
+                return Vector3(X * Other, Y * Other, Z * Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
+            operator/(T Other) const {
+                return Vector3(X / Other, Y / Other, Z / Other);
+            }
+
+            // Float operators
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator+(const Vector3& Other) const {
+                return Vector3(X + Other.X, Y + Other.Y, Z + Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator-(const Vector3& Other) const {
+                return Vector3(X - Other.X, Y - Other.Y, Z - Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator*(const Vector3& Other) const {
+                return Vector3(X * Other.X, Y * Other.Y, Z * Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator/(const Vector3& Other) const {
+                return Vector3(X / Other.X, Y / Other.Y, Z / Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator+(T Other) const {
+                return Vector3(X + Other, Y + Other, Z + Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator-(T Other) const {
+                return Vector3(X - Other, Y - Other, Z - Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator*(T Other) const {
+                return Vector3(X * Other, Y * Other, Z * Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
+            operator/(T Other) const {
+                return Vector3(X / Other, Y / Other, Z / Other);
+            }       
+
+            // Double operators
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator+(const Vector3& Other) const {
+                return Vector3(X + Other.X, Y + Other.Y, Z + Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator-(const Vector3& Other) const {
+                return Vector3(X - Other.X, Y - Other.Y, Z - Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator*(const Vector3& Other) const {
+                return Vector3(X * Other.X, Y * Other.Y, Z * Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator/(const Vector3& Other) const {
+                return Vector3(X / Other.X, Y / Other.Y, Z / Other.Z);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator+(T Other) const {
+                return Vector3(X + Other, Y + Other, Z + Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator-(T Other) const {
+                return Vector3(X - Other, Y - Other, Z - Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator*(T Other) const {
+                return Vector3(X * Other, Y * Other, Z * Other);
+            }
+
+            template <typename U = T>
+            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
+            operator/(T Other) const {
+                return Vector3(X / Other, Y / Other, Z / Other);
+            }            
         public:
             T X;
             T Y;

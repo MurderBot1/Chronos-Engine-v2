@@ -5,44 +5,60 @@
 #define LocationClass_H
 
 // C++ imported files
-
+#include <mutex>
 
 // Program imported files
 #include "Vector.h"
 
 // Definitions
-class LocatoinClass {
+class LocationClass {
     public:
         // Location
         void SetLocation(Vector::Vector3<float> Location);
-        void SetLocation(const std::vector<float> &Value);
-        void SetLocation(float Xvalue, float Yvalue, float Zvalue);
-        void SetLocation(std::array<float, 3> Value);
+        void SetLocation(const std::vector<float> &Location);
+        void SetLocation(float XLocation, float YLocation, float ZLocation);
+        void SetLocation(std::array<float, 3> Location);
         void Translate(Vector::Vector3<float> Location);
-        void Translate(const std::vector<float> &Value);
-        void Translate(float Xvalue, float Yvalue, float Zvalue);
-        void Translate(std::array<float, 3> Value);
+        void Translate(const std::vector<float> &Location);
+        void Translate(float XLocation, float YLocation, float ZLocation);
+        void Translate(std::array<float, 3> Location);
 
         // Velocity
         void SetVelocity(Vector::Vector3<float> Location);
-        void SetVelocity(const std::vector<float> &Value);
-        void SetVelocity(float Xvalue, float Yvalue, float Zvalue);
-        void SetVelocity(std::array<float, 3> Value);
+        void SetVelocity(const std::vector<float> &Velocity);
+        void SetVelocity(float XVelocity, float YVelocity, float ZVelocity);
+        void SetVelocity(std::array<float, 3> Velocity);
         void AddVelocity(Vector::Vector3<float> Location);
-        void AddVelocity(const std::vector<float> &Value);
-        void AddVelocity(float Xvalue, float Yvalue, float Zvalue);
-        void AddVelocity(std::array<float, 3> Value);
+        void AddVelocity(const std::vector<float> &Velocity);
+        void AddVelocity(float XVelocity, float YVelocity, float ZVelocity);
+        void AddVelocity(std::array<float, 3> Velocity);
         void SubtractVelocity(Vector::Vector3<float> Location);
-        void SubtractVelocity(const std::vector<float> &Value);
-        void SubtractVelocity(float Xvalue, float Yvalue, float Zvalue);
-        void SubtractVelocity(std::array<float, 3> Value);
+        void SubtractVelocity(const std::vector<float> &Velocity);
+        void SubtractVelocity(float XVelocity, float YVelocity, float ZVelocity);
+        void SubtractVelocity(std::array<float, 3> Velocity);
         void CancelVelocity();
         
         // Targeted location
+        void SetTargetedLocation(Vector::Vector3<float> Location);
+        void SetTargetedLocation(const std::vector<float> &Location);
+        void SetTargetedLocation(float XLocation, float YLocation, float ZLocation);
+
+        // Speed
+        void SetSpeed(float Speed);
+        void AddSpeed(float Speed);
+        void SubtractSpeed(float Speed);
+
+        // Update
+        void UpdateLocation();
     private:
         Vector::Vector3<float> Location;
+        std::mutex Location_MX;
         Vector::Vector3<float> Velocity;
+        std::mutex Velocity_MX;
         Vector::Vector3<float> TargetedLocation;
-};
+        std::mutex TargetedLocation_MX;
+        float Speed;
+        std::mutex Speed_MX;
+    };
 
 #endif
