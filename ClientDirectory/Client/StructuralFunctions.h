@@ -18,6 +18,7 @@
 #include "ClassIdentifier.h"
 #include "AudioThread.h"
 #include "FrameDebugger.h"
+#include "Window.h"
 
 // Definitions
 class StructuralFunctions {

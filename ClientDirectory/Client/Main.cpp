@@ -13,9 +13,18 @@
 // Variable redefinitions
 
 
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
+    GameWindowWindows win1(hInstance, L"Window One", 100, 100, 400, 300);
+    win1.SetupWindow();
+    win1.UpdateWindow();  // Shared message loop
+    std::cin.get();
+    return 0;
+}
+
 // Definitions
+/*
 int main(int argc, char* argv[]) {
     StructuralFunctions Start(argc, argv);
 }
-
+*/
 #endif

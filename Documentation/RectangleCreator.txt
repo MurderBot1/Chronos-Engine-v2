@@ -1,0 +1,22 @@
+The numbers that I decided on for LengthOfOpposite and HightOfOpposite is based on these measurements
+    When I could see the edges of a 32 inch wide door while not moving my eyes I was 2.5 inches away
+    LengthOfOpposite : 
+        The default FOV is 100 and we only want one half of the opposite
+        This lead me to the equation (100 / ? = 16)
+        And the calculation is FOV / 6.25 = (opposite) / 2 
+    HightOfOpposite : 
+        The moniters aspect ratio is used to find HightOfOpposite
+        We can get the LengthOfOpposite with the equation above
+        With that we devide by the length and then multiply by the hight
+        This gets us the scaled to the moniter result
+    RectangleVertexs : 
+        1---------------2
+        |               |
+        |       C       |
+        |               |
+        3---------------4
+        C = Camera
+        1 = (x, y, z) = (+, +, -) = (+2.5, +HightOfOpposite, -LengthOfOpposite)
+        2 = (x, y, z) = (+, +, +) = (+2.5, +HightOfOpposite, +LengthOfOpposite)
+        3 = (x, y, z) = (+, -, -) = (+2.5, -HightOfOpposite, -LengthOfOpposite)
+        4 = (x, y, z) = (+, -, +) = (+2.5, -HightOfOpposite, +LengthOfOpposite)

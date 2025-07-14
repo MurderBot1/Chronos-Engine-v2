@@ -7,62 +7,77 @@
 // C++ imported files
 #include <array>
 #include <vector>
-
-// Include OS window libs
-#ifdef _WIN32
-    #include <windows.h>
-#elif __linux__
-#elif __APPLE__
-    #include "TargetConditionals.h"
-    #if TARGET_OS_MAC
-    #elif TARGET_OS_IPHONE
-    #endif
-#elif __ANDROID__
-#else
-#endif
+#include <cmath>
 
 // Program imported files
 #include "Constants.h"
 #include "Settings.h"
+#include "Vector.h"
 
 // Definitions
-class ChronosEngineWindow {
+class WindowCreatorTemplate {
     public:
-        static void CalculateWindow();
-
-        // Getters
-        static bool GetWindowIsFullscreen();
-        static bool GetWindowIsMinimized();
-        static bool GetWindowChanged();
-        static std::array<int, 2> GetAspectRatio();
-        static std::array<int, 2> GetPixelLengths();
-        static std::vector<ChronosPixel::Pixel> GetOutputBuffer();
-
-        // Setters
-        static void SetWindowIsFullscreen(bool Value); // Don't use this command unless very certain about what you want to do
-        static void SetWindowIsMinimized(bool Value); // Don't use this command unless very certain about what you want to do
-        static void SetWindowChanged(bool Value); // Don't use this command unless very certain about what you want to do
-        static void SetAspectRatio(std::array<int, 2> PixelLengths); // Don't use this command unless very certain about what you want to do
-        static void SetPixelLengths(std::array<int, 2> PixelLengths); // Don't use this command unless very certain about what you want to do
-        static void SetOutputBuffer(std::vector<ChronosPixel::Pixel> Buffer); // Don't use this command unless very certain about what you want to do
-    private:
-        static void UpdateOutputVector(int Size);
-        static bool WindowIsFullscreen;
-        static bool WindowIsMinimized;
-        static bool WindowChanged;
-        static std::array<int, 2> AspectRatio;
-        static std::array<int, 2> PixelLengths;
-        static std::vector<ChronosPixel::Pixel> OutputBuffer;
+        virtual ~WindowCreatorTemplate() = default;  
+    
+        virtual void SetupWindow() = 0;
+        virtual void UpdateWindow() = 0;
+        virtual void DestroyWindow() = 0;
 };
 
-class RendererWindowInfo {
-    public:
-        static void UpdateInfo();
-        static void UpdateRayDirections();
-        static void RectangleCreator(std::array<float, 12> &RectangleVertexs, std::array<int, 2> ScreenAspectRatio, std::array<float, 3> CameraLocation);
-        static void RectangleRotator(std::array<float, 12> &RectangleVertexs, std::array<float, 3> RotationValues);
-    private:
-        static std::vector<RendererInfo::Direction> RayDirections;
-};
+// Include OS window libs and window classes
+#ifdef _WIN32
+    #include <windows.h>
+    class GameWindowWindows : public WindowCreatorTemplate {
+        public:
+            GameWindowWindows(HINSTANCE hInst, const wchar_t* windowTitle, int x, int y, int width, int height);
+            ~GameWindowWindows() override; 
+
+            void SetupWindow() override;
+            void UpdateWindow() override;
+            void DestroyWindow() override;
+
+            HWND GetHWND() const;
+        protected:
+            static LRESULT CALLBACK StaticWindowProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
+            LRESULT HandleMessage(UINT msg, WPARAM wParam, LPARAM lParam);
+
+            HINSTANCE hInstance;
+            const wchar_t* title;
+            int posX, posY, width, height;
+            HWND hwnd;
+    };
+
+    class GameWindow : public GameWindowWindows {
+        public:
+            GameWindow(HINSTANCE hInst, const wchar_t* windowTitle, int x, int y, int width, int height);
+    };
+#elif __linux__
+    class GameWindowLinux : public WindowCreatorTemplate {
+        public:
+            ~GameWindowLinux() override; 
+
+            void SetupWindow() override;
+            void UpdateWindow() override;
+            void DestroyWindow() override;
+        protected:
+
+    };
+
+    class GameWindow : public GameWindowLinux {};
+#elif __APPLE__
+    class GameWindowMac : public WindowCreatorTemplate {
+        public:
+            ~GameWindowMac() override; 
+
+            void SetupWindow() override;
+            void UpdateWindow() override;
+            void DestroyWindow() override;
+        protected:
+
+    };
+
+    class GameWindow : public GameWindowMac {};
+#else
+#endif
 
 #endif

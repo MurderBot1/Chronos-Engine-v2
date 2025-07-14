@@ -1,0 +1,32 @@
+Info about directions :
+    For all objects with 0 rotation on the X, Y, and Z axies means that the object is 
+        Facing north "(1, 0, 0) is the direction of north"
+        Straight forward
+    For all objects with 0 rotation on the Y, and Z axies and 90 on the x means that the object is 
+        Facing east "(0, 1, 0) is the direction of east"
+        Straight forward
+    For all objects with 0 rotation on the Y, and Z axies and 180 on the x means that the object is 
+        Facing south "(-1, 0, 0) is the direction of south"
+        Straight forward
+    For all objects with 0 rotation on the Y, and Z axies and 270 on the x means that the object is 
+        Facing west "(0, -1, 0) is the direction of west"
+        Straight forward
+    For all objects with 0 rotation on the X, and Z axies with 90 on the Y means that the object is 
+        Facing up "(0, 1, 0) is the direction of up"
+        Straight forward
+    For all objects with 0 rotation on the X, and Z axies with 180 on the Y means that the object is 
+        Facing south "(-1, 0, 0) is the direction of south"
+        Upside down
+    For all objects with 0 rotation on the X, and Z axies with 270 on the Y means that the object is 
+        Facing down "(0, -1, 0) is the direction of down"
+        Straight forward
+    For all objects with 0 rotation on the X, and Y axies with 90 on the Z means that the object is 
+        Facing north "(1, 0, 0) is the direction of north"
+        Straight forward but rotated 90 to the right
+    For all objects with 0 rotation on the X, and Y axies with 180 on the Z means that the object is 
+        Facing north "(1, 0, 0) is the direction of north"
+        Upside down
+    For all objects with 0 rotation on the X, and Y axies with 270 on the Z means that the object is 
+        Facing north "(1, 0, 0) is the direction of north"
+        Straight forward but 90 degrees to the left
+Equations and math : 

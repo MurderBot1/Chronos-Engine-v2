@@ -75,6 +75,7 @@ namespace Vector {
     template<typename T>
     class Vector3 {
         public:
+            Vector3();
             Vector3(const std::vector<T> &Value);
             Vector3(T Xvalue, T Yvalue, T Zvalue);
             Vector3(std::array<T, 3> Value);
@@ -232,7 +233,11 @@ namespace Vector {
     };
 
     template <typename T>
-    inline Vector3<T>::Vector3(const std::vector<T> &Value) {
+    inline Vector3<T>::Vector3(){}
+
+    template <typename T>
+    inline Vector3<T>::Vector3(const std::vector<T> &Value)
+    {
         if(Value.size() >= 1)
             X = Value[0];
         if(Value.size() >= 2)
@@ -240,7 +245,7 @@ namespace Vector {
         if(Value.size() >= 3)
             Z = Value[2];
     }
-    
+
     template <typename T>
     inline Vector3<T>::Vector3(T Xvalue, T Yvalue, T Zvalue) {
         X = Xvalue;

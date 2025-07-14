@@ -8,178 +8,117 @@
 #include "Window.h"
 
 // Variable redefinitions
-// ChronosEngineWindow
-bool ChronosEngineWindow::WindowIsFullscreen;
-bool ChronosEngineWindow::WindowIsMinimized;
-bool ChronosEngineWindow::WindowChanged;
-std::array<int, 2> ChronosEngineWindow::AspectRatio;
-std::array<int, 2> ChronosEngineWindow::PixelLengths;
-std::vector<ChronosPixel::Pixel> ChronosEngineWindow::OutputBuffer;
-// RendererWindowInfo
-std::vector<RendererInfo::Direction> RendererWindowInfo::RayDirections;
+
 
 // Definitions
-void ChronosEngineWindow::CalculateWindow() {
-    // Check if the window has changed if not exit
-    if(!ChronosEngineWindow::WindowChanged) {
-        return;
+#ifdef _WIN32
+    #include <windows.h>
+    GameWindowWindows::GameWindowWindows(HINSTANCE hInst, const wchar_t* windowTitle, int x, int y, int w, int h)
+        : hInstance(hInst), title(windowTitle), posX(x), posY(y), width(w), height(h), hwnd(nullptr) {}
+
+    GameWindow::GameWindow(HINSTANCE hInst, const wchar_t* windowTitle, int x, int y, int w, int h)
+        : GameWindowWindows(hInst, windowTitle, x, y, w, h) {}
+
+    GameWindowWindows::~GameWindowWindows() {
+        DestroyWindow();
     }
 
-    // Check if the window is full screen
-    if(ChronosEngineWindow::WindowIsFullscreen) {
-        ChronosEngineWindow::UpdateOutputVector(
-            Settings::ResolutionX * 
-            Settings::ResolutionY 
+    void GameWindowWindows::SetupWindow() {
+        const wchar_t* className = L"GameWindowClass";
+
+        WNDCLASSW wc = {};
+        wc.lpfnWndProc = StaticWindowProc;
+        wc.hInstance = hInstance;
+        wc.lpszClassName = className;  // className should be const wchar_t*
+        int CheckReg = RegisterClassW(&wc);
+
+        if(CheckReg == 0)
+            std::cout << "Error code: " << GetLastError() << "\n";
+
+        hwnd = CreateWindowExW(
+            0, className, title, WS_OVERLAPPEDWINDOW,
+            posX, posY, width, height,
+            nullptr, nullptr, hInstance, this
         );
-        return;
     }
 
-    if(ChronosEngineWindow::WindowIsMinimized) {
-        ChronosEngineWindow::UpdateOutputVector(0);
-        return;
+    void GameWindowWindows::UpdateWindow() {
+        MSG msg = {};
+        while (GetMessage(&msg, nullptr, 0, 0)) {
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+        }
     }
 
-    // Reserve new amount of memory after clearing data
-    ChronosEngineWindow::UpdateOutputVector(
-        ChronosEngineWindow::PixelLengths[0] *
-        ChronosEngineWindow::PixelLengths[1]
-    );
+    void GameWindowWindows::DestroyWindow() {
+        if (hwnd) {
+            ::DestroyWindow(hwnd);
+            hwnd = nullptr;
+        }
+    }
 
-    // 
-}
+    HWND GameWindowWindows::GetHWND() const {
+        return hwnd;
+    }
 
-void ChronosEngineWindow::UpdateOutputVector(int Size) {
-    ChronosEngineWindow::OutputBuffer.clear();
-    ChronosEngineWindow::OutputBuffer.reserve(Size);
-    RendererWindowInfo::UpdateInfo();
-}
+    LRESULT CALLBACK GameWindowWindows::StaticWindowProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+        GameWindowWindows* window = nullptr;
 
-void RendererWindowInfo::UpdateInfo() {
-    RendererWindowInfo::UpdateRayDirections();
-}
+        if (msg == WM_NCCREATE) {
+            CREATESTRUCT* cs = reinterpret_cast<CREATESTRUCT*>(lParam);
+            window = static_cast<GameWindowWindows*>(cs->lpCreateParams);
+            SetWindowLongPtr(hwnd, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(window));
+            window->hwnd = hwnd;
+        } else {
+            window = reinterpret_cast<GameWindowWindows*>(GetWindowLongPtr(hwnd, GWLP_USERDATA));
+        }
 
-void RendererWindowInfo::UpdateRayDirections() {
-    // Crete temp variables
-    auto ScreenPixelSize = ChronosEngineWindow::GetPixelLengths();
-    auto ScreenAspectRatio = ChronosEngineWindow::GetAspectRatio();
-    std::vector<RendererInfo::Direction> TempDirections;
-    std::array<float, 12> RectangleVertexs; // 3 for each point in 3d space
-    std::array<float, 3> CameraLocation;
-    std::array<float, 3> CameraRoatation;
+        return window ? window->HandleMessage(msg, wParam, lParam) : DefWindowProc(hwnd, msg, wParam, lParam);
+    }
 
-    // Create rectangle
-    RendererWindowInfo::RectangleCreator(
-        RectangleVertexs, 
-        ScreenAspectRatio,
-        CameraLocation
-    );
-    
-    // Rotate rectangle
-    RendererWindowInfo::RectangleRotator(
-        RectangleVertexs, 
-        CameraRoatation
-    );
+    LRESULT GameWindowWindows::HandleMessage(UINT msg, WPARAM wParam, LPARAM lParam) {
+        switch (msg) {
+            case WM_DESTROY:
+                std::wcout << L"Window \"" << title << L"\" destroyed\n";
+                PostQuitMessage(0);
+                return 0;
+            default:
+                return DefWindowProc(hwnd, msg, wParam, lParam);
+        }
+    }
+#elif __linux__
+    GameWindowLinux::~GameWindowLinux() {
+        
+    }
 
-    // Find the slope to get the increment
+    void GameWindowLinux::SetupWindow() const {
 
+    }
 
-    // Find the points on the rectangle
-    
-    
-    // Convert in to slope
-    
-    
-    // Resize and clear vector
-    RendererWindowInfo::RayDirections.clear();
-    RendererWindowInfo::RayDirections.resize(ScreenPixelSize[0] * ScreenPixelSize[1]);
+    void GameWindowLinux::UpdateWindow() const {
 
-    // Return the points
-    RendererWindowInfo::RayDirections = TempDirections;
-}
+    }
 
-void RendererWindowInfo::RectangleCreator(std::array<float, 12> &RectangleVertexs, std::array<int, 2> ScreenAspectRatio, std::array<float, 3> CameraLocation) {
-    /* CREATE RECTANGLE 
-        The numbers that I decided on for LengthOfOpposite and HightOfOpposite is based on these measurements
-        When I could see the edges of a 32 inch wide door while not moving my eyes I was 2.5 inches away
-        LengthOfOpposite : 
-            The default FOV is 100 and we only want one half of the opposite
-            This lead me to the equation (100 / ? = 16)
-            And the calculation is FOV / 6.25 = (opposite) / 2 
-        HightOfOpposite : 
-            The moniters aspect ratio is used to find HightOfOpposite
-            We can get the LengthOfOpposite with the equation above
-            With that we devide by the length and then multiply by the hight
-            This gets us the scaled to the moniter result
-        RectangleVertexs : 
-            1---------------2
-            |               |
-            |       C       |
-            |               |
-            3---------------4
-            C = Camera
-            1 = (x, y, z) = (+, +, -) = (+2.5, +HightOfOpposite, -LengthOfOpposite)
-            2 = (x, y, z) = (+, +, +) = (+2.5, +HightOfOpposite, +LengthOfOpposite)
-            3 = (x, y, z) = (+, -, -) = (+2.5, -HightOfOpposite, -LengthOfOpposite)
-            4 = (x, y, z) = (+, -, +) = (+2.5, -HightOfOpposite, +LengthOfOpposite)
-    */
-    float LengthOfOpposite = Settings::FOV / 6.25f; 
-    float HightOfOpposite = LengthOfOpposite / ScreenAspectRatio[0] * ScreenAspectRatio[1]; 
-    RectangleVertexs = {
-        // Vertex 1
-        CameraLocation[0] + 2.5f,
-        CameraLocation[2] + HightOfOpposite,
-        CameraLocation[1] - LengthOfOpposite,
-        // Vertex 2
-        CameraLocation[0] + 2.5f,
-        CameraLocation[2] + HightOfOpposite,
-        CameraLocation[1] + LengthOfOpposite,
-        // Vertex 3
-        CameraLocation[0] + 2.5f,
-        CameraLocation[2] - HightOfOpposite,
-        CameraLocation[1] - LengthOfOpposite,
-        // Vertex 4
-        CameraLocation[0] + 2.5f,
-        CameraLocation[2] - HightOfOpposite,
-        CameraLocation[1] + LengthOfOpposite
-    };
-}
+    void GameWindowLinux::DestroyWindow() const {
 
-void RendererWindowInfo::RectangleRotator(std::array<float, 12> &RectangleVertexs, std::array<float, 3> RotationValues) {
-    /* ROTATE RECTANGLE
-        Info about directions :
-            For all objects with 0 rotation on the X, Y, and Z axies means that the object is 
-                Facing north "(1, 0, 0) is the direction of north"
-                Straight forward
-            For all objects with 0 rotation on the Y, and Z axies and 90 on the x means that the object is 
-                Facing east "(0, 1, 0) is the direction of east"
-                Straight forward
-            For all objects with 0 rotation on the Y, and Z axies and 180 on the x means that the object is 
-                Facing south "(-1, 0, 0) is the direction of south"
-                Straight forward
-            For all objects with 0 rotation on the Y, and Z axies and 270 on the x means that the object is 
-                Facing west "(0, -1, 0) is the direction of west"
-                Straight forward
-            For all objects with 0 rotation on the X, and Z axies with 90 on the Y means that the object is 
-                Facing up "(0, 1, 0) is the direction of up"
-                Straight forward
-            For all objects with 0 rotation on the X, and Z axies with 180 on the Y means that the object is 
-                Facing south "(-1, 0, 0) is the direction of south"
-                Upside down
-            For all objects with 0 rotation on the X, and Z axies with 270 on the Y means that the object is 
-                Facing down "(0, -1, 0) is the direction of down"
-                Straight forward
-            For all objects with 0 rotation on the X, and Y axies with 90 on the Z means that the object is 
-                Facing north "(1, 0, 0) is the direction of north"
-                Straight forward but rotated 90 to the right
-            For all objects with 0 rotation on the X, and Y axies with 180 on the Z means that the object is 
-                Facing north "(1, 0, 0) is the direction of north"
-                Upside down
-            For all objects with 0 rotation on the X, and Y axies with 270 on the Z means that the object is 
-                Facing north "(1, 0, 0) is the direction of north"
-                Straight forward but 90 degrees to the left
-        Equations and math : 
-            
-    */
-}
+    }
+#elif __APPLE__
+    GameWindowMac::~GameWindowMac() {
+        
+    }
+
+    void GameWindowMac::SetupWindow() const {
+
+    }
+
+    void GameWindowMac::UpdateWindow() const {
+
+    }
+
+    void GameWindowMac::DestroyWindow() const {
+
+    }
+#else
+#endif
 
 #endif
