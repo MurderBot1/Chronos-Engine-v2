@@ -44,7 +44,7 @@ StructuralFunctions::StructuralFunctions(int argc, char* argv[]) {
 
     // Load the game 
     Game::LoadGame();
-
+    
     // Start the game loop
     StructuralFunctions::StartLoop();
 }
@@ -82,7 +82,7 @@ void StructuralFunctions::LoopFunctions() {
 }
 
 StructuralFunctions::~StructuralFunctions() {
-    // Wait for the keyboard thread to stop
+        // Wait for the keyboard thread to stop
     Keyboard::CleanUpKeyboard();
 
     // Wait for the audio thread to stop
