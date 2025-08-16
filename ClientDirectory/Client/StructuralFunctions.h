@@ -23,10 +23,11 @@
 // Definitions
 class StructuralFunctions {
     public:
-        StructuralFunctions(int argc, char* argv[]);
-        static void StartLoop();
-        static void LoopFunctions();
+        StructuralFunctions();
+        void StartLoop();
+        void LoopFunctions();
         ~StructuralFunctions();
+        GameWindowWindows GameWindow;
 };
 
 #endif

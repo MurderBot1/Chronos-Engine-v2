@@ -5,9 +5,8 @@
 #define Args_H
 
 // C++ imported files
-#include <string>
 #include <iostream>
-#include <string_view>
+#include <string>
 #include <vector>
 #include <map>
 #include <array>
@@ -18,10 +17,11 @@
 // Definitions
 class Args {
     public:
-        static void LoadArgs(int argc, char* argv[]);
+        static std::vector<std::string> ArgDecoder();
+        static void LoadArgs();
         static void DeIncrementFrames();
-        static std::string_view Game;
-        static std::string_view Save;
+        static std::string Game;
+        static std::string Save;
         static bool Debug;
         static int Frames;
         static bool UseFrames;

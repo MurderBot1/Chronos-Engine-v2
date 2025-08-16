@@ -6,19 +6,49 @@
 
 // Include the C++'s .h file
 #include "Args.h"
+#ifdef _WIN32
+    #include <windows.h>
+    #include <shellapi.h>
+ #elif __linux__
+#elif __APPLE__
+#else
+#endif
 
 // Variable redefinitions
-std::string_view Args::Game;
-std::string_view Args::Save;
+std::string Args::Game;
+std::string Args::Save;
 bool Args::Debug;
 int Args::Frames;
 bool Args::UseFrames;
 bool Args::UseFrameDebug;
 
+std::vector<std::string> Args::ArgDecoder() {
+    #ifdef _WIN32
+        int argc;
+        LPWSTR* argvW = CommandLineToArgvW(GetCommandLineW(), &argc);
+
+        std::vector<std::string> argvVec;
+        for (int i = 0; i < argc; ++i) {
+            int len = WideCharToMultiByte(CP_UTF8, 0, argvW[i], -1, nullptr, 0, nullptr, nullptr);
+            std::string argA(len - 1, 0); // -1 to exclude null terminator
+            WideCharToMultiByte(CP_UTF8, 0, argvW[i], -1, &argA[0], len, nullptr, nullptr);
+            argvVec.push_back(argA);
+        }
+        return argvVec;
+
+    #elif __linux__
+    #elif __APPLE__
+    #else
+    #endif
+}
+
 // Definitions
-void Args::LoadArgs(int argc, char *argv[]) {
-    // Parse in to std::string_view
-    std::vector<std::string_view> ListOfArgs;
+void Args::LoadArgs() {
+    std::vector<std::string> argv = Args::ArgDecoder();
+    int argc = argv.size();
+
+    // Parse in to std::string
+    std::vector<std::string> ListOfArgs;
     ListOfArgs.reserve(argc - 1);
     
     for(int i = 1; i < argc; ++i) { // This skips the first arg which is the EXE files name
@@ -31,7 +61,7 @@ void Args::LoadArgs(int argc, char *argv[]) {
     }
 
     // Turn the list of args in to pairs
-    std::vector<std::pair<std::string_view, std::string_view>> ArgListWithMatchingValue;
+    std::vector<std::pair<std::string, std::string>> ArgListWithMatchingValue;
     ArgListWithMatchingValue.reserve(ListOfArgs.size() / 2);
 
     for(int i = 0; i < static_cast<int>(ListOfArgs.size()); i += 2) {
@@ -39,7 +69,7 @@ void Args::LoadArgs(int argc, char *argv[]) {
     }
 
     // Assign to variable
-    const std::array<std::string_view, 5> CompilerArgs = {
+    const std::array<std::string, 5> CompilerArgs = {
         "--game",
         "--save",
         "--debug",
@@ -47,10 +77,11 @@ void Args::LoadArgs(int argc, char *argv[]) {
         "--useframedebug"
     };
 
-    Args::Debug = true;
+    Args::Debug = false;
     Args::UseFrameDebug = false;
+    Args::UseFrames = false;
 
-    for(std::pair<std::string_view, std::string_view> CurrentArgToDecode : ArgListWithMatchingValue) {
+    for(std::pair<std::string, std::string> CurrentArgToDecode : ArgListWithMatchingValue) {
         if(CurrentArgToDecode.first == CompilerArgs[0]) { // --game
             Args::Game = CurrentArgToDecode.second;
         } else if (CurrentArgToDecode.first == CompilerArgs[1]) { // --save
@@ -80,6 +111,7 @@ void Args::LoadArgs(int argc, char *argv[]) {
 }
 
 void Args::DeIncrementFrames() {
+    if(!Frames) {return;} 
     if(Frames > 1) {
         Frames--;
         return;

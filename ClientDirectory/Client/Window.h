@@ -29,27 +29,16 @@ class WindowCreatorTemplate {
     #include <windows.h>
     class GameWindowWindows : public WindowCreatorTemplate {
         public:
-            GameWindowWindows(HINSTANCE hInst, const wchar_t* windowTitle, int x, int y, int width, int height);
-            ~GameWindowWindows() override; 
-
+            GameWindowWindows();
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
 
-            HWND GetHWND() const;
         protected:
-            static LRESULT CALLBACK StaticWindowProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
-            LRESULT HandleMessage(UINT msg, WPARAM wParam, LPARAM lParam);
-
-            HINSTANCE hInstance;
-            const wchar_t* title;
-            int posX, posY, width, height;
+            static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
             HWND hwnd;
-    };
-
-    class GameWindow : public GameWindowWindows {
-        public:
-            GameWindow(HINSTANCE hInst, const wchar_t* windowTitle, int x, int y, int width, int height);
+            HINSTANCE hInstance;
+            bool running;
     };
 #elif __linux__
     class GameWindowLinux : public WindowCreatorTemplate {
@@ -62,8 +51,6 @@ class WindowCreatorTemplate {
         protected:
 
     };
-
-    class GameWindow : public GameWindowLinux {};
 #elif __APPLE__
     class GameWindowMac : public WindowCreatorTemplate {
         public:
@@ -75,8 +62,6 @@ class WindowCreatorTemplate {
         protected:
 
     };
-
-    class GameWindow : public GameWindowMac {};
 #else
 #endif
 

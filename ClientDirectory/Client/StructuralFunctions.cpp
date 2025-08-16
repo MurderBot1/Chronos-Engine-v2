@@ -11,12 +11,12 @@
 
 
 // Definitions
-StructuralFunctions::StructuralFunctions(int argc, char* argv[]) {
+StructuralFunctions::StructuralFunctions() {
     // Set the running variable to true
     Exit::StartUpExit();
 
     // Load in the commands that were run with the .exe
-    Args::LoadArgs(argc, argv);
+    Args::LoadArgs();
 
     // Start the identitifier tokens
     IdentityToken::StartIdentityToken();
@@ -44,6 +44,9 @@ StructuralFunctions::StructuralFunctions(int argc, char* argv[]) {
 
     // Load the game 
     Game::LoadGame();
+
+    // Create the window
+    GameWindow.SetupWindow();
     
     // Start the game loop
     StructuralFunctions::StartLoop();
@@ -71,7 +74,7 @@ void StructuralFunctions::LoopFunctions() {
     // Add the current timings to the file (Debug only)
     ScopedTimer::UpdateVisualRenderer();
     
-    // Deincrement frames
+    // Deincrement frames (Frames only)
     Args::DeIncrementFrames();
     
     // Create debug file
@@ -79,10 +82,13 @@ void StructuralFunctions::LoopFunctions() {
     
     // Wait for loop to limit max FPS
     Time::Sleep();
+
+    // Update the window
+    GameWindow.UpdateWindow();
 }
 
 StructuralFunctions::~StructuralFunctions() {
-        // Wait for the keyboard thread to stop
+    // Wait for the keyboard thread to stop
     Keyboard::CleanUpKeyboard();
 
     // Wait for the audio thread to stop

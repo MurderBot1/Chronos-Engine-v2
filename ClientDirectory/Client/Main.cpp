@@ -14,7 +14,6 @@
 
 #ifdef _WIN32
     #include <windows.h>
-    #include <shellapi.h>
 
     int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
         // Quiet
@@ -23,34 +22,19 @@
         (void)lpCmdLine;
         (void)nShowCmd;
 
-        // Get the args
-        int argc;
-        LPWSTR* argvW = CommandLineToArgvW(GetCommandLineW(), &argc);
-        
-        // Convert the LPWSTR to a simple char*[]
-        std::vector<std::string> argvVec;
-        std::vector<char*> argvA;
-        for (int i = 0; i < argc; ++i) {
-            int len = WideCharToMultiByte(CP_UTF8, 0, argvW[i], -1, nullptr, 0, nullptr, nullptr);
-            std::string argA(len, 0);
-            WideCharToMultiByte(CP_UTF8, 0, argvW[i], -1, &argA[0], len, nullptr, nullptr);
-            argvVec.push_back(argA);
-        }
-        for (auto& s : argvVec) argvA.push_back(&s[0]);
-        
         // Call the main loop
-        StructuralFunctions Start(argc, argvA.data());
+        StructuralFunctions Start;
         
         return 0;
     }
 
 #elif __linux__
 int main(int argc, char* argv[]) {
-    StructuralFunctions Start(argc, argv);
+    StructuralFunctions Start();
 }
 #elif __APPLE__
 int main(int argc, char* argv[]) {
-    StructuralFunctions Start(argc, argv);
+    StructuralFunctions Start();
 }
 #else
 #endif
