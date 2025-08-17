@@ -46,7 +46,7 @@ StructuralFunctions::StructuralFunctions() {
     Game::LoadGame();
 
     // Create the window
-    GameWindow.SetupWindow();
+    WindowManager::GameWindow.SetupWindow();
     
     // Start the game loop
     StructuralFunctions::StartLoop();
@@ -84,10 +84,16 @@ void StructuralFunctions::LoopFunctions() {
     Time::Sleep();
 
     // Update the window
-    GameWindow.UpdateWindow();
+    WindowManager::GameWindow.UpdateWindow();
+
+    // Update window with rendered image
+    FrameManager::SwapAndDisplayImages();
 }
 
 StructuralFunctions::~StructuralFunctions() {
+    // Destroy window
+    WindowManager::GameWindow.DestroyWindow();
+    
     // Wait for the keyboard thread to stop
     Keyboard::CleanUpKeyboard();
 

@@ -13,6 +13,7 @@
 #include "Constants.h"
 #include "Settings.h"
 #include "Vector.h"
+#include "Image.h"
 
 // Definitions
 class WindowCreatorTemplate {
@@ -33,13 +34,15 @@ class WindowCreatorTemplate {
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
+            HWND hwnd;
 
         protected:
             static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
-            HWND hwnd;
             HINSTANCE hInstance;
             bool running;
     };
+
+    class Window : public GameWindowWindows {};
 #elif __linux__
     class GameWindowLinux : public WindowCreatorTemplate {
         public:
@@ -51,6 +54,8 @@ class WindowCreatorTemplate {
         protected:
 
     };
+
+    class Window : public GameWindowLinux {};
 #elif __APPLE__
     class GameWindowMac : public WindowCreatorTemplate {
         public:
@@ -62,7 +67,14 @@ class WindowCreatorTemplate {
         protected:
 
     };
+
+    class Window : public GameWindowMac {};
 #else
 #endif
+
+class WindowManager {
+    public:
+        static Window GameWindow;
+};
 
 #endif

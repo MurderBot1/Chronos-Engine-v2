@@ -8,7 +8,7 @@
 #include "Window.h"
 
 // Variable redefinitions
-
+Window WindowManager::GameWindow;
 
 // Definitions
 #ifdef _WIN32

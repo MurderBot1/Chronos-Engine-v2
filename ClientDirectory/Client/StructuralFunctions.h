@@ -19,6 +19,7 @@
 #include "AudioThread.h"
 #include "FrameDebugger.h"
 #include "Window.h"
+#include "FrameManager.h"
 
 // Definitions
 class StructuralFunctions {
@@ -27,7 +28,6 @@ class StructuralFunctions {
         void StartLoop();
         void LoopFunctions();
         ~StructuralFunctions();
-        GameWindowWindows GameWindow;
 };
 
 #endif

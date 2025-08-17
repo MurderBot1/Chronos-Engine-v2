@@ -1,13 +1,16 @@
+#ifndef Image_CPP
+#define Image_CPP
+
 #include "Image.h"
 
 ChronosImage::ChronosImage()
-    : HBitmap(nullptr), MemDC(nullptr), ImgWidth(0), ImgHeight(0) {}
+    : HBitMap(nullptr), MemDC(nullptr), ImgWidth(0), ImgHeight(0) {}
 
 ChronosImage::~ChronosImage() {
     Destroy();
 }
 
-bool ChronosImage::Create(int Width, int Height, const DWORD* PixelData) {
+bool ChronosImage::Create(int Width, int Height, const Pixel* PixelData) {
     Destroy();
 
     ImgWidth = Width;
@@ -15,19 +18,19 @@ bool ChronosImage::Create(int Width, int Height, const DWORD* PixelData) {
     Pixels.assign(PixelData, PixelData + (Width * Height));
 
     HDC ScreenDC = GetDC(nullptr);
-    HBitmap = CreateBitmap(Width, Height, 1, 32, Pixels.data());
-    if (!HBitmap) {
+    HBitMap = CreateBitmap(Width, Height, 1, 32, Pixels.data());
+    if (!HBitMap) {
         ReleaseDC(nullptr, ScreenDC);
         return false;
     }
 
     MemDC = CreateCompatibleDC(ScreenDC);
-    SelectObject(MemDC, HBitmap);
+    SelectObject(MemDC, HBitMap);
     ReleaseDC(nullptr, ScreenDC);
     return true;
 }
 
-void ChronosImage::Edit(int X, int Y, DWORD Argb) {
+void ChronosImage::Edit(int X, int Y, Pixel Argb) {
     if (X < 0 || Y < 0 || X >= ImgWidth || Y >= ImgHeight) return;
     Pixels[Y * ImgWidth + X] = Argb;
     SetPixel(MemDC, X, Y,
@@ -35,7 +38,7 @@ void ChronosImage::Edit(int X, int Y, DWORD Argb) {
 }
 
 void ChronosImage::Draw(HDC hdc, int X, int Y, int Width, int Height) const {
-    if (MemDC && HBitmap) {
+    if (MemDC && HBitMap) {
         StretchBlt(hdc, X, Y, Width, Height,
                    MemDC, 0, 0, ImgWidth, ImgHeight, SRCCOPY);
     }
@@ -61,15 +64,15 @@ bool ChronosImage::Load(const std::wstring& FilePath) {
     MemDC = CreateCompatibleDC(ScreenDC);
     SelectObject(MemDC, loaded);
     ReleaseDC(nullptr, ScreenDC);
-    HBitmap = loaded;
+    HBitMap = loaded;
     return true;
 }
 
 bool ChronosImage::Save(const std::wstring& FilePath) const {
-    if (!HBitmap) return false;
+    if (!HBitMap) return false;
 
     BITMAP BMP;
-    GetObject(HBitmap, sizeof(BMP), &BMP);
+    GetObject(HBitMap, sizeof(BMP), &BMP);
 
     BITMAPFILEHEADER BFH = {};
     BITMAPINFOHEADER BIH = {};
@@ -80,7 +83,7 @@ bool ChronosImage::Save(const std::wstring& FilePath) const {
     BIH.biBitCount = 32;
     BIH.biCompression = BI_RGB;
 
-    DWORD ImageSize = BMP.bmWidth * BMP.bmHeight * 4;
+    Pixel ImageSize = BMP.bmWidth * BMP.bmHeight * 4;
     BFH.bfType = 0x4D42; // 'BM'
     BFH.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
     BFH.bfSize = BFH.bfOffBits + ImageSize;
@@ -100,10 +103,44 @@ void ChronosImage::Destroy() {
         DeleteDC(MemDC);
         MemDC = nullptr;
     }
-    if (HBitmap) {
-        DeleteObject(HBitmap);
-        HBitmap = nullptr;
+    if (HBitMap) {
+        DeleteObject(HBitMap);
+        HBitMap = nullptr;
     }
     Pixels.clear();
     ImgWidth = ImgHeight = 0;
 }
+
+#ifdef _WIN32
+    void ChronosImage::Display() {
+        if (!WindowManager::GameWindow.hwnd || !HBitMap) return;
+
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(WindowManager::GameWindow.hwnd, &ps);
+
+        HDC memDC = CreateCompatibleDC(hdc);
+        SelectObject(memDC, HBitMap);
+
+        BITMAP bmp;
+        GetObject(HBitMap, sizeof(BITMAP), &bmp);
+
+        RECT rc;
+        GetClientRect(WindowManager::GameWindow.hwnd, &rc);
+
+        StretchBlt(hdc,
+                0, 0, rc.right, rc.bottom,       // destination: full client area
+                memDC,
+                0, 0, bmp.bmWidth, bmp.bmHeight, // source: full bitmap
+                SRCCOPY);
+
+        DeleteDC(memDC);
+        EndPaint(WindowManager::GameWindow.hwnd, &ps);
+    }
+#elif __linux__
+    
+#elif __APPLE__
+    
+#else
+#endif
+
+#endif

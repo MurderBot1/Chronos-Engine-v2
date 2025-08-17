@@ -1,29 +1,35 @@
-#ifndef Image
-#define Image
+#ifndef Image_H
+#define Image_H
 
 #include <windows.h>
 #include <vector>
 #include <string>
 #include <fstream>
 
+#include "Window.h"
+
+typedef unsigned __LONG32 Pixel;
+
 class ChronosImage {
     public:
         ChronosImage();
         ~ChronosImage();
 
-        virtual bool Create(int Width, int Height, const DWORD* PixelData);
-        virtual void Edit(int X, int Y, DWORD Argb);
+        virtual bool Create(int Width, int Height, const Pixel* PixelData);
+        virtual void Edit(int X, int Y, Pixel Argb);
         virtual void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         virtual bool Load(const std::wstring& FilePath);
         virtual bool Save(const std::wstring& FilePath) const;
         virtual void Destroy();
 
+        void Display();
+
     protected:
-        HBITMAP     HBitmap;
+        HBITMAP     HBitMap;
         HDC         MemDC;
         int         ImgWidth;
         int         ImgHeight;
-        std::vector<DWORD> Pixels;
+        std::vector<Pixel> Pixels;
 };
 
 class BMP : public ChronosImage {
@@ -37,8 +43,8 @@ class JPG : public ChronosImage {
         JPG();
         ~JPG();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -50,8 +56,8 @@ class PNG : public ChronosImage {
         PNG();
         ~PNG();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -63,8 +69,8 @@ class WEBP : public ChronosImage {
         WEBP();
         ~WEBP();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -76,8 +82,8 @@ class TIFF : public ChronosImage {
         TIFF();
         ~TIFF();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -89,8 +95,8 @@ class PSD : public ChronosImage {
         PSD();
         ~PSD();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -102,8 +108,8 @@ class RAW : public ChronosImage {
         RAW();
         ~RAW();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -115,8 +121,8 @@ class HEIF : public ChronosImage {
         HEIF();
         ~HEIF();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -128,8 +134,8 @@ class INDD : public ChronosImage {
         INDD();
         ~INDD();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -141,8 +147,8 @@ class JPEG2000 : public ChronosImage {
         JPEG2000();
         ~JPEG2000();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -154,8 +160,8 @@ class SVG : public ChronosImage {
         SVG();
         ~SVG();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -167,8 +173,8 @@ class AI : public ChronosImage {
         AI();
         ~AI();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -180,8 +186,8 @@ class EPS : public ChronosImage {
         EPS();
         ~EPS();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -193,8 +199,8 @@ class PDF : public ChronosImage {
         PDF();
         ~PDF();
 
-        bool Create(int Width, int Height, const DWORD* PixelData);
-        void Edit(int X, int Y, DWORD Argb);
+        bool Create(int Width, int Height, const Pixel* PixelData);
+        void Edit(int X, int Y, Pixel Argb);
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
@@ -206,8 +212,8 @@ class GIF : public ChronosImage {
         GIF();
         ~GIF();
 
-        bool Create(int Width, int Height, const DWORD* PixelData) override;
-        void Edit(int X, int Y, DWORD Argb) override;
+        bool Create(int Width, int Height, const Pixel* PixelData) override;
+        void Edit(int X, int Y, Pixel Argb) override;
         void Draw(HDC Hdc, int X, int Y, int Width, int Height) const override;
         bool Load(const std::wstring& FilePath) override;
         bool Save(const std::wstring& FilePath) const override;
