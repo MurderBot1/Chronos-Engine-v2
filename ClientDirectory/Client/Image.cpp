@@ -78,13 +78,13 @@ bool ChronosImage::Save(const std::wstring& FilePath) const {
     BITMAPINFOHEADER BIH = {};
     BIH.biSize = sizeof(BITMAPINFOHEADER);
     BIH.biWidth = BMP.bmWidth;
-    BIH.biHeight = -BMP.bmHeight; // top-down DIB
+    BIH.biHeight = -BMP.bmHeight; 
     BIH.biPlanes = 1;
     BIH.biBitCount = 32;
     BIH.biCompression = BI_RGB;
 
     Pixel ImageSize = BMP.bmWidth * BMP.bmHeight * 4;
-    BFH.bfType = 0x4D42; // 'BM'
+    BFH.bfType = 0x4D42; 
     BFH.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
     BFH.bfSize = BFH.bfOffBits + ImageSize;
 
@@ -110,37 +110,5 @@ void ChronosImage::Destroy() {
     Pixels.clear();
     ImgWidth = ImgHeight = 0;
 }
-
-#ifdef _WIN32
-    void ChronosImage::Display() {
-        if (!WindowManager::GameWindow.hwnd || !HBitMap) return;
-
-        PAINTSTRUCT ps;
-        HDC hdc = BeginPaint(WindowManager::GameWindow.hwnd, &ps);
-
-        HDC memDC = CreateCompatibleDC(hdc);
-        SelectObject(memDC, HBitMap);
-
-        BITMAP bmp;
-        GetObject(HBitMap, sizeof(BITMAP), &bmp);
-
-        RECT rc;
-        GetClientRect(WindowManager::GameWindow.hwnd, &rc);
-
-        StretchBlt(hdc,
-                0, 0, rc.right, rc.bottom,       // destination: full client area
-                memDC,
-                0, 0, bmp.bmWidth, bmp.bmHeight, // source: full bitmap
-                SRCCOPY);
-
-        DeleteDC(memDC);
-        EndPaint(WindowManager::GameWindow.hwnd, &ps);
-    }
-#elif __linux__
-    
-#elif __APPLE__
-    
-#else
-#endif
 
 #endif

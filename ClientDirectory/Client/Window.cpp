@@ -19,15 +19,26 @@ Window WindowManager::GameWindow;
 
     LRESULT CALLBACK GameWindowWindows::WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
         switch (uMsg) {
-        case WM_DESTROY:
-            PostQuitMessage(0);
-            return 0;
+            case WM_DESTROY:
+                PostQuitMessage(0);
+                return 0;
+            case WM_PAINT:
+            {
+                PAINTSTRUCT ps;
+                HDC hdc = BeginPaint(hwnd, &ps);
+                {
+                    std::lock_guard<std::mutex> lock(FrameManager::DisplayImage_MX);
+                    FrameManager::DisplayImage.Draw(hdc, 0, 0, ps.rcPaint.right, ps.rcPaint.bottom);
+                }
+                EndPaint(hwnd, &ps);
+                return 0;
+            }
         }
         return DefWindowProc(hwnd, uMsg, wParam, lParam);
     }
 
     void GameWindowWindows::SetupWindow() {
-        const char CLASS_NAME[] = "MyGameWindowClass";
+        const char CLASS_NAME[] = "Game";
 
         WNDCLASSA wc = {};
         wc.lpfnWndProc   = GameWindowWindows::WindowProc;

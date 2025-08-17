@@ -14,6 +14,7 @@
 #include "Settings.h"
 #include "Vector.h"
 #include "Image.h"
+#include "FrameManager.h"
 
 // Definitions
 class WindowCreatorTemplate {

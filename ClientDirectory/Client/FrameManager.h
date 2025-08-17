@@ -2,13 +2,15 @@
 #define FrameManager_H
 
 #include <mutex>
+#include <array>
 
 #include "Image.h"
+#include "Window.h"
 
 class FrameManager {
     public:
         static void SwapAndDisplayImages();
-    private:
+
         static ChronosImage DisplayImage;
         static ChronosImage RenderImage;
 

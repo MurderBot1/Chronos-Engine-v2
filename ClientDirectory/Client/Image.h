@@ -6,7 +6,6 @@
 #include <string>
 #include <fstream>
 
-#include "Window.h"
 
 typedef unsigned __LONG32 Pixel;
 
@@ -21,8 +20,6 @@ class ChronosImage {
         virtual bool Load(const std::wstring& FilePath);
         virtual bool Save(const std::wstring& FilePath) const;
         virtual void Destroy();
-
-        void Display();
 
     protected:
         HBITMAP     HBitMap;
