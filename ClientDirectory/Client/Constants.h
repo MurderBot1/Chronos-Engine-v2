@@ -15,6 +15,14 @@
 #include <algorithm>
 
 // Definitions
+#define GraphLibrary \
+    #ifdef _WIN32 \
+        #include <windows.h> \
+    #elif __linux__ \
+    #elif __APPLE__ \
+    #else \
+    #endif \
+
 const std::filesystem::path CurrentPath = std::filesystem::current_path();
 
 constexpr uint8_t INDEX_START = 0; 
