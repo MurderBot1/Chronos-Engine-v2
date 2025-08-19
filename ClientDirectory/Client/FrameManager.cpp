@@ -16,7 +16,7 @@ void FrameManager::SwapAndDisplayImages() {
     // Swap Images
     DisplayImage = RenderImage;
     RenderImage = ChronosImage();
-    Pixel Pix[480000];
+    DWORD Pix[480000];
     for (size_t i = 0; i < 480000; i++)
     {
         Pix[i] = 0xFFFF0000;

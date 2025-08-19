@@ -18,7 +18,7 @@
 #include "Settings.h"
 
 // Include libs for the proccess id
-#ifdef _WIN32
+#ifdef Windows
     #include <windows.h>
     #define GET_PROCESS_ID() GetCurrentProcessId()
 #else

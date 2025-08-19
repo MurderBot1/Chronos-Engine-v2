@@ -11,9 +11,7 @@
 Window WindowManager::GameWindow;
 
 // Definitions
-#ifdef _WIN32
-    #include <windows.h>
-
+#ifdef Windows
     GameWindowWindows::GameWindowWindows()
         : hwnd(nullptr), hInstance(GetModuleHandle(nullptr)), running(false) {}
 
@@ -24,13 +22,13 @@ Window WindowManager::GameWindow;
                 return 0;
             case WM_PAINT:
             {
-                PAINTSTRUCT ps;
-                HDC hdc = BeginPaint(hwnd, &ps);
+                PAINTSTRUCT PS;
+                HDC hdc = BeginPaint(hwnd, &PS);
                 {
                     std::lock_guard<std::mutex> lock(FrameManager::DisplayImage_MX);
-                    FrameManager::DisplayImage.Draw(hdc, 0, 0, ps.rcPaint.right, ps.rcPaint.bottom);
+                    FrameManager::DisplayImage.Draw(hdc, 0, 0, PS.rcPaint.right, PS.rcPaint.bottom);
                 }
-                EndPaint(hwnd, &ps);
+                EndPaint(hwnd, &PS);
                 return 0;
             }
         }
@@ -93,7 +91,7 @@ Window WindowManager::GameWindow;
             running = false;
         }
     }
-#elif __linux__
+#elif Linux
     GameWindowLinux::GameWindowLinux() {
         
     }
@@ -109,7 +107,7 @@ Window WindowManager::GameWindow;
     void GameWindowLinux::DestroyWindow() const {
 
     }
-#elif __APPLE__
+#elif Mac
     GameWindowMac::GameWindowMac() {
         
     }

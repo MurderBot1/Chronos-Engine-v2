@@ -6,11 +6,12 @@
 
 // Include the C++'s .h file
 #include "Args.h"
-#ifdef _WIN32
+
+#ifdef Windows
     #include <windows.h>
     #include <shellapi.h>
- #elif __linux__
-#elif __APPLE__
+ #elif Linux
+#elif Mac
 #else
 #endif
 
@@ -23,7 +24,7 @@ bool Args::UseFrames;
 bool Args::UseFrameDebug;
 
 std::vector<std::string> Args::ArgDecoder() {
-    #ifdef _WIN32
+    #ifdef Windows
         int argc;
         LPWSTR* argvW = CommandLineToArgvW(GetCommandLineW(), &argc);
 
@@ -36,8 +37,8 @@ std::vector<std::string> Args::ArgDecoder() {
         }
         return argvVec;
 
-    #elif __linux__
-    #elif __APPLE__
+    #elif Linux
+    #elif Mac
     #else
     #endif
 }

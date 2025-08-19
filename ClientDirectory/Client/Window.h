@@ -16,6 +16,9 @@
 #include "Image.h"
 #include "FrameManager.h"
 
+// OS imports
+#include "GraphicsLibraries.h"
+
 // Definitions
 class WindowCreatorTemplate {
     public:
@@ -27,8 +30,7 @@ class WindowCreatorTemplate {
 };
 
 // Include OS window libs and window classes
-#ifdef _WIN32
-    #include <windows.h>
+#ifdef Windows
     class GameWindowWindows : public WindowCreatorTemplate {
         public:
             GameWindowWindows();
@@ -44,7 +46,7 @@ class WindowCreatorTemplate {
     };
 
     class Window : public GameWindowWindows {};
-#elif __linux__
+#elif Linux
     class GameWindowLinux : public WindowCreatorTemplate {
         public:
             ~GameWindowLinux() override; 
@@ -57,7 +59,7 @@ class WindowCreatorTemplate {
     };
 
     class Window : public GameWindowLinux {};
-#elif __APPLE__
+#elif Mac
     class GameWindowMac : public WindowCreatorTemplate {
         public:
             ~GameWindowMac() override; 

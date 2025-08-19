@@ -13,6 +13,7 @@
 
 // Program imported files
 #include "Exit.h"
+#include "Constants.h"
 
 // Definitions
 class Args {

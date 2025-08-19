@@ -12,9 +12,7 @@
 
 // Variable redefinitions
 
-#ifdef _WIN32
-    #include <windows.h>
-
+#ifdef Windows
     int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
         // Quiet
         (void)hInstance;
@@ -28,11 +26,11 @@
         return 0;
     }
 
-#elif __linux__
+#elif Linux
 int main(int argc, char* argv[]) {
     StructuralFunctions Start();
 }
-#elif __APPLE__
+#elif Mac
 int main(int argc, char* argv[]) {
     StructuralFunctions Start();
 }

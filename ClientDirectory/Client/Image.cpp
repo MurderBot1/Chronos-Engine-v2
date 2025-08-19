@@ -10,7 +10,7 @@ ChronosImage::~ChronosImage() {
     Destroy();
 }
 
-bool ChronosImage::Create(int Width, int Height, const Pixel* PixelData) {
+bool ChronosImage::Create(int Width, int Height, const DWORD* PixelData) {
     Destroy();
 
     ImgWidth = Width;
@@ -30,7 +30,7 @@ bool ChronosImage::Create(int Width, int Height, const Pixel* PixelData) {
     return true;
 }
 
-void ChronosImage::Edit(int X, int Y, Pixel Argb) {
+void ChronosImage::Edit(int X, int Y, DWORD Argb) {
     if (X < 0 || Y < 0 || X >= ImgWidth || Y >= ImgHeight) return;
     Pixels[Y * ImgWidth + X] = Argb;
     SetPixel(MemDC, X, Y,
@@ -83,7 +83,7 @@ bool ChronosImage::Save(const std::wstring& FilePath) const {
     BIH.biBitCount = 32;
     BIH.biCompression = BI_RGB;
 
-    Pixel ImageSize = BMP.bmWidth * BMP.bmHeight * 4;
+    DWORD ImageSize = BMP.bmWidth * BMP.bmHeight * 4;
     BFH.bfType = 0x4D42; 
     BFH.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
     BFH.bfSize = BFH.bfOffBits + ImageSize;
