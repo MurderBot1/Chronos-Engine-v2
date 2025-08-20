@@ -1,5 +1,5 @@
-#ifndef GraphicsLibraries_h
-#define GraphicsLibraries_h
+#ifndef GraphicsLibraries_H
+#define GraphicsLibraries_H
 
 #include "Constants.h"
 

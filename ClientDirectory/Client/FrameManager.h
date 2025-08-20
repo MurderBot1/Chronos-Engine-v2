@@ -6,10 +6,11 @@
 
 #include "Image.h"
 #include "Window.h"
+#include "Renderer.h"
 
 class FrameManager {
     public:
-        static void SwapAndDisplayImages();
+        static void DisplayImages();
 
         static ChronosImage DisplayImage;
         static ChronosImage RenderImage;

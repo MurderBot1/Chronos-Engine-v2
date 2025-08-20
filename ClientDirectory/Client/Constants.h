@@ -34,21 +34,16 @@ namespace LogValues {
 
 namespace ChronosPixel {
     struct RGB {
-        uint16_t R, G, B;
+        uint8_t R, G, B;
     };
 
     struct LightLevel {
-        uint16_t Level;
-    };
-
-    struct ScreenLocation {
-        int X, Y;    
+        uint8_t Level;
     };
 
     struct Pixel {
         RGB Color;
         LightLevel Brightness;
-        ScreenLocation Location;
     };
 }
 
@@ -91,9 +86,9 @@ namespace SettingsValues {
     constexpr SettingsValues::GraphicLevels DEFAULT_GRAPHIC_LEVEL = SettingsValues::GraphicLevels::UltraLow;
     constexpr SettingsValues::GraphicLevels DEFAULT_LIGHTING_LEVEL = SettingsValues::GraphicLevels::UltraLow;
     constexpr SettingsValues::GraphicLevels DEFAULT_SHADERS_LEVEL = SettingsValues::GraphicLevels::UltraLow;
-    constexpr SettingsValues::GraphicLevels DEFAULT_PARTICLEs_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr SettingsValues::GraphicLevels DEFAULT_PARTICLES_LEVEL = SettingsValues::GraphicLevels::UltraLow;
     constexpr SettingsValues::GraphicLevels DEFAULT_SHADOW_LEVEL = SettingsValues::GraphicLevels::UltraLow;
-    constexpr SettingsValues::GraphicLevels DEFAULT_AntiAllasing_LEVEL = SettingsValues::GraphicLevels::UltraLow;
+    constexpr SettingsValues::GraphicLevels DEFAULT_ANTIALLASING_LEVEL = SettingsValues::GraphicLevels::UltraLow;
     constexpr float DEFAULT_AADROPOFF = 1.5f;
 
     constexpr int16_t DEFAULT_RESOLUTION_X = 1920;

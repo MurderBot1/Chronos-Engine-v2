@@ -91,6 +91,18 @@ Window WindowManager::GameWindow;
             running = false;
         }
     }
+
+    int GameWindowWindows::GetScreenX() {
+        RECT rect;
+        GetClientRect(hwnd, &rect);
+        return rect.right - rect.left;
+    }
+
+    int GameWindowWindows::GetScreenY() {
+        RECT rect;
+        GetClientRect(hwnd, &rect);
+        return rect.bottom - rect.top;
+    }
 #elif Linux
     GameWindowLinux::GameWindowLinux() {
         

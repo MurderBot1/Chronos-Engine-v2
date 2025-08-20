@@ -20,6 +20,7 @@
 #include "FrameDebugger.h"
 #include "Window.h"
 #include "FrameManager.h"
+#include "Renderer.h"
 
 // Definitions
 class StructuralFunctions {

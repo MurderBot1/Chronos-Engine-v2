@@ -27,6 +27,9 @@ class WindowCreatorTemplate {
         virtual void SetupWindow() = 0;
         virtual void UpdateWindow() = 0;
         virtual void DestroyWindow() = 0;
+
+        virtual int GetScreenX() = 0;
+        virtual int GetScreenY() = 0;
 };
 
 // Include OS window libs and window classes
@@ -37,8 +40,11 @@ class WindowCreatorTemplate {
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
-            HWND hwnd;
 
+            int GetScreenX() override;
+            int GetScreenY() override;
+
+            HWND hwnd;
         protected:
             static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
             HINSTANCE hInstance;
@@ -54,6 +60,9 @@ class WindowCreatorTemplate {
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
+            
+            int GetScreenX() override;
+            int GetScreenY() override;
         protected:
 
     };
@@ -67,6 +76,9 @@ class WindowCreatorTemplate {
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
+            
+            int GetScreenX() override;
+            int GetScreenY() override;
         protected:
 
     };

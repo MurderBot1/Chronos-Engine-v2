@@ -90,9 +90,9 @@ void Settings::LoadGraphicsSettings(const std::string& FilePath) {
         Settings::GraphicLevel = SettingsValues::DEFAULT_GRAPHIC_LEVEL;
         Settings::Lighting = SettingsValues::DEFAULT_LIGHTING_LEVEL;
         Settings::Shaders = SettingsValues::DEFAULT_SHADERS_LEVEL;
-        Settings::Particles = SettingsValues::DEFAULT_PARTICLEs_LEVEL;
+        Settings::Particles = SettingsValues::DEFAULT_PARTICLES_LEVEL;
         Settings::Shadows = SettingsValues::DEFAULT_SHADOW_LEVEL;
-        Settings::AntiAllasing = SettingsValues::DEFAULT_AntiAllasing_LEVEL;
+        Settings::AntiAllasing = SettingsValues::DEFAULT_ANTIALLASING_LEVEL;
         Settings::AADropoff = SettingsValues::DEFAULT_AADROPOFF;
 
         std::cout << "Can't load settings. Chronos engine will use defaults\n";

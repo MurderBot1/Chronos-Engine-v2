@@ -86,8 +86,11 @@ void StructuralFunctions::LoopFunctions() {
     // Update the window
     WindowManager::GameWindow.UpdateWindow();
 
+    // Render
+    Renderer::Render();
+
     // Update window with rendered image
-    FrameManager::SwapAndDisplayImages();
+    FrameManager::DisplayImages();
 }
 
 StructuralFunctions::~StructuralFunctions() {

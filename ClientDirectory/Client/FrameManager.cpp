@@ -8,7 +8,7 @@ ChronosImage FrameManager::RenderImage;
 std::mutex FrameManager::DisplayImage_MX;
 std::mutex FrameManager::RenderImage_MX;
 
-void FrameManager::SwapAndDisplayImages() {
+void FrameManager::DisplayImages() {
     // Lock mutex
     std::lock_guard<std::mutex> LockRenderImage(RenderImage_MX);
     std::lock_guard<std::mutex> LockDisplayImage(DisplayImage_MX);
@@ -16,12 +16,7 @@ void FrameManager::SwapAndDisplayImages() {
     // Swap Images
     DisplayImage = RenderImage;
     RenderImage = ChronosImage();
-    DWORD Pix[480000];
-    for (size_t i = 0; i < 480000; i++)
-    {
-        Pix[i] = 0xFFFF0000;
-    }
-    RenderImage.Create(800, 600, Pix);
+    RenderImage.Create(Renderer::GetPixelsX(), Renderer::GetPixelsY(), Renderer::Output.data());
     
     InvalidateRect(WindowManager::GameWindow.hwnd, nullptr, FALSE);
 }
