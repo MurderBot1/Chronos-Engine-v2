@@ -4,302 +4,141 @@
 #ifndef Vector_H
 #define Vector_H
 
-// C++ imported files
+#pragma once
 #include <vector>
 #include <array>
+#include <cstddef> // for size_t
 
-// Definitions
-#define NULL_Vec1 {0}
-#define NULL_Vec2 {0, 0}
-#define NULL_Vec3 {0, 0, 0}
-#define NULL_Vec4 {0, 0, 0, 0}
+namespace Vector
+{
+    template<typename T, std::size_t N>
+    class VectorN {
+    public:
+        std::array<T, N> Data{};
 
-namespace Vector {
-    template<typename T>
-    class Vector1 {
-        public:
-            Vector1(const std::vector<T> &Value);
-            Vector1(T Xvalue);
-            Vector1(std::array<T, 1> Value);
-        public:
-            T X;
+        // Constructors
+        VectorN();
+        VectorN(const std::vector<T> &Value);
+        VectorN(const std::array<T, N> &Value);
+        template<typename... Args, typename = std::enable_if_t<sizeof...(Args) == N>>
+        VectorN(Args... values) : Data{{ static_cast<T>(values)... }} {}
+
+        // Assignment from containers
+        VectorN<T, N>& operator=(const std::vector<T> &Value);
+        VectorN<T, N>& operator=(const std::array<T, N> &Value);
+
+        // Mutating operators
+        // VectorN
+        VectorN<T, N>& operator+=(const VectorN<T, N> &RHS);
+        VectorN<T, N>& operator-=(const VectorN<T, N> &RHS);
+        VectorN<T, N>& operator*=(const VectorN<T, N> &RHS);
+        VectorN<T, N>& operator/=(const VectorN<T, N> &RHS);
+
+        // std::vector
+        VectorN<T, N>& operator+=(const std::vector<T> &RHS);
+        VectorN<T, N>& operator-=(const std::vector<T> &RHS);
+        VectorN<T, N>& operator*=(const std::vector<T> &RHS);
+        VectorN<T, N>& operator/=(const std::vector<T> &RHS);
+
+        // std::array
+        VectorN<T, N>& operator+=(const std::array<T, N> &RHS);
+        VectorN<T, N>& operator-=(const std::array<T, N> &RHS);
+        VectorN<T, N>& operator*=(const std::array<T, N> &RHS);
+        VectorN<T, N>& operator/=(const std::array<T, N> &RHS);
+
+        // Scalar
+        VectorN<T, N>& operator+=(T Scalar);
+        VectorN<T, N>& operator-=(T Scalar);
+        VectorN<T, N>& operator*=(T Scalar);
+        VectorN<T, N>& operator/=(T Scalar);
+        
+        // Non‑mutating operators
+        VectorN<T, N> operator+(const VectorN<T, N> &RHS) const { return VectorN<T, N>(*this) += RHS; }
+        VectorN<T, N> operator-(const VectorN<T, N> &RHS) const { return VectorN<T, N>(*this) -= RHS; }
+        VectorN<T, N> operator*(const VectorN<T, N> &RHS) const { return VectorN<T, N>(*this) *= RHS; }
+        VectorN<T, N> operator/(const VectorN<T, N> &RHS) const { return VectorN<T, N>(*this) /= RHS; }
+        
+        VectorN<T, N> operator+(const std::vector<T> &RHS) const { return VectorN<T, N>(*this) += RHS; }
+        VectorN<T, N> operator-(const std::vector<T> &RHS) const { return VectorN<T, N>(*this) -= RHS; }
+        VectorN<T, N> operator*(const std::vector<T> &RHS) const { return VectorN<T, N>(*this) *= RHS; }
+        VectorN<T, N> operator/(const std::vector<T> &RHS) const { return VectorN<T, N>(*this) /= RHS; }
+        
+        VectorN<T, N> operator+(const std::array<T, N> &RHS) const { return VectorN<T, N>(*this) += RHS; }
+        VectorN<T, N> operator-(const std::array<T, N> &RHS) const { return VectorN<T, N>(*this) -= RHS; }
+        VectorN<T, N> operator*(const std::array<T, N> &RHS) const { return VectorN<T, N>(*this) *= RHS; }
+        VectorN<T, N> operator/(const std::array<T, N> &RHS) const { return VectorN<T, N>(*this) /= RHS; }
+        
+        VectorN<T, N> operator+(T Scalar) const { return VectorN<T, N>(*this) += Scalar; }
+        VectorN<T, N> operator-(T Scalar) const { return VectorN<T, N>(*this) -= Scalar; }
+        VectorN<T, N> operator*(T Scalar) const { return VectorN<T, N>(*this) *= Scalar; }
+        VectorN<T, N> operator/(T Scalar) const { return VectorN<T, N>(*this) /= Scalar; }
+
+        // Convenient accessors for X/Y/Z/W if N allows
+        T& X() { static_assert(N >= 1, "X not available"); return Data[0]; }
+        T& Y() { static_assert(N >= 2, "Y not available"); return Data[1]; }
+        T& Z() { static_assert(N >= 3, "Z not available"); return Data[2]; }
+        T& W() { static_assert(N >= 4, "W not available"); return Data[3]; }
+        const T& X() const { static_assert(N >= 1, "X not available"); return Data[0]; }
+        const T& Y() const { static_assert(N >= 2, "Y not available"); return Data[1]; }
+        const T& Z() const { static_assert(N >= 3, "Z not available"); return Data[2]; }
+        const T& W() const { static_assert(N >= 4, "W not available"); return Data[3]; }
     };
 
-    template <typename T>
-    inline Vector1<T>::Vector1(const std::vector<T> &Value) {
-        if(Value.size() >= 1)
-            X = Value[0];
-    }
+    // Convenient aliases
+    template<typename T> using Vector1 = VectorN<T, 1>;
+    template<typename T> using Vector2 = VectorN<T, 2>;
+    template<typename T> using Vector3 = VectorN<T, 3>;
+    template<typename T> using Vector4 = VectorN<T, 4>;
+    template<typename T> using Vector5 = VectorN<T, 5>;
+    template<typename T> using Vector6 = VectorN<T, 6>;
+    template<typename T> using Vector7 = VectorN<T, 7>;
+    template<typename T> using Vector8 = VectorN<T, 8>;
+    template<typename T> using Vector9 = VectorN<T, 9>;
+    template<typename T> using Vector10 = VectorN<T, 10>;
 
-    template <typename T>
-    inline Vector1<T>::Vector1(T Xvalue) {
-        X = Xvalue;
-    }
+    // Null vectors
+    #define NULL_Vec1   Vector::Vector1<float>( 0.0f )
+    #define NULL_Vec2   Vector::Vector2<float>( 0.0f, 0.0f )
+    #define NULL_Vec3   Vector::Vector3<float>( 0.0f, 0.0f, 0.0f )
+    #define NULL_Vec4   Vector::Vector4<float>( 0.0f, 0.0f, 0.0f, 0.0f )
+    #define NULL_Vec5   Vector::Vector5<float>( 0.0f, 0.0f, 0.0f, 0.0f, 0.0f )
+    #define NULL_Vec6   Vector::Vector6<float>( 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f )
+    #define NULL_Vec7   Vector::Vector7<float>( 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f )
+    #define NULL_Vec8   Vector::Vector8<float>( 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f )
+    #define NULL_Vec9   Vector::Vector9<float>( 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f )
+    #define NULL_Vec10  Vector::Vector10<float>( 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f )
 
-    template <typename T>
-    inline Vector1<T>::Vector1(std::array<T, 1> Value) {
-        X = Value[0];
-    }
+    // Constructors
+    template<typename T, std::size_t N>
+    inline VectorN<T, N>::VectorN() {}
 
-    template<typename T>
-    class Vector2 {
-        public:
-            Vector2(const std::vector<T> &Value);
-            Vector2(T Xvalue, T Yvalue);
-            Vector2(std::array<T, 2> Value);
-        public:
-        T X;
-        T Y;
-    };
-    
-    template <typename T>
-    inline Vector2<T>::Vector2(const std::vector<T> &Value) {
-        if(Value.size() >= 1)
-            X = Value[0];
-        if(Value.size() >= 2)
-            Y = Value[1];
-    }
+    template<typename T, std::size_t N>
+    inline VectorN<T, N>::VectorN(const std::vector<T> &Value) { *this = Value; }
 
-    template <typename T>
-    inline Vector2<T>::Vector2(T Xvalue, T Yvalue) {
-        X = Xvalue;
-        Y = Yvalue;
-    }
-    
-    template <typename T>
-    inline Vector2<T>::Vector2(std::array<T, 2> Value) {
-        X = Value[0];
-        Y = Value[1];
-    }
+    template<typename T, std::size_t N>
+    inline VectorN<T, N>::VectorN(const std::array<T, N> &Value) : Data(Value) {}
 
-    template<typename T>
-    class Vector3 {
-        public:
-            Vector3();
-            Vector3(const std::vector<T> &Value);
-            Vector3(T Xvalue, T Yvalue, T Zvalue);
-            Vector3(std::array<T, 3> Value);
+    // Assignment
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator=(const std::vector<T> &Value) { for (std::size_t i = 0; i < N && i < Value.size(); ++i) Data[i] = Value[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator=(const std::array<T, N> &Value) { Data = Value; return *this; }
 
-            // Int operators
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator+(const Vector3& Other) const {
-                return Vector3(X + Other.X, Y + Other.Y, Z + Other.Z);
-            }
+    // VectorN element-wise
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator+=(const VectorN<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] += RHS.Data[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator-=(const VectorN<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] -= RHS.Data[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator*=(const std::vector<T> &RHS) { for (std::size_t i = 0; i < N && i < RHS.size(); ++i) Data[i] *= RHS[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator/=(const std::vector<T> &RHS) { for (std::size_t i = 0; i < N && i < RHS.size(); ++i) Data[i] /= RHS[i]; return *this; }
 
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator-(const Vector3& Other) const {
-                return Vector3(X - Other.X, Y - Other.Y, Z - Other.Z);
-            }
+    // std::array element-wise
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator+=(const std::array<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] += RHS[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator-=(const std::array<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] -= RHS[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator*=(const std::array<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] *= RHS[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator/=(const std::array<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] /= RHS[i]; return *this; }
 
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator*(const Vector3& Other) const {
-                return Vector3(X * Other.X, Y * Other.Y, Z * Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator/(const Vector3& Other) const {
-                return Vector3(X / Other.X, Y / Other.Y, Z / Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator+(T Other) const {
-                return Vector3(X + Other, Y + Other, Z + Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator-(T Other) const {
-                return Vector3(X - Other, Y - Other, Z - Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator*(T Other) const {
-                return Vector3(X * Other, Y * Other, Z * Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_integral<U>::value, Vector3>::type
-            operator/(T Other) const {
-                return Vector3(X / Other, Y / Other, Z / Other);
-            }
-
-            // Float operators
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator+(const Vector3& Other) const {
-                return Vector3(X + Other.X, Y + Other.Y, Z + Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator-(const Vector3& Other) const {
-                return Vector3(X - Other.X, Y - Other.Y, Z - Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator*(const Vector3& Other) const {
-                return Vector3(X * Other.X, Y * Other.Y, Z * Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator/(const Vector3& Other) const {
-                return Vector3(X / Other.X, Y / Other.Y, Z / Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator+(T Other) const {
-                return Vector3(X + Other, Y + Other, Z + Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator-(T Other) const {
-                return Vector3(X - Other, Y - Other, Z - Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator*(T Other) const {
-                return Vector3(X * Other, Y * Other, Z * Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, float>::value, Vector3>::type
-            operator/(T Other) const {
-                return Vector3(X / Other, Y / Other, Z / Other);
-            }       
-
-            // Double operators
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator+(const Vector3& Other) const {
-                return Vector3(X + Other.X, Y + Other.Y, Z + Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator-(const Vector3& Other) const {
-                return Vector3(X - Other.X, Y - Other.Y, Z - Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator*(const Vector3& Other) const {
-                return Vector3(X * Other.X, Y * Other.Y, Z * Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator/(const Vector3& Other) const {
-                return Vector3(X / Other.X, Y / Other.Y, Z / Other.Z);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator+(T Other) const {
-                return Vector3(X + Other, Y + Other, Z + Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator-(T Other) const {
-                return Vector3(X - Other, Y - Other, Z - Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator*(T Other) const {
-                return Vector3(X * Other, Y * Other, Z * Other);
-            }
-
-            template <typename U = T>
-            typename std::enable_if<std::is_same<U, double>::value, Vector3>::type
-            operator/(T Other) const {
-                return Vector3(X / Other, Y / Other, Z / Other);
-            }            
-        public:
-            T X;
-            T Y;
-            T Z;
-    };
-
-    template <typename T>
-    inline Vector3<T>::Vector3(){}
-
-    template <typename T>
-    inline Vector3<T>::Vector3(const std::vector<T> &Value)
-    {
-        if(Value.size() >= 1)
-            X = Value[0];
-        if(Value.size() >= 2)
-            Y = Value[1];
-        if(Value.size() >= 3)
-            Z = Value[2];
-    }
-
-    template <typename T>
-    inline Vector3<T>::Vector3(T Xvalue, T Yvalue, T Zvalue) {
-        X = Xvalue;
-        Y = Yvalue;
-        Z = Zvalue;
-    }
-    
-    template <typename T>
-    inline Vector3<T>::Vector3(std::array<T, 3> Value) {
-        X = Value[0];
-        Y = Value[1];
-        Z = Value[2];   
-    }
-
-    template<typename T>
-    class Vector4 {
-        public:
-            Vector4(const std::vector<T> &Value);
-            Vector4(T Xvalue, T Yvalue, T Zvalue, T Wvalue);
-            Vector4(std::array<T, 4> Value);
-        public:
-            T X;
-            T Y;
-            T Z;
-            T W;
-    };
-    
-    template <typename T>
-    inline Vector4<T>::Vector4(const std::vector<T> &Value) {
-        if(Value.size() >= 1)
-            X = Value[0];
-        if(Value.size() >= 2)
-            Y = Value[1];
-        if(Value.size() >= 3)
-            Z = Value[2];
-        if(Value.size() >= 4)
-            W = Value[3];
-    }
-    
-    template <typename T>
-    inline Vector4<T>::Vector4(T Xvalue, T Yvalue, T Zvalue, T Wvalue) {
-        X = Xvalue;
-        Y = Yvalue;
-        Z = Zvalue;
-        W = Wvalue;
-    }
-    
-    template <typename T>
-    inline Vector4<T>::Vector4(std::array<T, 4> Value) {
-        X = Value[0];
-        Y = Value[1];
-        Z = Value[2];
-        W = Value[3];
-    }
-};
+    // Scalar ops
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator+=(T Scalar) { for (auto &v : Data) v += Scalar; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator-=(T Scalar) { for (auto &v : Data) v -= Scalar; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator*=(T Scalar) { for (auto &v : Data) v *= Scalar; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator/=(T Scalar) { for (auto &v : Data) v /= Scalar; return *this; }
+}
 
 #endif

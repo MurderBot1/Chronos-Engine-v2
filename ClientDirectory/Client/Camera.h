@@ -8,10 +8,10 @@
 
 
 // Program imported files
-
+#include "LocationClass.h"
 
 // Definitions
-class Camera {
+class Camera : public LocationClass {
     public:
         Camera();
         ~Camera();
