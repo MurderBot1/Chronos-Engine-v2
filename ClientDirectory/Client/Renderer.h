@@ -20,11 +20,16 @@ class Renderer {
         static int GetPixelsY();
     public:
         static std::vector<ChronosPixel::Pixel> UnpackedOutput;
-        static std::vector<DWORD> Output;
+        #ifdef Windows
+            static std::vector<DWORD> Output;
+        #elif Linux
+        #elif Mac
+        #else
+        #endif
     private:
         static int PixelsX, PixelsY;
         static float FOV;
-        static std::vector<std::array<float, 2>> PrecomputedRotation;
+        static std::vector<std::array<float, 3>> PrecomputedRotation;
 };
 
 #endif

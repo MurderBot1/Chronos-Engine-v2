@@ -8,7 +8,7 @@ std::vector<DWORD> Renderer::Output;
 int Renderer::PixelsX;
 int Renderer::PixelsY;
 float Renderer::FOV;
-std::vector<std::array<float, 2>> Renderer::PrecomputedRotation;
+std::vector<std::array<float, 3>> Renderer::PrecomputedRotation;
 
 void Renderer::Render() {
     RenderPixels();
@@ -62,7 +62,52 @@ void Renderer::RecalculatePrecomputedRotation() {
     if(!RPR) {return;}
 
     // Recompute
+    std::vector<std::array<float, 3>> RayDirection; // Derection of the rays
+    RayDirection.reserve(PixelsX * PixelsY);
+    
+    // Find derection of rays
+    const double IncX = (160 * FOV) / (PixelsX - 1);
+	const double IncY = (100 * FOV) / (PixelsY - 1);
 
+	const double ForLoopMaxX = (80 * FOV); // Find max X
+	const double ForLoopMaxY = (50 * FOV); // Find max y
+	
+    std::cout << "Create the camera class" << std::endl;
+
+	const double SIN = sin(/*CurrentCamera->Rotation[2]*/ 1); // Find the sin
+	const double COS = cos(/*CurrentCamera->Rotation[2]*/ 1); // Find the cos
+
+    for (double PixelYDirection = (-50 * FOV); PixelYDirection < ForLoopMaxY; PixelYDirection += IncY) { // Get y
+		for (double PixelXDirection = (-80 * FOV); PixelXDirection < ForLoopMaxX; PixelXDirection += IncX) { // Get x
+			// Rotate for Z
+            const double AddZX = PixelXDirection * COS - PixelYDirection * SIN;
+            const double AddZY = PixelXDirection * SIN + PixelYDirection * COS;
+
+            // Rotate to camera
+            const double AddCameraX = AddZX + /*CurrentCamera->Rotation[1]*/ 1;
+            const double AddCameraY = AddZY + /*CurrentCamera->Rotation[0]*/ 1;
+            
+            // Compute slopes
+            const double SlopeX = tan(AddCameraX);
+            const double SlopeY = tan(AddCameraY);
+
+            // Create unnormalized vector
+            const double UnnormalizedX = 1;
+            const double UnnormalizedY = SlopeX;
+            const double UnnormalizedZ = SlopeY;
+
+            // Compute normalization factor
+            const double Magnitude = std::sqrt(UnnormalizedX * UnnormalizedX + UnnormalizedY * UnnormalizedY + UnnormalizedZ * UnnormalizedZ);
+            const double Normalize = 1.0f / Magnitude;
+            
+            // Output
+            RayDirection.emplace_back(UnnormalizedX * Normalize, UnnormalizedY * Normalize, UnnormalizedZ * Normalize); // Add Normalized vector to output
+		}
+	}
+
+    for (std::array<float, 3> Dir : RayDirection){
+        std::cout << Dir[0] << " " << Dir[1] << " " << Dir[2] << " " << std::endl;
+    }
 }
 
 
