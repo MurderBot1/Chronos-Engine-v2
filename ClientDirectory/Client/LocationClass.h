@@ -50,6 +50,12 @@ class LocationClass {
 
         // Update
         void UpdateLocation();
+
+        // Getters
+        Vector::Vector3<float> GetLocation();
+        Vector::Vector3<float> GetVelocity();
+        Vector::Vector3<float> GetTargetedLocation();
+        float GetSpeed();
     private:
         Vector::Vector3<float> Location;
         std::mutex Location_MX;
@@ -59,6 +65,6 @@ class LocationClass {
         std::mutex TargetedLocation_MX;
         float Speed;
         std::mutex Speed_MX;
-    };
+};
 
 #endif

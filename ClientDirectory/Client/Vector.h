@@ -20,8 +20,7 @@ namespace Vector
         VectorN();
         VectorN(const std::vector<T> &Value);
         VectorN(const std::array<T, N> &Value);
-        template<typename... Args, typename = std::enable_if_t<sizeof...(Args) == N>>
-        VectorN(Args... values) : Data{{ static_cast<T>(values)... }} {}
+        template<typename... Args, typename = std::enable_if_t<sizeof...(Args) == N>> VectorN(Args... values) : Data{{ static_cast<T>(values)... }} {}
 
         // Assignment from containers
         VectorN<T, N>& operator=(const std::vector<T> &Value);
@@ -109,14 +108,9 @@ namespace Vector
     #define NULL_Vec10  Vector::Vector10<float>( 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f )
 
     // Constructors
-    template<typename T, std::size_t N>
-    inline VectorN<T, N>::VectorN() {}
-
-    template<typename T, std::size_t N>
-    inline VectorN<T, N>::VectorN(const std::vector<T> &Value) { *this = Value; }
-
-    template<typename T, std::size_t N>
-    inline VectorN<T, N>::VectorN(const std::array<T, N> &Value) : Data(Value) {}
+    template<typename T, std::size_t N> inline VectorN<T, N>::VectorN() {}
+    template<typename T, std::size_t N> inline VectorN<T, N>::VectorN(const std::vector<T> &Value) { *this = Value; }
+    template<typename T, std::size_t N> inline VectorN<T, N>::VectorN(const std::array<T, N> &Value) : Data(Value) {}
 
     // Assignment
     template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator=(const std::vector<T> &Value) { for (std::size_t i = 0; i < N && i < Value.size(); ++i) Data[i] = Value[i]; return *this; }
@@ -125,9 +119,15 @@ namespace Vector
     // VectorN element-wise
     template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator+=(const VectorN<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] += RHS.Data[i]; return *this; }
     template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator-=(const VectorN<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] -= RHS.Data[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator*=(const VectorN<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] *= RHS.Data[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator/=(const VectorN<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] /= RHS.Data[i]; return *this; }
+    
+    // std::vector element-wise
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator+=(const std::vector<T> &RHS) { for (std::size_t i = 0; i < N && i < RHS.size(); ++i) Data[i] += RHS[i]; return *this; }
+    template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator-=(const std::vector<T> &RHS) { for (std::size_t i = 0; i < N && i < RHS.size(); ++i) Data[i] -= RHS[i]; return *this; }
     template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator*=(const std::vector<T> &RHS) { for (std::size_t i = 0; i < N && i < RHS.size(); ++i) Data[i] *= RHS[i]; return *this; }
     template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator/=(const std::vector<T> &RHS) { for (std::size_t i = 0; i < N && i < RHS.size(); ++i) Data[i] /= RHS[i]; return *this; }
-
+    
     // std::array element-wise
     template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator+=(const std::array<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] += RHS[i]; return *this; }
     template<typename T, std::size_t N> inline VectorN<T, N>& VectorN<T, N>::operator-=(const std::array<T, N> &RHS) { for (std::size_t i = 0; i < N; ++i) Data[i] -= RHS[i]; return *this; }

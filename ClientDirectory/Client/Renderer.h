@@ -2,11 +2,14 @@
 #define Renderer_H
 
 #include <vector>
+#include <functional>
 #include <array>
 
 #include "Constants.h"
 #include "Window.h"
 #include "Settings.h"
+#include "Vector.h"
+#include "Log.h"
 
 class Renderer {
     public:
@@ -29,7 +32,7 @@ class Renderer {
     private:
         static int PixelsX, PixelsY;
         static float FOV;
-        static std::vector<std::array<float, 3>> PrecomputedRotation;
+        static std::vector<Vector::Vector3<float>> PrecomputedRotation;
 };
 
 #endif

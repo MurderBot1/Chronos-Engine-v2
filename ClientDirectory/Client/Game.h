@@ -18,6 +18,7 @@
 #include "Args.h"
 #include "Constants.h"
 #include "ClassIdentifier.h"
+#include "Camera.h"
 
 // Definitions
 class Game {

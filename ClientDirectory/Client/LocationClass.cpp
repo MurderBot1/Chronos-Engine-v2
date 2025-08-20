@@ -17,7 +17,7 @@ void LocationClass::SetLocation(Vector::Vector3<float> Location_I) {
     std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
 
     // Change the value
-    LocationClass::Location = Location; 
+    LocationClass::Location = Location_I; 
 }
 
 void LocationClass::SetLocation(const std::vector<float> &Location_I) {
@@ -25,7 +25,7 @@ void LocationClass::SetLocation(const std::vector<float> &Location_I) {
     std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
 
     // Change the value
-    LocationClass::Location = Location; 
+    LocationClass::Location = Location_I; 
 }
 
 void LocationClass::SetLocation(float XLocation, float YLocation, float ZLocation) {
@@ -41,7 +41,7 @@ void LocationClass::SetLocation(std::array<float, 3> Location_I) {
     std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
 
     // Change the value
-    LocationClass::Location = Location; 
+    LocationClass::Location = Location_I; 
 }
 
 void LocationClass::Translate(Vector::Vector3<float> Location_I) {
@@ -230,6 +230,41 @@ void LocationClass::SubtractSpeed(float Speed_I) {
     // Change the value
     LocationClass::Speed -= Speed_I;
 }
+
+// Getters
+Vector::Vector3<float> LocationClass::GetLocation() {
+    // Lock mutex
+    std::lock_guard<std::mutex> lock(Location_MX);
+
+    // Get the value
+    return Location;
+}
+
+Vector::Vector3<float> LocationClass::GetVelocity() {
+    // Lock mutex
+    std::lock_guard<std::mutex> lock(Velocity_MX);
+
+    // Get the value
+    return Velocity;
+}
+
+Vector::Vector3<float> LocationClass::GetTargetedLocation() {
+    // Lock mutex
+    std::lock_guard<std::mutex> lock(TargetedLocation_MX);
+
+    // Get the value
+    return TargetedLocation;
+}
+
+float LocationClass::GetSpeed() {
+    // Lock mutex
+    std::lock_guard<std::mutex> lock(Speed_MX);
+
+    // Get the value
+    return Speed;
+}
+
+
 
 // Update
 void LocationClass::UpdateLocation() {

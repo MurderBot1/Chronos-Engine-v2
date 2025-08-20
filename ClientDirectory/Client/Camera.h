@@ -9,9 +9,10 @@
 
 // Program imported files
 #include "LocationClass.h"
+#include "RotationClass.h"
 
 // Definitions
-class Camera : public LocationClass {
+class Camera : public LocationClass, public RotationClass {
     public:
         Camera();
         ~Camera();

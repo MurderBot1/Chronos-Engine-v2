@@ -8,7 +8,7 @@ std::vector<DWORD> Renderer::Output;
 int Renderer::PixelsX;
 int Renderer::PixelsY;
 float Renderer::FOV;
-std::vector<std::array<float, 3>> Renderer::PrecomputedRotation;
+std::vector<Vector::Vector3<float>> Renderer::PrecomputedRotation;
 
 void Renderer::Render() {
     RenderPixels();
@@ -62,7 +62,7 @@ void Renderer::RecalculatePrecomputedRotation() {
     if(!RPR) {return;}
 
     // Recompute
-    std::vector<std::array<float, 3>> RayDirection; // Derection of the rays
+    std::vector<Vector::Vector3<float>> RayDirection; // Derection of the rays
     RayDirection.reserve(PixelsX * PixelsY);
     
     // Find derection of rays
@@ -105,8 +105,8 @@ void Renderer::RecalculatePrecomputedRotation() {
 		}
 	}
 
-    for (std::array<float, 3> Dir : RayDirection){
-        std::cout << Dir[0] << " " << Dir[1] << " " << Dir[2] << " " << std::endl;
+    for (Vector::Vector3<float> Dir : RayDirection){
+        Log::AddInfoLog(std::to_string(Dir.X()) + " " + std::to_string(Dir.Y()) + " " + std::to_string(Dir.Z()) + " ");
     }
 }
 
