@@ -11,6 +11,13 @@
 
 
 // Definitions
+Camera::Camera() {
+    // Load identity
+    Identity.LoadIdentity();
+}
 
+Camera::~Camera() {
+    
+}
 
 #endif

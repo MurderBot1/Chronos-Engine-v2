@@ -5,15 +5,17 @@
 #define Camera_H
 
 // C++ imported files
-
+#include <iostream>
 
 // Program imported files
 #include "LocationClass.h"
 #include "RotationClass.h"
+#include "ClassIdentifier.h"
 
 // Definitions
 class Camera : public LocationClass, public RotationClass {
     public:
+        IdentityToken Identity;
         Camera();
         ~Camera();
     private:

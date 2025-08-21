@@ -27,13 +27,13 @@
     }
 
 #elif Linux
-int main(int argc, char* argv[]) {
-    StructuralFunctions Start();
-}
+    int main(int argc, char* argv[]) {
+        StructuralFunctions Start();
+    }
 #elif Mac
-int main(int argc, char* argv[]) {
-    StructuralFunctions Start();
-}
+    int main(int argc, char* argv[]) {
+        StructuralFunctions Start();
+    }
 #else
 #endif
 

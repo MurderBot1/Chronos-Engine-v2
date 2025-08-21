@@ -13,258 +13,167 @@
 // Definitions
 // Location
 void LocationClass::SetLocation(Vector::Vector3<float> Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location = Location_I; 
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location = Location_I; // Change the value
 }
 
 void LocationClass::SetLocation(const std::vector<float> &Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location = Location_I; 
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location = Location_I; // Change the value
 }
 
 void LocationClass::SetLocation(float XLocation, float YLocation, float ZLocation) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location = Vector::Vector3<float>(XLocation, YLocation, ZLocation); 
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location = Vector::Vector3<float>(XLocation, YLocation, ZLocation); // Change the value
 }
 
 void LocationClass::SetLocation(std::array<float, 3> Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location = Location_I; 
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location = Location_I; // Change the value
 }
 
 void LocationClass::Translate(Vector::Vector3<float> Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location += Location_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location += Location_I; // Change the value
 }
 
 void LocationClass::Translate(const std::vector<float> &Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location += Location_I; 
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location += Location_I; // Change the value
 }
 
 void LocationClass::Translate(float XLocation, float YLocation, float ZLocation) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location += Vector::Vector3<float>(XLocation, YLocation, ZLocation);
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location += Vector::Vector3<float>(XLocation, YLocation, ZLocation); // Change the value
 }
 
 void LocationClass::Translate(std::array<float, 3> Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Location_MX);
-
-    // Change the value
-    LocationClass::Location += Location_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Location_MX); // Lock mutex
+    LocationClass::Location += Location_I; // Change the value
 }
 
 // Velocity
 void LocationClass::SetVelocity(Vector::Vector3<float> Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity = Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity = Velocity_I; // Change the value
 }
 
 void LocationClass::SetVelocity(const std::vector<float> &Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity = Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity = Velocity_I; // Change the value
 }
 
 void LocationClass::SetVelocity(float XVelocity, float YVelocity, float ZVelocity) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity = Vector::Vector3<float>(XVelocity, YVelocity, ZVelocity);
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity = Vector::Vector3<float>(XVelocity, YVelocity, ZVelocity); // Change the value
 }
 
 void LocationClass::SetVelocity(std::array<float, 3> Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity = Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity = Velocity_I; // Change the value
 }
 
 void LocationClass::AddVelocity(Vector::Vector3<float> Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity += Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity += Velocity_I; // Change the value
 }
 
 void LocationClass::AddVelocity(const std::vector<float> &Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity += Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity += Velocity_I; // Change the value
 }
 
 void LocationClass::AddVelocity(float XVelocity, float YVelocity, float ZVelocity) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity += Vector::Vector3<float>(XVelocity, YVelocity, ZVelocity);
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity += Vector::Vector3<float>(XVelocity, YVelocity, ZVelocity); // Change the value
 }
 
 void LocationClass::AddVelocity(std::array<float, 3> Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity += Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity += Velocity_I; // Change the value
 }
 
 void LocationClass::SubtractVelocity(Vector::Vector3<float> Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity -= Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity -= Velocity_I; // Change the value
 }
 
 void LocationClass::SubtractVelocity(const std::vector<float> &Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity -= Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity -= Velocity_I; // Change the value
 }
 
 void LocationClass::SubtractVelocity(float XVelocity, float YVelocity, float ZVelocity) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity -= Vector::Vector3<float>(XVelocity, YVelocity, ZVelocity);
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity -= Vector::Vector3<float>(XVelocity, YVelocity, ZVelocity); // Change the value
 }
 
 void LocationClass::SubtractVelocity(std::array<float, 3> Velocity_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity -= Velocity_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity -= Velocity_I; // Change the value
 }
 
 void LocationClass::CancelVelocity() {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX);
-
-    // Change the value
-    LocationClass::Velocity = NULL_Vec3;
+    std::lock_guard<std::mutex> lock(LocationClass::Velocity_MX); // Lock mutex
+    LocationClass::Velocity = NULL_Vec3; // Change the value
 }
 
 // Targeted location
 void LocationClass::SetTargetedLocation(Vector::Vector3<float> Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::TargetedLocation_MX);
-
-    // Change the value
-    LocationClass::TargetedLocation = Location_I;
+    std::lock_guard<std::mutex> lock(LocationClass::TargetedLocation_MX); // Lock mutex
+    LocationClass::TargetedLocation = Location_I; // Change the value
 }
 
 void LocationClass::SetTargetedLocation(const std::vector<float> &Location_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::TargetedLocation_MX);
-
-    // Change the value
-    LocationClass::TargetedLocation = Location_I;
+    std::lock_guard<std::mutex> lock(LocationClass::TargetedLocation_MX); // Lock mutex
+    LocationClass::TargetedLocation = Location_I; // Change the value
 }
 
 void LocationClass::SetTargetedLocation(float XLocation, float YLocation, float ZLocation) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::TargetedLocation_MX);
-
-    // Change the value
-    LocationClass::TargetedLocation = Vector::Vector3<float>(XLocation, YLocation, ZLocation);
+    std::lock_guard<std::mutex> lock(LocationClass::TargetedLocation_MX); // Lock mutex
+    LocationClass::TargetedLocation = Vector::Vector3<float>(XLocation, YLocation, ZLocation); // Change the value
 }
 
 // Speed
 void LocationClass::SetSpeed(float Speed_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Speed_MX);
-
-    // Change the value
-    LocationClass::Speed = Speed_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Speed_MX); // Lock mutex
+    LocationClass::Speed = Speed_I; // Change the value
 }
 
 void LocationClass::AddSpeed(float Speed_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Speed_MX);
-
-    // Change the value
-    LocationClass::Speed += Speed_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Speed_MX); // Lock mutex
+    LocationClass::Speed += Speed_I; // Change the value
 }
 
 void LocationClass::SubtractSpeed(float Speed_I) {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(LocationClass::Speed_MX);
-
-    // Change the value
-    LocationClass::Speed -= Speed_I;
+    std::lock_guard<std::mutex> lock(LocationClass::Speed_MX); // Lock mutex
+    LocationClass::Speed -= Speed_I; // Change the value
 }
 
 // Getters
 Vector::Vector3<float> LocationClass::GetLocation() {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(Location_MX);
-
+    std::lock_guard<std::mutex> lock(Location_MX); // Lock mutex
     // Get the value
     return Location;
 }
 
 Vector::Vector3<float> LocationClass::GetVelocity() {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(Velocity_MX);
-
+    std::lock_guard<std::mutex> lock(Velocity_MX); // Lock mutex
     // Get the value
     return Velocity;
 }
 
 Vector::Vector3<float> LocationClass::GetTargetedLocation() {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(TargetedLocation_MX);
-
+    std::lock_guard<std::mutex> lock(TargetedLocation_MX); // Lock mutex
     // Get the value
     return TargetedLocation;
 }
 
 float LocationClass::GetSpeed() {
-    // Lock mutex
-    std::lock_guard<std::mutex> lock(Speed_MX);
-
+    std::lock_guard<std::mutex> lock(Speed_MX); // Lock mutex
     // Get the value
     return Speed;
 }
-
-
 
 // Update
 void LocationClass::UpdateLocation() {

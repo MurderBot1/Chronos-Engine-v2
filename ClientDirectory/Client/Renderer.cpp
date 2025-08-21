@@ -72,10 +72,8 @@ void Renderer::RecalculatePrecomputedRotation() {
 	const double ForLoopMaxX = (80 * FOV); // Find max X
 	const double ForLoopMaxY = (50 * FOV); // Find max y
 	
-    std::cout << "Create the camera class" << std::endl;
-
-	const double SIN = sin(/*CurrentCamera->Rotation[2]*/ 1); // Find the sin
-	const double COS = cos(/*CurrentCamera->Rotation[2]*/ 1); // Find the cos
+	const double SIN = sin(Game::GetCurrentCamera()->GetLocation().Z()); // Find the sin
+	const double COS = cos(Game::GetCurrentCamera()->GetLocation().Z()); // Find the cos
 
     for (double PixelYDirection = (-50 * FOV); PixelYDirection < ForLoopMaxY; PixelYDirection += IncY) { // Get y
 		for (double PixelXDirection = (-80 * FOV); PixelXDirection < ForLoopMaxX; PixelXDirection += IncX) { // Get x
@@ -84,8 +82,8 @@ void Renderer::RecalculatePrecomputedRotation() {
             const double AddZY = PixelXDirection * SIN + PixelYDirection * COS;
 
             // Rotate to camera
-            const double AddCameraX = AddZX + /*CurrentCamera->Rotation[1]*/ 1;
-            const double AddCameraY = AddZY + /*CurrentCamera->Rotation[0]*/ 1;
+            const double AddCameraX = AddZX + Game::GetCurrentCamera()->GetLocation().Y();
+            const double AddCameraY = AddZY + Game::GetCurrentCamera()->GetLocation().X();
             
             // Compute slopes
             const double SlopeX = tan(AddCameraX);

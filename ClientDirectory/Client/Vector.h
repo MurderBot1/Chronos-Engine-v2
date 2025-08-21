@@ -77,10 +77,23 @@ namespace Vector
         T& Y() { static_assert(N >= 2, "Y not available"); return Data[1]; }
         T& Z() { static_assert(N >= 3, "Z not available"); return Data[2]; }
         T& W() { static_assert(N >= 4, "W not available"); return Data[3]; }
+        T& U() { static_assert(N >= 5, "U not available"); return Data[4]; }
+        T& V() { static_assert(N >= 6, "V not available"); return Data[5]; }
+        T& A() { static_assert(N >= 7, "A not available"); return Data[6]; }
+        T& Q() { static_assert(N >= 8, "Q not available"); return Data[7]; }
+        T& R() { static_assert(N >= 9, "R not available"); return Data[8]; }
+        T& S() { static_assert(N >= 10, "S not available"); return Data[9]; }
+        
         const T& X() const { static_assert(N >= 1, "X not available"); return Data[0]; }
         const T& Y() const { static_assert(N >= 2, "Y not available"); return Data[1]; }
         const T& Z() const { static_assert(N >= 3, "Z not available"); return Data[2]; }
         const T& W() const { static_assert(N >= 4, "W not available"); return Data[3]; }
+        const T& U() const { static_assert(N >= 5, "U not available"); return Data[4]; }
+        const T& V() const { static_assert(N >= 6, "V not available"); return Data[5]; }
+        const T& A() const { static_assert(N >= 7, "A not available"); return Data[6]; }
+        const T& Q() const { static_assert(N >= 8, "Q not available"); return Data[7]; }
+        const T& R() const { static_assert(N >= 9, "R not available"); return Data[8]; }
+        const T& S() const { static_assert(N >= 10, "S not available"); return Data[9]; }
     };
 
     // Convenient aliases

@@ -9,10 +9,11 @@
 
 // Variable redefinitions
 std::mutex Game::Game_MX;
+std::shared_ptr<Camera> Game::MainCamera;
 std::vector<std::shared_ptr<Scene>> Game::LoadedScenes;
 std::vector<std::shared_ptr<Scene>> Game::ListOfLoadedAndUnloadedScenes;
 std::vector<std::weak_ptr<int>> Game::LoadedObjects;
-std::vector<std::weak_ptr<int>> Game::LoadedCameras;
+std::vector<std::weak_ptr<Camera>> Game::LoadedCameras;
 std::vector<std::weak_ptr<int>> Game::LoadedLights;
 std::vector<std::weak_ptr<int>> Game::LoadedAudioGenerators;
 std::vector<std::weak_ptr<int>> Game::LoadedAudioRecivers;
@@ -48,10 +49,11 @@ void Game::LoadGame() {
     std::vector<std::shared_ptr<Scene>> ScenesToAdd = Game::GetListOfLoadedAndUnloadedScenes_NOLOCK();
 
     for(std::shared_ptr<Scene> Scn : ScenesToAdd) {
-        Game::LoadedScenes.push_back(
-            Scn
-        );
+        Game::LoadedScenes.push_back(Scn);
     }
+
+    // Load in a camera to be the main camera if another is not loaded
+    MainCamera = std::make_shared<Camera>();
 
     Scenes.close();
 }
@@ -67,158 +69,197 @@ void Game::UnloadScene(std::shared_ptr<Scene> Scene) {
 
 std::vector<std::shared_ptr<Scene>> Game::GetLoadedScenes() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedScenes;
+    return LoadedScenes;
 }
 
-std::vector<std::shared_ptr<Scene>> Game::GetLoadedScenes_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX    
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::shared_ptr<Scene>> Game::GetLoadedScenes_NOLOCK() {     
     // Return the variable
-    return Game::LoadedScenes;
+    return LoadedScenes;
 }
 
 std::vector<std::shared_ptr<Scene>> Game::GetListOfLoadedAndUnloadedScenes() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::ListOfLoadedAndUnloadedScenes;
+    return ListOfLoadedAndUnloadedScenes;
 }
 
-std::vector<std::shared_ptr<Scene>> Game::GetListOfLoadedAndUnloadedScenes_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX    
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::shared_ptr<Scene>> Game::GetListOfLoadedAndUnloadedScenes_NOLOCK() {     
     // Return the variable
-    return Game::ListOfLoadedAndUnloadedScenes;
+    return ListOfLoadedAndUnloadedScenes;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedObjects() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedObjects;
+    return LoadedObjects;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedObjects_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedObjects_NOLOCK() { 
     // Return the variable
-    return Game::LoadedObjects;
+    return LoadedObjects;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedCameras() {
+std::shared_ptr<Camera> Game::GetCurrentCamera() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedCameras;
+    return MainCamera;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedCameras_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::shared_ptr<Camera> Game::GetCurrentCamera_NOLOCK() {
     // Return the variable
-    return Game::LoadedCameras;
+    return MainCamera;
+}
+
+std::vector<std::weak_ptr<Camera>> Game::GetLoadedCameras() {
+    // Lock the mutex
+    std::lock_guard<std::mutex> Lock(Game_MX);
+    
+    // Return the variable
+    return LoadedCameras;
+}
+
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<Camera>> Game::GetLoadedCameras_NOLOCK() { 
+    // Return the variable
+    return LoadedCameras;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedLights() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedLights;
+    return LoadedLights;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedLights_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedLights_NOLOCK() { 
     // Return the variable
-    return Game::LoadedLights;
+    return LoadedLights;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedAudioGenerators() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedAudioGenerators;
+    return LoadedAudioGenerators;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedAudioGenerators_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedAudioGenerators_NOLOCK() { 
     // Return the variable
-    return Game::LoadedAudioGenerators;
+    return LoadedAudioGenerators;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedAudioRecivers() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedAudioRecivers;
+    return LoadedAudioRecivers;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedAudioRecivers_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedAudioRecivers_NOLOCK() { 
     // Return the variable
-    return Game::LoadedAudioRecivers;
+    return LoadedAudioRecivers;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedParticleGenerators() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedParticleGenerators;
+    return LoadedParticleGenerators;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedParticleGenerators_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedParticleGenerators_NOLOCK() { 
     // Return the variable
-    return Game::LoadedParticleGenerators;
+    return LoadedParticleGenerators;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedParticles() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedParticles;
+    return LoadedParticles;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedParticles_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedParticles_NOLOCK() { 
     // Return the variable
-    return Game::LoadedParticles;
+    return LoadedParticles;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedWindZones() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedWindZones;
+    return LoadedWindZones;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedWindZones_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedWindZones_NOLOCK() { 
     // Return the variable
-    return Game::LoadedWindZones;
+    return LoadedWindZones;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedImages() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedImages;
+    return LoadedImages;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedImages_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedImages_NOLOCK() { 
     // Return the variable
-    return Game::LoadedImages;
+    return LoadedImages;
 }
 
 std::vector<std::weak_ptr<int>> Game::GetLoadedVideos() {
     // Lock the mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+    std::lock_guard<std::mutex> Lock(Game_MX);
     
     // Return the variable
-    return Game::LoadedVideos;
+    return LoadedVideos;
 }
 
-std::vector<std::weak_ptr<int>> Game::GetLoadedVideos_NOLOCK() { // DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game::Game_MX
+/// @brief DO NOT USE THE NO LOCK VERSION IF YOU HAVE NOT LOCKED Game_MX
+/// @return
+std::vector<std::weak_ptr<int>> Game::GetLoadedVideos_NOLOCK() { 
     // Return the variable
-    return Game::LoadedVideos;
+    return LoadedVideos;
 }
 
 #endif
