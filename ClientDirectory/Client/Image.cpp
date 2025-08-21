@@ -60,7 +60,18 @@ bool ChronosImage::Load(const std::wstring& FilePath) {
     ImgHeight = BMP.bmHeight;
     Pixels.resize(ImgWidth * ImgHeight);
 
-    memcpy(Pixels.data(), BMP.bmBits, ImgWidth * ImgHeight * 4);
+    BITMAPINFO bmi = {};
+    bmi.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
+    bmi.bmiHeader.biWidth       = ImgWidth;
+    bmi.bmiHeader.biHeight      = ImgHeight;
+    bmi.bmiHeader.biPlanes      = 1;
+    bmi.bmiHeader.biBitCount    = 32;
+    bmi.bmiHeader.biCompression = BI_RGB;
+
+    HDC hdc = GetDC(nullptr);
+    GetDIBits(hdc, loaded, 0, ImgHeight, Pixels.data(), &bmi, DIB_RGB_COLORS);
+    ReleaseDC(nullptr, hdc);
+    if (!Pixels.data()) return false;
 
     HDC ScreenDC = GetDC(nullptr);
     MemDC = CreateCompatibleDC(ScreenDC);

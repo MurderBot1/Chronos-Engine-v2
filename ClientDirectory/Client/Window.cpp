@@ -99,11 +99,9 @@ Window WindowManager::GameWindow;
             ::UpdateWindow(hwnd);
             Running = true;
         }
-
-        ChronosImage img;
-        std::cout << "Fix the image path" << std::endl;
-        if (img.Load(WindowUtils::STWS(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\GameData\\Assets\\WindowLogo\\Logo.bpm"))) {
-            img.SetAsWindowIcon(hwnd);
+        ChronosImage IMG;
+        if (IMG.Load(WindowUtils::STWS(CurrentPath.string() + "\\" + std::string{Args::Game} + "\\GameData\\Assets\\Logos\\Logo.bmp"))) {
+            IMG.SetAsWindowIcon(hwnd);
         }
     }
 
