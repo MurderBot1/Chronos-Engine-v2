@@ -27,6 +27,7 @@ class WindowCreatorTemplate {
         virtual void SetupWindow() = 0;
         virtual void UpdateWindow() = 0;
         virtual void DestroyWindow() = 0;
+        virtual void ToggleFullscreen() = 0;
 
         virtual int GetScreenX() = 0;
         virtual int GetScreenY() = 0;
@@ -40,15 +41,20 @@ class WindowCreatorTemplate {
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
+            void ToggleFullscreen() override;
 
             int GetScreenX() override;
             int GetScreenY() override;
 
             HWND hwnd;
         protected:
-            static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
-            HINSTANCE hInstance;
-            bool running;
+            static LRESULT CALLBACK WindowProc(HWND hwnd, UINT UMsg, WPARAM WParam, LPARAM LParam);
+            HINSTANCE HInstance;
+            bool Running;
+            RECT   WindowedRect{};
+            DWORD  WindowedStyle{};
+            DWORD  WindowedExStyle{};
+            bool   Fullscreen = false;
     };
 
     class Window : public GameWindowWindows {};
@@ -60,6 +66,7 @@ class WindowCreatorTemplate {
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
+            void ToggleFullscreen() override;
             
             int GetScreenX() override;
             int GetScreenY() override;
@@ -76,6 +83,7 @@ class WindowCreatorTemplate {
             void SetupWindow() override;
             void UpdateWindow() override;
             void DestroyWindow() override;
+            void ToggleFullscreen() override;
             
             int GetScreenX() override;
             int GetScreenY() override;

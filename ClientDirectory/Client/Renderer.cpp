@@ -24,11 +24,11 @@ void Renderer::RenderPixels() {
     
     // Clear and resize the return vector
     UnpackedOutput.clear();
-    UnpackedOutput.reserve(TotalPixels);
+    UnpackedOutput.resize(TotalPixels, ChronosPixel::Pixel());
 
     // Get the pixel colors (CP = Current Pixel)
     for(int CP = 0; CP < TotalPixels; CP++) {
-        UnpackedOutput.emplace_back(RenderPixel(CP));
+        UnpackedOutput[CP] = RenderPixel(CP);
     }
 }
 

@@ -22,6 +22,7 @@
             virtual bool Load(const std::wstring& FilePath);
             virtual bool Save(const std::wstring& FilePath) const;
             virtual void Destroy();
+            virtual bool SetAsWindowIcon(HWND hwnd) const;
 
         protected:
             HBITMAP     HBitMap;

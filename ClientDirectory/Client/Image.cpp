@@ -47,9 +47,11 @@ void ChronosImage::Draw(HDC hdc, int X, int Y, int Width, int Height) const {
 bool ChronosImage::Load(const std::wstring& FilePath) {
     Destroy();
 
-    HBITMAP loaded = (HBITMAP)LoadImageW(nullptr, FilePath.c_str(),
-                                         IMAGE_BITMAP, 0, 0,
-                                         LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+    HBITMAP loaded = (HBITMAP)LoadImageW(
+        nullptr, FilePath.c_str(),
+        IMAGE_BITMAP, 0, 0,
+        LR_LOADFROMFILE | LR_CREATEDIBSECTION
+    );
     if (!loaded) return false;
 
     BITMAP BMP;
@@ -109,6 +111,28 @@ void ChronosImage::Destroy() {
     }
     Pixels.clear();
     ImgWidth = ImgHeight = 0;
+}
+
+bool ChronosImage::SetAsWindowIcon(HWND hwnd) const {
+    if (!hwnd || Pixels.empty() || ImgWidth <= 0 || ImgHeight <= 0)
+        return false;
+
+    ICONINFO ii = {};
+    ii.fIcon = TRUE;  // TRUE for icon, FALSE for cursor
+    ii.xHotspot = 0;
+    ii.yHotspot = 0;
+    ii.hbmMask = HBitMap; // Windows will use this as transparency mask if monochrome
+    ii.hbmColor = HBitMap;
+
+    HICON hIcon = CreateIconIndirect(&ii);
+    if (!hIcon)
+        return false;
+
+    SendMessageW(hwnd, WM_SETICON, ICON_BIG,   (LPARAM)hIcon);
+    SendMessageW(hwnd, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+
+    // If you want to avoid leaks, store HICON and destroy later with DestroyIcon
+    return true;
 }
 
 #endif
