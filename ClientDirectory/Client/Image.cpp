@@ -47,18 +47,18 @@ void ChronosImage::Draw(HDC hdc, int X, int Y, int Width, int Height) const {
 bool ChronosImage::Load(const std::wstring& FilePath) {
     Destroy();
 
-    HBITMAP loaded = (HBITMAP)LoadImageW(
+    HBITMAP Loaded = (HBITMAP)LoadImageW(
         nullptr, FilePath.c_str(),
         IMAGE_BITMAP, 0, 0,
         LR_LOADFROMFILE | LR_CREATEDIBSECTION
     );
-    if (!loaded) return false;
+    if (!Loaded) return false;
 
     BITMAP BMP;
-    GetObject(loaded, sizeof(BMP), &BMP);
+    if (!GetObject(Loaded, sizeof(BITMAP), &BMP)) return false;   
+
     ImgWidth = BMP.bmWidth;
     ImgHeight = BMP.bmHeight;
-    Pixels.resize(ImgWidth * ImgHeight);
 
     BITMAPINFO bmi = {};
     bmi.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
@@ -68,16 +68,18 @@ bool ChronosImage::Load(const std::wstring& FilePath) {
     bmi.bmiHeader.biBitCount    = 32;
     bmi.bmiHeader.biCompression = BI_RGB;
 
+    Pixels.resize(ImgWidth * ImgHeight);
+
     HDC hdc = GetDC(nullptr);
-    GetDIBits(hdc, loaded, 0, ImgHeight, Pixels.data(), &bmi, DIB_RGB_COLORS);
+    GetDIBits(hdc, Loaded, 0, ImgHeight, Pixels.data(), &bmi, DIB_RGB_COLORS);
     ReleaseDC(nullptr, hdc);
     if (!Pixels.data()) return false;
 
     HDC ScreenDC = GetDC(nullptr);
     MemDC = CreateCompatibleDC(ScreenDC);
-    SelectObject(MemDC, loaded);
+    SelectObject(MemDC, Loaded);
     ReleaseDC(nullptr, ScreenDC);
-    HBitMap = loaded;
+    HBitMap = Loaded;
     return true;
 }
 
