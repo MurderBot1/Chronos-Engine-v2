@@ -21,6 +21,8 @@
 
 const std::filesystem::path CurrentPath = std::filesystem::current_path();
 
+constexpr float DEG2RAD = 3.14159265f / 180.0f;
+
 constexpr uint8_t INDEX_START = 0; 
 
 namespace BinaryValues {

@@ -19,6 +19,7 @@
 #include "Constants.h"
 #include "ClassIdentifier.h"
 #include "Camera.h"
+#include "Object.h"
 
 // Definitions
 class Game {
@@ -38,8 +39,8 @@ class Game {
         static std::vector<std::shared_ptr<Scene>> GetListOfLoadedAndUnloadedScenes_NOLOCK();
 
         // Basic objects (mutex)
-        static std::vector<std::weak_ptr<int>> GetLoadedObjects();
-        static std::vector<std::weak_ptr<int>> GetLoadedObjects_NOLOCK();
+        static std::vector<std::weak_ptr<Object>> GetLoadedObjects();
+        static std::vector<std::weak_ptr<Object>> GetLoadedObjects_NOLOCK();
         static std::shared_ptr<Camera> GetCurrentCamera();
         static std::shared_ptr<Camera> GetCurrentCamera_NOLOCK();
         static std::vector<std::weak_ptr<Camera>> GetLoadedCameras();
@@ -78,7 +79,7 @@ class Game {
         static std::vector<std::shared_ptr<Scene>> ListOfLoadedAndUnloadedScenes;
 
         // Basic objects
-        static std::vector<std::weak_ptr<int>> LoadedObjects;
+        static std::vector<std::weak_ptr<Object>> LoadedObjects;
         static std::vector<std::weak_ptr<Camera>> LoadedCameras;
         static std::vector<std::weak_ptr<int>> LoadedLights;
 

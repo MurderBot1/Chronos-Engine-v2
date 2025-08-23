@@ -34,6 +34,37 @@ void Renderer::RenderPixels() {
 
 /// @param PIWID The Pixel in the rotation array (Pixel In Window ID)
 ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
+    // Get all weak ptrs to the objects
+    const std::vector<std::weak_ptr<Object>> LoadedObjectsWeak = Game::GetLoadedObjects();
+
+    // Turn weak ptrs in to shared ptrs
+    std::vector<std::shared_ptr<Object>> LoadedObjects;
+    LoadedObjects.reserve(LoadedObjectsWeak.size());
+    for(std::weak_ptr WeakObj : LoadedObjectsWeak) {
+        LoadedObjects.emplace_back(WeakObj.lock());
+    }
+
+    // Turn the shared ptrs in to the actual triangles which get rendered
+    std::vector<Triangle> TrianglesInScene;
+    for(std::shared_ptr<Object> Obj : LoadedObjects) {
+        for(Triangle Tri : Obj->Triangles) {
+            Triangle TempTri = Triangle();
+            // Set the triangles next to eachother
+            TempTri.Points = Tri.Points;
+
+            // Rotate the points of the triangle
+            TempTri.RotateX(Obj->GetRotation().X());
+            TempTri.RotateY(Obj->GetRotation().Y());
+            TempTri.RotateZ(Obj->GetRotation().Z());
+
+            // Update with the new location
+            TempTri.Points.X += Obj->GetLocation();
+            TempTri.Points.Y += Obj->GetLocation();
+            TempTri.Points.Z += Obj->GetLocation();
+            TrianglesInScene.push_back(TempTri);
+        }
+    }
+
     (void)PIWID;
     ChronosPixel::Pixel Return;
     Return.Color = {0, 0, 0};

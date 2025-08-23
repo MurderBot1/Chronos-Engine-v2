@@ -22,6 +22,24 @@ namespace Vector
         VectorN(const std::array<T, N> &Value);
         template<typename... Args, typename = std::enable_if_t<sizeof...(Args) == N>> VectorN(Args... values) : Data{{ static_cast<T>(values)... }} {}
 
+        // Dot product (works for any N)
+        constexpr T Dot(const VectorN<T, N>& rhs) const noexcept {
+            T result{};
+            for (std::size_t i = 0; i < N; ++i)
+                result += Data[i] * rhs.Data[i];
+            return result;
+        }
+
+        // Cross product (only valid for 3D vectors)
+        constexpr VectorN<T, N> Cross(const VectorN<T, N>& rhs) const noexcept {
+            static_assert(N == 3, "Cross product is only defined for 3D vectors");
+            return VectorN<T, N>(
+                Data[1] * rhs.Data[2] - Data[2] * rhs.Data[1],
+                Data[2] * rhs.Data[0] - Data[0] * rhs.Data[2],
+                Data[0] * rhs.Data[1] - Data[1] * rhs.Data[0]
+            );
+        }
+
         // Assignment from containers
         VectorN<T, N>& operator=(const std::vector<T> &Value);
         VectorN<T, N>& operator=(const std::array<T, N> &Value);
