@@ -7,7 +7,8 @@
 #pragma once
 #include <vector>
 #include <array>
-#include <cstddef> // for size_t
+#include <cstddef>
+#include <stdexcept>
 
 namespace Vector
 {

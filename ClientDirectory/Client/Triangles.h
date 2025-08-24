@@ -34,8 +34,11 @@ struct Texture {
 class Triangle {
     public:
         Triangle() {
-            std::array<uint8_t, 3> RGB = {0,0,0};
-            Color = static_cast<DWORD>(RGB[0] | (RGB[1] << 8) | (RGB[2] << 16));
+            Color = {0, 255, 0, 0};
+        }
+        Triangle(Vector::Vector3<float> X, Vector::Vector3<float> Y, Vector::Vector3<float> Z, ChronosPixel::Pixel ColorOfTriangle) {
+            Color = ColorOfTriangle;
+            Points = TrianglePoints({X, Y, Z});
         }
         TrianglePoints Points;
         Texture TriangleTexture;
@@ -47,7 +50,7 @@ class Triangle {
         void RotateZ(float Degrees);
 
         // Temp Var For Dev
-        DWORD Color;
+        ChronosPixel::Pixel Color;
 };
 
 #endif

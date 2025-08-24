@@ -11,6 +11,7 @@ bool Triangle::Intersect(const Vector::Vector3<float>& RayOrgin, const Vector::V
 
     // Begin calculating the determinant
     Vector::Vector3<float> H = RayDirection.Cross(Edge2);
+
     double A = Edge1.Dot(H);
 
     // If the determinant is near 0.0f, the ray is parallel to the triangle

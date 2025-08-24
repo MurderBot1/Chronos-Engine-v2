@@ -34,49 +34,53 @@ void Renderer::RenderPixels() {
 
 /// @param PIWID The Pixel in the rotation array (Pixel In Window ID)
 ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
-    // Get all weak ptrs to the objects
-    const std::vector<std::weak_ptr<Object>> LoadedObjectsWeak = Game::GetLoadedObjects();
+    // Lock the game mutex
+    std::lock_guard<std::mutex> Lock(Game::Game_MX);
 
-    // Turn weak ptrs in to shared ptrs
-    std::vector<std::shared_ptr<Object>> LoadedObjects;
-    LoadedObjects.reserve(LoadedObjectsWeak.size());
-    for(std::weak_ptr WeakObj : LoadedObjectsWeak) {
-        LoadedObjects.emplace_back(WeakObj.lock());
-    }
+    // Get all weak ptrs to the objects
+    const std::vector<std::weak_ptr<Object>>& LoadedObjects = Game::GetLoadedObjects_NOLOCK();
 
     // Turn the shared ptrs in to the actual triangles which get rendered
-    std::vector<Triangle> TrianglesInScene;
-    for(std::shared_ptr<Object> Obj : LoadedObjects) {
-        for(Triangle Tri : Obj->Triangles) {
-            Triangle TempTri = Triangle();
-            // Set the triangles next to eachother
-            TempTri.Points = Tri.Points;
+    std::vector<Triangle> TrianglesThatWereHit;
+    for(const std::weak_ptr<Object>& WeakObj : LoadedObjects) {
+        if (auto Obj = WeakObj.lock()) {
+            for(Triangle Tri : Obj->Triangles) {
+                Triangle TempTri = Triangle();
 
-            // Rotate the points of the triangle
-            TempTri.RotateX(Obj->GetRotation().X());
-            TempTri.RotateY(Obj->GetRotation().Y());
-            TempTri.RotateZ(Obj->GetRotation().Z());
+                // Set the triangles next to eachother
+                TempTri.Points = Tri.Points;
 
-            // Update with the new location
-            TempTri.Points.X += Obj->GetLocation();
-            TempTri.Points.Y += Obj->GetLocation();
-            TempTri.Points.Z += Obj->GetLocation();
-            TrianglesInScene.push_back(TempTri);
+                // Rotate the points of the triangle
+                TempTri.RotateX(Obj->GetRotation().X());
+                TempTri.RotateY(Obj->GetRotation().Y());
+                TempTri.RotateZ(Obj->GetRotation().Z());
+
+                // Update with the new location
+                TempTri.Points.X += Obj->GetLocation();
+                TempTri.Points.Y += Obj->GetLocation();
+                TempTri.Points.Z += Obj->GetLocation();
+                
+                // Add it to the triangles
+                if(Tri.Intersect(CurrentCameraLocation_NOLOCK, PrecomputedRotation[PIWID])) {
+                    // Add color data and return
+                    TempTri.TriangleTexture = Tri.TriangleTexture;
+                    // Temp Var For Dev
+                    TempTri.Color = Tri.Color;
+                    return TempTri.Color;
+                }
+            }
         }
     }
 
-    (void)PIWID;
-    ChronosPixel::Pixel Return;
-    Return.Color = {0, 0, 0};
-    return Return;
+    return {0, 0, 0, 0};
 }
 
 void Renderer::RecalculatePrecomputedRotation() {
     // See if the Precomputed rotation needs to be recomputed 
     // Get new pixel width
-    int TempPixelsX = WindowManager::GameWindow.GetScreenX();
-    int TempPixelsY = WindowManager::GameWindow.GetScreenY();
-    float TempFOV = Settings::FOV;
+    #define TempPixelsX WindowManager::GameWindow.GetScreenX()
+    #define TempPixelsY WindowManager::GameWindow.GetScreenY()
+    #define TempFOV Settings::FOV
 
     // (RPR = Recompute Precomputed Rotation)
     bool RPR = false;
@@ -92,6 +96,10 @@ void Renderer::RecalculatePrecomputedRotation() {
     // Check if it is needed
     if(!RPR) {return;}
 
+    #undef TempPixelsX
+    #undef TempPixelsY
+    #undef TempFOV
+
     // Recompute
     std::vector<Vector::Vector3<float>> RayDirection; // Derection of the rays
     RayDirection.reserve(PixelsX * PixelsY);
@@ -103,8 +111,8 @@ void Renderer::RecalculatePrecomputedRotation() {
 	const double ForLoopMaxX = (80 * FOV); // Find max X
 	const double ForLoopMaxY = (50 * FOV); // Find max y
 	
-	const double SIN = sin(Game::GetCurrentCamera()->GetLocation().Z()); // Find the sin
-	const double COS = cos(Game::GetCurrentCamera()->GetLocation().Z()); // Find the cos
+	const double SIN = sin(CurrentCameraLocation.Z()); // Find the sin
+	const double COS = cos(CurrentCameraLocation.Z()); // Find the cos
 
     for (double PixelYDirection = (-50 * FOV); PixelYDirection < ForLoopMaxY; PixelYDirection += IncY) { // Get y
 		for (double PixelXDirection = (-80 * FOV); PixelXDirection < ForLoopMaxX; PixelXDirection += IncX) { // Get x
@@ -113,17 +121,17 @@ void Renderer::RecalculatePrecomputedRotation() {
             const double AddZY = PixelXDirection * SIN + PixelYDirection * COS;
 
             // Rotate to camera
-            const double AddCameraX = AddZX + Game::GetCurrentCamera()->GetLocation().Y();
-            const double AddCameraY = AddZY + Game::GetCurrentCamera()->GetLocation().X();
+            const double AddCameraX = AddZX + CurrentCameraLocation.Y();
+            const double AddCameraY = AddZY + CurrentCameraLocation.X();
             
             // Compute slopes
             const double SlopeX = tan(AddCameraX);
             const double SlopeY = tan(AddCameraY);
 
             // Create unnormalized vector
-            const double UnnormalizedX = 1;
-            const double UnnormalizedY = SlopeX;
-            const double UnnormalizedZ = SlopeY;
+            #define UnnormalizedX 1
+            #define UnnormalizedY SlopeX
+            #define UnnormalizedZ SlopeY
 
             // Compute normalization factor
             const double Magnitude = std::sqrt(UnnormalizedX * UnnormalizedX + UnnormalizedY * UnnormalizedY + UnnormalizedZ * UnnormalizedZ);
@@ -131,12 +139,14 @@ void Renderer::RecalculatePrecomputedRotation() {
             
             // Output
             RayDirection.emplace_back(UnnormalizedX * Normalize, UnnormalizedY * Normalize, UnnormalizedZ * Normalize); // Add Normalized vector to output
+
+            #undef UnnormalizedX
+            #undef UnnormalizedY
+            #undef UnnormalizedZ
 		}
 	}
 
-    for (Vector::Vector3<float> Dir : RayDirection){
-        Log::AddInfoLog(std::to_string(Dir.X()) + " " + std::to_string(Dir.Y()) + " " + std::to_string(Dir.Z()) + " ");
-    }
+    PrecomputedRotation = std::move(RayDirection);
 }
 
 

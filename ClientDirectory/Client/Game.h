@@ -99,4 +99,11 @@ class Game {
         static std::vector<std::weak_ptr<int>> LoadedVideos;
 };
 
+#define CurrentCamera Game::GetCurrentCamera()
+#define CurrentCameraLocation Game::GetCurrentCamera()->GetLocation()
+#define CurrentCameraRotation Game::GetCurrentCamera()->GetRotation()
+#define CurrentCamera_NOLOCK Game::GetCurrentCamera_NOLOCK()
+#define CurrentCameraLocation_NOLOCK Game::GetCurrentCamera_NOLOCK()->GetLocation()
+#define CurrentCameraRotation_NOLOCK Game::GetCurrentCamera_NOLOCK()->GetRotation()
+
 #endif

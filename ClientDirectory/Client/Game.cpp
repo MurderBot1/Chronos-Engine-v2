@@ -51,6 +51,11 @@ void Game::LoadGame() {
     for(std::shared_ptr<Scene> Scn : ScenesToAdd) {
         Game::LoadedScenes.push_back(Scn);
     }
+    
+    for(std::shared_ptr<Scene> Scn : LoadedScenes) {
+        for(std::shared_ptr<Object> Obj : Scn->GetLoadedObjects())
+        Game::LoadedObjects.push_back(std::weak_ptr<Object>(Obj));
+    }
 
     // Load in a camera to be the main camera if another is not loaded
     MainCamera = std::make_shared<Camera>();
