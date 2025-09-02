@@ -22,13 +22,13 @@ void Renderer::RenderPixels() {
     // Get window size
     int TotalPixels = PixelsX * PixelsY;
     
-    // Clear and resize the return vector
+    // Clear and reserve the return vector
     UnpackedOutput.clear();
-    UnpackedOutput.resize(TotalPixels, ChronosPixel::Pixel());
+    UnpackedOutput.reserve(TotalPixels);
 
     // Get the pixel colors (CP = Current Pixel)
     for(int CP = 0; CP < TotalPixels; CP++) {
-        UnpackedOutput[CP] = RenderPixel(CP);
+        UnpackedOutput.emplace_back(RenderPixel(CP));
     }
 }
 
@@ -41,8 +41,13 @@ ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
     std::vector<Triangle> TrianglesThatWereHit;
     for(const std::weak_ptr<Object>& WeakObj : Game::GetLoadedObjects_NOLOCK()) {
         if (auto Obj = WeakObj.lock()) {
-            for(Triangle Tri : Obj->Triangles) {
+            for(const Triangle& Tri : Obj->Triangles) {
                 Triangle TempTri = Tri;
+
+                // Scale the object to its size
+                TempTri.Points.X = Tri.Points.X * Obj->GetScale();
+                TempTri.Points.Y = Tri.Points.Y * Obj->GetScale();
+                TempTri.Points.Z = Tri.Points.Z * Obj->GetScale();
 
                 // Rotate the points of the triangle
                 TempTri.RotateX(Obj->GetRotation().X());
@@ -54,8 +59,8 @@ ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
                 TempTri.Points.Y += Obj->GetLocation();
                 TempTri.Points.Z += Obj->GetLocation();
                 
-                // Add it to the triangles
-                if(Tri.Intersect(CurrentCameraLocation_NOLOCK, PrecomputedRotation[PIWID])) {
+                // Add it to the triangles list
+                if(TempTri.Intersect(CurrentCameraLocation_NOLOCK, PrecomputedRotation[PIWID])) {
                     // Add color data and return
                     TempTri.TriangleTexture = Tri.TriangleTexture;
 
