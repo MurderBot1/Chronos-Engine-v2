@@ -21,7 +21,7 @@ void Object::AddTriangle(float P1, float P2, float P3, float P4, float P5, float
             Vector::Vector3<float>(P1, P2, P3),
             Vector::Vector3<float>(P4, P5, P6),
             Vector::Vector3<float>(P7, P8, P9),
-            {0, 0, 0, 0}
+            {255, 255, 255, 0}
         )
     );
 }

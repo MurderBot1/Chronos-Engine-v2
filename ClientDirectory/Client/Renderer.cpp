@@ -37,18 +37,12 @@ ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
     // Lock the game mutex
     std::lock_guard<std::mutex> Lock(Game::Game_MX);
 
-    // Get all weak ptrs to the objects
-    const std::vector<std::weak_ptr<Object>>& LoadedObjects = Game::GetLoadedObjects_NOLOCK();
-
     // Turn the shared ptrs in to the actual triangles which get rendered
     std::vector<Triangle> TrianglesThatWereHit;
-    for(const std::weak_ptr<Object>& WeakObj : LoadedObjects) {
+    for(const std::weak_ptr<Object>& WeakObj : Game::GetLoadedObjects_NOLOCK()) {
         if (auto Obj = WeakObj.lock()) {
             for(Triangle Tri : Obj->Triangles) {
-                Triangle TempTri = Triangle();
-
-                // Set the triangles next to eachother
-                TempTri.Points = Tri.Points;
+                Triangle TempTri = Tri;
 
                 // Rotate the points of the triangle
                 TempTri.RotateX(Obj->GetRotation().X());
@@ -64,8 +58,10 @@ ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
                 if(Tri.Intersect(CurrentCameraLocation_NOLOCK, PrecomputedRotation[PIWID])) {
                     // Add color data and return
                     TempTri.TriangleTexture = Tri.TriangleTexture;
+
                     // Temp Var For Dev
                     TempTri.Color = Tri.Color;
+
                     return TempTri.Color;
                 }
             }

@@ -148,8 +148,10 @@ Scene::Scene(std::string FilePath) {
     Identity.LoadIdentity();
 
     std::ifstream LoadScene(FilePath + ".ChrScene");
-
+    
     LoadedObjects.push_back(std::make_shared<Cube>());
+
+    LoadedObjects[0]->SetLocation(1,1,1);
 
     LoadScene.close();
 }

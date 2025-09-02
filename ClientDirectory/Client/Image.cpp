@@ -60,18 +60,18 @@ bool ChronosImage::Load(const std::wstring& FilePath) {
     ImgWidth = BMP.bmWidth;
     ImgHeight = BMP.bmHeight;
 
-    BITMAPINFO bmi = {};
-    bmi.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
-    bmi.bmiHeader.biWidth       = ImgWidth;
-    bmi.bmiHeader.biHeight      = ImgHeight;
-    bmi.bmiHeader.biPlanes      = 1;
-    bmi.bmiHeader.biBitCount    = 32;
-    bmi.bmiHeader.biCompression = BI_RGB;
+    BITMAPINFO BMI = {};
+    BMI.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
+    BMI.bmiHeader.biWidth       = ImgWidth;
+    BMI.bmiHeader.biHeight      = ImgHeight;
+    BMI.bmiHeader.biPlanes      = 1;
+    BMI.bmiHeader.biBitCount    = 32;
+    BMI.bmiHeader.biCompression = BI_RGB;
 
     Pixels.resize(ImgWidth * ImgHeight);
 
     HDC hdc = GetDC(nullptr);
-    GetDIBits(hdc, Loaded, 0, ImgHeight, Pixels.data(), &bmi, DIB_RGB_COLORS);
+    GetDIBits(hdc, Loaded, 0, ImgHeight, Pixels.data(), &BMI, DIB_RGB_COLORS);
     ReleaseDC(nullptr, hdc);
     if (!Pixels.data()) return false;
 
@@ -130,19 +130,19 @@ bool ChronosImage::SetAsWindowIcon(HWND hwnd) const {
     if (!hwnd || Pixels.empty() || ImgWidth <= 0 || ImgHeight <= 0)
         return false;
 
-    ICONINFO ii = {};
-    ii.fIcon = TRUE;  // TRUE for icon, FALSE for cursor
-    ii.xHotspot = 0;
-    ii.yHotspot = 0;
-    ii.hbmMask = HBitMap; // Windows will use this as transparency mask if monochrome
-    ii.hbmColor = HBitMap;
+    ICONINFO II = {};
+    II.fIcon = TRUE;  // TRUE for icon, FALSE for cursor
+    II.xHotspot = 0;
+    II.yHotspot = 0;
+    II.hbmMask = HBitMap; // Windows will use this as transparency mask if monochrome
+    II.hbmColor = HBitMap;
 
-    HICON hIcon = CreateIconIndirect(&ii);
-    if (!hIcon)
+    HICON HIcon = CreateIconIndirect(&II);
+    if (!HIcon)
         return false;
 
-    SendMessageW(hwnd, WM_SETICON, ICON_BIG,   (LPARAM)hIcon);
-    SendMessageW(hwnd, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+    SendMessageW(hwnd, WM_SETICON, ICON_BIG,   (LPARAM)HIcon);
+    SendMessageW(hwnd, WM_SETICON, ICON_SMALL, (LPARAM)HIcon);
 
     // If you want to avoid leaks, store HICON and destroy later with DestroyIcon
     return true;
