@@ -119,4 +119,28 @@ void Triangle::RotateZ(float Degrees) {
     );
 }
 
+void Triangle::Rotate(float X, float Y, float Z) {
+    float RadX = X * DEG2RAD;
+    float CosAX = std::cos(RadX);
+    float SinAX = std::sin(RadX);
+    // Point X
+    Points.X = Vector::Vector3<float>(
+        Points.X.X(),
+        Points.X.Y() * CosAX - Points.X.Z() * SinAX,
+        Points.X.Y() * SinAX + Points.X.Z() * CosAX
+    );
+    // Point Y
+    Points.Y = Vector::Vector3<float>(
+        Points.Y.X(),
+        Points.Y.Y() * CosAX - Points.Y.Z() * SinAX,
+        Points.Y.Y() * SinAX + Points.Y.Z() * CosAX
+    );
+    // Point Z
+    Points.Z = Vector::Vector3<float>(
+        Points.Z.X(),
+        Points.Z.Y() * CosAX - Points.Z.Z() * SinAX,
+        Points.Z.Y() * SinAX + Points.Z.Z() * CosAX
+    );
+}
+
 #endif

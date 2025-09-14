@@ -14,11 +14,11 @@
 class Renderer {
     public:
         static void Render();
-        static void RenderPixels();
-        static ChronosPixel::Pixel RenderPixel(int PIWID);
+        static std::vector<ChronosPixel::Pixel> RenderPixels();
+        static ChronosPixel::Pixel RenderPixel(int PIWID, const std::vector<Triangle> &Triangles);
         static void RecalculatePrecomputedRotation();
-        static void PackChronosPixels();
-
+        static void PackChronosPixels(const std::vector<ChronosPixel::Pixel> &Data);
+        
         static int GetPixelsX();
         static int GetPixelsY();
     public:
@@ -26,7 +26,9 @@ class Renderer {
         #ifdef Windows
             static std::vector<DWORD> Output;
         #elif Linux
+            static std::vector<> Output
         #elif Mac
+            static std::vector<> Output
         #else
         #endif
     private:

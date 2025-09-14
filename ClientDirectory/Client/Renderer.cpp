@@ -11,34 +11,23 @@ float Renderer::FOV;
 std::vector<Vector::Vector3<float>> Renderer::PrecomputedRotation;
 
 void Renderer::Render() {
-    RenderPixels();
-    PackChronosPixels();
+    PackChronosPixels(
+        RenderPixels()
+    );
 }
 
-void Renderer::RenderPixels() {
+std::vector<ChronosPixel::Pixel> Renderer::RenderPixels() {
+    // Lock the game mutex
+    std::lock_guard<std::mutex> Lock(Game::Game_MX);
+
     // Recompute the precomputed rotation if needed (implementation of "if needed" is inside the recomputation function)
     RecalculatePrecomputedRotation();
 
     // Get window size
     int TotalPixels = PixelsX * PixelsY;
-    
-    // Clear and reserve the return vector
-    UnpackedOutput.clear();
-    UnpackedOutput.reserve(TotalPixels);
 
-    // Get the pixel colors (CP = Current Pixel)
-    for(int CP = 0; CP < TotalPixels; CP++) {
-        UnpackedOutput.emplace_back(RenderPixel(CP));
-    }
-}
-
-/// @param PIWID The Pixel in the rotation array (Pixel In Window ID)
-ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
-    // Lock the game mutex
-    std::lock_guard<std::mutex> Lock(Game::Game_MX);
-
-    // Turn the shared ptrs in to the actual triangles which get rendered
-    std::vector<Triangle> TrianglesThatWereHit;
+    // Get the Triangles location
+    std::vector<Triangle> TriangleInput;
     for(const std::weak_ptr<Object>& WeakObj : Game::GetLoadedObjects_NOLOCK()) {
         if (auto Obj = WeakObj.lock()) {
             for(const Triangle& Tri : Obj->Triangles) {
@@ -58,21 +47,39 @@ ChronosPixel::Pixel Renderer::RenderPixel(int PIWID) {
                 TempTri.Points.X += Obj->GetLocation();
                 TempTri.Points.Y += Obj->GetLocation();
                 TempTri.Points.Z += Obj->GetLocation();
-                
-                // Add it to the triangles list
-                if(TempTri.Intersect(CurrentCameraLocation_NOLOCK, PrecomputedRotation[PIWID])) {
-                    // Add color data and return
-                    TempTri.TriangleTexture = Tri.TriangleTexture;
 
-                    // Temp Var For Dev
-                    TempTri.Color = Tri.Color;
+                // Add color data and return
+                TempTri.TriangleTexture = Tri.TriangleTexture;
 
-                    return TempTri.Color;
-                }
+                // Temp Var For Dev
+                TempTri.Color = Tri.Color;
+
+                // Return the triangle
+                TriangleInput.emplace_back(TempTri);
             }
         }
     }
+    
+    std::vector<ChronosPixel::Pixel> Output;
+    Output.reserve(TotalPixels);
 
+    // Get the pixel colors (CP = Current Pixel)
+    for(int CP = 0; CP < TotalPixels; CP++) {
+        UnpackedOutput.emplace_back(RenderPixel(CP, TriangleInput));
+    }
+
+    return Output;
+}
+
+/// @param PIWID The Pixel in the rotation array (Pixel In Window ID)
+ChronosPixel::Pixel Renderer::RenderPixel(int PIWID, const std::vector<Triangle> &Triangles) {
+    // Add it to the triangles list
+    for(Triangle Tri : Triangles) {
+        if(Tri.Intersect(CurrentCameraLocation_NOLOCK, PrecomputedRotation[PIWID])) {
+            return Tri.Color;
+        }
+    }
+    
     return {0, 0, 0, 0};
 }
 
@@ -88,14 +95,14 @@ void Renderer::RecalculatePrecomputedRotation() {
     if(TempPixelsX != PixelsX) {RPR = true;}
     if(TempPixelsY != PixelsY) {RPR = true;}
     if(TempFOV != FOV) {RPR = true;}
-    
-    // Set the new FOV for next frame
-    FOV = TempFOV;
-    PixelsX = TempPixelsX;
-    PixelsY = TempPixelsY;
 
     // Check if it is needed
-    if(!RPR) {return;}
+    if(!RPR) {return;} else {
+        // Set the new FOV for next frame if it is
+        FOV = TempFOV;
+        PixelsX = TempPixelsX;
+        PixelsY = TempPixelsY;
+    }
 
     #undef TempPixelsX
     #undef TempPixelsY
@@ -112,8 +119,8 @@ void Renderer::RecalculatePrecomputedRotation() {
 	const double ForLoopMaxX = (80 * FOV); // Find max X
 	const double ForLoopMaxY = (50 * FOV); // Find max y
 	
-	const double SIN = sin(CurrentCameraLocation.Z()); // Find the sin
-	const double COS = cos(CurrentCameraLocation.Z()); // Find the cos
+	const double SIN = sin(CurrentCameraLocation_NOLOCK.Z()); // Find the sin
+	const double COS = cos(CurrentCameraLocation_NOLOCK.Z()); // Find the cos
 
     for (double PixelYDirection = (-50 * FOV); PixelYDirection < ForLoopMaxY; PixelYDirection += IncY) { // Get y
 		for (double PixelXDirection = (-80 * FOV); PixelXDirection < ForLoopMaxX; PixelXDirection += IncX) { // Get x
@@ -122,8 +129,8 @@ void Renderer::RecalculatePrecomputedRotation() {
             const double AddZY = PixelXDirection * SIN + PixelYDirection * COS;
 
             // Rotate to camera
-            const double AddCameraX = AddZX + CurrentCameraLocation.Y();
-            const double AddCameraY = AddZY + CurrentCameraLocation.X();
+            const double AddCameraX = AddZX + CurrentCameraLocation_NOLOCK.Y();
+            const double AddCameraY = AddZY + CurrentCameraLocation_NOLOCK.X();
             
             // Compute slopes
             const double SlopeX = tan(AddCameraX);
@@ -152,16 +159,16 @@ void Renderer::RecalculatePrecomputedRotation() {
 
 
 #ifdef Windows
-    void Renderer::PackChronosPixels() {
-        int TotalPixels = PixelsX * PixelsY;
-        Output.clear();
-        Output.reserve(TotalPixels);
+    void Renderer::PackChronosPixels(const std::vector<ChronosPixel::Pixel> &Data) {
+        std::vector<DWORD> Out;
+        Out.reserve(PixelsX * PixelsY);
 
-        for (const auto& Pixel : UnpackedOutput) {
-            const auto& RGB = Pixel.Color;
-            DWORD Color = static_cast<DWORD>(RGB.R | (RGB.G << 8) | (RGB.B << 16));
-            Output.emplace_back(Color);
+        for (const auto& Pixel : Data) {
+            DWORD Color = static_cast<DWORD>(Pixel.Color.R | (Pixel.Color.G << 8) | (Pixel.Color.B << 16) | (Pixel.Brightness.Level << 24));
+            Out.emplace_back(Color);
         }
+
+        Output = std::move(Out);
     }
 #elif Linux
 #elif Mac

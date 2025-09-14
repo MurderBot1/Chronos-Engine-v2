@@ -10,7 +10,7 @@
 #include <iostream>
 
 // Program imported files
-
+#include "OSAudioFiles.h"
 
 // Definitions
 class AudioThread {

@@ -48,6 +48,7 @@ class Triangle {
         void RotateX(float Degrees);
         void RotateY(float Degrees);
         void RotateZ(float Degrees);
+        void Rotate(float X, float Y, float Z);
 
         // Temp Var For Dev
         ChronosPixel::Pixel Color;
